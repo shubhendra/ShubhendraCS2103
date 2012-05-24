@@ -13,8 +13,9 @@ public class Task {
 	private boolean important;
 	private boolean deadline;
 	private List<String> labels;
+	private String recurring;
 
-public Task()
+public Task() 
 {
 	taskId=null;
 	name="";
@@ -28,7 +29,7 @@ public Task()
 	
 }
 /**Constructor*/
-public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,List<String> Labels)
+public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,List<String> Labels, boolean complete, boolean impt, boolean duedate)
 {
 	this();
 	name = Name;
@@ -36,6 +37,9 @@ public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,
 	start = startDateTime;
 	end = endDateTime;
 	labels=Labels;
+	completed=complete;
+	important=impt;
+	deadline=duedate;
 }
 public Task(String Name)
 {
@@ -56,12 +60,13 @@ public void toggleImportant()
 /** mark the Task as completed or unimportant*/
 public void toggleCompleted()
 {
-	completed = !important;
+	completed = !completed;
 }
+/*
 public void toggleDeadline()
 {
 	deadline=!deadline;
-}
+}*/
 public List<String> getLabels()
 {
 	return labels;
