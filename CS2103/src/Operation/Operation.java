@@ -1,9 +1,11 @@
 package Operation;
 
-import Data.Task;
-
+import data.Task;
+import parser.Parser;
 public abstract class Operation {
-
+	
+	
+	boolean isundoable=false;
 	
 	public static Operation getOperationObj(String userCommand)
 	{

@@ -1,12 +1,30 @@
 package Operation;
 
-import Data.Task;
+
+
+import data.Task;
+import parser.Parser;
+import data.Storage2;
 
 public class Add extends Operation {
 	
 	public Task[] execute (String userCommand)
 	{
-		return null;
+		
+		String params = userCommand.toLowerCase().replace("add ","");
+		Task newTask= Parser.parseCommand(params);
+		
+
+		boolean isAdded = Storage2.addTask(newTask);
+		if (isAdded) {
+			isundoable = true;
+			Task[] resultOfAdd = new Task[1];
+			resultOfAdd[0] = newTask;
+			return resultOfAdd;
+		} else {
+			return null;
+		}
+		
 	}
 	@Override
 	public boolean isInputCorrect(String command) {

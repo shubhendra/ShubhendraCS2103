@@ -2,9 +2,11 @@ package Operation;
 
 import data.Task;
 
-public class Completed extends Operation{
+public class BaseSearch extends Operation {
 	
-	public Task[] execute(){
+	public Task[] execute(String userCommand)
+	{
+		
 		return null;
 	}
 
@@ -37,6 +39,5 @@ public class Completed extends Operation{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
+
 }
