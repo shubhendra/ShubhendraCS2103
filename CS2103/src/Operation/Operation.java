@@ -1,8 +1,11 @@
 package Operation;
 
 import data.Task;
-import parser.Parser;
+
+
 public abstract class Operation {
+
+	
 	
 	
 	boolean isundoable=false;
@@ -64,9 +67,6 @@ public abstract class Operation {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
 
 }

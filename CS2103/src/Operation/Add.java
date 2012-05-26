@@ -1,10 +1,11 @@
 package Operation;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
-
-import data.Task;
 import parser.Parser;
-import data.Storage2;
+import storagecontroller.StorageManager;
+import data.Task;
 
 public class Add extends Operation {
 	
@@ -14,8 +15,8 @@ public class Add extends Operation {
 		String params = userCommand.toLowerCase().replace("add ","");
 		Task newTask= Parser.parseCommand(params);
 		
-
-		boolean isAdded = Storage2.addTask(newTask);
+		StorageManager handler=new StorageManager();
+		boolean isAdded = handler.addTask(newTask);
 		if (isAdded) {
 			isundoable = true;
 			Task[] resultOfAdd = new Task[1];
@@ -55,6 +56,30 @@ public class Add extends Operation {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+private static Logger logger = Logger.getLogger(Add.class);
+    
+    public static void main(String[] args) {
+        
+        long time = System.currentTimeMillis();
+        logger.info("main method called..");
+        logger.info("another informative message");
+        logger.warn("This one is a warning!");
+        logger.log(Level.TRACE, 
+                "And a trace message using log() method.");
+        long logTime = System.currentTimeMillis() - time;
+        
+        logger.debug("Time taken to log the previous messages: " 
+                + logTime + " msecs");
+
+        // Exception logging example:
+        try{
+        //    String subs = "hello".substring(6);
+        }catch (Exception e){
+            logger.error("Error in main() method:", e);
+        }      
+               
+    }
 	
 	
 }
