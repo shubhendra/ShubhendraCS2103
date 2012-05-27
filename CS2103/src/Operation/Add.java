@@ -61,7 +61,7 @@ public class Add extends Operation {
 private static Logger logger = Logger.getLogger(Add.class);
     
     public static void main(String[] args) {
-        
+        logger.info("hi");
     	Add adder=new Add();
     	
     	Task[] abc=adder.execute("add 3/8/2012");

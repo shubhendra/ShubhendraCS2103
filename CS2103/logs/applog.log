@@ -19,3 +19,5 @@
 2012-05-27 06:10:26,689 - Operation.Add - WARN - This one is a warning!
 2012-05-27 06:10:26,690 - Operation.Add - TRACE - And a trace message using log() method.
 2012-05-27 06:10:26,690 - Operation.Add - DEBUG - Time taken to log the previous messages: 5 msecs
+2012-05-27 18:27:43,046 - Operation.Add - INFO - hi
+2012-05-27 18:29:12,369 - Operation.Add - INFO - hi
