@@ -1,10 +1,14 @@
 package operation;
 
+import parser.Parser;
 import data.Task;
+import storagecontroller.StorageManager;
+public class Modify extends BaseSearch{
+	
+	private Task oldTask;
+	private Task newTask;
+	private static Task taskBeingEdited=null;
 
-public class Modify extends Operation{
-	
-	
 	private String commandName;
 	public Modify(){
 		commandName="modify";
@@ -17,14 +21,43 @@ public class Modify extends Operation{
 
 	
 
-	public Task[] execute(){
-		return null;
+	public Task[] execute(Task taskToBeEdited){
+		if(taskBeingEdited==null)
+		{
+			taskBeingEdited=StorageManager.getTaskById(taskToBeEdited.getTaskId());
+			return new Task[]{taskBeingEdited};
+		}
+		else{
+			
+			boolean isEdited=modify(taskBeingEdited,taskToBeEdited);
+			if(isEdited)
+			{
+				isUndoAble=true;
+				oldTask=taskBeingEdited;
+				newTask=taskToBeEdited;
+				taskBeingEdited=null;
+				return new Task[]{taskToBeEdited};
+				
+			}
+			return null;	
+		}
+	}
+
+	private boolean modify(Task oldTask, Task newTask) {
+		return StorageManager.replaceTask(oldTask, newTask);
+		
 	}
 
 	@Override
 	public Task[] undo() {
 		// TODO Auto-generated method stub
+		Task[] undoneArray = new Task[1];
+		if (modify(newTask, oldTask)) {
+			undoneArray[0] = oldTask;
+			return undoneArray;
+		}
 		return null;
+		
 	}
 
 	@Override
@@ -42,21 +75,40 @@ public class Modify extends Operation{
 	@Override
 	public String getErrorMessage() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Task could not be edited.";
 	}
 
 	@Override
 	public String getOperationName() {
 		// TODO Auto-generated method stub
-		return null;
+		return commandName;
 	}
 
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		return null;
+		if (taskBeingEdited==null)
+		{
+			return super.execute(userCommand);
+		}
+		
+		else
+		{
+			Task taskToBeEdited=parseTask(userCommand);
+			return execute(taskToBeEdited);
+			
+		}
+	}
+
+	private Task parseTask(String userCommand) {
+		// TODO Auto-generated method stub
+		
+		Parser newParser=new Parser();
+		return newParser.parse(userCommand);
+		
 	}
 	
 
 
 }
+

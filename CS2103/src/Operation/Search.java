@@ -55,5 +55,10 @@ public class Search extends Operation {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	public Task[] search(Task findTask) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

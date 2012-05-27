@@ -3,8 +3,6 @@ package operation;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
-import operation.Delete;
-
 import parser.Parser;
 import storagecontroller.StorageManager;
 import data.Task;
@@ -31,7 +29,7 @@ public class Add extends Operation {
 		Task newTask= parseCommand(params);
 		if (newTask!=null)
 		{
-			boolean isAdded = StorageManager.addTask(newTask);
+			boolean isAdded = add(newTask);
 			if (isAdded) {
 				isUndoAble = true;
 				Task[] resultOfAdd = new Task[1];
@@ -97,7 +95,15 @@ private static Logger logger = Logger.getLogger(Add.class);
     	Task[] abc=adder.execute("add *go to meet nirav weekly by 3.45pm 3/8/2012  @work @home");
     	if (abc[0]!=null)
     	System.out.println(abc[0].getName());
-    }      
+    }
+	public boolean add(Task taskAdded) {
+		// TODO Auto-generated method stub
+		if (taskAdded!=null)
+		{
+			return StorageManager.addTask(taskAdded);
+		}
+		return false;
+	}      
                
     
 	

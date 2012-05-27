@@ -54,7 +54,12 @@ public abstract class Operation {
 	public abstract Task[] execute(String userCommand);
 	
 	public abstract Task[] undo();
+	
+	protected Task[] execute(Task taskToBeExecuted)
+	{
+		return null;
 		
+	}		
 	public abstract boolean isUndoAble();
 	
 	public abstract boolean isInputCorrect(String command);
