@@ -6,7 +6,6 @@ public class BaseSearch extends Operation {
 	
 	public Task[] execute(String userCommand)
 	{
-		
 		return null;
 	}
 
