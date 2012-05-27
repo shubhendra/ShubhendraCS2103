@@ -1,9 +1,22 @@
-package Operation;
+package operation;
 
 import data.Task;
 
 public class Modify extends Operation{
 	
+	
+	private String commandName;
+	public Modify(){
+		commandName="modify";
+	}
+	
+	public Modify(String intendedOperation) {
+		// TODO Auto-generated constructor stub
+		commandName=intendedOperation;
+	}
+
+	
+
 	public Task[] execute(){
 		return null;
 	}

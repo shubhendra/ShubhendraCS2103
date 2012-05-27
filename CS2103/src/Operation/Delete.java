@@ -1,11 +1,23 @@
-package Operation;
+package operation;
 
 import data.Task;
 
-public class Delete extends Operation {
+public class Delete extends BaseSearch {
 	
-	public Task[] execute(){
-		return null;
+	
+	public Delete(){
+		commandName="delete";
+	}
+	public Delete(String intendedOperation) {
+		// TODO Auto-generated constructor stub
+		commandName=intendedOperation;
+	}
+
+	
+	public boolean delete(Task taskToBeDeleted)
+	
+	{
+		return false;
 	}
 
 	@Override

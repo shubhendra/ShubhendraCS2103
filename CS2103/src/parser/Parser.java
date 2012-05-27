@@ -19,21 +19,22 @@ public class Parser {
 	/*
 	 * make all helper functions non static
 	 */
-	private final  String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
-	private final  String LABEL_REGEX = "@(\\w+)";
+	private final    String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
+	private final    String LABEL_REGEX = "@(\\w+)";
 	
-	 boolean important;
-	 boolean deadline;
-	 DateTime startDateTime, endDateTime;
-	 String recurring = null;
-	 List<String> labelList = null;
-	 String taskDetails=null;
+	private   boolean important;
+	private   boolean deadline;
+	private   DateTime startDateTime;
+	private   DateTime endDateTime;
+	private   String recurring = null;
+	private List<String> labelList = null;
+	private   String taskDetails=null;
 	
-	public  String removeExtraSpaces (String s) {
+	private    String removeExtraSpaces (String s) {
 		return s.replaceAll("\\s+", " ");
 	}
 	
-	public boolean markImportant (String s) {
+	public   boolean markImportant (String s) {
 		if (s.startsWith("*")){
 			//s = s.replace('*', '\0');
 			//s = s.trim();
@@ -43,7 +44,7 @@ public class Parser {
 		return false;
 	}
 	
-	public String getRecurString (String s) {
+	private   String getRecurString (String s) {
 		Pattern p = Pattern.compile(RECUR_REGEX);
 		Matcher m = p.matcher(s);
 		
@@ -59,7 +60,7 @@ public class Parser {
 		return recurString;
 	}
 	
-	public String extractTaskId (String command)
+	public   String extractTaskId (String command)
 	{
 		
 		
@@ -68,7 +69,17 @@ public class Parser {
 		
 	}
 	
-	public String[] getLabels(String s) {
+
+	public   String[] extractTaskIds (String command)
+	{
+		
+		
+		return null;
+		
+		
+	}
+	
+	private   String[] getLabels(String s) {
 		Pattern p = Pattern.compile(LABEL_REGEX);
 		Matcher m = p.matcher(s);
 		String labelString = null;
@@ -85,7 +96,7 @@ public class Parser {
 		return labelArr;
 	}
 	
-	public void setDateTimeAttributes () {
+	private   void setDateTimeAttributes () {
 		TimeParser t = new TimeParser();
 		DateParser d = new DateParser();
 		boolean startDateTimeExists, endDateTimeExists;
@@ -118,12 +129,12 @@ public class Parser {
 			System.out.println("end date time: "+endDateTime.formattedToString());
 	}
 	
-	public void setDeadline () {
+	private   void setDeadline () {
 		if (startDateTime==null && endDateTime!=null)
 			deadline=true;
 	}
 	
-	public Task parse (String inputS) {
+	public   Task parse (String inputS) {
 		
 		inputS = inputS.trim();
 		
@@ -142,7 +153,7 @@ public class Parser {
 		/*
 		 * recurring 
 		 */	
-		String recurring = getRecurString (inputS);
+		recurring = getRecurString (inputS);
 		
 		if (recurring != null)
 			System.out.println("this task is "+recurring);
@@ -208,7 +219,7 @@ public class Parser {
 		else
 			System.out.println("this task does NOT have deadline you numbskull!");
 		
-		List<String> labelList = Arrays.asList(labelArr);
+		labelList = Arrays.asList(labelArr);
 		
 		taskDetails = timeParser.getinputCommand();
 		

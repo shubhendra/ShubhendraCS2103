@@ -2,12 +2,13 @@ package logic;
 
 //import java.io.FileNotFoundException;
 import java.util.Stack;
+
+import operation.*;
 //import org.apache.log4j.Logger;
 import data.Task;
 //import org.apache.log4j.Level;
 
 
-import Operation.*;
 import storagecontroller.StorageManager;
 
 public class JIDLogic {

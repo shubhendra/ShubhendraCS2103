@@ -1,39 +1,54 @@
-package Operation;
+package operation;
 
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+
+import operation.Delete;
 
 import parser.Parser;
 import storagecontroller.StorageManager;
 import data.Task;
 
+
 public class Add extends Operation {
 	
+	private Task addedTask;
+	private String commandName;
+	public Add (String command)
+	{
+		commandName=command;
+		
+	}
+	public Add()
+	{
+		commandName="add";
+		
+	}
 	public Task[] execute (String userCommand)
 	{
 		String params=null;
-		
-		if (userCommand.startsWith("add"))
+		params = userCommand.toLowerCase().replaceFirst(commandName+" ","");		
+		Task newTask= parseCommand(params);
+		if (newTask!=null)
 		{
-			params = userCommand.toLowerCase().replace("add ","");
+			boolean isAdded = StorageManager.addTask(newTask);
+			if (isAdded) {
+				isUndoAble = true;
+				Task[] resultOfAdd = new Task[1];
+				resultOfAdd[0] = newTask;
+				return resultOfAdd;
+			} else {
+				return null;
+			}
 		}
-		else if (userCommand.startsWith("insert"))
-		{
-			params = userCommand.toLowerCase().replace("insert ","");		
-		}
-		Parser newParser=new Parser();
-		Task newTask= newParser.parse(params);
-		
-		
-		boolean isAdded = StorageManager.addTask(newTask);
-		if (isAdded) {
-			isundoable = true;
-			Task[] resultOfAdd = new Task[1];
-			resultOfAdd[0] = newTask;
-			return resultOfAdd;
-		} else {
+		else
 			return null;
-		}
+		
+	}
+	private Task parseCommand(String params) {
+		// TODO Auto-generated method stub
+		Parser newParser=new Parser();
+		return newParser.parse(params);
 		
 	}
 	@Override
@@ -45,25 +60,32 @@ public class Add extends Operation {
 	@Override
 	public Task[] undo() {
 		// TODO Auto-generated method stub
+		Task[] undone = new Task[1];
+		Delete deleteObj = new Delete();
+		if (deleteObj.delete(addedTask)) {
+			undone[0] = addedTask;
+			return undone;
+		}
 		return null;
+		
 	}
 
 	@Override
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
-		return false;
+		return isUndoAble;
 	}
 
 	@Override
 	public String getErrorMessage() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Task could not be added.";
 	}
 
 	@Override
 	public String getOperationName() {
 		// TODO Auto-generated method stub
-		return "add";
+		return commandName;
 	}
 	
 private static Logger logger = Logger.getLogger(Add.class);

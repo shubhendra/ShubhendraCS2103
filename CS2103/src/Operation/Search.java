@@ -1,9 +1,19 @@
-package Operation;
+package operation;
 
 import data.Task;
 
 public class Search extends Operation {
 	
+	private String commandName;
+	public Search(String intendedOperation) {
+		// TODO Auto-generated constructor stub
+		commandName=intendedOperation;
+	}
+	
+	public Search(){
+		commandName="search";
+	}
+
 	public Task[] execute(){
 		
 		

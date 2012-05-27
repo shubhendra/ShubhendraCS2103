@@ -1,9 +1,18 @@
-package Operation;
+package operation;
 
 import data.Task;
 
 public class Completed extends Operation{
 	
+	private String commandName;
+	public Completed(){
+		commandName="completed";
+	}
+	public Completed(String intendedOperation) {
+		// TODO Auto-generated constructor stub
+		commandName=intendedOperation;
+	}
+
 	public Task[] execute(){
 		return null;
 	}
