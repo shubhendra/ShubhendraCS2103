@@ -15,7 +15,7 @@ public class FileHandler
 	{
 		fileName=name;
 	}
-	public boolean writeToFile(TaskHashMap instance) throws FileNotFoundException
+	public boolean writeToFile(TaskHashMap instance) 
 	{
 		try
 		{
@@ -34,18 +34,24 @@ public class FileHandler
 			return false;
 		}
 	}
-	public boolean readFromFile(TaskHashMap instance) throws FileNotFoundException, ArrayIndexOutOfBoundsException
+	public boolean readFromFile(TaskHashMap instance) 
 	{
-		BufferedInputStream xmlIn=new BufferedInputStream(new FileInputStream(fileName));
-		XMLDecoder readFromXml=new XMLDecoder(xmlIn);
 		try
 		{
+		BufferedInputStream xmlIn=new BufferedInputStream(new FileInputStream(fileName));
+		XMLDecoder readFromXml=new XMLDecoder(xmlIn);
+		
 			Task obj;
 			while((obj=(Task)readFromXml.readObject())!=null)
 			{
 				instance.addTaskById(obj);
 			}
 			readFromXml.close();
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("File Not Found!");
+			return false;
 		}
 		catch(ArrayIndexOutOfBoundsException e)
 		{

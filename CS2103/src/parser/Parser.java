@@ -59,6 +59,15 @@ public class Parser {
 		return recurString;
 	}
 	
+	public String extractTaskId (String command)
+	{
+		
+		
+		return null;
+		
+		
+	}
+	
 	public String[] getLabels(String s) {
 		Pattern p = Pattern.compile(LABEL_REGEX);
 		Matcher m = p.matcher(s);

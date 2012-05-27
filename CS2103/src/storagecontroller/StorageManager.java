@@ -35,7 +35,7 @@ public class StorageManager
 	{
 		return liveStorage.getTaskById(id);
 	}
-	public static boolean loadFile() throws ArrayIndexOutOfBoundsException, FileNotFoundException
+	public static boolean loadFile()
 	{
 		FileHandler handler=new FileHandler("JotItDownDatabase.xml");
 		if(liveStorage.getKeySet().size()!=0)
@@ -54,7 +54,7 @@ public class StorageManager
 	{
 		return ((liveStorage.deleteTask(taskToBeReplaced)) && (liveStorage.addTask(taskToReplaceBy)));
 	}
-	public static void exportToTxt(String fileName) throws FileNotFoundException
+	public static void exportToTxt(String fileName)
 	{
 		FileHandler handler=new FileHandler(fileName);
 		handler.writeToFile(liveStorage);

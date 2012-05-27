@@ -1,6 +1,6 @@
 package Operation;
 
-import org.apache.log4j.Level;
+//import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 import parser.Parser;
@@ -11,13 +11,21 @@ public class Add extends Operation {
 	
 	public Task[] execute (String userCommand)
 	{
+		String params=null;
 		
-		String params = userCommand.toLowerCase().replace("add ","");
+		if (userCommand.startsWith("add"))
+		{
+			params = userCommand.toLowerCase().replace("add ","");
+		}
+		else if (userCommand.startsWith("insert"))
+		{
+			params = userCommand.toLowerCase().replace("insert ","");		
+		}
 		Parser newParser=new Parser();
 		Task newTask= newParser.parse(params);
 		
-		StorageManager handler=new StorageManager();
-		boolean isAdded = handler.addTask(newTask);
+		
+		boolean isAdded = StorageManager.addTask(newTask);
 		if (isAdded) {
 			isundoable = true;
 			Task[] resultOfAdd = new Task[1];
@@ -64,7 +72,7 @@ private static Logger logger = Logger.getLogger(Add.class);
         logger.info("hi");
     	Add adder=new Add();
     	
-    	Task[] abc=adder.execute("add 3/8/2012");
+    	Task[] abc=adder.execute("add *go to meet nirav weekly by 3.45pm 3/8/2012  @work @home");
     	if (abc[0]!=null)
     	System.out.println(abc[0].getName());
     }      
