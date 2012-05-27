@@ -13,7 +13,8 @@ public class Add extends Operation {
 	{
 		
 		String params = userCommand.toLowerCase().replace("add ","");
-		Task newTask= Parser.parseCommand(params);
+		Parser newParser=new Parser();
+		Task newTask= newParser.parse(params);
 		
 		StorageManager handler=new StorageManager();
 		boolean isAdded = handler.addTask(newTask);
@@ -54,32 +55,21 @@ public class Add extends Operation {
 	@Override
 	public String getOperationName() {
 		// TODO Auto-generated method stub
-		return null;
+		return "add";
 	}
 	
 private static Logger logger = Logger.getLogger(Add.class);
     
     public static void main(String[] args) {
         
-        long time = System.currentTimeMillis();
-        logger.info("main method called..");
-        logger.info("another informative message");
-        logger.warn("This one is a warning!");
-        logger.log(Level.TRACE, 
-                "And a trace message using log() method.");
-        long logTime = System.currentTimeMillis() - time;
-        
-        logger.debug("Time taken to log the previous messages: " 
-                + logTime + " msecs");
-
-        // Exception logging example:
-        try{
-        //    String subs = "hello".substring(6);
-        }catch (Exception e){
-            logger.error("Error in main() method:", e);
-        }      
+    	Add adder=new Add();
+    	
+    	Task[] abc=adder.execute("add 3/8/2012");
+    	if (abc[0]!=null)
+    	System.out.println(abc[0].getName());
+    }      
                
-    }
+    
 	
 	
 }

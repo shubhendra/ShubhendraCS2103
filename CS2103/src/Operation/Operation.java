@@ -51,9 +51,7 @@ public abstract class Operation {
 	}
 	
 	
-	protected Task[] execute(String userCommand){
-		return null;
-	}
+	public abstract Task[] execute(String userCommand);
 	
 	public abstract Task[] undo();
 		

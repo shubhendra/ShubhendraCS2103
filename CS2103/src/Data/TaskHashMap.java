@@ -30,7 +30,14 @@ public class TaskHashMap
 	{
 		String taskId;
 		Random random=new Random();
-		taskId=taskToBeAdded.getEndDateTime().generateDateCode()+taskToBeAdded.getEndDateTime().generateTimeCode()+(char)(random.nextInt('Z'-'A'+1)+'A');
+		if (taskToBeAdded.getEndDateTime()!=null){
+			taskId=taskToBeAdded.getEndDateTime().generateDateCode()+taskToBeAdded.getEndDateTime().generateTimeCode()+(char)(random.nextInt('Z'-'A'+1)+'A');
+			}
+		else
+		{
+			taskId=taskToBeAdded.getStartDateTime().generateDateCode()+taskToBeAdded.getStartDateTime().generateTimeCode()+(char)(random.nextInt('Z'-'A'+1)+'A');
+			
+		}
 		return taskId;
 	}
 	/** Member function to delete task
