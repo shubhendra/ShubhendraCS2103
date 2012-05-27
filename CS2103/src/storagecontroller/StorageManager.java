@@ -7,23 +7,22 @@ import java.util.ArrayList;
 
 public class StorageManager 
 {
-	private TaskHashMap liveStorage;
+	private static TaskHashMap liveStorage=new TaskHashMap();
 	public StorageManager()
 	{
-		liveStorage=new TaskHashMap();
 	}
 	
-	public boolean addTask(Task taskToBeAdded)
+	public static boolean addTask(Task taskToBeAdded)
 	{
 		return liveStorage.addTask(taskToBeAdded);
 		
 	}
-	public boolean deleteTask(Task taskToBeRemoved)
+	public static boolean deleteTask(Task taskToBeRemoved)
 	{
 		return liveStorage.deleteTask(taskToBeRemoved);
 			
 	}
-	public Task[] getAllTasks()
+	public static Task[] getAllTasks()
 	{
 		ArrayList<Task> tasks=new ArrayList<Task>();
 		for(String key: liveStorage.getKeySet())
@@ -32,18 +31,18 @@ public class StorageManager
 		tasks.toArray(taskArray);
 		return taskArray;
 	}	
-	public Task getTaskById(String id)
+	public static Task getTaskById(String id)
 	{
 		return liveStorage.getTaskById(id);
 	}
-	public boolean loadFile() throws ArrayIndexOutOfBoundsException, FileNotFoundException
+	public static boolean loadFile() throws ArrayIndexOutOfBoundsException, FileNotFoundException
 	{
 		FileHandler handler=new FileHandler("JotItDownDatabase.xml");
 		if(liveStorage.getKeySet().size()!=0)
 			liveStorage.clearHashMap();
 		return handler.readFromFile(liveStorage);
 	}
-	public boolean saveFile() throws FileNotFoundException
+	public static boolean saveFile() throws FileNotFoundException
 	{
 	FileHandler handler=new FileHandler("JotItDownDatabase.xml");
 	if(handler.writeToFile(liveStorage))
@@ -51,24 +50,24 @@ public class StorageManager
 	else 
 		return false;
 	}
-	public boolean replaceTask(Task taskToBeReplaced,Task taskToReplaceBy)
+	public static boolean replaceTask(Task taskToBeReplaced,Task taskToReplaceBy)
 	{
 		return ((liveStorage.deleteTask(taskToBeReplaced)) && (liveStorage.addTask(taskToReplaceBy)));
 	}
-	public void exportToTxt(String fileName) throws FileNotFoundException
+	public static void exportToTxt(String fileName) throws FileNotFoundException
 	{
 		FileHandler handler=new FileHandler(fileName);
 		handler.writeToFile(liveStorage);
 	}
-	public boolean deleteTask(String id)
+	public static boolean deleteTask(String id)
 	{
 		return liveStorage.deleteTaskById(id);
 	}
-	public boolean saveArchive()
+	public static boolean saveArchive()
 	{
 		return false;
 	}
-	public boolean clearArchive()
+	public static boolean clearArchive()
 	{
 		return false;
 	}
