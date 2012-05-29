@@ -15,12 +15,14 @@ import data.*;
  */
 public class ExpandJPanel extends javax.swing.JPanel {
 
+	AutoUpdateJTable autoJTable;
+	
     /**
      * Creates new form ExpandJPanel
      */
     public ExpandJPanel() {
         initComponents();
-        new AutoUpdateJTable(jTable1);
+        autoJTable = new AutoUpdateJTable(jTable1);
     }
 
     /**
@@ -82,5 +84,11 @@ public class ExpandJPanel extends javax.swing.JPanel {
     private javax.swing.JTable jTable1;
     
     // End of variables declaration
+    public void updateJTable(Task[] tasks) {
+    	autoJTable.updateJTable(tasks);
+    }
     
+    public void updateJTable() {
+    	autoJTable.updateJTable();
+    }
 }

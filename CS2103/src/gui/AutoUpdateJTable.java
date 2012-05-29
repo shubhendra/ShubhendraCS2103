@@ -14,6 +14,8 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
+import logic.JIDLogic;
+
 import data.DateTime;
 import data.Task;
 import data.TaskHashMap;
@@ -26,6 +28,7 @@ public class AutoUpdateJTable {
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
 		model = (DefaultTableModel) this.jTable.getModel();
+		updateJTable();
 		/*
 		SwingWorker<JTable, Void> worker = new SwingWorker<JTable, Void>() {
 
@@ -52,18 +55,18 @@ public class AutoUpdateJTable {
 		};
 		*/
 
+		/*
 		Timer timer = new Timer(2000, new ActionListener(){
-
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
-				updateJTable();
+				//updateJTable();
 				//System.out.println(listLabel.get(0).toString());
 			}
-			
 		});
 		timer.start();
 		timer.setRepeats(true);
+		*/
 		
 	}
 	
@@ -75,49 +78,79 @@ public class AutoUpdateJTable {
 		for(int i=0; i<listLabel.size(); i++) {
 			model.addRow(new Object[]{listLabel.get(i)});
 		}
-		System.out.println(listLabel.toString());
 	}
 	
 
     private void makeJLabel(Task task) {
-    	task = new Task("test");
-    	
     	String str;
     	
     	str = "<HTML><b>";
-    	if(task.getImportant())
-    		str+= "<color = \"red\">";
+    	if(task.getImportant()) {
+    		str += "<font color=\"red\">";
+    	}
     	str += task.getName();
-    	str += "</br></b>";
+    	str += "<br/></b>";
     	if(task.getDescription()!= null)
     		str+=task.getDescription();
     	if(task.getStartDateTime()!= null) {
-    		str+="<i>start</i>"+task.getStartDateTime().formattedToString();
+    		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
     	}
     	if(task.getEndDateTime()!=null) {
-    		str+="<i>end</i>"+task.getEndDateTime().formattedToString();
+    		str+="<i> end: </i>"+task.getEndDateTime().presentableToString();
     	}
     	str += "</HTML>";
+    	
     	listLabel.add(str);
     }
     
-    private void makeAllJLabel(TaskHashMap taskHashMap) {
-    	int length = 0;
-    	for(int i=0; i<length; i++) {
-    		makeJLabel(new Task());
+    private void makeAllJLabel(Task[] tasks) {
+    	
+    	for(int i=0; i<tasks.length; i++) {
+    		makeJLabel(tasks[i]);
     	}
     }
     
-    private void updateJTable() {
-    	//retrieve TaskHashMap
-    	listLabel = new Vector<String>();
-    	TaskHashMap taskHashMap = new TaskHashMap();
-    	makeAllJLabel(taskHashMap);
-    	setAppearance();
+    
+    public void updateJTable() {
+
+    	Timer timer = new Timer(100, new ActionListener(){
+
+    	  		@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+		    	listLabel = new Vector<String>();
+		    	JIDLogic.setCommand("find");
+		    	Task[] tasks = JIDLogic.executeCommand("find *.*");
+		    	makeAllJLabel(tasks);
+		    	setAppearance();
+		    	}
+			});
+    	timer.setRepeats(false);
+    	timer.start();
+    	
+    }
+    
+    public void updateJTable(final Task[] tasks) {
+    	Timer timer = new Timer(100, new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+
+		    	if(tasks==null)
+		    		while(model.getRowCount()>0)
+		    			model.removeRow(0);
+		    	else {
+			    	listLabel = new Vector<String>();
+			    	makeAllJLabel(tasks);
+			    	setAppearance();
+		    	}
+			}});
+    	timer.setRepeats(false);
+    	timer.start();
     }
     
     class MyRenderer extends DefaultTableCellRenderer {
-
     	  /*
     	   * @see TableCellRenderer#getTableCellRendererComponent(JTable, Object, boolean, boolean, int, int)
     	   */
@@ -128,5 +161,4 @@ public class AutoUpdateJTable {
     		return label;   
     	  }
     }
-
 }

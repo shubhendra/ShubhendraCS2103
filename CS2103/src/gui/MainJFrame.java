@@ -6,6 +6,8 @@ package gui;
 
 import logic.JIDLogic;
 
+import com.seaglasslookandfeel.*;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -30,6 +32,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
+import java.util.ArrayList;
 import java.util.Vector;
 
 import javax.swing.plaf.basic.BasicComboBoxEditor;
@@ -46,11 +49,11 @@ import data.TaskArrayList;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
-	private JIDLogic jLogic= new JIDLogic();
+  	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST};
+   STATE curState;
+   STATE prevState = STATE.NULL;
 
-  	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL};
-	
-    // Variables declaration - do not modify
+   // Variables declaration - do not modify
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -71,11 +74,11 @@ public class MainJFrame extends javax.swing.JFrame {
      */
     public MainJFrame() {
     	 try {
-             UIManager.setLookAndFeel(
-                 UIManager.getSystemLookAndFeelClassName());
+    		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
              /*for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                  if ("Nimbus".equals(info.getName())) {
                      javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                     UIManager.
                      break;
                  }
              }*/
@@ -184,6 +187,8 @@ public class MainJFrame extends javax.swing.JFrame {
         setUndecorated(true);
         setSize(400,100);
         //pack();
+
+        
     }// </editor-fold>
 
 
@@ -280,14 +285,14 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 		        jLabel2.setIcon( Resource.exitOn );
-		//        MainJFrame.this.revalidate();
+		        MainJFrame.this.revalidate();
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 				jLabel2.setIcon( Resource.exitImg );
-		  //      MainJFrame.this.revalidate();
+		        MainJFrame.this.revalidate();
 			}
 
 		});
@@ -324,50 +329,80 @@ public class MainJFrame extends javax.swing.JFrame {
     	});
     	
     	editorcomp.addKeyListener(new KeyListener() {
+
+
+
+			
 			@Override
 			public void keyPressed(KeyEvent arg0) {
 				// TODO Auto-generated method stub
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
-				    	  int curIndex;
-				    	  String curText;
-				    	  String command;
-				    	   STATE curState;
-				    	   STATE prevState = STATE.NULL;
+					    	int curIndex;
+					    	String command;
+					    	String curText;
 				    	   boolean edit = false;
 				    	   Task[] tasks;
-				    	   
 							@Override
 							public void run() {
-								curText = editorcomp.getText();
-								curState = checkCommand(curText);
-								curIndex = getIndex();
-								System.out.println(curText);
-								System.out.println(command);
-								System.out.println(curState);
-								System.out.println(prevState);
-								System.out.println(curIndex);
-								
+
+						    	curText = editorcomp.getText();
+								jBoxCompletion.stopWorking();
+								//curText= editorcomp.getText();
+								curState= checkCommand(curText);curIndex= getIndex();
+								System.out.println("curText:" + curText);
+								System.out.println("cmd: " + command);
+								System.out.println("state: " +curState);
+								System.out.println("prev: " +prevState);
+								System.out.println("index: "+ curIndex);
+
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
 								}
 								
 								if(curState == STATE.NULL && curState!=prevState) {
 									jBoxCompletion.setStandardModel();
-									jBoxCompletion.startWorking();
+									//jBoxCompletion.startWorking();
+									jComboBox1.setSelectedIndex(-1);
 								}
 								
-								if(curState == STATE.EDIT
+								if((curState == STATE.EDIT
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
-									|| curState == STATE.COMPLETED) {
+									|| curState == STATE.COMPLETED)
+									&& curText.length() > curState.toString().length() +1
+									&& (e.getKeyCode() == KeyEvent.VK_BACK_SPACE || !e.isActionKey())) {
+									 SwingUtilities.invokeLater(
+										       new Runnable() {
 
-									//execute command
-									//update combobox
+												@Override
+												public void run() {
+													// TODO Auto-generated method stub
+													
+													int curLocation = editorcomp.getText().length();
+
+													System.out.println("***enter interstate: ");
+													
+													JIDLogic.setCommand(curState.toString());
+													
+													tasks = JIDLogic.executeCommand(curText);
+
+													jBoxCompletion.stopWorking();													
+													jBoxCompletion.setNewModel(taskArrayToString(tasks));
+
+													System.out.println("alltasks" + taskArrayToString(tasks).toString() +"endtasks");
+													jComboBox1.setPopupVisible(true);
+													
+													jComboBox1.setSelectedIndex(-1);
+													editorcomp.setText(curText);
+												} 
+										         
+										       }
+										    );
 								}
-								
-								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+
+								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									switch (curState ){
 									case DELETE:
@@ -391,11 +426,47 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 										break;
 									case SEARCH:
-										//update table below
+										exeCmd = curText;
+										break;
+									case LIST:
+										exeCmd = curText;
+									}
+									
+									System.out.println("exeCmd: " + exeCmd);
+									JIDLogic.setCommand(curState.toString());
+									tasks = JIDLogic.executeCommand(exeCmd);
+									
+									switch(curState) {
+									case DELETE:
+									case COMPLETED:
+									case ADD:
+									case EDIT:
+										if(!edit) {
+											if(tasks!=null) {
+												showPopup(taskToString(tasks[0]) + " " +  curState.toString());
+												expandJPanel.updateJTable();
+											}else
+												showPopup("invalid input");
+										}
+									break;									
+									case SEARCH:
+										expandJPanel.updateJTable(tasks);
+										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+											MainJFrame.this.setLayout(new BorderLayout());
+											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
+											MainJFrame.this.setSize(400,400);
+										}
+									break;
+									case LIST:
+										expandJPanel.updateJTable();
+										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+											MainJFrame.this.setLayout(new BorderLayout());
+											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
+											MainJFrame.this.setSize(400,400);
+										}
 										break;
 									}
-									System.out.println("exeCmd: " + exeCmd);
-									tasks = jLogic.executeCommand(exeCmd);
+									
 									if(tasks==null)
 										System.out.println("error");
 									else
@@ -412,27 +483,29 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								String selected = (String)jComboBox1.getItemAt(idx);
 								
-								if(curText.length() <= selected.length() 
-										&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
+						//		if(curText.length() <= selected.length() 
+							//			&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
 									return idx;
 								
-								return -1;
+							//	return -1;
 							}
 
-							private String[] TaskArrayToString (Task[] tasks) {
-								Vector<String> strings = new Vector<String>();
+							private String[] taskArrayToString (Task[] tasks) {
+								String[] strings = new String[tasks.length];
 								for(int i=0; i<tasks.length; i++)
-									strings.add(TaskToString(tasks[i]));
-								return (String[]) strings.toArray();
+									strings[i]= curState.toString() + " " + taskToString(tasks[i]);
+								
+								System.out.println("str[0]: "+strings[0]);
+								return strings;
 							}
 							
-							private String TaskToString(Task task) {
+							private String taskToString(Task task) {
 								String str = new String();
 								str = task.getName() ;
 								if(task.getStartDateTime() != null)
-									str += " start:" + task.getStartDateTime().formattedToString();
+									str += " start:" + task.getStartDateTime().presentableToString();
 								if(task.getEndDateTime() != null)
-									str += " end:" + task.getEndDateTime().formattedToString();
+									str += " end:" + task.getEndDateTime().presentableToString();
 								return str;
 							}
 							
@@ -459,9 +532,11 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.ARCHIVE;
 								if(firstWord.equalsIgnoreCase("overdue"))
 									return STATE.OVERDUE;
+								if(firstWord.equalsIgnoreCase("list"))
+									return STATE.LIST;
 								return STATE.NULL;
 							} 
-						         
+
 				      } );
 				}
 				
@@ -537,10 +612,12 @@ public class MainJFrame extends javax.swing.JFrame {
 	private void showPopup(String str) {
 		if(popup == null) {
 			popup = new TopPopUp();
-			popup.setLocation(this.getLocation().x , this.getLocation().y - 30);
 		}
+
 			popup.setText(str);
+			popup.setPosition(this.getLocation().x , this.getLocation().y -30 );
 			popup.showBox();
+			
 	}
 	
 	public void showFrame() {
@@ -569,7 +646,7 @@ public class MainJFrame extends javax.swing.JFrame {
 						MainJFrame.this.setVisible(false);
 					} 
 			         
-			       }
+			     }
 			    );
 	}
 	
