@@ -8,7 +8,7 @@ public abstract class Operation {
 	
 	
 	
-	boolean isUndoAble=false;
+	protected boolean isUndoAble=false;
 	
 	public static Operation getOperationObj(String userCommand)
 	{

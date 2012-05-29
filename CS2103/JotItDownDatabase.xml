@@ -32,33 +32,6 @@
   </void> 
  </object> 
  <object class="data.Task"> 
-  <void property="deadline"> 
-   <boolean>true</boolean> 
-  </void> 
-  <void property="description"> 
-   <null/> 
-  </void> 
-  <void property="endDateTime"> 
-   <object class="data.DateTime"> 
-    <void property="hasTime"> 
-     <boolean>true</boolean> 
-    </void> 
-    <void property="timeMilli"> 
-     <long>1367567100000</long> 
-    </void> 
-   </object> 
-  </void> 
-  <void property="name"> 
-   <string>go to meet me </string> 
-  </void> 
-  <void property="recurring"> 
-   <string>weekly</string> 
-  </void> 
-  <void property="taskId"> 
-   <string>$$__03-05-2013154500W__$$</string> 
-  </void> 
- </object> 
- <object class="data.Task"> 
   <void property="description"> 
    <null/> 
   </void> 
@@ -133,21 +106,18 @@
      <boolean>true</boolean> 
     </void> 
     <void property="timeMilli"> 
-     <long>1367567100000</long> 
+     <long>1338795900000</long> 
     </void> 
    </object> 
   </void> 
-  <void property="important"> 
-   <boolean>true</boolean> 
-  </void> 
   <void property="name"> 
-   <string>go to meet bhairav </string> 
+   <string>go to ra 3/5/2013 </string> 
   </void> 
   <void property="recurring"> 
    <string>weekly</string> 
   </void> 
   <void property="taskId"> 
-   <string>$$__03-05-2013154500C__$$</string> 
+   <string>$$__04-06-2012154500C__$$</string> 
   </void> 
  </object> 
  <object class="data.Task"> 

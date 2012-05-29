@@ -36,6 +36,7 @@ public class BaseSearch extends Operation{
 				if (result!=null)
 				{
 					Collections.addAll(foundTasks, result);
+					logger.debug("Result Added");
 				}
 				
 				

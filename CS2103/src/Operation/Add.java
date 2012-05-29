@@ -33,6 +33,7 @@ public class Add extends Operation {
 			if (isAdded) {
 				isUndoAble = true;
 				Task[] resultOfAdd = new Task[1];
+				addedTask=newTask;
 				resultOfAdd[0] = newTask;
 				return resultOfAdd;
 			} else {
@@ -60,11 +61,16 @@ public class Add extends Operation {
 		// TODO Auto-generated method stub
 		Task[] undone = new Task[1];
 		Delete deleteObj = new Delete();
+		logger.debug("task to be deleted name:"+addedTask.getName());
 		if (deleteObj.delete(addedTask)) {
+			logger.debug("Task deleted");
 			undone[0] = addedTask;
 			return undone;
+		
 		}
+		logger.debug("Task not deleted");
 		return null;
+		
 		
 	}
 

@@ -39,6 +39,7 @@ public class Delete extends BaseSearch {
 		boolean deleted = delete(taskToDelete);
 		if (deleted) {
 			isUndoAble = true;
+			logger.debug("isUndoAble value changed" );
 			taskDeleted = taskToDelete;
 			Task[] resultOfDelete = new Task[1];
 			resultOfDelete[0] = taskToDelete;

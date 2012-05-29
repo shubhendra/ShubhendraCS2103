@@ -34,6 +34,7 @@ public class Modify extends BaseSearch{
 			if(isEdited)
 			{
 				isUndoAble=true;
+				
 				oldTask=taskBeingEdited;
 				newTask=taskToBeEdited;
 				taskBeingEdited=null;
@@ -65,7 +66,7 @@ public class Modify extends BaseSearch{
 	@Override
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
-		return false;
+		return isUndoAble;
 	}
 
 	@Override
