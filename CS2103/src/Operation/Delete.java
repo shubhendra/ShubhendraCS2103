@@ -35,6 +35,7 @@ public class Delete extends BaseSearch {
 		Task taskToDelete = StorageManager
 				.getTaskById(taskToBeDeleted.getTaskId());
 
+		
 		boolean deleted = delete(taskToDelete);
 		if (deleted) {
 			isUndoAble = true;

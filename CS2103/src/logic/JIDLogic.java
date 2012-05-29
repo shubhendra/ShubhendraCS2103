@@ -54,7 +54,7 @@ public class JIDLogic {
     		}
 	    	*/
 	    
-	    	Delete deleter=new Delete();
+	    	
 	    	command="delete";
 	    	Task[] xyz=executeCommand("delete meet");
 	    	if (xyz!=null)

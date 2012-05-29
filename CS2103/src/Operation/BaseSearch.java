@@ -25,11 +25,11 @@ public class BaseSearch extends Operation{
 		{
 			logger.debug("going to the id part");
 			logger.debug(extractedTaskIds[0]);
-			logger.debug(extractedTaskIds[0].toUpperCase());
+			
 			//userCommand=userCommand.replace(extractedTaskIds[0],"");
 			for(int i=0;i<extractedTaskIds.length;i++)
 			{
-				Task t=StorageManager.getTaskById(extractedTaskIds[i].toUpperCase());
+				Task t=StorageManager.getTaskById(extractedTaskIds[i]);
 				
 				Task[] result=execute(t);
 				
@@ -69,10 +69,14 @@ public class BaseSearch extends Operation{
 		// TODO Auto-generated method stub
 		
 		Parser newparser= new Parser();
-		String[] abc= new String[]{newparser.fetchTaskId(params)};
-		if (abc[0]=="" || abc[0]==null)
+		
+		String[] extractedId= new String[] {newparser.fetchTaskId(params.toUpperCase())};
+		if (extractedId[0]!=null)
+			return extractedId;
+		else
 			return null;
-		return abc;
+		
+		
 		
 	}
 
