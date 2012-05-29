@@ -1,5 +1,8 @@
 package operation;
 
+import parser.Parser;
+import storagecontroller.StorageManager;
+
 import data.Task;
 
 public class Search extends Operation {
@@ -53,7 +56,26 @@ public class Search extends Operation {
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
+
+		String params = "";
+		if (userCommand.startsWith("find ")) {
+			params = userCommand.replace("find ", "");
+		} else if (userCommand.startsWith("search ")) {
+			params = userCommand.replace("search ", "");
+		}
+		if (params.toLowerCase().contains("*.*")) {
+			return returnAllTasks(params);
+		}
+		//Event findEvent = Parser.parseEvent(params);
+		//return find(findEvent);
+		
 		return null;
+	}
+
+	private Task[] returnAllTasks(String params) {
+		// TODO Auto-generated method stub
+		return StorageManager.getAllTasks();
+		//return null;
 	}
 
 	public Task[] search(Task findTask) {
