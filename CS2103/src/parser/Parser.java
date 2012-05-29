@@ -1,13 +1,15 @@
 package parser;
 
-
-import java.util.Arrays;
-import java.util.List;
-
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 import data.DateTime;
 import data.Task;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Vector;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Parser {
 	/*
@@ -16,25 +18,22 @@ public class Parser {
 		return null;
 	}*/
 	
-	/*
-	 * make all helper functions non static
-	 */
-	private final    String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
-	private final    String LABEL_REGEX = "@(\\w+)";
+	private final  String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
+	private final  String LABEL_REGEX = "@(\\w+)";
+	private final String ID_REGEX = "($$__)(\\d+)(__$$)"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
 	
-	private   boolean important;
-	private   boolean deadline;
-	private   DateTime startDateTime;
-	private   DateTime endDateTime;
-	private   String recurring = null;
-	private List<String> labelList = null;
-	private   String taskDetails=null;
+	boolean important;
+	boolean deadline;
+	DateTime startDateTime, endDateTime;
+	String recurring = null;
+	List<String> labelList = null;
+	String taskDetails=null;
 	
-	private    String removeExtraSpaces (String s) {
+	public  String removeExtraSpaces (String s) {
 		return s.replaceAll("\\s+", " ");
 	}
 	
-	public   boolean markImportant (String s) {
+	public boolean markImportant (String s) {
 		if (s.startsWith("*")){
 			//s = s.replace('*', '\0');
 			//s = s.trim();
@@ -44,7 +43,7 @@ public class Parser {
 		return false;
 	}
 	
-	private   String getRecurString (String s) {
+	public String getRecurString (String s) {
 		Pattern p = Pattern.compile(RECUR_REGEX);
 		Matcher m = p.matcher(s);
 		
@@ -60,26 +59,7 @@ public class Parser {
 		return recurString;
 	}
 	
-	public   String extractTaskId (String command)
-	{
-		
-		
-		return null;
-		
-		
-	}
-	
-
-	public   String[] extractTaskIds (String command)
-	{
-		
-		
-		return null;
-		
-		
-	}
-	
-	private   String[] getLabels(String s) {
+	public String[] getLabels(String s) {
 		Pattern p = Pattern.compile(LABEL_REGEX);
 		Matcher m = p.matcher(s);
 		String labelString = null;
@@ -96,7 +76,7 @@ public class Parser {
 		return labelArr;
 	}
 	
-	private   void setDateTimeAttributes () {
+	public void setDateTimeAttributes () {
 		TimeParser t = new TimeParser();
 		DateParser d = new DateParser();
 		boolean startDateTimeExists, endDateTimeExists;
@@ -129,15 +109,46 @@ public class Parser {
 			System.out.println("end date time: "+endDateTime.formattedToString());
 	}
 	
-	private   void setDeadline () {
+	public void setDeadline () {
 		if (startDateTime==null && endDateTime!=null)
 			deadline=true;
+		
 	}
 	
-	public   Task parse (String inputS) {
+	/*
+	 * NOT TESTED!
+	 */
+	public String fetchTaskId (String inputS) {
+		String Id = null;
+		Pattern p = Pattern.compile(ID_REGEX);
+		Matcher m = p.matcher(inputS);
+		
+		if(m.matches())
+			Id = m.group();
+		
+		return Id;
+	}
+	
+	/*
+	 * NOT TESTED!
+	 */
+	public String[] fetchTaskIds (String inputS) {
+		String[] Ids = null;
+		int i=0;
+		Pattern p = Pattern.compile(ID_REGEX);
+		Matcher m = p.matcher(inputS);
+		
+		while (m.find()) {
+			Ids[i] = m.group();
+			i++;
+		}
+			
+		return Ids;
+	}
+	
+	public Task parse (String inputS) {
 		
 		inputS = inputS.trim();
-		
 		
 		/*
 		 * markImportant
@@ -148,12 +159,10 @@ public class Parser {
 			inputS = inputS.trim();
 		}
 		
-		
-		
 		/*
-		 * recurring 
+		 * recurring ?
 		 */	
-		recurring = getRecurString (inputS);
+		String recurring = getRecurString (inputS);
 		
 		if (recurring != null)
 			System.out.println("this task is "+recurring);
@@ -165,9 +174,7 @@ public class Parser {
 		inputS = inputS.trim();
 		
 		System.out.println("left over string after checking for recurring: "+inputS);
-		
-		
-		
+				
 		/*
 		 * setLabels
 		 */
@@ -183,9 +190,6 @@ public class Parser {
 			}
 			System.out.println("left over string after fetching labels: "+inputS);
 		}
-		//--------YET TO SET TO LIST-------
-		//labelList = toList(labelVector);
-		
 		
 		
 		TimeParser timeParser = new TimeParser(inputS);
@@ -196,14 +200,17 @@ public class Parser {
 			System.out.println("time/date NOT extracted!");
 		
 		
-
 		System.out.println();
 		System.out.println();
 		setDateTimeAttributes();
+		
+		
 		if(important)
 			System.out.println("is important!");
 		else
 			System.out.println("is NOT important!");
+		
+		
 		
 		if(recurring!=null)
 			System.out.println("has to be done: "+recurring);
@@ -219,16 +226,16 @@ public class Parser {
 		else
 			System.out.println("this task does NOT have deadline you numbskull!");
 		
-		labelList = Arrays.asList(labelArr);
+		List<String> labelList = Arrays.asList(labelArr);
 		
-		taskDetails = timeParser.getinputCommand();
-		
+		taskDetails = inputS;
 		
 		Task t = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring);
 		t.setDeadline(deadline);
-		
+		System.out.println(t.getTaskId());
 		return t;
 	}
+	
+	
 
 }
-

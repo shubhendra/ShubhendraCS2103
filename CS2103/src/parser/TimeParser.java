@@ -82,13 +82,7 @@ public class TimeParser {
 	}
 	
 	public boolean extractStartEnd () {
-		/*
-		final String AT_TIME = "((at)|(AT))[ ](((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9]))";
-		final String BY_TIME = "((by)|(BY))[ ](((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9]))";
-		final String TO_TIME = "((to)|(TO))[ ](((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9]))";
-		final String FROM_TIME_TO_TIME = "(((from)|(FROM))[ ](((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9])))[ ](((to)|(TO))[ ](((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9])))";
-		final String TIME_TO_TIME = "((((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9])))[ ](((to)|(TO))[ ](((1[012]|(0?[1-9]))([:.][0-5][0-9])?(\\s)?(?i)(am|pm))|(([01]?[0-9]|2[0-3])[:.]?[0-5][0-9])))";
-		*/
+	
 		final String AT_TIME = "((at)|(AT))("+TIME_12_OR_24_PATTERN+")";
 		final String BY_TIME = "((by)|(BY))("+TIME_12_OR_24_PATTERN+")";
 		final String TO_TIME = "((to)|(TO))("+TIME_12_OR_24_PATTERN+")";
@@ -111,9 +105,18 @@ public class TimeParser {
 			System.out.println("dummytimeString:"+dummyTime);
 			System.out.println("group1:"+matcher.group(1));
 			System.out.println("group2:"+matcher.group(2));
+			
 			/*
-			 * meeting at 5 pm 
+			 * cases to be implemented:
+			 * 1. input cases for search results
+			 * 2. today/tmr
+			 * 3. weekdays
+			 * 4. without date/time
+			 * 5. 2 dates
+			 * 
+			 * Also, if startDateTime > endDateTime, swap them!
 			 */
+			
 			if ( (inputS.contains("at") || inputS.contains("AT") ) && ( (matcher.start() - 2) == inputS.indexOf("at") || (matcher.start() - 2) == inputS.indexOf("AT") ) ) {
 				startTimeString = dummyTime;
 				inputS = inputS.replaceFirst(AT_TIME, "");
@@ -288,6 +291,24 @@ public class TimeParser {
 				
 				//setTime (startTimeString, endTimeString);
 				return true;
+			}
+			
+			/*
+			 * for different cases for searching, first check if m.start() == index of(0) of input String {no task details given as such}
+			 * Q: where do u store the input date/time in? start/end?
+			 * 
+			 * also, for the case of if first entry is just date, declare a date time object before the testing of conditions
+			 */
+			
+			else if (dummyTime != null) {
+				//dummyTime != null and dummyDate = null, check for today/tmr and weekdays and bla bla)
+				final String TODAY_REGEX = "(?i)(today)";
+				final String TOMORROW_REGEX = "(?i)(tmr|tomorrow)";
+				final String WEEKDAY_REGEX = "(?i)(mon|monday|tue|tuesday|wed|wednesday|thu|thursday|fri|friday|sat|saturday|sun|sunday)";
+				
+				/*
+				 * a gregorian calender instance for checking current day
+				 */
 			}
 			
 			/*
