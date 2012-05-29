@@ -8,6 +8,7 @@ import operation.*;
 import data.Task;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import gui.UIController;
 
 import storagecontroller.StorageManager;
 
@@ -16,7 +17,7 @@ public class JIDLogic {
 		private static Logger logger=Logger.getLogger(JIDLogic.class);
 		public static void main(String[] args) {
 	        //logger.info("hi");
-			
+			/*
 			System.out.println(StorageManager.loadFile());
 	    	Add adder=new Add();
 	    	
@@ -35,7 +36,12 @@ public class JIDLogic {
 	    		System.out.println(xyz[3].getTaskId());
 	    		System.out.println(xyz[2].getTaskId());
 	    	}
-	    	System.out.println(StorageManager.saveFile());
+	    	System.out.println(StorageManager.saveFile());*/
+			
+			JIDLogic_init();
+			UIController ui=new UIController();
+			
+			
 		
 	}
 	private static Stack<Operation> undoStack= new Stack<Operation>();
@@ -81,7 +87,19 @@ public class JIDLogic {
 		
 		}
 		
+	public static void JIDLogic_init()
+	{
+		
+		StorageManager.loadFile();
+		
+	}
 	
+	public static void JIDLogic_close()
+	{
+		
+		StorageManager.saveFile();
+		
+	}
 
 	/**
 	 * Sets the view to the specified value

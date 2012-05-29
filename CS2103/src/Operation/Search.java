@@ -58,18 +58,24 @@ public class Search extends Operation {
 		// TODO Auto-generated method stub
 
 		String params = "";
-		if (userCommand.startsWith("find ")) {
-			params = userCommand.replace("find ", "");
-		} else if (userCommand.startsWith("search ")) {
+		if (userCommand.startsWith("search ")) {
 			params = userCommand.replace("search ", "");
+		} else if (userCommand.startsWith("find ")) {
+			params = userCommand.replace("find ", "");
 		}
 		if (params.toLowerCase().contains("*.*")) {
 			return returnAllTasks(params);
 		}
-		//Event findEvent = Parser.parseEvent(params);
+		Task parsedTask=parserTask(params);
 		//return find(findEvent);
 		
 		return null;
+	}
+
+	private Task parserTask(String params) {
+		// TODO Auto-generated method stub
+		Parser newParser=new Parser();
+		return newParser.parseForSearch(params);
 	}
 
 	private Task[] returnAllTasks(String params) {

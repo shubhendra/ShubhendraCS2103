@@ -30,7 +30,7 @@ public class UIController {
 	static SystemTray tray = SystemTray.getSystemTray();
 	
 	
-	UIController() {
+	public UIController() {
 		initializeTray();
 		Reminder reminder = new Reminder(tray);
 	}

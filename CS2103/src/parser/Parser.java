@@ -43,6 +43,12 @@ public class Parser {
 		return false;
 	}
 	
+	
+	public Task parseForSearch(String commad)
+	{
+		
+		return null;
+	}
 	public String getRecurString (String s) {
 		Pattern p = Pattern.compile(RECUR_REGEX);
 		Matcher m = p.matcher(s);

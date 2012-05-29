@@ -60,7 +60,7 @@ public class BaseSearch extends Operation{
 		// TODO Auto-generated method stub
 		
 		Parser newparser= new Parser();
-		return newparser.extractTaskIds(params);
+		return newparser.fetchTaskIds(params);
 		
 	}
 
