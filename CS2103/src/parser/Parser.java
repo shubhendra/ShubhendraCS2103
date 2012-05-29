@@ -133,7 +133,7 @@ public class Parser {
 		Pattern p = Pattern.compile(ID_REGEX);
 		Matcher m = p.matcher(inputS);
 		
-		if(m.matches())
+		if(m.find())
 			id = m.group();
 		
 		return id;

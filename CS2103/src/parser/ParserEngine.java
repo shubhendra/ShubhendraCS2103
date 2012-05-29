@@ -4,8 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import org.apache.log4j.Logger;
+
 public class ParserEngine {
 	
+	private static Logger logger= Logger.getLogger(ParserEngine.class);
 
 	public static void main (String args[]) {
 		
@@ -24,7 +27,7 @@ public class ParserEngine {
 		
 		Parser parserObject = new Parser();
 		
-		parserObject.parse(inputString);
+		logger.debug(parserObject.fetchTaskId(inputString));
 		
 		/*
 		DateParser dpObject = new DateParser();

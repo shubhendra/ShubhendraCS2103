@@ -1,6 +1,8 @@
 package logic;
 
 //import java.io.FileNotFoundException;
+import gui.UIController;
+
 import java.util.Stack;
 
 import operation.*;
@@ -56,7 +58,7 @@ public class JIDLogic {
 	    
 	    	
 	    	command="delete";
-	    	Task[] xyz=executeCommand("delete meet");
+	    	Task[] xyz=executeCommand("modify meet");
 	    	if (xyz!=null)
 	    	logger.debug("printing search"+ xyz.length);
 	    	if (xyz!=null)
@@ -66,13 +68,18 @@ public class JIDLogic {
 	    			System.out.println(xyz[i].getTaskId());
 	    		}
 	    	}
+	    	
 	    	//logger.debug(StorageManager.saveFile());
-	    	Task[] efg=executeCommand("delete $$__03-05-2013154500I__$$");
+	    	executeCommand("edit $$__03-05-2013154500I__$$" );
+	    	
+	    	Task efg[]=executeCommand("edit go to meet me weekly by 3.45pm 3/5/2013  @work @home");
+	    	
+	    	
 	    	if (efg!=null)
 	    	{
 	    		for (int i=0;i<efg.length;i++)
 	    		{
-	    			System.out.println(efg[i].getTaskId());
+	    			System.out.println(efg[i].getName());
 	    		}
 	    	}
 	    	def=executeCommand("find *.*");
@@ -80,10 +87,10 @@ public class JIDLogic {
 	    	{
 	    		for (int i=0;i<def.length;i++)
 	    		{
-	    			System.out.println(def[i].getTaskId());
+	    			System.out.println(def[i].getName());
 	    		}
 	    	}
-	    	
+	    	logger.debug(StorageManager.saveFile());
 			/*
 			JIDLogic_init();
 			UIController ui=new UIController();
