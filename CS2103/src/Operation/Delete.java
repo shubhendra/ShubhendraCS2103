@@ -1,12 +1,15 @@
 package operation;
 
 
+import org.apache.log4j.Logger;
+
 import storagecontroller.StorageManager;
 
 import data.Task;
 
 public class Delete extends BaseSearch {
 	
+	private Logger logger=Logger.getLogger(Delete.class);
 	private Task taskDeleted;
 	public Delete(){
 		commandName="delete";
@@ -38,6 +41,7 @@ public class Delete extends BaseSearch {
 			taskDeleted = taskToDelete;
 			Task[] resultOfDelete = new Task[1];
 			resultOfDelete[0] = taskToDelete;
+			logger.debug("deleted succesfully");
 			return resultOfDelete;
 		}
 
@@ -80,11 +84,7 @@ public class Delete extends BaseSearch {
 		return commandName;
 	}
 
-	@Override
-	public Task[] execute(String userCommand) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	
 
 }

@@ -394,3 +394,1446 @@
 2012-05-29 18:05:08,661 - logic.JIDLogic - DEBUG - printing search3
 2012-05-29 18:05:08,664 - Abc - DEBUG - 6
 2012-05-29 18:05:08,716 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:07:51,356 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:07:51,360 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:07:51,369 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:07:51,370 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:07:51,371 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:07:51,383 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:07:51,385 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:07:51,385 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:07:51,385 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:07:51,385 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:07:51,386 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:07:51,386 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 18:07:51,389 - Abc - DEBUG - 6
+2012-05-29 18:07:51,433 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:08:14,594 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:08:14,597 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:08:14,605 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:08:14,605 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:08:14,606 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:08:14,627 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:08:14,628 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:08:14,628 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:08:14,628 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:11:27,737 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:11:27,740 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:11:27,748 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:11:27,748 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:11:27,750 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:11:27,759 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:11:27,760 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:11:27,760 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:11:27,767 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:12:38,681 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:12:38,684 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:12:38,693 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:12:38,693 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:12:38,695 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:12:38,708 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:12:38,710 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:12:38,710 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:12:38,710 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:12:38,711 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:12:38,711 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:12:38,714 - Abc - DEBUG - 6
+2012-05-29 18:12:38,762 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:16:10,766 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:16:10,770 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:16:10,779 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:16:10,779 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:16:10,779 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:17:11,804 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:17:11,808 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:17:11,816 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:17:11,817 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:17:11,817 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:17:11,817 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:17:11,818 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:17:11,819 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:17:11,820 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:17:11,820 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:17:11,821 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:17:11,848 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:17:11,848 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:17:11,849 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:17:11,849 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:17:11,849 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:17:11,853 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:17:11,853 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:17:11,856 - Abc - DEBUG - 6
+2012-05-29 18:17:11,908 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:17:43,076 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:17:43,080 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:17:43,089 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:17:43,090 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:17:43,090 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:17:43,091 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:17:43,091 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:17:43,093 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:17:43,094 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:17:43,094 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:17:43,096 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:17:43,111 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:17:43,111 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:17:43,112 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:17:43,112 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:17:43,112 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:17:43,115 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:17:43,115 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:17:43,118 - Abc - DEBUG - 6
+2012-05-29 18:17:43,159 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:18:39,097 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:18:39,101 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:18:39,110 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:18:39,110 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:18:39,110 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:18:39,111 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:18:39,111 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:18:39,112 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:18:39,112 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:18:39,112 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:18:39,113 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:18:39,113 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:18:39,114 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:18:39,115 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:18:39,137 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:18:39,138 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:18:39,140 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:18:39,140 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:18:39,140 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:18:39,141 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:18:39,141 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:18:39,143 - Abc - DEBUG - 6
+2012-05-29 18:18:39,175 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:19:05,942 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:19:05,946 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:19:05,962 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:19:05,962 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:19:05,962 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:19:05,963 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:19:05,963 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:19:05,964 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:19:05,964 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:19:05,964 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:19:05,965 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:19:05,965 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:19:05,965 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:19:05,967 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:19:05,988 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:19:05,988 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:19:05,991 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:19:05,991 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:19:05,991 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:19:05,992 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:19:05,992 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:19:05,994 - Abc - DEBUG - 6
+2012-05-29 18:19:06,035 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:19:47,060 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:19:47,064 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:19:47,073 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:19:47,074 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:19:47,074 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:19:47,075 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:19:47,075 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:19:47,076 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:19:47,076 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:19:47,076 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:19:47,077 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:19:47,077 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:19:47,078 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:19:47,079 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:19:47,098 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:19:47,098 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:19:47,101 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:19:47,101 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:19:47,102 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:19:47,102 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:19:47,102 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:19:47,104 - Abc - DEBUG - 6
+2012-05-29 18:19:47,152 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:21:08,390 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:21:08,395 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:21:08,400 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:21:08,405 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:21:08,405 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:21:08,405 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:21:08,405 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:21:08,405 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:21:08,415 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:21:08,415 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:21:08,420 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:21:08,420 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:21:08,420 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:21:08,420 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:21:08,420 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:21:08,420 - Abc - DEBUG - 6
+2012-05-29 18:21:08,460 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:21:44,745 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:21:44,758 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:21:44,768 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:21:44,769 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:21:44,769 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:21:44,769 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:21:44,770 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:21:44,772 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:21:44,772 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:21:44,772 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:21:44,773 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:21:44,785 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:21:44,785 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:21:44,787 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:21:44,808 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:21:44,808 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:21:44,811 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:21:44,811 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:21:44,811 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:21:44,811 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:21:44,811 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:21:44,816 - Abc - DEBUG - 6
+2012-05-29 18:21:44,860 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:22:08,254 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:22:08,258 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:22:08,266 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:22:08,267 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:22:08,267 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:22:08,268 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:22:08,268 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:22:08,269 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:22:08,269 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:22:08,270 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:22:08,270 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:22:08,270 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:22:08,270 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:22:08,271 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:22:08,272 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:22:08,272 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:22:08,277 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:22:08,292 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:22:08,292 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:22:08,293 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:22:08,293 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:22:08,293 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:22:08,293 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:22:08,293 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:22:08,296 - Abc - DEBUG - 6
+2012-05-29 18:22:08,359 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:27:07,372 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:27:07,376 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:27:07,385 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:27:07,385 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:27:07,386 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:27:07,386 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:27:07,387 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:27:07,388 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:27:07,389 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:27:07,392 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:27:07,392 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:27:07,393 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:27:07,393 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:27:07,394 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:27:07,400 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:27:07,400 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:27:07,406 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:27:07,430 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:27:07,430 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:27:07,431 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:27:07,431 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:27:07,431 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:27:07,432 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:27:07,432 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:27:07,436 - Abc - DEBUG - 6
+2012-05-29 18:27:07,491 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:28:53,144 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:28:53,148 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:28:53,157 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:28:53,157 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:28:53,158 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:28:53,158 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:28:53,158 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:28:53,160 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:28:53,160 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:28:53,160 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:28:53,160 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:28:53,164 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:28:53,165 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:28:53,165 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:28:53,171 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:28:53,171 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:28:53,176 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:28:53,237 - operation.Search - DEBUG - 1367596800000
+2012-05-29 18:28:53,238 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:28:53,238 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:28:53,238 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:28:53,239 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:28:53,239 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:28:53,239 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:28:53,241 - Abc - DEBUG - 6
+2012-05-29 18:28:53,292 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:29:10,204 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:29:10,207 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:29:10,215 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:29:10,215 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:29:10,216 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:29:10,216 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:29:10,217 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:29:10,217 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:29:10,218 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:29:10,218 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:29:10,218 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:29:10,219 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:29:10,219 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:29:10,219 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:29:10,220 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:29:10,220 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:29:10,227 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:29:10,240 - operation.Search - DEBUG - 1367596800000
+2012-05-29 18:29:10,241 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:29:10,241 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:29:10,241 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:29:10,241 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:29:10,241 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:29:10,242 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:29:10,244 - Abc - DEBUG - 6
+2012-05-29 18:29:10,285 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:29:38,998 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:29:39,000 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:29:39,008 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:29:39,008 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:29:39,009 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:29:39,009 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:29:39,011 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:29:39,012 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:29:39,012 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:29:39,012 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:29:39,013 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:29:39,013 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:29:39,013 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:29:39,013 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:29:39,020 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:29:39,020 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:29:39,024 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:29:39,033 - operation.Search - DEBUG - 1367596800000
+2012-05-29 18:29:39,033 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:29:39,034 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:29:39,034 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:29:39,036 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:29:39,036 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:29:39,036 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:29:39,038 - Abc - DEBUG - 6
+2012-05-29 18:29:39,072 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:30:30,509 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:30:30,514 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:30:30,523 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:30:30,523 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:30:30,524 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:30:30,524 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:30:30,525 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:30:30,526 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:30:30,526 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:30:30,527 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:30:30,527 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:30:30,527 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:30:30,527 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:30:30,528 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:30:30,534 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:30:30,534 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:30:30,539 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:30:30,550 - operation.Search - DEBUG - 946656000000
+2012-05-29 18:30:30,550 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:30:30,551 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:30:30,551 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:30:30,551 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:30:30,551 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:30:30,551 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:30:30,554 - Abc - DEBUG - 6
+2012-05-29 18:30:30,589 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:31:15,666 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:31:15,670 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:31:15,680 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:15,680 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:31:15,681 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:15,681 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:15,682 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:31:15,683 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:15,683 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:15,684 - logic.JIDLogic - DEBUG - 946677600000
+2012-05-29 18:31:15,684 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:15,684 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:15,685 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:15,685 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:15,686 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:31:15,686 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:31:15,690 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:31:15,704 - operation.Search - DEBUG - 1367596800000
+2012-05-29 18:31:15,705 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:31:15,705 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:31:15,705 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:31:15,706 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:31:15,706 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:31:15,706 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:31:15,709 - Abc - DEBUG - 6
+2012-05-29 18:31:15,750 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:31:29,635 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:31:29,639 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:31:29,648 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:29,648 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:31:29,649 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:29,649 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:29,649 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:31:29,650 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:29,651 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:29,651 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:31:29,651 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:29,652 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:29,652 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:29,652 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:29,677 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:31:29,677 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:31:29,682 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:31:29,704 - operation.Search - DEBUG - 1367596800000
+2012-05-29 18:31:29,705 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:31:29,705 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:31:29,705 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:31:29,706 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:31:29,706 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:31:29,706 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:31:29,708 - Abc - DEBUG - 6
+2012-05-29 18:31:29,755 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:31:48,717 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:31:48,720 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:31:48,732 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:48,732 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:31:48,733 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:48,733 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:48,733 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:31:48,736 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:48,736 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:31:48,736 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:31:48,737 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:31:48,737 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:48,740 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:48,740 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:31:48,746 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:31:48,746 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:31:48,750 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:31:48,765 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:31:48,766 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:31:48,766 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:31:48,766 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:31:48,766 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:31:48,766 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:31:48,766 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:31:48,768 - Abc - DEBUG - 6
+2012-05-29 18:31:48,808 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:39:26,810 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:39:26,815 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:39:26,825 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:39:26,835 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:39:26,835 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:39:26,840 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:39:26,850 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:39:26,855 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:39:26,855 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:39:26,855 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:39:26,855 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:39:26,855 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:39:26,855 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:39:26,855 - Abc - DEBUG - 6
+2012-05-29 18:39:26,906 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:43:17,950 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:43:17,954 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:43:17,963 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:43:17,963 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:43:17,964 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:43:17,964 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:43:17,964 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:43:17,965 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:43:17,965 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:43:17,966 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:43:17,966 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:43:17,966 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:43:17,967 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:43:17,968 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:43:17,969 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:43:17,969 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:43:17,972 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:43:18,002 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:43:18,002 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:43:18,003 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:43:18,003 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:43:18,003 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:43:18,003 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:43:18,004 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:43:18,006 - Abc - DEBUG - 6
+2012-05-29 18:43:18,072 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:43:46,013 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:43:46,017 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:43:46,025 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:43:46,025 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:43:46,026 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:43:46,026 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:43:46,026 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:43:46,027 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:43:46,027 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:43:46,028 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:43:46,028 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:43:46,028 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:43:46,028 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:43:46,029 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:43:46,029 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:43:46,030 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:43:46,033 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:43:46,048 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:43:46,048 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:43:46,049 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:43:46,049 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:43:46,056 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:43:46,056 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:43:46,056 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:43:46,059 - Abc - DEBUG - 6
+2012-05-29 18:43:46,103 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:44:14,988 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:44:14,992 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:44:15,001 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:44:15,002 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:44:15,002 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:44:15,003 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:44:15,003 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:44:15,004 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:44:15,004 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:44:15,004 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:44:15,005 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:44:15,005 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:44:15,005 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:44:15,006 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:44:15,006 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:44:15,006 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:44:15,010 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:44:15,036 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:44:15,036 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:44:15,037 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:44:15,037 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:44:15,037 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:44:15,038 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:44:15,038 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:44:15,040 - Abc - DEBUG - 6
+2012-05-29 18:44:15,086 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:44:58,039 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:44:58,044 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:44:58,052 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:44:58,052 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:44:58,053 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:44:58,053 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:44:58,054 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:44:58,055 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:44:58,055 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:44:58,056 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:44:58,056 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:44:58,056 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:44:58,057 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:44:58,057 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:44:58,058 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:44:58,058 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:44:58,062 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:44:58,076 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:44:58,077 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:44:58,077 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:44:58,077 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:44:58,078 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:45:53,889 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:45:53,894 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:45:53,902 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:45:53,917 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:45:53,918 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:45:53,919 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:45:53,919 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:45:53,920 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:45:53,920 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:45:53,921 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:45:53,921 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:45:53,921 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:45:53,922 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:45:53,922 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:45:53,923 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:45:53,923 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:45:53,927 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:45:53,948 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:45:53,948 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:45:53,948 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:45:53,949 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:45:53,949 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:45:53,949 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:45:53,949 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:45:53,951 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:46:17,978 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:46:17,982 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:46:17,991 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:46:17,991 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:46:17,992 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:46:17,992 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:46:17,992 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:46:17,994 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:46:17,994 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:46:17,994 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:46:17,995 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:46:17,995 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:46:17,995 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:46:17,996 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:46:18,002 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:46:18,003 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:46:18,008 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:46:18,030 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,030 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:46:18,031 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,031 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,031 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:46:18,031 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,032 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,032 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:46:18,032 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,032 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:46:18,033 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:47:32,245 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:47:32,248 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:47:32,258 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:47:32,258 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:47:32,259 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:47:32,259 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:47:32,259 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:47:32,260 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:47:32,260 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:47:32,261 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:47:32,261 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:47:32,261 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:47:32,262 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:47:32,262 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:47:32,262 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:47:32,263 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:47:32,266 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:47:32,280 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,280 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:47:32,280 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,280 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,281 - operation.Search - DEBUG - it matches
+2012-05-29 18:47:32,281 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:47:32,281 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,282 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,282 - operation.Search - DEBUG - it matches
+2012-05-29 18:47:32,282 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:47:32,282 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,283 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:47:32,283 - operation.Search - DEBUG - it matches
+2012-05-29 18:47:32,283 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:48:30,106 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:48:30,110 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:48:30,118 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:48:30,119 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:48:30,119 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:48:30,120 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:48:30,120 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:48:30,121 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:48:30,121 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:48:30,121 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:48:30,122 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:48:30,122 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:48:30,123 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:48:30,124 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:48:30,124 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:48:30,124 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:48:30,128 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:48:30,144 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,145 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:48:30,145 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,145 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,145 - operation.Search - DEBUG - it matches
+2012-05-29 18:48:30,146 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:48:30,146 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,146 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,146 - operation.Search - DEBUG - it matches
+2012-05-29 18:48:30,146 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:48:30,146 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,147 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:48:30,147 - operation.Search - DEBUG - it matches
+2012-05-29 18:48:30,147 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:50:09,437 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:50:09,440 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:50:09,448 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:50:09,449 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:50:09,449 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:50:09,450 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:50:09,450 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:50:09,451 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:50:09,451 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:50:09,451 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:50:09,452 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:50:09,452 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:50:09,452 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:50:09,453 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:50:09,453 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:50:09,454 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:50:09,461 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:50:09,474 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:50:09,475 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:50:09,475 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:50:09,476 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:50:09,476 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:50:09,476 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:50:09,477 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:50:09,479 - Abc - DEBUG - 6
+2012-05-29 18:50:09,521 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:50:53,137 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:50:53,141 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:50:53,148 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:50:53,148 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:50:53,149 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:50:53,149 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:50:53,149 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:50:53,150 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:50:53,150 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:50:53,150 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:50:53,151 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:50:53,151 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:50:53,151 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:50:53,151 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:50:53,155 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:50:53,155 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:50:53,159 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:50:53,173 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:50:53,174 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:50:53,174 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:50:53,174 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:50:53,175 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:50:53,175 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:50:53,175 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:50:53,177 - Abc - DEBUG - 6
+2012-05-29 18:50:53,212 - logic.JIDLogic - DEBUG - true
+2012-05-29 18:51:32,387 - Abc - DEBUG - array out of bounds!
+2012-05-29 18:51:32,392 - logic.JIDLogic - DEBUG - false
+2012-05-29 18:51:32,400 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:51:32,401 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:51:32,401 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:51:32,402 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:51:32,402 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:51:32,403 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:51:32,403 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 18:51:32,404 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 18:51:32,404 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 18:51:32,404 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:51:32,405 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:51:32,406 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 18:51:32,412 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 18:51:32,412 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 18:51:32,417 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 18:51:32,438 - operation.Search - DEBUG - 1336060800000
+2012-05-29 18:51:32,438 - operation.Search - DEBUG - Matching task0
+2012-05-29 18:51:32,439 - operation.Search - DEBUG - Matching task1
+2012-05-29 18:51:32,439 - operation.Search - DEBUG - Matching task2
+2012-05-29 18:51:32,455 - operation.Search - DEBUG - Matching task3
+2012-05-29 18:51:32,455 - operation.Search - DEBUG - Matching task4
+2012-05-29 18:51:32,455 - operation.Search - DEBUG - Matching task5
+2012-05-29 18:51:32,455 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 18:51:32,458 - Abc - DEBUG - 6
+2012-05-29 18:51:32,513 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:05:37,410 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:05:37,414 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:05:37,427 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:05:37,428 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:05:37,429 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:05:37,429 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:05:37,429 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:05:37,430 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:05:37,431 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:05:37,431 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:05:37,431 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:05:37,432 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:05:37,432 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:05:37,432 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:05:37,433 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:05:37,433 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:05:37,436 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:05:37,450 - operation.Search - DEBUG - 1336060800000
+2012-05-29 19:05:37,451 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:05:37,451 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:05:37,451 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:05:37,452 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:05:37,452 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:05:37,452 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:05:37,453 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:05:37,456 - Abc - DEBUG - 6
+2012-05-29 19:05:37,498 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:05:56,467 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:05:56,471 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:05:56,481 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:05:56,481 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:05:56,482 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:05:56,482 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:05:56,482 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:05:56,484 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:05:56,484 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:05:56,484 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:05:56,485 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:05:56,485 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:05:56,485 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:05:56,486 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:05:56,486 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:05:56,487 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:05:56,490 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:05:56,507 - operation.Search - DEBUG - 1336060800000
+2012-05-29 19:05:56,508 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:05:56,508 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:05:56,509 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:05:56,509 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:05:56,510 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:05:56,510 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:05:56,513 - Abc - DEBUG - 6
+2012-05-29 19:05:56,584 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:06:21,408 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:06:21,412 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:06:21,420 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:06:21,420 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:06:21,421 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:06:21,421 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:06:21,421 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:06:21,422 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:06:21,423 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:06:21,423 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:06:21,423 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:06:21,424 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:06:21,424 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:06:21,424 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:06:21,426 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:06:21,427 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:06:21,432 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:06:21,446 - operation.Search - DEBUG - 1336060800000
+2012-05-29 19:06:21,446 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:06:21,447 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:06:21,448 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:06:21,448 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:06:21,449 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:06:21,449 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:06:21,452 - Abc - DEBUG - 6
+2012-05-29 19:06:21,497 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:07:54,868 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:07:54,872 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:07:54,880 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:07:54,881 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:07:54,881 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:07:54,882 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:07:54,882 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:07:54,883 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:07:54,883 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:07:54,883 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:07:54,884 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:07:54,884 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:07:54,884 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:07:54,885 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:07:54,885 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:07:54,885 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:07:54,889 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:07:54,904 - operation.Search - DEBUG - 1336060800000
+2012-05-29 19:07:54,904 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:07:54,904 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,904 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,905 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:07:54,905 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,906 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,907 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:07:54,908 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,908 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,909 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:07:54,909 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,909 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,909 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:07:54,910 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,910 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,910 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:07:54,911 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,911 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:07:54,913 - Abc - DEBUG - 6
+2012-05-29 19:07:54,956 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:11:37,645 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:11:37,649 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:11:37,658 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:11:37,658 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:11:37,659 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:11:37,659 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:11:37,659 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:11:37,660 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:11:37,661 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:11:37,661 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:11:37,661 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:11:37,662 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:11:37,662 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:11:37,662 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:11:37,663 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:11:37,663 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:11:37,667 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:11:37,682 - operation.Search - DEBUG - 1336060800000
+2012-05-29 19:11:37,683 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:11:37,683 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,683 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,685 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:11:37,685 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,686 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,686 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:11:37,687 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,687 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,688 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:11:37,688 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,688 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,688 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:11:37,689 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,689 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,689 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:11:37,690 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,690 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:11:37,690 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:11:37,693 - Abc - DEBUG - 6
+2012-05-29 19:11:37,736 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:15:45,774 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:15:45,778 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:15:45,786 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:15:45,786 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:15:45,787 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:15:45,787 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:15:45,788 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:15:45,789 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:15:45,789 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:15:45,789 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:15:45,789 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:15:45,790 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:15:45,790 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:15:45,791 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:15:45,791 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:15:45,792 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:15:45,795 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:15:45,809 - operation.Search - DEBUG - 1336060800000
+2012-05-29 19:15:45,809 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:15:45,810 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,810 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,811 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:15:45,811 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,811 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,812 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:15:45,812 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,812 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,813 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:15:45,813 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,814 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,814 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:15:45,814 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,815 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,815 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:15:45,815 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,816 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:15:45,816 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:15:45,819 - Abc - DEBUG - 6
+2012-05-29 19:15:45,864 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:16:03,073 - parser.ParserEngine - DEBUG - 
+2012-05-29 19:17:03,546 - parser.ParserEngine - DEBUG - 
+2012-05-29 19:29:51,290 - parser.ParserEngine - DEBUG - 
+2012-05-29 19:30:22,165 - parser.ParserEngine - DEBUG - $$__04-05-2012070000D__$$
+2012-05-29 19:35:29,322 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:35:29,326 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:35:29,336 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:35:29,336 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:35:29,337 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:35:29,337 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:35:29,337 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:35:29,339 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:35:29,339 - logic.JIDLogic - DEBUG - 1336082400000
+2012-05-29 19:35:29,339 - logic.JIDLogic - DEBUG - 1336060800000
+2012-05-29 19:35:29,339 - logic.JIDLogic - DEBUG - 04-05-2012 06:00
+2012-05-29 19:35:29,340 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:35:29,343 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:35:29,343 - logic.JIDLogic - DEBUG - 1367510400000
+2012-05-29 19:35:29,344 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:35:29,344 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:35:29,355 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:35:29,357 - Abc - DEBUG - 6
+2012-05-29 19:35:29,420 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:36:04,523 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:36:04,527 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:36:04,537 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:36:04,537 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:36:04,539 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:36:04,542 - Abc - DEBUG - 6
+2012-05-29 19:36:04,582 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:38:39,015 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:38:39,019 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:38:39,050 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 19:38:39,050 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 19:38:39,052 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 19:38:39,055 - Abc - DEBUG - 6
+2012-05-29 19:38:39,112 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:39:46,329 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:39:46,334 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:39:46,352 - Abc - DEBUG - 6
+2012-05-29 19:39:46,389 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:40:21,373 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:40:21,377 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:40:21,388 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:40:21,391 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:40:21,413 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:40:21,414 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,414 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,415 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:40:21,415 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,415 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,416 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:40:21,416 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,416 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,417 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:40:21,417 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,417 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,420 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:40:21,420 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,421 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,421 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:40:21,421 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,422 - operation.Search - DEBUG - 946656000000
+2012-05-29 19:40:21,425 - Abc - DEBUG - 6
+2012-05-29 19:40:21,501 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:41:02,260 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:41:02,264 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:41:02,273 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:41:02,275 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:41:02,297 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:41:02,298 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:41:02,299 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:41:02,299 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:41:02,299 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:41:02,299 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:41:02,351 - Abc - DEBUG - 6
+2012-05-29 19:41:02,381 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:41:18,469 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:41:18,473 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:41:18,483 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:41:18,485 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:41:18,503 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:41:18,505 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:41:18,513 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:41:18,513 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:41:18,514 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:41:18,514 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:41:18,516 - Abc - DEBUG - 6
+2012-05-29 19:41:18,564 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:41:40,080 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:41:40,083 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:41:40,113 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:41:40,114 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:41:40,116 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:41:40,116 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:41:40,116 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:41:40,116 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:41:40,117 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:41:40,120 - Abc - DEBUG - 6
+2012-05-29 19:41:40,163 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:42:16,125 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:42:16,128 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:42:16,138 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:42:16,140 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:42:16,154 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:42:16,155 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:42:16,157 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:42:16,158 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:42:16,158 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:42:16,158 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:42:16,160 - Abc - DEBUG - 6
+2012-05-29 19:42:16,199 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:43:14,277 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:43:14,282 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:43:14,291 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:43:14,294 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:43:14,306 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:43:14,306 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:43:14,307 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:43:14,308 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:43:14,308 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:43:14,308 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:43:14,308 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:43:14,311 - Abc - DEBUG - 6
+2012-05-29 19:43:14,360 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:44:40,675 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:44:40,679 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:44:40,689 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:44:40,689 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:44:40,691 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:44:40,703 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:44:40,704 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:44:40,705 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:44:40,705 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:44:40,705 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:44:40,705 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:44:40,707 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:44:40,707 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:44:40,710 - Abc - DEBUG - 6
+2012-05-29 19:44:40,754 - logic.JIDLogic - DEBUG - true
+2012-05-29 19:46:27,307 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:46:27,360 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:46:27,367 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:46:27,368 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:46:27,370 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:46:27,395 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:46:27,396 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:46:27,397 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:46:27,397 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:46:27,397 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:46:27,397 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:46:27,401 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:46:27,401 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:46:27,402 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:46:27,402 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:46:27,402 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:46:27,412 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:46:27,412 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:46:27,412 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:46:27,413 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:46:27,413 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:46:27,413 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:46:27,413 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:46:45,763 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:46:45,767 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:46:45,777 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:46:45,777 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:46:45,779 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:46:45,790 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:46:45,791 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:46:45,791 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:46:45,792 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:46:45,792 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:46:45,792 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:46:45,792 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:46:45,793 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:46:45,793 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:46:45,793 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:46:45,794 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:46:45,802 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:46:45,802 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:46:45,802 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:46:45,802 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:46:45,802 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:46:45,803 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:46:45,803 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:46:58,321 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:46:58,325 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:46:58,336 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:46:58,336 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:46:58,338 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:46:58,361 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:46:58,363 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:46:58,363 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:46:58,363 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:46:58,363 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:46:58,364 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:46:58,367 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:46:58,368 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:47:27,318 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:47:27,322 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:47:27,332 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:47:27,333 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:47:27,335 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:47:27,353 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:47:27,354 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:47:27,354 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:47:27,354 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:47:27,355 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:47:27,355 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:47:27,359 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:47:27,359 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:47:27,359 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:47:27,360 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:47:27,360 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:47:27,370 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:47:27,370 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:47:27,370 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:47:27,370 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:47:27,371 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:47:27,371 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:47:27,371 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:50:15,630 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:50:15,636 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:50:15,647 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:50:15,648 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:51:20,583 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:51:20,587 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:51:20,597 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:51:20,597 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:51:20,599 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:51:20,613 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:51:20,614 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:51:20,615 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:51:20,615 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:51:20,615 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:51:20,616 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:51:20,616 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:51:20,616 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:51:20,617 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:51:20,617 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:51:20,618 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:51:20,627 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:51:20,627 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:51:20,627 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:51:20,627 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:51:20,628 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:51:20,628 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:51:20,628 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:52:49,641 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:52:49,645 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:52:49,668 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:52:49,668 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:52:49,670 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:52:49,682 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:52:49,683 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:52:49,684 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:52:49,692 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:52:49,692 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:52:49,692 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:52:49,693 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:52:49,693 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:52:49,694 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:52:49,695 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:52:49,695 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:52:49,703 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:52:49,703 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:52:49,703 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:52:49,705 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:52:49,705 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:52:49,705 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:52:49,706 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:53:18,655 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:53:18,658 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:53:18,685 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:53:18,685 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:53:18,688 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:53:18,700 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:53:18,701 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:53:18,701 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:53:18,701 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:53:18,702 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:53:18,702 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:53:18,702 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:53:18,702 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:53:18,709 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:53:18,709 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:54:47,676 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:54:47,679 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:54:47,689 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:54:47,689 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:54:47,691 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:54:47,703 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:54:47,704 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:54:47,704 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:54:47,705 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:54:47,705 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:54:47,705 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:54:47,705 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:54:47,706 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:54:47,706 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:54:47,706 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:54:47,707 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:54:47,709 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 19:55:26,534 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:55:26,537 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:55:26,548 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:55:26,548 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:55:26,551 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:55:26,562 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:55:26,563 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:55:26,564 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:55:26,564 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:55:26,564 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:55:26,564 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:55:26,565 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:55:26,565 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:55:26,566 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:55:26,566 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:55:26,567 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 19:55:26,569 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:55:26,569 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 19:56:14,011 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:56:14,016 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:56:14,025 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:56:14,026 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:56:14,028 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:56:14,040 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:56:14,042 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:56:14,042 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:56:14,042 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:56:14,043 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:56:14,043 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:56:14,044 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:56:14,044 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:56:14,044 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:56:14,045 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:56:14,045 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 19:56:14,051 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:56:14,051 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 19:57:13,757 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:57:13,760 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:57:13,767 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:57:13,767 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:57:13,768 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:57:13,777 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:57:13,777 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:57:13,782 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:57:13,782 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:57:13,782 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:57:13,782 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:57:13,782 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:57:13,782 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:57:13,782 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:57:13,782 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:57:13,787 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 19:57:13,787 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:57:13,787 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 19:57:13,787 - operation.Delete - DEBUG - deleted succesfully
+2012-05-29 19:58:00,266 - Abc - DEBUG - array out of bounds!
+2012-05-29 19:58:00,269 - logic.JIDLogic - DEBUG - false
+2012-05-29 19:58:00,279 - operation.BaseSearch - DEBUG - meet
+2012-05-29 19:58:00,279 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:58:00,281 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 19:58:00,292 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 19:58:00,293 - operation.Search - DEBUG - Matching task0
+2012-05-29 19:58:00,294 - operation.Search - DEBUG - Matching task1
+2012-05-29 19:58:00,294 - operation.Search - DEBUG - Matching task2
+2012-05-29 19:58:00,294 - operation.Search - DEBUG - Matching task3
+2012-05-29 19:58:00,294 - operation.Search - DEBUG - Matching task4
+2012-05-29 19:58:00,295 - operation.Search - DEBUG - Matching task5
+2012-05-29 19:58:00,295 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 19:58:00,295 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:58:00,296 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 19:58:00,296 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 19:58:00,298 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 19:58:00,299 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 19:58:00,299 - operation.Delete - DEBUG - deleted succesfully
+2012-05-29 20:00:03,370 - Abc - DEBUG - array out of bounds!
+2012-05-29 20:00:03,373 - logic.JIDLogic - DEBUG - false
+2012-05-29 20:00:03,381 - operation.BaseSearch - DEBUG - meet
+2012-05-29 20:00:03,381 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:00:03,382 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 20:00:03,395 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 20:00:03,396 - operation.Search - DEBUG - Matching task0
+2012-05-29 20:00:03,397 - operation.Search - DEBUG - Matching task1
+2012-05-29 20:00:03,397 - operation.Search - DEBUG - Matching task2
+2012-05-29 20:00:03,397 - operation.Search - DEBUG - Matching task3
+2012-05-29 20:00:03,397 - operation.Search - DEBUG - Matching task4
+2012-05-29 20:00:03,401 - operation.Search - DEBUG - Matching task5
+2012-05-29 20:00:03,401 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 20:00:03,402 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:00:03,402 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:00:03,402 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 20:00:03,407 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:00:03,408 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 20:00:03,408 - operation.Delete - DEBUG - deleted succesfully
+2012-05-29 20:00:03,408 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:00:03,409 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:00:03,409 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:01:34,245 - Abc - DEBUG - array out of bounds!
+2012-05-29 20:01:34,250 - logic.JIDLogic - DEBUG - false
+2012-05-29 20:01:34,259 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:01:34,260 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:01:34,261 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:01:34,262 - operation.BaseSearch - DEBUG - meet
+2012-05-29 20:01:34,264 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:01:34,266 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 20:01:34,284 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 20:01:34,284 - operation.Search - DEBUG - Matching task0
+2012-05-29 20:01:34,285 - operation.Search - DEBUG - Matching task1
+2012-05-29 20:01:34,290 - operation.Search - DEBUG - Matching task2
+2012-05-29 20:01:34,291 - operation.Search - DEBUG - Matching task3
+2012-05-29 20:01:34,291 - operation.Search - DEBUG - Matching task4
+2012-05-29 20:01:34,291 - operation.Search - DEBUG - Matching task5
+2012-05-29 20:01:34,292 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 20:01:34,296 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:01:34,296 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:01:34,297 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:01:34,297 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:01:34,297 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:01:34,297 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 20:01:34,298 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:01:34,298 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 20:01:34,298 - operation.Delete - DEBUG - deleted succesfully
+2012-05-29 20:01:34,299 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:01:34,299 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:01:34,299 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:12,640 - Abc - DEBUG - array out of bounds!
+2012-05-29 20:02:12,644 - logic.JIDLogic - DEBUG - false
+2012-05-29 20:02:12,644 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:12,644 - logic.JIDLogic - DEBUG - inside first cond
+2012-05-29 20:02:12,653 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:12,653 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:12,655 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:12,656 - operation.BaseSearch - DEBUG - meet
+2012-05-29 20:02:12,656 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:02:12,658 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 20:02:12,669 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 20:02:12,670 - operation.Search - DEBUG - Matching task0
+2012-05-29 20:02:12,670 - operation.Search - DEBUG - Matching task1
+2012-05-29 20:02:12,670 - operation.Search - DEBUG - Matching task2
+2012-05-29 20:02:12,670 - operation.Search - DEBUG - Matching task3
+2012-05-29 20:02:12,671 - operation.Search - DEBUG - Matching task4
+2012-05-29 20:02:12,673 - operation.Search - DEBUG - Matching task5
+2012-05-29 20:02:12,673 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 20:02:12,674 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:12,674 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:12,674 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:12,675 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:02:12,675 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:02:12,675 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 20:02:12,675 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:02:12,676 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 20:02:12,676 - operation.Delete - DEBUG - deleted succesfully
+2012-05-29 20:02:12,677 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:12,677 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:12,677 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:51,607 - Abc - DEBUG - array out of bounds!
+2012-05-29 20:02:51,612 - logic.JIDLogic - DEBUG - false
+2012-05-29 20:02:51,612 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:51,612 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:51,622 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:51,624 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:51,625 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:51,626 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:51,637 - operation.BaseSearch - DEBUG - meet
+2012-05-29 20:02:51,637 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:02:51,639 - operation.BaseSearch - DEBUG - going for new search
+2012-05-29 20:02:51,661 - operation.BaseSearch - DEBUG - finished searching
+2012-05-29 20:02:51,662 - operation.Search - DEBUG - Matching task0
+2012-05-29 20:02:51,662 - operation.Search - DEBUG - Matching task1
+2012-05-29 20:02:51,662 - operation.Search - DEBUG - Matching task2
+2012-05-29 20:02:51,663 - operation.Search - DEBUG - Matching task3
+2012-05-29 20:02:51,669 - operation.Search - DEBUG - Matching task4
+2012-05-29 20:02:51,669 - operation.Search - DEBUG - Matching task5
+2012-05-29 20:02:51,670 - logic.JIDLogic - DEBUG - printing search3
+2012-05-29 20:02:51,670 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:51,670 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:51,670 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-29 20:02:51,670 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:02:51,671 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-29 20:02:51,671 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-29 20:02:51,672 - operation.BaseSearch - DEBUG - $$__03-05-2013154500i__$$
+2012-05-29 20:02:51,672 - operation.BaseSearch - DEBUG - $$__03-05-2013154500I__$$
+2012-05-29 20:02:51,672 - operation.Delete - DEBUG - deleted succesfully
+2012-05-29 20:02:51,672 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-29 20:02:51,672 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-29 20:02:51,673 - logic.JIDLogic - FATAL - Inside the actual execution

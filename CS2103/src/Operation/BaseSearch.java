@@ -5,27 +5,34 @@ import java.util.ArrayList;
 import operation.Search;
 import java.util.Collections;
 import storagecontroller.StorageManager;
-
+import org.apache.log4j.Logger;
 public class BaseSearch extends Operation{
 	
 	
 	protected String commandName;
+	private static Logger logger=Logger.getLogger(BaseSearch.class);
 	
 	public Task[] execute(String userCommand)
 	{
-		String params = userCommand.toLowerCase().replaceFirst(this.commandName+" ","");	
-		
-		ArrayList<Task> foundTasks=null;
+		String params = userCommand.toLowerCase().replaceFirst(this.commandName+" ","");
+		logger.debug(params);
+		logger.debug("inside basesearch");
+		ArrayList<Task> foundTasks=new ArrayList<Task>();
 				
 		String[] extractedTaskIds=extractTaskIds(params);
 		
 		if(extractedTaskIds!=null)
 		{
+			logger.debug("going to the id part");
+			logger.debug(extractedTaskIds[0]);
+			logger.debug(extractedTaskIds[0].toUpperCase());
 			//userCommand=userCommand.replace(extractedTaskIds[0],"");
 			for(int i=0;i<extractedTaskIds.length;i++)
 			{
-				Task t=StorageManager.getTaskById(extractedTaskIds[i]);
+				Task t=StorageManager.getTaskById(extractedTaskIds[i].toUpperCase());
+				
 				Task[] result=execute(t);
+				
 				if (result!=null)
 				{
 					Collections.addAll(foundTasks, result);
@@ -39,8 +46,10 @@ public class BaseSearch extends Operation{
 		
 		else 
 		{
+			logger.debug("going for new search");
 			Search f=new Search();
-			Task findTask=parseEvent(userCommand);
+			Task findTask=parseEvent(params);
+			logger.debug("finished searching");
 			return f.search(findTask);
 			
 		}
@@ -60,7 +69,10 @@ public class BaseSearch extends Operation{
 		// TODO Auto-generated method stub
 		
 		Parser newparser= new Parser();
-		return newparser.fetchTaskIds(params);
+		String[] abc= new String[]{newparser.fetchTaskId(params)};
+		if (abc[0]=="" || abc[0]==null)
+			return null;
+		return abc;
 		
 	}
 

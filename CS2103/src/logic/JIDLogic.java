@@ -9,17 +9,25 @@ import data.Task;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 //import gui.UIController;
-
 import storagecontroller.StorageManager;
 
 public class JIDLogic {
 	
 		private static Logger logger=Logger.getLogger(JIDLogic.class);
+		
 		public static void main(String[] args) {
 	        //logger.info("hi");
 			
 			logger.debug(StorageManager.loadFile());
-			
+			command="search";
+			Task[] def=executeCommand("find *.*");
+	    	if (def!=null)
+	    	{
+	    		for (int i=0;i<def.length;i++)
+	    		{
+	    			System.out.println(def[i].getTaskId());
+	    		}
+	    	}
 			
 	    	Add adder=new Add();
 	    	/*
@@ -32,14 +40,23 @@ public class JIDLogic {
 	    	System.out.println(abc[0].getName());
 	    	System.out.println(abc[0].getTaskId());
 	    	}*/
-	    	
+	    	/*
 	    	for (int i=0;i<StorageManager.getAllTasks().length;i++)
     		{
-    			System.out.println(StorageManager.getAllTasks()[i].getName());
+	    		if (StorageManager.getAllTasks()[i].getStartDateTime()!=null)
+	    			{
+	    			logger.debug(StorageManager.getAllTasks()[i].getStartDateTime());
+	    			logger.debug(StorageManager.getAllTasks()[i].getStartDateTime().getDate().getTimeMilli());
+	    			logger.debug(StorageManager.getAllTasks()[i].getStartDateTime().formattedToString());
+	    			}
+	    		else
+	    			logger.debug(StorageManager.getAllTasks()[i].getEndDateTime().getDate());
     		}
-	    	Search searcher=new Search();
-	    	command="find";
-	    	Task[] xyz=executeCommand("search me");
+	    	*/
+	    
+	    	Delete deleter=new Delete();
+	    	command="delete";
+	    	Task[] xyz=executeCommand("delete meet");
 	    	if (xyz!=null)
 	    	logger.debug("printing search"+ xyz.length);
 	    	if (xyz!=null)
@@ -49,7 +66,23 @@ public class JIDLogic {
 	    			System.out.println(xyz[i].getTaskId());
 	    		}
 	    	}
-	    	logger.debug(StorageManager.saveFile());
+	    	//logger.debug(StorageManager.saveFile());
+	    	Task[] efg=executeCommand("delete $$__03-05-2013154500I__$$");
+	    	if (efg!=null)
+	    	{
+	    		for (int i=0;i<efg.length;i++)
+	    		{
+	    			System.out.println(efg[i].getTaskId());
+	    		}
+	    	}
+	    	def=executeCommand("find *.*");
+	    	if (def!=null)
+	    	{
+	    		for (int i=0;i<def.length;i++)
+	    		{
+	    			System.out.println(def[i].getTaskId());
+	    		}
+	    	}
 	    	
 			/*
 			JIDLogic_init();

@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Vector;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+import data.Task;
+import data.DateTime;
 public class Parser {
 	/*
 	public Task[] getTasks(String command) {
@@ -18,7 +19,7 @@ public class Parser {
 	
 	private final  String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
 	private final  String LABEL_REGEX = "@(\\w+)";
-	private final String ID_REGEX = "($$__)(\\d{2}-\\d{2}-\\d{14}[A-Z])(__$$)"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
+	private final String ID_REGEX = "(\\$\\$__)(\\d{2}-\\d{2}-\\d{10}[a-z])(__\\$\\$)"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
 	
 	boolean important;
 	boolean deadline;
@@ -145,7 +146,7 @@ public class Parser {
 		String[] Ids = null;
 		int i=0;
 		Pattern p = Pattern.compile(ID_REGEX);
-		Matcher m = p.matcher(inputS);
+		Matcher m = p.matcher(inputS.toUpperCase());
 		
 		while (m.find()) {
 			Ids[i] = m.group();
