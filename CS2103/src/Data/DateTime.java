@@ -12,9 +12,10 @@ public class DateTime {
 	private static final SimpleDateFormat DAY_MONTH_YEAR = new SimpleDateFormat(
 			"dd-MM-yyyy");
 	private static final SimpleDateFormat DAY_MONTH_YEAR_HOUR_MIN = new SimpleDateFormat(
-			"dd-MM-yyyy HH:mm");
-	private static final SimpleDateFormat DAY_MONTH_YEAR_PRESENTABLE  =new SimpleDateFormat("dd MMM ''yy");
-	private static final SimpleDateFormat HOUR_MIN=new SimpleDateFormat("HH:mm");
+			"K:mm a dd-MM-yyyy");
+	private static final SimpleDateFormat DAY_MONTH_YEAR_PRESENTABLE  =new SimpleDateFormat(
+			"dd MMM ''yy K:mm a");
+	private static final SimpleDateFormat HOUR_MIN=new SimpleDateFormat("K:mm a");
 	private boolean hasTime;
 	private boolean hasDate;
 	static 
@@ -28,91 +29,93 @@ public class DateTime {
  */
 public DateTime()
 {
-	calendar=new GregorianCalendar(2000,0,1,0,0);
+	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0);
 	calendar.setLenient(true);
-	timeMilli=calendar.getTimeInMillis();
-	hasTime=false;
-	hasDate=true;
+	timeMilli = calendar.getTimeInMillis();
+	hasTime = false;
+	hasDate = false;
 }
 public DateTime(long timeInMillis)
 {
-	calendar = new GregorianCalendar(2000,0,1,0,0);
+	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0);
 	calendar.setTimeInMillis(timeInMillis);
 	calendar.setLenient(true);
 	timeMilli=calendar.getTimeInMillis();
-	hasDate=true;
+	hasDate = true;
+	hasTime=true;
 }
-public DateTime(int year,int month,int day)
+public DateTime( int year, int month, int day)
 {
-	calendar=new GregorianCalendar(year,month-1,day);
+	calendar = new GregorianCalendar(year, month-1, day);
 	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
-	hasTime=false;
-	hasDate=true;
+	hasTime = false;
+	hasDate = true;
 }
 public DateTime(int hour,int minutes)
 {
-	calendar=new GregorianCalendar(0,0,0,hour,minutes);
+	calendar = new GregorianCalendar(0, 0, 0, hour, minutes);
 	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
-	hasTime=true;
+	hasTime = true;
 }
-public DateTime(int year,int month,int day,int hours,int minutes)
+public DateTime(int year, int month, int day, int hours, int minutes)
 {
-	calendar=new GregorianCalendar(year,month-1,day,hours,minutes);
+	calendar = new GregorianCalendar(year, month-1, day, hours, minutes);
 	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
-	hasTime=true;
-	hasDate=true;
+	hasTime = true;
+	hasDate = true;
 }
-public DateTime(int year,int month,int day,int hours,int minutes,int seconds)
+public DateTime(int year, int month, int day, int hours, int minutes, int seconds)
 {
-	calendar=new GregorianCalendar(year,month-1,day,hours,minutes,seconds);
+	calendar = new GregorianCalendar(year, month-1, day, hours, minutes, seconds);
 	calendar.setLenient(false);
-	timeMilli=calendar.getTimeInMillis();
-	hasTime=true;
-	hasDate=true;
+	timeMilli = calendar.getTimeInMillis();
+	hasTime = true;
+	hasDate = true;
 }
 public static DateTime getCurrentDateTime()
 {
-	GregorianCalendar current=new GregorianCalendar();
+	GregorianCalendar current = new GregorianCalendar();
 	current.setLenient(false);
 	current.getTimeInMillis();
-	DateTime currDateTime=new DateTime(current.get(GregorianCalendar.YEAR),(current.get(GregorianCalendar.MONTH))+1,current.get(GregorianCalendar.DAY_OF_MONTH),current.get(GregorianCalendar.HOUR_OF_DAY),current.get(GregorianCalendar.MINUTE),current.get(GregorianCalendar.SECOND));
+	DateTime currDateTime = new DateTime(current.get(GregorianCalendar.YEAR), (current.get(GregorianCalendar.MONTH))+1, current.get(GregorianCalendar.DAY_OF_MONTH), 
+			current.get(GregorianCalendar.HOUR_OF_DAY), current.get(GregorianCalendar.MINUTE), current.get(GregorianCalendar.SECOND));
 	return currDateTime;
 }
 public static DateTime getCurrentDate()
 {
-	GregorianCalendar current=new GregorianCalendar();
+	GregorianCalendar current = new GregorianCalendar();
 	current.setLenient(false);
 	current.getTimeInMillis();
-	DateTime currDate=new DateTime(current.get(GregorianCalendar.YEAR),current.get(GregorianCalendar.MONTH)+1,current.get(GregorianCalendar.DAY_OF_MONTH));
+	DateTime currDate = new DateTime(current.get(GregorianCalendar.YEAR), current.get(GregorianCalendar.MONTH)+1, current.get(GregorianCalendar.DAY_OF_MONTH));
 	return currDate;
 }
 public void set(int year,int month,int day)
 {
-	calendar.set(year, month-1,year);
-	timeMilli=calendar.getTimeInMillis();
+	calendar.set(year, month-1, year);
+	timeMilli = calendar.getTimeInMillis();
 }
-public void set(int year,int month,int day,int hours,int minutes,int seconds)
+public void set(int year, int month, int day, int hours, int minutes, int seconds)
 {
-	calendar.set(year, month-1,day,hours,minutes,seconds);
+	calendar.set(year, month-1, day, hours, minutes, seconds);
 	timeMilli=calendar.getTimeInMillis();
-	hasTime=true;
+	hasTime = true;
 }
-public void set(int year,int month,int day,int hours,int minutes)
+public void set(int year, int month, int day, int hours, int minutes)
 {
-	calendar.set(year,month-1,day,hours,minutes);
-	timeMilli=calendar.getTimeInMillis();
-	hasTime=true;
+	calendar.set(year, month-1, day, hours, minutes);
+	timeMilli = calendar.getTimeInMillis();
+	hasTime = true;
 }
 public boolean isEqual(Object ob)
 {
-	if(!(ob instanceof DateTime))
+	if(! (ob instanceof DateTime) )
 		return false;
-	if(this==ob)
+	if(this == ob)
 		return true;
-	DateTime obj=(DateTime) ob;
+	DateTime obj = (DateTime) ob;
 		return (this.getTimeMilli()==obj.getTimeMilli()) && (this.getHasTime()==obj.getHasTime());
 }
 public boolean getHasTime()
@@ -129,20 +132,20 @@ public long getTimeMilli()
 }
 public void setTimeMilli(long time)
 {
-	this.timeMilli=time;
+	this.timeMilli = time;
 	calendar.setTimeInMillis(time);
 }
 public void setTime(long Time)
 {
-	this.timeMilli=Time;
+	this.timeMilli = Time;
 	calendar.setTimeInMillis(Time);
 }
 public int compareTo(DateTime second)
 {
-	long diff=this.getTimeMilli()-second.getTimeMilli();
-	if(diff<0)
+	long diff = this.getTimeMilli() - second.getTimeMilli();
+	if(diff < 0)
 		return -1;
-	else if(diff==0)
+	else if(diff == 0)
 		return 0;
 	else
 		return 1;
@@ -158,9 +161,9 @@ public int compareTo(DateTime second)
  */
 public int get(int component)
 {
-	int value=calendar.get(component);
+	int value = calendar.get(component);
 	if(component == Calendar.MONTH){
-		value+=1;
+		value += 1;
 	}
 	return value;
 }
@@ -174,7 +177,7 @@ public String formattedToString()
 		return "";
 	else if(getHasTime() && getHasDate())
 		return DAY_MONTH_YEAR_HOUR_MIN.format(calendar.getTimeInMillis());
-	else if(!(getHasDate()) && getHasTime())
+	else if(! (getHasDate()) && getHasTime() )
 		return HOUR_MIN.format(calendar.getTimeInMillis());
 	else 
 		return DAY_MONTH_YEAR.format(calendar.getTimeInMillis());
@@ -190,7 +193,8 @@ public String generateDateCode()
 public String generateTimeCode()
 {
 	if(hasTime)
-		return String.format("%02d%02d%02d", this.calendar.get(GregorianCalendar.HOUR_OF_DAY),this.calendar.get(GregorianCalendar.MINUTE),this.calendar.get(GregorianCalendar.SECOND));
+		return String.format("%02d%02d%02d", this.calendar.get(GregorianCalendar.HOUR_OF_DAY), this.calendar.get(GregorianCalendar.MINUTE), 
+				this.calendar.get(GregorianCalendar.SECOND));
 	else
 		return "";
 }
@@ -200,7 +204,7 @@ public boolean isDefaultTime()
 }
 public DateTime getDate()
 {
-	return new DateTime(this.get(GregorianCalendar.YEAR),this.get(GregorianCalendar.MONTH),this.get(GregorianCalendar.DAY_OF_MONTH));
+	return new DateTime(this.get(GregorianCalendar.YEAR), this.get(GregorianCalendar.MONTH), this.get(GregorianCalendar.DAY_OF_MONTH));
 }
 public DateTime getTime() 
 {
@@ -213,20 +217,20 @@ public DateTime getTime()
 }
 public void set(int Component,int value)
 {
-	if(Component==GregorianCalendar.MONTH)
+	if(Component == GregorianCalendar.MONTH)
 	{
-		value-=1;
+		value -= 1;
 	}
 	calendar.set(Component,value);
 	if(Component == GregorianCalendar.HOUR_OF_DAY || Component == GregorianCalendar.HOUR|| Component == GregorianCalendar.MINUTE)
 	{
-		hasTime=true;
+		hasTime = true;
 	}
 	timeMilli = calendar.getTimeInMillis();
 }
 public void setHasDate(boolean value)
 {
-	hasDate=value;
+	hasDate = value;
 }
 public boolean getHasDate()
 {

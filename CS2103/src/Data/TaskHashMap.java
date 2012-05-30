@@ -20,7 +20,7 @@ public class TaskHashMap
 	public boolean addTask(Task taskToBeAdded)
 	{
 	
-		if(taskToBeAdded==null)
+		if(taskToBeAdded == null)
 			return false;
 		taskToBeAdded.setTaskId(generateUniqueId(taskToBeAdded));
 		taskList.put(taskToBeAdded.getTaskId(), taskToBeAdded);
@@ -33,10 +33,12 @@ public class TaskHashMap
 		do
 		{
 		if (taskToBeAdded.getEndDateTime()!=null){
-			taskId="$$__"+taskToBeAdded.getEndDateTime().generateDateCode()+taskToBeAdded.getEndDateTime().generateTimeCode()+(char)(random.nextInt('Z'-'A'+1)+'A')+"__$$";
+			taskId="$$__" + taskToBeAdded.getEndDateTime().generateDateCode() + taskToBeAdded.getEndDateTime().generateTimeCode() + 
+					(char)(random.nextInt('Z'-'A'+1)+'A')+ "__$$";
 			}
 		else{
-			taskId="$$__"+taskToBeAdded.getStartDateTime().generateDateCode()+taskToBeAdded.getStartDateTime().generateTimeCode()+(char)(random.nextInt('Z'-'A'+1)+'A')+"__$$";
+			taskId="$$__"+ taskToBeAdded.getStartDateTime().generateDateCode()+ taskToBeAdded.getStartDateTime().generateTimeCode()+
+					(char)(random.nextInt('Z'-'A'+1)+'A')+ "__$$";
 		}
 		}while((getKeySet().contains(taskId)));
 		return taskId;
@@ -47,7 +49,7 @@ public class TaskHashMap
 	 */
 	public boolean deleteTask(Task taskToRemove)
 	{
-		if(taskToRemove==null)
+		if(taskToRemove == null)
 			return false;
 		taskList.remove(taskToRemove.getTaskId());
 		return true;

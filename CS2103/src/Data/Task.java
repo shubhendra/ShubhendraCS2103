@@ -1,7 +1,5 @@
 package data;
 
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class Task {
@@ -20,38 +18,38 @@ public class Task {
 
 public Task()
 {
-	taskId=null;
-	name="";
-	description="";
-	start=null;
-	end=null;
-	completed=false;
-	important=false;
-	deadline=false;
-	labels=null;
-	recurring=null;
+	taskId = null;
+	name = "";
+	description = "";
+	start = null;
+	end = null;
+	completed = false;
+	important = false;
+	deadline = false;
+	labels = null;
+	recurring = null;
 }
 /**Constructor*/
-public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,String recurring)
+public Task(String Name, String desc, DateTime startDateTime, DateTime endDateTime, String recurring)
 {
 	this();
 	name = Name;
 	description = desc;
 	start = startDateTime;
 	end = endDateTime;
-	this.recurring=recurring;
+	this.recurring = recurring;
 }
-public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,List<String> Labels,String recurring,boolean Deadline,boolean Important)
+public Task(String Name, String desc, DateTime startDateTime, DateTime endDateTime,List<String> Labels, String recurring, boolean Deadline, boolean Important)
 {
 	this();
 	name = Name;
 	description = desc;
 	start = startDateTime;
 	end = endDateTime;
-	labels=Labels;
-	this.recurring=recurring;
-	deadline=Deadline;
-	important=Important;
+	labels = Labels;
+	this.recurring = recurring;
+	deadline = Deadline;
+	important = Important;
 }
 public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,List<String> Labels,String recurring)
 {
@@ -60,13 +58,13 @@ public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,
 	description = desc;
 	start = startDateTime;
 	end = endDateTime;
-	labels=Labels;
-	this.recurring=recurring;
+	labels = Labels;
+	this.recurring = recurring;
 }
 public Task(String Name)
 {
 	this();
-	this.name=Name;
+	this.name = Name;
 }
 /** get the taskId of the Task*/
 public String getTaskId()
@@ -75,7 +73,7 @@ public String getTaskId()
 }
 public void setTaskId(String id)
 {
-	taskId=id;
+	taskId = id;
 }
 
 public List<String> getLabels()
@@ -84,7 +82,7 @@ public List<String> getLabels()
 }
 public void setLabels(List<String> labels2)
 {
-	labels=labels2;
+	labels = labels2;
 }
 /** get the name of the Task*/
 public String getName()
@@ -93,7 +91,7 @@ public String getName()
 }
 public void setName(String Name)
 {
-	name=Name;
+	name = Name;
 }
 /** get the description of the Task*/
 public String getDescription()
@@ -102,7 +100,7 @@ public String getDescription()
 }
 public void setDescription(String desc)
 {
-	description=desc;
+	description = desc;
 }
 /** get the startDate of the Task*/
 public DateTime getStartDateTime()
@@ -111,7 +109,7 @@ public DateTime getStartDateTime()
 }
 public void setStartDateTime(DateTime startDateTime)
 {
-	start=startDateTime;
+	start = startDateTime;
 }
 /**get the endDate of the Task*/
 public DateTime getEndDateTime()
@@ -120,7 +118,7 @@ public DateTime getEndDateTime()
 }
 public void setEndDateTime(DateTime endDateTime)
 {
-	end=endDateTime;
+	end = endDateTime;
 }
 /** check whether the Task is Completed
  * 
@@ -132,7 +130,7 @@ public boolean getCompleted()
 }
 public void setCompleted(boolean value)
 {
-	this.completed=value;
+	this.completed = value;
 }
 /** check whether the task is Important
  * 
@@ -144,7 +142,7 @@ public boolean getImportant()
 }
 public void setImportant(boolean value)
 {
-	this.important=value;
+	this.important = value;
 }
 public boolean getDeadline()
 {
@@ -152,7 +150,7 @@ public boolean getDeadline()
 }
 public void setDeadline(boolean value)
 {
-	this.deadline=value;
+	this.deadline = value;
 }
 public String getRecurring()
 {
@@ -160,7 +158,7 @@ public String getRecurring()
 }
 public void setRecurring(String recurringString)
 {
-	recurring=recurringString;
+	recurring = recurringString;
 }
 public boolean isEqual(Object to) {
 	String thisObjString = null;
@@ -168,7 +166,7 @@ public boolean isEqual(Object to) {
 	if (to == null) {
 		return false;
 	}
-	if (!(to instanceof Task)) {
+	if (! (to instanceof Task) ) {
 		return false;
 	}
 	Task compareTo = (Task) to;
@@ -178,8 +176,8 @@ public boolean isEqual(Object to) {
 }
 public boolean isIdenticalTo(Task second)
 {
-	if(this.description==second.description && this.name==second.name && 
-			this.end==second.end && this.start==second.start && this.recurring==second.recurring && this.taskId==second.taskId)
+	if(this.description == second.description && this.name==second.name && 
+			this.end == second.end && this.start==second.start && this.recurring==second.recurring && this.taskId==second.taskId)
 		return true;
 	else
 		return false;
@@ -197,7 +195,40 @@ public void toggleCompleted()
 }
 public void toggleDeadline()
 {
-	deadline=!deadline;
+	deadline = !deadline;
 }
-
+public String toString()
+{
+	DateTime temp=new DateTime();
+	if((start.compareTo(temp)!=0 && (end.compareTo(temp)!=0)))
+	{
+		if(start.getDate().getTimeMilli()==end.getDate().getTimeMilli())
+		{
+			return name + " on " + start.getDate().formattedToString() + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString();
+		}
+			else
+		{
+			return name + " from " + start.formattedToString() + " to " + end.formattedToString();
+		}
+	}
+	else if((start.compareTo(temp)!=0) && end.compareTo(temp)==0)
+	{
+		if(start.getHasTime())
+			return name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString();
+		else
+			return name + " on " +start.getDate().formattedToString();
+	}
+	else if((start.compareTo(temp)==0) && !(end.compareTo(temp)==0))
+	{
+		if(end.getHasTime())
+			return name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString();
+		else
+			return name + " by " + end.formattedToString();
+	}
+	else
+	{
+		return " ";
+	}
+			
+}
 }
