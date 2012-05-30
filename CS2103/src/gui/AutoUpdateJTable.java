@@ -83,20 +83,27 @@ public class AutoUpdateJTable {
 
     private void makeJLabel(Task task) {
     	String str;
+    	String completedFont = "<font color = \"#BBBBBB\">";
     	
     	str = "<HTML><b>";
-    	if(task.getImportant()) {
+    	if(task.getCompleted()) {
+    		str+=completedFont;
+    		System.out.println("completed task");
+    	}
+    	else if(task.getImportant()) {
     		str += "<font color=\"red\">";
     	}
     	str += task.getName();
     	str += "<br/></b>";
+    	if(task.getCompleted())
+    		str+=completedFont;
     	if(task.getDescription()!= null)
     		str+=task.getDescription();
     	if(task.getStartDateTime()!= null) {
     		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
     	}
     	if(task.getEndDateTime()!=null) {
-    		str+="<i> end: </i>"+task.getEndDateTime().presentableToString();
+    		str+="<i>                  end: </i>"+task.getEndDateTime().presentableToString();
     	}
     	str += "</HTML>";
     	

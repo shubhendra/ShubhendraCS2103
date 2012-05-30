@@ -5190,3 +5190,79 @@
 2012-05-30 00:28:19,448 - logic.JIDLogic - DEBUG - blah blah 
 2012-05-30 00:28:19,448 - logic.JIDLogic - DEBUG - go to meet bhairav 
 2012-05-30 00:28:19,448 - logic.JIDLogic - DEBUG - go to ra 3/5/2013 
+2012-05-30 00:33:39,838 - Abc - DEBUG - array out of bounds!
+2012-05-30 00:33:39,840 - logic.JIDLogic - DEBUG - false
+2012-05-30 00:33:39,841 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,841 - logic.JIDLogic - DEBUG - find *.*
+2012-05-30 00:33:39,841 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-30 00:33:39,847 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-30 00:33:39,848 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,849 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,849 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,849 - logic.JIDLogic - DEBUG - edit meet
+2012-05-30 00:33:39,849 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-30 00:33:39,850 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-30 00:33:39,850 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,854 - operation.BaseSearch - DEBUG - edit
+2012-05-30 00:33:39,854 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-30 00:33:39,855 - operation.BaseSearch - DEBUG - going for new search
+2012-05-30 00:33:39,870 - operation.BaseSearch - DEBUG - finished searching
+2012-05-30 00:33:39,871 - operation.Search - DEBUG - Matching task0
+2012-05-30 00:33:39,871 - operation.Search - DEBUG - Matching task1
+2012-05-30 00:33:39,871 - operation.Search - DEBUG - Matching task2
+2012-05-30 00:33:39,871 - operation.Search - DEBUG - Matching task3
+2012-05-30 00:33:39,871 - operation.Search - DEBUG - Matching task4
+2012-05-30 00:33:39,871 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,872 - logic.JIDLogic - DEBUG - printing search1
+2012-05-30 00:33:39,872 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,872 - logic.JIDLogic - DEBUG - edit $$__03-05-2013154500V__$$
+2012-05-30 00:33:39,872 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-30 00:33:39,872 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-30 00:33:39,872 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,872 - operation.BaseSearch - DEBUG - edit
+2012-05-30 00:33:39,872 - operation.BaseSearch - DEBUG - inside basesearch
+2012-05-30 00:33:39,873 - operation.BaseSearch - DEBUG - going to the id part
+2012-05-30 00:33:39,873 - operation.BaseSearch - DEBUG - $$__03-05-2013154500V__$$
+2012-05-30 00:33:39,873 - operation.Modify - DEBUG - taskBeingEditedgo to meet bhairav 
+2012-05-30 00:33:39,873 - operation.BaseSearch - DEBUG - Result Added
+2012-05-30 00:33:39,873 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,873 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,874 - logic.JIDLogic - DEBUG - edit go to shubhendra weekly by 3.45pm 3/5/2013  @work @home
+2012-05-30 00:33:39,874 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-30 00:33:39,874 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-30 00:33:39,874 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,885 - operation.Modify - DEBUG - Task To be editedgo to shubhendra 
+2012-05-30 00:33:39,888 - operation.Modify - DEBUG - Editing succesful
+2012-05-30 00:33:39,888 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-05-30 00:33:39,888 - logic.JIDLogic - DEBUG - isundoable
+2012-05-30 00:33:39,888 - logic.JIDLogic - DEBUG - go to shubhendra 
+2012-05-30 00:33:39,888 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,888 - logic.JIDLogic - DEBUG - find *.*
+2012-05-30 00:33:39,888 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-30 00:33:39,889 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-30 00:33:39,889 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,889 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,889 - logic.JIDLogic - DEBUG - blah blah 
+2012-05-30 00:33:39,889 - logic.JIDLogic - DEBUG - blah blah 
+2012-05-30 00:33:39,889 - logic.JIDLogic - DEBUG - blah blah 
+2012-05-30 00:33:39,889 - logic.JIDLogic - DEBUG - go to shubhendra 
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - go to ra 3/5/2013 
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - before undo
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - undo
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - inside third cond
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - popped last action from stack:edit
+2012-05-30 00:33:39,890 - logic.JIDLogic - DEBUG - Executing undo
+2012-05-30 00:33:39,891 - logic.JIDLogic - DEBUG - go to meet bhairav 
+2012-05-30 00:33:39,891 - logic.JIDLogic - DEBUG - false
+2012-05-30 00:33:39,891 - logic.JIDLogic - DEBUG - inside execute command
+2012-05-30 00:33:39,891 - logic.JIDLogic - DEBUG - find *.*
+2012-05-30 00:33:39,891 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-05-30 00:33:39,892 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - blah blah 
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - blah blah 
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - blah blah 
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - go to meet bhairav 
+2012-05-30 00:33:39,892 - logic.JIDLogic - DEBUG - go to ra 3/5/2013 

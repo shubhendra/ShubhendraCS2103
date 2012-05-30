@@ -24,20 +24,37 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
+import logic.JIDLogic;
+
 public class UIController {
-	static MainJFrame mainJFrame = new MainJFrame();
+	static MainJFrame mainJFrame;
 	Reminder reminder;
 	static SystemTray tray = SystemTray.getSystemTray();
 	
 	
 	public UIController() {
-		initializeTray();
-		Reminder reminder = new Reminder(tray);
+		mainJFrame = new MainJFrame();
+		
+		Timer timer = new Timer(100, new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+
+				initializeTray();
+				Reminder reminder = new Reminder(tray);
+			}
+			
+		});
+		timer.setRepeats(false);
+		timer.start();
 	}
 	
 	
 	public static void main(String[] args) {
 		//MainJFrame mainJFrame = new MainJFrame();
+		JIDLogic.JIDLogic_init();
+		
 		new UIController();
 		//initializeTray();
 		//Reminder reminder = new Reminder(tray);
@@ -58,8 +75,9 @@ public class UIController {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				System.exit(0);
 				
+				JIDLogic.JIDLogic_close();
+				System.exit(0);
 			}
 		});	
 		
