@@ -8,7 +8,7 @@ package gui;
 import data.Task;
 import logic.JIDLogic;
 
-import com.seaglasslookandfeel.*;
+//import com.seaglasslookandfeel.*;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;

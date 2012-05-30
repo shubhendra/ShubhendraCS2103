@@ -61,17 +61,19 @@ public class Search extends Operation {
 		// TODO Auto-generated method stub
 
 		String params = "";
+		
 		if (userCommand.startsWith("search ")) {
 			params = userCommand.replace("search ", "");
 		} else if (userCommand.startsWith("find ")) {
 			params = userCommand.replace("find ", "");
 		}
+		
 		if (params.toLowerCase().contains("*.*")) {
 			return returnAllTasks(params);
 		}
 		Task parsedTask=parseCommand(params);
-		if (parsedTask.getStartDateTime()!=null)
-		{
+		
+		if (parsedTask.getStartDateTime()!=null){
 			logger.debug(parsedTask.getStartDateTime().getDate().getTimeMilli());
 		}
 		return search(parsedTask);
@@ -111,16 +113,13 @@ public class Search extends Operation {
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
-			if (matches(findTask,allTasks[i]))
-			{
-				
+			if (matches(findTask,allTasks[i])){
 				Collections.addAll(foundTasks, allTasks[i]);
 			}
 			
 		}
-		if (foundTasks.size()>0)
-		{
-		return foundTasks.toArray(new Task[foundTasks.size()]);
+		if (foundTasks.size()>0){
+			return foundTasks.toArray(new Task[foundTasks.size()]);
 		}
 		return null;
 	}
@@ -166,30 +165,34 @@ public class Search extends Operation {
 		{
 			if (taskToSearch.getLabels().get(0)==null)
 			{
+				logger.debug("it matches");
 				return true;
 			}
 			else if (existingTask.getLabels() != null) {
-						boolean flag = false;
-						for (String searchlabel : taskToSearch.getLabels()) {
-							searchlabel = searchlabel.toLowerCase();
-							flag = false;
-							for (String existingLabel : existingTask.getLabels()) {
-								if (existingLabel.toLowerCase().contains(searchlabel)) {
-									flag = true;
-									break;
-								}
-							}
-							if (flag) {
-								break;
-							}
+				boolean flag = false;
+				for (String searchlabel : taskToSearch.getLabels()) {
+					searchlabel = searchlabel.toLowerCase();
+					flag = false;
+					for (String existingLabel : existingTask.getLabels()) {
+						if (existingLabel.toLowerCase().contains(searchlabel)) {
+							flag = true;
+							break;
 						}
-						if (flag) {
-							return true;
-						}
-					
+					}
+				
+					if (flag) {
+						break;
+					}
 				}
-			
+				if (flag) {
+					logger.debug("it matches");
+					return true
+							;
+				}
+					
 			}
+			
+		}
 				
 		
 		return false;

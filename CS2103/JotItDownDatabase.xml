@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <java version="1.6.0_31" class="java.beans.XMLDecoder"> 
  <object class="data.Task"> 
+  <void property="completed"> 
+   <boolean>true</boolean> 
+  </void> 
   <void property="description"> 
    <null/> 
   </void> 
@@ -102,22 +105,22 @@
   </void> 
   <void property="endDateTime"> 
    <object class="data.DateTime"> 
+    <void property="hasDate"> 
+     <boolean>true</boolean> 
+    </void> 
     <void property="hasTime"> 
      <boolean>true</boolean> 
     </void> 
     <void property="timeMilli"> 
-     <long>1338795900000</long> 
+     <long>1338361200000</long> 
     </void> 
    </object> 
   </void> 
   <void property="name"> 
-   <string>go to ra 3/5/2013 </string> 
-  </void> 
-  <void property="recurring"> 
-   <string>weekly</string> 
+   <string>meet shubham </string> 
   </void> 
   <void property="taskId"> 
-   <string>$$__04-06-2012154500C__$$</string> 
+   <string>$$__30-05-2012150000S__$$</string> 
   </void> 
  </object> 
  <object class="data.Task"> 

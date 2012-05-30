@@ -12,16 +12,19 @@ public class Add extends Operation {
 	
 	private Task addedTask;
 	private String commandName;
+	
 	public Add (String command)
 	{
 		commandName=command;
 		
 	}
+	
 	public Add()
 	{
 		commandName="add";
 		
 	}
+	
 	public Task[] execute (String userCommand)
 	{
 		String params=null;
@@ -44,6 +47,7 @@ public class Add extends Operation {
 			return null;
 		
 	}
+	
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
@@ -102,7 +106,8 @@ private static Logger logger = Logger.getLogger(Add.class);
     	if (abc[0]!=null)
     	System.out.println(abc[0].getName());
     }
-	public boolean add(Task taskAdded) {
+	
+    public boolean add(Task taskAdded) {
 		// TODO Auto-generated method stub
 		if (taskAdded!=null)
 		{
