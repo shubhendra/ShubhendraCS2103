@@ -9,9 +9,9 @@ public class DateParser {
 	private Pattern pattern1, pattern2, pattern3, pattern4, pattern5, pattern;
 	private Matcher matcher1, matcher2, matcher3, matcher4, matcher5, matcher;
 	
-	private static int startDay=-1, startMonth=-1, startYear=-1;
-	private static int endDay=-1, endMonth=-1, endYear=-1;
-	private static int dummyDay=-1, dummyMonth=-1, dummyYear=-1;
+	private int startDay=-1, startMonth=-1, startYear=-1;
+	private int endDay=-1, endMonth=-1, endYear=-1;
+	private int dummyDay=-1, dummyMonth=-1, dummyYear=-1;
 	
 	private static final String MONTH_IN_DIGIT_DATE_WITH_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ -](0?[1-9]|1[012])[/ -]((19|20)\\d\\d)";
 	private static final String MONTH_IN_TEXT_DATE_WITH_YEAR = "((0?[1-9]|[12][0-9]|3[01])(?i)(th)?)[/ - \\s \\,](\\s)?((?i)(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec))[/ - \\s \\,](\\s)?((19|20)\\d\\d)";
@@ -29,7 +29,7 @@ public class DateParser {
 			+ MONTH_IN_DIGIT_DATE_WITHOUT_YEAR + ")|("
 			+ MONTH_IN_TEXT_DATE_WITHOUT_YEAR + ")|(" + TODAY_TMR_WEEKDAY_REGEX + "))";
 	
-	public void resetDummyDate() {
+	private void resetDummyDate() {
 		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
 	}
 	
@@ -69,13 +69,17 @@ public class DateParser {
 		pattern5 = Pattern.compile(TODAY_TMR_WEEKDAY_REGEX);
 		
 		pattern = Pattern.compile(GENERAL_DATE_PATTERN);
+		
+		startDay=-1; startMonth=-1; startYear=-1;
+		endDay=-1; endMonth=-1; endYear=-1;
+		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
 	}
 
-	public String removeExtraSpaces(String s) {
+	private String removeExtraSpaces(String s) {
 		return s.replaceAll("\\s+", " ");
 	}
 
-	public String getGeneralPattern() {
+	public static String getGeneralPattern() {
 		return GENERAL_DATE_PATTERN;
 	}
 
