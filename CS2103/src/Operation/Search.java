@@ -132,28 +132,36 @@ public class Search extends Operation {
 		//logger.debug(taskToSearch.getStartDateTime().getTime().getTimeMilli());
 	
 		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
-				.contains((taskToSearch.getName())))
+				.contains((taskToSearch.getName().trim())))
 						
 				&& (taskToSearch.getStartDateTime() == null
 						|| taskToSearch.getStartDateTime().getDate().getTimeMilli()
 						== defaultTime.getDate().getTimeMilli() || (existingTask.getStartDateTime()!=null 
-						&& existingTask.getStartDateTime().getDate().getTimeMilli()
-						== taskToSearch.getStartDateTime().getDate().getTimeMilli()))
+						&& (existingTask.getStartDateTime().getDate().getTimeMilli()
+						== taskToSearch.getStartDateTime().getDate().getTimeMilli())
+						|| (existingTask.getEndDateTime().getDate().getTimeMilli()
+						== taskToSearch.getStartDateTime().getDate().getTimeMilli())))
 				&& (taskToSearch.getStartDateTime() == null
 						|| taskToSearch.getStartDateTime().getTime().getTimeMilli()
 						== defaultTime.getTime().getTimeMilli() || (existingTask.getStartDateTime()!=null 
-						&&  existingTask.getStartDateTime().getTime().getTimeMilli()
+						&&  (existingTask.getStartDateTime().getTime().getTimeMilli()
+						== taskToSearch.getStartDateTime().getTime().getTimeMilli())) 
+						|| (existingTask.getEndDateTime().getTime().getTimeMilli()
 						== taskToSearch.getStartDateTime().getTime().getTimeMilli()))
 				&& (taskToSearch.getEndDateTime() == null 
 						|| taskToSearch.getEndDateTime().getDate().getTimeMilli()
 						== defaultTime.getDate().getTimeMilli() || (existingTask.getEndDateTime()!=null 
-						&& existingTask.getEndDateTime().getDate().getTimeMilli()
+						&& (existingTask.getEndDateTime().getDate().getTimeMilli()
+						== taskToSearch.getEndDateTime().getDate().getTimeMilli()))
+						|| (existingTask.getStartDateTime().getDate().getTimeMilli()
 						== taskToSearch.getEndDateTime().getDate().getTimeMilli()))
 			    && (taskToSearch.getEndDateTime() == null
 						|| taskToSearch.getEndDateTime().getTime().getTimeMilli()
 						== defaultTime.getTime().getTimeMilli() || (existingTask.getEndDateTime()!=null 
 						&& existingTask.getEndDateTime().getTime().getTimeMilli()
-						== taskToSearch.getStartDateTime().getTime().getTimeMilli()))
+						== taskToSearch.getStartDateTime().getTime().getTimeMilli())
+						|| (existingTask.getStartDateTime().getTime().getTimeMilli()
+						== taskToSearch.getEndDateTime().getTime().getTimeMilli()))
 				&& (taskToSearch.getDescription() == null || existingTask.getDescription()
 						.toLowerCase().contains(taskToSearch.getDescription()))
 				&& (taskToSearch.getImportant() == false || taskToSearch.getImportant() == 
