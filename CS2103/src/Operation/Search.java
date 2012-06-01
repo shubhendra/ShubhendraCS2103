@@ -89,7 +89,8 @@ public class Search extends Operation {
 
 	private Task[] returnAllTasks(String params) {
 		// TODO Auto-generated method stub
-		
+		Task[] unsorted=StorageManager.getAllTasks();
+		//Collections.sort(unsorted, );
 		return StorageManager.getAllTasks();
 		//return null;
 	}

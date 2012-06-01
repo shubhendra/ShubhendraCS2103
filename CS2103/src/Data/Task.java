@@ -200,7 +200,7 @@ public void toggleDeadline()
 public String toString()
 {
 	DateTime temp=new DateTime();
-	if((start.compareTo(temp)!=0 && (end.compareTo(temp)!=0) && start!=null && end!=null))
+	if((start.compareTo(temp)!=0 && (end.compareTo(temp)!=0)))
 	{
 		if(start.getDate().getTimeMilli()==end.getDate().getTimeMilli())
 		{
@@ -211,14 +211,14 @@ public String toString()
 			return name + " from " + start.formattedToString() + " to " + end.formattedToString();
 		}
 	}
-	else if(((start.compareTo(temp)!=0) && end.compareTo(temp)==0 && start!=null)|| end==null)
+	else if((start.compareTo(temp)!=0) && end.compareTo(temp)==0)
 	{
 		if(start.getHasTime())
 			return name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString();
 		else
 			return name + " on " +start.getDate().formattedToString();
 	}
-	else if(((start.compareTo(temp)==0) && !(end.compareTo(temp)==0) && end!=null) || start ==null)
+	else if((start.compareTo(temp)==0) && !(end.compareTo(temp)==0))
 	{
 		if(end.getHasTime())
 			return name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString();

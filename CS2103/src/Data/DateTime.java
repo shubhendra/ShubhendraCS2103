@@ -54,7 +54,7 @@ public DateTime( int year, int month, int day)
 }
 public DateTime(int hour,int minutes)
 {
-	calendar = new GregorianCalendar(2000, 0, 1, hour, minutes);
+	calendar = new GregorianCalendar(0, 0, 0, hour, minutes);
 	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
 	hasTime = true;
