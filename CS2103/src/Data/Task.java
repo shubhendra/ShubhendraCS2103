@@ -200,30 +200,30 @@ public void toggleDeadline()
 public String toString()
 {
 	DateTime temp=new DateTime();
-	if((start.compareTo(temp)!=0 && (end.compareTo(temp)!=0)))
+	if((start!=null && end!=null && start.compareTo(temp)!=0 && (end.compareTo(temp)!=0)))
 	{
 		if(start.getDate().getTimeMilli()==end.getDate().getTimeMilli())
 		{
-			return name + " on " + start.getDate().formattedToString() + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString();
+			return name + "on " + start.getDate().formattedToString() + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString();
 		}
 			else
 		{
-			return name + " from " + start.formattedToString() + " to " + end.formattedToString();
+			return name + "from " + start.formattedToString() + " to " + end.formattedToString();
 		}
 	}
-	else if((start.compareTo(temp)!=0) && end.compareTo(temp)==0)
+	else if((end==null ||( start!=null && start.compareTo(temp)!=0 && end.compareTo(temp)==0)))
 	{
 		if(start.getHasTime())
-			return name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString();
+			return name + "at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString();
 		else
-			return name + " on " +start.getDate().formattedToString();
+			return name + "on " +start.getDate().formattedToString();
 	}
-	else if((start.compareTo(temp)==0) && !(end.compareTo(temp)==0))
+	else if((start ==null || ( end!=null && start.compareTo(temp)==0) && !(end.compareTo(temp)==0)) )
 	{
 		if(end.getHasTime())
-			return name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString();
+			return name + "by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString();
 		else
-			return name + " by " + end.formattedToString();
+			return name + "by " + end.formattedToString();
 	}
 	else
 	{

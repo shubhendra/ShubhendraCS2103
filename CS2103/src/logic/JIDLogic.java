@@ -119,7 +119,11 @@ public class JIDLogic {
 			*/
 			JIDLogic_init();
 			UIController ui=new UIController();
-			
+			/*
+			logger.debug(StorageManager.loadFile());
+			command="find";
+			Task[] def=executeCommand("find *.*");
+			*/
 			
 		
 	}

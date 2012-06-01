@@ -2,12 +2,13 @@ package operation;
 
 import org.apache.log4j.Logger;
 import data.DateTime;
-
+import data.compareByDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import parser.Parser;
-
+import java.util.Comparator;
 import storagecontroller.StorageManager;
+import java.util.Arrays;
 
 import data.Task;
 
@@ -61,7 +62,7 @@ public class Search extends Operation {
 		// TODO Auto-generated method stub
 
 		String params = "";
-		
+		logger.debug("finding objects");
 		if (userCommand.startsWith("search ")) {
 			params = userCommand.replace("search ", "");
 		} else if (userCommand.startsWith("find ")) {
@@ -69,6 +70,7 @@ public class Search extends Operation {
 		}
 		
 		if (params.toLowerCase().contains("*.*")) {
+			logger.debug("returning all objects");
 			return returnAllTasks(params);
 		}
 		Task parsedTask=parseCommand(params);
@@ -90,8 +92,21 @@ public class Search extends Operation {
 	private Task[] returnAllTasks(String params) {
 		// TODO Auto-generated method stub
 		Task[] unsorted=StorageManager.getAllTasks();
-		//Collections.sort(unsorted, );
-		return StorageManager.getAllTasks();
+		Comparator<Task> compareByDate = new compareByDate();
+		logger.debug("before sorting");
+		
+		for (int i=0;i<unsorted.length;i++)
+		{
+			logger.debug(unsorted[i].toString());
+		}
+		
+		Arrays.sort(unsorted, compareByDate);
+		logger.debug("after sorting");
+		for (int i=0;i<unsorted.length;i++)
+		{
+			logger.debug(unsorted[i].toString());
+		}
+		return unsorted;
 		//return null;
 	}
 
@@ -172,20 +187,32 @@ public class Search extends Operation {
 						.contains(taskToSearch.getRecurring().toLowerCase()))))
 		
 		{
-			if (taskToSearch.getLabels().get(0)==null)
+			logger.debug("all ok till here");
+			return true;
+			 
+			/* 
+			if (taskToSearch.getLabels()==null)
 			{
+				logger.debug("task to search has no labels");
 				logger.debug("it matches");
 				return true;
 			}
 			else if (existingTask.getLabels() != null) {
+				logger.debug("matching labels");
+				
 				boolean flag = false;
 				for (String searchlabel : taskToSearch.getLabels()) {
+					//if (searchlabel!=null)
+					{
 					searchlabel = searchlabel.toLowerCase();
 					flag = false;
 					for (String existingLabel : existingTask.getLabels()) {
-						if (existingLabel.toLowerCase().contains(searchlabel)) {
-							flag = true;
-							break;
+						//if(existingLabel!=null)
+						{
+							if (existingLabel.toLowerCase().contains(searchlabel)) {
+								flag = true;
+								break;
+							}
 						}
 					}
 				
@@ -198,12 +225,12 @@ public class Search extends Operation {
 					return true
 							;
 				}
-					
-			}
+				
+			}}*/
 			
 		}
 				
-		
+			
 		return false;
 	}
 	
