@@ -113,6 +113,14 @@ public class Modify extends BaseSearch{
 		
 	}
 	
+	public Task[] redo(){
+		Task[] redoneArray = new Task[1];
+		if (modify(oldTask, newTask)) {
+			redoneArray[0] = newTask;
+			return redoneArray;
+		}
+		return null;
+	}
 
 
 }

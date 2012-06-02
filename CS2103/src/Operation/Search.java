@@ -2,7 +2,7 @@ package operation;
 
 import org.apache.log4j.Logger;
 import data.DateTime;
-import data.compareByDate;
+import data.CompareByDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import parser.Parser;
@@ -92,19 +92,19 @@ public class Search extends Operation {
 	private Task[] returnAllTasks(String params) {
 		// TODO Auto-generated method stub
 		Task[] unsorted=StorageManager.getAllTasks();
-		Comparator<Task> compareByDate = new compareByDate();
+		Comparator<Task> compareByDate = new CompareByDate();
 		logger.debug("before sorting");
 		
 		for (int i=0;i<unsorted.length;i++)
 		{
-			logger.debug(unsorted[i].toString());
+			//logger.debug(unsorted[i].toString());
 		}
 		
 		Arrays.sort(unsorted, compareByDate);
 		logger.debug("after sorting");
 		for (int i=0;i<unsorted.length;i++)
 		{
-			logger.debug(unsorted[i].toString());
+		//	logger.debug(unsorted[i].toString());
 		}
 		return unsorted;
 		//return null;
@@ -232,6 +232,12 @@ public class Search extends Operation {
 				
 			
 		return false;
+	}
+
+	@Override
+	public Task[] redo() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

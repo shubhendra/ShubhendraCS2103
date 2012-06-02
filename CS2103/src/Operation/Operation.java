@@ -32,7 +32,10 @@ public abstract class Operation {
 			object = new Search(intendedOperation);
 		}
 		else if (intendedOperation.equals("completed") || intendedOperation.equals("done")){
-			object = new Completed(intendedOperation);
+			object = new ToggleCompleted(intendedOperation);
+		}
+		else if(intendedOperation.equals("star") || intendedOperation.equals("important")){
+			object = new ToggleImportant(intendedOperation);
 		}
 		else if (intendedOperation.equals("archive")){
 			object = new Archive(intendedOperation);
@@ -54,6 +57,8 @@ public abstract class Operation {
 	public abstract Task[] execute(String userCommand);
 	
 	public abstract Task[] undo();
+	
+	public abstract Task[] redo();
 	
 	protected Task[] execute(Task taskToBeExecuted)
 	{

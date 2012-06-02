@@ -77,6 +77,22 @@ public class Add extends Operation {
 		
 		
 	}
+	
+	public Task[] redo() {
+		
+		Task[] redone = new Task[1];
+		
+		logger.debug("task to be added name:"+addedTask.getName());
+		if (add(addedTask)) {
+			logger.debug("Task added");
+			redone[0] = addedTask;
+			return redone;
+		
+		}
+		logger.debug("Task not added");
+		return null;
+	}
+	
 
 	@Override
 	public boolean isUndoAble() {

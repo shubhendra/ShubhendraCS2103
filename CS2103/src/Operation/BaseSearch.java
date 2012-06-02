@@ -111,4 +111,10 @@ public class BaseSearch extends Operation{
 		return "baseSearch";
 	}
 
+	@Override
+	public Task[] redo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

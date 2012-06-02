@@ -10,10 +10,14 @@ import logic.JIDLogic;
 
 
 
-
+import javax.swing.AbstractAction;
+import javax.swing.ActionMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.InputMap;
 import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -23,6 +27,7 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.awt.Event;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -35,10 +40,13 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.Vector;
 
 import javax.swing.plaf.basic.BasicComboBoxEditor;
+import javax.swing.text.DefaultEditorKit;
 import javax.swing.text.JTextComponent;
 
 import javax.swing.JTextField;
@@ -55,15 +63,16 @@ public class MainJFrame extends javax.swing.JFrame {
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO
 	};
+	
 	boolean edit = false;
 	STATE curState;
 	STATE prevState = STATE.NULL;
 	Task[] prevTasks;
-
-	   Task[] tasks;
+	Task[] tasks;
 	String prevText;
 	String id;
 	int prevIndex;
+	boolean expand = false;
 	
 	// Variables declaration - do not modify
 	private javax.swing.JComboBox jComboBox1;
@@ -75,8 +84,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	// End of variables declaration
 
 	private static Point point = new Point();
+	private static Point currentLocation = new Point(0,0);
 	private final boolean TEST = true;
-	private TopPopUp popup;
 
 	// End of variables declaration
 
@@ -122,6 +131,8 @@ public class MainJFrame extends javax.swing.JFrame {
 				setVisible(true);
 			}
 		});
+		
+		addBindings();
 	}
 
 	/**
@@ -297,14 +308,9 @@ public class MainJFrame extends javax.swing.JFrame {
 						jLabel3.setIcon(Resource.down);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
-							MainJFrame.this.remove(expandJPanel);
-							MainJFrame.this.setSize(400, 100);
+							contractFrame();
 						} else {
-							MainJFrame.this.setLayout(new BorderLayout());
-							MainJFrame.this.add(expandJPanel,
-									BorderLayout.SOUTH);
-							MainJFrame.this.setSize(400, 400);
-
+							expandFrame();
 						}
 					}
 
@@ -352,8 +358,8 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				if (popup != null && popup.isShow())
-					popup.hideBox();
+				if (TopPopUp.isShow())
+					TopPopUp.hideBox();
 				MainJFrame.this.setVisible(false);
 				//JIDLogic.JIDLogic_close();
 			}
@@ -391,19 +397,8 @@ public class MainJFrame extends javax.swing.JFrame {
 		final JTextField editorcomp = (JTextField) jComboBox1.getEditor()
 				.getEditorComponent();
 		editorcomp.setText("");
-		jComboBox1.addItemListener(new ItemListener() {
-
-			@Override
-			public void itemStateChanged(ItemEvent e) {
-				// TODO Auto-generated method stub
-
-			}
-
-		});
-
 		
-		
-		editorcomp.addKeyListener(new KeyListener() {
+		editorcomp.addKeyListener(new KeyAdapter() {
 
 			@Override
 			public void keyPressed(KeyEvent arg0) {
@@ -516,7 +511,8 @@ public class MainJFrame extends javax.swing.JFrame {
 											exeCmd = curState.toString().toLowerCase() + " "
 													+ id;
 											editorcomp.setText(
-													curState.toString().toLowerCase() + " " + taskToString(storagecontroller.StorageManager.getTaskById(id)));
+													curState.toString().toLowerCase() + " " 
+													+ storagecontroller.StorageManager.getTaskById(id));
 											edit = true;
 										}
 										else {
@@ -546,7 +542,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString()+ " " + taskToString(tasks[0]));
+												showPopup( curState.toString()+ " " 
+														+ tasks[0]);
 												expandJPanel.updateJTable();
 											}else
 												showPopup("invalid input");
@@ -602,7 +599,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(tasks!=null) {
 									String[] strings = new String[tasks.length];
 									for(int i=0; i<tasks.length; i++)
-										strings[i]= curState.toString() + " " + taskToString(tasks[i]);
+										strings[i]= curState.toString() + " " 
+												+ tasks[i];
 									
 									System.out.println("str[0]: "+strings[0]);
 									return strings;
@@ -610,16 +608,6 @@ public class MainJFrame extends javax.swing.JFrame {
 								else {
 									return null;
 								}
-							}
-							
-							private String taskToString(Task task) {
-								String str = new String();
-								str = task.getName() ;
-								if(task.getStartDateTime() != null)
-									str += " start:" + task.getStartDateTime().presentableToString();
-								if(task.getEndDateTime() != null)
-									str += " end:" + task.getEndDateTime().presentableToString();
-								return str;
 							}
 							
 							private STATE checkCommand(String curText) {
@@ -656,22 +644,6 @@ public class MainJFrame extends javax.swing.JFrame {
 				}
 
 
-			@Override
-			public void keyReleased(KeyEvent arg0) {
-				// TODO Auto-generated method stub
-
-			}
-
-			@Override
-			public void keyTyped(KeyEvent arg0) {
-				// TODO Auto-generated method stub
-
-				/**
-				 * //update state //update combo box
-				 * 
-				 */
-			}
-
 		});
 
 		editorcomp.addMouseListener(new MouseAdapter() {
@@ -693,17 +665,22 @@ public class MainJFrame extends javax.swing.JFrame {
 				point.y = e.getY();
 
 			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+				currentLocation = MainJFrame.this.getLocation();
+			}
 		});
 
 		addMouseMotionListener(new MouseMotionAdapter() {
 			public void mouseDragged(MouseEvent e) {
 				Point p = getLocation();
 				setLocation(p.x + e.getX() - point.x, p.y + e.getY() - point.y);
-				if (popup != null) {
-					Point popupP = popup.getLocation();
-					popup.setLocation(popupP.x + e.getX() - point.x, popupP.y
+				Point popupP = TopPopUp.jFrame.getLocation();
+				TopPopUp.setPosition(popupP.x + e.getX() - point.x, popupP.y
 							+ e.getY() - point.y);
-				}
+				
 			}
 		});
 
@@ -721,16 +698,12 @@ public class MainJFrame extends javax.swing.JFrame {
 		});
 	}
 
-	private void showPopup(String str) {
-		if (popup == null) {
-			popup = new TopPopUp();
-		}
-
+	public static void showPopup(String str) {
 		System.out.println("-----------------POPUP-----------------------");
-		popup.setText(str);
-		popup.setPosition(this.getLocation().x, this.getLocation().y - 30);
-		popup.showBox();
-		popup.setFocusable(true);
+		TopPopUp.setText(str);
+		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
+		TopPopUp.showBox();
+		TopPopUp.jFrame.setFocusable(true);
 	}
 
 	public void showFrame() {
@@ -791,10 +764,47 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 	
 	private void expandFrame() {
-		if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+		if(!expand) {
 			MainJFrame.this.setLayout(new BorderLayout());
 			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 			MainJFrame.this.setSize(400,400);
+			expand = true;
+			jLabel3.setToolTipText("Contract");
 		}
 	}
+	
+	private void contractFrame() {
+		if (expand) {
+			MainJFrame.this.remove(expandJPanel);
+			MainJFrame.this.setSize(400, 100);
+			expand = false;
+			jLabel3.setToolTipText("Expand");
+		}
+	}
+	
+    protected void addBindings() {
+        InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = this.getRootPane().getActionMap();
+        
+        //Ctrl-b to go backward one character
+        KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK);
+        inputMap.put(key, "undo");
+        actionMap.put("undo", new UndoAction());
+    }
+    
+    class UndoAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+        	System.out.println("*****EXECMD: UNDO*******");
+        	JIDLogic.setCommand("UNDO");
+        	Task[] task = JIDLogic.executeCommand("UNDO");
+        	if(task == null)
+        		showPopup("UNDO unsuccessfully!");
+        	else {
+        		showPopup("UNDO: "+task[0].getName());
+            	expandJPanel.updateJTable();
+        	}
+        }
+    }
+    
 }

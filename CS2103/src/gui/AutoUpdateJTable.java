@@ -29,45 +29,7 @@ public class AutoUpdateJTable {
 		this.jTable = jTable;
 		model = (DefaultTableModel) this.jTable.getModel();
 		updateJTable();
-		/*
-		SwingWorker<JTable, Void> worker = new SwingWorker<JTable, Void>() {
 
-			@Override
-			protected JTable doInBackground() throws Exception {
-				// TODO Auto-generated method stub
-				System.out.println("enter swing");
-				Timer timer = new Timer(2000, new ActionListener(){
-
-					@Override
-					public void actionPerformed(ActionEvent arg0) {
-						// TODO Auto-generated method stub
-						//updateJTable();
-						makeJLabel(new Task());
-						setAppearance();
-						System.out.println(listLabel.get(0).toString());
-					}
-					
-				});
-				timer.start();
-				timer.setRepeats(true);
-				return null;
-			}
-		};
-		*/
-
-		/*
-		Timer timer = new Timer(2000, new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				//updateJTable();
-				//System.out.println(listLabel.get(0).toString());
-			}
-		});
-		timer.start();
-		timer.setRepeats(true);
-		*/
-		
 	}
 	
 	private void setAppearance() {
@@ -165,7 +127,28 @@ public class AutoUpdateJTable {
     	                                                 boolean isSelected, boolean hasFocus, 
     	                                                 int row, int column) {
     		JLabel label = new JLabel(value.toString());
+    		if(isSelected){
+    			label.setBackground(table.getSelectionBackground());
+    			label.setForeground(table.getSelectionForeground());
+    		}
+    		else {
+    			label.setBackground(table.getBackground());
+    			label.setForeground(table.getForeground());
+    		}
+    		label.setOpaque(true);
     		return label;   
     	  }
+    }
+    	  
+
+    	  
+    class MyDefaultTableModel extends DefaultTableModel {  
+    	public MyDefaultTableModel() {  
+    		super();  
+    	}  
+    		  
+    	public boolean isCellEditable(int row, int col) {  
+    		return false;  
+    	}    
     }
 }

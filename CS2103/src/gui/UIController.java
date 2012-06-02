@@ -33,6 +33,7 @@ public class UIController {
 	
 	
 	public UIController() {
+		TopPopUp.createTopPopUp();
 		mainJFrame = new MainJFrame();
 		
 		Timer timer = new Timer(100, new ActionListener(){
