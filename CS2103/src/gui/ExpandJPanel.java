@@ -34,6 +34,7 @@ public class ExpandJPanel extends javax.swing.JPanel {
      */
     public ExpandJPanel() {
         initComponents();
+        this.setOpaque(false);
         autoJTable = new AutoUpdateJTable(jTable1);
     }
 
@@ -96,6 +97,10 @@ public class ExpandJPanel extends javax.swing.JPanel {
     
     public static void updateJTable() {
     	autoJTable.updateJTable();
+    }
+    
+    public static void updateJTableWithTasks(Task[] tasks) {
+    	autoJTable.updateJTable(tasks);
     }
     
     public static Task[] getTasks() {

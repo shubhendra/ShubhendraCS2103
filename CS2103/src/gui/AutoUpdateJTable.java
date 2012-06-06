@@ -58,10 +58,9 @@ public class AutoUpdateJTable {
     	}
     	str += task.getName();
     	str += "<br/></b>";
+    	str += tagToCode(task);
     	if(task.getCompleted())
     		str+=completedFont;
-    	if(task.getDescription()!= null)
-    		str+=task.getDescription();
     	if(task.getStartDateTime()!= null) {
     		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
     	}
@@ -73,7 +72,19 @@ public class AutoUpdateJTable {
     	listLabel.add(str);
     }
     
-    private void makeAllJLabel(Task[] tasks) {
+    private String tagToCode(Task task) {
+    	String str = new String();
+    	if(task.getLabels()!=null)
+	    	for(int i=0; i<task.getLabels().size() && task.getLabels().get(i)!=null; i++) {
+	    		str += "<FONT style=\"BACKGROUND-COLOR: #FFFFCC\">"
+	    			+ task.getLabels().get(i)
+	    			+ "</FONT> ";
+	    		System.out.println(i + task.getLabels().get(i));
+	    	}
+		return str;
+	}
+
+	private void makeAllJLabel(Task[] tasks) {
     	
     	for(int i=0; i<tasks.length; i++) {
     		makeJLabel(tasks[i]);

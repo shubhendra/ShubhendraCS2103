@@ -29,7 +29,7 @@ import logic.JIDLogic;
 public class UIController {
 	static MainJFrame mainJFrame;
 	Reminder reminder;
-	static SystemTray tray = SystemTray.getSystemTray();
+	static JotItDownTray JIDtray;
 	
 	
 	public UIController() {
@@ -42,8 +42,8 @@ public class UIController {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 
-				initializeTray();
-				Reminder reminder = new Reminder(tray);
+				JIDtray = new JotItDownTray(mainJFrame);
+				Reminder reminder = new Reminder(JIDtray.getTray());
 			}
 			
 		});
@@ -61,67 +61,6 @@ public class UIController {
 		//Reminder reminder = new Reminder(tray);
 	}
 
-
-	private static void initializeTray() {
-		// TODO Auto-generated method stub
-		tray = SystemTray.getSystemTray();
-		Image img = Resource.trayImage;
-		//Image img = Toolkit.getDefaultToolkit().getImage( "D:\\JAVAworkspace2\\GUITemp\\bin\\gui\\trayLogo.png");
-		
-		
-		PopupMenu popup = new PopupMenu();
-		
-		MenuItem mItem1 = new MenuItem("Exit");
-		mItem1.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
-				JIDLogic.JIDLogic_close();
-				System.exit(0);
-			}
-		});	
-		
-		MenuItem mItem2 = new MenuItem("Add from clipboard");
-		mItem2.addActionListener( new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub]
-				String input = getClipboard();
-				if(!mainJFrame.isVisible())
-					mainJFrame.showFrame();
-				mainJFrame.setInputText("add "+input);
-			}
-		});
-		
-		
-		popup.add(mItem2);
-		popup.add(mItem1);
-		
-		TrayIcon trayIcon = new TrayIcon(img, "Tray Demo", popup);
-		try {
-			tray.add(trayIcon);
-		} catch (AWTException e) {
-			System.err.println("Problem loading Tray icon");
-		}
-		
-		trayIcon.addMouseListener(new MouseAdapter(){
-
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				//mainJFrame.setVisible(true);
-			    SwingUtilities.invokeLater(
-	    	       new Runnable() {
-					@Override
-					public void run() {
-						if(!mainJFrame.isVisible()) {
-							mainJFrame.showFrame();
-						}
-		   			}
-	    	       });
-			}
-		});
-	}
 	
 	public static String getClipboard() {
 	    Transferable t = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
@@ -137,4 +76,27 @@ public class UIController {
 	    return null;
 	}
 	
+	public static void showTopPopUpMsg(String str) {
+		mainJFrame.showPopup(str);
+	}
+	
+	public static void showTrayMsg(String caption, String text) {
+		JIDtray.showText(caption, text);
+	}
+	
+	public static void refresh() {
+		ExpandJPanel.updateJTable();
+	}
+	
+	public static boolean isFrameExpand() {
+		return mainJFrame.isExpand();
+	}
+	
+	public static void expandFrame() {
+		mainJFrame.expandFrame();
+	}
+	
+	public static void contractFrame() {
+		mainJFrame.contractFrame();
+	}
 }

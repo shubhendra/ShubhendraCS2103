@@ -19,7 +19,7 @@ public class JIDLogic {
 		//private static String command;
 		public static void main(String[] args) {
 	        //logger.info("hi");
-		
+		/*
 			logger.debug(StorageManager.loadFile());
 			command="search";
 			Task[] def=executeCommand("find *.*");
@@ -164,9 +164,9 @@ public class JIDLogic {
 	    	*/
 	    	//logger.debug(StorageManager.saveFile());
 			
-			//JIDLogic_init();
-			//UIController ui=new UIController();
-			
+			JIDLogic_init();
+			UIController ui=new UIController();
+			JIDLogic_close();
 			//logger.debug(StorageManager.loadFile());
 			
 			

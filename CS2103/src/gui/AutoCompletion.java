@@ -23,7 +23,7 @@ public class AutoCompletion extends PlainDocument {
     boolean hitBackspaceOnSelection;
     int index;
     String[] standardCommand = new String[] {"add", "modify", "delete", "search"
-    										, "completed", "achive", "overdue"};
+    										, "completed", "achive", "overdue", "exit"};
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
     
