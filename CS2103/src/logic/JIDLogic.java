@@ -227,6 +227,7 @@ public class JIDLogic {
 				undoStack.push(op);
 				logger.debug("isundoable");
 			}
+			UIController.showTopPopUpMsg(op.getErrorMessage());
 			return result;
 			
 			

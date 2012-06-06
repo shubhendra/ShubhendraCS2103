@@ -15,6 +15,8 @@ public class DateTime {
 			"yyyy-MM-dd'T'HH:mm:ss");
 	private static final SimpleDateFormat DAY_MONTH_YEAR = new SimpleDateFormat(
 			"dd MMM yyyy");
+	private static final SimpleDateFormat DAY_MONTH_YEAR_CODEFORMAT=new SimpleDateFormat(
+			"dd-MM-yyyy");
 	private static final SimpleDateFormat DAY_MONTH_YEAR_HOUR_MIN = new SimpleDateFormat(
 			"K:mm a dd MMM yyyy");
 	private static final SimpleDateFormat DAY_MONTH_YEAR_PRESENTABLE  =new SimpleDateFormat(
@@ -274,7 +276,7 @@ public String generateDateCode()
 {
 	try
 	{
-		return DAY_MONTH_YEAR.format(this.calendar.getTimeInMillis());
+		return DAY_MONTH_YEAR_CODEFORMAT.format(this.calendar.getTimeInMillis());
 	}
 	catch(NullPointerException e)
 	{
