@@ -14,23 +14,57 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
-import logic.JIDLogic;
-
-import data.DateTime;
-import data.Task;
-import data.TaskHashMap;
+import Storage.DateTime;
+import Storage.Task;
+import Storage.TaskHashMap;
 
 public class AutoUpdateJTable {
 	private JTable jTable;
 	private DefaultTableModel model;
     private Vector<String> listLabel = new Vector<String>();
-    private Task[] tasks;
 	
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
 		model = (DefaultTableModel) this.jTable.getModel();
-		updateJTable();
+		/*
+		SwingWorker<JTable, Void> worker = new SwingWorker<JTable, Void>() {
 
+			@Override
+			protected JTable doInBackground() throws Exception {
+				// TODO Auto-generated method stub
+				System.out.println("enter swing");
+				Timer timer = new Timer(2000, new ActionListener(){
+
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						// TODO Auto-generated method stub
+						//updateJTable();
+						makeJLabel(new Task());
+						setAppearance();
+						System.out.println(listLabel.get(0).toString());
+					}
+					
+				});
+				timer.start();
+				timer.setRepeats(true);
+				return null;
+			}
+		};
+		*/
+
+		Timer timer = new Timer(2000, new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				updateJTable();
+				//System.out.println(listLabel.get(0).toString());
+			}
+			
+		});
+		timer.start();
+		timer.setRepeats(true);
+		
 	}
 	
 	private void setAppearance() {
@@ -41,97 +75,49 @@ public class AutoUpdateJTable {
 		for(int i=0; i<listLabel.size(); i++) {
 			model.addRow(new Object[]{listLabel.get(i)});
 		}
+		System.out.println(listLabel.toString());
 	}
 	
 
     private void makeJLabel(Task task) {
+    	task = new Task("test");
+    	
     	String str;
-    	String completedFont = "<font color = \"#BBBBBB\">";
     	
     	str = "<HTML><b>";
-    	if(task.getCompleted()) {
-    		str+=completedFont;
-    		System.out.println("completed task");
-    	}
-    	else if(task.getImportant()) {
-    		str += "<font color=\"red\">";
-    	}
+    	if(task.getImportant())
+    		str+= "<color = \"red\">";
     	str += task.getName();
-    	str += "<br/></b>";
-    	str += tagToCode(task);
-    	if(task.getCompleted())
-    		str+=completedFont;
+    	str += "</br></b>";
+    	if(task.getDescription()!= null)
+    		str+=task.getDescription();
     	if(task.getStartDateTime()!= null) {
-    		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
+    		str+="<i>start</i>"+task.getStartDateTime().formattedToString();
     	}
     	if(task.getEndDateTime()!=null) {
-    		str+="<i>                  end: </i>"+task.getEndDateTime().presentableToString();
+    		str+="<i>end</i>"+task.getEndDateTime().formattedToString();
     	}
     	str += "</HTML>";
-    	
     	listLabel.add(str);
     }
     
-    private String tagToCode(Task task) {
-    	String str = new String();
-    	if(task.getLabels()!=null)
-	    	for(int i=0; i<task.getLabels().size() && task.getLabels().get(i)!=null; i++) {
-	    		str += "<FONT style=\"BACKGROUND-COLOR: #FFFFCC\">"
-	    			+ task.getLabels().get(i)
-	    			+ "</FONT> ";
-	    		System.out.println(i + task.getLabels().get(i));
-	    	}
-		return str;
-	}
-
-	private void makeAllJLabel(Task[] tasks) {
-    	
-    	for(int i=0; i<tasks.length; i++) {
-    		makeJLabel(tasks[i]);
+    private void makeAllJLabel(TaskHashMap taskHashMap) {
+    	int length = 0;
+    	for(int i=0; i<length; i++) {
+    		makeJLabel(new Task());
     	}
     }
     
-    
-    public void updateJTable() {
-
-    	Timer timer = new Timer(100, new ActionListener(){
-
-    	  		@Override
-			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-		    	listLabel = new Vector<String>();
-		    	JIDLogic.setCommand("find");
-		    	tasks = JIDLogic.executeCommand("find *.*");
-		    	makeAllJLabel(tasks);
-		    	setAppearance();
-		    	}
-			});
-    	timer.setRepeats(false);
-    	timer.start();
-    	
-    }
-    
-    public void updateJTable(final Task[] tasks) {
-    	Timer timer = new Timer(100, new ActionListener(){
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-
-		    	if(tasks==null)
-		    		while(model.getRowCount()>0)
-		    			model.removeRow(0);
-		    	else {
-			    	listLabel = new Vector<String>();
-			    	makeAllJLabel(tasks);
-			    	setAppearance();
-		    	}
-			}});
-    	timer.setRepeats(false);
-    	timer.start();
+    private void updateJTable() {
+    	//retrieve TaskHashMap
+    	listLabel = new Vector<String>();
+    	TaskHashMap taskHashMap = new TaskHashMap();
+    	makeAllJLabel(taskHashMap);
+    	setAppearance();
     }
     
     class MyRenderer extends DefaultTableCellRenderer {
+
     	  /*
     	   * @see TableCellRenderer#getTableCellRendererComponent(JTable, Object, boolean, boolean, int, int)
     	   */
@@ -139,30 +125,8 @@ public class AutoUpdateJTable {
     	                                                 boolean isSelected, boolean hasFocus, 
     	                                                 int row, int column) {
     		JLabel label = new JLabel(value.toString());
-    		if(isSelected){
-    			label.setBackground(table.getSelectionBackground());
-    			label.setForeground(table.getSelectionForeground());
-    		}
-    		else {
-    			label.setBackground(table.getBackground());
-    			label.setForeground(table.getForeground());
-    		}
-    		label.setOpaque(true);
     		return label;   
     	  }
     }
-    	  
-    public Task[] getTasks() {
-    	return tasks;
-    }
-    	  
-    class MyDefaultTableModel extends DefaultTableModel {  
-    	public MyDefaultTableModel() {  
-    		super();  
-    	}  
-    		  
-    	public boolean isCellEditable(int row, int col) {  
-    		return false;  
-    	}    
-    }
+
 }

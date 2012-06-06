@@ -4,38 +4,23 @@
  */
 package gui;
 
-import java.awt.Event;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
-import javax.swing.AbstractAction;
-import javax.swing.ActionMap;
-import javax.swing.InputMap;
-import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import javax.swing.KeyStroke;
-import javax.swing.table.DefaultTableModel;
-
-import logic.JIDLogic;
-
-import data.*;
+import Storage.*;
 /**
  *
  * @author Ramon
  */
 public class ExpandJPanel extends javax.swing.JPanel {
 
-	static AutoUpdateJTable autoJTable;
-	
     /**
      * Creates new form ExpandJPanel
      */
     public ExpandJPanel() {
         initComponents();
-        this.setOpaque(false);
-        autoJTable = new AutoUpdateJTable(jTable1);
+        new AutoUpdateJTable(jTable1);
     }
 
     /**
@@ -54,17 +39,23 @@ public class ExpandJPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(378, 300));
         setRequestFocusEnabled(false);
 
-        jTable1.setModel(new MyTableModel());
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+            		null
+            },
+            new String [] {
+                "Title 1"
+            }
+        ));
         jTable1.setTableHeader(null);
         //jTable1.setCellEditor(jTable1.getCellEditor());
-        jTable1.setColumnSelectionAllowed(true);
+        jTable1.setColumnSelectionAllowed(false);
         jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable1.setEnabled(true);
-        jTable1.setFocusable(true);
+        jTable1.setEnabled(false);
+        jTable1.setFocusable(false);
         jTable1.setMaximumSize(new java.awt.Dimension(370, 30));
         jTable1.setMinimumSize(new java.awt.Dimension(370, 370));
-        jTable1.setRowSelectionAllowed(true);
-        jTable1.setCellSelectionEnabled(true);
+        jTable1.setRowSelectionAllowed(false);
         jTable1.setRowSorter(null);
         
         jScrollPane1.setViewportView(jTable1);
@@ -88,65 +79,8 @@ public class ExpandJPanel extends javax.swing.JPanel {
     }// </editor-fold>
     // Variables declaration - do not modify
     private javax.swing.JScrollPane jScrollPane1;
-    public static javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable1;
     
     // End of variables declaration
-    public void updateJTable(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
-    }
     
-    public static void updateJTable() {
-    	autoJTable.updateJTable();
-    }
-    
-    public static void updateJTableWithTasks(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
-    }
-    
-    public static Task[] getTasks() {
-    	return autoJTable.getTasks();
-    }
-    
-    class MyTableModel extends DefaultTableModel{
-    	MyTableModel() {
-    		super(
-    			new Object [][] {null},
-    			new String [] {"Title 1"});
-    	}
-    	
-    	@Override
-    	public boolean isCellEditable(int row, int column) {
-			return false;
-    	}
-    }
-
-    protected void addBindings() {
-        InputMap inputMap = this.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
-        ActionMap actionMap = this.getActionMap();
-        
-        //Ctrl-b to go backward one character
-        KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
-        inputMap.put(key, "delete");
-        actionMap.put("delete", new DeleteAction());
-    }
-    
-    class DeleteAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        	System.out.println("*****EXECMD: DELETE*******");
-        	
-        	JIDLogic.setCommand("find");
-        	Task[] taskList = JIDLogic.executeCommand("find");
-        	
-        	JIDLogic.setCommand("DELETE");
-        	Task[] task = JIDLogic.executeCommand("DELETE" + jTable1.getSelectedRow());
-        	
-        	if(task == null)
-        		MainJFrame.showPopup("DELETE unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("DELETE: "+task[0].getName());
-            	updateJTable();
-        	}        	
-        }
-    }
 }
