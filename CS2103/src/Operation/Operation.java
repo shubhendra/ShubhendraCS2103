@@ -1,5 +1,9 @@
 package operation;
 
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
 import data.Task;
 
 
@@ -9,7 +13,7 @@ public abstract class Operation {
 	
 	
 	protected boolean isUndoAble=false;
-	
+	private static Logger logger=Logger.getLogger(Operation.class);
 	public static Operation getOperationObj(String userCommand)
 	{
 		Operation object;
@@ -17,6 +21,8 @@ public abstract class Operation {
 		String intendedOperation;
 		intendedOperation=userCommand.trim().split("\\s+")[0];
 		intendedOperation = intendedOperation.toLowerCase();
+		logger.debug(intendedOperation);
+		
 		
 		if (intendedOperation.equals("add") || intendedOperation.equals("insert")){
 			object = new Add(intendedOperation);

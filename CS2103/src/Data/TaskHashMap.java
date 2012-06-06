@@ -22,10 +22,20 @@ public class TaskHashMap
 	
 		if(taskToBeAdded == null)
 			return false;
-		taskToBeAdded.setTaskId(generateUniqueId(taskToBeAdded));
+		String uniqueID=generateUniqueId(taskToBeAdded);
+		if (uniqueID!=null){
+		taskToBeAdded.setTaskId(uniqueID);
+		}
+		else 
+			return false;
 		taskList.put(taskToBeAdded.getTaskId(), taskToBeAdded);
 		return true;
 	}
+	/** Member Function to generate a unique id for the task to be added
+	 * 
+	 * @param taskToBeAdded the task to be added
+	 * @return a string containing the unique id
+	 */
 	public String generateUniqueId(Task taskToBeAdded)
 	{
 		String taskId;
@@ -36,9 +46,12 @@ public class TaskHashMap
 			taskId="$$__" + taskToBeAdded.getEndDateTime().generateDateCode() + taskToBeAdded.getEndDateTime().generateTimeCode() + 
 					(char)(random.nextInt('Z'-'A'+1)+'A')+ "__$$";
 			}
-		else{
+		else if (taskToBeAdded.getStartDateTime()!=null){
 			taskId="$$__"+ taskToBeAdded.getStartDateTime().generateDateCode()+ taskToBeAdded.getStartDateTime().generateTimeCode()+
 					(char)(random.nextInt('Z'-'A'+1)+'A')+ "__$$";
+		}
+		else{
+			return null;
 		}
 		}while((getKeySet().contains(taskId)));
 		return taskId;
@@ -54,6 +67,11 @@ public class TaskHashMap
 		taskList.remove(taskToRemove.getTaskId());
 		return true;
 	}
+	/** Member function to remove the task by id
+	 * 
+	 * @param key contains the id of the task to be deleted
+	 * @return true if the task is deleted without any errors, otherwise false.
+	 */
 	public boolean deleteTaskById(String key)
 	{
 		if(taskList.keySet().contains(key))
@@ -73,18 +91,33 @@ public class TaskHashMap
 	{
 		return taskList.get(id);
 	}
+	/** Member function to add the task by id
+	 * 
+	 * @param taskToBeAdded the task to be added
+	 */
 	public void addTaskById(Task taskToBeAdded)
 	{
 		taskList.put(taskToBeAdded.getTaskId(), taskToBeAdded);
 	}
+	/** Member function which returns the key set of the hash map.
+	 * 
+	 * @return a set of strings containing the ids
+	 */
 	public Set<String> getKeySet()
 	{
 		return taskList.keySet();
 	}
+	/** Member function to clear the hash map
+	 * 
+	 */
 	public void clearHashMap()
 	{
 		taskList.clear();
 	}
+	/** Member function to get the size of the Hash map
+	 * 
+	 * @return the size of the Hash Map
+	 */
 	public int getHashMapSize()
 	{
 		return getKeySet().size();

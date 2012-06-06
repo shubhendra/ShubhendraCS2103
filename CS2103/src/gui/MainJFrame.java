@@ -5,10 +5,12 @@
 package gui;
 
 
+import org.apache.log4j.*;
+
 import data.Task;
 import logic.JIDLogic;
 
-
+//import com.seaglasslookandfeel.*;
 
 import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
@@ -17,6 +19,7 @@ import javax.swing.ImageIcon;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
+import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
@@ -28,6 +31,8 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Event;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -60,6 +65,8 @@ import data.TaskArrayList;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
+	private static Logger logger=Logger.getLogger(JIDLogic.class);
+	
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO
 	};
@@ -143,7 +150,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">
 	private void initComponents() {
-
+		
 		jLabel1 = new javax.swing.JLabel("", Resource.bigLogo,
 				SwingConstants.CENTER);
 		jLabel2 = new javax.swing.JLabel("", Resource.exitImg,
@@ -276,6 +283,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		// pack();
 
 	}// </editor-fold>
+
 
 	/**
 	 * setting drag option
@@ -416,12 +424,12 @@ public class MainJFrame extends javax.swing.JFrame {
 								jBoxCompletion.stopWorking();
 								//curText= editorcomp.getText();
 								curState= checkCommand(curText);curIndex= getIndex();
-								System.out.println("curText:" + curText);
-								System.out.println("prevText: " + prevText);
-								//System.out.println("cmd: " + command);
-								System.out.println("state: " +curState);
-								System.out.println("prev: " +prevState);
-								System.out.println("index: "+ curIndex);
+								logger.debug("curText:" + curText);
+								logger.debug("prevText: " + prevText);
+								//logger.debug("cmd: " + command);
+								logger.debug("state: " +curState);
+								logger.debug("prev: " +prevState);
+								logger.debug("index: "+ curIndex);
 
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
@@ -454,12 +462,12 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 											JIDLogic.setCommand(curState.toString().toLowerCase());
 	
-											System.out.println("********exeCmd: "
+											logger.debug("********exeCmd: "
 													+ curText);
 											tasks = JIDLogic
 													.executeCommand(curText);
 	
-											//System.out.println(tasks[0].getName());
+											//logger.debug(tasks[0].getName());
 	
 											jBoxCompletion.stopWorking();
 											jBoxCompletion
@@ -493,8 +501,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									
-									System.out.println("*********************enter");
-									//System.out.println(prevTasks[0].getName());
+									logger.debug("*********************enter");
+									//logger.debug(prevTasks[0].getName());
 									
 									if(curState != STATE.EDIT)
 										edit = false;
@@ -531,7 +539,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 									}
 									
-									System.out.println("********exeCmd: " + exeCmd);
+									logger.debug("********exeCmd: " + exeCmd);
 									JIDLogic.setCommand(curState.toString());
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
@@ -569,9 +577,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									
 									/*
 									if(tasks==null)
-										System.out.println("error");
+										logger.debug("error");
 									else
-										System.out.println(tasks[0].toString());
+										logger.debug(tasks[0].toString());
 									*/
 								}
 								
@@ -602,7 +610,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										strings[i]= curState.toString() + " " 
 												+ tasks[i];
 									
-									System.out.println("str[0]: "+strings[0]);
+									logger.debug("str[0]: "+strings[0]);
 									return strings;
 								}
 								else {
@@ -691,7 +699,7 @@ public class MainJFrame extends javax.swing.JFrame {
 				// TODO Auto-generated method stub
 				if (TEST)
 					if (e.getKeyChar() == 'b') {
-						System.out.println("B");
+						logger.debug("B");
 					}
 			}
 
@@ -699,7 +707,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	public static void showPopup(String str) {
-		System.out.println("-----------------POPUP-----------------------");
+		logger.debug("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
 		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
 		TopPopUp.showBox();
@@ -786,25 +794,8 @@ public class MainJFrame extends javax.swing.JFrame {
         InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
         ActionMap actionMap = this.getRootPane().getActionMap();
         
-        //Ctrl-b to go backward one character
-        KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK);
-        inputMap.put(key, "undo");
-        actionMap.put("undo", new UndoAction());
-    }
-    
-    class UndoAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        	System.out.println("*****EXECMD: UNDO*******");
-        	JIDLogic.setCommand("UNDO");
-        	Task[] task = JIDLogic.executeCommand("UNDO");
-        	if(task == null)
-        		showPopup("UNDO unsuccessfully!");
-        	else {
-        		showPopup("UNDO: "+task[0].getName());
-            	expandJPanel.updateJTable();
-        	}
-        }
+        new Binding(inputMap, actionMap);
+        
     }
     
 }

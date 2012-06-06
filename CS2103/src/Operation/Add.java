@@ -12,6 +12,7 @@ public class Add extends Operation {
 	
 	private Task addedTask;
 	private String commandName;
+//	private enum addErrorCode
 	
 	public Add (String command)
 	{

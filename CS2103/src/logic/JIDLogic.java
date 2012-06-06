@@ -16,10 +16,10 @@ import storagecontroller.StorageManager;
 public class JIDLogic {
 	
 		private static Logger logger=Logger.getLogger(JIDLogic.class);
-		
+		//private static String command;
 		public static void main(String[] args) {
 	        //logger.info("hi");
-			
+		
 			logger.debug(StorageManager.loadFile());
 			command="search";
 			Task[] def=executeCommand("find *.*");
@@ -27,7 +27,7 @@ public class JIDLogic {
 	    	{
 	    		for (int i=0;i<def.length;i++)
 	    		{
-	    			System.out.println(def[i].getTaskId());
+	    			logger.debug(def[i].toString2());
 	    		}
 	    	}
 			
@@ -55,8 +55,8 @@ public class JIDLogic {
 	    			logger.debug(StorageManager.getAllTasks()[i].getEndDateTime().getDate());
     		}
 	    	
-	    
-	    	*/
+	    */
+	    	/*
 	    	command="delete";
 	    	Task[] xyz=executeCommand("star meet");
 	    	if (xyz!=null)
@@ -105,7 +105,7 @@ public class JIDLogic {
 	    			logger.debug("Task that was undone: "+def[i].getName());
 	    			logger.debug(def[i].getImportant());
 	    		}
-	    	}/*
+	    	}
 	    	def=executeCommand("find *.*");
 	    	if (def!=null)
 	    	{
@@ -114,7 +114,7 @@ public class JIDLogic {
 	    			logger.debug(def[i].toString());
 	    		}
 	    	}
-	    	*/
+	    	
 	    	logger.debug("before redo");
 	    	command="redo";
 	    	def=executeCommand("redo");
@@ -126,7 +126,7 @@ public class JIDLogic {
 	    			logger.debug("Task that was redone:"+def[i].getName());
 	    			logger.debug(def[i].getImportant());
 	    		}
-	    	}/*
+	    	}
 	    	def=executeCommand("find *.*");
 	    	if (def!=null)
 	    	{
@@ -160,15 +160,15 @@ public class JIDLogic {
 	    			logger.debug(def[i].toString());
 	    		}
 	    	}
+	    	
+	    	*/
 	    	//logger.debug(StorageManager.saveFile());
-			/*
-			JIDLogic_init();
-			UIController ui=new UIController();
-			/*
-			logger.debug(StorageManager.loadFile());
-			command="find";
-			Task[] def=executeCommand("find *.*");
-			*/
+			
+			//JIDLogic_init();
+			//UIController ui=new UIController();
+			
+			//logger.debug(StorageManager.loadFile());
+			
 			
 		
 	}

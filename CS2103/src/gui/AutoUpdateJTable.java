@@ -24,6 +24,7 @@ public class AutoUpdateJTable {
 	private JTable jTable;
 	private DefaultTableModel model;
     private Vector<String> listLabel = new Vector<String>();
+    private Task[] tasks;
 	
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
@@ -89,7 +90,7 @@ public class AutoUpdateJTable {
 				// TODO Auto-generated method stub
 		    	listLabel = new Vector<String>();
 		    	JIDLogic.setCommand("find");
-		    	Task[] tasks = JIDLogic.executeCommand("find *.*");
+		    	tasks = JIDLogic.executeCommand("find *.*");
 		    	makeAllJLabel(tasks);
 		    	setAppearance();
 		    	}
@@ -140,7 +141,9 @@ public class AutoUpdateJTable {
     	  }
     }
     	  
-
+    public Task[] getTasks() {
+    	return tasks;
+    }
     	  
     class MyDefaultTableModel extends DefaultTableModel {  
     	public MyDefaultTableModel() {  

@@ -86,11 +86,7 @@ public class ToggleCompleted extends BaseSearch{
 		// TODO Auto-generated method stub
 		return commandName;
 	}
-	@Override
-	public Task[] execute(String userCommand) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	@Override
 	public Task[] redo() {
 		// TODO Auto-generated method stub

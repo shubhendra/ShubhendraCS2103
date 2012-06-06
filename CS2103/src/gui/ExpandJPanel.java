@@ -4,8 +4,6 @@
  */
 package gui;
 
-import gui.MainJFrame.UndoAction;
-
 import java.awt.Event;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -29,7 +27,7 @@ import data.*;
  */
 public class ExpandJPanel extends javax.swing.JPanel {
 
-	AutoUpdateJTable autoJTable;
+	static AutoUpdateJTable autoJTable;
 	
     /**
      * Creates new form ExpandJPanel
@@ -89,15 +87,19 @@ public class ExpandJPanel extends javax.swing.JPanel {
     }// </editor-fold>
     // Variables declaration - do not modify
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    public static javax.swing.JTable jTable1;
     
     // End of variables declaration
     public void updateJTable(Task[] tasks) {
     	autoJTable.updateJTable(tasks);
     }
     
-    public void updateJTable() {
+    public static void updateJTable() {
     	autoJTable.updateJTable();
+    }
+    
+    public static Task[] getTasks() {
+    	return autoJTable.getTasks();
     }
     
     class MyTableModel extends DefaultTableModel{
@@ -114,8 +116,8 @@ public class ExpandJPanel extends javax.swing.JPanel {
     }
 
     protected void addBindings() {
-        InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
-        ActionMap actionMap = this.getRootPane().getActionMap();
+        InputMap inputMap = this.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = this.getActionMap();
         
         //Ctrl-b to go backward one character
         KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
@@ -127,16 +129,19 @@ public class ExpandJPanel extends javax.swing.JPanel {
         @Override
         public void actionPerformed(ActionEvent e) {
         	System.out.println("*****EXECMD: DELETE*******");
+        	
+        	JIDLogic.setCommand("find");
+        	Task[] taskList = JIDLogic.executeCommand("find");
+        	
         	JIDLogic.setCommand("DELETE");
         	Task[] task = JIDLogic.executeCommand("DELETE" + jTable1.getSelectedRow());
-        	/*
+        	
         	if(task == null)
-        		showPopup("UNDO unsuccessfully!");
+        		MainJFrame.showPopup("DELETE unsuccessfully!");
         	else {
-        		showPopup("UNDO: "+task[0].getName());
-            	expandJPanel.updateJTable();
-        	}
-        	*/
+        		MainJFrame.showPopup("DELETE: "+task[0].getName());
+            	updateJTable();
+        	}        	
         }
     }
 }
