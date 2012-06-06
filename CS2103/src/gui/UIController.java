@@ -31,7 +31,6 @@ public class UIController {
 	Reminder reminder;
 	static JotItDownTray JIDtray;
 	
-	
 	public UIController() {
 		TopPopUp.createTopPopUp();
 		mainJFrame = new MainJFrame();
@@ -45,7 +44,6 @@ public class UIController {
 				JIDtray = new JotItDownTray(mainJFrame);
 				Reminder reminder = new Reminder(JIDtray.getTray());
 			}
-			
 		});
 		timer.setRepeats(false);
 		timer.start();
@@ -60,7 +58,6 @@ public class UIController {
 		//initializeTray();
 		//Reminder reminder = new Reminder(tray);
 	}
-
 	
 	public static String getClipboard() {
 	    Transferable t = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);

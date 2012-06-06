@@ -86,7 +86,7 @@ public class Search extends Operation {
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
-		return newParser.parse(params);
+		return newParser.parseForSearch(params);
 	}
 
 	private Task[] returnAllTasks(String params) {

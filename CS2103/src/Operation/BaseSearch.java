@@ -62,7 +62,7 @@ public class BaseSearch extends Operation{
 	private Task parseEvent(String userCommand) {
 		// TODO Auto-generated method stub
 		Parser newparser= new Parser();
-		return newparser.parse(userCommand);
+		return newparser.parseForSearch(userCommand);
 		
 	}
 

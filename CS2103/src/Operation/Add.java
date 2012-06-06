@@ -52,7 +52,7 @@ public class Add extends Operation {
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
-		return newParser.parse(params);
+		return newParser.parseForAdd(params);
 		
 	}
 	@Override

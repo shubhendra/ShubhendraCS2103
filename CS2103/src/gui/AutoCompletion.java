@@ -16,13 +16,14 @@ public class AutoCompletion extends PlainDocument {
     JTextComponent editor;
     // flag to indicate if setSelectedItem has been called
     // subsequent calls to remove/insertString should be ignored
+    boolean working = true;
     boolean selecting=false;
     boolean hidePopupOnFocusLoss;
     boolean hitBackspace=false;
     boolean hitBackspaceOnSelection;
     int index;
-    String[] standardCommand = new String[] {"add", "modify", "delete", "search"};
-    
+    String[] standardCommand = new String[] {"add", "modify", "delete", "search"
+    										, "completed", "achive", "overdue", "exit"};
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
     
@@ -31,48 +32,53 @@ public class AutoCompletion extends PlainDocument {
         this.comboBox = comboBox;
         setStandardModel();
         
-        
+ /*       
         comboBox.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if (!selecting) highlightCompletedText(0);
+                if (working&&!selecting) highlightCompletedText(0);
             }
         });
         comboBox.addPropertyChangeListener(new PropertyChangeListener() {
             public void propertyChange(PropertyChangeEvent e) {
-                if (e.getPropertyName().equals("editor")) configureEditor((ComboBoxEditor) e.getNewValue());
-                if (e.getPropertyName().equals("model")) model = (ComboBoxModel) e.getNewValue();
+            	if(working) {
+	                if (e.getPropertyName().equals("editor")) configureEditor((ComboBoxEditor) e.getNewValue());
+	                if (e.getPropertyName().equals("model")) model = (ComboBoxModel) e.getNewValue();
+	            }
             }
-        });
-        editorKeyListener = new KeyAdapter() {
+        });*/
+/*        editorKeyListener = new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
-            	if(e.getKeyChar() == KeyEvent.VK_BACK_SPACE)
-            		comboBox.setPopupVisible(false);
-				else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-					editor.setText(comboBox.getSelectedItem().toString());
-					comboBox.setPopupVisible(false);
-					editor.setCaretPosition(getLength());
-				}
-	            else if (comboBox.isDisplayable()) 
-	            		comboBox.setPopupVisible(true);
-				
-                /*hitBackspace=false;
-                switch (e.getKeyCode()) {
-                    // determine if the pressed key is backspace (needed by the remove method)
-                    /*case KeyEvent.VK_BACK_SPACE : hitBackspace=true;
-                    hitBackspaceOnSelection=editor.getSelectionStart()!=editor.getSelectionEnd();
-                    break;
-                    // ignore delete key
-                    case KeyEvent.VK_DELETE : e.consume();
-                    comboBox.getToolkit().beep();
-                    break;*/
-            	//}*/
-            	
-            }
-        };
+            	if(working) {
+	            	if(e.getKeyChar() == KeyEvent.VK_BACK_SPACE)
+	            		comboBox.setPopupVisible(false);
+					else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+						if(comboBox.getSelectedIndex()!=-1) {
+							editor.setText(comboBox.getSelectedItem().toString());
+							comboBox.setPopupVisible(false);
+							editor.setCaretPosition(getLength());
+						}
+					}
+		            else if (comboBox.isDisplayable()) 
+		            		comboBox.setPopupVisible(true);
+					
+	                hitBackspace=false;
+	                switch (e.getKeyCode()) {
+	                    // determine if the pressed key is backspace (needed by the remove method)
+	                    /*case KeyEvent.VK_BACK_SPACE : hitBackspace=true;
+	                    hitBackspaceOnSelection=editor.getSelectionStart()!=editor.getSelectionEnd();
+	                    break;
+	                    // ignore delete key
+	                    case KeyEvent.VK_DELETE : e.consume();
+	                    comboBox.getToolkit().beep();
+	                    break;
+	            	//}*/
+ //           	}
+ //           }
+ //       };*/
         // Bug 5100422 on Java 1.5: Editable JComboBox won't hide popup when tabbing out
         hidePopupOnFocusLoss=System.getProperty("java.version").startsWith("1.5");
         // Highlight whole text when gaining focus
-        editorFocusListener = new FocusAdapter() {
+ /*       editorFocusListener = new FocusAdapter() {
             public void focusGained(FocusEvent e) {
                 highlightCompletedText(0);
             }
@@ -86,14 +92,33 @@ public class AutoCompletion extends PlainDocument {
         Object selected = comboBox.getSelectedItem();
         if (selected!=null) setText(selected.toString());
         highlightCompletedText(0);
+        */
+        
     }
     
-    private void setStandardModel() {
+    public void setStandardModel() {
 		// TODO Auto-generated method stub
 
+    	comboBox.setMaximumRowCount(5);
         comboBox.setModel(new DefaultComboBoxModel(standardCommand));
         model = comboBox.getModel();
 	}
+    
+    public void setNewModel(String[] strings) {
+    	if(strings==null) {
+    		String[] temp = new String[1];
+    		temp[0] = "NOT FOUND!";
+    		comboBox.setMaximumRowCount(1);
+    		comboBox.setModel(new DefaultComboBoxModel(temp));
+    	}
+    	else {
+	    	System.out.println(                 "setNewModel");
+	    	comboBox.setMaximumRowCount( strings.length > 5 ? 5 : strings.length );
+	    	comboBox.setModel(new DefaultComboBoxModel(strings));
+	    	model = comboBox.getModel();
+    	}
+    	
+    }
 
 	public static void enable(JComboBox comboBox) {
         // has to be editable
@@ -126,7 +151,7 @@ public class AutoCompletion extends PlainDocument {
                 if (hitBackspaceOnSelection) offs--;
             } else {
                 // User hit backspace with the cursor positioned on the start => beep
-                comboBox.getToolkit().beep(); // when available use: UIManager.getLookAndFeel().provideErrorFeedback(comboBox);
+                // comboBox.getToolkit().beep(); // when available use: UIManager.getLookAndFeel().provideErrorFeedback(comboBox);
             }
             highlightCompletedText(offs);
         } else {
@@ -145,6 +170,9 @@ public class AutoCompletion extends PlainDocument {
             setSelectedItem(item);
             if(index==0)
             	setText(item.toString());
+
+            // select the completed part
+            highlightCompletedText(offs+str.length());
         } /*else {
             // keep old item selected if there is no match
             item = comboBox.getSelectedItem();
@@ -158,8 +186,6 @@ public class AutoCompletion extends PlainDocument {
         	//hide popup
         	comboBox.setPopupVisible(false);
         }
-        // select the completed part
-        highlightCompletedText(offs+str.length());
     }
     
     private void setText(String text) {
@@ -172,7 +198,7 @@ public class AutoCompletion extends PlainDocument {
         }
     }
     
-    private void highlightCompletedText(int start) {
+    public void highlightCompletedText(int start) {
         editor.setCaretPosition(getLength());
         editor.moveCaretPosition(start);
     }
@@ -208,6 +234,7 @@ public class AutoCompletion extends PlainDocument {
         return str1.toUpperCase().startsWith(str2.toUpperCase());
     }
     
+    /*
     private static void createAndShowGUI() {
         // the combo box (add/modify items if you like to)
         final JComboBox comboBox = new JComboBox(new Object[] {"Ester", "Jordi", "Jordina", "Jorge", "Sergi"});
@@ -227,5 +254,14 @@ public class AutoCompletion extends PlainDocument {
                 createAndShowGUI();
             }
         });
+    }
+    */
+    
+    public void startWorking() {
+    	working = true;
+    }
+    
+    public void stopWorking() {
+    	working = false;
     }
 }

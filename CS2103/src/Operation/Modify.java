@@ -109,7 +109,7 @@ public class Modify extends BaseSearch{
 		// TODO Auto-generated method stub
 		
 		Parser newParser=new Parser();
-		return newParser.parse(userCommand);
+		return newParser.parseForSearch(userCommand);
 		
 	}
 	
