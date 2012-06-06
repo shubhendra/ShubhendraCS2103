@@ -66,19 +66,19 @@ public class Overdue extends Operation {
 		ArrayList<Task> overdueTasks=new ArrayList<Task>();
 		for (Task curTask : allTasks)
 		{
-			if (curTask.getStartDateTime() != null
-					&& curTask.getStartDateTime().getTimeMilli()
+			if (curTask.getStart() != null
+					&& curTask.getStart().getTimeMilli()
 					!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getStartDateTime().compareTo(currDateTime)==-1)
+				if (curTask.getStart().compareTo(currDateTime)==-1)
 				{
 					overdueTasks.add(curTask);
 				}
 			}
-			else if (curTask.getEndDateTime()!=null 
-						&& curTask.getEndDateTime().getTimeMilli()!= defaultDateTime.getTimeMilli())
+			else if (curTask.getEnd()!=null 
+						&& curTask.getEnd().getTimeMilli()!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getEndDateTime().compareTo(currDateTime)==-1)
+				if (curTask.getEnd().compareTo(currDateTime)==-1)
 				{
 					overdueTasks.add(curTask);
 				}

@@ -75,8 +75,8 @@ public class Search extends Operation {
 		}
 		Task parsedTask=parseCommand(params);
 		
-		if (parsedTask.getStartDateTime()!=null){
-			logger.debug(parsedTask.getStartDateTime().getDate().getTimeMilli());
+		if (parsedTask.getStart()!=null){
+			logger.debug(parsedTask.getStart().getDate().getTimeMilli());
 		}
 		return search(parsedTask);
 		
@@ -129,10 +129,10 @@ public class Search extends Operation {
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
-			logger.debug("allTasks["+i+"] StartTime:"+allTasks[i].getStartDateTime().getTime().getTimeMilli());
-			logger.debug("allTasks["+i+"] EndTime:"+allTasks[i].getEndDateTime().getTime().getTimeMilli());
-			logger.debug("searchstring StartTime:"+findTask.getStartDateTime().getTime().getTimeMilli());
-			logger.debug("searchstring EndTime:"+findTask.getEndDateTime().getTime().getTimeMilli());
+		//	logger.debug("allTasks["+i+"] StartTime:"+allTasks[i].getStart().getTime().getTimeMilli());
+		//	logger.debug("allTasks["+i+"] EndTime:"+allTasks[i].getEnd().getTime().getTimeMilli());
+		//	logger.debug("searchstring StartTime:"+findTask.getStart().getTime().getTimeMilli());
+		//	logger.debug("searchstring EndTime:"+findTask.getEnd().getTime().getTimeMilli());
 			if (matches(findTask,allTasks[i])){
 				Collections.addAll(foundTasks, allTasks[i]);
 			}
@@ -149,34 +149,34 @@ public class Search extends Operation {
 	
 		TaskDateTime defaultTime=new TaskDateTime();
 		//logger.debug(defaultTime.getTime().getTimeMilli());
-		//logger.debug(taskToSearch.getStartDateTime().getTime().getTimeMilli());
+		//logger.debug(taskToSearch.getStart().getTime().getTimeMilli());
 	
 		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
 				.contains((taskToSearch.getName().trim())))
 						
-				&& (taskToSearch.getStartDateTime() == null
-						|| taskToSearch.getStartDateTime().getDate().getTimeMilli()
-						== defaultTime.getDate().getTimeMilli() || (existingTask.getStartDateTime()!=null 
-						&& (existingTask.getStartDateTime().getDate().getTimeMilli()
-						== taskToSearch.getStartDateTime().getDate().getTimeMilli())
+				&& (taskToSearch.getStart() == null
+						|| taskToSearch.getStart().getDate().getTimeMilli()
+						== defaultTime.getDate().getTimeMilli() || (existingTask.getStart()!=null 
+						&& (existingTask.getStart().getDate().getTimeMilli()
+						== taskToSearch.getStart().getDate().getTimeMilli())
 						))
-				&& (taskToSearch.getStartDateTime() == null
-						|| taskToSearch.getStartDateTime().getTime().getTimeMilli()
-						== defaultTime.getTime().getTimeMilli() || (existingTask.getStartDateTime()!=null 
-						&&  (existingTask.getStartDateTime().getTime().getTimeMilli()
-						== taskToSearch.getStartDateTime().getTime().getTimeMilli())) 
+				&& (taskToSearch.getStart() == null
+						|| taskToSearch.getStart().getTime().getTimeMilli()
+						== defaultTime.getTime().getTimeMilli() || (existingTask.getStart()!=null 
+						&&  (existingTask.getStart().getTime().getTimeMilli()
+						== taskToSearch.getStart().getTime().getTimeMilli())) 
 						)
-				&& (taskToSearch.getEndDateTime() == null 
-						|| taskToSearch.getEndDateTime().getDate().getTimeMilli()
-						== defaultTime.getDate().getTimeMilli() || (existingTask.getEndDateTime()!=null 
-						&& (existingTask.getEndDateTime().getDate().getTimeMilli()
-						== taskToSearch.getEndDateTime().getDate().getTimeMilli()))
+				&& (taskToSearch.getEnd() == null 
+						|| taskToSearch.getEnd().getDate().getTimeMilli()
+						== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd()!=null 
+						&& (existingTask.getEnd().getDate().getTimeMilli()
+						== taskToSearch.getEnd().getDate().getTimeMilli()))
 						)
-			    && (taskToSearch.getEndDateTime() == null
-						|| taskToSearch.getEndDateTime().getTime().getTimeMilli()
-						== defaultTime.getTime().getTimeMilli() || (existingTask.getEndDateTime()!=null 
-						&& existingTask.getEndDateTime().getTime().getTimeMilli()
-						== taskToSearch.getStartDateTime().getTime().getTimeMilli())
+			    && (taskToSearch.getEnd() == null
+						|| taskToSearch.getEnd().getTime().getTimeMilli()
+						== defaultTime.getTime().getTimeMilli() || (existingTask.getEnd()!=null 
+						&& existingTask.getEnd().getTime().getTimeMilli()
+						== taskToSearch.getStart().getTime().getTimeMilli())
 						)
 				&& (taskToSearch.getDescription() == null || existingTask.getDescription()
 						.toLowerCase().contains(taskToSearch.getDescription()))

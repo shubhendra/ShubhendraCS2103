@@ -10,9 +10,9 @@ public class CompareByDate implements Comparator<Task>{
 	public int compare(Task o1, Task o2) {
 		// TODO Auto-generated method stub
 				
-		if (o1.getStartDateTime()!=null && o2.getStartDateTime()!=null)
+		if (o1.getStart()!=null && o2.getStart()!=null)
 		{
-			long diff = o1.getStartDateTime().getTimeMilli() - o2.getStartDateTime().getTimeMilli();
+			long diff = o1.getStart().getTimeMilli() - o2.getStart().getTimeMilli();
 			if(o1.getName().contains("nirav"))
 			{
 				logger.warn("NIRAV GETTING COMPARED WITH "+o2.toString()+" "+diff);
@@ -27,11 +27,11 @@ public class CompareByDate implements Comparator<Task>{
 		
 			
 		}
-		else if (o1.getStartDateTime()==null && o2.getStartDateTime()!=null)
+		else if (o1.getStart()==null && o2.getStart()!=null)
 		{
-			if (o1.getEndDateTime()!=null)
+			if (o1.getEnd()!=null)
 			{
-				long diff = o1.getEndDateTime().getTimeMilli() - o2.getStartDateTime().getTimeMilli();
+				long diff = o1.getEnd().getTimeMilli() - o2.getStart().getTimeMilli();
 				if(o1.getName().contains("nirav"))
 				{
 					logger.warn("NIRAV GETTING COMPARED WITH "+o2.toString()+" "+diff);
@@ -46,11 +46,11 @@ public class CompareByDate implements Comparator<Task>{
 			}
 			
 		}
-		else if (o1.getStartDateTime()!=null && o2.getStartDateTime()==null)
+		else if (o1.getStart()!=null && o2.getStart()==null)
 		{
-			if (o2.getEndDateTime()!=null)
+			if (o2.getEnd()!=null)
 			{
-				long diff = o1.getStartDateTime().getTimeMilli() - o2.getEndDateTime().getTimeMilli();
+				long diff = o1.getStart().getTimeMilli() - o2.getEnd().getTimeMilli();
 				if(o1.getName().contains("nirav"))
 				{
 					logger.warn("NIRAV GETTING COMPARED WITH "+o2.toString()+" "+diff);
@@ -68,7 +68,7 @@ public class CompareByDate implements Comparator<Task>{
 		else
 		{
 			
-			long diff = o1.getEndDateTime().getTimeMilli() - o2.getEndDateTime().getTimeMilli();
+			long diff = o1.getEnd().getTimeMilli() - o2.getEnd().getTimeMilli();
 			if(o1.getName().contains("nirav"))
 			{
 				logger.warn("NIRAV GETTING COMPARED WITH "+o2.toString()+" "+diff);

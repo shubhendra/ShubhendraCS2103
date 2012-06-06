@@ -61,11 +61,11 @@ public class AutoUpdateJTable {
     	str += tagToCode(task);
     	if(task.getCompleted())
     		str+=completedFont;
-    	if(task.getStartDateTime()!= null) {
-    		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
+    	if(task.getStart()!= null) {
+    		str+="<br/><i>start: </i>"+task.getStart().presentableToString();
     	}
-    	if(task.getEndDateTime()!=null) {
-    		str+="<i>                  end: </i>"+task.getEndDateTime().presentableToString();
+    	if(task.getEnd()!=null) {
+    		str+="<i>                  end: </i>"+task.getEnd().presentableToString();
     	}
     	str += "</HTML>";
     	

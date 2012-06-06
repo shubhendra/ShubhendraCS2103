@@ -21,7 +21,7 @@ public class Parser {
 	private boolean deadline;
 	private TaskDateTime startDateTime, endDateTime;
 	private String recurring = null;
-	private List<String> labelList = null;
+	private ArrayList<String> labelList = null;
 	private String taskDetails=null;
 	
 	private Task task;
@@ -86,21 +86,21 @@ public class Parser {
 	 * 
 	 * @return
 	 */
-	public String[] getLabels() {
+	public ArrayList<String> getLabels() {
 		Pattern p = Pattern.compile(LABEL_REGEX);
 		Matcher m = p.matcher(command);
 		String labelString = null;
-		String[] labelArr= new String[50];
+		ArrayList<String> labelArr= new ArrayList<String>();
 		
-		int i=0;
+	
 		while(m.find()) {
 				labelString = m.group();
 				labelString = labelString.replace('@',' ');//why not replace by null?
 				labelString = labelString.trim();
-				labelArr[i]=labelString;
-				i++;
+				labelArr.add(labelString);
+				
 		}
-		labelList = Arrays.asList(labelArr);
+		labelList = labelArr;
 		return labelArr;
 	}
 	/**
@@ -284,12 +284,12 @@ public class Parser {
 				
 		
 		 //setLabels: have to change this function, check notes
-		String[] labelArr = getLabels();
+		ArrayList<String> labelArr = getLabels();
 		
-		if(labelArr.length!=0) {
+		if(labelArr.size()!=0) {
 			int i=0;
-			while(labelArr[i]!=null){
-				logger.debug("label "+i+": "+labelArr[i]);
+			while(labelArr.get(i)!=null){
+				logger.debug("label "+i+": "+labelArr.get(i));
 				command = command.replaceFirst(LABEL_REGEX, "");
 				i++;
 			}

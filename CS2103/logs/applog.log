@@ -432,3 +432,1681 @@
 2012-06-06 23:26:46,127 - operation.Search - DEBUG - finding objects
 2012-06-06 23:26:46,127 - operation.Search - DEBUG - returning all objects
 2012-06-06 23:26:46,128 - operation.Search - DEBUG - before sorting
+2012-06-06 23:36:12,453 - Abc - DEBUG - array out of bounds!
+2012-06-06 23:36:12,984 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-06 23:36:13,040 - Abc - DEBUG - 3
+2012-06-06 23:36:13,083 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:36:13,138 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:36:13,139 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:36:13,139 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:36:13,153 - operation.Operation - DEBUG - find
+2012-06-06 23:36:13,154 - operation.Search - DEBUG - finding objects
+2012-06-06 23:36:13,154 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:36:13,155 - operation.Search - DEBUG - before sorting
+2012-06-06 23:36:13,168 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:36:49,192 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:36:49,204 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:38:44,655 - Abc - DEBUG - array out of bounds!
+2012-06-06 23:38:45,190 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-06 23:38:45,245 - Abc - DEBUG - 3
+2012-06-06 23:38:45,286 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:38:45,350 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:38:45,351 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:38:45,351 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:38:45,364 - operation.Operation - DEBUG - find
+2012-06-06 23:38:45,365 - operation.Search - DEBUG - finding objects
+2012-06-06 23:38:45,366 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:38:45,367 - operation.Search - DEBUG - before sorting
+2012-06-06 23:38:45,382 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:38:54,310 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:39:08,390 - Abc - DEBUG - File Not Found!
+2012-06-06 23:39:09,209 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-06 23:39:09,293 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:39:09,299 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:39:09,300 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:39:09,334 - operation.Operation - DEBUG - find
+2012-06-06 23:39:09,340 - operation.Search - DEBUG - finding objects
+2012-06-06 23:39:09,341 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:39:09,344 - operation.Search - DEBUG - before sorting
+2012-06-06 23:39:09,344 - Abc - DEBUG - 0
+2012-06-06 23:39:09,344 - operation.Search - DEBUG - after sorting
+2012-06-06 23:39:09,347 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:39:09,435 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:39:09,469 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:39:12,450 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:39:13,747 - logic.JIDLogic - DEBUG - curText:a
+2012-06-06 23:39:13,752 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-06 23:39:13,752 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:39:13,752 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:39:13,752 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:13,953 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-06 23:39:13,953 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-06 23:39:13,953 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:39:13,953 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:39:13,958 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:14,115 - logic.JIDLogic - DEBUG - curText:add
+2012-06-06 23:39:14,116 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-06 23:39:14,116 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:14,117 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:39:14,117 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:14,268 - logic.JIDLogic - DEBUG - curText:add 
+2012-06-06 23:39:14,269 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-06 23:39:14,269 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:14,269 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:14,270 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:15,694 - logic.JIDLogic - DEBUG - curText:add d
+2012-06-06 23:39:15,695 - logic.JIDLogic - DEBUG - prevText: add 
+2012-06-06 23:39:15,695 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:15,696 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:15,696 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:15,843 - logic.JIDLogic - DEBUG - curText:add d
+2012-06-06 23:39:15,844 - logic.JIDLogic - DEBUG - prevText: add d
+2012-06-06 23:39:15,844 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:15,844 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:15,845 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:16,013 - logic.JIDLogic - DEBUG - curText:add del
+2012-06-06 23:39:16,013 - logic.JIDLogic - DEBUG - prevText: add d
+2012-06-06 23:39:16,014 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:16,014 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:16,014 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:16,141 - logic.JIDLogic - DEBUG - curText:add delt
+2012-06-06 23:39:16,141 - logic.JIDLogic - DEBUG - prevText: add del
+2012-06-06 23:39:16,142 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:16,142 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:16,142 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:16,248 - logic.JIDLogic - DEBUG - curText:add delte
+2012-06-06 23:39:16,249 - logic.JIDLogic - DEBUG - prevText: add delt
+2012-06-06 23:39:16,249 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:16,249 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:16,250 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:16,434 - logic.JIDLogic - DEBUG - curText:add delte 
+2012-06-06 23:39:16,434 - logic.JIDLogic - DEBUG - prevText: add delte
+2012-06-06 23:39:16,434 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:16,435 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:16,435 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:21,142 - logic.JIDLogic - DEBUG - curText:add delte o
+2012-06-06 23:39:21,142 - logic.JIDLogic - DEBUG - prevText: add delte 
+2012-06-06 23:39:21,143 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:21,143 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:21,143 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:21,452 - logic.JIDLogic - DEBUG - curText:add delte on
+2012-06-06 23:39:21,453 - logic.JIDLogic - DEBUG - prevText: add delte o
+2012-06-06 23:39:21,453 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:21,453 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:21,454 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:21,697 - logic.JIDLogic - DEBUG - curText:add delte on 
+2012-06-06 23:39:21,697 - logic.JIDLogic - DEBUG - prevText: add delte on
+2012-06-06 23:39:21,698 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:21,698 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:21,698 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:21,809 - logic.JIDLogic - DEBUG - curText:add delte on 
+2012-06-06 23:39:21,809 - logic.JIDLogic - DEBUG - prevText: add delte on 
+2012-06-06 23:39:21,810 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:21,810 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:21,810 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:21,993 - logic.JIDLogic - DEBUG - curText:add delte on 3p
+2012-06-06 23:39:21,994 - logic.JIDLogic - DEBUG - prevText: add delte on 
+2012-06-06 23:39:21,994 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:21,994 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:21,995 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:22,281 - logic.JIDLogic - DEBUG - curText:add delte on 3pm
+2012-06-06 23:39:22,281 - logic.JIDLogic - DEBUG - prevText: add delte on 3p
+2012-06-06 23:39:22,281 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:22,281 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:22,281 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:22,497 - logic.JIDLogic - DEBUG - curText:add delte on 3pm 
+2012-06-06 23:39:22,497 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm
+2012-06-06 23:39:22,497 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:22,502 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:22,502 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:22,637 - logic.JIDLogic - DEBUG - curText:add delte on 3pm t
+2012-06-06 23:39:22,637 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm 
+2012-06-06 23:39:22,642 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:22,642 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:22,642 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:22,732 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tm
+2012-06-06 23:39:22,732 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm t
+2012-06-06 23:39:22,732 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:22,732 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:22,732 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:22,852 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:22,852 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tm
+2012-06-06 23:39:22,852 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:22,852 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:22,852 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:39:23,126 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:23,127 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:23,127 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:23,128 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:23,128 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:23,128 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:39:23,129 - logic.JIDLogic - DEBUG - ********exeCmd: add delte on 3pm tmr
+2012-06-06 23:39:23,129 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:39:23,129 - logic.JIDLogic - DEBUG - add delte on 3pm tmr
+2012-06-06 23:39:23,130 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:39:23,130 - operation.Operation - DEBUG - add
+2012-06-06 23:39:23,137 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:39:23,137 - logic.JIDLogic - DEBUG - left over string after checking for recurring: delte on 3pm tmr
+2012-06-06 23:39:23,174 - logic.JIDLogic - DEBUG - -----time date only format-------
+2012-06-06 23:39:23,174 - logic.JIDLogic - DEBUG - start time string: 3pm
+2012-06-06 23:39:23,175 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-06 23:39:23,175 - logic.JIDLogic - DEBUG - Start time is set!
+2012-06-06 23:39:23,176 - logic.JIDLogic - DEBUG - End time could NOT be set!
+2012-06-06 23:39:23,177 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-06 23:39:23,177 - logic.JIDLogic - DEBUG - End date could NOT be set!
+2012-06-06 23:39:23,178 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-06 23:39:23,178 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:39:23,195 - logic.JIDLogic - DEBUG - start date time: 3:00 PM 07 Jun 2012
+2012-06-06 23:39:23,195 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:39:23,196 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:39:23,196 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:39:23,196 - logic.JIDLogic - DEBUG - task details: delte on
+2012-06-06 23:39:23,197 - logic.JIDLogic - DEBUG - this is parse for ADD before initializing task obj
+2012-06-06 23:39:23,203 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-06 23:39:23,203 - logic.JIDLogic - DEBUG - isundoable
+2012-06-06 23:39:23,204 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-06 23:39:23,341 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:39:23,341 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:39:23,342 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:39:23,342 - operation.Operation - DEBUG - find
+2012-06-06 23:39:23,342 - operation.Search - DEBUG - finding objects
+2012-06-06 23:39:23,343 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:39:23,343 - operation.Search - DEBUG - before sorting
+2012-06-06 23:39:23,344 - operation.Search - DEBUG - after sorting
+2012-06-06 23:39:23,344 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:39:48,909 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:48,910 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:48,910 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:48,910 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:48,911 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,392 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,392 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,392 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,392 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,392 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,427 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,427 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,427 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,427 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,427 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,452 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,457 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,457 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,457 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,457 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,487 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,487 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,487 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,487 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,487 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,517 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,517 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,522 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,522 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,522 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,552 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,552 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,552 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,552 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,552 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,577 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,582 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,582 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,582 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,582 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,617 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,617 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,617 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,617 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,617 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,647 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,647 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,647 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,647 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,647 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:49,677 - logic.JIDLogic - DEBUG - curText:add delte on 3pm tmr
+2012-06-06 23:39:49,677 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:49,677 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:49,677 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:49,677 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:50,203 - logic.JIDLogic - DEBUG - curText:add delt on 3pm tmr
+2012-06-06 23:39:50,203 - logic.JIDLogic - DEBUG - prevText: add delte on 3pm tmr
+2012-06-06 23:39:50,204 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:50,204 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:50,204 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:50,413 - logic.JIDLogic - DEBUG - curText:add del on 3pm tmr
+2012-06-06 23:39:50,413 - logic.JIDLogic - DEBUG - prevText: add delt on 3pm tmr
+2012-06-06 23:39:50,413 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:50,414 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:50,414 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:50,566 - logic.JIDLogic - DEBUG - curText:add de on 3pm tmr
+2012-06-06 23:39:50,566 - logic.JIDLogic - DEBUG - prevText: add del on 3pm tmr
+2012-06-06 23:39:50,567 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:50,569 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:50,569 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:50,745 - logic.JIDLogic - DEBUG - curText:add d on 3pm tmr
+2012-06-06 23:39:50,745 - logic.JIDLogic - DEBUG - prevText: add de on 3pm tmr
+2012-06-06 23:39:50,746 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:50,746 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:50,747 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:50,932 - logic.JIDLogic - DEBUG - curText:add  on 3pm tmr
+2012-06-06 23:39:50,933 - logic.JIDLogic - DEBUG - prevText: add d on 3pm tmr
+2012-06-06 23:39:50,933 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:50,934 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:50,934 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:51,510 - logic.JIDLogic - DEBUG - curText:add n on 3pm tmr
+2012-06-06 23:39:51,511 - logic.JIDLogic - DEBUG - prevText: add  on 3pm tmr
+2012-06-06 23:39:51,511 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:51,511 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:51,512 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:51,692 - logic.JIDLogic - DEBUG - curText:add nu on 3pm tmr
+2012-06-06 23:39:51,692 - logic.JIDLogic - DEBUG - prevText: add n on 3pm tmr
+2012-06-06 23:39:51,692 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:51,693 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:51,694 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:52,188 - logic.JIDLogic - DEBUG - curText:add nui on 3pm tmr
+2012-06-06 23:39:52,188 - logic.JIDLogic - DEBUG - prevText: add nu on 3pm tmr
+2012-06-06 23:39:52,188 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:52,193 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:52,193 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:52,738 - logic.JIDLogic - DEBUG - curText:add nu on 3pm tmr
+2012-06-06 23:39:52,738 - logic.JIDLogic - DEBUG - prevText: add nui on 3pm tmr
+2012-06-06 23:39:52,738 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:52,738 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:52,738 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:52,909 - logic.JIDLogic - DEBUG - curText:add n on 3pm tmr
+2012-06-06 23:39:52,909 - logic.JIDLogic - DEBUG - prevText: add nu on 3pm tmr
+2012-06-06 23:39:52,909 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:52,909 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:52,909 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:53,258 - logic.JIDLogic - DEBUG - curText:add ni on 3pm tmr
+2012-06-06 23:39:53,259 - logic.JIDLogic - DEBUG - prevText: add n on 3pm tmr
+2012-06-06 23:39:53,259 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:53,259 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:53,259 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:53,531 - logic.JIDLogic - DEBUG - curText:add nir on 3pm tmr
+2012-06-06 23:39:53,532 - logic.JIDLogic - DEBUG - prevText: add ni on 3pm tmr
+2012-06-06 23:39:53,532 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:53,532 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:53,533 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:53,640 - logic.JIDLogic - DEBUG - curText:add nir on 3pm tmr
+2012-06-06 23:39:53,641 - logic.JIDLogic - DEBUG - prevText: add nir on 3pm tmr
+2012-06-06 23:39:53,641 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:53,642 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:53,642 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:54,725 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:54,726 - logic.JIDLogic - DEBUG - prevText: add nir on 3pm tmr
+2012-06-06 23:39:54,726 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:54,726 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:54,727 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:54,905 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:54,906 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:54,906 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:54,907 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:54,907 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,393 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,394 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,394 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,395 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,395 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,426 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,427 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,427 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,427 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,428 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,455 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,456 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,456 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,456 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,457 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,484 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,485 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,485 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,485 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,486 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,515 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,516 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,516 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,517 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,517 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,551 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,552 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,552 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,552 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,553 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,580 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,580 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,581 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,581 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,581 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,610 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,611 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,611 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,611 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,611 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:55,936 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:55,936 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:55,937 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:55,937 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:55,937 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:56,163 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:56,164 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:56,164 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:56,165 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:56,165 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:56,340 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:56,341 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:56,341 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:56,341 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:56,342 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:57,652 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:57,652 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:57,652 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:57,652 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:57,652 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:57,878 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:57,878 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:57,878 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:57,878 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:57,878 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:58,233 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:58,234 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:58,234 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:58,234 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:58,235 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:58,722 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:58,722 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:58,723 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:58,723 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:58,723 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:58,748 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:58,749 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:58,749 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:58,749 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:58,750 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:58,781 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:58,782 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:58,782 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:58,782 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:58,783 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:58,814 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:58,815 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:58,815 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:58,815 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:58,816 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:58,844 - logic.JIDLogic - DEBUG - curText:add nirav on 3pm tmr
+2012-06-06 23:39:58,844 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:58,845 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:58,845 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:58,846 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:59,318 - logic.JIDLogic - DEBUG - curText:add nirav n 3pm tmr
+2012-06-06 23:39:59,318 - logic.JIDLogic - DEBUG - prevText: add nirav on 3pm tmr
+2012-06-06 23:39:59,318 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:59,318 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:59,323 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:39:59,558 - logic.JIDLogic - DEBUG - curText:add nirav  3pm tmr
+2012-06-06 23:39:59,558 - logic.JIDLogic - DEBUG - prevText: add nirav n 3pm tmr
+2012-06-06 23:39:59,558 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:39:59,558 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:39:59,558 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:00,103 - logic.JIDLogic - DEBUG - curText:add nirav f 3pm tmr
+2012-06-06 23:40:00,103 - logic.JIDLogic - DEBUG - prevText: add nirav  3pm tmr
+2012-06-06 23:40:00,103 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:00,103 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:00,103 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:00,209 - logic.JIDLogic - DEBUG - curText:add nirav fr 3pm tmr
+2012-06-06 23:40:00,210 - logic.JIDLogic - DEBUG - prevText: add nirav f 3pm tmr
+2012-06-06 23:40:00,210 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:00,210 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:00,211 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:00,278 - logic.JIDLogic - DEBUG - curText:add nirav fro 3pm tmr
+2012-06-06 23:40:00,278 - logic.JIDLogic - DEBUG - prevText: add nirav fr 3pm tmr
+2012-06-06 23:40:00,278 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:00,279 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:00,279 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:00,485 - logic.JIDLogic - DEBUG - curText:add nirav fro 3pm tmr
+2012-06-06 23:40:00,485 - logic.JIDLogic - DEBUG - prevText: add nirav fro 3pm tmr
+2012-06-06 23:40:00,486 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:00,486 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:00,486 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:01,117 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm tmr
+2012-06-06 23:40:01,117 - logic.JIDLogic - DEBUG - prevText: add nirav fro 3pm tmr
+2012-06-06 23:40:01,118 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:01,118 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:01,118 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:01,605 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm tmr
+2012-06-06 23:40:01,605 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm tmr
+2012-06-06 23:40:01,606 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:01,606 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:01,606 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:01,633 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm tmr
+2012-06-06 23:40:01,634 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm tmr
+2012-06-06 23:40:01,634 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:01,634 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:01,635 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:01,666 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm tmr
+2012-06-06 23:40:01,666 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm tmr
+2012-06-06 23:40:01,667 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:01,667 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:01,667 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:01,695 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm tmr
+2012-06-06 23:40:01,696 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm tmr
+2012-06-06 23:40:01,696 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:01,696 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:01,697 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:02,286 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm ttmr
+2012-06-06 23:40:02,286 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm tmr
+2012-06-06 23:40:02,286 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:02,286 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:02,286 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:02,457 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm ttmr
+2012-06-06 23:40:02,457 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm ttmr
+2012-06-06 23:40:02,457 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:02,457 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:02,457 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:02,682 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to tmr
+2012-06-06 23:40:02,687 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm ttmr
+2012-06-06 23:40:02,687 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:02,687 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:02,687 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:02,867 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4tmr
+2012-06-06 23:40:02,867 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to tmr
+2012-06-06 23:40:02,867 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:02,867 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:02,867 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:03,032 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4ptmr
+2012-06-06 23:40:03,032 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4tmr
+2012-06-06 23:40:03,032 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:03,032 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:03,032 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:03,265 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pmtmr
+2012-06-06 23:40:03,265 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4ptmr
+2012-06-06 23:40:03,266 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:03,266 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:03,267 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:03,458 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tmr
+2012-06-06 23:40:03,459 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pmtmr
+2012-06-06 23:40:03,459 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:03,460 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:03,460 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:04,062 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm mr
+2012-06-06 23:40:04,062 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tmr
+2012-06-06 23:40:04,063 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:04,063 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:04,063 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:04,258 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm r
+2012-06-06 23:40:04,259 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm mr
+2012-06-06 23:40:04,259 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:04,259 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:04,259 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:04,426 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm 
+2012-06-06 23:40:04,426 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm r
+2012-06-06 23:40:04,426 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:04,427 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:04,427 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:07,969 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm t
+2012-06-06 23:40:07,970 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm 
+2012-06-06 23:40:07,970 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:07,970 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:07,970 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:08,084 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tu
+2012-06-06 23:40:08,084 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm t
+2012-06-06 23:40:08,084 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:08,085 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:08,085 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:08,274 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tue
+2012-06-06 23:40:08,275 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tu
+2012-06-06 23:40:08,275 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:08,275 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:08,276 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:09,075 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tues
+2012-06-06 23:40:09,076 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tue
+2012-06-06 23:40:09,076 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:09,076 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:09,077 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:09,306 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tuesd
+2012-06-06 23:40:09,306 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tues
+2012-06-06 23:40:09,306 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:09,311 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:09,311 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:09,411 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tuesda
+2012-06-06 23:40:09,411 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tuesd
+2012-06-06 23:40:09,411 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:09,411 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:09,411 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:09,696 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tuesday
+2012-06-06 23:40:09,701 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tuesda
+2012-06-06 23:40:09,701 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:09,701 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:09,701 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:10,493 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm tuesday
+2012-06-06 23:40:10,494 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tuesday
+2012-06-06 23:40:10,494 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:40:10,494 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:40:10,495 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:40:10,495 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:40:10,495 - logic.JIDLogic - DEBUG - ********exeCmd: add nirav from 3pm to 4pm tuesday
+2012-06-06 23:40:10,495 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:40:10,496 - logic.JIDLogic - DEBUG - add nirav from 3pm to 4pm tuesday
+2012-06-06 23:40:10,496 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:40:10,496 - operation.Operation - DEBUG - add
+2012-06-06 23:40:10,497 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:40:10,497 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav from 3pm to 4pm tuesday
+2012-06-06 23:40:10,507 - logic.JIDLogic - DEBUG - -----from_time_to_time_date format-------
+2012-06-06 23:40:10,507 - logic.JIDLogic - DEBUG - start time string: 3pm
+2012-06-06 23:40:10,507 - logic.JIDLogic - DEBUG - end time string: 4pm
+2012-06-06 23:40:10,508 - logic.JIDLogic - DEBUG - start date string: tuesday
+2012-06-06 23:40:10,508 - logic.JIDLogic - DEBUG - end date string: tuesday
+2012-06-06 23:40:10,509 - logic.JIDLogic - DEBUG - Start time is set!
+2012-06-06 23:40:10,509 - logic.JIDLogic - DEBUG - End time is set!
+2012-06-06 23:40:10,510 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-06 23:40:10,511 - logic.JIDLogic - DEBUG - End date is set!
+2012-06-06 23:40:10,516 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-06 23:40:10,516 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:40:10,517 - logic.JIDLogic - DEBUG - start date time: 3:00 PM 12 Jun 2012
+2012-06-06 23:40:10,518 - logic.JIDLogic - DEBUG - end date time: 4:00 PM 12 Jun 2012
+2012-06-06 23:40:10,518 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:40:10,518 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:40:10,519 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:40:10,519 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:40:10,519 - logic.JIDLogic - DEBUG - this is parse for ADD before initializing task obj
+2012-06-06 23:40:10,520 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-06 23:40:10,520 - logic.JIDLogic - DEBUG - isundoable
+2012-06-06 23:40:10,522 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-06 23:40:10,640 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:40:10,640 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:40:10,640 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:40:10,641 - operation.Operation - DEBUG - find
+2012-06-06 23:40:10,641 - operation.Search - DEBUG - finding objects
+2012-06-06 23:40:10,642 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:40:10,642 - operation.Search - DEBUG - before sorting
+2012-06-06 23:40:10,642 - operation.Search - DEBUG - after sorting
+2012-06-06 23:40:10,643 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:44:41,297 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:44:43,382 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:43,383 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm tuesday
+2012-06-06 23:44:43,383 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:43,383 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:44:43,383 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:43,867 - logic.JIDLogic - DEBUG - curText:s
+2012-06-06 23:44:43,867 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:43,867 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:43,867 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:43,867 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:44,133 - logic.JIDLogic - DEBUG - curText:se
+2012-06-06 23:44:44,134 - logic.JIDLogic - DEBUG - prevText: s
+2012-06-06 23:44:44,134 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:44,134 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:44,135 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:44,253 - logic.JIDLogic - DEBUG - curText:sea
+2012-06-06 23:44:44,253 - logic.JIDLogic - DEBUG - prevText: se
+2012-06-06 23:44:44,253 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:44,254 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:44,254 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:44,996 - logic.JIDLogic - DEBUG - curText:sear
+2012-06-06 23:44:44,996 - logic.JIDLogic - DEBUG - prevText: sea
+2012-06-06 23:44:44,996 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:44,996 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:44,996 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:45,292 - logic.JIDLogic - DEBUG - curText:searc
+2012-06-06 23:44:45,293 - logic.JIDLogic - DEBUG - prevText: sear
+2012-06-06 23:44:45,293 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:45,294 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:45,294 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:45,442 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:44:45,442 - logic.JIDLogic - DEBUG - prevText: searc
+2012-06-06 23:44:45,442 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:45,443 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:45,443 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:45,685 - logic.JIDLogic - DEBUG - curText:search 
+2012-06-06 23:44:45,685 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:44:45,686 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:45,686 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:45,686 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:46,551 - logic.JIDLogic - DEBUG - curText:search d
+2012-06-06 23:44:46,552 - logic.JIDLogic - DEBUG - prevText: search 
+2012-06-06 23:44:46,552 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:46,552 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:46,553 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:46,558 - logic.JIDLogic - DEBUG - ********exeCmd: search d
+2012-06-06 23:44:46,558 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:46,559 - logic.JIDLogic - DEBUG - search d
+2012-06-06 23:44:46,559 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:46,559 - operation.Operation - DEBUG - search
+2012-06-06 23:44:46,560 - operation.Search - DEBUG - finding objects
+2012-06-06 23:44:46,560 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:46,560 - logic.JIDLogic - DEBUG - left over string after checking for recurring: d
+2012-06-06 23:44:46,565 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:46,565 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:46,566 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:46,566 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:46,566 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:46,567 - logic.JIDLogic - DEBUG - task details: d
+2012-06-06 23:44:46,567 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:44:46,568 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:44:46,568 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:44:46,690 - logic.JIDLogic - DEBUG - curText:search de
+2012-06-06 23:44:46,690 - logic.JIDLogic - DEBUG - prevText: search d
+2012-06-06 23:44:46,690 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:46,691 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:46,691 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:46,694 - logic.JIDLogic - DEBUG - ********exeCmd: search de
+2012-06-06 23:44:46,694 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:46,694 - logic.JIDLogic - DEBUG - search de
+2012-06-06 23:44:46,695 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:46,695 - operation.Operation - DEBUG - search
+2012-06-06 23:44:46,695 - operation.Search - DEBUG - finding objects
+2012-06-06 23:44:46,696 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:46,696 - logic.JIDLogic - DEBUG - left over string after checking for recurring: de
+2012-06-06 23:44:46,700 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:46,701 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:46,701 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:46,701 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:46,702 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:46,702 - logic.JIDLogic - DEBUG - task details: de
+2012-06-06 23:44:46,702 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:44:46,703 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:44:46,703 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:44:47,213 - logic.JIDLogic - DEBUG - curText:search del
+2012-06-06 23:44:47,213 - logic.JIDLogic - DEBUG - prevText: search de
+2012-06-06 23:44:47,213 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:47,213 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:47,213 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:47,218 - logic.JIDLogic - DEBUG - ********exeCmd: search del
+2012-06-06 23:44:47,218 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:47,218 - logic.JIDLogic - DEBUG - search del
+2012-06-06 23:44:47,218 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:47,218 - operation.Operation - DEBUG - search
+2012-06-06 23:44:47,218 - operation.Search - DEBUG - finding objects
+2012-06-06 23:44:47,218 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:47,218 - logic.JIDLogic - DEBUG - left over string after checking for recurring: del
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - task details: del
+2012-06-06 23:44:47,223 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:44:47,223 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:44:47,223 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:44:47,833 - logic.JIDLogic - DEBUG - curText:search de
+2012-06-06 23:44:47,833 - logic.JIDLogic - DEBUG - prevText: search del
+2012-06-06 23:44:47,833 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:47,833 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:47,838 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:47,843 - logic.JIDLogic - DEBUG - ********exeCmd: search de
+2012-06-06 23:44:47,843 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:47,844 - logic.JIDLogic - DEBUG - search de
+2012-06-06 23:44:47,844 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:47,844 - operation.Operation - DEBUG - search
+2012-06-06 23:44:47,844 - operation.Search - DEBUG - finding objects
+2012-06-06 23:44:47,844 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:47,844 - logic.JIDLogic - DEBUG - left over string after checking for recurring: de
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - task details: de
+2012-06-06 23:44:47,849 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:44:47,849 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:44:47,849 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:44:48,325 - logic.JIDLogic - DEBUG - curText:search d
+2012-06-06 23:44:48,326 - logic.JIDLogic - DEBUG - prevText: search de
+2012-06-06 23:44:48,326 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:48,326 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:48,327 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,330 - logic.JIDLogic - DEBUG - ********exeCmd: search d
+2012-06-06 23:44:48,330 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:48,331 - logic.JIDLogic - DEBUG - search d
+2012-06-06 23:44:48,331 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:48,331 - operation.Operation - DEBUG - search
+2012-06-06 23:44:48,332 - operation.Search - DEBUG - finding objects
+2012-06-06 23:44:48,332 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:48,332 - logic.JIDLogic - DEBUG - left over string after checking for recurring: d
+2012-06-06 23:44:48,336 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:48,337 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:48,337 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:48,337 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:48,338 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:48,338 - logic.JIDLogic - DEBUG - task details: d
+2012-06-06 23:44:48,338 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:44:48,338 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:44:48,339 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:44:48,354 - logic.JIDLogic - DEBUG - curText:search 
+2012-06-06 23:44:48,355 - logic.JIDLogic - DEBUG - prevText: search d
+2012-06-06 23:44:48,355 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:48,355 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:48,355 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,388 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:44:48,388 - logic.JIDLogic - DEBUG - prevText: search 
+2012-06-06 23:44:48,388 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:48,389 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:48,389 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,419 - logic.JIDLogic - DEBUG - curText:searc
+2012-06-06 23:44:48,420 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:44:48,420 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,420 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:48,420 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,450 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,450 - logic.JIDLogic - DEBUG - prevText: searc
+2012-06-06 23:44:48,450 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,451 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,451 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,483 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,483 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,483 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,484 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,484 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,510 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,511 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,511 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,511 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,512 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,544 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,545 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,545 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,545 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,545 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,573 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,574 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,574 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,574 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,575 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,608 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,608 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,608 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,609 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,609 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,642 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:48,643 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,644 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,644 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,644 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:48,969 - logic.JIDLogic - DEBUG - curText:s
+2012-06-06 23:44:48,969 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:48,969 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:48,969 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:48,969 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:49,186 - logic.JIDLogic - DEBUG - curText:se
+2012-06-06 23:44:49,189 - logic.JIDLogic - DEBUG - prevText: s
+2012-06-06 23:44:49,190 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:49,190 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:49,190 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:49,302 - logic.JIDLogic - DEBUG - curText:sea
+2012-06-06 23:44:49,302 - logic.JIDLogic - DEBUG - prevText: se
+2012-06-06 23:44:49,302 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:49,303 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:49,303 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:49,477 - logic.JIDLogic - DEBUG - curText:sear
+2012-06-06 23:44:49,477 - logic.JIDLogic - DEBUG - prevText: sea
+2012-06-06 23:44:49,477 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:49,477 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:49,477 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:49,694 - logic.JIDLogic - DEBUG - curText:searc
+2012-06-06 23:44:49,694 - logic.JIDLogic - DEBUG - prevText: sear
+2012-06-06 23:44:49,694 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:49,694 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:49,694 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:49,804 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:44:49,804 - logic.JIDLogic - DEBUG - prevText: searc
+2012-06-06 23:44:49,804 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:49,804 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:49,804 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:50,102 - logic.JIDLogic - DEBUG - curText:search 
+2012-06-06 23:44:50,102 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:44:50,102 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:50,102 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:50,107 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:50,978 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:44:50,983 - logic.JIDLogic - DEBUG - prevText: search 
+2012-06-06 23:44:50,983 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:50,983 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:50,983 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,469 - logic.JIDLogic - DEBUG - curText:searc
+2012-06-06 23:44:51,470 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:44:51,470 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,470 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:51,471 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,499 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,500 - logic.JIDLogic - DEBUG - prevText: searc
+2012-06-06 23:44:51,500 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,501 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,501 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,529 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,530 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,530 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,530 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,530 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,561 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,561 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,561 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,562 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,562 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,595 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,596 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,596 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,596 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,597 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,635 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,635 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,636 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,636 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,636 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,656 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,657 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,657 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,657 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,658 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,688 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,689 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,689 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,689 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,690 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,744 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,744 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,750 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,751 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,751 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:51,752 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:51,753 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:51,753 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:51,753 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:51,754 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:52,064 - logic.JIDLogic - DEBUG - curText:a
+2012-06-06 23:44:52,064 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:52,064 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:52,064 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:52,064 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:52,259 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-06 23:44:52,259 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-06 23:44:52,259 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:52,259 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:52,259 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:52,425 - logic.JIDLogic - DEBUG - curText:add
+2012-06-06 23:44:52,425 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-06 23:44:52,426 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:44:52,426 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:52,426 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:52,814 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-06 23:44:52,814 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-06 23:44:52,814 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:52,814 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:44:52,815 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:53,018 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:53,018 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-06 23:44:53,019 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:53,019 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:53,019 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:54,528 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:44:54,528 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:54,528 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:44:54,529 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:54,529 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:44:54,949 - logic.JIDLogic - DEBUG - curText:add
+2012-06-06 23:44:54,950 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:44:54,950 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:44:54,950 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:44:54,951 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:44:55,132 - logic.JIDLogic - DEBUG - curText:modify
+2012-06-06 23:44:55,132 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-06 23:44:55,132 - logic.JIDLogic - DEBUG - state: EDIT
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - index: 1
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - add
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:55,137 - operation.Operation - DEBUG - add
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:55,137 - logic.JIDLogic - DEBUG - left over string after checking for recurring: add
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - task details: add
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - this is parse for ADD before initializing task obj
+2012-06-06 23:44:55,142 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:44:55,289 - logic.JIDLogic - DEBUG - curText:delete
+2012-06-06 23:44:55,290 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-06 23:44:55,290 - logic.JIDLogic - DEBUG - state: DELETE
+2012-06-06 23:44:55,290 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:44:55,291 - logic.JIDLogic - DEBUG - index: 2
+2012-06-06 23:44:55,452 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:44:55,453 - logic.JIDLogic - DEBUG - prevText: delete
+2012-06-06 23:44:55,453 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:55,453 - logic.JIDLogic - DEBUG - prev: DELETE
+2012-06-06 23:44:55,454 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:44:56,593 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:44:56,593 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:44:56,593 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:56,593 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:56,593 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:44:57,074 - logic.JIDLogic - DEBUG - curText:search 
+2012-06-06 23:44:57,074 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:44:57,074 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:57,079 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:57,079 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:44:59,179 - logic.JIDLogic - DEBUG - curText:search n
+2012-06-06 23:44:59,179 - logic.JIDLogic - DEBUG - prevText: search 
+2012-06-06 23:44:59,179 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:44:59,179 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:44:59,179 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:44:59,184 - logic.JIDLogic - DEBUG - ********exeCmd: search n
+2012-06-06 23:44:59,184 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:44:59,184 - logic.JIDLogic - DEBUG - search n
+2012-06-06 23:44:59,184 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:44:59,184 - operation.Operation - DEBUG - search
+2012-06-06 23:44:59,184 - operation.Search - DEBUG - finding objects
+2012-06-06 23:44:59,184 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:44:59,184 - logic.JIDLogic - DEBUG - left over string after checking for recurring: n
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - task details: n
+2012-06-06 23:44:59,190 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:44:59,190 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:44:59,190 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:00,331 - logic.JIDLogic - DEBUG - curText:search ni
+2012-06-06 23:45:00,331 - logic.JIDLogic - DEBUG - prevText: search n
+2012-06-06 23:45:00,331 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:00,331 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:00,331 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:45:00,336 - logic.JIDLogic - DEBUG - ********exeCmd: search ni
+2012-06-06 23:45:00,336 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:00,336 - logic.JIDLogic - DEBUG - search ni
+2012-06-06 23:45:00,336 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:00,336 - operation.Operation - DEBUG - search
+2012-06-06 23:45:00,336 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:00,336 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:00,336 - logic.JIDLogic - DEBUG - left over string after checking for recurring: ni
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - task details: ni
+2012-06-06 23:45:00,342 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:00,342 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:00,342 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:00,463 - logic.JIDLogic - DEBUG - curText:search nir
+2012-06-06 23:45:00,463 - logic.JIDLogic - DEBUG - prevText: search ni
+2012-06-06 23:45:00,463 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:00,463 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:00,463 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:45:00,468 - logic.JIDLogic - DEBUG - ********exeCmd: search nir
+2012-06-06 23:45:00,468 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:00,468 - logic.JIDLogic - DEBUG - search nir
+2012-06-06 23:45:00,468 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:00,468 - operation.Operation - DEBUG - search
+2012-06-06 23:45:00,468 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:00,468 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:00,468 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nir
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - task details: nir
+2012-06-06 23:45:00,473 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:00,478 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:00,478 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - curText:search nira
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - prevText: search nir
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - ********exeCmd: search nira
+2012-06-06 23:45:00,588 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:00,593 - logic.JIDLogic - DEBUG - search nira
+2012-06-06 23:45:00,593 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:00,593 - operation.Operation - DEBUG - search
+2012-06-06 23:45:00,593 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:00,593 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:00,593 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nira
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - task details: nira
+2012-06-06 23:45:00,598 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:00,598 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:00,598 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:00,793 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:00,793 - logic.JIDLogic - DEBUG - prevText: search nira
+2012-06-06 23:45:00,793 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:00,793 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:00,798 - logic.JIDLogic - DEBUG - index: 3
+2012-06-06 23:45:00,798 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:00,798 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:00,798 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:00,798 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:00,798 - operation.Operation - DEBUG - search
+2012-06-06 23:45:00,798 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:00,798 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:00,803 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:00,808 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:00,813 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:00,813 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:00,813 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:00,818 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:00,818 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:00,818 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:00,818 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:00,818 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:01,088 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:01,093 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:01,093 - operation.Operation - DEBUG - search
+2012-06-06 23:45:01,093 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:01,093 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:01,093 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:01,093 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:01,098 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:01,098 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:01,098 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:01,098 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:01,098 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:01,098 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:01,098 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:01,098 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:01,583 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:01,588 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:01,588 - operation.Operation - DEBUG - search
+2012-06-06 23:45:01,588 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:01,588 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:01,588 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:01,594 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:01,594 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:01,594 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:01,815 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:01,815 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:01,820 - operation.Operation - DEBUG - search
+2012-06-06 23:45:01,820 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:01,820 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:01,825 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:01,825 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:01,825 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:01,825 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:01,825 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:01,825 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:01,830 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:01,830 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:01,830 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:01,985 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:01,990 - operation.Operation - DEBUG - search
+2012-06-06 23:45:01,990 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:01,990 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:01,997 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:01,997 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:01,997 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:01,998 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:01,998 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:01,998 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:01,998 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:01,999 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:01,999 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:02,159 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:02,159 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:02,160 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:02,160 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:02,160 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:02,160 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:02,161 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:02,161 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:02,161 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:02,161 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:02,162 - operation.Operation - DEBUG - search
+2012-06-06 23:45:02,162 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:02,162 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:02,163 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:02,166 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:02,167 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:02,167 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:02,167 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:02,168 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:02,168 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:02,168 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:02,169 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:02,169 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:02,310 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:02,311 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:02,311 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:02,311 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:02,312 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:02,312 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:02,312 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:02,312 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:02,313 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:02,313 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:02,313 - operation.Operation - DEBUG - search
+2012-06-06 23:45:02,314 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:02,314 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:02,314 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:02,318 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:02,318 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:02,318 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:02,319 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:02,319 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:02,319 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:02,319 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:02,320 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:02,320 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:02,480 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:02,480 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:02,481 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:02,481 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:02,481 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:02,481 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:02,482 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:02,482 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:02,482 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:02,483 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:02,483 - operation.Operation - DEBUG - search
+2012-06-06 23:45:02,483 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:02,483 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:02,484 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:02,491 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:02,491 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:02,491 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:02,492 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:02,492 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:02,492 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:02,492 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:02,493 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:02,493 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:02,641 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:02,641 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:02,641 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:02,642 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:02,642 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:02,642 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:02,642 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:02,643 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:02,643 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:02,643 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:02,643 - operation.Operation - DEBUG - search
+2012-06-06 23:45:02,644 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:02,644 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:02,644 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:02,648 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:02,648 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:02,648 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:02,649 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:02,649 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:02,649 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:02,649 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:02,650 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:02,651 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:02,798 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:02,799 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:02,799 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:02,799 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:02,799 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:02,800 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:02,800 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:02,800 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:02,800 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:02,801 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:02,801 - operation.Operation - DEBUG - search
+2012-06-06 23:45:02,801 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:02,802 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:02,802 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:02,805 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:02,806 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:02,806 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:02,806 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:02,807 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:02,807 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:02,807 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:02,808 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:02,808 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:45:02,951 - logic.JIDLogic - DEBUG - curText:search nirav
+2012-06-06 23:45:02,952 - logic.JIDLogic - DEBUG - prevText: search nirav
+2012-06-06 23:45:02,952 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:45:02,952 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:45:02,952 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:45:02,953 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:45:02,953 - logic.JIDLogic - DEBUG - ********exeCmd: search nirav
+2012-06-06 23:45:02,953 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:45:02,953 - logic.JIDLogic - DEBUG - search nirav
+2012-06-06 23:45:02,954 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:45:02,954 - operation.Operation - DEBUG - search
+2012-06-06 23:45:02,954 - operation.Search - DEBUG - finding objects
+2012-06-06 23:45:02,955 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:45:02,955 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav
+2012-06-06 23:45:02,958 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:45:02,959 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:45:02,959 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:45:02,959 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:45:02,959 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:45:02,960 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:45:02,960 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:45:02,960 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:45:02,961 - operation.Search - DEBUG - allTasks[0] StartTime:946710000000
+2012-06-06 23:46:13,796 - Abc - DEBUG - array out of bounds!
+2012-06-06 23:46:14,327 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-06 23:46:14,387 - Abc - DEBUG - 0
+2012-06-06 23:46:14,438 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:46:14,488 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:46:14,488 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:46:14,488 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:46:14,503 - operation.Operation - DEBUG - find
+2012-06-06 23:46:14,508 - operation.Search - DEBUG - finding objects
+2012-06-06 23:46:14,508 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:46:14,508 - operation.Search - DEBUG - before sorting
+2012-06-06 23:46:14,508 - operation.Search - DEBUG - after sorting
+2012-06-06 23:46:14,508 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:46:14,518 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:46:18,679 - logic.JIDLogic - DEBUG - curText:f
+2012-06-06 23:46:18,679 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-06 23:46:18,684 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:18,684 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:18,684 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:18,885 - logic.JIDLogic - DEBUG - curText:f
+2012-06-06 23:46:18,885 - logic.JIDLogic - DEBUG - prevText: f
+2012-06-06 23:46:18,885 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:18,885 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:18,885 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:19,031 - logic.JIDLogic - DEBUG - curText:fi
+2012-06-06 23:46:19,032 - logic.JIDLogic - DEBUG - prevText: f
+2012-06-06 23:46:19,032 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:19,032 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:19,033 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:19,183 - logic.JIDLogic - DEBUG - curText:find
+2012-06-06 23:46:19,183 - logic.JIDLogic - DEBUG - prevText: fi
+2012-06-06 23:46:19,184 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:19,184 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:19,184 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:19,300 - logic.JIDLogic - DEBUG - curText:find 
+2012-06-06 23:46:19,300 - logic.JIDLogic - DEBUG - prevText: find
+2012-06-06 23:46:19,301 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:19,301 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:19,301 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:20,563 - logic.JIDLogic - DEBUG - curText:find n
+2012-06-06 23:46:20,563 - logic.JIDLogic - DEBUG - prevText: find 
+2012-06-06 23:46:20,564 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:20,564 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:20,565 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:21,306 - logic.JIDLogic - DEBUG - curText:find 
+2012-06-06 23:46:21,306 - logic.JIDLogic - DEBUG - prevText: find n
+2012-06-06 23:46:21,306 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:21,306 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:21,306 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:21,486 - logic.JIDLogic - DEBUG - curText:find
+2012-06-06 23:46:21,486 - logic.JIDLogic - DEBUG - prevText: find 
+2012-06-06 23:46:21,486 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:21,486 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:21,486 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:21,652 - logic.JIDLogic - DEBUG - curText:fin
+2012-06-06 23:46:21,653 - logic.JIDLogic - DEBUG - prevText: find
+2012-06-06 23:46:21,653 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:21,655 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:21,656 - logic.JIDLogic - DEBUG - index: 0
+2012-06-06 23:46:21,831 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:46:21,831 - logic.JIDLogic - DEBUG - prevText: fin
+2012-06-06 23:46:21,832 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:21,832 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:21,832 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:23,978 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:46:23,999 - logic.JIDLogic - DEBUG - start drawing
+2012-06-06 23:46:26,072 - logic.JIDLogic - DEBUG - curText:a
+2012-06-06 23:46:26,072 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:46:26,072 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:26,072 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:26,072 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:26,344 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-06 23:46:26,344 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-06 23:46:26,345 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:26,345 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:26,345 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:26,420 - logic.JIDLogic - DEBUG - curText:add
+2012-06-06 23:46:26,420 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-06 23:46:26,421 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:26,421 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:26,421 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:26,567 - logic.JIDLogic - DEBUG - curText:add 
+2012-06-06 23:46:26,567 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-06 23:46:26,568 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:26,568 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:26,568 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:26,810 - logic.JIDLogic - DEBUG - curText:add n
+2012-06-06 23:46:26,810 - logic.JIDLogic - DEBUG - prevText: add 
+2012-06-06 23:46:26,810 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:26,811 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:26,811 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,013 - logic.JIDLogic - DEBUG - curText:add ni
+2012-06-06 23:46:27,014 - logic.JIDLogic - DEBUG - prevText: add n
+2012-06-06 23:46:27,014 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,015 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,015 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,124 - logic.JIDLogic - DEBUG - curText:add ni
+2012-06-06 23:46:27,125 - logic.JIDLogic - DEBUG - prevText: add ni
+2012-06-06 23:46:27,125 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,126 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,126 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,240 - logic.JIDLogic - DEBUG - curText:add nir
+2012-06-06 23:46:27,240 - logic.JIDLogic - DEBUG - prevText: add ni
+2012-06-06 23:46:27,240 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,241 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,241 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,426 - logic.JIDLogic - DEBUG - curText:add nirav
+2012-06-06 23:46:27,426 - logic.JIDLogic - DEBUG - prevText: add nir
+2012-06-06 23:46:27,426 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,426 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,426 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,651 - logic.JIDLogic - DEBUG - curText:add nirav 
+2012-06-06 23:46:27,651 - logic.JIDLogic - DEBUG - prevText: add nirav
+2012-06-06 23:46:27,651 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,651 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,651 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,836 - logic.JIDLogic - DEBUG - curText:add nirav f
+2012-06-06 23:46:27,836 - logic.JIDLogic - DEBUG - prevText: add nirav 
+2012-06-06 23:46:27,837 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,837 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,837 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:27,978 - logic.JIDLogic - DEBUG - curText:add nirav fr
+2012-06-06 23:46:27,979 - logic.JIDLogic - DEBUG - prevText: add nirav f
+2012-06-06 23:46:27,979 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:27,979 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:27,980 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:28,050 - logic.JIDLogic - DEBUG - curText:add nirav fro
+2012-06-06 23:46:28,050 - logic.JIDLogic - DEBUG - prevText: add nirav fr
+2012-06-06 23:46:28,051 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:28,051 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:28,051 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:28,270 - logic.JIDLogic - DEBUG - curText:add nirav from
+2012-06-06 23:46:28,271 - logic.JIDLogic - DEBUG - prevText: add nirav fro
+2012-06-06 23:46:28,271 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:28,271 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:28,272 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:28,448 - logic.JIDLogic - DEBUG - curText:add nirav from 
+2012-06-06 23:46:28,449 - logic.JIDLogic - DEBUG - prevText: add nirav from
+2012-06-06 23:46:28,449 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:28,449 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:28,450 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:28,642 - logic.JIDLogic - DEBUG - curText:add nirav from 3
+2012-06-06 23:46:28,642 - logic.JIDLogic - DEBUG - prevText: add nirav from 
+2012-06-06 23:46:28,642 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:28,643 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:28,643 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:29,019 - logic.JIDLogic - DEBUG - curText:add nirav from 3p
+2012-06-06 23:46:29,019 - logic.JIDLogic - DEBUG - prevText: add nirav from 3
+2012-06-06 23:46:29,019 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:29,019 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:29,019 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:29,239 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm
+2012-06-06 23:46:29,239 - logic.JIDLogic - DEBUG - prevText: add nirav from 3p
+2012-06-06 23:46:29,239 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:29,239 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:29,239 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:29,412 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm 
+2012-06-06 23:46:29,413 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm
+2012-06-06 23:46:29,413 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:29,414 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:29,414 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:29,514 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm t
+2012-06-06 23:46:29,514 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm 
+2012-06-06 23:46:29,515 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:29,515 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:29,515 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:29,626 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to
+2012-06-06 23:46:29,626 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm t
+2012-06-06 23:46:29,627 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:29,627 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:29,627 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:29,836 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 
+2012-06-06 23:46:29,837 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to
+2012-06-06 23:46:29,837 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:29,837 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:29,838 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:30,466 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4
+2012-06-06 23:46:30,466 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 
+2012-06-06 23:46:30,466 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:30,466 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:30,466 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:30,622 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4p
+2012-06-06 23:46:30,622 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4
+2012-06-06 23:46:30,622 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:30,622 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:30,622 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:30,839 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm
+2012-06-06 23:46:30,839 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4p
+2012-06-06 23:46:30,839 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:30,840 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:30,840 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:31,032 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm 
+2012-06-06 23:46:31,033 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm
+2012-06-06 23:46:31,033 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:31,033 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:31,034 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:31,250 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm o
+2012-06-06 23:46:31,250 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm 
+2012-06-06 23:46:31,250 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:31,251 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:31,251 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:31,454 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on
+2012-06-06 23:46:31,455 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm o
+2012-06-06 23:46:31,455 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:31,455 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:31,456 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:31,839 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 
+2012-06-06 23:46:31,844 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on
+2012-06-06 23:46:31,844 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:31,844 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:31,844 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:31,985 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3
+2012-06-06 23:46:31,985 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 
+2012-06-06 23:46:31,985 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:31,985 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:31,985 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:32,666 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/
+2012-06-06 23:46:32,666 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3
+2012-06-06 23:46:32,666 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:32,667 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:32,667 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:32,776 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3
+2012-06-06 23:46:32,776 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/
+2012-06-06 23:46:32,777 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:32,777 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:32,777 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:33,191 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3/
+2012-06-06 23:46:33,191 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3
+2012-06-06 23:46:33,191 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:33,192 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:33,192 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:33,766 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3/2
+2012-06-06 23:46:33,766 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3/
+2012-06-06 23:46:33,767 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:33,767 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:33,767 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:33,949 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3/20
+2012-06-06 23:46:33,950 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3/2
+2012-06-06 23:46:33,950 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:33,950 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:33,950 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:34,114 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3/201
+2012-06-06 23:46:34,115 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3/20
+2012-06-06 23:46:34,115 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:34,116 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:34,116 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:34,254 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:34,255 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3/201
+2012-06-06 23:46:34,255 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:34,255 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:34,256 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:34,392 - logic.JIDLogic - DEBUG - curText:add nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:34,392 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:34,393 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-06 23:46:34,393 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:34,394 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:34,394 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-06 23:46:34,394 - logic.JIDLogic - DEBUG - ********exeCmd: add nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:34,395 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:46:34,395 - logic.JIDLogic - DEBUG - add nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:34,395 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:46:34,396 - operation.Operation - DEBUG - add
+2012-06-06 23:46:34,403 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:46:34,404 - logic.JIDLogic - DEBUG - left over string after checking for recurring: nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:34,442 - logic.JIDLogic - DEBUG - -----from_time_to_time_date format-------
+2012-06-06 23:46:34,443 - logic.JIDLogic - DEBUG - start time string: 3pm
+2012-06-06 23:46:34,443 - logic.JIDLogic - DEBUG - end time string: 4pm
+2012-06-06 23:46:34,444 - logic.JIDLogic - DEBUG - start date string: 3/3/2012
+2012-06-06 23:46:34,444 - logic.JIDLogic - DEBUG - end date string: 3/3/2012
+2012-06-06 23:46:34,445 - logic.JIDLogic - DEBUG - Start time is set!
+2012-06-06 23:46:34,445 - logic.JIDLogic - DEBUG - End time is set!
+2012-06-06 23:46:34,446 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-06 23:46:34,446 - logic.JIDLogic - DEBUG - End date is set!
+2012-06-06 23:46:34,457 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-06 23:46:34,458 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:46:34,464 - logic.JIDLogic - DEBUG - start date time: 3:00 PM 03 Mar 2012
+2012-06-06 23:46:34,464 - logic.JIDLogic - DEBUG - end date time: 4:00 PM 03 Mar 2012
+2012-06-06 23:46:34,465 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:46:34,465 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:46:34,465 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:46:34,466 - logic.JIDLogic - DEBUG - task details: nirav
+2012-06-06 23:46:34,466 - logic.JIDLogic - DEBUG - this is parse for ADD before initializing task obj
+2012-06-06 23:46:34,473 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-06 23:46:34,474 - logic.JIDLogic - DEBUG - isundoable
+2012-06-06 23:46:34,476 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-06 23:46:34,622 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:46:34,622 - logic.JIDLogic - DEBUG - find *.*
+2012-06-06 23:46:34,623 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:46:34,623 - operation.Operation - DEBUG - find
+2012-06-06 23:46:34,623 - operation.Search - DEBUG - finding objects
+2012-06-06 23:46:34,624 - operation.Search - DEBUG - returning all objects
+2012-06-06 23:46:34,624 - operation.Search - DEBUG - before sorting
+2012-06-06 23:46:34,625 - operation.Search - DEBUG - after sorting
+2012-06-06 23:46:34,625 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:46:35,411 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:46:35,416 - logic.JIDLogic - DEBUG - prevText: add nirav from 3pm to 4pm on 3/3/2012
+2012-06-06 23:46:35,416 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:35,416 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-06 23:46:35,416 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:36,269 - logic.JIDLogic - DEBUG - curText:s
+2012-06-06 23:46:36,269 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:46:36,270 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:36,270 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:36,270 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:36,453 - logic.JIDLogic - DEBUG - curText:se
+2012-06-06 23:46:36,453 - logic.JIDLogic - DEBUG - prevText: s
+2012-06-06 23:46:36,454 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:36,454 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:36,454 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:36,591 - logic.JIDLogic - DEBUG - curText:sea
+2012-06-06 23:46:36,591 - logic.JIDLogic - DEBUG - prevText: se
+2012-06-06 23:46:36,592 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:36,592 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:36,592 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:36,728 - logic.JIDLogic - DEBUG - curText:sear
+2012-06-06 23:46:36,728 - logic.JIDLogic - DEBUG - prevText: sea
+2012-06-06 23:46:36,729 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:36,729 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:36,729 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:36,951 - logic.JIDLogic - DEBUG - curText:searc
+2012-06-06 23:46:36,951 - logic.JIDLogic - DEBUG - prevText: sear
+2012-06-06 23:46:36,956 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:36,956 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:36,956 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:37,026 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:46:37,026 - logic.JIDLogic - DEBUG - prevText: searc
+2012-06-06 23:46:37,026 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:37,026 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:37,026 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:37,246 - logic.JIDLogic - DEBUG - curText:search 
+2012-06-06 23:46:37,246 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:46:37,246 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:37,246 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:37,246 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:37,421 - logic.JIDLogic - DEBUG - curText:search n
+2012-06-06 23:46:37,421 - logic.JIDLogic - DEBUG - prevText: search 
+2012-06-06 23:46:37,421 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:37,421 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:37,421 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:37,426 - logic.JIDLogic - DEBUG - ********exeCmd: search n
+2012-06-06 23:46:37,426 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-06 23:46:37,426 - logic.JIDLogic - DEBUG - search n
+2012-06-06 23:46:37,426 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-06 23:46:37,426 - operation.Operation - DEBUG - search
+2012-06-06 23:46:37,431 - operation.Search - DEBUG - finding objects
+2012-06-06 23:46:37,431 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-06 23:46:37,431 - logic.JIDLogic - DEBUG - left over string after checking for recurring: n
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - task details: n
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-06 23:46:37,441 - operation.Search - DEBUG - Matching task0
+2012-06-06 23:46:37,441 - operation.Search - DEBUG - all ok till here
+2012-06-06 23:46:37,441 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-06 23:46:37,446 - logic.JIDLogic - DEBUG - str[0]: SEARCH nirav from 3:00 PM to 4:00 PM on 03 Mar 2012 labels: []
+2012-06-06 23:46:38,380 - logic.JIDLogic - DEBUG - curText:search 
+2012-06-06 23:46:38,381 - logic.JIDLogic - DEBUG - prevText: search n
+2012-06-06 23:46:38,381 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:38,381 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:38,382 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:38,569 - logic.JIDLogic - DEBUG - curText:search
+2012-06-06 23:46:38,570 - logic.JIDLogic - DEBUG - prevText: search 
+2012-06-06 23:46:38,570 - logic.JIDLogic - DEBUG - state: SEARCH
+2012-06-06 23:46:38,571 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:38,571 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:38,725 - logic.JIDLogic - DEBUG - curText:searc
+2012-06-06 23:46:38,726 - logic.JIDLogic - DEBUG - prevText: search
+2012-06-06 23:46:38,726 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:38,726 - logic.JIDLogic - DEBUG - prev: SEARCH
+2012-06-06 23:46:38,727 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:38,893 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:46:38,896 - logic.JIDLogic - DEBUG - prevText: searc
+2012-06-06 23:46:38,897 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:38,897 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:38,897 - logic.JIDLogic - DEBUG - index: -1
+2012-06-06 23:46:39,078 - logic.JIDLogic - DEBUG - curText:
+2012-06-06 23:46:39,079 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-06 23:46:39,079 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-06 23:46:39,079 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-06 23:46:39,088 - logic.JIDLogic - DEBUG - index: -1
