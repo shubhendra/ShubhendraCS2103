@@ -10,7 +10,7 @@ import org.apache.log4j.*;
 import data.Task;
 import logic.JIDLogic;
 
-import com.seaglasslookandfeel.*;
+//import com.seaglasslookandfeel.*;
 
 import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
@@ -476,14 +476,14 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 				jLabel2.setIcon(Resource.exitOn);
-				MainJFrame.this.revalidate();
+				//MainJFrame.this.revalidate();
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 				jLabel2.setIcon(Resource.exitImg);
-				MainJFrame.this.revalidate();
+				//MainJFrame.this.revalidate();
 			}
 
 		});

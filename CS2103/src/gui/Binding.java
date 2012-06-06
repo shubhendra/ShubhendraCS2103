@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.KeyStroke;
 
 import logic.JIDLogic;
-import data.Task;
+
 
 import org.apache.log4j.*;
 

@@ -30,7 +30,7 @@ public class FileHandler
 		logger.debug(instance.getKeySet().size());
 		for(String key: instance.getKeySet())
 		{
-			//writeToXml.writeObject(instance.getTaskById(key));
+			writeToXml.writeObject(instance.getTaskById(key));
 		}
 		writeToXml.close();
 		return true;

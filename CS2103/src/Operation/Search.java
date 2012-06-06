@@ -129,6 +129,10 @@ public class Search extends Operation {
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
+			logger.debug("allTasks["+i+"] StartTime:"+allTasks[i].getStartDateTime().getTime().getTimeMilli());
+			logger.debug("allTasks["+i+"] EndTime:"+allTasks[i].getEndDateTime().getTime().getTimeMilli());
+			logger.debug("searchstring StartTime:"+findTask.getStartDateTime().getTime().getTimeMilli());
+			logger.debug("searchstring EndTime:"+findTask.getEndDateTime().getTime().getTimeMilli());
 			if (matches(findTask,allTasks[i])){
 				Collections.addAll(foundTasks, allTasks[i]);
 			}

@@ -2,7 +2,7 @@ package gui;
 
 import java.awt.SystemTray;
 
-import logic.JIDLogic;
+
 
 import data.Task;
 
