@@ -4,10 +4,14 @@ import java.util.Map;
 import java.util.Random;
 import java.util.HashMap;
 import java.util.Set;
+
+import org.apache.log4j.Logger;
+
+import storagecontroller.StorageManager;
 public class TaskHashMap
 {
 	private Map<String,Task> taskList;
-	
+	private static Logger logger = Logger.getLogger(StorageManager.class);
 	/** constructor*/
 	public TaskHashMap()
 	{
@@ -42,12 +46,12 @@ public class TaskHashMap
 		Random random=new Random();
 		do
 		{
-		if (taskToBeAdded.getEndDateTime()!=null){
-			taskId="$$__" + taskToBeAdded.getEndDateTime().generateDateCode() + taskToBeAdded.getEndDateTime().generateTimeCode() + 
+		if (taskToBeAdded.getEnd()!=null){
+			taskId="$$__" + taskToBeAdded.getEnd().generateDateCode() + taskToBeAdded.getEnd().generateTimeCode() + 
 					(char)(random.nextInt('Z'-'A'+1)+'A')+ "__$$";
 			}
-		else if (taskToBeAdded.getStartDateTime()!=null){
-			taskId="$$__"+ taskToBeAdded.getStartDateTime().generateDateCode()+ taskToBeAdded.getStartDateTime().generateTimeCode()+
+		else if (taskToBeAdded.getStart()!=null){
+			taskId="$$__"+ taskToBeAdded.getStart().generateDateCode()+ taskToBeAdded.getStart().generateTimeCode()+
 					(char)(random.nextInt('Z'-'A'+1)+'A')+ "__$$";
 		}
 		else{
@@ -112,6 +116,7 @@ public class TaskHashMap
 	 */
 	public void clearHashMap()
 	{
+		logger.debug("Clearing HashMap");
 		taskList.clear();
 	}
 	/** Member function to get the size of the Hash map

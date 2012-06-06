@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import data.DateTime;
+import data.TaskDateTime;
 import data.Task;
 import data.CompareByDate;
 
@@ -58,9 +58,9 @@ public class Overdue extends Operation {
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		DateTime currDateTime =	DateTime.getCurrentDateTime();
+		TaskDateTime currDateTime =	TaskDateTime.getCurrentDateTime();
 		Comparator<Task> compareByDate=new CompareByDate();
-		DateTime defaultDateTime = new DateTime();
+		TaskDateTime defaultDateTime = new TaskDateTime();
 		logger.debug(currDateTime.formattedToString());
 		Task[] allTasks=StorageManager.getAllTasks();
 		ArrayList<Task> overdueTasks=new ArrayList<Task>();

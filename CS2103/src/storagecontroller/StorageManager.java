@@ -1,5 +1,5 @@
 package storagecontroller;
-import data.DateTime;
+import data.TaskDateTime;
 import data.TaskHashMap;
 import data.Task;
 
@@ -74,10 +74,10 @@ public class StorageManager
 	}
 	public static void main(String args[])
 	{
-		DateTime start = new DateTime(2012,5,30,18,0,0);
-		DateTime end = new DateTime(2012,5,30,18,30,0);
-		DateTime start2=new DateTime(2012,5,30,19,0,0);
-		DateTime end2=new DateTime(2012,5,30,20,0,0);
+		TaskDateTime start = new TaskDateTime(2012,5,30,18,0,0);
+		TaskDateTime end = new TaskDateTime(2012,5,30,18,30,0);
+		TaskDateTime start2=new TaskDateTime(2012,5,30,19,0,0);
+		TaskDateTime end2=new TaskDateTime(2012,5,30,20,0,0);
 		Task one=new Task("Go to school","for buying a nb",start,end,"monthly");
 		Task two=new Task("Wash Clothes","in R3",start2,end2,"weekly");
 		StorageManager.addTask(one);

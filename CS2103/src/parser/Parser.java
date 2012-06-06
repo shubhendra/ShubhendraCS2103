@@ -1,7 +1,7 @@
 package parser;
 
 import data.Task;
-import data.DateTime;
+import data.TaskDateTime;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ public class Parser {
 	
 	private boolean important;
 	private boolean deadline;
-	private DateTime startDateTime, endDateTime;
+	private TaskDateTime startDateTime, endDateTime;
 	private String recurring = null;
 	private List<String> labelList = null;
 	private String taskDetails=null;
@@ -124,25 +124,25 @@ public class Parser {
 		
 		if (startDateExists) {
 			if (startTimeExists)
-				startDateTime = new DateTime(startDateArr[2],startDateArr[1],startDateArr[0],startTimeArr[0],startTimeArr[1]);
+				startDateTime = new TaskDateTime(startDateArr[2],startDateArr[1],startDateArr[0],startTimeArr[0],startTimeArr[1]);
 			else
-				startDateTime = new DateTime(startDateArr[2],startDateArr[1],startDateArr[0]);
+				startDateTime = new TaskDateTime(startDateArr[2],startDateArr[1],startDateArr[0]);
 		}
 		
 		if (endDateExists) {
 			if (endTimeExists)
-				endDateTime = new DateTime(endDateArr[2],endDateArr[1],endDateArr[0],endTimeArr[0],endTimeArr[1]);
+				endDateTime = new TaskDateTime(endDateArr[2],endDateArr[1],endDateArr[0],endTimeArr[0],endTimeArr[1]);
 			else
-				endDateTime = new DateTime(endDateArr[2],endDateArr[1],endDateArr[0]);
+				endDateTime = new TaskDateTime(endDateArr[2],endDateArr[1],endDateArr[0]);
 		}
 	
 		if (!startDateExists) 
 			if (startTimeExists)
-				startDateTime = new DateTime(startTimeArr[0],startTimeArr[1]);
+				startDateTime = new TaskDateTime(startTimeArr[0],startTimeArr[1]);
 		
 		if (!endDateExists) 
 			if (endTimeExists)
-				endDateTime = new DateTime(endTimeArr[0],endTimeArr[1]);
+				endDateTime = new TaskDateTime(endTimeArr[0],endTimeArr[1]);
 		
 		
 		/*

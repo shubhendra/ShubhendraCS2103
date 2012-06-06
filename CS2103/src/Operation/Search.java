@@ -1,7 +1,7 @@
 package operation;
 
 import org.apache.log4j.Logger;
-import data.DateTime;
+import data.TaskDateTime;
 import data.CompareByDate;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -147,7 +147,7 @@ public class Search extends Operation {
 	private boolean matches(Task taskToSearch, Task existingTask) {
 		// TODO Auto-generated method stub
 	
-		DateTime defaultTime=new DateTime();
+		TaskDateTime defaultTime=new TaskDateTime();
 		//logger.debug(defaultTime.getTime().getTimeMilli());
 		//logger.debug(taskToSearch.getStartDateTime().getTime().getTimeMilli());
 	

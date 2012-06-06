@@ -1,5 +1,6 @@
 package data;
 
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 
@@ -9,12 +10,12 @@ public class Task {
 	private String taskId;// changed to string id for hashing.
 	private String name;
 	private String description;
-	private DateTime start;
-	private DateTime end;
+	private TaskDateTime start;
+	private TaskDateTime end;
 	private boolean completed;
 	private boolean important;
 	private boolean deadline;
-	private List<String> labels;
+	private ArrayList<String> labels;
 	private String recurring;
 /** Default constructor
  * 
@@ -33,7 +34,7 @@ public Task()
 	recurring = null;
 }
 /**Task Constructor 1*/
-public Task(String Name, String desc, DateTime startDateTime, DateTime endDateTime, String recurring)
+public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime endDateTime, String recurring)
 {
 	this();
 	name = Name;
@@ -45,7 +46,7 @@ public Task(String Name, String desc, DateTime startDateTime, DateTime endDateTi
 /** Task Constructor 2
  *
  */
-public Task(String Name, String desc, DateTime startDateTime, DateTime endDateTime,List<String> Labels, String recurring, boolean Deadline, boolean Important)
+public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime endDateTime,ArrayList<String> Labels, String recurring, boolean Deadline, boolean Important)
 {
 	this();
 	name = Name;
@@ -60,7 +61,7 @@ public Task(String Name, String desc, DateTime startDateTime, DateTime endDateTi
 /** Task Constructor 3
  * 
  */
-public Task(String Name,String desc,DateTime startDateTime,DateTime endDateTime,List<String> Labels,String recurring)
+public Task(String Name,String desc,TaskDateTime startDateTime,TaskDateTime endDateTime,ArrayList<String> Labels,String recurring)
 {
 	this();
 	name = Name;
@@ -95,11 +96,11 @@ public void setTaskId(String id)
 	taskId = id;
 }
 
-public List<String> getLabels()
+public ArrayList<String> getLabels()
 {
 	return labels;
 }
-public void setLabels(List<String> labels2)
+public void setLabels(ArrayList<String> labels2)
 {
 	labels = labels2;
 }
@@ -139,7 +140,7 @@ public void setDescription(String desc)
  * 
  * @return the start attribute as a DateTime object
  */
-public DateTime getStartDateTime()
+public TaskDateTime getStart()
 {
 	return start;
 }
@@ -147,7 +148,7 @@ public DateTime getStartDateTime()
  * 
  * @param startDateTime the DateTime object to which start is set to
  */
-public void setStartDateTime(DateTime startDateTime)
+public void setStart(TaskDateTime startDateTime)
 {
 	start = startDateTime;
 }
@@ -155,7 +156,7 @@ public void setStartDateTime(DateTime startDateTime)
  * 
  * @return the end attribute as a DateTime object
  */
-public DateTime getEndDateTime()
+public TaskDateTime getEnd()
 {
 	return end;
 }
@@ -163,7 +164,7 @@ public DateTime getEndDateTime()
  * 
  * @param endDateTime the DateTime object to which end is set to
  */
-public void setEndDateTime(DateTime endDateTime)
+public void setEnd(TaskDateTime endDateTime)
 {
 	end = endDateTime;
 }
@@ -291,31 +292,31 @@ public void toggleDeadline()
  */
 public String toString()
 {
-	DateTime temp=new DateTime();
+	TaskDateTime temp=new TaskDateTime();
 	if((start!=null && end!=null && start.compareTo(temp)!=0 && (end.compareTo(temp)!=0)))
 	{
 		if(start.getDate().getTimeMilli()==end.getDate().getTimeMilli())
 		{
-			return name + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString() + " on " + start.getDate().formattedToString(); 
+			return name + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString() + " on " + start.getDate().formattedToString() + " labels: " + getLabels(); 
 		}
 			else
 		{
-			return name + " from " + start.formattedToString() + " to " + end.formattedToString();
+			return name + " from " + start.formattedToString() + " to " + end.formattedToString() + " labels: " + getLabels(); 
 		}
 	}
 	else if((end==null ||( start!=null && start.compareTo(temp)!=0 && end.compareTo(temp)==0)))
 	{
 		if(start.getHasTime())
-			return name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString();
+			return name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString() + " labels: " + getLabels(); 
 		else
-			return name + " on " +start.getDate().formattedToString();
+			return name + " on " +start.getDate().formattedToString() + " labels: " + getLabels();  
 	}
 	else if((start ==null || ( end!=null && start.compareTo(temp)==0) && !(end.compareTo(temp)==0)) )
 	{
 		if(end.getHasTime())
-			return name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString();
+			return name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString() + " labels: "+getLabels(); 
 		else
-			return name + " by " + end.formattedToString();
+			return name + " by " + end.formattedToString() + " labels: " + getLabels(); 
 	}
 	else
 	{
@@ -328,11 +329,11 @@ public String toString()
  */
 public String toString2()
 {
-	DateTime temp=new DateTime();
+	TaskDateTime temp=new TaskDateTime();
 	if(((start!=null && end!=null && start.compareTo(temp)!=0 && (end.compareTo(temp)!=0))||(end==null) 
 			||( start!=null && start.compareTo(temp)!=0 && end.compareTo(temp)==0)))
 	{
-		long diffMilliSeconds=start.getTimeMilli()-DateTime.getCurrentDateTime().getTimeMilli();
+		long diffMilliSeconds=start.getTimeMilli()-TaskDateTime.getCurrentDateTime().getTimeMilli();
 		long diffSeconds=diffMilliSeconds/1000;
 		long diffMinutes=diffMilliSeconds/(60*1000);
 		long diffHours=diffMilliSeconds/(60*60*1000);
@@ -372,7 +373,7 @@ public String toString2()
 	}
 	else if((start ==null || ( end!=null && start.compareTo(temp)==0) && !(end.compareTo(temp)==0))) 
 	{
-		long diffMilliSeconds=end.getTimeMilli()-DateTime.getCurrentDateTime().getTimeMilli();
+		long diffMilliSeconds=end.getTimeMilli()-TaskDateTime.getCurrentDateTime().getTimeMilli();
 		long diffSeconds=diffMilliSeconds/1000;
 		long diffMinutes=diffMilliSeconds/(60*1000);
 		long diffHours=diffMilliSeconds/(60*60*1000);
