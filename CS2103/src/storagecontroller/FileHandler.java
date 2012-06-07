@@ -1,5 +1,6 @@
 package storagecontroller;
 
+import data.Task;
 import data.TaskArrayList;
 import data.TaskHashMap;
 import java.beans.XMLDecoder;
@@ -10,7 +11,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-
+import operation.Add;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -65,10 +66,10 @@ public class FileHandler
 		XMLDecoder readFromXml=new XMLDecoder(xmlIn);
 			while(true)
 			{
-				Object obj=readFromXml.readObject();
-				TaskArrayList.addTask(obj);
-				
+				Task newTask=(Task)readFromXml.readObject();
+				instance.addTask(newTask);
 			}
+			
 		}
 		catch(FileNotFoundException e)
 		{
