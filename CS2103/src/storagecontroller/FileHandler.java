@@ -1,6 +1,6 @@
 package storagecontroller;
 
-import data.Task;
+import data.TaskArrayList;
 import data.TaskHashMap;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
@@ -9,18 +9,29 @@ import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+
+
+
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 public class FileHandler 
 {
 	
-	private Logger logger=Logger.getLogger("Abc");
+	private static Logger logger = Logger.getLogger(FileHandler.class);
 	private static String fileName;
-	
+	/** Constructor to set the filename 
+	 * 
+	 * @param name name of the file to which xml encoder writes and from which xml decoder reads
+	 */
 	public FileHandler(String name)
 	{
 		fileName=name;
 	}
+	/** function to write to the file with name as fileName 
+	 * 
+	 * @param instance the TaskHashMap instance. Is also the live storage.
+	 * @return true if written to the file without any errors, otherwise false
+	 */
 	public boolean writeToFile(TaskHashMap instance) 
 	{
 		try
@@ -41,24 +52,23 @@ public class FileHandler
 			return false;
 		}
 	}
-	
-	
-	
+	/** function to write to the file with name as fileName 
+	 * 
+	 * @param instance the TaskHashMap instance. Is also the live storage.
+	 * @return true if read from the file without any errors, otherwise false.
+	 */
 	public boolean readFromFile(TaskHashMap instance) 
 	{
 		try
 		{
 		BufferedInputStream xmlIn=new BufferedInputStream(new FileInputStream(fileName));
 		XMLDecoder readFromXml=new XMLDecoder(xmlIn);
-		
-			Task obj;
-			while((obj = (Task) readFromXml.readObject())!=null)
+			while(true)
 			{
-				instance.addTaskById(obj);
+				Object obj=readFromXml.readObject();
+				TaskArrayList.addTask(obj);
+				
 			}
-			readFromXml.close();
-			logger.debug(instance.getKeySet().size());
-			logger.debug("abc");
 		}
 		catch(FileNotFoundException e)
 		{
@@ -75,6 +85,5 @@ public class FileHandler
 			logger.debug("null pointer exception");
 			return false;
 		}
-		return true;
 	}
 }

@@ -152,8 +152,9 @@ public class Search extends Operation {
 		//logger.debug(taskToSearch.getStart().getTime().getTimeMilli());
 	
 		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
-				.contains((taskToSearch.getName().trim())))
-						
+				.contains((taskToSearch.getName().trim()))))
+				{}
+				/*		
 				&& (taskToSearch.getStart() == null
 						|| taskToSearch.getStart().getDate().getTimeMilli()
 						== defaultTime.getDate().getTimeMilli() || (existingTask.getStart()!=null 
@@ -184,11 +185,11 @@ public class Search extends Operation {
 						existingTask.getImportant())
 				&& (taskToSearch.getRecurring() == null || (existingTask.getRecurring()!=null 
 						&& existingTask.getRecurring().toLowerCase()
-						.contains(taskToSearch.getRecurring().toLowerCase()))))
+						.contains(taskToSearch.getRecurring().toLowerCase()))))*/
 		
-		{
-			logger.debug("all ok till here");
-			return true;
+	//	{
+		//	logger.debug("all ok till here");
+			//return true;
 			 
 			/* 
 			if (taskToSearch.getLabels()==null)
@@ -228,7 +229,7 @@ public class Search extends Operation {
 				
 			}}*/
 			
-		}
+		
 				
 			
 		return false;
