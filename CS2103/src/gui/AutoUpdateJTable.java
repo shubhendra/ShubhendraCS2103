@@ -1,24 +1,19 @@
 package gui;
 
 import java.awt.Component;
-
 import java.util.Vector;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JLabel;
 import javax.swing.JTable;
-
 import javax.swing.Timer;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-
 import logic.JIDLogic;
 
-
 import data.Task;
-
 
 public class AutoUpdateJTable {
 	private JTable jTable;

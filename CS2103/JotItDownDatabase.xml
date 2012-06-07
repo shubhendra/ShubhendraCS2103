@@ -1,3 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <java version="1.6.0_31" class="java.beans.XMLDecoder"> 
+ <object class="data.Task"> 
+  <void property="description"> 
+   <null/> 
+  </void> 
+  <void property="labels"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <string>shopping</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="name"> 
+   <string>go to the market</string> 
+  </void> 
+  <void property="start"> 
+   <object class="data.TaskDateTime"> 
+    <void property="hasDate"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="hasTime"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="timeMilli"> 
+     <long>1336114800000</long> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="taskId"> 
+   <string>$$__04-05-2012150000B__$$</string> 
+  </void> 
+ </object> 
+ <object class="data.Task"> 
+  <void property="description"> 
+   <null/> 
+  </void> 
+  <void property="labels"> 
+   <object class="java.util.ArrayList"/> 
+  </void> 
+  <void property="name"> 
+   <string>go to school</string> 
+  </void> 
+  <void property="start"> 
+   <object class="data.TaskDateTime"> 
+    <void property="hasDate"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="hasTime"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="timeMilli"> 
+     <long>1367583120000</long> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="taskId"> 
+   <string>$$__03-05-2013201200Q__$$</string> 
+  </void> 
+ </object> 
+ <object class="data.Task"> 
+  <void property="description"> 
+   <null/> 
+  </void> 
+  <void property="labels"> 
+   <object class="java.util.ArrayList"/> 
+  </void> 
+  <void property="name"> 
+   <string>go to market</string> 
+  </void> 
+  <void property="start"> 
+   <object class="data.TaskDateTime"> 
+    <void property="hasDate"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="hasTime"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="timeMilli"> 
+     <long>1328166000000</long> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="taskId"> 
+   <string>$$__02-02-2012150000T__$$</string> 
+  </void> 
+ </object> 
 </java> 

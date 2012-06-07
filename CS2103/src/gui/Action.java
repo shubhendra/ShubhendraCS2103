@@ -9,6 +9,12 @@ import org.apache.log4j.Logger;
 import logic.JIDLogic;
 import data.Task;
 
+/**
+ * Action class for using with key binding
+ * 
+ * @author Ramon
+ *
+ */
 public class Action {
 	
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
@@ -41,61 +47,86 @@ public class Action {
     	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {
-        	Task[] taskList = ExpandJPanel.getTasks();
+        	Task[] taskList = ExpandJPanel.getSeletedTask();
         	
-        	JIDLogic.setCommand("DELETE");
-       		logger.debug("******execmd: " + "DELETE " 
-        					+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-       		task = JIDLogic.executeCommand("DELETE " 
-       				+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-
-
-        	if(task == null)
-        		MainJFrame.showPopup("DELETE unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("DELETE: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}        	
+        	if(taskList.length == 0)
+        		return;
+	        else {
+	        	String exeCmd = "DELETE ";
+	        	for(Task t: taskList) {
+	        		exeCmd += t.getTaskId() + " ";
+	        	}
+	        	
+	        	JIDLogic.setCommand("DELETE");
+	        	Task[] result = JIDLogic.executeCommand(exeCmd);
+	        	
+	        	if(result.length == 1){
+	        		UIController.showTopPopUpMsg("DELETE: " + result[0]);
+	        	}
+	        	else {
+	        		UIController.showTopPopUpMsg("DELETE: " + result.length + " tasks.");
+	        	}
+	        	
+	        	UIController.refresh();
+	        }
         }
     }
     
     static class CompletedAction extends AbstractAction {
+    	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {
-        	Task[] taskList = ExpandJPanel.getTasks();
+        	Task[] taskList = ExpandJPanel.getSeletedTask();
         	
-        	JIDLogic.setCommand("COMPLETED");
-        	logger.debug("COMPLETED "
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	Task[] task = JIDLogic.executeCommand("COMPLETED " 
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	
-        	if(task == null)
-        		MainJFrame.showPopup("COMPLETED unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("COMPLETED: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}        	
+        	if(taskList.length == 0)
+        		return;
+	        else {
+	        	String exeCmd = "COMPLETED ";
+	        	for(Task t: taskList) {
+	        		exeCmd += t.getTaskId() + " ";
+	        	}
+	        	
+	        	JIDLogic.setCommand("COMPLETED");
+	        	Task[] result = JIDLogic.executeCommand(exeCmd);
+	        	
+	        	if(result.length == 1){
+	        		UIController.showTopPopUpMsg("COMPLETED: " + result[0]);
+	        	}
+	        	else {
+	        		UIController.showTopPopUpMsg("COMPLETED: " + result.length + " tasks.");
+	        	}
+	        	
+	        	UIController.refresh();
+	        }
         }
     }
     
     static class ImportantAction extends AbstractAction {
-    	@Override
+    	Task[] task;
+        @Override
         public void actionPerformed(ActionEvent e) {
-        	Task[] taskList = ExpandJPanel.getTasks();
+        	Task[] taskList = ExpandJPanel.getSeletedTask();
         	
-        	JIDLogic.setCommand("IMPORTANT");
-        	logger.debug("IMPORTANT "
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	Task[] task = JIDLogic.executeCommand("IMPORTANT " 
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        		
-        	if(task == null)
-        		MainJFrame.showPopup("IMPORTANT unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("IMPORTANT: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}        	
+        	if(taskList.length == 0)
+        		return;
+	        else {
+	        	String exeCmd = "IMPORTANT ";
+	        	for(Task t: taskList) {
+	        		exeCmd += t.getTaskId() + " ";
+	        	}
+	        	
+	        	JIDLogic.setCommand("IMPORTANT");
+	        	Task[] result = JIDLogic.executeCommand(exeCmd);
+	        	
+	        	if(result.length == 1){
+	        		UIController.showTopPopUpMsg("IMPORTANT: " + result[0]);
+	        	}
+	        	else {
+	        		UIController.showTopPopUpMsg("IMPORTANT: " + result.length + " tasks.");
+	        	}
+	        	
+	        	UIController.refresh();
+	        }
         }
     }
     
@@ -152,6 +183,13 @@ public class Action {
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
     		
+    	}
+    }
+
+    static class GCalendarAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		new LogInDialog(UIController.mainJFrame, false);
     	}
     }
 }

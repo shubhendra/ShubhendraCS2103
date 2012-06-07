@@ -2,8 +2,6 @@ package gui;
 
 import java.awt.SystemTray;
 
-
-
 import data.Task;
 
 public class Reminder {

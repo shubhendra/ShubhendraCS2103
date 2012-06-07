@@ -71,11 +71,10 @@ public class BaseSearch extends Operation{
 		
 		Parser newparser= new Parser();
 		
-		String[] extractedId= new String[] {newparser.fetchTaskId(params.toUpperCase())};
-		if (extractedId[0]!=null)
-			return extractedId;
-		else
-			return null;
+		String[] extractedIds= newparser.fetchTaskIds(params.toUpperCase());
+		
+		return extractedIds;
+		
 		
 		
 		

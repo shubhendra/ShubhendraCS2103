@@ -3,13 +3,13 @@ import data.TaskHashMap;
 import data.Task;
 import java.util.ArrayList;
 
-import operation.Add;
-
+import gcal.GoogleCalendar;
 import org.apache.log4j.Logger;
 
 public class StorageManager 
 {
 	private static TaskHashMap liveStorage=new TaskHashMap();
+	private static GoogleCalendar GCalObj;
 	private static Logger logger = Logger.getLogger(StorageManager.class);
 	/** default constructor
 	 * 
@@ -21,6 +21,13 @@ public class StorageManager
 	 * @param taskToBeAdded the task to be added
 	 * @return true if the task is added without any errors, otherwise false.
 	 */
+	
+	public static void setGCalObject(GoogleCalendar gCal){
+		GCalObj=gCal;
+	}
+	public static GoogleCalendar getGCalObject(){
+		return GCalObj;
+	}
 	public static boolean addTask(Task taskToBeAdded)
 	{
 		return liveStorage.addTask(taskToBeAdded);

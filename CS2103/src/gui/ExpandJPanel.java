@@ -4,23 +4,7 @@
  */
 package gui;
 
-import java.awt.Color;
-import java.awt.Event;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-
-import javax.swing.AbstractAction;
-import javax.swing.ActionMap;
-import javax.swing.InputMap;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.KeyStroke;
 import javax.swing.table.DefaultTableModel;
-
-import logic.JIDLogic;
-
 import data.*;
 /**
  *
@@ -104,8 +88,17 @@ public class ExpandJPanel extends javax.swing.JPanel {
     	autoJTable.updateJTable(tasks);
     }
     
-    public static Task[] getTasks() {
+    public static Task[] getAllTasks() {
     	return autoJTable.getTasks();
+    }
+    
+    public static Task[] getSeletedTask() {
+    	int[] idx = jTable1.getSelectedRows();
+    	Task[] tasks = new Task[idx.length];
+    	for(int i=0; i<tasks.length; i++) {
+    		tasks[i] = autoJTable.getTasks()[idx[i]];
+    	}
+    	return tasks;
     }
     
     class MyTableModel extends DefaultTableModel{

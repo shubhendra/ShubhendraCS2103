@@ -2,17 +2,14 @@ package gui;
 
 
 import java.awt.Event;
-import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 
-import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.JFrame;
 import javax.swing.KeyStroke;
 
 import logic.JIDLogic;
-
 
 import org.apache.log4j.*;
 
@@ -68,6 +65,10 @@ public class Binding {
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_O, Event.CTRL_MASK);
 	        inputMap.put(key, "overdue");
 	        actionMap.put("overdue", new Action.OverdueAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.CTRL_MASK);
+	        inputMap.put(key, "gCalendar");
+	        actionMap.put("gCalendar", new Action.GCalendarAction());
 	}
 	
 
