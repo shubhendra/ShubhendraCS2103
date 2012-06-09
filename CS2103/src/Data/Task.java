@@ -332,14 +332,16 @@ public String toString()
 public String toStringLabels()
 {
 	String stringLabels="";
+	if (labels!=null)
+	{
 	if (labels.size()!=0){
 		for(int i=0;i<labels.size();i++){
 			stringLabels+="@"+labels.get(i)+" ";
 		}	
 	}
+	}
 	return stringLabels;
 }
-
 /**
  * 
  */

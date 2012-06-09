@@ -57,7 +57,7 @@ public class StorageManager
 	 */
 	public static Task getTaskById(String id)
 	{
-		return liveStorage.getTaskById(id);
+		return liveStorage.getTaskById(id.trim());
 	}
 	/** loads to the liveStorage from the file 
 	 * 
@@ -100,8 +100,8 @@ public class StorageManager
 			return false;
 		System.out.println(getAllTasks().length);
 		liveStorage.deleteTask(taskToBeReplaced);
-		liveStorage.addTask(taskToReplaceBy);
 		taskToReplaceBy.setTaskId(taskToBeReplaced.getTaskId());
+		liveStorage.addTask(taskToReplaceBy);
 		taskToReplaceBy.setDescription(taskToBeReplaced.getDescription());
 		return true;
 	}

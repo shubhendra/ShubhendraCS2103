@@ -17,7 +17,7 @@ public class Modify extends BaseSearch{
 	public Modify(String intendedOperation) {
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
-		if (commandName=="cancel edit")
+		if (commandName=="canceledit")
 		{
 			taskBeingEdited=null;
 		}
@@ -95,6 +95,15 @@ public class Modify extends BaseSearch{
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
+		Task[] def=StorageManager.getAllTasks();
+    	if (def!=null)
+    	{
+    		for (int i=0;i<def.length;i++)
+    		{
+    			logger.debug(def[i].toString()+" "+def[i].getTaskId());
+    		}
+    	}
+		
 		if (taskBeingEdited==null)
 		{
 			return super.execute(userCommand);
