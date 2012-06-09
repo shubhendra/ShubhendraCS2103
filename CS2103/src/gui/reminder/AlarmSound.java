@@ -1,6 +1,8 @@
-package gui;
+package gui.reminder;
 
 
+
+import gui.Resource;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -36,8 +38,7 @@ public class AlarmSound
 		try
 		{
 			clip=AudioSystem.getClip();
-			//AudioInputStream inputStream = AudioSystem.getAudioInputStream(Resource.alarmSoundURL);
-	    
+			
 			audio=AudioSystem.getAudioInputStream(Resource.alarmSoundURL);
 			clip.open(audio);
 

@@ -1,4 +1,4 @@
-package gui;
+package gui.mainWindow;
 
 
 import java.awt.Event;
@@ -41,6 +41,9 @@ public class Binding {
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
 	        inputMap.put(key, "delete");
 	        actionMap.put("delete", new Action.DeleteAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_DELETE, 0);
+	        inputMap.put(key, "delete");
 	        
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_I, Event.CTRL_MASK);
 	        inputMap.put(key, "important");

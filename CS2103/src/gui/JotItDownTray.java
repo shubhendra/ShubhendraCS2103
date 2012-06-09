@@ -1,5 +1,7 @@
 package gui;
 
+import gui.mainWindow.MainJFrame;
+
 import java.awt.AWTException;
 import java.awt.Image;
 import java.awt.MenuItem;
@@ -18,6 +20,12 @@ import data.Task;
 
 import logic.JIDLogic;
 
+
+/**
+ * This class is for managing the tray
+ * @author Ramon
+ *
+ */
 public class JotItDownTray {
 	final MainJFrame mainJFrame;
 	static SystemTray tray = SystemTray.getSystemTray();
@@ -46,9 +54,7 @@ public class JotItDownTray {
 		MenuItem mItem1 = new MenuItem("Exit");
 		mItem1.addActionListener(new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
+			public void actionPerformed(ActionEvent e) {				
 				JIDLogic.JIDLogic_close();
 				System.exit(0);
 			}
@@ -58,7 +64,6 @@ public class JotItDownTray {
 		mItem2.addActionListener( new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub]
 				addTaskFromTray();
 			}
 		});
@@ -86,9 +91,8 @@ public class JotItDownTray {
 	    	       new Runnable() {
 					@Override
 					public void run() {
-						if(!mainJFrame.isVisible()) {
-							mainJFrame.showFrame();						
-						}
+						if(!UIController.isWindowVisible())
+							UIController.showWindow();
 		   			}
 	    	       });
 			}

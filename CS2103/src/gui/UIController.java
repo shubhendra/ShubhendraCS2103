@@ -1,5 +1,11 @@
 package gui;
 
+import gui.mainWindow.MainJFrame;
+import gui.mainWindow.extended.ExpandComponent;
+import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.TopPopUp;
+import gui.reminder.Reminder;
+
 import java.awt.Toolkit;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -15,7 +21,7 @@ import constant.OperationFeedback;
 import logic.JIDLogic;
 
 public class UIController {
-	static MainJFrame mainJFrame;
+	public static MainJFrame mainJFrame;
 	Reminder reminder;
 	static JotItDownTray JIDtray;
 	static OperationFeedback operationFeedback = OperationFeedback.VALID;
@@ -73,6 +79,18 @@ public class UIController {
 	public static void refresh() {
 		ExpandComponent.updateJTable();
 		Reminder.update();
+	}
+	
+	public static boolean isWindowVisible() {
+		return mainJFrame.isVisible();
+	}
+	
+	public static void showWindow() {
+		mainJFrame.showFrame();
+	}
+	
+	public static void hideWindow() {
+		mainJFrame.hideFrame();
 	}
 	
 	public static boolean isFrameExpand() {

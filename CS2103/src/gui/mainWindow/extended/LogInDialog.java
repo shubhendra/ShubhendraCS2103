@@ -2,7 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package gui.mainWindow.extended;
+
+import gui.Resource;
+import gui.UIController;
 
 import java.awt.Component;
 import java.awt.Color;

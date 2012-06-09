@@ -2,7 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package gui.reminder;
+
+import gui.Resource;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;

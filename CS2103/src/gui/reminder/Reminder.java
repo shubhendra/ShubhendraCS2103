@@ -1,4 +1,6 @@
-package gui;
+package gui.reminder;
+
+import gui.UIController;
 
 import java.awt.SystemTray;
 import java.awt.event.ActionEvent;
@@ -46,7 +48,6 @@ public class Reminder {
 				logger.debug("reminderPerformer starts");
 				
 				if(task.getImportant()) {
-					UIController.mainJFrame.showFrame();
 					new AlarmFrame(task);
 				}
 				else {

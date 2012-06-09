@@ -1,4 +1,4 @@
-package gui;
+package gui.mainWindow.extended;
 
 import java.awt.Component;
 import java.util.Vector;
@@ -44,7 +44,6 @@ public class AutoUpdateJTable {
     	String completedFont = "<font color = \"#BBBBBB\">";
     	
     	str = "<HTML><b>";
-    	str += task.toString();
     	
     	if(task.getCompleted()) {
     		str+=completedFont;

@@ -1,4 +1,9 @@
-package gui;
+package gui.mainWindow;
+
+import gui.UIController;
+import gui.mainWindow.extended.ExpandComponent;
+import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.LogInDialog;
 
 import java.awt.event.ActionEvent;
 
@@ -47,7 +52,7 @@ public class Action {
     static class DeleteAction extends AbstractAction {
     	Task[] task;
         @Override
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e) {        	
         	Task[] taskList = ExpandComponent.getSeletedTask();
         	
         	if(taskList.length == 0)
@@ -114,7 +119,11 @@ public class Action {
 	        	String exeCmd = "IMPORTANT ";
 	        	for(Task t: taskList) {
 	        		exeCmd += t.getTaskId() + " ";
+	  
 	        	}
+	        	
+	        	logger.debug(taskList[0].getName());
+	        	logger.debug("******" + exeCmd);
 	        	
 	        	JIDLogic.setCommand("IMPORTANT");
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);

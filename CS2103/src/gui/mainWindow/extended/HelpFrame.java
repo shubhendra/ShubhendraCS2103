@@ -1,4 +1,7 @@
-package gui;
+package gui.mainWindow.extended;
+
+import gui.Resource;
+import gui.mainWindow.MainJFrame;
 
 import java.awt.Color;
 import java.awt.Point;

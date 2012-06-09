@@ -2,12 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package gui.mainWindow;
 
 
 import org.apache.log4j.*;
 
 import data.Task;
+import gui.Resource;
+import gui.UIController;
+import gui.mainWindow.extended.AutoCompletion;
+import gui.mainWindow.extended.ExpandComponent;
+import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.TopPopUp;
+import gui.reminder.Reminder;
 import logic.JIDLogic;
 
 //import com.seaglasslookandfeel.*;
@@ -436,6 +443,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								jBoxCompletion.stopWorking();
 								//curText= editorcomp.getText();
 								curState= checkCommand(curText);curIndex= getIndex();
+								
+								/*
 								logger.debug("------------------------------");
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
@@ -443,6 +452,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								logger.debug("state: " +curState);
 								logger.debug("prev: " +prevState);
 								logger.debug("index: "+ curIndex);
+								*/
+								
 								
 								if(prevState == STATE.EDIT && curState!=prevState && edit == true) {
 									logger.debug("canceledit");
@@ -479,6 +490,7 @@ public class MainJFrame extends javax.swing.JFrame {
 											System.out
 													.println("***enter interstate: ");
 	
+											logger.debug("******setCmd: "+curState.toString().toLowerCase());
 											JIDLogic.setCommand(curState.toString().toLowerCase());
 	
 											logger.debug("********exeCmd: "
@@ -510,6 +522,9 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(curState != STATE.NULL &&
 										(e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_DOWN)) {
 										curText = prevText;
+										
+										logger.debug("********exeCmd: "
+												+ curText);
 										tasks = JIDLogic.executeCommand(curText);
 										id = tasks[jComboBox1.getSelectedIndex()].getTaskId();
 										editorcomp.setText(curText);
@@ -560,7 +575,9 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 									}
 									
+									logger.debug("******setCmd: " + curState.toString());
 									logger.debug("********exeCmd: " + exeCmd);
+									
 									JIDLogic.setCommand(curState.toString());
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
