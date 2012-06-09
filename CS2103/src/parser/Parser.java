@@ -270,7 +270,7 @@ public class Parser {
 		
 		logger.debug("this is parse for SEARCH before initializing task obj");
 		
-		task = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring,deadline,important);
+		task = new Task(taskDetails,"",startDateTime,endDateTime,labelList,recurring,deadline,important);
 
 		//logger.debug("task before returning: "+task.toString());
 		
@@ -291,7 +291,7 @@ public class Parser {
 		logger.debug("this is parse for ADD before initializing task obj");
 		
 		if ((startDateTime!=null || endDateTime!=null) && !(taskDetails.isEmpty()))
-			task = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring,deadline,important);	
+			task = new Task(taskDetails,"",startDateTime,endDateTime,labelList,recurring,deadline,important);	
 			
 		//logger.debug("task before returning: "+task.toString());
 		

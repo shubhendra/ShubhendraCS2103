@@ -23,7 +23,9 @@ public class UIController {
 	public UIController() {
 		TopPopUp.createTopPopUp();
 		ExpandComponent.initialize();
+		HelpFrame.initialize();
 		mainJFrame = new MainJFrame();
+		HelpFrame.setPosition();
 		
 		Timer timer = new Timer(100, new ActionListener(){
 
@@ -41,12 +43,9 @@ public class UIController {
 	
 	
 	public static void main(String[] args) {
-		//MainJFrame mainJFrame = new MainJFrame();
 		JIDLogic.JIDLogic_init();
 		
 		new UIController();
-		//initializeTray();
-		//Reminder reminder = new Reminder(tray);
 	}
 	
 	public static String getClipboard() {
@@ -89,7 +88,14 @@ public class UIController {
 	}
 	
 	public static void logInToGCalendar(String username, char[] password) {
-		
+		JIDLogic.setCommand("login");
+		String execmd = "login " + username + " ";
+		for(int i=0; i<password.length; i++)
+			execmd += password[i];
+		System.out.println(execmd);
+		JIDLogic.executeCommand(execmd);
+		UIController.refresh();
+		UIController.showInvalidDisplay();
 	}
 	
 	/**

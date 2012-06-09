@@ -52,7 +52,7 @@ public class LogInDialog extends javax.swing.JDialog {
         this.setBackground(new Color(0,0,0,0));
         this.setLocation(x, y);
         this.setMovable();
-        //this.setLocationRelativeTo(parent);
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
     

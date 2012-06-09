@@ -35,7 +35,8 @@ public class Action {
         	JIDLogic.setCommand("UNDO");
         	Task[] task = JIDLogic.executeCommand("UNDO");
         	if(task == null)
-        		MainJFrame.showPopup("UNDO unsuccessfully!");
+        		;
+        		//MainJFrame.showPopup("UNDO unsuccessfully!");
         	else {
         		MainJFrame.showPopup("UNDO: "+task[0].getName());
             	ExpandComponent.updateJTable();
@@ -152,7 +153,8 @@ public class Action {
     		Task[] task = JIDLogic.executeCommand("redo");
     		
         	if(task == null)
-        		MainJFrame.showPopup("REDO unsuccessfully!");
+        		;
+        		//MainJFrame.showPopup("REDO unsuccessfully!");
         	else {
         		MainJFrame.showPopup("REDO: "+task[0].getName());
             	ExpandComponent.updateJTable();
@@ -182,7 +184,7 @@ public class Action {
     
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
-    		//call help dialog
+    		HelpFrame.toggleShown();
     	}
     }
 

@@ -16,9 +16,13 @@ public class AutoCompletion extends PlainDocument {
     boolean hidePopupOnFocusLoss;
     boolean hitBackspace=false;
     boolean hitBackspaceOnSelection;
+    boolean popupAllow = false;
     int index;
-    String[] standardCommand = new String[] {"add", "modify", "delete", "search"
+    /*String[] standardCommand = new String[] {"add", "modify", "delete", "search"
     										, "completed", "achive", "overdue", "exit"};
+    										*/
+    String[] standardCommand = new String[]{};
+    
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
     
@@ -93,13 +97,14 @@ public class AutoCompletion extends PlainDocument {
     
     public void setStandardModel() {
 		// TODO Auto-generated method stub
-
+    	popupAllow = false;
     	comboBox.setMaximumRowCount(5);
         comboBox.setModel(new DefaultComboBoxModel(standardCommand));
         model = comboBox.getModel();
 	}
     
     public void setNewModel(String[] strings) {
+    	popupAllow = true;
     	if(strings==null) {
     		String[] temp = new String[1];
     		temp[0] = "NOT FOUND!";
@@ -107,12 +112,11 @@ public class AutoCompletion extends PlainDocument {
     		comboBox.setModel(new DefaultComboBoxModel(temp));
     	}
     	else {
-	    	System.out.println(                 "setNewModel");
+	    	System.out.println("setNewModel");
 	    	comboBox.setMaximumRowCount( strings.length > 5 ? 5 : strings.length );
 	    	comboBox.setModel(new DefaultComboBoxModel(strings));
 	    	model = comboBox.getModel();
-    	}
-    	
+    	}	
     }
 
 	public static void enable(JComboBox comboBox) {

@@ -44,6 +44,8 @@ public class AutoUpdateJTable {
     	String completedFont = "<font color = \"#BBBBBB\">";
     	
     	str = "<HTML><b>";
+    	str += task.toString();
+    	
     	if(task.getCompleted()) {
     		str+=completedFont;
     		System.out.println("completed task");
@@ -61,7 +63,7 @@ public class AutoUpdateJTable {
     	}
     	if(task.getEnd()!=null) {
     		str+="<i>                  end: </i>"+task.getEnd().presentableToString();
-    	}
+    	} 
     	str += "</HTML>";
     	
     	listLabel.add(str);

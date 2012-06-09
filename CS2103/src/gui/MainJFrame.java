@@ -32,12 +32,17 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
 import javax.swing.JTextField;
 
@@ -54,6 +59,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
 		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
+		, IMPORTANT
 	};
 	
 	boolean edit = false;
@@ -82,7 +88,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	// End of variables declaration
 
 	private static Point point = new Point();
-	private static Point currentLocation = new Point(0,0);
+	public static Point currentLocation;
 	private final boolean TEST = true;
 
 	// End of variables declaration
@@ -119,7 +125,8 @@ public class MainJFrame extends javax.swing.JFrame {
 		setAction();
 		this.setFocusable(true);
 		this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
-	
+		this.setLocationRelativeTo(null);
+		this.currentLocation = new Point(this.getLocation());
 		/*
 		 * Create and display the form
 		 */
@@ -241,7 +248,28 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	private void setbutton1Action() {
-		//call help.
+		button1.addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				if(!HelpFrame.isShown())
+					HelpFrame.showHelp();
+				else
+					HelpFrame.hideHelp();
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				button1.setIcon(Resource.helpImgOn);
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				button1.setIcon(Resource.helpImg);
+			}
+
+			
+		});
 	}
 
 	public void setdownButtonActionContract() {
@@ -255,17 +283,17 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				downButton.setIcon(Resource.upPress);
+				if (MainJFrame.this.expand) {
+					contractFrame();
+				} else {
+					expandFrame();
+				}
+				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						downButton.setIcon(Resource.down);
-						if (MainJFrame.this.getSize().equals(
-								new Dimension(400, 400))) {
-							contractFrame();
-						} else {
-							expandFrame();
-						}
 					}
 
 				});
@@ -290,7 +318,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				downButton.setIcon(Resource.down);
+				if(!MainJFrame.this.expand)
+					downButton.setIcon(Resource.down);
 			}
 		});
 	}
@@ -306,18 +335,18 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				downButton.setIcon(Resource.downPress);
+
+				if (MainJFrame.this.expand) {
+					contractFrame();
+				} else {
+					expandFrame();
+				}
 				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						downButton.setIcon(Resource.up);
-						if (MainJFrame.this.getSize().equals(
-								new Dimension(400, 400))) {
-							contractFrame();
-						} else {
-							expandFrame();
-						}
 					}
 
 				});
@@ -343,7 +372,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				downButton.setIcon(Resource.up);
+				if(MainJFrame.expand)
+					downButton.setIcon(Resource.up);
 			}
 		});
 	}
@@ -396,21 +426,29 @@ public class MainJFrame extends javax.swing.JFrame {
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
 					    	int curIndex;
+					    	int curLocation;
 					    	String command;
 					    	String curText;
 							@Override
 							public void run() {
-
+								curLocation = editorcomp.getSelectionStart();
 						    	curText = editorcomp.getText();
 								jBoxCompletion.stopWorking();
 								//curText= editorcomp.getText();
 								curState= checkCommand(curText);curIndex= getIndex();
+								logger.debug("------------------------------");
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
 								//logger.debug("cmd: " + command);
 								logger.debug("state: " +curState);
 								logger.debug("prev: " +prevState);
 								logger.debug("index: "+ curIndex);
+								
+								if(prevState == STATE.EDIT && curState!=prevState && edit == true) {
+									logger.debug("canceledit");
+									JIDLogic.executeCommand("canceledit");
+									edit = false;
+								}
 
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
@@ -425,7 +463,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(((curState == STATE.EDIT && !edit)
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
-									|| curState == STATE.COMPLETED)
+									|| curState == STATE.COMPLETED
+									|| curState == STATE.IMPORTANT)
 									&& curText.length() > curState.toString().length() +1) {
 									if((e.getKeyCode() == KeyEvent.VK_BACK_SPACE || !e.isActionKey())
 									&& e.getKeyCode() != KeyEvent.VK_ENTER
@@ -455,6 +494,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 											jComboBox1.setSelectedIndex(-1);
 											editorcomp.setText(curText);
+											editorcomp.setSelectionStart(curLocation);
+											editorcomp.setSelectionEnd(curLocation);
 											//editorcomp.setText(curState.toString() + tasks[0]);
 	
 											if (tasks != null)
@@ -487,7 +528,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									switch (curState ){
 									case DELETE:
 									case COMPLETED:
-										
+									case IMPORTANT:
 										exeCmd = curState.toString().toLowerCase() + " "
 												+ id + " ";
 										break;
@@ -513,6 +554,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case LIST:
 									case UNDO:
+									case REDO:
 										exeCmd = curText;									
 									case OVERDUE:
 										exeCmd = curText;
@@ -524,13 +566,17 @@ public class MainJFrame extends javax.swing.JFrame {
 									
 									switch(curState) {
 									case DELETE:
-									case COMPLETED:				
+									case COMPLETED:		
+									case IMPORTANT:
 									case ADD:
+									case UNDO:
+									case REDO:
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
 												showPopup( curState.toString()+ " " 
 														+ tasks[0]);
+												Reminder.update();
 												ExpandComponent.updateJTable();
 											}
 										}
@@ -543,26 +589,24 @@ public class MainJFrame extends javax.swing.JFrame {
 										ExpandComponent.updateJTable();
 										expandFrame();
 									break;
-									case UNDO:
-										break;
 									case EXIT:
 										JIDLogic.JIDLogic_close();
 										System.exit(0);
 										break;
+									case HELP:
+										HelpFrame.toggleShown();
+										break;
 									case OVERDUE:
 										new Action.OverdueAction().actionPerformed(null);
-									break;
-									case REDO:
-										new Action.RedoAction().actionPerformed(null);
 									break;
 									}
 									
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
-										
 										jBoxCompletion.setStandardModel();
 										editorcomp.setText("");
 										curState = STATE.NULL;
-										UIController.refresh();
+										
+										//UIController.refresh();
 									}
 									else {
 										UIController.showInvalidDisplay();
@@ -639,8 +683,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.EXIT;
 								if(firstWord.equalsIgnoreCase("help"))
 									return STATE.HELP;
-								if(firstWord.equalsIgnoreCase("redu"))
+								if(firstWord.equalsIgnoreCase("redo"))
 									return STATE.REDO;
+								if(firstWord.equalsIgnoreCase("important"))
+									return STATE.IMPORTANT;
 								return STATE.NULL;
 							} 
 
@@ -662,6 +708,20 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	private void setJFrameAction() {
+		addWindowListener(new WindowAdapter(){
+			@Override
+			public void windowActivated(WindowEvent arg0) {
+				if(HelpFrame.isShown())
+					HelpFrame.showHelp();
+			}
+
+			@Override
+			public void windowDeactivated(WindowEvent arg0) {
+				if(HelpFrame.isShown());
+					HelpFrame.hideHelpTempolarily();
+			}
+		});		
+		
 		addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
 				point.x = e.getX();
@@ -677,12 +737,19 @@ public class MainJFrame extends javax.swing.JFrame {
 
 		addMouseMotionListener(new MouseMotionAdapter() {
 			public void mouseDragged(MouseEvent e) {
+				//move itself
 				Point p = getLocation();
 				setLocation(p.x + e.getX() - point.x, p.y + e.getY() - point.y);
+				
+				//move topPopUp
 				Point popupP = TopPopUp.jFrame.getLocation();
 				TopPopUp.setPosition(popupP.x + e.getX() - point.x, popupP.y
 							+ e.getY() - point.y);
 				
+				//move HelpFrame
+				Point helpP = HelpFrame.getPosition();
+				HelpFrame.setPosition(helpP.x + e.getX() - point.x
+						, helpP.y + e.getY() - point.y);
 			}
 		});
 
