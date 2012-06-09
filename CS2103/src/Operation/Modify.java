@@ -17,6 +17,11 @@ public class Modify extends BaseSearch{
 	public Modify(String intendedOperation) {
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
+		if (commandName=="cancel edit")
+		{
+			taskBeingEdited=null;
+		}
+		
 	}
 
 	

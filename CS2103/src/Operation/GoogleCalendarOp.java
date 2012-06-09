@@ -10,7 +10,7 @@ public class GoogleCalendarOp extends Operation {
 	private static Logger logger=Logger.getLogger(GoogleCalendarOp.class);
 	@Override
 	public Task[] execute(String userCommand) {
-		
+		logger.debug(userCommand);
 		// TODO Auto-generated method stub
 		if(userCommand.startsWith("logout")){
 			if (StorageManager.getGCalObject().logout()){

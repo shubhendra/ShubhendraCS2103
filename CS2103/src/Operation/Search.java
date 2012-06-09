@@ -129,18 +129,22 @@ public class Search extends Operation {
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
-			if (allTasks[i].getStart()!=null){
+		/*	if (allTasks[i].getStart()!=null){
 			logger.debug("allTasks["+i+"] StartTime:"+allTasks[i].getStart().getTime().getTimeMilli());
+			logger.debug("allTasks["+i+"] StartDate:"+allTasks[i].getStart().getDate().getTimeMilli());
 			}
 			if (allTasks[i].getEnd()!=null){
 			logger.debug("allTasks["+i+"] EndTime:"+allTasks[i].getEnd().getTime().getTimeMilli());
+			logger.debug("allTasks["+i+"] EndDate:"+allTasks[i].getEnd().getDate().getTimeMilli());
 			}
 			if (findTask.getStart()!=null){
 			logger.debug("searchstring StartTime:"+findTask.getStart().getTime().getTimeMilli());
+			logger.debug("searchstring StartDate:"+findTask.getStart().getDate().getTimeMilli());
 			}
 			if (findTask.getEnd()!=null){
 			logger.debug("searchstring EndTime:"+findTask.getEnd().getTime().getTimeMilli());
-			}
+			logger.debug("searchstring EndDate:"+findTask.getEnd().getDate().getTimeMilli());
+			}*/
 			if (matches(findTask,allTasks[i])){
 				Collections.addAll(foundTasks, allTasks[i]);
 			}
@@ -152,14 +156,141 @@ public class Search extends Operation {
 		return null;
 	}
 
+	private boolean doesNameMatch(Task taskToSearch, Task existingTask){
+		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
+				.contains((taskToSearch.getName().trim()))))
+		{
+			logger.debug("name matches");
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	private TaskDateTime defaultTime=new TaskDateTime();
+	private boolean doesStartDateMatch(Task taskToSearch, Task existingTask){
+		
+		if (taskToSearch.getStart() == null
+				|| taskToSearch.getStart().getDate().getTimeMilli()
+				== defaultTime.getDate().getTimeMilli() || (existingTask.getStart()!=null 
+				&& (existingTask.getStart().getDate().getTimeMilli()
+				== taskToSearch.getStart().getDate().getTimeMilli()))){
+			logger.debug("start date matches");
+			return true;
+		
+		}
+		return false;
+		
+	}
+	private boolean doesStartTimeMatch(Task taskToSearch, Task existingTask){
+	//	logger.debug("Default date:"+defaultTime.getDate().getTimeMilli());
+	//	logger.debug("Default Time:"+defaultTime.getTime().getTimeMilli());
+		if (taskToSearch.getStart() == null
+				|| taskToSearch.getStart().getTime().getTimeMilli()
+				== defaultTime.getTime().getTimeMilli() || (existingTask.getStart()!=null 
+				&&  (existingTask.getStart().getTime().getTimeMilli()
+				== taskToSearch.getStart().getTime().getTimeMilli()))){
+			logger.debug("start time matches");
+					return true;
+				}
+		return false;
+	}
+	private boolean doesEndDateMatch(Task taskToSearch, Task existingTask){
+		if (taskToSearch.getEnd() == null 
+				|| taskToSearch.getEnd().getDate().getTimeMilli()
+				== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd()!=null 
+				&& (existingTask.getEnd().getDate().getTimeMilli()
+				== taskToSearch.getEnd().getDate().getTimeMilli()))){
+			logger.debug("end date matches");
+			return true;
+		}
+		return false;
+	}
+	
+	private boolean doesEndTimeMatch(Task taskToSearch, Task existingTask){
+		if(taskToSearch.getEnd() == null 
+				|| taskToSearch.getEnd().getTime().getTimeMilli()
+				== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd()!=null 
+				&& (existingTask.getEnd().getTime().getTimeMilli()
+				== taskToSearch.getEnd().getTime().getTimeMilli()))){
+			logger.debug("end time matches");
+			return true;
+		}
+		return false;
+	}
+	
+	private boolean doesImportantMatch(Task taskToSearch, Task existingTask){
+		if  (taskToSearch.getImportant() == false || taskToSearch.getImportant() == 
+				existingTask.getImportant())
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	private boolean doesLabelMatch(Task taskToSearch, Task existingTask){
+		
+		if (taskToSearch.getLabels()==null || taskToSearch.getLabels().size()==0)
+		{
+			logger.debug("task to search has no labels");
+			logger.debug("it matches");
+			return true;
+		}
+		else if (existingTask.getLabels() != null) {
+			logger.debug("matching labels");
+			
+			boolean flag = false;
+			for (String searchlabel : taskToSearch.getLabels()) {
+				//if (searchlabel!=null)
+				logger.debug("searching in taskToSearch");
+				logger.debug(searchlabel);
+				searchlabel = searchlabel.toLowerCase();
+				flag = false;
+				for (String existingLabel : existingTask.getLabels()) {
+					//if(existingLabel!=null)
+					logger.debug("searching in existing task");
+					logger.debug(existingLabel);
+					
+						if (existingLabel.contains(searchlabel)) {
+							logger.debug("its equal");
+							flag = true;
+							break;
+						}
+					
+				}
+				if(!flag)
+					break;
+			
+				}
+			if (flag) {
+				logger.debug("it matches");
+				return true
+						;
+			}
+		}
+		return false;
+	}
 	private boolean matches(Task taskToSearch, Task existingTask) {
 		// TODO Auto-generated method stub
 	
-		TaskDateTime defaultTime=new TaskDateTime();
+		
 		//logger.debug(defaultTime.getTime().getTimeMilli());
 		//logger.debug(taskToSearch.getStart().getTime().getTimeMilli());
 	
-		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
+		logger.debug(existingTask.getName());
+		
+		if (doesNameMatch(taskToSearch, existingTask) && doesStartDateMatch(taskToSearch,existingTask)
+				&& doesStartTimeMatch(taskToSearch,existingTask) && doesEndDateMatch(taskToSearch,existingTask) 
+				&& doesEndTimeMatch(taskToSearch, existingTask) && doesImportantMatch(taskToSearch,existingTask)
+				&& doesLabelMatch(taskToSearch,existingTask)){
+			logger.debug("all condition satisfied");
+			return true;
+		}
+		
+		
+		/*if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
 				.contains((taskToSearch.getName().trim()))))
 		{
 			logger.debug("First condition matches");

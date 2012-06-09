@@ -35,13 +35,13 @@ public class TaskDateTime {
 	}
 	private static Logger logger=Logger.getLogger(BaseSearch.class);
 
-/** default constructor
+/** defsault constructor
  * 
  */
 public TaskDateTime()
 {
-	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0);
-	calendar.setLenient(true);
+	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0,37	);
+	calendar.setLenient(false);
 	timeMilli = calendar.getTimeInMillis();
 	hasTime = false;
 	hasDate = false;
@@ -53,7 +53,7 @@ public TaskDateTime(long timeInMillis)
 {
 	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0);
 	calendar.setTimeInMillis(timeInMillis);
-	calendar.setLenient(true);
+	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
 	hasDate = true;
 	hasTime=true;

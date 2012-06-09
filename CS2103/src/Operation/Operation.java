@@ -31,7 +31,7 @@ public abstract class Operation {
 			object = new Delete(intendedOperation);
 		}
 		else if (intendedOperation.equals("modify") || intendedOperation.equals("update") || 
-				intendedOperation.equals("edit")) {
+				intendedOperation.equals("edit") || intendedOperation.equals("canceledit")) {
 			object =new Modify(intendedOperation);
 		}
 		else if (intendedOperation.equals("search") || intendedOperation.equals("find")){
