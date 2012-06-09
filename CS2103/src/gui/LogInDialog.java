@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.FocusTraversalPolicy;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -20,6 +21,8 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.JComponent;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.text.JTextComponent;
 
 /**
@@ -41,6 +44,18 @@ public class LogInDialog extends javax.swing.JDialog {
         this.setVisible(true);
     }
 
+    public LogInDialog(java.awt.Frame parent, int x, int y) {
+    	super(parent, true);
+        this.initComponents();
+        this.addEvent();
+        this.setTabSequence();
+        this.setBackground(new Color(0,0,0,0));
+        this.setLocation(x, y);
+        this.setMovable();
+        //this.setLocationRelativeTo(parent);
+        this.setVisible(true);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,17 +70,32 @@ public class LogInDialog extends javax.swing.JDialog {
         userTextField = new javax.swing.JTextField();
         loginButton = new javax.swing.JButton();
         background = new javax.swing.JLabel();
-
+        userLabel = new javax.swing.JLabel();
+        passLabel = new javax.swing.JLabel();
+        cancelButton = new javax.swing.JButton();
+        
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
         setIconImages(null);
 
-        passTextField.setText("password");
-        passTextField.setBounds(10, 80, 210, 30);
+        userLabel.setText("username");
+        passLabel.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
+        passLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
+        userLabel.setBounds(10, 40, 85, 25);
+        jLayeredPane2.add(userLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        passLabel.setText("password");
+        passLabel.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
+        passLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
+        passLabel.setBounds(10, 70, 85, 25);
+        jLayeredPane2.add(passLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        passTextField.setText("");
+        passTextField.setBounds(70, 70, 145, 25);
         jLayeredPane2.add(passTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        userTextField.setText("username");
-        userTextField.setBounds(10, 40, 210, 30);
+        userTextField.setText("");
+        userTextField.setBounds(70, 40, 145, 25);
         jLayeredPane2.add(userTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         loginButton.setText("log in");
@@ -74,11 +104,21 @@ public class LogInDialog extends javax.swing.JDialog {
                 loginButtonActionPerformed(evt);
             }
         });
-        loginButton.setBounds(223, 40, 60, 70);
+        loginButton.setBounds(217, 40, 64, 26);
         jLayeredPane2.add(loginButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        background.setIcon(Resource.backgroundLogo);
-        background.setText("jLabel1");
+        cancelButton.setText("Cancel");
+        cancelButton.addActionListener(new java.awt.event.ActionListener() {
+        	public void actionPerformed(java.awt.event.ActionEvent evt) {
+        		cancelButtonActionPerformed(evt);
+        	}
+
+
+        });
+        cancelButton.setBounds(217, 70, 64, 26);
+        jLayeredPane2.add(cancelButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        background.setIcon(Resource.loginBG);
         background.setBounds(0, 0, 290, 120);
         jLayeredPane2.add(background, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -95,31 +135,48 @@ public class LogInDialog extends javax.swing.JDialog {
 
         this.setUndecorated(true);
         this.pack();
+        
     }// </editor-fold>
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {
     	UIController.logInToGCalendar(userTextField.getText(), passTextField.getPassword());
     	this.dispose();
     }
-
+    
+	private void cancelButtonActionPerformed(ActionEvent evt) {
+		this.dispose();
+	}
     
     private static void setLook() {
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+    	
+
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (UnsupportedLookAndFeelException e) {
+			e.printStackTrace();
+		}
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
 
     }
     
@@ -164,8 +221,11 @@ public class LogInDialog extends javax.swing.JDialog {
     private javax.swing.JLabel background;
     private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JButton loginButton;
+    private javax.swing.JButton cancelButton;
     private javax.swing.JPasswordField passTextField;
     private javax.swing.JTextField userTextField;
+    private javax.swing.JLabel userLabel;
+    private javax.swing.JLabel passLabel;
     // End of variables declaration
     
     private void addEvent() {
@@ -197,6 +257,8 @@ public class LogInDialog extends javax.swing.JDialog {
 			if(aComponent.equals(passTextField))
 				return loginButton;
 			if(aComponent.equals(loginButton))
+				return cancelButton;
+			if(aComponent.equals(cancelButton))
 				return userTextField;
 			return null;
 		}
@@ -204,11 +266,13 @@ public class LogInDialog extends javax.swing.JDialog {
 		@Override
 		public Component getComponentBefore(Container arg0, Component aComponent) {
 			if(aComponent.equals(userTextField))
-				return loginButton;
+				return cancelButton;
 			if(aComponent.equals(passTextField))
 				return userTextField;
 			if(aComponent.equals(loginButton))
 				return passTextField;
+			if(aComponent.equals(cancelButton))
+				return loginButton;
 			return null;
 		}
 
@@ -224,7 +288,7 @@ public class LogInDialog extends javax.swing.JDialog {
 
 		@Override
 		public Component getLastComponent(Container arg0) {
-			return loginButton;
+			return cancelButton;
 		}	
     }
     

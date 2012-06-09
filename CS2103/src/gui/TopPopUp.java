@@ -37,32 +37,36 @@ public class TopPopUp extends JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private static void initComponents() {
-        jTextField1 = new javax.swing.JTextField();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        bgLabel = new javax.swing.JLabel();
 
         jFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setEditable(false);
-        jTextField1.setText("jTextField1");
-
         jButton1.setText("jButton1");
+        jButton1.setBounds(330, 0, 21, 23);
+        jLayeredPane1.add(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel1.setText("jLabel1");
+        jLabel1.setBounds(0, 0, 320, 20);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        bgLabel.setBounds(0, 0, 400, 20);
+        bgLabel.setIcon(Resource.topPopUpBG);
+        bgLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLayeredPane1.add(bgLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(jFrame.getContentPane());
         jFrame.getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jButton1))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-
         
         jButton1.setText("");
         jButton1.setIcon( Resource.exitImg);
@@ -89,6 +93,9 @@ public class TopPopUp extends JFrame {
     public static javax.swing.JFrame jFrame;
     private static javax.swing.JTextField jTextField1;
     private static javax.swing.JButton jButton1;
+    private static javax.swing.JLabel jLabel1;
+    private static javax.swing.JLayeredPane jLayeredPane1;
+    private static javax.swing.JLabel bgLabel;
     private static boolean SHOW = true;
     private static Timer timer;
     private final static int VISIBLE_TIME = 5;
@@ -101,7 +108,7 @@ public class TopPopUp extends JFrame {
     }
     
     public static void setText(String str) {
-    	jTextField1.setText(str);
+    	jLabel1.setText(str);
     }
     
     public static void showBox() {

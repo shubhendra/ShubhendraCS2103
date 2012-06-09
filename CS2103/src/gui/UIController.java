@@ -18,10 +18,11 @@ public class UIController {
 	static MainJFrame mainJFrame;
 	Reminder reminder;
 	static JotItDownTray JIDtray;
-	static OperationFeedback operationFeedback;
+	static OperationFeedback operationFeedback = OperationFeedback.VALID;
 	
 	public UIController() {
 		TopPopUp.createTopPopUp();
+		ExpandComponent.initialize();
 		mainJFrame = new MainJFrame();
 		
 		Timer timer = new Timer(100, new ActionListener(){
@@ -71,7 +72,8 @@ public class UIController {
 	}
 	
 	public static void refresh() {
-		ExpandJPanel.updateJTable();
+		ExpandComponent.updateJTable();
+		Reminder.update();
 	}
 	
 	public static boolean isFrameExpand() {
@@ -96,5 +98,49 @@ public class UIController {
 	 */
 	public static void sendOperationFeedback(OperationFeedback newOPFeedback) {
 		operationFeedback = newOPFeedback;
+	}
+	
+	//UI.sendOperationFeedback(OperationFeedback.INVALID_);
+	
+	public static OperationFeedback getOperationFeedback() {
+		return operationFeedback;
+	}
+	
+	public static void showInvalidDisplay() {
+		if(mainJFrame.isVisible())
+			switch(operationFeedback) {
+			case INVALID_DATE:
+				mainJFrame.showPopup("incorrect date input");
+			case INVALID_TIME:
+				mainJFrame.showPopup("incorret time input");
+			case INVALID_TASK_DETAILS:
+				mainJFrame.showPopup("incorrect task details");
+			case INVALID_LABEL:
+				mainJFrame.showPopup("incorrect label");
+			case INVALID_INCORRECTLOGIN:
+				mainJFrame.showPopup("wrong username or password");
+			case INVALID_NOINTERNET:
+				mainJFrame.showPopup("no internet connection");
+			case NOT_FOUND:
+				mainJFrame.showPopup("search not found!");
+			}
+		else {
+			switch(operationFeedback) {
+			case INVALID_DATE:
+				JIDtray.showText("Jot It Down!", "incorrect date input");
+			case INVALID_TIME:
+				JIDtray.showText("Jot It Down!", "incorret time input");
+			case INVALID_TASK_DETAILS:
+				JIDtray.showText("Jot It Down!", "incorrect task details");
+			case INVALID_LABEL:
+				JIDtray.showText("Jot It Down!", "incorrect label");
+			case INVALID_INCORRECTLOGIN:
+				JIDtray.showText("Jot It Down!", "wrong username or password");
+			case INVALID_NOINTERNET:
+				JIDtray.showText("Jot It Down!", "no internet connection");
+			case NOT_FOUND:
+				JIDtray.showText("Jot It Down!", "search not found!");
+			}
+		}
 	}
 }

@@ -87,8 +87,7 @@ public class JotItDownTray {
 					@Override
 					public void run() {
 						if(!mainJFrame.isVisible()) {
-							mainJFrame.showFrame();
-						}
+							mainJFrame.showFrame();						}
 		   			}
 	    	       });
 			}

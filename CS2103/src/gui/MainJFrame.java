@@ -41,6 +41,7 @@ import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.JTextField;
 
+import constant.OperationFeedback;
 
 /**
  * 
@@ -48,7 +49,7 @@ import javax.swing.JTextField;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
-	private static Logger logger=Logger.getLogger(JIDLogic.class);
+	private static Logger logger=Logger.getLogger(MainJFrame.class);
 	
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
@@ -66,14 +67,17 @@ public class MainJFrame extends javax.swing.JFrame {
 	static boolean expand = false;
 	
 	// Variables declaration - do not modify
-	private javax.swing.JComboBox jComboBox1;
-	private javax.swing.JLabel jLabel1;
-	private javax.swing.JLabel jLabel2;
-	private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel bgLabel;
+    private javax.swing.JLabel button1;
+    private javax.swing.JLabel button2;
+    private javax.swing.JLabel button3;
+    private javax.swing.JLabel downButton;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JLayeredPane jLayeredPane1;
+	private javax.swing.JLabel logo;
 	private JLabel bg;
-	private MouseListener curJLabel3;
+	private MouseListener curdownButton;
 	private javax.swing.JPanel jPanel1;
-	private ExpandJPanel expandJPanel = new ExpandJPanel();
 	private	JLayeredPane lp;
 	// End of variables declaration
 
@@ -115,7 +119,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		setAction();
 		this.setFocusable(true);
 		this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
-
+	
 		/*
 		 * Create and display the form
 		 */
@@ -137,197 +141,125 @@ public class MainJFrame extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">
 	private void initComponents() {
-		//createBG();
-		
-		jLabel1 = new javax.swing.JLabel("", Resource.bigLogo,
-				SwingConstants.CENTER);
-		jLabel2 = new javax.swing.JLabel("", Resource.exitImg,
-				SwingConstants.CENTER);
-		jLabel3 = new javax.swing.JLabel("", Resource.down,
-				SwingConstants.CENTER);
-
-		jPanel1 = new javax.swing.JPanel();
-		jPanel1.setOpaque(false);
 		jComboBox1 = new javax.swing.JComboBox();
-
-		setPreferredSize(new java.awt.Dimension(378, 300));
-
 		jComboBox1.setEditable(true);
 		jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-
-		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(
-				jPanel1);
-		jPanel1.setLayout(jPanel1Layout);
-		jPanel1Layout
-				.setHorizontalGroup(jPanel1Layout
-						.createParallelGroup(
-								javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(
-								jPanel1Layout
-										.createSequentialGroup()
-										.addContainerGap()
-										.addComponent(
-												jLabel1,
-												javax.swing.GroupLayout.PREFERRED_SIZE,
-												56,
-												javax.swing.GroupLayout.PREFERRED_SIZE)
-										.addPreferredGap(
-												javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-										.addGroup(
-												jPanel1Layout
-														.createParallelGroup(
-																javax.swing.GroupLayout.Alignment.LEADING)
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addGap(0,
-																				0,
-																				Short.MAX_VALUE)
-																		.addComponent(
-																				jLabel2))
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addComponent(
-																				jComboBox1,
-																				javax.swing.GroupLayout.PREFERRED_SIZE,
-																				291,
-																				javax.swing.GroupLayout.PREFERRED_SIZE)
-																		.addPreferredGap(
-																				javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-																				7,
-																				Short.MAX_VALUE)
-																		.addComponent(
-																				jLabel3,
-																				javax.swing.GroupLayout.PREFERRED_SIZE,
-																				22,
-																				javax.swing.GroupLayout.PREFERRED_SIZE)))
-										.addContainerGap()));
-		jPanel1Layout
-				.setVerticalGroup(jPanel1Layout
-						.createParallelGroup(
-								javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(
-								jPanel1Layout
-										.createSequentialGroup()
-										.addGroup(
-												jPanel1Layout
-														.createParallelGroup(
-																javax.swing.GroupLayout.Alignment.LEADING)
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addComponent(
-																				jLabel2,
-																				javax.swing.GroupLayout.PREFERRED_SIZE,
-																				25,
-																				javax.swing.GroupLayout.PREFERRED_SIZE)
-																		.addGap(18,
-																				18,
-																				18)
-																		.addGroup(
-																				jPanel1Layout
-																						.createParallelGroup(
-																								javax.swing.GroupLayout.Alignment.BASELINE)
-																						.addComponent(
-																								jComboBox1,
-																								javax.swing.GroupLayout.PREFERRED_SIZE,
-																								29,
-																								javax.swing.GroupLayout.PREFERRED_SIZE)
-																						.addComponent(
-																								jLabel3,
-																								javax.swing.GroupLayout.DEFAULT_SIZE,
-																								javax.swing.GroupLayout.DEFAULT_SIZE,
-																								Short.MAX_VALUE))
-																		.addGap(0,
-																				11,
-																				Short.MAX_VALUE))
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addContainerGap()
-																		.addComponent(
-																				jLabel1,
-																				javax.swing.GroupLayout.DEFAULT_SIZE,
-																				javax.swing.GroupLayout.DEFAULT_SIZE,
-																				Short.MAX_VALUE)))
-										.addContainerGap()));
-
-		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(
-				getContentPane());
-		getContentPane().setLayout(layout);
-		layout.setHorizontalGroup(layout.createParallelGroup(
-				javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-				jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
-				javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
-		layout.setVerticalGroup(layout.createParallelGroup(
-				javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-				jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE,
-				javax.swing.GroupLayout.DEFAULT_SIZE,
-				javax.swing.GroupLayout.PREFERRED_SIZE));
-
-		setIconImage((Resource.bigLogo).getImage());
-		setUndecorated(true);
-		setSize(400, 100);
-		// pack();
-
-	}// </editor-fold>
-
-	@Override
-	public void paint(Graphics g){
-		logger.debug("start drawing");
-		//super.paint(g);
-		//g.drawImage(Resource.backgroundImage, 0, 0, null);
-		super.paint(g);
 		
-		
-		this.getContentPane().setBackground(new Color(233, 239, 246));
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        button1 = new javax.swing.JLabel();
+        button2 = new javax.swing.JLabel();
+        button3 = new javax.swing.JLabel();
+        logo = new javax.swing.JLabel();
+        downButton = new javax.swing.JLabel();
+        bgLabel = new javax.swing.JLabel();
+
+        jComboBox1.setBounds(90, 40, 260, 30);
+        jLayeredPane1.add(jComboBox1, 2);
+
+        button1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        button1.setIcon(Resource.helpImg);
+        button1.setBounds(300, 0, 30, 30);
+        jLayeredPane1.add(button1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        button2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        button2.setIcon(Resource.minimizeImg);
+        button2.setBounds(330, 0, 30, 30);
+        jLayeredPane1.add(button2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        button3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        button3.setIcon(Resource.exitImg); 
+        button3.setBounds(360, 0, 30, 30);
+        jLayeredPane1.add(button3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logo.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        logo.setIcon(Resource.bigLogo);
+        logo.setBounds(10, 0, 70, 80);
+        jLayeredPane1.add(logo, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        downButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        downButton.setIcon(Resource.down);
+        downButton.setBounds(360, 40, 30, 30);
+        jLayeredPane1.add(downButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLayeredPane1.add(ExpandComponent.getJScrollPane(), JLayeredPane.DEFAULT_LAYER);
+        
+        bgLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        bgLabel.setIcon(Resource.smallBG);
+        bgLabel.setBounds(0, 0, 400, 400);
+        jLayeredPane1.add(bgLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
+        );
+
+		this.setIconImage((Resource.bigLogo).getImage());
+		this.setUndecorated(true);
+		this.setBackground(new Color(0,0,0,0));
+		this.pack();
+		this.setSize(400, 100);
 	}
 	
-	private void createBG() {
-		logger.debug("--->enter createBG function");
-		
-		//this.getContentPane().setBackground(Color.yellow);
-		
-		bg = new JLabel();
-		bg.setIcon(Resource.backgroundLogo);
-		
-		lp.setSize(400, 400);
-		lp.add(bg, 1);
-		
-	}
-
-	/**
-	 * setting drag option
-	 * 
-	 */
 	private void setAction() {
 		setJFrameAction();
-		// setButtonAction();
 		setJComboBox1Action();
-		setJLabel1Action();
-		setJLabel2Action();
-		setJLabel3ActionExpand();
+		setlogoAction();
+		setbutton1Action();
+		setbutton2Action();
+		setbutton3Action();
+		setdownButtonActionExpand();
 	}
 	
-	public void setJLabel3ActionContract() {
-		jLabel3.setToolTipText("Contract");
-
-		jLabel3.setIcon(Resource.up);
-		
-		jLabel3.removeMouseListener(curJLabel3);
-		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
+	private void setbutton2Action() {
+		button2.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				jLabel3.setIcon(Resource.upPress);
+				MainJFrame.this.hideFrame();
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				button2.setIcon(Resource.minimizeImgOn);
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				button2.setIcon(Resource.minimizeImg);
+			}
+
+		});
+		
+	}
+
+	private void setbutton1Action() {
+		//call help.
+	}
+
+	public void setdownButtonActionContract() {
+		downButton.setToolTipText("Contract");
+
+		downButton.setIcon(Resource.up);
+		
+		downButton.removeMouseListener(curdownButton);
+		downButton.addMouseListener(curdownButton = new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				downButton.setIcon(Resource.upPress);
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
-						// TODO Auto-generated method stub
-						jLabel3.setIcon(Resource.down);
+						downButton.setIcon(Resource.down);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
 							contractFrame();
@@ -343,54 +275,43 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.upOn);
+				downButton.setIcon(Resource.upOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.up);
+				downButton.setIcon(Resource.up);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.upPress);
+				downButton.setIcon(Resource.upPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.down);
+				downButton.setIcon(Resource.down);
 			}
 		});
 	}
 
-	public void setJLabel3ActionExpand() {
-		// TODO Auto-generated method stub
-		jLabel3.setToolTipText("Expand");
+	public void setdownButtonActionExpand() {
+		downButton.setToolTipText("Expand");
 
-		jLabel3.setIcon(Resource.down);
-		jLabel3.removeMouseListener(curJLabel3);
+		downButton.setIcon(Resource.down);
+		downButton.removeMouseListener(curdownButton);
 		
-		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
+		downButton.addMouseListener(curdownButton = new MouseListener() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				jLabel3.setIcon(Resource.downPress);
+				downButton.setIcon(Resource.downPress);
 				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
-						// TODO Auto-generated method stub
-						jLabel3.setIcon(Resource.up);
+						downButton.setIcon(Resource.up);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
 							contractFrame();
@@ -407,76 +328,59 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.downOn);
+				downButton.setIcon(Resource.downOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.down);
+				downButton.setIcon(Resource.down);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.downPress);
+				downButton.setIcon(Resource.downPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
-				jLabel3.setIcon(Resource.up);
+				downButton.setIcon(Resource.up);
 			}
 		});
 	}
 
-	private void setJLabel2Action() {
-		// TODO Auto-generated method stub
-		jLabel2.setToolTipText("Close");
+	private void setbutton3Action() {
+		button3.setToolTipText("Close");
 
-		jLabel2.addMouseListener(new MouseAdapter() {
+		button3.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				if (TopPopUp.isShow())
 					TopPopUp.hideBox();
 				MainJFrame.this.setVisible(false);
-				//JIDLogic.JIDLogic_close();
+				JIDLogic.JIDLogic_close();
+				System.exit(0);
 			}
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				jLabel2.setIcon(Resource.exitOn);
-				//MainJFrame.this.revalidate();
+				button3.setIcon(Resource.exitOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				jLabel2.setIcon(Resource.exitImg);
-				//MainJFrame.this.revalidate();
+				button3.setIcon(Resource.exitImg);
 			}
 
 		});
-
 	}
-
-	private void setJLabel1Action() {
-		// TODO Auto-generated method stub
-
+	
+	private void setlogoAction() {
 	}
 
 	private void setJComboBox1Action() {
 		
 		int index;
-		// TODO Auto-generated method stub
 		this.getButtonSubComponent(jComboBox1).setVisible(false);
 		final AutoCompletion jBoxCompletion = new AutoCompletion(jComboBox1);
 
@@ -488,7 +392,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void keyPressed(KeyEvent arg0) {
-				// TODO Auto-generated method stub
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
@@ -534,7 +437,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 										@Override
 										public void run() {
-											// TODO Auto-generated method stub
 											System.out
 													.println("***enter interstate: ");
 	
@@ -544,8 +446,6 @@ public class MainJFrame extends javax.swing.JFrame {
 													+ curText);
 											tasks = JIDLogic
 													.executeCommand(curText);
-	
-											//logger.debug(tasks[0].getName());
 	
 											jBoxCompletion.stopWorking();
 											jBoxCompletion
@@ -580,7 +480,6 @@ public class MainJFrame extends javax.swing.JFrame {
 									String exeCmd = new String();
 									
 									logger.debug("*********************enter");
-									//logger.debug(prevTasks[0].getName());
 									
 									if(curState != STATE.EDIT)
 										edit = false;
@@ -632,17 +531,16 @@ public class MainJFrame extends javax.swing.JFrame {
 											if(tasks!=null) {
 												showPopup( curState.toString()+ " " 
 														+ tasks[0]);
-												expandJPanel.updateJTable();
-											}else
-												showPopup("invalid input");
+												ExpandComponent.updateJTable();
+											}
 										}
 									break;									
 									case SEARCH:
-										expandJPanel.updateJTable(tasks);
+										ExpandComponent.updateJTable(tasks);
 										expandFrame();
 									break;
 									case LIST:
-										expandJPanel.updateJTable();
+										ExpandComponent.updateJTable();
 										expandFrame();
 									break;
 									case UNDO:
@@ -658,6 +556,18 @@ public class MainJFrame extends javax.swing.JFrame {
 										new Action.RedoAction().actionPerformed(null);
 									break;
 									}
+									
+									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
+										
+										jBoxCompletion.setStandardModel();
+										editorcomp.setText("");
+										curState = STATE.NULL;
+										UIController.refresh();
+									}
+									else {
+										UIController.showInvalidDisplay();
+										UIController.sendOperationFeedback(OperationFeedback.VALID);
+									}
 								}
 								
 								prevState = curState;
@@ -666,6 +576,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								prevTasks = tasks;
 							}
 							
+
+
 							private int getIndex() {
 								int idx = jComboBox1.getSelectedIndex();
 								
@@ -686,6 +598,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									for(int i=0; i<tasks.length; i++)
 										strings[i]= curState.toString() + " " 
 												+ tasks[i];
+									
 									
 									logger.debug("str[0]: "+strings[0]);
 									return strings;
@@ -741,7 +654,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				editorcomp.selectAll();
 			}
 
@@ -759,7 +671,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				// TODO Auto-generated method stub
 				currentLocation = MainJFrame.this.getLocation();
 			}
 		});
@@ -780,7 +691,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	public static void showPopup(String str) {
 		logger.debug("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
-		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
+		TopPopUp.setPosition(currentLocation.x + 15, currentLocation.y - 30);
 		TopPopUp.showBox();
 		TopPopUp.jFrame.setFocusable(true);
 	}
@@ -806,22 +717,19 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
+				TopPopUp.hideBox();
 				MainJFrame.this.setVisible(false);
+				UIController.showTrayMsg("Jot It Down!", "is hiding!");
 			}
 
 		});
 	}
 
 	public void setInputText(final String string) {
-		// TODO Auto-generated method stub
-
 		SwingUtilities.invokeLater(new Runnable() {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
-
 				jComboBox1.setSelectedItem(string);
 				jComboBox1.getEditor().getEditorComponent()
 						.requestFocusInWindow();
@@ -846,20 +754,20 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 	public void expandFrame() {
 		if(!expand) {
-			MainJFrame.this.setLayout(new BorderLayout());
-			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 			MainJFrame.this.setSize(400,400);
+			jLayeredPane1.setSize(400,400);
+			bgLabel.setIcon(Resource.largeBG);
 			expand = true;
-			setJLabel3ActionContract();
+			setdownButtonActionContract();
 		}
 	}
 	
 	public void contractFrame() {
 		if (expand) {
-			MainJFrame.this.remove(expandJPanel);
 			MainJFrame.this.setSize(400, 100);
 			expand = false;
-			setJLabel3ActionExpand();
+			setdownButtonActionExpand();
+			bgLabel.setIcon(Resource.smallBG);
 		}
 	}
 	
@@ -873,4 +781,5 @@ public class MainJFrame extends javax.swing.JFrame {
         
         new Binding(this, inputMap, actionMap);
     }
+    
 }

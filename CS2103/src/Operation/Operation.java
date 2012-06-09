@@ -49,6 +49,9 @@ public abstract class Operation {
 		else if (intendedOperation.equals("overdue")){
 			object= new Overdue(intendedOperation);
 		}
+		else if (intendedOperation.equals("login")){
+			object= new GoogleCalendarOp();
+		}
 		else
 		{
 			object=new Default();

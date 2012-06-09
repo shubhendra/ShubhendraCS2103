@@ -4,10 +4,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.text.*;
 
-/* This work is hereby released into the Public Domain.
- * To view a copy of the public domain dedication, visit
- * http://creativecommons.org/licenses/publicdomain/
- */
+
 public class AutoCompletion extends PlainDocument {
     JComboBox comboBox;
     ComboBoxModel model;

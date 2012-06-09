@@ -4,23 +4,23 @@
  */
 package gui;
 
-import javax.swing.table.DefaultTableModel;
-import data.*;
+import java.util.ArrayList;
+
+import javax.swing.JLabel;
+import javax.swing.JTable;
+
 /**
  *
  * @author Ramon
  */
 public class ExpandJPanel extends javax.swing.JPanel {
 
-	static AutoUpdateJTable autoJTable;
-	
     /**
      * Creates new form ExpandJPanel
      */
     public ExpandJPanel() {
         initComponents();
-        this.setOpaque(false);
-        autoJTable = new AutoUpdateJTable(jTable1);
+        new AutoUpdateJTable(jTable1);
     }
 
     /**
@@ -39,17 +39,23 @@ public class ExpandJPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(378, 300));
         setRequestFocusEnabled(false);
 
-        jTable1.setModel(new MyTableModel());
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+            		null
+            },
+            new String [] {
+                "Title 1"
+            }
+        ));
         jTable1.setTableHeader(null);
         //jTable1.setCellEditor(jTable1.getCellEditor());
-        jTable1.setColumnSelectionAllowed(true);
+        jTable1.setColumnSelectionAllowed(false);
         jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable1.setEnabled(true);
-        jTable1.setFocusable(true);
+        jTable1.setEnabled(false);
+        jTable1.setFocusable(false);
         jTable1.setMaximumSize(new java.awt.Dimension(370, 30));
         jTable1.setMinimumSize(new java.awt.Dimension(370, 370));
-        jTable1.setRowSelectionAllowed(true);
-        jTable1.setCellSelectionEnabled(true);
+        jTable1.setRowSelectionAllowed(false);
         jTable1.setRowSorter(null);
         
         jScrollPane1.setViewportView(jTable1);
@@ -73,44 +79,8 @@ public class ExpandJPanel extends javax.swing.JPanel {
     }// </editor-fold>
     // Variables declaration - do not modify
     private javax.swing.JScrollPane jScrollPane1;
-    public static javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable1;
     
     // End of variables declaration
-    public void updateJTable(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
-    }
     
-    public static void updateJTable() {
-    	autoJTable.updateJTable();
-    }
-    
-    public static void updateJTableWithTasks(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
-    }
-    
-    public static Task[] getAllTasks() {
-    	return autoJTable.getTasks();
-    }
-    
-    public static Task[] getSeletedTask() {
-    	int[] idx = jTable1.getSelectedRows();
-    	Task[] tasks = new Task[idx.length];
-    	for(int i=0; i<tasks.length; i++) {
-    		tasks[i] = autoJTable.getTasks()[idx[i]];
-    	}
-    	return tasks;
-    }
-    
-    class MyTableModel extends DefaultTableModel{
-    	MyTableModel() {
-    		super(
-    			new Object [][] {null},
-    			new String [] {"Title 1"});
-    	}
-    	
-    	@Override
-    	public boolean isCellEditable(int row, int column) {
-			return false;
-    	}
-    }
 }

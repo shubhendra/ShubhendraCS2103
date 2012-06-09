@@ -30,7 +30,16 @@ public class JIDLogic {
 	    			logger.debug(def[i].toString2());
 	    		}
 	    	}
-			
+	    	def=executeCommand("login jid.troubleshoot@gmail.com jotitdown");
+	    	logger.debug("executed gcal sync");
+	    	def=executeCommand("find *.*");
+	    	if (def!=null)
+	    	{
+	    		for (int i=0;i<def.length;i++)
+	    		{
+	    			logger.debug(def[i].toString());
+	    		}
+	    	}
 	    	/*Add adder=new Add();
 	    	
 	    	Task[] abc=adder.execute("add *go to meet bhairav weekly by 3.45pm 3/5/2013  @work @home");
@@ -165,8 +174,10 @@ public class JIDLogic {
 	    	//logger.debug(StorageManager.saveFile());
 			
 			JIDLogic_init();
-			UIController ui=new UIController();
-			JIDLogic_close();
+			
+			
+		UIController ui=new UIController();
+		JIDLogic_close();
 			//logger.debug(StorageManager.loadFile());
 			
 			
@@ -189,7 +200,7 @@ public class JIDLogic {
 	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
 		logger.debug("inside execute command");
-		logger.debug(commandFromUser);
+		//logger.debug(commandFromUser);
 		if (command == null || command.equals("")) {
 			logger.debug("inside first cond");
 			return null;
