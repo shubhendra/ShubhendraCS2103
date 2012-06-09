@@ -38,3 +38,1524 @@
 2012-06-10 02:28:03,120 - operation.Search - DEBUG - after sorting
 2012-06-10 02:28:03,120 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-10 02:28:41,818 - storagecontroller.FileHandler - DEBUG - 8
+2012-06-10 02:38:07,797 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 02:38:09,088 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:09,088 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:09,124 - operation.Operation - DEBUG - find
+2012-06-10 02:38:09,129 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:09,129 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:09,134 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:09,134 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:09,134 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:09,564 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 02:38:09,569 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:09,569 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:09,569 - operation.Operation - DEBUG - find
+2012-06-10 02:38:09,569 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:09,569 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:09,569 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:09,569 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:09,569 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:09,569 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - 1339267089569
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - timediff: 33410431
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - latestTask: hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - 1339267089569
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - timediff: 33410431
+2012-06-10 02:38:09,574 - gui.reminder.Reminder - DEBUG - setTimer: 33410431
+2012-06-10 02:38:32,962 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 02:38:32,962 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-10 02:38:32,962 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add go to bed at 4pm tmr
+2012-06-10 02:38:32,962 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:32,962 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:32,962 - operation.Operation - DEBUG - add
+2012-06-10 02:38:32,982 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:38:32,987 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go to bed at 4pm tmr
+2012-06-10 02:38:33,033 - logic.JIDLogic - DEBUG - -----at_time_date format-------
+2012-06-10 02:38:33,033 - logic.JIDLogic - DEBUG - group 0:  at 4pm tmr
+2012-06-10 02:38:33,033 - logic.JIDLogic - DEBUG - group 1:  at
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 2: at
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 3: at
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 4: 4pm
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 5: 4pm
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 6: 4
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 7: null
+2012-06-10 02:38:33,038 - logic.JIDLogic - DEBUG - group 8: null
+2012-06-10 02:38:33,048 - logic.JIDLogic - DEBUG - group 9: pm
+2012-06-10 02:38:33,048 - logic.JIDLogic - DEBUG - group 10: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 11: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 12: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 13: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 14: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 15: tmr
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 16: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 17: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 18: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 19: tmr
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 20: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 21: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 22: null
+2012-06-10 02:38:33,053 - logic.JIDLogic - DEBUG - group 23: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 24: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 25: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 26: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 27: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 28: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 29: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 30: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 31: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 32: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 33: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 34: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 35: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 36: null
+2012-06-10 02:38:33,058 - logic.JIDLogic - DEBUG - group 37: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 38: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 39: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 40: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 41: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 42: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 43: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 44: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 45: null
+2012-06-10 02:38:33,063 - logic.JIDLogic - DEBUG - group 46: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 47: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 48: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 49: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 50: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 51: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 52: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 53: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 54: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 55: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 56: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 57: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 58: null
+2012-06-10 02:38:33,068 - logic.JIDLogic - DEBUG - group 59: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 60: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 61: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 62: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 63: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 64: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 65: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 66: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 67: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 68: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 69: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 70: null
+2012-06-10 02:38:33,073 - logic.JIDLogic - DEBUG - group 71: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 72: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 73: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 74: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 75: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 76: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 77: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 78: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 79: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 80: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 81: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 82: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 83: null
+2012-06-10 02:38:33,078 - logic.JIDLogic - DEBUG - group 84: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 85: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 86: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 87: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 88: tmr
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 89: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 90: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 91: tmr
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 92: tmr
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 93: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 94: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 95: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - group 96: null
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - start time string: 4pm
+2012-06-10 02:38:33,083 - logic.JIDLogic - DEBUG - start date string : tmr
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - Start time is set!
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - End time could NOT be set!
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - dummyDay:11
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - dummyMonth:6
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - dummyYear:2012
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - End date could NOT be set!
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - start date time: 4:00 PM 11 Jun 2012
+2012-06-10 02:38:33,088 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - task details: go to bed
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - this is parse for ADD before initializing task obj
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 02:38:33,093 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 02:38:33,093 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 02:38:33,108 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:33,108 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:33,108 - operation.Operation - DEBUG - find
+2012-06-10 02:38:33,108 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:33,108 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:33,108 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:33,108 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:33,108 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:33,108 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:33,108 - gui.reminder.Reminder - DEBUG - 1339267113108
+2012-06-10 02:38:33,108 - gui.reminder.Reminder - DEBUG - timediff: 33386892
+2012-06-10 02:38:33,113 - gui.reminder.Reminder - DEBUG - latestTask: hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:38:33,113 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:33,113 - gui.reminder.Reminder - DEBUG - 1339267113108
+2012-06-10 02:38:33,113 - gui.reminder.Reminder - DEBUG - timediff: 33386892
+2012-06-10 02:38:33,113 - gui.reminder.Reminder - DEBUG - setTimer: 33386892
+2012-06-10 02:38:33,213 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:33,213 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:33,213 - operation.Operation - DEBUG - find
+2012-06-10 02:38:33,213 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:33,213 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:33,213 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:33,213 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:33,213 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:39,401 - logic.JIDLogic - DEBUG - hahaha
+2012-06-10 02:38:39,401 - logic.JIDLogic - DEBUG - ******IMPORTANT $$__10-06-2012120000C__$$ $$__10-06-2012210000O__$$ $$__11-06-2012000000F__$$ $$__11-06-2012080000T__$$ 
+2012-06-10 02:38:39,401 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:39,401 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:39,401 - operation.Operation - DEBUG - important
+2012-06-10 02:38:39,401 - operation.BaseSearch - DEBUG - important
+2012-06-10 02:38:39,401 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - $$__10-06-2012210000O__$$
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - $$__11-06-2012000000F__$$
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:38:39,406 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:39,411 - operation.BaseSearch - DEBUG - $$__11-06-2012080000T__$$
+2012-06-10 02:38:39,411 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:38:39,412 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:39,412 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 02:38:39,412 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 02:38:39,412 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 02:38:39,417 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:39,417 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:39,422 - operation.Operation - DEBUG - find
+2012-06-10 02:38:39,422 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:39,422 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:39,422 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:39,422 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:39,422 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:39,422 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:39,422 - gui.reminder.Reminder - DEBUG - 1339267119417
+2012-06-10 02:38:39,422 - gui.reminder.Reminder - DEBUG - timediff: 33380583
+2012-06-10 02:38:39,422 - gui.reminder.Reminder - DEBUG - latestTask: *hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:38:39,427 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:39,427 - gui.reminder.Reminder - DEBUG - 1339267119417
+2012-06-10 02:38:39,427 - gui.reminder.Reminder - DEBUG - timediff: 33380583
+2012-06-10 02:38:39,427 - gui.reminder.Reminder - DEBUG - setTimer: 33380583
+2012-06-10 02:38:39,517 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:39,517 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:39,517 - operation.Operation - DEBUG - find
+2012-06-10 02:38:39,517 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:39,517 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:39,517 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:39,517 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:39,517 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:51,693 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:51,694 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:51,695 - operation.Operation - DEBUG - completed
+2012-06-10 02:38:51,695 - operation.BaseSearch - DEBUG - completed
+2012-06-10 02:38:51,696 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:38:51,697 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-10 02:38:51,697 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:38:51,697 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:38:51,698 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:51,698 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:51,699 - operation.BaseSearch - DEBUG - $$__10-06-2012210000O__$$
+2012-06-10 02:38:51,699 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:51,699 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:51,700 - operation.BaseSearch - DEBUG - $$__11-06-2012000000F__$$
+2012-06-10 02:38:51,700 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:51,701 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:51,701 - operation.BaseSearch - DEBUG - $$__11-06-2012080000T__$$
+2012-06-10 02:38:51,701 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:51,702 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:51,702 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 02:38:51,703 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 02:38:51,703 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 02:38:51,710 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:51,710 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:51,711 - operation.Operation - DEBUG - find
+2012-06-10 02:38:51,711 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:51,712 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:51,712 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:51,712 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:51,713 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:51,713 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:51,714 - gui.reminder.Reminder - DEBUG - 1339267131709
+2012-06-10 02:38:51,714 - gui.reminder.Reminder - DEBUG - timediff: 33368291
+2012-06-10 02:38:51,715 - gui.reminder.Reminder - DEBUG - latestTask: *hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:38:51,715 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:51,716 - gui.reminder.Reminder - DEBUG - 1339267131709
+2012-06-10 02:38:51,716 - gui.reminder.Reminder - DEBUG - timediff: 33368291
+2012-06-10 02:38:51,717 - gui.reminder.Reminder - DEBUG - setTimer: 33368291
+2012-06-10 02:38:51,809 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:51,809 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:51,810 - operation.Operation - DEBUG - find
+2012-06-10 02:38:51,810 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:51,811 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:51,811 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:51,811 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:51,812 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:55,972 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:55,973 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:55,974 - operation.Operation - DEBUG - completed
+2012-06-10 02:38:55,974 - operation.BaseSearch - DEBUG - completed
+2012-06-10 02:38:55,974 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:38:55,975 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-10 02:38:55,976 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:38:55,976 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:38:55,976 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:55,977 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:55,977 - operation.BaseSearch - DEBUG - $$__10-06-2012210000O__$$
+2012-06-10 02:38:55,978 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:55,978 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:55,978 - operation.BaseSearch - DEBUG - $$__11-06-2012000000F__$$
+2012-06-10 02:38:55,979 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:55,979 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:55,979 - operation.BaseSearch - DEBUG - $$__11-06-2012080000T__$$
+2012-06-10 02:38:55,980 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-10 02:38:55,980 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:38:55,981 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 02:38:55,981 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 02:38:55,981 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 02:38:55,983 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:55,983 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:55,984 - operation.Operation - DEBUG - find
+2012-06-10 02:38:55,984 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:55,985 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:55,985 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:55,986 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:55,986 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:38:55,987 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:55,987 - gui.reminder.Reminder - DEBUG - 1339267135983
+2012-06-10 02:38:55,988 - gui.reminder.Reminder - DEBUG - timediff: 33364017
+2012-06-10 02:38:55,989 - gui.reminder.Reminder - DEBUG - latestTask: *hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:38:55,989 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:38:55,989 - gui.reminder.Reminder - DEBUG - 1339267135983
+2012-06-10 02:38:55,990 - gui.reminder.Reminder - DEBUG - timediff: 33364017
+2012-06-10 02:38:55,990 - gui.reminder.Reminder - DEBUG - setTimer: 33364017
+2012-06-10 02:38:56,083 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:38:56,083 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:38:56,084 - operation.Operation - DEBUG - find
+2012-06-10 02:38:56,084 - operation.Search - DEBUG - finding objects
+2012-06-10 02:38:56,085 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:38:56,085 - operation.Search - DEBUG - before sorting
+2012-06-10 02:38:56,085 - operation.Search - DEBUG - after sorting
+2012-06-10 02:38:56,086 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:39:09,486 - logic.JIDLogic - DEBUG - hahaha
+2012-06-10 02:39:09,486 - logic.JIDLogic - DEBUG - ******IMPORTANT $$__10-06-2012120000C__$$ $$__10-06-2012210000O__$$ $$__11-06-2012000000F__$$ $$__11-06-2012080000T__$$ 
+2012-06-10 02:39:09,487 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:39:09,487 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:39:09,488 - operation.Operation - DEBUG - important
+2012-06-10 02:39:09,488 - operation.BaseSearch - DEBUG - important
+2012-06-10 02:39:09,489 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:39:09,490 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-10 02:39:09,490 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:39:09,490 - operation.BaseSearch - DEBUG - $$__10-06-2012120000C__$$
+2012-06-10 02:39:09,491 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:39:09,491 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:39:09,491 - operation.BaseSearch - DEBUG - $$__10-06-2012210000O__$$
+2012-06-10 02:39:09,492 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:39:09,492 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:39:09,493 - operation.BaseSearch - DEBUG - $$__11-06-2012000000F__$$
+2012-06-10 02:39:09,493 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:39:09,493 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:39:09,494 - operation.BaseSearch - DEBUG - $$__11-06-2012080000T__$$
+2012-06-10 02:39:09,494 - operation.BaseSearch - DEBUG - starred succesfully
+2012-06-10 02:39:09,495 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 02:39:09,495 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 02:39:09,495 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 02:39:09,496 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 02:39:09,503 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:39:09,503 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:39:09,504 - operation.Operation - DEBUG - find
+2012-06-10 02:39:09,504 - operation.Search - DEBUG - finding objects
+2012-06-10 02:39:09,505 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:39:09,505 - operation.Search - DEBUG - before sorting
+2012-06-10 02:39:09,506 - operation.Search - DEBUG - after sorting
+2012-06-10 02:39:09,506 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:39:09,507 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:39:09,507 - gui.reminder.Reminder - DEBUG - 1339267149503
+2012-06-10 02:39:09,507 - gui.reminder.Reminder - DEBUG - timediff: 33350497
+2012-06-10 02:39:09,508 - gui.reminder.Reminder - DEBUG - latestTask: hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:39:09,509 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:39:09,509 - gui.reminder.Reminder - DEBUG - 1339267149503
+2012-06-10 02:39:09,510 - gui.reminder.Reminder - DEBUG - timediff: 33350497
+2012-06-10 02:39:09,510 - gui.reminder.Reminder - DEBUG - setTimer: 33350497
+2012-06-10 02:39:09,603 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:39:09,604 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:39:09,604 - operation.Operation - DEBUG - find
+2012-06-10 02:39:09,604 - operation.Search - DEBUG - finding objects
+2012-06-10 02:39:09,605 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:39:09,605 - operation.Search - DEBUG - before sorting
+2012-06-10 02:39:09,605 - operation.Search - DEBUG - after sorting
+2012-06-10 02:39:09,606 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:39:19,775 - storagecontroller.FileHandler - DEBUG - 9
+2012-06-10 02:39:26,433 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 02:39:26,972 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:39:26,973 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:39:26,988 - operation.Operation - DEBUG - find
+2012-06-10 02:39:26,989 - operation.Search - DEBUG - finding objects
+2012-06-10 02:39:26,990 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:39:26,992 - operation.Search - DEBUG - before sorting
+2012-06-10 02:39:26,992 - operation.Search - DEBUG - after sorting
+2012-06-10 02:39:26,992 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:39:27,160 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 02:39:27,161 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:39:27,162 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:39:27,167 - operation.Operation - DEBUG - find
+2012-06-10 02:39:27,168 - operation.Search - DEBUG - finding objects
+2012-06-10 02:39:27,168 - operation.Search - DEBUG - returning all objects
+2012-06-10 02:39:27,168 - operation.Search - DEBUG - before sorting
+2012-06-10 02:39:27,170 - operation.Search - DEBUG - after sorting
+2012-06-10 02:39:27,170 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:39:27,170 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:39:27,172 - gui.reminder.Reminder - DEBUG - 1339267167161
+2012-06-10 02:39:27,173 - gui.reminder.Reminder - DEBUG - timediff: 33332839
+2012-06-10 02:39:27,173 - gui.reminder.Reminder - DEBUG - latestTask: hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 02:39:27,174 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 02:39:27,174 - gui.reminder.Reminder - DEBUG - 1339267167161
+2012-06-10 02:39:27,175 - gui.reminder.Reminder - DEBUG - timediff: 33332839
+2012-06-10 02:39:27,175 - gui.reminder.Reminder - DEBUG - setTimer: 33332839
+2012-06-10 02:42:43,063 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:42:43,063 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit g
+2012-06-10 02:42:43,063 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:42:43,063 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:42:43,063 - operation.Operation - DEBUG - edit
+2012-06-10 02:42:43,063 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:42:43,068 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:42:43,068 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:42:43,073 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:42:43,073 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:42:43,073 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:42:43,073 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:42:43,079 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:42:43,079 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:42:43,079 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:42:43,079 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:42:43,084 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:42:43,094 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:42:43,099 - logic.JIDLogic - DEBUG - left over string after checking for recurring: g
+2012-06-10 02:42:43,144 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:42:43,144 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:42:43,144 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:42:43,144 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:42:43,144 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:42:43,149 - logic.JIDLogic - DEBUG - task details: g
+2012-06-10 02:42:43,149 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:42:43,149 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - have dinner
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - snack time
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - go to airport
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,149 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - hulu
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,154 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - hahaha
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - nacho
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - go to bed
+2012-06-10 02:42:43,159 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,164 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,164 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:42:43,164 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:42:43,304 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:42:43,304 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go
+2012-06-10 02:42:43,304 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:42:43,304 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:42:43,304 - operation.Operation - DEBUG - edit
+2012-06-10 02:42:43,309 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:42:43,309 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:42:43,309 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:42:43,309 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:42:43,309 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:42:43,309 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:42:43,314 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:42:43,314 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:42:43,314 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:42:43,314 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:42:43,314 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:42:43,314 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:42:43,314 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:42:43,319 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go
+2012-06-10 02:42:43,324 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:42:43,324 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:42:43,324 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:42:43,324 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:42:43,324 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:42:43,324 - logic.JIDLogic - DEBUG - task details: go
+2012-06-10 02:42:43,329 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:42:43,329 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - have dinner
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - snack time
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - go to airport
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,329 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - hulu
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,334 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - hahaha
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - nacho
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - go to bed
+2012-06-10 02:42:43,339 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,344 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,344 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:42:43,349 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:42:43,488 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:42:43,488 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go 
+2012-06-10 02:42:43,488 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:42:43,489 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:42:43,489 - operation.Operation - DEBUG - edit
+2012-06-10 02:42:43,489 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:42:43,490 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:42:43,491 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:42:43,491 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:42:43,492 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:42:43,492 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:42:43,493 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:42:43,494 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:42:43,495 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:42:43,495 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:42:43,495 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:42:43,495 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:42:43,501 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:42:43,502 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go
+2012-06-10 02:42:43,505 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:42:43,506 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:42:43,506 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:42:43,506 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:42:43,506 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:42:43,506 - logic.JIDLogic - DEBUG - task details: go
+2012-06-10 02:42:43,506 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:42:43,507 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:42:43,507 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:42:43,507 - operation.Search - DEBUG - have dinner
+2012-06-10 02:42:43,507 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:42:43,507 - operation.Search - DEBUG - snack time
+2012-06-10 02:42:43,507 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:42:43,508 - operation.Search - DEBUG - go to airport
+2012-06-10 02:42:43,508 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,508 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,508 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,508 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,508 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - hulu
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:42:43,509 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:42:43,510 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:42:43,510 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:42:43,510 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,510 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,510 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,510 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,511 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,511 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,511 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,511 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,511 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:42:43,511 - operation.Search - DEBUG - hahaha
+2012-06-10 02:42:43,512 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:42:43,512 - operation.Search - DEBUG - nacho
+2012-06-10 02:42:43,512 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:42:43,512 - operation.Search - DEBUG - go to bed
+2012-06-10 02:42:43,512 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,512 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,513 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,513 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,513 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,513 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,513 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,513 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,514 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:42:43,514 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:42:43,566 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:42:43,566 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go t
+2012-06-10 02:42:43,566 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:42:43,566 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:42:43,567 - operation.Operation - DEBUG - edit
+2012-06-10 02:42:43,567 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:42:43,567 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:42:43,568 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:42:43,568 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:42:43,569 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:42:43,569 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:42:43,569 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:42:43,570 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:42:43,570 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:42:43,570 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:42:43,571 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:42:43,571 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:42:43,571 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:42:43,571 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go t
+2012-06-10 02:42:43,574 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:42:43,575 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:42:43,575 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:42:43,575 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:42:43,575 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:42:43,575 - logic.JIDLogic - DEBUG - task details: go t
+2012-06-10 02:42:43,575 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:42:43,576 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:42:43,576 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:42:43,576 - operation.Search - DEBUG - have dinner
+2012-06-10 02:42:43,576 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:42:43,576 - operation.Search - DEBUG - snack time
+2012-06-10 02:42:43,576 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - go to airport
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,577 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,578 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,578 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,578 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:42:43,578 - operation.Search - DEBUG - hulu
+2012-06-10 02:42:43,578 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:42:43,578 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:42:43,579 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:42:43,579 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:42:43,579 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,579 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,579 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,579 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,580 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,580 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,581 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,581 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,581 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:42:43,582 - operation.Search - DEBUG - hahaha
+2012-06-10 02:42:43,582 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:42:43,582 - operation.Search - DEBUG - nacho
+2012-06-10 02:42:43,583 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:42:43,583 - operation.Search - DEBUG - go to bed
+2012-06-10 02:42:43,583 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,584 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,584 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,584 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,585 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,585 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,585 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,586 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,586 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:42:43,588 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:42:43,753 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:42:43,753 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go t
+2012-06-10 02:42:43,754 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:42:43,754 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:42:43,754 - operation.Operation - DEBUG - edit
+2012-06-10 02:42:43,755 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:42:43,756 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:42:43,757 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:42:43,758 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:42:43,759 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:42:43,760 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:42:43,760 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:42:43,761 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:42:43,762 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:42:43,762 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:42:43,763 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:42:43,763 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:42:43,764 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:42:43,764 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go t
+2012-06-10 02:42:43,771 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:42:43,771 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:42:43,771 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:42:43,772 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:42:43,772 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:42:43,772 - logic.JIDLogic - DEBUG - task details: go t
+2012-06-10 02:42:43,773 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:42:43,773 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:42:43,773 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:42:43,774 - operation.Search - DEBUG - have dinner
+2012-06-10 02:42:43,774 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:42:43,774 - operation.Search - DEBUG - snack time
+2012-06-10 02:42:43,775 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:42:43,775 - operation.Search - DEBUG - go to airport
+2012-06-10 02:42:43,775 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,776 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,776 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,776 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,777 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,777 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,777 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,777 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,778 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:42:43,778 - operation.Search - DEBUG - hulu
+2012-06-10 02:42:43,778 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:42:43,779 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:42:43,779 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:42:43,780 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:42:43,780 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,781 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,781 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,781 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,782 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,782 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,782 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,782 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,783 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:42:43,783 - operation.Search - DEBUG - hahaha
+2012-06-10 02:42:43,783 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:42:43,784 - operation.Search - DEBUG - nacho
+2012-06-10 02:42:43,784 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:42:43,784 - operation.Search - DEBUG - go to bed
+2012-06-10 02:42:43,785 - operation.Search - DEBUG - name matches
+2012-06-10 02:42:43,785 - operation.Search - DEBUG - start date matches
+2012-06-10 02:42:43,785 - operation.Search - DEBUG - start time matches
+2012-06-10 02:42:43,786 - operation.Search - DEBUG - end date matches
+2012-06-10 02:42:43,786 - operation.Search - DEBUG - end time matches
+2012-06-10 02:42:43,786 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:42:43,787 - operation.Search - DEBUG - it matches
+2012-06-10 02:42:43,787 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:42:43,787 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:42:43,789 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:35,553 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:35,553 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go t
+2012-06-10 02:48:35,554 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:35,554 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:35,554 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:35,555 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:35,556 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:35,557 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:35,558 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:35,559 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:35,559 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:35,560 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:35,561 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:35,562 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:35,562 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:35,563 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:35,563 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:35,564 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:35,564 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go t
+2012-06-10 02:48:35,570 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:35,570 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:35,571 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:35,571 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:35,571 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:35,572 - logic.JIDLogic - DEBUG - task details: go t
+2012-06-10 02:48:35,572 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:35,572 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:35,573 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:35,573 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:35,573 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:35,574 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:35,574 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:35,574 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:35,575 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:35,575 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:35,575 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:35,576 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:35,576 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:35,576 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:35,577 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:35,577 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:35,577 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:35,577 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:35,578 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:35,578 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:35,578 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:35,579 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:35,579 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:35,579 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:35,580 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:35,580 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:35,581 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:35,582 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:35,582 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:35,583 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:35,584 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:35,584 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:35,584 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:35,585 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:35,586 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:35,586 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:35,587 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:35,587 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:35,588 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:35,588 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:35,588 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:35,589 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:35,589 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:35,590 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:35,590 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:35,591 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:36,013 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:36,014 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go 
+2012-06-10 02:48:36,014 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:36,014 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:36,015 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:36,016 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:36,017 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:36,017 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:36,018 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:36,019 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:36,020 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:36,021 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:36,022 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:36,023 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:36,023 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:36,023 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:36,024 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:36,024 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:36,025 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go
+2012-06-10 02:48:36,031 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:36,031 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:36,031 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:36,032 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:36,032 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:36,032 - logic.JIDLogic - DEBUG - task details: go
+2012-06-10 02:48:36,033 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:36,033 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:36,033 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:36,034 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:36,034 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:36,034 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:36,034 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:36,035 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:36,035 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,035 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,036 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,036 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,036 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,037 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,037 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,037 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,038 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:36,038 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:36,038 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:36,039 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:36,039 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:36,039 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:36,040 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,040 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,040 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,041 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,041 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,041 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,042 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,042 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,042 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:36,043 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:36,043 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:36,043 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:36,044 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:36,044 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:36,044 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,045 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,045 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,045 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,046 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,046 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,046 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,047 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,047 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:36,048 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:36,076 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:36,076 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go
+2012-06-10 02:48:36,077 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:36,077 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:36,077 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:36,078 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:36,079 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:36,080 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:36,081 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:36,082 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:36,082 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:36,083 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:36,084 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:36,085 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:36,085 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:36,085 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:36,086 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:36,087 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:36,087 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go
+2012-06-10 02:48:36,093 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:36,093 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:36,094 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:36,094 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:36,094 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:36,095 - logic.JIDLogic - DEBUG - task details: go
+2012-06-10 02:48:36,095 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:36,095 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:36,096 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:36,102 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:36,104 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:36,104 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:36,105 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:36,105 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:36,105 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,106 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,106 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,106 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,107 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,107 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,107 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,107 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,108 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:36,108 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:36,108 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:36,109 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:36,109 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:36,109 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:36,110 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,110 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,110 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,111 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,111 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,111 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,112 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,112 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,112 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:36,112 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:36,113 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:36,113 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:36,113 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:36,114 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:36,114 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,114 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,115 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,115 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,115 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,116 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,116 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,116 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,117 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:36,118 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:36,140 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:36,140 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit go
+2012-06-10 02:48:36,140 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:36,141 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:36,141 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:36,142 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:36,143 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:36,144 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:36,145 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:36,145 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:36,146 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:36,147 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:36,148 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:36,148 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:36,149 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:36,149 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:36,149 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:36,150 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:36,150 - logic.JIDLogic - DEBUG - left over string after checking for recurring: go
+2012-06-10 02:48:36,156 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:36,156 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:36,157 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:36,157 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:36,158 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:36,158 - logic.JIDLogic - DEBUG - task details: go
+2012-06-10 02:48:36,158 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:36,159 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:36,159 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:36,159 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:36,159 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:36,160 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:36,160 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:36,160 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:36,161 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,161 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,161 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,162 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,162 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,162 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,163 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,163 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,164 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:36,164 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:36,165 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:36,166 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:36,166 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:36,166 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:36,167 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,167 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,168 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,169 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,169 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,170 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,170 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,170 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,171 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:36,171 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:36,171 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:36,172 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:36,172 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:36,172 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:36,173 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,173 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,173 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,174 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,174 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,174 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,175 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,175 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,175 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:36,177 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:36,204 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:36,204 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit g
+2012-06-10 02:48:36,205 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:36,205 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:36,205 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:36,206 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:36,207 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:36,208 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:36,209 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:36,209 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:36,210 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:36,211 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:36,212 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:36,212 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:36,213 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:36,213 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:36,213 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:36,214 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:36,214 - logic.JIDLogic - DEBUG - left over string after checking for recurring: g
+2012-06-10 02:48:36,220 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:36,221 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:36,221 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:36,221 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:36,222 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:36,222 - logic.JIDLogic - DEBUG - task details: g
+2012-06-10 02:48:36,222 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:36,223 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:36,223 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:36,224 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:36,224 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:36,224 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:36,225 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:36,225 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:36,225 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,225 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,226 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,227 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,227 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,227 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,228 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,228 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,228 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:36,229 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:36,229 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:36,229 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:36,230 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:36,230 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:36,230 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,230 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,231 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,231 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,231 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,232 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,232 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,232 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,233 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:36,233 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:36,233 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:36,234 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:36,234 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:36,234 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:36,234 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,235 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,235 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,235 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,236 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,236 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,236 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,237 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,237 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:36,239 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:36,262 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:36,263 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit g
+2012-06-10 02:48:36,263 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:36,263 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:36,264 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:36,264 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:36,265 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:36,267 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:36,268 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:36,269 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:36,270 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:36,270 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:36,271 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:36,272 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:36,272 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:36,273 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:36,273 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:36,274 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:36,274 - logic.JIDLogic - DEBUG - left over string after checking for recurring: g
+2012-06-10 02:48:36,280 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:36,281 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:36,281 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:36,281 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:36,282 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:36,282 - logic.JIDLogic - DEBUG - task details: g
+2012-06-10 02:48:36,282 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:36,283 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:36,283 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:36,283 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:36,284 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:36,284 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:36,284 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:36,284 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:36,285 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,285 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,285 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,286 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,286 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,286 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,287 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,287 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,287 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:36,287 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:36,288 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:36,288 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:36,289 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:36,289 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:36,289 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,290 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,290 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,290 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,291 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,291 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,291 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,292 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,292 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:36,292 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:36,293 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:36,293 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:36,293 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:36,293 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:36,294 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,294 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,294 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,295 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,295 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,295 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,295 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,296 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,296 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:36,297 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:36,310 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: edit
+2012-06-10 02:48:36,310 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: edit g
+2012-06-10 02:48:36,311 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:48:36,311 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:48:36,311 - operation.Operation - DEBUG - edit
+2012-06-10 02:48:36,312 - operation.Modify - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000O__$$
+2012-06-10 02:48:36,313 - operation.Modify - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000R__$$
+2012-06-10 02:48:36,314 - operation.Modify - DEBUG - go to airport at 9:00 PM on 10 Jun 2012  $$__10-06-2012210000K__$$
+2012-06-10 02:48:36,315 - operation.Modify - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
+2012-06-10 02:48:36,315 - operation.Modify - DEBUG - have lunch pm on 11 Jun 2012  $$__11-06-2012000000F__$$
+2012-06-10 02:48:36,316 - operation.Modify - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012  $$__17-06-2012090000T__$$
+2012-06-10 02:48:36,316 - operation.Modify - DEBUG - hahaha at 0:00 PM on 10 Jun 2012  $$__10-06-2012120000P__$$
+2012-06-10 02:48:36,317 - operation.Modify - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000K__$$
+2012-06-10 02:48:36,318 - operation.Modify - DEBUG - go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
+2012-06-10 02:48:36,318 - operation.BaseSearch - DEBUG - edit
+2012-06-10 02:48:36,319 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 02:48:36,319 - operation.BaseSearch - DEBUG - going for new search
+2012-06-10 02:48:36,319 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-10 02:48:36,320 - logic.JIDLogic - DEBUG - left over string after checking for recurring: g
+2012-06-10 02:48:36,331 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-10 02:48:36,331 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-10 02:48:36,332 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-10 02:48:36,332 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-10 02:48:36,332 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-10 02:48:36,332 - logic.JIDLogic - DEBUG - task details: g
+2012-06-10 02:48:36,333 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-10 02:48:36,333 - operation.BaseSearch - DEBUG - finished searching
+2012-06-10 02:48:36,333 - operation.Search - DEBUG - Matching task0
+2012-06-10 02:48:36,334 - operation.Search - DEBUG - have dinner
+2012-06-10 02:48:36,334 - operation.Search - DEBUG - Matching task1
+2012-06-10 02:48:36,334 - operation.Search - DEBUG - snack time
+2012-06-10 02:48:36,334 - operation.Search - DEBUG - Matching task2
+2012-06-10 02:48:36,335 - operation.Search - DEBUG - go to airport
+2012-06-10 02:48:36,335 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,335 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,336 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,336 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,336 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,336 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,337 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,337 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,337 - operation.Search - DEBUG - Matching task3
+2012-06-10 02:48:36,338 - operation.Search - DEBUG - hulu
+2012-06-10 02:48:36,338 - operation.Search - DEBUG - Matching task4
+2012-06-10 02:48:36,338 - operation.Search - DEBUG - have lunch pm
+2012-06-10 02:48:36,338 - operation.Search - DEBUG - Matching task5
+2012-06-10 02:48:36,339 - operation.Search - DEBUG - go to muscat
+2012-06-10 02:48:36,339 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,339 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,340 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,340 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,340 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,340 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,341 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,341 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,341 - operation.Search - DEBUG - Matching task6
+2012-06-10 02:48:36,342 - operation.Search - DEBUG - hahaha
+2012-06-10 02:48:36,342 - operation.Search - DEBUG - Matching task7
+2012-06-10 02:48:36,342 - operation.Search - DEBUG - nacho
+2012-06-10 02:48:36,342 - operation.Search - DEBUG - Matching task8
+2012-06-10 02:48:36,343 - operation.Search - DEBUG - go to bed
+2012-06-10 02:48:36,343 - operation.Search - DEBUG - name matches
+2012-06-10 02:48:36,343 - operation.Search - DEBUG - start date matches
+2012-06-10 02:48:36,344 - operation.Search - DEBUG - start time matches
+2012-06-10 02:48:36,344 - operation.Search - DEBUG - end date matches
+2012-06-10 02:48:36,344 - operation.Search - DEBUG - end time matches
+2012-06-10 02:48:36,344 - operation.Search - DEBUG - task to search has no labels
+2012-06-10 02:48:36,345 - operation.Search - DEBUG - it matches
+2012-06-10 02:48:36,345 - operation.Search - DEBUG - all condition satisfied
+2012-06-10 02:48:36,345 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 02:48:36,347 - gui.mainWindow.MainJFrame - DEBUG - str[0]: EDIT go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 02:48:51,205 - storagecontroller.FileHandler - DEBUG - 9
+2012-06-10 03:06:19,341 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 03:06:19,811 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:19,812 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:19,817 - operation.Operation - DEBUG - find
+2012-06-10 03:06:19,818 - operation.Search - DEBUG - finding objects
+2012-06-10 03:06:19,818 - operation.Search - DEBUG - returning all objects
+2012-06-10 03:06:19,819 - operation.Search - DEBUG - before sorting
+2012-06-10 03:06:19,820 - operation.Search - DEBUG - after sorting
+2012-06-10 03:06:19,820 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 03:06:19,899 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 03:06:19,900 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:19,900 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:19,901 - operation.Operation - DEBUG - find
+2012-06-10 03:06:19,901 - operation.Search - DEBUG - finding objects
+2012-06-10 03:06:19,901 - operation.Search - DEBUG - returning all objects
+2012-06-10 03:06:19,901 - operation.Search - DEBUG - before sorting
+2012-06-10 03:06:19,902 - operation.Search - DEBUG - after sorting
+2012-06-10 03:06:19,903 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 03:06:19,903 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 03:06:19,903 - gui.reminder.Reminder - DEBUG - 1339268779900
+2012-06-10 03:06:19,903 - gui.reminder.Reminder - DEBUG - timediff: 31720100
+2012-06-10 03:06:19,904 - gui.reminder.Reminder - DEBUG - latestTask: hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:19,904 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 03:06:19,904 - gui.reminder.Reminder - DEBUG - 1339268779900
+2012-06-10 03:06:19,904 - gui.reminder.Reminder - DEBUG - timediff: 31720100
+2012-06-10 03:06:19,904 - gui.reminder.Reminder - DEBUG - setTimer: 31720100
+2012-06-10 03:06:32,349 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:32,350 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:32,350 - operation.Operation - DEBUG - delete
+2012-06-10 03:06:32,352 - operation.BaseSearch - DEBUG - delete
+2012-06-10 03:06:32,352 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 03:06:32,360 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-10 03:06:32,361 - operation.BaseSearch - DEBUG - $$__10-06-2012120000J__$$
+2012-06-10 03:06:32,361 - operation.BaseSearch - DEBUG - $$__10-06-2012120000J__$$
+2012-06-10 03:06:32,362 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,362 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,363 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,364 - operation.BaseSearch - DEBUG - $$__10-06-2012210000L__$$
+2012-06-10 03:06:32,364 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,364 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,365 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,365 - operation.BaseSearch - DEBUG - $$__11-06-2012000000M__$$
+2012-06-10 03:06:32,366 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,366 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,367 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,367 - operation.BaseSearch - DEBUG - $$__11-06-2012080000S__$$
+2012-06-10 03:06:32,368 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,368 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,368 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,369 - operation.BaseSearch - DEBUG - $$__11-06-2012160000B__$$
+2012-06-10 03:06:32,369 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,370 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,370 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,371 - operation.BaseSearch - DEBUG - $$__11-06-2012150000X__$$
+2012-06-10 03:06:32,371 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,371 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,372 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,372 - operation.BaseSearch - DEBUG - $$__11-06-2012160000L__$$
+2012-06-10 03:06:32,373 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,373 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,374 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,374 - operation.BaseSearch - DEBUG - $$__11-06-2012220000J__$$
+2012-06-10 03:06:32,375 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,375 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,375 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,376 - operation.BaseSearch - DEBUG - $$__17-06-2012090000L__$$
+2012-06-10 03:06:32,379 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 03:06:32,380 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 03:06:32,381 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 03:06:32,381 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 03:06:32,381 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 03:06:32,382 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 03:06:32,393 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:32,393 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:32,394 - operation.Operation - DEBUG - find
+2012-06-10 03:06:32,394 - operation.Search - DEBUG - finding objects
+2012-06-10 03:06:32,395 - operation.Search - DEBUG - returning all objects
+2012-06-10 03:06:32,395 - operation.Search - DEBUG - before sorting
+2012-06-10 03:06:32,396 - operation.Search - DEBUG - after sorting
+2012-06-10 03:06:32,396 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 03:06:32,397 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 03:06:32,493 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:32,494 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:32,494 - operation.Operation - DEBUG - find
+2012-06-10 03:06:32,495 - operation.Search - DEBUG - finding objects
+2012-06-10 03:06:32,495 - operation.Search - DEBUG - returning all objects
+2012-06-10 03:06:32,495 - operation.Search - DEBUG - before sorting
+2012-06-10 03:06:32,496 - operation.Search - DEBUG - after sorting
+2012-06-10 03:06:32,496 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 03:06:44,975 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:44,975 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:44,980 - operation.Operation - DEBUG - login
+2012-06-10 03:06:44,980 - operation.GoogleCalendarOp - DEBUG - login jid.troubleshoot jotitdown
+2012-06-10 03:06:44,980 - operation.GoogleCalendarOp - DEBUG - login jid.troubleshoot jotitdown
+2012-06-10 03:06:44,980 - operation.GoogleCalendarOp - DEBUG - jid.troubleshoot
+2012-06-10 03:06:44,980 - operation.GoogleCalendarOp - DEBUG - jotitdown
+2012-06-10 03:06:47,378 - gcal.GoogleCalendar - DEBUG - 1339333200000
+2012-06-10 03:06:47,378 - gcal.GoogleCalendar - DEBUG - 1339333200000
+2012-06-10 03:06:47,378 - gcal.GoogleCalendar - DEBUG - go to airport
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - Start end date time is same
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - 1339408800000
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - 1339423200000
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - snack time
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - 1339398000000
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - 1339401600000
+2012-06-10 03:06:47,383 - gcal.GoogleCalendar - DEBUG - hulu
+2012-06-10 03:06:47,388 - gcal.GoogleCalendar - DEBUG - 1339300800000
+2012-06-10 03:06:47,388 - gcal.GoogleCalendar - DEBUG - 1339300800000
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - have lunch
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - Start end date time is same
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - 1339300800000
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - 1339300800000
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - hahaha
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - Start end date time is same
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - 1339369200000
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - 1339372800000
+2012-06-10 03:06:47,389 - gcal.GoogleCalendar - DEBUG - nacho
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - 1339398000000
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - 1339398000000
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - have dinner
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - Start end date time is same
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - 1339894800000
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - 1339894800000
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - go to muscat
+2012-06-10 03:06:47,394 - gcal.GoogleCalendar - DEBUG - Start end date time is same
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - Length 0vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - 7ubons6qtm8shsr3secgu0528k vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - c3sk6i7v30n4oqu8157j8rfg8s 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - c3sk6i7v30n4oqu8157j8rfg8s vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,399 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,404 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno hklc5nos5h9fo7j2l43bje1l68
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - isPresent resetted to false
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 n2uoc88itgr3oj03pfjrgcgkno
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 hklc5nos5h9fo7j2l43bje1l68
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - In export
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,409 - gcal.GoogleCalendar - DEBUG - hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - 4bbm7gfo3jq1pb55mmhm60dq7c 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - 7ubons6qtm8shsr3secgu0528k vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,414 - gcal.GoogleCalendar - DEBUG - 7ubons6qtm8shsr3secgu0528k 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,419 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 hklc5nos5h9fo7j2l43bje1l68
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 n2uoc88itgr3oj03pfjrgcgkno
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - 4098fqv1mbeh61jtdmeh3taq58 4098fqv1mbeh61jtdmeh3taq58
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - go to muscat at 9:00 AM on 17 Jun 2012 
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,424 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno hklc5nos5h9fo7j2l43bje1l68
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,429 - gcal.GoogleCalendar - DEBUG - n2uoc88itgr3oj03pfjrgcgkno n2uoc88itgr3oj03pfjrgcgkno
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - have lunch at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - have lunch at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - have lunch at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,434 - gcal.GoogleCalendar - DEBUG - e56u8u7soca36us8is1fff0oig e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - have lunch at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - vbkfudjsqumcm68i1pb9cepdfs vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - go to airport at 9:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - c3sk6i7v30n4oqu8157j8rfg8s vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - c3sk6i7v30n4oqu8157j8rfg8s 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,439 - gcal.GoogleCalendar - DEBUG - c3sk6i7v30n4oqu8157j8rfg8s c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012 
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - Again!!!!!!!!!
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 vbkfudjsqumcm68i1pb9cepdfs
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 7ubons6qtm8shsr3secgu0528k
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 c3sk6i7v30n4oqu8157j8rfg8s
+2012-06-10 03:06:47,444 - gcal.GoogleCalendar - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 e56u8u7soca36us8is1fff0oig
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 4bbm7gfo3jq1pb55mmhm60dq7c
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - hklc5nos5h9fo7j2l43bje1l68 hklc5nos5h9fo7j2l43bje1l68
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
+2012-06-10 03:06:47,449 - gcal.GoogleCalendar - DEBUG - the desc id of google cal task is same as live storage
+2012-06-10 03:06:47,449 - operation.GoogleCalendarOp - DEBUG - logged and synced successfully
+2012-06-10 03:06:47,449 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 03:06:47,449 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:47,454 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:47,454 - operation.Operation - DEBUG - find
+2012-06-10 03:06:47,454 - operation.Search - DEBUG - finding objects
+2012-06-10 03:06:47,454 - operation.Search - DEBUG - returning all objects
+2012-06-10 03:06:47,454 - operation.Search - DEBUG - before sorting
+2012-06-10 03:06:47,454 - operation.Search - DEBUG - after sorting
+2012-06-10 03:06:47,454 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - 1339268807449
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - timediff: 31692551
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - latestTask: hahaha at 0:00 PM on 10 Jun 2012 
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - 1339300800000
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - 1339268807449
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - timediff: 31692551
+2012-06-10 03:06:47,454 - gui.reminder.Reminder - DEBUG - setTimer: 31692551
+2012-06-10 03:06:47,550 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 03:06:47,550 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 03:06:47,550 - operation.Operation - DEBUG - find
+2012-06-10 03:06:47,550 - operation.Search - DEBUG - finding objects
+2012-06-10 03:06:47,550 - operation.Search - DEBUG - returning all objects
+2012-06-10 03:06:47,550 - operation.Search - DEBUG - before sorting
+2012-06-10 03:06:47,550 - operation.Search - DEBUG - after sorting
+2012-06-10 03:06:47,550 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false

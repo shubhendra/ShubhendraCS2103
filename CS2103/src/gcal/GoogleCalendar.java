@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 /*import com.google.gdata.client.Query;
 import com.google.gdata.client.calendar.CalendarQuery;*/
 import com.google.gdata.client.calendar.CalendarService;
-import com.google.gdata.data.Content;
+//import com.google.gdata.data.Content;
 import com.google.gdata.data.DateTime;
 import com.google.gdata.data.PlainTextConstruct;
 import com.google.gdata.data.calendar.CalendarEventEntry;
@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import data.Task;
 import data.TaskDateTime;
-import parser.Parser;
+//import parser.Parser;
 public class GoogleCalendar
 {
 	private Logger logger = Logger.getLogger(GoogleCalendar.class.getName());
@@ -35,7 +35,7 @@ public class GoogleCalendar
 	private String password;
 	private static boolean loggedIn;
 	private static URL userCalendarUrl;
-	Parser testParser=new Parser();
+	//Parser testParser=new Parser();
 	/*private Task task1=testParser.parseForAdd("Go to Airport on 10 june 2012 at 4 pm");
 	private Task task2=testParser.parseForAdd("Go for a movie on 8 june 2012 at 9 pm");
 	private Task task3=testParser.parseForAdd("Go buy shoes at Vivo on 9 june 2012 at 10 am");*/

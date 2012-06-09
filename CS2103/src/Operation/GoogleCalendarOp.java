@@ -2,6 +2,8 @@ package operation;
 
 import org.apache.log4j.Logger;
 
+import constant.OperationFeedback;
+
 import data.Task;
 import storagecontroller.StorageManager;
 import gcal.GoogleCalendar;
@@ -72,12 +74,14 @@ public class GoogleCalendarOp extends Operation {
 		return true;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Could not login into Google Calendar services.";
-	}
-
+		return null;
+	}      
+               
+    
+	
+	
 	@Override
 	public String getOperationName() {
 		// TODO Auto-generated method stub

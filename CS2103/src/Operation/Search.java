@@ -1,6 +1,11 @@
+/**
+ * 
+ */
 package operation;
 
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 import data.TaskDateTime;
 import data.CompareByDate;
 import java.util.ArrayList;
@@ -40,24 +45,30 @@ public class Search extends Operation {
 	}
 
 	@Override
+	
 	public boolean isInputCorrect(String command) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Search is unavailable";
-	}
+		return null;
+	}      
+               
+    
+	
+	
 
 	@Override
+	
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return commandName;
 	}
-
+	
 	@Override
+	
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 
@@ -71,7 +82,11 @@ public class Search extends Operation {
 		
 		if (params.toLowerCase().contains("*.*")) {
 			logger.debug("returning all objects");
-			return returnAllTasks(params);
+			return returnAllTasks();
+		}
+		else if (params.toLowerCase().contains("today*.*")){
+			logger.debug("returning todays objects");
+			return searchTodaysTasks();
 		}
 		Task parsedTask=parseCommand(params);
 		
@@ -89,7 +104,7 @@ public class Search extends Operation {
 		return newParser.parseForSearch(params);
 	}
 
-	private Task[] returnAllTasks(String params) {
+	private Task[] returnAllTasks() {
 		// TODO Auto-generated method stub
 		Task[] unsorted=StorageManager.getAllTasks();
 		Comparator<Task> compareByDate = new CompareByDate();
@@ -109,8 +124,25 @@ public class Search extends Operation {
 		return unsorted;
 		//return null;
 	}
-
-	public Task[] search(Task taskToSearch) {
+	
+	private Task[] searchTodaysTasks(){
+		Task [] allTasks=returnAllTasks();
+		ArrayList<Task> todaysTasks=new ArrayList<Task>();;
+		for(Task param:allTasks){
+			if (param.getStart()!=null && param.getStart().getDate().getTimeMilli()==TaskDateTime.getCurrentDate().getTimeMilli())
+			{
+				todaysTasks.add(param);
+			} else if (param.getEnd()!=null && param.getEnd().getTimeMilli()==TaskDateTime.getCurrentDate().getTimeMilli()){
+				todaysTasks.add(param);
+			}
+			
+		}
+		if (todaysTasks.size()!=0)
+			return (Task[]) todaysTasks.toArray(new Task[todaysTasks.size()]);
+		return null;
+	}
+	
+	Task[] search(Task taskToSearch) {
 		// TODO Auto-generated method stub
 		if (taskToSearch.getTaskId() != null) {
 			return new Task[]{StorageManager.getTaskById(taskToSearch.getTaskId())};
@@ -229,7 +261,12 @@ public class Search extends Operation {
 		}
 		return false;
 	}
-	
+	/**
+	 * 
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return
+	 */
 	private boolean doesLabelMatch(Task taskToSearch, Task existingTask){
 		
 		if (taskToSearch.getLabels()==null || taskToSearch.getLabels().size()==0)
@@ -272,6 +309,12 @@ public class Search extends Operation {
 		}
 		return false;
 	}
+	/**
+	 * 
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return
+	 */
 	private boolean matches(Task taskToSearch, Task existingTask) {
 		// TODO Auto-generated method stub
 	

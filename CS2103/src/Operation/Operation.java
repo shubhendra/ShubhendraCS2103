@@ -1,6 +1,8 @@
+
+
 package operation;
 
-import java.util.Scanner;
+import constant.OperationFeedback;
 
 import org.apache.log4j.Logger;
 
@@ -14,6 +16,11 @@ public abstract class Operation {
 	
 	protected boolean isUndoAble=false;
 	private static Logger logger=Logger.getLogger(Operation.class);
+	/**
+	 * 
+	 * @param userCommand
+	 * @return
+	 */
 	public static Operation getOperationObj(String userCommand)
 	{
 		Operation object;
@@ -62,28 +69,50 @@ public abstract class Operation {
 		return object; 
 	}
 	
-	
+	/**
+	 * 
+	 * @param userCommand
+	 * @return
+	 */
 	public abstract Task[] execute(String userCommand);
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public abstract Task[] undo();
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public abstract Task[] redo();
-	
+	/**
+	 * 
+	 * @param taskToBeExecuted
+	 * @return
+	 */
 	protected Task[] execute(Task taskToBeExecuted)
 	{
 		return null;
 		
 	}		
 	public abstract boolean isUndoAble();
-	
+	/**
+	 * 
+	 * @param command
+	 * @return
+	 */
 	public abstract boolean isInputCorrect(String command);
-	public abstract String getErrorMessage();
-	
+	/**
+	 * 
+	 * @return
+	 */
+	public abstract OperationFeedback getOpFeedback();
+	/**
+	 * 
+	 * @return
+	 */
 	public abstract String getOperationName();
 	
-	/**
-	 * @param args
-	 */
-
+	
 
 }

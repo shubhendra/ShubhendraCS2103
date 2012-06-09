@@ -1,7 +1,7 @@
 package logic;
 
 //import java.io.FileNotFoundException;
-import gui.UIController;
+
 
 import java.util.Stack;
 
@@ -240,6 +240,7 @@ public class JIDLogic {
 				undoStack.push(op);
 				logger.debug("isundoable");
 			}
+			//UIController.sendOperationFeedback(op.getOpFeedback());
 			//UIController.showTopPopUpMsg(op.getErrorMessage());
 			return result;
 			

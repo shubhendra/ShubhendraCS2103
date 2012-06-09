@@ -6,6 +6,8 @@ package operation;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
+import constant.OperationFeedback;
+
 import parser.Parser;
 import storagecontroller.StorageManager;
 import data.Task;
@@ -115,11 +117,7 @@ public class Add extends Operation {
 		return isUndoAble;
 	}
 
-	@Override
-	public String getErrorMessage() {
-		// TODO Auto-generated method stub
-		return "Task could not be added.";
-	}
+	
 
 	@Override
 	public String getOperationName() {
@@ -149,6 +147,12 @@ private static Logger logger = Logger.getLogger(Add.class);
 			return StorageManager.addTask(taskAdded);
 		}
 		return false;
+	}
+
+	@Override
+	public OperationFeedback getOpFeedback() {
+		// TODO Auto-generated method stub
+		return null;
 	}      
                
     

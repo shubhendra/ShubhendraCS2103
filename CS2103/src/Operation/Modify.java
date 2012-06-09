@@ -1,5 +1,7 @@
 package operation;
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 import parser.Parser;
 import data.Task;
 import storagecontroller.StorageManager;
@@ -80,11 +82,14 @@ public class Modify extends BaseSearch{
 		return false;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Task could not be edited.";
-	}
+		return null;
+	}      
+               
+    
+	
+		
 
 	@Override
 	public String getOperationName() {
