@@ -20,6 +20,11 @@ import javax.swing.Timer;
 
 import org.apache.log4j.Logger;
 
+/**
+ * For reminding users of the upcoming task
+ * @author Ramon
+ *
+ */
 public class Reminder {
 	
 	private static Logger logger=Logger.getLogger(Reminder.class);
@@ -34,6 +39,10 @@ public class Reminder {
 	static ActionListener reminderPerformer;
 	static GregorianCalendar now;
 
+	/**
+	 * constructor
+	 * @param tray where the message will be shown
+	 */
 	public Reminder(SystemTray tray) {
 		this.tray = tray;
 		logger.debug("tray: " + tray!=null);
@@ -41,6 +50,9 @@ public class Reminder {
 		runReminder();
 	}
 
+	/**initialize what the action will be when there is an action from the timer
+	 * 
+	 */
 	public static void init() {
 		reminderPerformer = new ActionListener() {
 			@Override
@@ -61,6 +73,9 @@ public class Reminder {
 		};
 	}
 
+	/**
+	 * update next hour
+	 */
 	private static void setUpdateNextHour() {
 		// TODO Auto-generated method stub
 		Timer autoRefresh = new Timer( 1000*60*60, new ActionListener(){
@@ -73,6 +88,9 @@ public class Reminder {
 		autoRefresh.start();
 	}
 
+	/**
+	 * resetting reminder
+	 */
 	protected static void runReminder() {
 		// TODO Auto-generated method stub
 		now = new GregorianCalendar();
@@ -85,6 +103,10 @@ public class Reminder {
 			setUpdateNextHour();
 	}
 
+	/**
+	 * set the timer delay
+	 * @param timeLeft delayed time before the task starts
+	 */
 	private static void setTimer(int timeLeft) {
 		// TODO Auto-generated method stub
 		logger.debug("setTimer: " + timeLeft);
@@ -97,6 +119,11 @@ public class Reminder {
 		timer.start();
 	}
 
+	/**
+	 * find time left for the task to start
+	 * @param task task that we want to find the time left
+	 * @return time left in millisecond
+	 */
 	private static long findTimeLeft(Task task) {
 		if(task == null)
 			return -1;
@@ -127,6 +154,10 @@ public class Reminder {
 		return timeDiff;
 	}
 
+	/**
+	 * find the upcoming task
+	 * @return the task with earliest starting time and has not started
+	 */
 	private static Task findLatestTask() {
 		JIDLogic.setCommand("find");
 		Task[] tasks = JIDLogic.executeCommand("find *.*");
@@ -145,19 +176,19 @@ public class Reminder {
 		return null;		
 	}
 	
+	/**
+	 * check whether the task has already started or not
+	 * @param task that we want to check
+	 * @return true if the task has not started
+	 */
 	private static boolean isPassed(Task task) {
 		return findTimeLeft(task) < 0;
 	}
 
+	/**
+	 * making an update to reminder
+	 */
 	public static void update() {
 		runReminder();
-	}
-	
-	public static void setDelay(long newDelay) {
-		delay = newDelay;
-	}
-	
-	public static void main(String[] arguments) {
-		new Reminder(null);
 	}
 }

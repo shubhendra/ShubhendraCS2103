@@ -6,7 +6,7 @@ import data.TaskDateTime;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import logic.JIDLogic;
+
 import org.apache.log4j.Logger;
 
 public class Parser {
@@ -44,7 +44,7 @@ public class Parser {
 	private Task task;
 	private String command;
 	
-	private Logger logger=Logger.getLogger(JIDLogic.class);
+	private Logger logger=Logger.getLogger(Parser.class);
 	
 	/**
 	 * Default constructor

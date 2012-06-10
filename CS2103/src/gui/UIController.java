@@ -25,7 +25,11 @@ public class UIController {
 	Reminder reminder;
 	static JotItDownTray JIDtray;
 	static OperationFeedback operationFeedback = OperationFeedback.VALID;
+	static boolean loginOn = false;
 	
+	/**
+	 * constructor
+	 */
 	public UIController() {
 		TopPopUp.createTopPopUp();
 		ExpandComponent.initialize();
@@ -39,7 +43,7 @@ public class UIController {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 
-				JIDtray = new JotItDownTray(mainJFrame);
+				JIDtray = new JotItDownTray();
 				Reminder reminder = new Reminder(JIDtray.getTray());
 			}
 		});
@@ -48,12 +52,20 @@ public class UIController {
 	}
 	
 	
+	/**
+	 * where the program starts
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		JIDLogic.JIDLogic_init();
 		
 		new UIController();
 	}
 	
+	/**
+	 * getting text from clipboard
+	 * @return text
+	 */
 	public static String getClipboard() {
 	    Transferable t = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
 
@@ -68,43 +80,80 @@ public class UIController {
 	    return null;
 	}
 	
+	/**
+	 * for showing pop up message on the top or mainJFrame
+	 * @param str shown message
+	 */
 	public static void showTopPopUpMsg(String str) {
 		mainJFrame.showPopup(str);
 	}
 	
+	/**
+	 * show message at tray
+	 * @param caption header
+	 * @param text message
+	 */
 	public static void showTrayMsg(String caption, String text) {
 		JIDtray.showText(caption, text);
 	}
 	
+	/**
+	 * updating GUI
+	 */
 	public static void refresh() {
 		ExpandComponent.updateJTable();
 		Reminder.update();
 	}
 	
+	/**
+	 * check whether the window is visible or not
+	 * @return true if window is visible
+	 */
 	public static boolean isWindowVisible() {
 		return mainJFrame.isVisible();
 	}
 	
+	/**
+	 * show the main Window
+	 */
 	public static void showWindow() {
 		mainJFrame.showFrame();
 	}
 	
+	/**
+	 * hide the main Window
+	 */
 	public static void hideWindow() {
 		mainJFrame.hideFrame();
 	}
 	
+	/**
+	 * check whether the frame is expanded or not
+	 * @return true if the frame is expanded
+	 */
 	public static boolean isFrameExpand() {
 		return mainJFrame.isExpand();
 	}
 	
+	/**
+	 * expand the frame
+	 */
 	public static void expandFrame() {
 		mainJFrame.expandFrame();
 	}
 	
+	/**
+	 * contract the frame
+	 */
 	public static void contractFrame() {
 		mainJFrame.contractFrame();
 	}
 	
+	/**
+	 * log in to google calendar
+	 * @param username username for Google login
+	 * @param password password for Google login
+	 */
 	public static void logInToGCalendar(String username, char[] password) {
 		JIDLogic.setCommand("login");
 		String execmd = "login " + username + " ";
@@ -113,6 +162,8 @@ public class UIController {
 		System.out.println(execmd);
 		JIDLogic.executeCommand(execmd);
 		UIController.refresh();
+		if(operationFeedback == OperationFeedback.VALID)
+			UIController.showTopPopUpMsg("Log in successfully!");
 		UIController.showInvalidDisplay();
 	}
 	
@@ -126,10 +177,17 @@ public class UIController {
 	
 	//UI.sendOperationFeedback(OperationFeedback.INVALID_);
 	
+	/**
+	 * get operation feedback
+	 * @return operation feedback
+	 */
 	public static OperationFeedback getOperationFeedback() {
 		return operationFeedback;
 	}
 	
+	/**
+	 * show display when there is an invalid feedback from the operation
+	 */
 	public static void showInvalidDisplay() {
 		if(mainJFrame.isVisible())
 			switch(operationFeedback) {
@@ -166,5 +224,17 @@ public class UIController {
 				JIDtray.showText("Jot It Down!", "search not found!");
 			}
 		}
+	}
+	
+	/**
+	 * 
+	 * @return true if login dialog is opened
+	 */
+	public static boolean isLoginOn() {
+		return loginOn;
+	}
+	
+	public static void setLoginOn(boolean status) {
+		loginOn = status;
 	}
 }

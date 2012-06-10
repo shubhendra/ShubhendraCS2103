@@ -11,15 +11,19 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.*;
 
+/**
+ * sound for alarm function
+ * @author Ramon
+ *
+ */
 public class AlarmSound
 {
 	static Clip clip;
 	
-	public AlarmSound()
-	{
-		createMusic();
-	}
-	
+	/**
+	 * start /stop music
+	 * @param value true = start, false = stop
+	 */
 	public static void music(boolean value)
 	{
 		if(clip == null)
@@ -33,6 +37,9 @@ public class AlarmSound
 			clip.stop();
 	}
 	
+	/**
+	 * initialize music
+	 */
 	private static void createMusic() {
 		AudioInputStream audio;         
 		try
@@ -51,11 +58,5 @@ public class AlarmSound
 		{}
 		catch(LineUnavailableException e2)
 		{}
-	}
-	
-	public static void main(String[] args) {
-		createMusic();
-		System.out.println("have created Music");
-		music(true);
 	}
 }

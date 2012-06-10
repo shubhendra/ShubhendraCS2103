@@ -14,7 +14,6 @@ import gui.mainWindow.extended.AutoCompletion;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.TopPopUp;
-import gui.reminder.Reminder;
 import logic.JIDLogic;
 
 //import com.seaglasslookandfeel.*;
@@ -25,22 +24,16 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
-import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import javax.swing.UIManager;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -49,14 +42,13 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 import javax.swing.JTextField;
 
 import constant.OperationFeedback;
 
 /**
- * 
+ * Main Window
  * @author Ramon
  */
 public class MainJFrame extends javax.swing.JFrame {
@@ -66,7 +58,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
 		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
-		, IMPORTANT
+		, IMPORTANT, LOGIN, LOGOUT
 	};
 	
 	boolean edit = false;
@@ -222,6 +214,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		this.setSize(400, 100);
 	}
 	
+	/**
+	 * set action of each component in MainJFrame
+	 */
 	private void setAction() {
 		setJFrameAction();
 		setJComboBox1Action();
@@ -232,6 +227,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		setdownButtonActionExpand();
 	}
 	
+	/**
+	 * set action of the 2nd button to minimize frame when clicked
+	 */
 	private void setbutton2Action() {
 		button2.addMouseListener(new MouseAdapter() {
 
@@ -254,6 +252,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		
 	}
 
+	/**
+	 * set action of the first button to toggle help window
+	 */
 	private void setbutton1Action() {
 		button1.addMouseListener(new MouseAdapter() {
 
@@ -273,12 +274,13 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				button1.setIcon(Resource.helpImg);
-			}
-
-			
+			}			
 		});
 	}
 
+	/**
+	 * set the expand/contract button to be a contract button to contract when clicked
+	 */
 	public void setdownButtonActionContract() {
 		downButton.setToolTipText("Contract");
 
@@ -331,6 +333,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		});
 	}
 
+	/**
+	 * set expand/contract button to be an expand button to expand when clicked
+	 */
 	public void setdownButtonActionExpand() {
 		downButton.setToolTipText("Expand");
 
@@ -385,6 +390,10 @@ public class MainJFrame extends javax.swing.JFrame {
 		});
 	}
 
+	
+	/**
+	 * set action of the third button to exit when clicked
+	 */
 	private void setbutton3Action() {
 		button3.setToolTipText("Close");
 
@@ -412,9 +421,15 @@ public class MainJFrame extends javax.swing.JFrame {
 		});
 	}
 	
+	/**
+	 * set logo button
+	 */
 	private void setlogoAction() {
 	}
 
+	/**
+	 * set action of JComboBox1 
+	 */
 	private void setJComboBox1Action() {
 		
 		int index;
@@ -593,8 +608,7 @@ public class MainJFrame extends javax.swing.JFrame {
 											if(tasks!=null) {
 												showPopup( curState.toString()+ " " 
 														+ tasks[0]);
-												Reminder.update();
-												ExpandComponent.updateJTable();
+												UIController.refresh();
 											}
 										}
 									break;									
@@ -603,7 +617,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										expandFrame();
 									break;
 									case LIST:
-										ExpandComponent.updateJTable();
+										UIController.refresh();
 										expandFrame();
 									break;
 									case EXIT:
@@ -615,15 +629,20 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case OVERDUE:
 										new Action.OverdueAction().actionPerformed(null);
-									break;
+										break;
+									case LOGIN:
+										System.out.println("case LOGIN");
+										new Action.GCalendarAction().actionPerformed(null);
+										break;
+									case LOGOUT:
+										new Action.GCalendarOutAction().actionPerformed(null);
+										break;
 									}
 									
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
 										jBoxCompletion.setStandardModel();
 										editorcomp.setText("");
 										curState = STATE.NULL;
-										
-										//UIController.refresh();
 									}
 									else {
 										UIController.showInvalidDisplay();
@@ -704,6 +723,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.REDO;
 								if(firstWord.equalsIgnoreCase("important"))
 									return STATE.IMPORTANT;
+								if(firstWord.equalsIgnoreCase("login"))
+									return STATE.LOGIN;
 								return STATE.NULL;
 							} 
 
@@ -724,6 +745,12 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	}
 
+	
+	/**
+	 * add Frame actions :
+	 * (1) making other components hide/show according to the Frame
+	 * (2) making it and its extended components movable
+	 */
 	private void setJFrameAction() {
 		addWindowListener(new WindowAdapter(){
 			@Override
@@ -734,8 +761,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void windowDeactivated(WindowEvent arg0) {
-				if(HelpFrame.isShown());
+				if(HelpFrame.isShown() && !UIController.isLoginOn()) {
 					HelpFrame.hideHelpTempolarily();
+				}
 			}
 		});		
 		
@@ -772,6 +800,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	}
 
+	/**show pop up on the top
+	 * 
+	 * @param str text in pop up
+	 */
 	public static void showPopup(String str) {
 		logger.debug("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
@@ -780,13 +812,14 @@ public class MainJFrame extends javax.swing.JFrame {
 		TopPopUp.jFrame.setFocusable(true);
 	}
 
+	/**
+	 * show the current window
+	 */
 	public void showFrame() {
 		SwingUtilities.invokeLater(new Runnable() {
 
 			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				
+			public void run() {				
 				MainJFrame.this.setVisible(true);
 				MainJFrame.this.toFront();
 				
@@ -795,7 +828,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
 		});
 	}
+	
 
+	/**
+	 * hide the current window
+	 */
 	public void hideFrame() {
 		SwingUtilities.invokeLater(new Runnable() {
 
@@ -809,6 +846,10 @@ public class MainJFrame extends javax.swing.JFrame {
 		});
 	}
 
+	/**
+	 * set the input text field
+	 * @param string the text that is needed to be shown
+	 */
 	public void setInputText(final String string) {
 		SwingUtilities.invokeLater(new Runnable() {
 
@@ -821,7 +862,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
 		});
 	}
-
+/**
+ * get a JButton sub component of a container
+ * @param container that we want to extract
+ * @return JButton sub component
+ */
 	private static JButton getButtonSubComponent(Container container) {
 		if (container instanceof JButton) {
 			return (JButton) container;
@@ -836,6 +881,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		return null;
 	}
 	
+	/** expand the frame if it is contracted
+	 * 
+	 */
 	public void expandFrame() {
 		if(!expand) {
 			MainJFrame.this.setSize(400,400);
@@ -845,7 +893,9 @@ public class MainJFrame extends javax.swing.JFrame {
 			setdownButtonActionContract();
 		}
 	}
-	
+	/**
+	 * contract the frame if it is expanded
+	 */
 	public void contractFrame() {
 		if (expand) {
 			MainJFrame.this.setSize(400, 100);
@@ -855,10 +905,17 @@ public class MainJFrame extends javax.swing.JFrame {
 		}
 	}
 	
+	/**
+	 * check whether it is expanded or not
+	 * @return boolean value true if it is expanded
+	 */
 	public boolean isExpand() {
 		return expand;
 	}
 	
+	/**
+	 * add hotkey to mainJFrame
+	 */
     protected void addBindings() {
         InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
         ActionMap actionMap = this.getRootPane().getActionMap();

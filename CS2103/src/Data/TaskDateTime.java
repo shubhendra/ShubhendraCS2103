@@ -7,7 +7,6 @@ import java.util.Date;
 //import java.util.Date;
 import java.util.GregorianCalendar;
 
-import operation.BaseSearch;
 
 import org.apache.log4j.Logger;
 public class TaskDateTime {
@@ -33,7 +32,7 @@ public class TaskDateTime {
 		ISO_DATE_TIME.setLenient(false);
 		ISO_DATE_TIME.setLenient(false);
 	}
-	private static Logger logger=Logger.getLogger(BaseSearch.class);
+	private static Logger logger=Logger.getLogger(TaskDateTime.class);
 
 /** defsault constructor
  * 

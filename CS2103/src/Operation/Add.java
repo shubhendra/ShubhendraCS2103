@@ -18,13 +18,18 @@ public class Add extends Operation {
 	private Task addedTask;
 	private String commandName;
 //	private enum addErrorCode
-	
+	/**
+	 * Constructor
+	 * @param command
+	 */
 	public Add (String command)
 	{
 		commandName=command;
 		
 	}
-	
+	/**
+	 * Constructor
+	 */
 	public Add()
 	{
 		commandName="add";
@@ -58,7 +63,7 @@ public class Add extends Operation {
 	/**
 	 * 
 	 * @param params
-	 * @return
+	 * @return Task sent for parsing
 	 */
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
@@ -76,6 +81,9 @@ public class Add extends Operation {
 	}
 
 	@Override
+	/**
+	 * @return Task array of the task that needs to be deleted in order for this action to be undone
+	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
 		Task[] undone = new Task[1];
@@ -93,7 +101,7 @@ public class Add extends Operation {
 		
 	}
 	/**
-	 * 
+	 * @return Task array of the Task that is added again for redone to be completed
 	 */
 	public Task[] redo() {
 		
@@ -112,6 +120,10 @@ public class Add extends Operation {
 	
 
 	@Override
+	/**
+	 * @return Whether add functionality can be redone or not
+	 * 
+	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
@@ -120,6 +132,10 @@ public class Add extends Operation {
 	
 
 	@Override
+	/**
+	 * @return the Operation name of add operation
+	 * 
+	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return commandName;
@@ -127,18 +143,11 @@ public class Add extends Operation {
 	
 private static Logger logger = Logger.getLogger(Add.class);
     
-    public static void main(String[] args) {
-        logger.info("hi");
-    	Add adder=new Add();
-    	
-    	Task[] abc=adder.execute("add *go to meet nirav weekly by 3.45pm 3/8/2012  @work @home");
-    	if (abc[0]!=null)
-    	System.out.println(abc[0].getName());
-    }
+    
 	/**
 	 * 
 	 * @param taskAdded
-	 * @return
+	 * @return True/false depending on whether the task can be added
 	 */
     public boolean add(Task taskAdded) {
 		// TODO Auto-generated method stub
@@ -150,6 +159,9 @@ private static Logger logger = Logger.getLogger(Add.class);
 	}
 
 	@Override
+	/**
+	 * @return Various status messaged associated with adding of tasks
+	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return null;

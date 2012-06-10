@@ -15,21 +15,15 @@ import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
 
-import javax.swing.JComponent;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.text.JTextComponent;
 
 /**
- *
+ * Google Calendar log in frame
  * @author Ramon
  */
 public class LogInDialog extends javax.swing.JDialog {
@@ -39,6 +33,7 @@ public class LogInDialog extends javax.swing.JDialog {
      */
     public LogInDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+    	UIController.setLoginOn(true);
         this.initComponents();
         this.addEvent();
         this.setTabSequence();
@@ -47,8 +42,15 @@ public class LogInDialog extends javax.swing.JDialog {
         this.setVisible(true);
     }
 
+    /**
+     * constructure
+     * @param parent JFrame on which this dialog is based
+     * @param x x-coordinate that this dialog will be displayed
+     * @param y y-coordinate that this dialog will be displayed
+     */
     public LogInDialog(java.awt.Frame parent, int x, int y) {
     	super(parent, true);
+    	UIController.setLoginOn(true);
         this.initComponents();
         this.addEvent();
         this.setTabSequence();
@@ -141,15 +143,28 @@ public class LogInDialog extends javax.swing.JDialog {
         
     }// </editor-fold>
 
+    /**
+     * modify log in button action
+     * @param evt
+     */
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {
-    	UIController.logInToGCalendar(userTextField.getText(), passTextField.getPassword());
     	this.dispose();
+    	UIController.logInToGCalendar(userTextField.getText(), passTextField.getPassword());
+    	UIController.setLoginOn(false);
     }
     
+    /**
+     * dispose this window when press on cancel button
+     * @param evt
+     */
 	private void cancelButtonActionPerformed(ActionEvent evt) {
 		this.dispose();
+    	UIController.setLoginOn(false);
 	}
     
+	/**
+	 * set look and feel of this dialog box
+	 */
     private static void setLook() {
     	
 
@@ -229,8 +244,12 @@ public class LogInDialog extends javax.swing.JDialog {
     private javax.swing.JTextField userTextField;
     private javax.swing.JLabel userLabel;
     private javax.swing.JLabel passLabel;
+    private static boolean shown = true;
     // End of variables declaration
     
+    /**
+     * highlight text in the text field when selected
+     */
     private void addEvent() {
     	userTextField.addFocusListener(new FocusAdapter() {
 			@Override
@@ -247,10 +266,18 @@ public class LogInDialog extends javax.swing.JDialog {
     	});
     }
     
+    /**
+     * modify tab sequence of diagram
+     */
     private void setTabSequence() {
         setFocusTraversalPolicy(new MyFocusTraversalPolicy());
     }
     
+    /**
+     * Modified FocusTraversalPolicy for indicating tab sequence
+     * @author Ramon
+     *
+     */
     class MyFocusTraversalPolicy extends FocusTraversalPolicy {
 
 		@Override
@@ -298,7 +325,9 @@ public class LogInDialog extends javax.swing.JDialog {
     
     Point point = new Point();
     
-    
+    /**
+     * make login dialog movable
+     */
     private void setMovable() {
 		addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
@@ -318,4 +347,5 @@ public class LogInDialog extends javax.swing.JDialog {
 			}
 		});
     }
+    
 }

@@ -13,6 +13,11 @@ import logic.JIDLogic;
 
 import org.apache.log4j.*;
 
+/**
+ * for making hotkey
+ * @author Ramon
+ *
+ */
 public class Binding {
 	
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
@@ -21,6 +26,12 @@ public class Binding {
 	ActionMap actionMap;
 	JFrame jFrame;
 	
+	/**
+	 * constructor
+	 * @param jframe the focused window
+	 * @param inputMap inputMap from that window
+	 * @param actionMap actionMap from that window
+	 */
 	Binding(JFrame jframe, InputMap inputMap, ActionMap actionMap) {
 		this.jFrame = jFrame;
 		this.inputMap = inputMap;
@@ -28,6 +39,9 @@ public class Binding {
 		addKeyBinding();
 	}
 	
+	/**
+	 * mapping hot keys
+	 */
 	private void addKeyBinding() {
 	       KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK);
 	        inputMap.put(key, "undo");

@@ -1,5 +1,5 @@
 package gcal;
-
+/*
 import com.google.gdata.data.extensions.Reminder.Method;
 
 import data.Task;
@@ -18,4 +18,4 @@ public class GoogleCalendarTest {
 		Task one=new Task("Go to CS2103 lecture",null,start1,end1,null,"weekly",false,false);
 		test.addTask(one, 0, Method.NONE);
 	}
-}
+}*/

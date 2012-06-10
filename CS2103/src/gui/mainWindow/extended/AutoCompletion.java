@@ -4,7 +4,12 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.text.*;
 
-
+/**
+ * auto completion textbox
+ * (Still incomplete)
+ * @author Ramon
+ *
+ */
 public class AutoCompletion extends PlainDocument {
     JComboBox comboBox;
     ComboBoxModel model;
@@ -26,6 +31,10 @@ public class AutoCompletion extends PlainDocument {
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
     
+    /**
+     * constructor
+     * @param comboBox a comboBox that we want an autocomplete function
+     */
     public AutoCompletion(final JComboBox comboBox) {
     	
         this.comboBox = comboBox;
@@ -95,6 +104,9 @@ public class AutoCompletion extends PlainDocument {
         
     }
     
+    /**
+     * set standard model of this combo box
+     */
     public void setStandardModel() {
 		// TODO Auto-generated method stub
     	popupAllow = false;
@@ -103,6 +115,10 @@ public class AutoCompletion extends PlainDocument {
         model = comboBox.getModel();
 	}
     
+    /**
+     * set new model
+     * @param strings list of items in pop up
+     */
     public void setNewModel(String[] strings) {
     	popupAllow = true;
     	if(strings==null) {
@@ -119,6 +135,10 @@ public class AutoCompletion extends PlainDocument {
     	}	
     }
 
+    /**
+     * let the comboBox editable and have autocompletion function
+     * @param comboBox
+     */
 	public static void enable(JComboBox comboBox) {
         // has to be editable
         comboBox.setEditable(true);
@@ -126,6 +146,10 @@ public class AutoCompletion extends PlainDocument {
         new AutoCompletion(comboBox);
     }
     
+	/**
+	 * config an editor
+	 * @param newEditor a wanted editor
+	 */
     void configureEditor(ComboBoxEditor newEditor) {
         if (editor != null) {
             editor.removeKeyListener(editorKeyListener);
@@ -140,6 +164,11 @@ public class AutoCompletion extends PlainDocument {
         }
     }
     
+    /**
+     * remove string
+     * @param offs starting point
+     * @param len length of string
+     */
     public void remove(int offs, int len) throws BadLocationException {
         // return immediately when selecting an item
         if (selecting) return;
@@ -158,6 +187,11 @@ public class AutoCompletion extends PlainDocument {
         }
     }
     
+    /**
+     * insert string into a comboBox
+     * @param offs offset
+     * @param string inserted string
+     */
     public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
         // return immediately when selecting an item
         if (selecting) return;
@@ -187,6 +221,10 @@ public class AutoCompletion extends PlainDocument {
         }
     }
     
+    /**
+     * setText in the comboBox
+     * @param text wanted text
+     */
     private void setText(String text) {
         try {
             // remove all text and insert the completed string
@@ -197,17 +235,30 @@ public class AutoCompletion extends PlainDocument {
         }
     }
     
+    /**
+     * highlight text to the end of string
+     * @param start starting point
+     */
     public void highlightCompletedText(int start) {
         editor.setCaretPosition(getLength());
         editor.moveCaretPosition(start);
     }
     
+    /**
+     * set model select the item
+     * @param item item that will be selected
+     */
     private void setSelectedItem(Object item) {
         selecting = true;
         model.setSelectedItem(item);
         selecting = false;
     }
     
+    /**
+     * find the matching pattern in the pop up list
+     * @param pattern string that we want to find
+     * @return a first object in the pop up list
+     */
     private Object lookupItem(String pattern) {
         Object selectedItem = model.getSelectedItem();
         // only search for a different item if the currently selected does not match
@@ -228,7 +279,12 @@ public class AutoCompletion extends PlainDocument {
         return null;
     }
     
-    // checks if str1 starts with str2 - ignores case
+    /**
+     * checks if str1 starts with str2 - ignores case
+     * @param str1
+     * @param str2
+     * @return
+     */
     private boolean startsWithIgnoreCase(String str1, String str2) {
         return str1.toUpperCase().startsWith(str2.toUpperCase());
     }
@@ -256,10 +312,16 @@ public class AutoCompletion extends PlainDocument {
     }
     */
     
+    /**
+     * start auto completion functionality
+     */
     public void startWorking() {
     	working = true;
     }
     
+    /**
+     * stop auto completion functionality
+     */
     public void stopWorking() {
     	working = false;
     }

@@ -38,8 +38,10 @@ public class AlarmFrame extends javax.swing.JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * make stop button stop music and dispose the frame
+     */
     private void addAction() {
-		// TODO Auto-generated method stub
 		stopButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -142,6 +144,10 @@ public class AlarmFrame extends javax.swing.JFrame {
     private javax.swing.JLabel taskDetailLabel;
     // End of variables declaration
     
+    /**show detail of the task that is alarmed
+     * 
+     * @param task task that is reminded
+     */
     private void setTextTaskDetailLabel(Task task) {
     	String str;
     	

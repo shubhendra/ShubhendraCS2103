@@ -44,8 +44,10 @@ public class Resource {
 	public final static Image backgroundImage = iconToImage(backgroundLogo);
 	public final static Image loginBGImage = iconToImage(loginBG);
 	
+	public final static ImageIcon starImportant = createImageIcon("Images/star_important.png","");
+	public final static ImageIcon starUnimportant = createImageIcon("Images/star_unimportant.png","");
 	
-	public final static URL alarmSoundURL = Resource.class.getResource("sound/alarm.wav");
+	public final static URL alarmSoundURL = Resource.class.getResource("alarm.wav");
 	//public final static BufferedImage backgroundBuffered = BufferedImageBuilder.bufferImage(backgroundImage);
 	
 	static Image iconToImage(Icon icon) {

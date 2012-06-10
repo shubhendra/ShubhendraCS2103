@@ -5,13 +5,21 @@
 package gui.mainWindow.extended;
 
 import java.awt.Color;
+import java.awt.Container;
 
+import javax.swing.JComponent;
+import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
+
 import data.*;
 /**
- *
+ *the bottom part of the mainWindow component
  * @author Ramon
  */
 public class ExpandComponent{
@@ -55,59 +63,104 @@ public class ExpandComponent{
         jTable1.setFocusable(true);
         jTable1.setMaximumSize(new java.awt.Dimension(370, 30));
         jTable1.setMinimumSize(new java.awt.Dimension(370, 370));
-        jTable1.setRowSelectionAllowed(true);
+        //jTable1.setRowSelectionAllowed(true);
         jTable1.setCellSelectionEnabled(true);
         jTable1.setRowSorter(null);
+        jTable1.setColumnSelectionInterval(0, 0);
+        
+        jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        jTable1.getColumnModel().getColumn(0).setPreferredWidth(343);
+        jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
+        
+        jTable1.setShowHorizontalLines(true);
+        jTable1.setShowVerticalLines(false);
         
         jScrollPane1.setViewportView(jTable1);
         jScrollPane1.setBounds(15, 115, 370, 270);
+        jScrollPane1.setBackground(new Color(0,0,0,0));
         
+        jLayeredPane1.setBackground(new Color(0,0,0,0));
         
     }// </editor-fold>
-    
+		/**
+     * 
+     * @return JScrollPane that contains table
+     */
     public static JScrollPane getJScrollPane() {
     	return jScrollPane1;
     }
     
+    /**
+     * 
+     * @return a table that show all tasks
+     */
     public static JTable getJTable() {
     	return jTable1;
     }
     
+    /**
+     * make JTable show some tasks
+     * @param tasks tasks that will be displayed
+     */
     public static void updateJTable(Task[] tasks) {
     	autoJTable.updateJTable(tasks);
     }
     
+    /**
+     * make JTable show all tasks
+     */
     public static void updateJTable() {
     	autoJTable.updateJTable();
     }
     
-    public static void updateJTableWithTasks(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
-    }
-    
+    /**
+     * 
+     * @return all displayed tasks in jtable
+     */
     public static Task[] getAllTasks() {
     	return autoJTable.getTasks();
     }
     
+    /**
+     * 
+     * @return tasks selected in jtable
+     */
     public static Task[] getSeletedTask() {
+   
     	int[] idx = jTable1.getSelectedRows();
-    	Task[] tasks = new Task[idx.length];
+    	Task[] tasks = new Task[idx.length];	
     	for(int i=0; i<tasks.length; i++) {
     		tasks[i] = autoJTable.getTasks()[idx[i]];
     	}
     	return tasks;
     }
     
+    /**
+     * table model that has only 1 column and is not editable.
+     * @author Ramon
+     *
+     */
     static class MyTableModel extends DefaultTableModel{
+    	
+
+    	Class[] types = new Class[] { JLabel.class, JLabel.class };
+    	
     	MyTableModel() {
     		super(
     			new Object [][] {null},
-    			new String [] {"Title 1"});
+    			new String [] {"Title 1", "title 2"});
     	}
     	
     	@Override
     	public boolean isCellEditable(int row, int column) {
 			return false;
     	}
+
+    	@Override
+    	public Class<?> getColumnClass(int columnIndex) {
+    		return types[columnIndex];
+    	}
+
+
     }
 }

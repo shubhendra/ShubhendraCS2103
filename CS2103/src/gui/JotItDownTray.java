@@ -1,6 +1,5 @@
 package gui;
 
-import gui.mainWindow.MainJFrame;
 
 import java.awt.AWTException;
 import java.awt.Image;
@@ -27,27 +26,33 @@ import logic.JIDLogic;
  *
  */
 public class JotItDownTray {
-	final MainJFrame mainJFrame;
 	static SystemTray tray = SystemTray.getSystemTray();
 	PopupMenu popup;
 	Image trayImg;
 	TrayIcon trayIcon;
 	
-	JotItDownTray(final MainJFrame mainJFrame) {
-		this.mainJFrame = mainJFrame;
-		
+	/**
+	 * constructor
+	 */
+	JotItDownTray() {
 		getSystemTray();
 		addPopupMenu();
 		addTrayIcon();
 		showText("JotItDown!", "JID is running!");
 	}
 	
+	/**
+	 * initialize tray from system tray
+	 */
 	private void getSystemTray() {
 		tray = SystemTray.getSystemTray();
 		trayImg = Resource.trayImage;
 
 	}
 
+	/**
+	 * add menu to tray
+	 */
 	private void addPopupMenu() {
 		popup = new PopupMenu();
 		
@@ -74,6 +79,9 @@ public class JotItDownTray {
 
 	}
 
+	/**
+	 * add icon to tray with its action
+	 */
 	private void addTrayIcon() {
 		trayIcon = new TrayIcon(trayImg, "Jot It Down!", popup);
 		try {
@@ -113,10 +121,19 @@ public class JotItDownTray {
 		}
 	}
 	
+	/**
+	 * 
+	 * @return SystemTray tray
+	 */
 	public SystemTray getTray() {
 		return tray;
 	}
 	
+	/**
+	 * show message at the system tray
+	 * @param caption header
+	 * @param text description
+	 */
 	public void showText(String caption, String text) {
 		trayIcon.displayMessage(caption, text, MessageType.NONE);
 	}

@@ -24,7 +24,10 @@ public class Action {
 	
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	
-	
+	/**
+	 * exit the program
+	 * @author Ramon
+	 */
 	static class ExitAction extends AbstractAction {
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -33,6 +36,11 @@ public class Action {
 		}
 	}
 	
+	/**
+	 * undo the most recent task
+	 * @author Ramon
+	 *
+	 */
     static class UndoAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -49,6 +57,11 @@ public class Action {
         }
     }
 	
+    /**
+     * Delete task
+     * @author Ramon
+     *
+     */
     static class DeleteAction extends AbstractAction {
     	Task[] task;
         @Override
@@ -78,6 +91,11 @@ public class Action {
         }
     }
     
+    /**
+     * toggle completion of tasks
+     * @author Ramon
+     *
+     */
     static class CompletedAction extends AbstractAction {
     	Task[] task;
         @Override
@@ -107,6 +125,11 @@ public class Action {
         }
     }
     
+    /**
+     * toggle important of tasks
+     * @author Ramon
+     *
+     */
     static class ImportantAction extends AbstractAction {
     	Task[] task;
         @Override
@@ -140,6 +163,11 @@ public class Action {
         }
     }
     
+    /**
+     * check overdue
+     * @author Ramon
+     *
+     */
     static class OverdueAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -150,10 +178,15 @@ public class Action {
     		logger.debug(task[0].toString());
     		
     		UIController.showTopPopUpMsg(task.length + " task(s) overdue.");
-    		ExpandComponent.updateJTableWithTasks(task);
+    		ExpandComponent.updateJTable(task);
     	}
     }
     
+    /**
+     * redo operations
+     * @author Ramon
+     *
+     */
     static class RedoAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -173,6 +206,11 @@ public class Action {
     	}
     }
     
+    /**
+     * list all tasks
+     * @author Ramon
+     *
+     */
     static class ListAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -181,6 +219,11 @@ public class Action {
     	}
     }
     
+    /**
+     * expand the mainJFrame
+     * @author Ramon
+     *
+     */
     static class ExpandAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -191,12 +234,22 @@ public class Action {
     	}
     }
     
+    /**
+     * toggle help
+     * @author Ramon
+     *
+     */
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
     		HelpFrame.toggleShown();
     	}
     }
 
+    /**
+     * login to google Calendar
+     * @author Ramon
+     *
+     */
     static class GCalendarAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -204,6 +257,19 @@ public class Action {
     				, UIController.mainJFrame.getLocation().x + 60
     				, UIController.mainJFrame.getLocation().y - 120
     				);
+    	}
+    }
+    
+    /**
+     * logout from google calendar
+     */
+    static class GCalendarOutAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		JIDLogic.setCommand("logout");
+    		Task[] task = JIDLogic.executeCommand("logout");
+    		if(task != null)
+    			UIController.showTopPopUpMsg("log out successfully");
     	}
     }
 }

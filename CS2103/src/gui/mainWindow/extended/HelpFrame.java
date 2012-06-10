@@ -15,6 +15,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 
+/**
+ * showing user manual
+ * @author Ramon
+ *
+ */
 public class HelpFrame extends JFrame{
 	
 	/**
@@ -66,41 +71,70 @@ public class HelpFrame extends JFrame{
 		HelpFrame.showHelp();
 	}
 	
+	/**
+	 * set position of this frame
+	 * @param x x-coordinate of the screen
+	 * @param y y-coordinate of the screen
+	 */
 	public static void setPosition(int x, int y){
 		helpFrame.setLocation(x, y);
 	}
 	
+	/**
+	 * check whether it is shown or not
+	 * @return true if shown
+	 */
 	public static boolean isShown() {
 		return shown;
 	}
 	
+	/**
+	 * make help window visible
+	 */
 	public static void showHelp() {
 		helpFrame.setVisible(true);
 		helpFrame.toFront();
 		shown = true;
 	}
 	
+	/**
+	 * make help window invisible
+	 */
 	public static void hideHelp() {
 		helpFrame.setVisible(false);
 		shown = false;
 	}
 	
+	/**
+	 * make help window invisible temporalily
+	 */
 	public static void hideHelpTempolarily() {
 		helpFrame.setVisible(false);
 	}
 	
+	/**
+	 * initialize help frame
+	 */
 	public static void initialize() {
 		if(helpFrame== null)
 			helpFrame = new HelpFrame();
 	}
 	
+	/**
+	 * set position according to mainJFrame direction.
+	 */
 	public static void setPosition() {
 		helpFrame.setLocation(MainJFrame.currentLocation.x + 410, MainJFrame.currentLocation.y-10);
 	}
 	
+	/**
+	 * 
+	 * @return current location
+	 */
 	public static Point getPosition() {
 		return helpFrame.getLocation();
 	}
+	
 	/**
 	 * MouseListener for exit button
 	 * @author Ramon
@@ -133,6 +167,9 @@ public class HelpFrame extends JFrame{
 		
 	}
 	
+	/**
+	 * toggle help frame to be shown/ hidden
+	 */
 	public static void toggleShown() {
 		if(isShown())
 			hideHelp();

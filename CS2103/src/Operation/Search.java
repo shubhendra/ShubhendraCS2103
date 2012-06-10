@@ -142,7 +142,7 @@ public class Search extends Operation {
 		return null;
 	}
 	
-	Task[] search(Task taskToSearch) {
+	public Task[] search(Task taskToSearch) {
 		// TODO Auto-generated method stub
 		if (taskToSearch.getTaskId() != null) {
 			return new Task[]{StorageManager.getTaskById(taskToSearch.getTaskId())};

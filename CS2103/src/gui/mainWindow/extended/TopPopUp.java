@@ -15,7 +15,7 @@ import javax.swing.JFrame;
 
 
 /**
- *
+ * pop up on top of the MainJFrame
  * @author Ramon
  */
 public class TopPopUp extends JFrame {
@@ -104,15 +104,26 @@ public class TopPopUp extends JFrame {
     //private Timer timer;
     // End of variables declaration
     
-    
+    /**
+     * set location of the pop up
+     * @param x x-coordinate
+     * @param y y-coordinate
+     */
     public static void setPosition(int x, int y) {
     	jFrame.setLocation(x, y);
     }
     
+    /** set displayed text of the pop up
+     * 
+     * @param str displayed text
+     */
     public static void setText(String str) {
     	jLabel1.setText(str);
     }
     
+    /**
+     * show the pop up for VISIBLE_TIME second
+     */
     public static void showBox() {
 
     	SHOW = true;
@@ -136,11 +147,18 @@ public class TopPopUp extends JFrame {
 
     }
     
+    /**hide the pop up
+     * 
+     */
     public static void hideBox() {
     	SHOW = false;
     	jFrame.setVisible(SHOW);
     }
     
+    /**
+     * 
+     * @return true if pop up is shown
+     */
     public static boolean isShow() {
     	return SHOW;
     }
