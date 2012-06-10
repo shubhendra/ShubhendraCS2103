@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 //import gui.UIController;
 import storagecontroller.StorageManager;
 
-public class JIDLogic {
+public class JIDLogic implements Runnable {
 	
 		private static Logger logger=Logger.getLogger(JIDLogic.class);
 		//private static String command;

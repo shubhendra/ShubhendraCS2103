@@ -21,10 +21,10 @@ public class TaskDateTime {
 	private static final SimpleDateFormat DAY_MONTH_YEAR_CODEFORMAT= new SimpleDateFormat(
 			"dd-MM-yyyy");
 	private static final SimpleDateFormat DAY_MONTH_YEAR_HOUR_MIN = new SimpleDateFormat(
-			"K:mm a dd MMM yyyy");
+			"h:mm a dd MMM yyyy");
 	private static final SimpleDateFormat DAY_MONTH_YEAR_PRESENTABLE  =new SimpleDateFormat(
-			"dd MMM yyyy K:mm a");
-	private static final SimpleDateFormat HOUR_MIN=new SimpleDateFormat("K:mm a");
+			"dd MMM yyyy h:mm a");
+	private static final SimpleDateFormat HOUR_MIN=new SimpleDateFormat("h:mm a");
 	private boolean hasTime;
 	private boolean hasDate;
 	static 
@@ -34,13 +34,13 @@ public class TaskDateTime {
 	}
 	private static Logger logger=Logger.getLogger(TaskDateTime.class);
 
-/** defsault constructor
+/** default constructor
  * 
  */
 public TaskDateTime()
 {
-	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0,37	);
-	calendar.setLenient(false);
+	calendar = new GregorianCalendar( 2000, 0, 1, 23, 59,59);
+	calendar.setLenient(true);
 	timeMilli = calendar.getTimeInMillis();
 	hasTime = false;
 	hasDate = false;
@@ -50,9 +50,9 @@ public TaskDateTime()
  */
 public TaskDateTime(long timeInMillis)
 {
-	calendar = new GregorianCalendar( 2000, 0, 1, 0, 0);
+	calendar = new GregorianCalendar( 2000, 0, 1, 23, 59,59);
 	calendar.setTimeInMillis(timeInMillis);
-	calendar.setLenient(false);
+	calendar.setLenient(true);
 	timeMilli=calendar.getTimeInMillis();
 	hasDate = true;
 	hasTime=true;
@@ -62,8 +62,8 @@ public TaskDateTime(long timeInMillis)
  */
 public TaskDateTime( int year, int month, int day)
 {
-	calendar = new GregorianCalendar(year, month-1, day);
-	calendar.setLenient(false);
+	calendar = new GregorianCalendar(year, month-1, day, 23,59,59);
+	calendar.setLenient(true);
 	timeMilli=calendar.getTimeInMillis();
 	hasTime = false;
 	hasDate = true;
@@ -73,17 +73,18 @@ public TaskDateTime( int year, int month, int day)
  */
 public TaskDateTime(int hour,int minutes)
 {
-	calendar = new GregorianCalendar(2000, 0, 1, hour, minutes);
+	calendar = new GregorianCalendar(2000, 0, 1, hour, minutes,0);
 	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
 	hasTime = true;
+	hasDate=false;
 }
 /** constructor which sets both date and time 
  * 
  */
 public TaskDateTime(int year, int month, int day, int hours, int minutes)
 {
-	calendar = new GregorianCalendar(year, month-1, day, hours, minutes);
+	calendar = new GregorianCalendar(year, month-1, day, hours, minutes,0);
 	calendar.setLenient(false);
 	timeMilli=calendar.getTimeInMillis();
 	hasTime = true;
@@ -133,8 +134,10 @@ public static TaskDateTime getCurrentDate()
  */
 public void set(int year,int month,int day)
 {
-	calendar.set(year, month-1, year);
+	calendar.set(year, month-1, day);
+	calendar.setLenient(true);
 	timeMilli = calendar.getTimeInMillis();
+	hasDate=true;
 }
 /** setter for the Date Time class
  * 
@@ -150,6 +153,7 @@ public void set(int year, int month, int day, int hours, int minutes, int second
 	calendar.set(year, month-1, day, hours, minutes, seconds);
 	timeMilli=calendar.getTimeInMillis();
 	hasTime = true;
+	hasDate=true;
 }
 /**setter for the DateTime class
  * 
@@ -164,6 +168,7 @@ public void set(int year, int month, int day, int hours, int minutes)
 	calendar.set(year, month-1, day, hours, minutes);
 	timeMilli = calendar.getTimeInMillis();
 	hasTime = true;
+	hasDate=true;
 }
 /** function to see if two objects are the same
  * 
