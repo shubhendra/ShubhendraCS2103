@@ -115,7 +115,7 @@ public class AutoUpdateJTable {
     	else if(task.getImportant()) {
     		str += "<font color=\"red\">";
     	}
-    	str += task.getName();
+    	str += task.getName().substring(0, 1).toUpperCase()+task.getName().substring(1);
     	str += "<br/></b>";
     	str += tagToCode(task);
     	if(task.getCompleted())

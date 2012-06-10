@@ -3,10 +3,11 @@ package parser;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import logic.JIDLogic;
 import org.apache.log4j.Logger;
 
 public class TimeParser {
-	private Logger logger=Logger.getLogger(TimeParser.class);
+	private Logger logger=Logger.getLogger(JIDLogic.class);
 	
 	int startHour = -1, endHour = -1, startMin = -1, endMin = -1;
 	int dummyHour = -1, dummyMin = -1;
