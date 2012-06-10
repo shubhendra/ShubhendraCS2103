@@ -11,7 +11,8 @@ public enum OperationFeedback {
 	NOT_FOUND,
 	
 	INVALID_INCORRECTLOGIN, //incorrect username or password
-	INVALID_NOINTERNET; //not connect to internet
+	INVALID_NOINTERNET;
+	//not connect to internet
 	
 	
 	private String msg;

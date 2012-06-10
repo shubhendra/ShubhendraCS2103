@@ -104,7 +104,7 @@ public class Search extends Operation {
 		return newParser.parseForSearch(params);
 	}
 
-	private Task[] returnAllTasks() {
+	public Task[] returnAllTasks() {
 		// TODO Auto-generated method stub
 		Task[] unsorted=StorageManager.getAllTasks();
 		Comparator<Task> compareByDate = new CompareByDate();

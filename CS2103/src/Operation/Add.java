@@ -11,6 +11,7 @@ import constant.OperationFeedback;
 import parser.Parser;
 import storagecontroller.StorageManager;
 import data.Task;
+import data.TaskDateTime;
 
 
 public class Add extends Operation {
@@ -56,8 +57,11 @@ public class Add extends Operation {
 				return null;
 			}
 		}
-		else
+		else{
+			logger.debug("Task Not added");
 			return null;
+		}
+		
 		
 	}
 	/**
@@ -68,7 +72,39 @@ public class Add extends Operation {
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
-		return newParser.parseForAdd(params);
+		Task newTask= newParser.parseForAdd(params);
+		if (newTask.getStart()!=null && newTask.getEnd()!=null)
+		{
+			if (newTask.getStart().getTimeMilli()<newTask.getEnd().getTimeMilli()){
+				return newTask;
+			}
+			else {
+				return null;
+			}
+			
+		}
+		else if(newTask.getStart()==null){
+			if (newTask.getEnd().getTimeMilli()>TaskDateTime.getCurrentDateTime().getTimeMilli()){
+				return newTask;
+			}
+			else{
+				return null;
+			}
+				
+		}
+		else if (newTask.getEnd()==null){
+			if (newTask.getStart().getTimeMilli()>TaskDateTime.getCurrentDateTime().getTimeMilli()){
+				return newTask;
+			}
+			else {
+				return null;
+			}
+		}
+		else{
+			return null;
+		}
+			
+		
 		
 	}
 	@Override
