@@ -157,10 +157,13 @@ public class Search extends Operation {
 	private Task[] search(Task findTask, Task[] allTasks) {
 		// TODO Auto-generated method stub
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
+		logger.debug("Default date:"+defaultTime.getDate().getTimeMilli());
+		logger.debug("Default Time:"+defaultTime.getTime().getTimeMilli());
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
-		/*	if (allTasks[i].getStart()!=null){
+			logger.debug(allTasks[i].toString());
+			if (allTasks[i].getStart()!=null){
 			logger.debug("allTasks["+i+"] StartTime:"+allTasks[i].getStart().getTime().getTimeMilli());
 			logger.debug("allTasks["+i+"] StartDate:"+allTasks[i].getStart().getDate().getTimeMilli());
 			}
@@ -175,8 +178,9 @@ public class Search extends Operation {
 			if (findTask.getEnd()!=null){
 			logger.debug("searchstring EndTime:"+findTask.getEnd().getTime().getTimeMilli());
 			logger.debug("searchstring EndDate:"+findTask.getEnd().getDate().getTimeMilli());
-			}*/
+			}
 			if (matches(findTask,allTasks[i])){
+				logger.debug("it matches one of the conds");
 				Collections.addAll(foundTasks, allTasks[i]);
 			}
 			
@@ -330,6 +334,10 @@ public class Search extends Operation {
 			logger.debug("all condition satisfied");
 			return true;
 		}
+		else if(isTaskBetween(taskToSearch,existingTask)){
+			return true;
+		}
+		
 		
 		
 		/*if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
@@ -430,7 +438,111 @@ public class Search extends Operation {
 			
 		return false;
 	}
-
+	public boolean isTaskBetween(Task taskToSearch,Task existingTask){
+		logger.debug("inside isTaskbetween");
+		if (taskToSearch.getStart()!=null && taskToSearch.getEnd()!=null){
+			if (taskToSearch.getStart().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getEnd().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getStart().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli() &&
+					taskToSearch.getEnd().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli()){
+				
+				if (existingTask.getStart()!=null && existingTask.getEnd()!=null){
+					if(taskToSearch.getStart().getTimeMilli()<=existingTask.getStart().getTimeMilli() && 
+							taskToSearch.getEnd().getTimeMilli()>=existingTask.getEnd().getTimeMilli()){
+						logger.debug("matches 1");
+						return true;
+					}
+					else return false;
+				}
+				else if (existingTask.getStart()==null && existingTask.getEnd()!=null){
+					if(taskToSearch.getEnd().getTimeMilli()>=existingTask.getEnd().getTimeMilli() &&
+							taskToSearch.getStart().getTimeMilli()<=existingTask.getEnd().getTimeMilli()){
+						logger.debug("matches 2");
+						return true;
+					}
+					else return false;
+				}
+				else if (existingTask.getStart()!=null && existingTask.getEnd()==null){
+					if(taskToSearch.getStart().getTimeMilli()<=existingTask.getStart().getTimeMilli() &&
+							taskToSearch.getEnd().getTimeMilli()>=existingTask.getStart().getTimeMilli()){
+						logger.debug("matches 3");
+						return true;
+					}
+					else return false;
+				}
+				else 
+					return false;
+			}
+			else if (taskToSearch.getStart().getDate().getTimeMilli()==defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getEnd().getDate().getTimeMilli()==defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getStart().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli() &&
+					taskToSearch.getEnd().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli()){
+				
+				if (existingTask.getStart()!=null && existingTask.getEnd()!=null){
+					if(taskToSearch.getStart().getTime().getTimeMilli()<=existingTask.getStart().getTime().getTimeMilli() && 
+							taskToSearch.getEnd().getTime().getTimeMilli()>=existingTask.getEnd().getTime().getTimeMilli()){
+						logger.debug("matches 4");
+						return true;
+					}
+					else return false;
+				}
+				else if (existingTask.getStart()==null && existingTask.getEnd()!=null){
+					if(taskToSearch.getEnd().getTime().getTimeMilli()>=existingTask.getEnd().getTime().getTimeMilli() &&
+							taskToSearch.getStart().getTime().getTimeMilli()<=existingTask.getEnd().getTime().getTimeMilli()){
+						logger.debug("matches 5");
+						return true;
+					}
+					else return false;
+				}
+				else if (existingTask.getStart()!=null && existingTask.getEnd()==null){
+					if(taskToSearch.getStart().getTime().getTimeMilli()<=existingTask.getStart().getTime().getTimeMilli() &&
+							taskToSearch.getEnd().getTime().getTimeMilli()>=existingTask.getStart().getTime().getTimeMilli()){
+						logger.debug("matches 6");
+						return true;
+					}
+					else return false;
+				}
+				else 
+					return false;
+			}
+			else if (taskToSearch.getStart().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getEnd().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getStart().getTime().getTimeMilli()==defaultTime.getTime().getTimeMilli() &&
+					taskToSearch.getEnd().getTime().getTimeMilli()==defaultTime.getTime().getTimeMilli()){
+				
+				if (existingTask.getStart()!=null && existingTask.getEnd()!=null){
+					if(taskToSearch.getStart().getDate().getTimeMilli()<=existingTask.getStart().getDate().getTimeMilli() && 
+							taskToSearch.getEnd().getDate().getTimeMilli()>=existingTask.getEnd().getDate().getTimeMilli()){
+						logger.debug("matches 7");
+						return true;
+					}
+					else return false;
+				}
+				else if (existingTask.getStart()==null && existingTask.getEnd()!=null){
+					if(taskToSearch.getEnd().getDate().getTimeMilli()>=existingTask.getEnd().getDate().getTimeMilli() &&
+							taskToSearch.getStart().getDate().getTimeMilli()<=existingTask.getEnd().getDate().getTimeMilli()){
+						logger.debug("matches 8");
+						return true;
+					}
+					else return false;
+				}
+				else if (existingTask.getStart()!=null && existingTask.getEnd()==null){
+					if(taskToSearch.getStart().getDate().getTimeMilli()<=existingTask.getStart().getDate().getTimeMilli() &&
+							taskToSearch.getEnd().getDate().getTimeMilli()>=existingTask.getStart().getDate().getTimeMilli()){
+						logger.debug("matches 9");
+						return true;
+					}
+					else return false;
+				}
+				else 
+					return false;
+			}
+			
+			
+		}
+		return false;
+	
+	}
 	@Override
 	public Task[] redo() {
 		// TODO Auto-generated method stub

@@ -316,6 +316,12 @@ public class GoogleCalendar
 					}
 			}
 		}
+		
+		return true;
+	}
+	public boolean sync()
+	{
+		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
 		for(int i=0;i<taskArray.length;i++)
 		{
 			boolean isPresent3=false;
@@ -332,10 +338,6 @@ public class GoogleCalendar
 				deleteEvent(taskArray[i]);
 			}
 		}
-		return true;
-	}
-	public boolean sync()
-	{
 		if(importFromGcal() && exportToGcal())
 			return true;
 		else

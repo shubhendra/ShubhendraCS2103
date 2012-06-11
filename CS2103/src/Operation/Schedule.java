@@ -52,7 +52,7 @@ public class Schedule extends Operation{
 	@Override
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
-		return false;
+		return isUndoAble;
 	}
 
 	@Override

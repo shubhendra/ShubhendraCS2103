@@ -62,7 +62,7 @@ public class Add extends Operation {
 					//return resultOfAdd;
 				}
 				else {
-					//feedback=OperationFeedback.ADD_FAILED;
+					feedback=OperationFeedback.ADD_FAILED;
 					return null;
 				}
 				

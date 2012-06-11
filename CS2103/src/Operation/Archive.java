@@ -120,18 +120,20 @@ public class Archive extends Operation{
 		Task[] allArchivedTasks=StorageManager.getAllArchivedTasks();
 		
 		for (int i=0;i<allArchivedTasks.length;i++){
-			if (allArchivedTasks[i].getCompleted()){
-				
-				if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) && StorageManager.addTask(allArchivedTasks[i]))
-				{
-					isUndoAble=true;
-					archiveTasks.add(allArchivedTasks[i]);
-				}
-				
+			if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) && StorageManager.addTask(allArchivedTasks[i]))
+			{
+				isUndoAble=true;
+				archiveTasks.add(allArchivedTasks[i]);
+			}
+			else{
+				feedback=OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_FROM_ARCHIVES;
+				return null;
 			}
 		}
-		if (archiveTasks.size()==0)
+		if (archiveTasks.size()==0){
+			feedback=OperationFeedback.NO_TASK_IN_ARCHIVE;
 			return null;
+		}
 		else
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 
@@ -164,11 +166,18 @@ public class Archive extends Operation{
 					isUndoAble=true;
 					archiveTasks.add(allTasks[i]);
 				}
+				else{
+					feedback=OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_TO_ARCHIVES;
+					return null;
+				}
 				
 			}
 		}
-		if (archiveTasks.size()==0)
+		if (archiveTasks.size()==0){
+			feedback=OperationFeedback.NO_TASK_TO_ARCHIVE;
 			return null;
+			
+		}
 		else
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 	}
@@ -182,7 +191,7 @@ public class Archive extends Operation{
 	@Override
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}
 	
 

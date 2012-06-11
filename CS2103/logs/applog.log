@@ -1,1180 +1,479 @@
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - reminder at 3:51 PM on 10 Jun 2012  $$__10-06-2012155100R__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - reminder at 3:52 PM on 10 Jun 2012  $$__10-06-2012155200Y__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - go to airport at 9:00 PM on 10 Jun 2012 @work  $$__10-06-2012210000E__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012  $$__11-06-2012080000C__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000B__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000M__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000B__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000T__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000E__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000Z__$$
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:36:06,211 - operation.Operation - DEBUG - archive
-2012-06-11 16:36:06,211 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:36:06,211 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - go to airport at 9:00 PM on 10 Jun 2012 @work 
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - reminder at 3:51 PM on 10 Jun 2012 
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - nacho from 7:00 AM to 8:00 AM on 11 Jun 2012 
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - hahaha at 12:00 PM on 10 Jun 2012 
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - reminder at 3:52 PM on 10 Jun 2012 
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:36:06,211 - operation.Operation - DEBUG - find
-2012-06-11 16:36:06,211 - operation.Search - DEBUG - finding objects
-2012-06-11 16:36:06,211 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:36:06,211 - operation.Search - DEBUG - before sorting
-2012-06-11 16:36:06,211 - operation.Search - DEBUG - after sorting
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:36:06,211 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:36:06,227 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:36:06,227 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:36:06,273 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:36:49,033 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:36:49,064 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:36:49,064 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:36:49,064 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:36:49,064 - operation.Operation - DEBUG - find
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - finding objects
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - before sorting
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - after sorting
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000I__$$
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000P__$$
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000I__$$
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000P__$$
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000Y__$$
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000K__$$
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:36:49,080 - operation.Operation - DEBUG - archive
-2012-06-11 16:36:49,080 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:36:49,080 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:36:49,080 - operation.Operation - DEBUG - find
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - finding objects
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - before sorting
-2012-06-11 16:36:49,080 - operation.Search - DEBUG - after sorting
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:49,080 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:49,095 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:49,095 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:36:49,095 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:49,095 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:36:49,095 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:36:49,095 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:36:49,095 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:36:49,142 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:38:25,769 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:38:25,784 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:38:25,784 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:38:25,784 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:38:25,800 - operation.Operation - DEBUG - find
-2012-06-11 16:38:25,800 - operation.Search - DEBUG - finding objects
-2012-06-11 16:38:25,800 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:38:25,800 - operation.Search - DEBUG - before sorting
-2012-06-11 16:38:25,800 - operation.Search - DEBUG - after sorting
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000B__$$
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000A__$$
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000Z__$$
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000H__$$
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000I__$$
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000D__$$
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:38:25,800 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:38:25,816 - operation.Operation - DEBUG - archive
-2012-06-11 16:38:25,816 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:38:25,816 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:38:25,816 - operation.Operation - DEBUG - find
-2012-06-11 16:38:25,816 - operation.Search - DEBUG - finding objects
-2012-06-11 16:38:25,816 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:38:25,816 - operation.Search - DEBUG - before sorting
-2012-06-11 16:38:25,816 - operation.Search - DEBUG - after sorting
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - have lunch
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - go to bed
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - hulu
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - have dinner
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - snack time
-2012-06-11 16:38:25,816 - logic.JIDLogic - DEBUG - go to homework
-2012-06-11 16:38:25,816 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:38:25,878 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:39:22,990 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:39:23,005 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:39:23,005 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:39:23,005 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:39:23,021 - operation.Operation - DEBUG - find
-2012-06-11 16:39:23,021 - operation.Search - DEBUG - finding objects
-2012-06-11 16:39:23,021 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:39:23,021 - operation.Search - DEBUG - before sorting
-2012-06-11 16:39:23,021 - operation.Search - DEBUG - after sorting
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000F__$$
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000V__$$
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000L__$$
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000Y__$$
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000H__$$
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:39:23,021 - operation.Operation - DEBUG - archive
-2012-06-11 16:39:23,021 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:39:23,021 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:39:23,021 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:39:23,021 - operation.Operation - DEBUG - find
-2012-06-11 16:39:23,021 - operation.Search - DEBUG - finding objects
-2012-06-11 16:39:23,037 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:39:23,037 - operation.Search - DEBUG - before sorting
-2012-06-11 16:39:23,037 - operation.Search - DEBUG - after sorting
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - go to homeworkfalse
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - have lunchfalse
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - hulufalse
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - have dinnerfalse
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - go to bedfalse
-2012-06-11 16:39:23,037 - logic.JIDLogic - DEBUG - snack timefalse
-2012-06-11 16:39:23,037 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:39:23,083 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:40:26,872 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:40:26,887 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:40:26,887 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:40:26,887 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:40:26,903 - operation.Operation - DEBUG - find
-2012-06-11 16:40:26,903 - operation.Search - DEBUG - finding objects
-2012-06-11 16:40:26,903 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:40:26,903 - operation.Search - DEBUG - before sorting
-2012-06-11 16:40:26,903 - operation.Search - DEBUG - after sorting
-2012-06-11 16:40:26,903 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:40:26,903 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:40:26,903 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000P__$$
-2012-06-11 16:40:26,903 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000F__$$
-2012-06-11 16:40:26,903 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000G__$$
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000U__$$
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000S__$$
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000M__$$
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:40:26,919 - operation.Operation - DEBUG - archive
-2012-06-11 16:40:26,919 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:40:26,919 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:40:26,919 - operation.Operation - DEBUG - find
-2012-06-11 16:40:26,919 - operation.Search - DEBUG - finding objects
-2012-06-11 16:40:26,919 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:40:26,919 - operation.Search - DEBUG - before sorting
-2012-06-11 16:40:26,919 - operation.Search - DEBUG - after sorting
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - have lunchfalse
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - go to homeworkfalse
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - snack timefalse
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - hulufalse
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - have dinnerfalse
-2012-06-11 16:40:26,919 - logic.JIDLogic - DEBUG - go to bedfalse
-2012-06-11 16:40:26,919 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:40:26,965 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:40:51,016 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:40:51,016 - storagecontroller.FileHandler - DEBUG - File Not Found!
-2012-06-11 16:40:51,016 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:40:51,016 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:40:51,031 - operation.Operation - DEBUG - find
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - finding objects
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - before sorting
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - after sorting
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000K__$$
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000E__$$
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000K__$$
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000N__$$
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000U__$$
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000K__$$
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:40:51,031 - operation.Operation - DEBUG - archive
-2012-06-11 16:40:51,031 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:40:51,031 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:40:51,031 - operation.Operation - DEBUG - find
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - finding objects
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - before sorting
-2012-06-11 16:40:51,031 - operation.Search - DEBUG - after sorting
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - 0
-2012-06-11 16:40:51,031 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:40:51,031 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:40:51,078 - storagecontroller.FileHandler - DEBUG - 0
-2012-06-11 16:41:00,859 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:00,859 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:01,421 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:01,421 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:01,437 - operation.Operation - DEBUG - find
-2012-06-11 16:41:01,437 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:01,437 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:01,437 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:01,437 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:01,437 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:01,530 - gui.reminder.Reminder - DEBUG - true
-2012-06-11 16:41:01,530 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:01,530 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:01,530 - operation.Operation - DEBUG - find
-2012-06-11 16:41:01,530 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:01,530 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:01,546 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:01,546 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:01,546 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339394400000
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339404061530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - timediff: -9961530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339404061530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - timediff: -6361530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339404061530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - timediff: -6361530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339401600000
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339404061530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - timediff: -2761530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339404061530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - timediff: 4438470
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - latestTask: snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - 1339404061530
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - timediff: 4438470
-2012-06-11 16:41:01,546 - gui.reminder.Reminder - DEBUG - setTimer: 4438470
-2012-06-11 16:41:04,949 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:04,949 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:04,949 - operation.Operation - DEBUG - completed
-2012-06-11 16:41:04,949 - operation.BaseSearch - DEBUG - completed
-2012-06-11 16:41:04,949 - operation.BaseSearch - DEBUG - inside basesearch
-2012-06-11 16:41:04,964 - operation.BaseSearch - DEBUG - going to the id part
-2012-06-11 16:41:04,964 - operation.BaseSearch - DEBUG - $$__11-06-2012140000S__$$
-2012-06-11 16:41:04,964 - operation.BaseSearch - DEBUG - $$__11-06-2012140000S__$$
-2012-06-11 16:41:04,964 - operation.BaseSearch - DEBUG - completed succesfully
-2012-06-11 16:41:04,964 - operation.BaseSearch - DEBUG - Result Added
-2012-06-11 16:41:04,964 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:41:04,964 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:41:04,964 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
-2012-06-11 16:41:04,980 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:04,980 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:04,980 - operation.Operation - DEBUG - find
-2012-06-11 16:41:04,980 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:04,980 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:04,980 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:04,980 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:04,980 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339394400000
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339404064980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - timediff: -9964980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339404064980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - timediff: -6364980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339404064980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - timediff: -6364980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339401600000
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339404064980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - timediff: -2764980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - 1339404064980
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - timediff: 4435020
-2012-06-11 16:41:04,980 - gui.reminder.Reminder - DEBUG - latestTask: snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
-2012-06-11 16:41:04,995 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 16:41:04,995 - gui.reminder.Reminder - DEBUG - 1339404064980
-2012-06-11 16:41:04,995 - gui.reminder.Reminder - DEBUG - timediff: 4435020
-2012-06-11 16:41:04,995 - gui.reminder.Reminder - DEBUG - setTimer: 4435020
-2012-06-11 16:41:05,089 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:05,089 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:05,089 - operation.Operation - DEBUG - find
-2012-06-11 16:41:05,089 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:05,089 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:05,089 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:05,089 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:05,089 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:06,431 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:41:06,541 - storagecontroller.FileHandler - DEBUG - 0
-2012-06-11 16:41:09,069 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:09,069 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:09,584 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:09,584 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:09,599 - operation.Operation - DEBUG - find
-2012-06-11 16:41:09,599 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:09,599 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:09,599 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:09,599 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:09,599 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:09,724 - gui.reminder.Reminder - DEBUG - true
-2012-06-11 16:41:09,724 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:09,724 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:09,724 - operation.Operation - DEBUG - find
-2012-06-11 16:41:09,724 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:09,724 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:09,724 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:09,724 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:09,724 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:09,724 - gui.reminder.Reminder - DEBUG - 1339394400000
-2012-06-11 16:41:09,724 - gui.reminder.Reminder - DEBUG - 1339404069724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - timediff: -9969724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339404069724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - timediff: -6369724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339404069724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - timediff: -6369724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339401600000
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339404069724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - timediff: -2769724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339404069724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - timediff: 4430276
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - latestTask: snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - 1339404069724
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - timediff: 4430276
-2012-06-11 16:41:09,740 - gui.reminder.Reminder - DEBUG - setTimer: 4430276
-2012-06-11 16:41:11,348 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:41:11,458 - storagecontroller.FileHandler - DEBUG - 0
-2012-06-11 16:41:13,799 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:13,799 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:13,799 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:13,799 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:13,814 - operation.Operation - DEBUG - find
-2012-06-11 16:41:13,814 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:13,814 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:13,814 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:13,814 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000C__$$
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000M__$$
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Q__$$
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000P__$$
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000L__$$
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000Z__$$
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:13,814 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:13,814 - operation.Operation - DEBUG - archive
-2012-06-11 16:41:13,814 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:41:13,814 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012 
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:13,830 - operation.Operation - DEBUG - find
-2012-06-11 16:41:13,830 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:13,830 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:13,830 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:13,830 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:41:13,830 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:41:13,830 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:41:13,877 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:41:17,028 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:17,044 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:41:17,044 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:17,044 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:17,059 - operation.Operation - DEBUG - find
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000V__$$
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000S__$$
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000D__$$
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000M__$$
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000L__$$
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:17,059 - operation.Operation - DEBUG - archive
-2012-06-11 16:41:17,059 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:41:17,059 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:41:17,059 - operation.Operation - DEBUG - find
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - finding objects
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - before sorting
-2012-06-11 16:41:17,059 - operation.Search - DEBUG - after sorting
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:41:17,059 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:41:17,075 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:41:17,075 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:41:17,122 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:42:03,079 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:42:03,095 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:42:03,095 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:03,095 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:03,095 - operation.Operation - DEBUG - find
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - finding objects
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - before sorting
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - after sorting
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000I__$$
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000L__$$
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000C__$$
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000V__$$
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000B__$$
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:03,110 - operation.Operation - DEBUG - archive
-2012-06-11 16:42:03,110 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:42:03,110 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:03,110 - operation.Operation - DEBUG - find
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - finding objects
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - before sorting
-2012-06-11 16:42:03,110 - operation.Search - DEBUG - after sorting
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:03,110 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:03,126 - operation.Operation - DEBUG - exportarchive
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:42:03,126 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012 
-2012-06-11 16:42:03,126 - storagecontroller.FileHandler - DEBUG - 6
-2012-06-11 16:42:03,173 - storagecontroller.FileHandler - DEBUG - 0
-2012-06-11 16:42:22,189 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:42:22,205 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:42:22,205 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:22,205 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:22,221 - operation.Operation - DEBUG - find
-2012-06-11 16:42:22,221 - operation.Search - DEBUG - finding objects
-2012-06-11 16:42:22,221 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:42:22,221 - operation.Search - DEBUG - before sorting
-2012-06-11 16:42:22,221 - operation.Search - DEBUG - after sorting
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  $$__11-06-2012140000Z__$$
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000A__$$
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000D__$$
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000L__$$
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000B__$$
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000G__$$
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:22,221 - operation.Operation - DEBUG - archive
-2012-06-11 16:42:22,221 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:42:22,221 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012 
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:22,221 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:22,236 - operation.Operation - DEBUG - find
-2012-06-11 16:42:22,236 - operation.Search - DEBUG - finding objects
-2012-06-11 16:42:22,236 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:42:22,236 - operation.Search - DEBUG - before sorting
-2012-06-11 16:42:22,236 - operation.Search - DEBUG - after sorting
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:42:22,236 - operation.Operation - DEBUG - exportarchive
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012 
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - inside third cond
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - isredoable
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - popped last action from stack:archive
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:42:22,236 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:42:22,236 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:42:22,283 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:43:17,039 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:43:17,055 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:43:17,055 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:43:17,055 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:43:17,070 - operation.Operation - DEBUG - find
-2012-06-11 16:43:17,070 - operation.Search - DEBUG - finding objects
-2012-06-11 16:43:17,070 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:43:17,070 - operation.Search - DEBUG - before sorting
-2012-06-11 16:43:17,070 - operation.Search - DEBUG - after sorting
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000R__$$
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000F__$$
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000M__$$
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000O__$$
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:43:17,070 - operation.Operation - DEBUG - archive
-2012-06-11 16:43:17,070 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:43:17,070 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:43:17,070 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:43:17,086 - operation.Operation - DEBUG - find
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - finding objects
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - before sorting
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - after sorting
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:43:17,086 - operation.Operation - DEBUG - exportarchive
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - isundoable
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012 
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - 0
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - 6
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:43:17,086 - operation.Operation - DEBUG - find
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - finding objects
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - before sorting
-2012-06-11 16:43:17,086 - operation.Search - DEBUG - after sorting
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - printing search6
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - inside third cond
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - isredoable
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - popped last action from stack:archive
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - go to homework at 2:00 PM on 11 Jun 2012  false
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:43:17,086 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:43:17,101 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:43:17,148 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:44:04,198 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:44:04,213 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:44:04,213 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:44:04,213 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:44:04,229 - operation.Operation - DEBUG - find
-2012-06-11 16:44:04,229 - operation.Search - DEBUG - finding objects
-2012-06-11 16:44:04,229 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:44:04,229 - operation.Search - DEBUG - before sorting
-2012-06-11 16:44:04,229 - operation.Search - DEBUG - after sorting
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000U__$$
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000X__$$
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000W__$$
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000B__$$
-2012-06-11 16:44:04,229 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000R__$$
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:44:04,245 - operation.Operation - DEBUG - archive
-2012-06-11 16:44:04,245 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:44:04,245 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:44:04,245 - operation.Operation - DEBUG - find
-2012-06-11 16:44:04,245 - operation.Search - DEBUG - finding objects
-2012-06-11 16:44:04,245 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:44:04,245 - operation.Search - DEBUG - before sorting
-2012-06-11 16:44:04,245 - operation.Search - DEBUG - after sorting
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:44:04,245 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:44:04,245 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:44:04,245 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:44:04,291 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:46:30,932 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:46:30,932 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:46:30,932 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:46:30,932 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:46:30,947 - operation.Operation - DEBUG - find
-2012-06-11 16:46:30,947 - operation.Search - DEBUG - finding objects
-2012-06-11 16:46:30,947 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:46:30,947 - operation.Search - DEBUG - before sorting
-2012-06-11 16:46:30,947 - operation.Search - DEBUG - after sorting
-2012-06-11 16:46:30,947 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:46:30,947 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:46:30,947 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000P__$$
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000I__$$
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000N__$$
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000F__$$
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:46:30,963 - operation.Operation - DEBUG - archive
-2012-06-11 16:46:30,963 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:46:30,963 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:46:30,963 - operation.Operation - DEBUG - find
-2012-06-11 16:46:30,963 - operation.Search - DEBUG - finding objects
-2012-06-11 16:46:30,963 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:46:30,963 - operation.Search - DEBUG - before sorting
-2012-06-11 16:46:30,963 - operation.Search - DEBUG - after sorting
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:46:30,963 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:46:30,963 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:46:30,963 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:46:30,994 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:47:14,222 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:47:14,237 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:47:14,237 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:14,237 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:14,237 - operation.Operation - DEBUG - find
-2012-06-11 16:47:14,237 - operation.Search - DEBUG - finding objects
-2012-06-11 16:47:14,253 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:47:14,253 - operation.Search - DEBUG - before sorting
-2012-06-11 16:47:14,253 - operation.Search - DEBUG - after sorting
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000F__$$
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000S__$$
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000P__$$
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000K__$$
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000F__$$
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:14,253 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:14,253 - operation.Operation - DEBUG - archive
-2012-06-11 16:47:14,269 - operation.Archive - DEBUG - archive
-2012-06-11 16:47:14,269 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:47:14,269 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:14,269 - operation.Operation - DEBUG - find
-2012-06-11 16:47:14,269 - operation.Search - DEBUG - finding objects
-2012-06-11 16:47:14,269 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:47:14,269 - operation.Search - DEBUG - before sorting
-2012-06-11 16:47:14,269 - operation.Search - DEBUG - after sorting
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:14,269 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:47:14,269 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:47:14,269 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:47:14,315 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:47:41,834 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:47:41,849 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:47:41,849 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:41,849 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:41,865 - operation.Operation - DEBUG - find
-2012-06-11 16:47:41,865 - operation.Search - DEBUG - finding objects
-2012-06-11 16:47:41,865 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:47:41,865 - operation.Search - DEBUG - before sorting
-2012-06-11 16:47:41,865 - operation.Search - DEBUG - after sorting
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000P__$$
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000M__$$
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000V__$$
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000Q__$$
-2012-06-11 16:47:41,865 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000R__$$
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:41,881 - operation.Operation - DEBUG - archive
-2012-06-11 16:47:41,881 - operation.Archive - DEBUG - archive
-2012-06-11 16:47:41,881 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:47:41,881 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:41,881 - operation.Operation - DEBUG - find
-2012-06-11 16:47:41,881 - operation.Search - DEBUG - finding objects
-2012-06-11 16:47:41,881 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:47:41,881 - operation.Search - DEBUG - before sorting
-2012-06-11 16:47:41,881 - operation.Search - DEBUG - after sorting
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:47:41,881 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:47:41,881 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:47:41,881 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:47:41,959 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:48:02,348 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:48:02,364 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:48:02,364 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:02,364 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:02,379 - operation.Operation - DEBUG - find
-2012-06-11 16:48:02,379 - operation.Search - DEBUG - finding objects
-2012-06-11 16:48:02,379 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:48:02,379 - operation.Search - DEBUG - before sorting
-2012-06-11 16:48:02,379 - operation.Search - DEBUG - after sorting
-2012-06-11 16:48:02,379 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:02,379 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000U__$$
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000I__$$
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000B__$$
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000N__$$
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000J__$$
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:02,395 - operation.Operation - DEBUG - archive
-2012-06-11 16:48:02,395 - operation.Archive - DEBUG - archive
-2012-06-11 16:48:02,395 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:48:02,395 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:02,395 - operation.Operation - DEBUG - find
-2012-06-11 16:48:02,395 - operation.Search - DEBUG - finding objects
-2012-06-11 16:48:02,395 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:48:02,395 - operation.Search - DEBUG - before sorting
-2012-06-11 16:48:02,395 - operation.Search - DEBUG - after sorting
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:02,395 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:48:02,395 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:02,395 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:48:02,426 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:48:21,318 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:48:21,318 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:48:21,318 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:21,318 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:21,333 - operation.Operation - DEBUG - find
-2012-06-11 16:48:21,333 - operation.Search - DEBUG - finding objects
-2012-06-11 16:48:21,333 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:48:21,349 - operation.Search - DEBUG - before sorting
-2012-06-11 16:48:21,349 - operation.Search - DEBUG - after sorting
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000T__$$
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000L__$$
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000Z__$$
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000J__$$
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000V__$$
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:21,349 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:21,349 - operation.Operation - DEBUG - archive
-2012-06-11 16:48:21,364 - operation.Archive - DEBUG - archive
-2012-06-11 16:48:21,364 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:48:21,364 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:21,364 - operation.Operation - DEBUG - find
-2012-06-11 16:48:21,364 - operation.Search - DEBUG - finding objects
-2012-06-11 16:48:21,364 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:48:21,364 - operation.Search - DEBUG - before sorting
-2012-06-11 16:48:21,364 - operation.Search - DEBUG - after sorting
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:21,364 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:48:21,364 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:21,364 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:48:21,396 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:48:53,454 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:48:53,469 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:48:53,469 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:53,469 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:53,485 - operation.Operation - DEBUG - find
-2012-06-11 16:48:53,485 - operation.Search - DEBUG - finding objects
-2012-06-11 16:48:53,485 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:48:53,485 - operation.Search - DEBUG - before sorting
-2012-06-11 16:48:53,485 - operation.Search - DEBUG - after sorting
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000F__$$
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000J__$$
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000D__$$
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000P__$$
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000V__$$
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:53,485 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:53,485 - operation.Operation - DEBUG - archive
-2012-06-11 16:48:53,500 - operation.Archive - DEBUG - archive
-2012-06-11 16:48:53,500 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:48:53,500 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:53,500 - operation.Operation - DEBUG - find
-2012-06-11 16:48:53,500 - operation.Search - DEBUG - finding objects
-2012-06-11 16:48:53,500 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:48:53,500 - operation.Search - DEBUG - before sorting
-2012-06-11 16:48:53,500 - operation.Search - DEBUG - after sorting
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:48:53,500 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:48:53,500 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:48:53,500 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:48:53,547 - storagecontroller.FileHandler - DEBUG - 1
-2012-06-11 16:49:26,682 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:49:26,697 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:49:26,697 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:26,697 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:26,713 - operation.Operation - DEBUG - find
-2012-06-11 16:49:26,713 - operation.Search - DEBUG - finding objects
-2012-06-11 16:49:26,713 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:49:26,713 - operation.Search - DEBUG - before sorting
-2012-06-11 16:49:26,713 - operation.Search - DEBUG - after sorting
-2012-06-11 16:49:26,713 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:26,713 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:49:26,713 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000V__$$
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000K__$$
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000N__$$
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000Q__$$
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000L__$$
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:26,728 - operation.Operation - DEBUG - archive
-2012-06-11 16:49:26,728 - operation.Archive - DEBUG - archive
-2012-06-11 16:49:26,728 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:49:26,728 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:26,728 - operation.Operation - DEBUG - find
-2012-06-11 16:49:26,728 - operation.Search - DEBUG - finding objects
-2012-06-11 16:49:26,728 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:49:26,728 - operation.Search - DEBUG - before sorting
-2012-06-11 16:49:26,728 - operation.Search - DEBUG - after sorting
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:49:26,728 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:26,744 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:49:26,744 - operation.Archive - DEBUG - cleararchive
-2012-06-11 16:49:26,744 - operation.Archive - DEBUG - running clear archvie
-2012-06-11 16:49:26,744 - data.TaskHashMap - DEBUG - Clearing HashMap
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:26,744 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:49:56,612 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:49:56,628 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:49:56,628 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:56,628 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:56,644 - operation.Operation - DEBUG - find
-2012-06-11 16:49:56,644 - operation.Search - DEBUG - finding objects
-2012-06-11 16:49:56,644 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:49:56,644 - operation.Search - DEBUG - before sorting
-2012-06-11 16:49:56,644 - operation.Search - DEBUG - after sorting
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000P__$$
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000B__$$
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000W__$$
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000P__$$
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000U__$$
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:56,644 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:56,644 - operation.Operation - DEBUG - archive
-2012-06-11 16:49:56,659 - operation.Archive - DEBUG - archive
-2012-06-11 16:49:56,659 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:49:56,659 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:56,659 - operation.Operation - DEBUG - find
-2012-06-11 16:49:56,659 - operation.Search - DEBUG - finding objects
-2012-06-11 16:49:56,659 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:49:56,659 - operation.Search - DEBUG - before sorting
-2012-06-11 16:49:56,659 - operation.Search - DEBUG - after sorting
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - 1
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - go to homeworktrue
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:49:56,659 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:49:56,659 - operation.Archive - DEBUG - cleararchive
-2012-06-11 16:49:56,659 - operation.Archive - DEBUG - running clear archvie
-2012-06-11 16:49:56,659 - data.TaskHashMap - DEBUG - Clearing HashMap
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - 
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - 0
-2012-06-11 16:49:56,659 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:49:56,659 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:49:56,706 - storagecontroller.FileHandler - DEBUG - 0
-2012-06-11 16:50:06,238 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:50:06,238 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-11 16:50:06,238 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:50:06,238 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:50:06,253 - operation.Operation - DEBUG - find
-2012-06-11 16:50:06,253 - operation.Search - DEBUG - finding objects
-2012-06-11 16:50:06,253 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:50:06,253 - operation.Search - DEBUG - before sorting
-2012-06-11 16:50:06,253 - operation.Search - DEBUG - after sorting
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  $$__11-06-2012150000V__$$
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  $$__11-06-2012160000U__$$
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  $$__11-06-2012160000N__$$
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  $$__11-06-2012220000M__$$
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  $$__11-06-2012200000P__$$
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:50:06,253 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:50:06,253 - operation.Operation - DEBUG - archive
-2012-06-11 16:50:06,269 - operation.Archive - DEBUG - archive
-2012-06-11 16:50:06,269 - operation.Archive - DEBUG - running archvie
-2012-06-11 16:50:06,269 - operation.Archive - DEBUG - inside archvietasks()
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - No Search results
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:50:06,269 - operation.Operation - DEBUG - find
-2012-06-11 16:50:06,269 - operation.Search - DEBUG - finding objects
-2012-06-11 16:50:06,269 - operation.Search - DEBUG - returning all objects
-2012-06-11 16:50:06,269 - operation.Search - DEBUG - before sorting
-2012-06-11 16:50:06,269 - operation.Search - DEBUG - after sorting
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - printing search5
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - have dinner at 3:00 PM on 11 Jun 2012  false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - hulu from 3:00 PM to 4:00 PM on 11 Jun 2012  false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012  true
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012  false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - have lunch at 8:00 PM on 11 Jun 2012  false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - 0
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 16:50:06,269 - operation.Operation - DEBUG - cleararchive
-2012-06-11 16:50:06,269 - operation.Archive - DEBUG - cleararchive
-2012-06-11 16:50:06,269 - operation.Archive - DEBUG - running clear archvie
-2012-06-11 16:50:06,269 - data.TaskHashMap - DEBUG - Clearing HashMap
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - printing search1
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - 
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - 0
-2012-06-11 16:50:06,269 - logic.JIDLogic - DEBUG - 5
-2012-06-11 16:50:06,269 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-11 16:50:06,316 - storagecontroller.FileHandler - DEBUG - 0
+2012-06-11 19:39:16,285 - operation.Search - DEBUG - allTasks[10] StartDate:1339430399000
+2012-06-11 19:39:16,286 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:16,286 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:16,286 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:16,287 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:16,287 - operation.Search - DEBUG - have dinner
+2012-06-11 19:39:16,291 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:16,291 - operation.Search - DEBUG - start date matches
+2012-06-11 19:39:16,292 - operation.Search - DEBUG - start time matches
+2012-06-11 19:39:16,292 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:16,292 - operation.Search - DEBUG - matches 9
+2012-06-11 19:39:16,293 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:16,293 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-11 19:39:16,293 - gui.mainWindow.MainJFrame - DEBUG - str[0]: SEARCH have lunch at 8:00 PM on 11 Jun 2012 
+2012-06-11 19:39:23,936 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - curText:search today to tmr
+2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - prevText: search today to tmr
+2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - state: SEARCH
+2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - prev: SEARCH
+2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: SEARCH
+2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: search today to tmr
+2012-06-11 19:39:23,940 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-11 19:39:23,940 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-11 19:39:23,940 - operation.Operation - DEBUG - search
+2012-06-11 19:39:23,940 - operation.Search - DEBUG - finding objects
+2012-06-11 19:39:23,941 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-11 19:39:23,941 - logic.JIDLogic - DEBUG - left over string after checking for recurring: today to tmr
+2012-06-11 19:39:23,947 - logic.JIDLogic - DEBUG - -----from_date_to_date format-------
+2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 0: today to tmr
+2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 1: null
+2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 2: null
+2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 3: null
+2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 4: today
+2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 5: null
+2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 6: null
+2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 7: null
+2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 8: today
+2012-06-11 19:39:23,950 - logic.JIDLogic - DEBUG - group 9: null
+2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 10: null
+2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 11: null
+2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 12: null
+2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 13: null
+2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 14: null
+2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 15: null
+2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 16: null
+2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 17: null
+2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 18: null
+2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 19: null
+2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 20: null
+2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 21: null
+2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 22: null
+2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 23: null
+2012-06-11 19:39:23,954 - logic.JIDLogic - DEBUG - group 24: null
+2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 25: null
+2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 26: null
+2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 27: null
+2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 28: null
+2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 29: null
+2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 30: null
+2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 31: null
+2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 32: null
+2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 33: null
+2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 34: null
+2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 35: null
+2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 36: null
+2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 37: null
+2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 38: null
+2012-06-11 19:39:23,958 - logic.JIDLogic - DEBUG - group 39: null
+2012-06-11 19:39:23,958 - logic.JIDLogic - DEBUG - group 40: null
+2012-06-11 19:39:23,960 - logic.JIDLogic - DEBUG - group 41: null
+2012-06-11 19:39:23,960 - logic.JIDLogic - DEBUG - group 42: null
+2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 43: null
+2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 44: null
+2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 45: null
+2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 46: null
+2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 47: null
+2012-06-11 19:39:23,962 - logic.JIDLogic - DEBUG - group 48: null
+2012-06-11 19:39:23,962 - logic.JIDLogic - DEBUG - group 49: null
+2012-06-11 19:39:23,962 - logic.JIDLogic - DEBUG - group 50: null
+2012-06-11 19:39:23,964 - logic.JIDLogic - DEBUG - group 51: null
+2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 52: null
+2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 53: null
+2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 54: null
+2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 55: null
+2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 56: null
+2012-06-11 19:39:23,966 - logic.JIDLogic - DEBUG - group 57: null
+2012-06-11 19:39:23,966 - logic.JIDLogic - DEBUG - group 58: null
+2012-06-11 19:39:23,966 - logic.JIDLogic - DEBUG - group 59: null
+2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 60: null
+2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 61: null
+2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 62: null
+2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 63: null
+2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 64: null
+2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 65: null
+2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 66: null
+2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 67: null
+2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 68: null
+2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 69: null
+2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 70: null
+2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 71: null
+2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 72: null
+2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 73: null
+2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 74: null
+2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 75: null
+2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 76: null
+2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 77: today
+2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 78: today
+2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 79: today
+2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 80: null
+2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 81: null
+2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 82: null
+2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 83: null
+2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 84: null
+2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 85: null
+2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 86: null
+2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 87: to
+2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 88: to
+2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 89: to
+2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 90: tmr
+2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 91: null
+2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 92: null
+2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 93: null
+2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 94: tmr
+2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 95: null
+2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 96: null
+2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 97: null
+2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 98: null
+2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 99: null
+2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 100: null
+2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 101: null
+2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 102: null
+2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 103: null
+2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 104: null
+2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 105: null
+2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 106: null
+2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 107: null
+2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 108: null
+2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 109: null
+2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 110: null
+2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 111: null
+2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 112: null
+2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 113: null
+2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 114: null
+2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 115: null
+2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 116: null
+2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 117: null
+2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 118: null
+2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 119: null
+2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 120: null
+2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 121: null
+2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 122: null
+2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 123: null
+2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 124: null
+2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 125: null
+2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 126: null
+2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 127: null
+2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 128: null
+2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 129: null
+2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 130: null
+2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 131: null
+2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 132: null
+2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 133: null
+2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 134: null
+2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 135: null
+2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 136: null
+2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 137: null
+2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 138: null
+2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 139: null
+2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 140: null
+2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 141: null
+2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 142: null
+2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 143: null
+2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 144: null
+2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 145: null
+2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 146: null
+2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 147: null
+2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 148: null
+2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 149: null
+2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 150: null
+2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 151: null
+2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 152: null
+2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 153: null
+2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 154: null
+2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 155: null
+2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 156: null
+2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 157: null
+2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 158: null
+2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 159: null
+2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 160: null
+2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 161: null
+2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 162: null
+2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 163: tmr
+2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 164: null
+2012-06-11 19:39:23,990 - logic.JIDLogic - DEBUG - group 165: null
+2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 166: tmr
+2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 167: tmr
+2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 168: null
+2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 169: null
+2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - group 170: null
+2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - group 171: null
+2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - start date string: today
+2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - end date string: tmr
+2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - 3rd return of setStartDate: false
+2012-06-11 19:39:23,995 - logic.JIDLogic - DEBUG - Start time could NOT be set!
+2012-06-11 19:39:23,995 - logic.JIDLogic - DEBUG - End time could NOT be set!
+2012-06-11 19:39:23,995 - logic.JIDLogic - DEBUG - dummyDay:11
+2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - dummyMonth:6
+2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - dummyYear:2012
+2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - dummyDay:12
+2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - dummyMonth:6
+2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - dummyYear:2012
+2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - End date is set!
+2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-11 19:39:23,998 - logic.JIDLogic - DEBUG - start date time: 11 Jun 2012
+2012-06-11 19:39:23,998 - logic.JIDLogic - DEBUG - end date time: 12 Jun 2012
+2012-06-11 19:39:23,998 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-11 19:39:23,999 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-11 19:39:23,999 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-11 19:39:24,007 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-11 19:39:24,007 - logic.JIDLogic - DEBUG - task details: 
+2012-06-11 19:39:24,007 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-11 19:39:24,008 - logic.JIDLogic - DEBUG - task before returning:  from 11 Jun 2012 to 12 Jun 2012 
+2012-06-11 19:39:24,008 - operation.Search - DEBUG - 1339430399000
+2012-06-11 19:39:24,008 - operation.Search - DEBUG - Default date:946742399000
+2012-06-11 19:39:24,008 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-11 19:39:24,009 - operation.Search - DEBUG - Matching task0
+2012-06-11 19:39:24,009 - operation.Search - DEBUG - ehwghihwiho from 6:30 PM to 7:30 PM on 25 May 2012 
+2012-06-11 19:39:24,009 - operation.Search - DEBUG - allTasks[0] StartTime:946722659000
+2012-06-11 19:39:24,009 - operation.Search - DEBUG - allTasks[0] StartDate:1337961599000
+2012-06-11 19:39:24,010 - operation.Search - DEBUG - allTasks[0] EndTime:946726259000
+2012-06-11 19:39:24,010 - operation.Search - DEBUG - allTasks[0] EndDate:1337961599000
+2012-06-11 19:39:24,010 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,010 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,011 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,011 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,011 - operation.Search - DEBUG - ehwghihwiho
+2012-06-11 19:39:24,011 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,012 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,012 - operation.Search - DEBUG - Matching task1
+2012-06-11 19:39:24,012 - operation.Search - DEBUG - have lunch at 8:00 PM on 11 Jun 2012 
+2012-06-11 19:39:24,013 - operation.Search - DEBUG - allTasks[1] StartTime:946728059000
+2012-06-11 19:39:24,013 - operation.Search - DEBUG - allTasks[1] StartDate:1339430399000
+2012-06-11 19:39:24,013 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,014 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,014 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,014 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,014 - operation.Search - DEBUG - have lunch
+2012-06-11 19:39:24,014 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,015 - operation.Search - DEBUG - start date matches
+2012-06-11 19:39:24,015 - operation.Search - DEBUG - start time matches
+2012-06-11 19:39:24,015 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,015 - operation.Search - DEBUG - matches 9
+2012-06-11 19:39:24,016 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:24,016 - operation.Search - DEBUG - Matching task2
+2012-06-11 19:39:24,016 - operation.Search - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
+2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] StartTime:946720859000
+2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] StartDate:1339430399000
+2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] EndTime:946735259000
+2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] EndDate:1339430399000
+2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,023 - operation.Search - DEBUG - snack time
+2012-06-11 19:39:24,023 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,024 - operation.Search - DEBUG - start date matches
+2012-06-11 19:39:24,024 - operation.Search - DEBUG - start time matches
+2012-06-11 19:39:24,024 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,024 - operation.Search - DEBUG - matches 7
+2012-06-11 19:39:24,025 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:24,025 - operation.Search - DEBUG - Matching task3
+2012-06-11 19:39:24,025 - operation.Search - DEBUG - fo to schoool at 3:00 PM on 12 Jun 2012 
+2012-06-11 19:39:24,026 - operation.Search - DEBUG - allTasks[3] StartTime:946710059000
+2012-06-11 19:39:24,026 - operation.Search - DEBUG - allTasks[3] StartDate:1339516799000
+2012-06-11 19:39:24,026 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,027 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,027 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,027 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,027 - operation.Search - DEBUG - fo to schoool
+2012-06-11 19:39:24,028 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,028 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,028 - operation.Search - DEBUG - matches 9
+2012-06-11 19:39:24,028 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:24,028 - operation.Search - DEBUG - Matching task4
+2012-06-11 19:39:24,029 - operation.Search - DEBUG - g for lecture from 1:00 PM to 3:00 PM on 23 May 2012 
+2012-06-11 19:39:24,029 - operation.Search - DEBUG - allTasks[4] StartTime:946702859000
+2012-06-11 19:39:24,029 - operation.Search - DEBUG - allTasks[4] StartDate:1337788799000
+2012-06-11 19:39:24,029 - operation.Search - DEBUG - allTasks[4] EndTime:946710059000
+2012-06-11 19:39:24,030 - operation.Search - DEBUG - allTasks[4] EndDate:1337788799000
+2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,031 - operation.Search - DEBUG - g for lecture
+2012-06-11 19:39:24,031 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,031 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,032 - operation.Search - DEBUG - Matching task5
+2012-06-11 19:39:24,032 - operation.Search - DEBUG - visit nirav at pgp from 2:00 PM to 5:30 PM on 24 May 2012 
+2012-06-11 19:39:24,032 - operation.Search - DEBUG - allTasks[5] StartTime:946706459000
+2012-06-11 19:39:24,032 - operation.Search - DEBUG - allTasks[5] StartDate:1337875199000
+2012-06-11 19:39:24,033 - operation.Search - DEBUG - allTasks[5] EndTime:946719059000
+2012-06-11 19:39:24,033 - operation.Search - DEBUG - allTasks[5] EndDate:1337875199000
+2012-06-11 19:39:24,033 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,034 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,034 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,034 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,034 - operation.Search - DEBUG - visit nirav at pgp
+2012-06-11 19:39:24,034 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,035 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,035 - operation.Search - DEBUG - Matching task6
+2012-06-11 19:39:24,035 - operation.Search - DEBUG - go to utown at 5:00 PM on 12 Jun 2012 
+2012-06-11 19:39:24,035 - operation.Search - DEBUG - allTasks[6] StartTime:946717259000
+2012-06-11 19:39:24,036 - operation.Search - DEBUG - allTasks[6] StartDate:1339516799000
+2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,037 - operation.Search - DEBUG - go to utown
+2012-06-11 19:39:24,037 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,037 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,037 - operation.Search - DEBUG - matches 9
+2012-06-11 19:39:24,041 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:24,041 - operation.Search - DEBUG - Matching task7
+2012-06-11 19:39:24,041 - operation.Search - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012 
+2012-06-11 19:39:24,041 - operation.Search - DEBUG - allTasks[7] StartTime:946713659000
+2012-06-11 19:39:24,041 - operation.Search - DEBUG - allTasks[7] StartDate:1339430399000
+2012-06-11 19:39:24,042 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,042 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,042 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,043 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,043 - operation.Search - DEBUG - go to bed
+2012-06-11 19:39:24,043 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,043 - operation.Search - DEBUG - start date matches
+2012-06-11 19:39:24,044 - operation.Search - DEBUG - start time matches
+2012-06-11 19:39:24,044 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,044 - operation.Search - DEBUG - matches 9
+2012-06-11 19:39:24,044 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:24,044 - operation.Search - DEBUG - Matching task8
+2012-06-11 19:39:24,045 - operation.Search - DEBUG - go to the doctor from 8:00 PM to 11:00 PM on 22 May 2012 
+2012-06-11 19:39:24,045 - operation.Search - DEBUG - allTasks[8] StartTime:946728059000
+2012-06-11 19:39:24,045 - operation.Search - DEBUG - allTasks[8] StartDate:1337702399000
+2012-06-11 19:39:24,045 - operation.Search - DEBUG - allTasks[8] EndTime:946738859000
+2012-06-11 19:39:24,046 - operation.Search - DEBUG - allTasks[8] EndDate:1337702399000
+2012-06-11 19:39:24,046 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,046 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,046 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,047 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,047 - operation.Search - DEBUG - go to the doctor
+2012-06-11 19:39:24,048 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,048 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,048 - operation.Search - DEBUG - Matching task9
+2012-06-11 19:39:24,049 - operation.Search - DEBUG - tea at the ritz from 7:00 PM to 9:00 PM on 23 May 2012 
+2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] StartTime:946724459000
+2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] StartDate:1337788799000
+2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] EndTime:946731659000
+2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] EndDate:1337788799000
+2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,050 - operation.Search - DEBUG - tea at the ritz
+2012-06-11 19:39:24,051 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,051 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,051 - operation.Search - DEBUG - Matching task10
+2012-06-11 19:39:24,051 - operation.Search - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
+2012-06-11 19:39:24,054 - operation.Search - DEBUG - allTasks[10] StartTime:946710059000
+2012-06-11 19:39:24,054 - operation.Search - DEBUG - allTasks[10] StartDate:1339430399000
+2012-06-11 19:39:24,054 - operation.Search - DEBUG - searchstring StartTime:946742399000
+2012-06-11 19:39:24,055 - operation.Search - DEBUG - searchstring StartDate:1339430399000
+2012-06-11 19:39:24,055 - operation.Search - DEBUG - searchstring EndTime:946742399000
+2012-06-11 19:39:24,055 - operation.Search - DEBUG - searchstring EndDate:1339516799000
+2012-06-11 19:39:24,055 - operation.Search - DEBUG - have dinner
+2012-06-11 19:39:24,055 - operation.Search - DEBUG - name matches
+2012-06-11 19:39:24,056 - operation.Search - DEBUG - start date matches
+2012-06-11 19:39:24,056 - operation.Search - DEBUG - start time matches
+2012-06-11 19:39:24,056 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-11 19:39:24,056 - operation.Search - DEBUG - matches 9
+2012-06-11 19:39:24,057 - operation.Search - DEBUG - it matches one of the conds
+2012-06-11 19:39:24,057 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-11 19:39:50,340 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - prevText: search today to tmr
+2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-11 19:39:50,535 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-11 19:39:50,535 - gui.mainWindow.MainJFrame - DEBUG - curText:li
+2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-11 19:39:50,886 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - curText:lis
+2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - prevText: li
+2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - curText:lis
+2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - prevText: lis
+2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-11 19:39:51,111 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - curText:list
+2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - prevText: lis
+2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - state: LIST
+2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LIST
+2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: list
+2012-06-11 19:39:51,432 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-11 19:39:51,433 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-11 19:39:51,433 - operation.Operation - DEBUG - list
+2012-06-11 19:39:51,433 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-11 19:39:51,434 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-11 19:39:51,434 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-11 19:39:51,434 - operation.Operation - DEBUG - find
+2012-06-11 19:39:51,434 - operation.Search - DEBUG - finding objects
+2012-06-11 19:39:51,435 - operation.Search - DEBUG - returning all objects
+2012-06-11 19:39:51,435 - operation.Search - DEBUG - before sorting
+2012-06-11 19:39:51,435 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to utown at 5:00 PM on 12 Jun 2012  -1652400000
+2012-06-11 19:39:51,436 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH *go to bed at 4:00 PM on 11 Jun 2012  -1562400000
+2012-06-11 19:39:51,436 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to the doctor from 8:00 PM to 11:00 PM on 22 May 2012  151200000
+2012-06-11 19:39:51,436 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH tea at the ritz from 7:00 PM to 9:00 PM on 23 May 2012  68400000
+2012-06-11 19:39:51,437 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH have dinner at 3:00 PM on 11 Jun 2012  -1558800000
+2012-06-11 19:39:51,437 - operation.Search - DEBUG - after sorting
+2012-06-11 19:39:51,437 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1337688000000
+2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - timediff: -1727091434
+2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1337749200000
+2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - timediff: -1665891434
+2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - 1337770800000
+2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - timediff: -1644291434
+2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1337839200000
+2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - timediff: -1575891434
+2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1337941800000
+2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - timediff: -1473291434
+2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - 1339398000000
+2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - timediff: -17091434
+2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339401600000
+2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - timediff: -13491434
+2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339408800000
+2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - timediff: -6291434
+2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - 1339416000000
+2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - timediff: 908566
+2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - latestTask: have lunch at 8:00 PM on 11 Jun 2012 
+2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - 1339416000000
+2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - 1339414791434
+2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - timediff: 908566
+2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - setTimer: 908566
+2012-06-11 19:39:51,534 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-11 19:39:51,534 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-11 19:39:51,535 - operation.Operation - DEBUG - find
+2012-06-11 19:39:51,535 - operation.Search - DEBUG - finding objects
+2012-06-11 19:39:51,535 - operation.Search - DEBUG - returning all objects
+2012-06-11 19:39:51,535 - operation.Search - DEBUG - before sorting
+2012-06-11 19:39:51,536 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to utown at 5:00 PM on 12 Jun 2012  -1652400000
+2012-06-11 19:39:51,536 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH *go to bed at 4:00 PM on 11 Jun 2012  -1562400000
+2012-06-11 19:39:51,536 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to the doctor from 8:00 PM to 11:00 PM on 22 May 2012  151200000
+2012-06-11 19:39:51,537 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH tea at the ritz from 7:00 PM to 9:00 PM on 23 May 2012  68400000
+2012-06-11 19:39:51,537 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH have dinner at 3:00 PM on 11 Jun 2012  -1558800000
+2012-06-11 19:39:51,538 - operation.Search - DEBUG - after sorting
+2012-06-11 19:39:51,538 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-11 19:39:59,277 - storagecontroller.FileHandler - DEBUG - 11
+2012-06-11 19:39:59,422 - storagecontroller.FileHandler - DEBUG - 0

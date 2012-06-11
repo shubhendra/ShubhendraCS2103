@@ -32,7 +32,7 @@ public class JIDLogic implements Runnable {
 	    		}
 	    	}
 	    	command="delete";
-	    	Task[] xyz=executeCommand("archive");
+	    	Task[] xyz=executeCommand("exportarchive");
 	    	if (xyz!=null)
 	    	logger.debug("printing search"+ xyz.length);
 	    	else
@@ -58,7 +58,7 @@ public class JIDLogic implements Runnable {
 	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
 	    		}
 	    	}
-
+/*
 	    	logger.debug(StorageManager.getAllArchivedTasks().length);
 	    	logger.debug(StorageManager.getAllTasks().length);
 	    	for(int i= 0;i<StorageManager.getAllArchivedTasks().length;i++){

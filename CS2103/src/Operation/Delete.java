@@ -50,8 +50,12 @@ public class Delete extends BaseSearch {
 			logger.debug("deleted succesfully");
 			return resultOfDelete;
 		}
-
-		return null;
+		else
+		{
+			feedback=OperationFeedback.DELETE_FAILED;
+			return null;
+		}
+		
 		
 	}
 	@Override
@@ -110,7 +114,10 @@ public class Delete extends BaseSearch {
 				logger.debug("deleted succesfully");
 			}
 			else 
+			{
+				feedback=OperationFeedback.DELETE_FAILED;
 				return null;
+			}
 		}
 		if (taskDeleted.size()==0)
 			return null;
