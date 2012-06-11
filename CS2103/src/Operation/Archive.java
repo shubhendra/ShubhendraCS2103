@@ -13,7 +13,7 @@ public class Archive extends Operation{
 	private String commandName;
 	private static Logger logger=Logger.getLogger(Archive.class);
 	private enum archiveStatus{
-		CLEAR_ARCHIVE, EXPORT_ARCHIVE, ARCHIVE, NON;
+		CLEAR_ARCHIVE, IMPORT_ARCHIVE, ARCHIVE, NON;
 	}
 	private archiveStatus archiveCommand=archiveStatus.NON;
 	private ArrayList<Task> archiveTasks=new ArrayList<Task>();
@@ -37,7 +37,7 @@ public class Archive extends Operation{
 		if (archiveCommand==archiveStatus.CLEAR_ARCHIVE){
 			return null;
 		}
-		else if (archiveCommand==archiveStatus.EXPORT_ARCHIVE){
+		else if (archiveCommand==archiveStatus.IMPORT_ARCHIVE){
 			for (int i=0;i<archiveTasks.size();i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
@@ -107,15 +107,15 @@ public class Archive extends Operation{
 			archiveCommand=archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
-		else if(userCommand.toLowerCase().trim()=="exportarchive"){
-			archiveCommand=archiveStatus.EXPORT_ARCHIVE;
-			return exportArchive();
+		else if(userCommand.toLowerCase().trim()=="importarchive"){
+			archiveCommand=archiveStatus.IMPORT_ARCHIVE;
+			return importArchive();
 		}
 		else 
 			return null;
 	}
 
-	private Task[] exportArchive() {
+	private Task[] importArchive() {
 		// TODO Auto-generated method stub
 		Task[] allArchivedTasks=StorageManager.getAllArchivedTasks();
 		
@@ -136,9 +136,6 @@ public class Archive extends Operation{
 		}
 		else
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
-
-		
-		
 	}
 
 	private Task[] clearArchive() {

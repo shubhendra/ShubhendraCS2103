@@ -119,8 +119,10 @@ public class Delete extends BaseSearch {
 				return null;
 			}
 		}
-		if (taskDeleted.size()==0)
+		if (taskDeleted.size()==0){
+			feedback=OperationFeedback.NO_TASK_DELETED;
 			return null;
+		}
 		else
 			return (Task[])taskDeleted.toArray(new Task[taskDeleted.size()]);
 	}

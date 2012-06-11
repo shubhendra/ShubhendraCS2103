@@ -112,6 +112,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		this.currentLocation = new Point(this.getLocation());
+		
+		addBindings();
+		
 		/*
 		 * Create and display the form
 		 */
@@ -121,8 +124,6 @@ public class MainJFrame extends javax.swing.JFrame {
 				showFrame();
 			}
 		});
-		
-		addBindings();
 	}
 
 	/**
@@ -196,7 +197,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		this.setIconImage((Resource.bigLogo).getImage());
 		this.setUndecorated(true);
 		this.setBackground(new Color(0,0,0,0));
-		this.pack();
+		//this.pack();
 		this.setSize(400, 100);
 	}
 	
@@ -421,17 +422,18 @@ public class MainJFrame extends javax.swing.JFrame {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
 		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
 		, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
+		, CLEARARCHIVE, EXPORTARCHIVE
 	};
 	
 	boolean edit = false;
 	STATE curState;
 	STATE prevState = STATE.NULL;
-	Task[] prevTasks;
 	Task[] tasks;
 	String prevText;
 	String id;
 	int prevIndex;
 	String lastCmd = null;
+	String command;
 	
 	/**
 	 * set action of JComboBox1 
@@ -466,7 +468,6 @@ public class MainJFrame extends javax.swing.JFrame {
 								logger.debug("------------------------------");
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
-								//logger.debug("cmd: " + command);
 								logger.debug("state: " +curState);
 								logger.debug("prev: " +prevState);
 								logger.debug("index: "+ curIndex);
@@ -502,7 +503,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									|| curState == STATE.IMPORTANT
 									|| curState == STATE.DELETEALL
 									|| curState == STATE.COMPLETEDALL)
-									&& curText.length() > curState.toString().length() +1) {
+									&& curText.length() > command.length()+1) {
 									if((e.getKeyCode() == KeyEvent.VK_BACK_SPACE || !e.isActionKey())
 									&& e.getKeyCode() != KeyEvent.VK_ENTER
 									&& (e.getKeyCode() != KeyEvent.VK_UP)
@@ -528,7 +529,6 @@ public class MainJFrame extends javax.swing.JFrame {
 											
 											jComboBox1.setPopupVisible(true);
 	
-											jComboBox1.setSelectedIndex(-1);
 											editorcomp.setText(curText);
 											editorcomp.setSelectionStart(curLocation);
 											editorcomp.setSelectionEnd(curLocation);
@@ -571,16 +571,19 @@ public class MainJFrame extends javax.swing.JFrame {
 									case COMPLETED:
 									case COMPLETEDALL:
 									case IMPORTANT:
-										exeCmd = curState.toString().toLowerCase() + " "
-												+ id + " ";
+										if(id!=null)
+											exeCmd = curState.toString().toLowerCase() + " "
+													+ id + " ";
+										id = null;
 										break;
 									case EDIT:
-										if(!edit) {
+										if(!edit && id!=null) {
 											exeCmd = curState.toString().toLowerCase() + " "
 													+ id;
 											editorcomp.setText(
-													curState.toString().toLowerCase() + " " 
+													command + " " 
 													+ storagecontroller.StorageManager.getTaskById(id));
+											id = null;
 											edit = true;
 										}
 										else {
@@ -593,14 +596,15 @@ public class MainJFrame extends javax.swing.JFrame {
 										lastCmd = curText;
 										break;
 									case SEARCH:
-										exeCmd = curText;
-										break;
 									case LIST:
 									case UNDO:
-									case REDO:
-										exeCmd = curText;									
+									case REDO:							
 									case OVERDUE:
+									case ARCHIVE:
+									case CLEARARCHIVE:
+									case EXPORTARCHIVE:
 										exeCmd = curText;
+									break;
 									}
 									
 									
@@ -653,6 +657,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									case LOGOUT:
 										new Action.GCalendarOutAction().actionPerformed(null);
 										break;
+									case ARCHIVE:
+									case CLEARARCHIVE:
+									case EXPORTARCHIVE:
 									}
 									
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
@@ -669,7 +676,6 @@ public class MainJFrame extends javax.swing.JFrame {
 								prevState = curState;
 								prevIndex = curIndex;
 								prevText = curText;
-								prevTasks = tasks;
 							}
 							
 
@@ -677,11 +683,9 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(tasks!=null) {
 									String[] strings = new String[tasks.length];
 									for(int i=0; i<tasks.length; i++)
-										strings[i]= curState.toString() + " " 
+										strings[i]= command + " " 
 												+ tasks[i];
-									
-									
-									logger.debug("str[0]: "+strings[0]);
+																		
 									return strings;
 								}
 								else {
@@ -690,8 +694,13 @@ public class MainJFrame extends javax.swing.JFrame {
 							}
 							
 							private STATE checkCommand(String curText) {
+								if(curText.equals(""))
+									return STATE.NULL;
+								
 								String delims = "[ ]+";
-								String firstWord = curText.split(delims)[0];
+								String firstWord = curText.trim().split(delims)[0];
+								command = firstWord;
+								
 								if(firstWord.equalsIgnoreCase("add") 
 										|| firstWord.equalsIgnoreCase("insert"))
 									return STATE.ADD;
@@ -726,10 +735,18 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.IMPORTANT;
 								if(firstWord.equalsIgnoreCase("login"))
 									return STATE.LOGIN;
-								if(firstWord.equalsIgnoreCase("deleteall"))
+								if(firstWord.equalsIgnoreCase("delete.all"))
 									return STATE.DELETEALL;
-								if(firstWord.equalsIgnoreCase("completedall"))
+								if(firstWord.equalsIgnoreCase("completed.all"))
 									return STATE.COMPLETEDALL;
+								if(firstWord.equalsIgnoreCase("archive"))
+									return STATE.ARCHIVE;
+								if(firstWord.equalsIgnoreCase("cleararchive"))
+									return STATE.CLEARARCHIVE;
+								if(firstWord.equalsIgnoreCase("exportarchive"))
+									return STATE.EXPORTARCHIVE;
+								
+								command = null;
 								return STATE.NULL;
 							} 
 

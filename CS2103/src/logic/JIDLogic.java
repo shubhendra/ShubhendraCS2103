@@ -10,7 +10,7 @@ import operation.*;
 import data.Task;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-//import gui.UIController;
+import gui.UIController;
 import storagecontroller.StorageManager;
 
 public class JIDLogic implements Runnable {
@@ -326,7 +326,8 @@ public class JIDLogic implements Runnable {
 			op = Operation.getOperationObj(commandFromUser);
 						
 			Task[] result=  op.execute(commandFromUser);
-			
+			UIController.sendOperationFeedback(op.getOpFeedback());
+			logger.debug("Operation feedback:"+op.getOpFeedback());
 			logger.debug("THE OPERATION IS UNDOABLE:"+op.isUndoAble());
 			if (op.isUndoAble()) {
 				undoStack.push(op);

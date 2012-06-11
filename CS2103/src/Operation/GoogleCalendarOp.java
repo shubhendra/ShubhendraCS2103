@@ -15,6 +15,7 @@ public class GoogleCalendarOp extends Operation {
 		logger.debug(userCommand);
 		// TODO Auto-generated method stub
 		if(userCommand.startsWith("logout")){
+					
 			return logout();
 			
 		}
@@ -130,9 +131,11 @@ public class GoogleCalendarOp extends Operation {
 		// TODO Auto-generated method stub
 		if (StorageManager.getGCalObject().logout()){
 			StorageManager.setGCalObject(null);
+			feedback=OperationFeedback.LOGGED_OUT_SUCCESSFULLY;
 			return new Task[1];
 		}
 		else {
+			feedback=OperationFeedback.LOGOUT_FAILED;
 			return null;
 		}
 	}

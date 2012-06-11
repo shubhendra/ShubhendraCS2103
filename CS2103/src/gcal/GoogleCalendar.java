@@ -62,7 +62,7 @@ public class GoogleCalendar
 	public boolean logout(){
 		calenService=new CalendarService(APPLICATION_NAME);
 		this.username=null;
-		this.username=null;
+		this.password=null;
 		loggedIn=false;
 		return true;
 	}

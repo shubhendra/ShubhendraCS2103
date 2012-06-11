@@ -53,7 +53,7 @@ public class Search extends Operation {
 
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}      
                
 
@@ -76,7 +76,7 @@ public class Search extends Operation {
 		if (userCommand.startsWith("search ")) {
 			params = userCommand.replace("search ", "");
 		} else if (userCommand.startsWith("find ")) {
-			params = userCommand.replace("find ", "");
+			params = userCommand.replace("find ", "").trim();
 		}
 		
 		if (params.toLowerCase().contains("*.*")) {
@@ -87,7 +87,7 @@ public class Search extends Operation {
 			logger.debug("returning todays objects");
 			return searchTodaysTasks();
 		}
-		Task parsedTask=parseCommand(params);
+		Task parsedTask=parseCommand(params.toLowerCase());
 		
 		if (parsedTask.getStart()!=null){
 			logger.debug(parsedTask.getStart().getDate().getTimeMilli());
@@ -138,6 +138,7 @@ public class Search extends Operation {
 		}
 		if (todaysTasks.size()!=0)
 			return (Task[]) todaysTasks.toArray(new Task[todaysTasks.size()]);
+		feedback=OperationFeedback.NOT_FOUND;
 		return null;
 	}
 	
@@ -188,6 +189,7 @@ public class Search extends Operation {
 		if (foundTasks.size()>0){
 			return foundTasks.toArray(new Task[foundTasks.size()]);
 		}
+		feedback=OperationFeedback.NOT_FOUND;
 		return null;
 	}
 

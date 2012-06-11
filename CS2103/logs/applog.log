@@ -1,479 +1,53 @@
-2012-06-11 19:39:16,285 - operation.Search - DEBUG - allTasks[10] StartDate:1339430399000
-2012-06-11 19:39:16,286 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:16,286 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:16,286 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:16,287 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:16,287 - operation.Search - DEBUG - have dinner
-2012-06-11 19:39:16,291 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:16,291 - operation.Search - DEBUG - start date matches
-2012-06-11 19:39:16,292 - operation.Search - DEBUG - start time matches
-2012-06-11 19:39:16,292 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:16,292 - operation.Search - DEBUG - matches 9
-2012-06-11 19:39:16,293 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:16,293 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 19:39:16,293 - gui.mainWindow.MainJFrame - DEBUG - str[0]: SEARCH have lunch at 8:00 PM on 11 Jun 2012 
-2012-06-11 19:39:23,936 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - curText:search today to tmr
-2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - prevText: search today to tmr
-2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - state: SEARCH
-2012-06-11 19:39:23,937 - gui.mainWindow.MainJFrame - DEBUG - prev: SEARCH
-2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
-2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: SEARCH
-2012-06-11 19:39:23,938 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: search today to tmr
-2012-06-11 19:39:23,940 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 19:39:23,940 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 19:39:23,940 - operation.Operation - DEBUG - search
-2012-06-11 19:39:23,940 - operation.Search - DEBUG - finding objects
-2012-06-11 19:39:23,941 - logic.JIDLogic - DEBUG - this task is not recurring
-2012-06-11 19:39:23,941 - logic.JIDLogic - DEBUG - left over string after checking for recurring: today to tmr
-2012-06-11 19:39:23,947 - logic.JIDLogic - DEBUG - -----from_date_to_date format-------
-2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 0: today to tmr
-2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 1: null
-2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 2: null
-2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 3: null
-2012-06-11 19:39:23,948 - logic.JIDLogic - DEBUG - group 4: today
-2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 5: null
-2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 6: null
-2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 7: null
-2012-06-11 19:39:23,949 - logic.JIDLogic - DEBUG - group 8: today
-2012-06-11 19:39:23,950 - logic.JIDLogic - DEBUG - group 9: null
-2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 10: null
-2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 11: null
-2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 12: null
-2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 13: null
-2012-06-11 19:39:23,951 - logic.JIDLogic - DEBUG - group 14: null
-2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 15: null
-2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 16: null
-2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 17: null
-2012-06-11 19:39:23,952 - logic.JIDLogic - DEBUG - group 18: null
-2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 19: null
-2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 20: null
-2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 21: null
-2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 22: null
-2012-06-11 19:39:23,953 - logic.JIDLogic - DEBUG - group 23: null
-2012-06-11 19:39:23,954 - logic.JIDLogic - DEBUG - group 24: null
-2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 25: null
-2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 26: null
-2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 27: null
-2012-06-11 19:39:23,955 - logic.JIDLogic - DEBUG - group 28: null
-2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 29: null
-2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 30: null
-2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 31: null
-2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 32: null
-2012-06-11 19:39:23,956 - logic.JIDLogic - DEBUG - group 33: null
-2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 34: null
-2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 35: null
-2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 36: null
-2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 37: null
-2012-06-11 19:39:23,957 - logic.JIDLogic - DEBUG - group 38: null
-2012-06-11 19:39:23,958 - logic.JIDLogic - DEBUG - group 39: null
-2012-06-11 19:39:23,958 - logic.JIDLogic - DEBUG - group 40: null
-2012-06-11 19:39:23,960 - logic.JIDLogic - DEBUG - group 41: null
-2012-06-11 19:39:23,960 - logic.JIDLogic - DEBUG - group 42: null
-2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 43: null
-2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 44: null
-2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 45: null
-2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 46: null
-2012-06-11 19:39:23,961 - logic.JIDLogic - DEBUG - group 47: null
-2012-06-11 19:39:23,962 - logic.JIDLogic - DEBUG - group 48: null
-2012-06-11 19:39:23,962 - logic.JIDLogic - DEBUG - group 49: null
-2012-06-11 19:39:23,962 - logic.JIDLogic - DEBUG - group 50: null
-2012-06-11 19:39:23,964 - logic.JIDLogic - DEBUG - group 51: null
-2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 52: null
-2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 53: null
-2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 54: null
-2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 55: null
-2012-06-11 19:39:23,965 - logic.JIDLogic - DEBUG - group 56: null
-2012-06-11 19:39:23,966 - logic.JIDLogic - DEBUG - group 57: null
-2012-06-11 19:39:23,966 - logic.JIDLogic - DEBUG - group 58: null
-2012-06-11 19:39:23,966 - logic.JIDLogic - DEBUG - group 59: null
-2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 60: null
-2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 61: null
-2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 62: null
-2012-06-11 19:39:23,967 - logic.JIDLogic - DEBUG - group 63: null
-2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 64: null
-2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 65: null
-2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 66: null
-2012-06-11 19:39:23,968 - logic.JIDLogic - DEBUG - group 67: null
-2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 68: null
-2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 69: null
-2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 70: null
-2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 71: null
-2012-06-11 19:39:23,969 - logic.JIDLogic - DEBUG - group 72: null
-2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 73: null
-2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 74: null
-2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 75: null
-2012-06-11 19:39:23,970 - logic.JIDLogic - DEBUG - group 76: null
-2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 77: today
-2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 78: today
-2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 79: today
-2012-06-11 19:39:23,971 - logic.JIDLogic - DEBUG - group 80: null
-2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 81: null
-2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 82: null
-2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 83: null
-2012-06-11 19:39:23,972 - logic.JIDLogic - DEBUG - group 84: null
-2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 85: null
-2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 86: null
-2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 87: to
-2012-06-11 19:39:23,973 - logic.JIDLogic - DEBUG - group 88: to
-2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 89: to
-2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 90: tmr
-2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 91: null
-2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 92: null
-2012-06-11 19:39:23,974 - logic.JIDLogic - DEBUG - group 93: null
-2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 94: tmr
-2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 95: null
-2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 96: null
-2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 97: null
-2012-06-11 19:39:23,975 - logic.JIDLogic - DEBUG - group 98: null
-2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 99: null
-2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 100: null
-2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 101: null
-2012-06-11 19:39:23,976 - logic.JIDLogic - DEBUG - group 102: null
-2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 103: null
-2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 104: null
-2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 105: null
-2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 106: null
-2012-06-11 19:39:23,977 - logic.JIDLogic - DEBUG - group 107: null
-2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 108: null
-2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 109: null
-2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 110: null
-2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 111: null
-2012-06-11 19:39:23,978 - logic.JIDLogic - DEBUG - group 112: null
-2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 113: null
-2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 114: null
-2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 115: null
-2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 116: null
-2012-06-11 19:39:23,979 - logic.JIDLogic - DEBUG - group 117: null
-2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 118: null
-2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 119: null
-2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 120: null
-2012-06-11 19:39:23,980 - logic.JIDLogic - DEBUG - group 121: null
-2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 122: null
-2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 123: null
-2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 124: null
-2012-06-11 19:39:23,981 - logic.JIDLogic - DEBUG - group 125: null
-2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 126: null
-2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 127: null
-2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 128: null
-2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 129: null
-2012-06-11 19:39:23,982 - logic.JIDLogic - DEBUG - group 130: null
-2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 131: null
-2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 132: null
-2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 133: null
-2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 134: null
-2012-06-11 19:39:23,983 - logic.JIDLogic - DEBUG - group 135: null
-2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 136: null
-2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 137: null
-2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 138: null
-2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 139: null
-2012-06-11 19:39:23,984 - logic.JIDLogic - DEBUG - group 140: null
-2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 141: null
-2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 142: null
-2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 143: null
-2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 144: null
-2012-06-11 19:39:23,985 - logic.JIDLogic - DEBUG - group 145: null
-2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 146: null
-2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 147: null
-2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 148: null
-2012-06-11 19:39:23,986 - logic.JIDLogic - DEBUG - group 149: null
-2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 150: null
-2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 151: null
-2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 152: null
-2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 153: null
-2012-06-11 19:39:23,987 - logic.JIDLogic - DEBUG - group 154: null
-2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 155: null
-2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 156: null
-2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 157: null
-2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 158: null
-2012-06-11 19:39:23,988 - logic.JIDLogic - DEBUG - group 159: null
-2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 160: null
-2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 161: null
-2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 162: null
-2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 163: tmr
-2012-06-11 19:39:23,989 - logic.JIDLogic - DEBUG - group 164: null
-2012-06-11 19:39:23,990 - logic.JIDLogic - DEBUG - group 165: null
-2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 166: tmr
-2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 167: tmr
-2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 168: null
-2012-06-11 19:39:23,991 - logic.JIDLogic - DEBUG - group 169: null
-2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - group 170: null
-2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - group 171: null
-2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - start date string: today
-2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - end date string: tmr
-2012-06-11 19:39:23,992 - logic.JIDLogic - DEBUG - 3rd return of setStartDate: false
-2012-06-11 19:39:23,995 - logic.JIDLogic - DEBUG - Start time could NOT be set!
-2012-06-11 19:39:23,995 - logic.JIDLogic - DEBUG - End time could NOT be set!
-2012-06-11 19:39:23,995 - logic.JIDLogic - DEBUG - dummyDay:11
-2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - dummyMonth:6
-2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - dummyYear:2012
-2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - Start date is set!
-2012-06-11 19:39:23,996 - logic.JIDLogic - DEBUG - dummyDay:12
-2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - dummyMonth:6
-2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - dummyYear:2012
-2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - End date is set!
-2012-06-11 19:39:23,997 - logic.JIDLogic - DEBUG - time/date extracted!
-2012-06-11 19:39:23,998 - logic.JIDLogic - DEBUG - start date time: 11 Jun 2012
-2012-06-11 19:39:23,998 - logic.JIDLogic - DEBUG - end date time: 12 Jun 2012
-2012-06-11 19:39:23,998 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
-2012-06-11 19:39:23,999 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
-2012-06-11 19:39:23,999 - logic.JIDLogic - DEBUG - is NOT important!
-2012-06-11 19:39:24,007 - logic.JIDLogic - DEBUG - it is not recurring
-2012-06-11 19:39:24,007 - logic.JIDLogic - DEBUG - task details: 
-2012-06-11 19:39:24,007 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
-2012-06-11 19:39:24,008 - logic.JIDLogic - DEBUG - task before returning:  from 11 Jun 2012 to 12 Jun 2012 
-2012-06-11 19:39:24,008 - operation.Search - DEBUG - 1339430399000
-2012-06-11 19:39:24,008 - operation.Search - DEBUG - Default date:946742399000
-2012-06-11 19:39:24,008 - operation.Search - DEBUG - Default Time:946742399000
-2012-06-11 19:39:24,009 - operation.Search - DEBUG - Matching task0
-2012-06-11 19:39:24,009 - operation.Search - DEBUG - ehwghihwiho from 6:30 PM to 7:30 PM on 25 May 2012 
-2012-06-11 19:39:24,009 - operation.Search - DEBUG - allTasks[0] StartTime:946722659000
-2012-06-11 19:39:24,009 - operation.Search - DEBUG - allTasks[0] StartDate:1337961599000
-2012-06-11 19:39:24,010 - operation.Search - DEBUG - allTasks[0] EndTime:946726259000
-2012-06-11 19:39:24,010 - operation.Search - DEBUG - allTasks[0] EndDate:1337961599000
-2012-06-11 19:39:24,010 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,010 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,011 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,011 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,011 - operation.Search - DEBUG - ehwghihwiho
-2012-06-11 19:39:24,011 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,012 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,012 - operation.Search - DEBUG - Matching task1
-2012-06-11 19:39:24,012 - operation.Search - DEBUG - have lunch at 8:00 PM on 11 Jun 2012 
-2012-06-11 19:39:24,013 - operation.Search - DEBUG - allTasks[1] StartTime:946728059000
-2012-06-11 19:39:24,013 - operation.Search - DEBUG - allTasks[1] StartDate:1339430399000
-2012-06-11 19:39:24,013 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,014 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,014 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,014 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,014 - operation.Search - DEBUG - have lunch
-2012-06-11 19:39:24,014 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,015 - operation.Search - DEBUG - start date matches
-2012-06-11 19:39:24,015 - operation.Search - DEBUG - start time matches
-2012-06-11 19:39:24,015 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,015 - operation.Search - DEBUG - matches 9
-2012-06-11 19:39:24,016 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:24,016 - operation.Search - DEBUG - Matching task2
-2012-06-11 19:39:24,016 - operation.Search - DEBUG - snack time from 6:00 PM to 10:00 PM on 11 Jun 2012 
-2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] StartTime:946720859000
-2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] StartDate:1339430399000
-2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] EndTime:946735259000
-2012-06-11 19:39:24,020 - operation.Search - DEBUG - allTasks[2] EndDate:1339430399000
-2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,021 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,023 - operation.Search - DEBUG - snack time
-2012-06-11 19:39:24,023 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,024 - operation.Search - DEBUG - start date matches
-2012-06-11 19:39:24,024 - operation.Search - DEBUG - start time matches
-2012-06-11 19:39:24,024 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,024 - operation.Search - DEBUG - matches 7
-2012-06-11 19:39:24,025 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:24,025 - operation.Search - DEBUG - Matching task3
-2012-06-11 19:39:24,025 - operation.Search - DEBUG - fo to schoool at 3:00 PM on 12 Jun 2012 
-2012-06-11 19:39:24,026 - operation.Search - DEBUG - allTasks[3] StartTime:946710059000
-2012-06-11 19:39:24,026 - operation.Search - DEBUG - allTasks[3] StartDate:1339516799000
-2012-06-11 19:39:24,026 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,027 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,027 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,027 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,027 - operation.Search - DEBUG - fo to schoool
-2012-06-11 19:39:24,028 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,028 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,028 - operation.Search - DEBUG - matches 9
-2012-06-11 19:39:24,028 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:24,028 - operation.Search - DEBUG - Matching task4
-2012-06-11 19:39:24,029 - operation.Search - DEBUG - g for lecture from 1:00 PM to 3:00 PM on 23 May 2012 
-2012-06-11 19:39:24,029 - operation.Search - DEBUG - allTasks[4] StartTime:946702859000
-2012-06-11 19:39:24,029 - operation.Search - DEBUG - allTasks[4] StartDate:1337788799000
-2012-06-11 19:39:24,029 - operation.Search - DEBUG - allTasks[4] EndTime:946710059000
-2012-06-11 19:39:24,030 - operation.Search - DEBUG - allTasks[4] EndDate:1337788799000
-2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,030 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,031 - operation.Search - DEBUG - g for lecture
-2012-06-11 19:39:24,031 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,031 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,032 - operation.Search - DEBUG - Matching task5
-2012-06-11 19:39:24,032 - operation.Search - DEBUG - visit nirav at pgp from 2:00 PM to 5:30 PM on 24 May 2012 
-2012-06-11 19:39:24,032 - operation.Search - DEBUG - allTasks[5] StartTime:946706459000
-2012-06-11 19:39:24,032 - operation.Search - DEBUG - allTasks[5] StartDate:1337875199000
-2012-06-11 19:39:24,033 - operation.Search - DEBUG - allTasks[5] EndTime:946719059000
-2012-06-11 19:39:24,033 - operation.Search - DEBUG - allTasks[5] EndDate:1337875199000
-2012-06-11 19:39:24,033 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,034 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,034 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,034 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,034 - operation.Search - DEBUG - visit nirav at pgp
-2012-06-11 19:39:24,034 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,035 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,035 - operation.Search - DEBUG - Matching task6
-2012-06-11 19:39:24,035 - operation.Search - DEBUG - go to utown at 5:00 PM on 12 Jun 2012 
-2012-06-11 19:39:24,035 - operation.Search - DEBUG - allTasks[6] StartTime:946717259000
-2012-06-11 19:39:24,036 - operation.Search - DEBUG - allTasks[6] StartDate:1339516799000
-2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,036 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,037 - operation.Search - DEBUG - go to utown
-2012-06-11 19:39:24,037 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,037 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,037 - operation.Search - DEBUG - matches 9
-2012-06-11 19:39:24,041 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:24,041 - operation.Search - DEBUG - Matching task7
-2012-06-11 19:39:24,041 - operation.Search - DEBUG - *go to bed at 4:00 PM on 11 Jun 2012 
-2012-06-11 19:39:24,041 - operation.Search - DEBUG - allTasks[7] StartTime:946713659000
-2012-06-11 19:39:24,041 - operation.Search - DEBUG - allTasks[7] StartDate:1339430399000
-2012-06-11 19:39:24,042 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,042 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,042 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,043 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,043 - operation.Search - DEBUG - go to bed
-2012-06-11 19:39:24,043 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,043 - operation.Search - DEBUG - start date matches
-2012-06-11 19:39:24,044 - operation.Search - DEBUG - start time matches
-2012-06-11 19:39:24,044 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,044 - operation.Search - DEBUG - matches 9
-2012-06-11 19:39:24,044 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:24,044 - operation.Search - DEBUG - Matching task8
-2012-06-11 19:39:24,045 - operation.Search - DEBUG - go to the doctor from 8:00 PM to 11:00 PM on 22 May 2012 
-2012-06-11 19:39:24,045 - operation.Search - DEBUG - allTasks[8] StartTime:946728059000
-2012-06-11 19:39:24,045 - operation.Search - DEBUG - allTasks[8] StartDate:1337702399000
-2012-06-11 19:39:24,045 - operation.Search - DEBUG - allTasks[8] EndTime:946738859000
-2012-06-11 19:39:24,046 - operation.Search - DEBUG - allTasks[8] EndDate:1337702399000
-2012-06-11 19:39:24,046 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,046 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,046 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,047 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,047 - operation.Search - DEBUG - go to the doctor
-2012-06-11 19:39:24,048 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,048 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,048 - operation.Search - DEBUG - Matching task9
-2012-06-11 19:39:24,049 - operation.Search - DEBUG - tea at the ritz from 7:00 PM to 9:00 PM on 23 May 2012 
-2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] StartTime:946724459000
-2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] StartDate:1337788799000
-2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] EndTime:946731659000
-2012-06-11 19:39:24,049 - operation.Search - DEBUG - allTasks[9] EndDate:1337788799000
-2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,050 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,050 - operation.Search - DEBUG - tea at the ritz
-2012-06-11 19:39:24,051 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,051 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,051 - operation.Search - DEBUG - Matching task10
-2012-06-11 19:39:24,051 - operation.Search - DEBUG - have dinner at 3:00 PM on 11 Jun 2012 
-2012-06-11 19:39:24,054 - operation.Search - DEBUG - allTasks[10] StartTime:946710059000
-2012-06-11 19:39:24,054 - operation.Search - DEBUG - allTasks[10] StartDate:1339430399000
-2012-06-11 19:39:24,054 - operation.Search - DEBUG - searchstring StartTime:946742399000
-2012-06-11 19:39:24,055 - operation.Search - DEBUG - searchstring StartDate:1339430399000
-2012-06-11 19:39:24,055 - operation.Search - DEBUG - searchstring EndTime:946742399000
-2012-06-11 19:39:24,055 - operation.Search - DEBUG - searchstring EndDate:1339516799000
-2012-06-11 19:39:24,055 - operation.Search - DEBUG - have dinner
-2012-06-11 19:39:24,055 - operation.Search - DEBUG - name matches
-2012-06-11 19:39:24,056 - operation.Search - DEBUG - start date matches
-2012-06-11 19:39:24,056 - operation.Search - DEBUG - start time matches
-2012-06-11 19:39:24,056 - operation.Search - DEBUG - inside isTaskbetween
-2012-06-11 19:39:24,056 - operation.Search - DEBUG - matches 9
-2012-06-11 19:39:24,057 - operation.Search - DEBUG - it matches one of the conds
-2012-06-11 19:39:24,057 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 19:39:50,340 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - curText:l
-2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - prevText: search today to tmr
-2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
-2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-11 19:39:50,341 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-11 19:39:50,535 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-11 19:39:50,535 - gui.mainWindow.MainJFrame - DEBUG - curText:li
-2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
-2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
-2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-11 19:39:50,536 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-11 19:39:50,886 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - curText:lis
-2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - prevText: li
-2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
-2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-11 19:39:50,887 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - curText:lis
-2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - prevText: lis
-2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
-2012-06-11 19:39:51,110 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-11 19:39:51,111 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - curText:list
-2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - prevText: lis
-2012-06-11 19:39:51,431 - gui.mainWindow.MainJFrame - DEBUG - state: LIST
-2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
-2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LIST
-2012-06-11 19:39:51,432 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: list
-2012-06-11 19:39:51,432 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 19:39:51,433 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 19:39:51,433 - operation.Operation - DEBUG - list
-2012-06-11 19:39:51,433 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 19:39:51,434 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 19:39:51,434 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 19:39:51,434 - operation.Operation - DEBUG - find
-2012-06-11 19:39:51,434 - operation.Search - DEBUG - finding objects
-2012-06-11 19:39:51,435 - operation.Search - DEBUG - returning all objects
-2012-06-11 19:39:51,435 - operation.Search - DEBUG - before sorting
-2012-06-11 19:39:51,435 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to utown at 5:00 PM on 12 Jun 2012  -1652400000
-2012-06-11 19:39:51,436 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH *go to bed at 4:00 PM on 11 Jun 2012  -1562400000
-2012-06-11 19:39:51,436 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to the doctor from 8:00 PM to 11:00 PM on 22 May 2012  151200000
-2012-06-11 19:39:51,436 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH tea at the ritz from 7:00 PM to 9:00 PM on 23 May 2012  68400000
-2012-06-11 19:39:51,437 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH have dinner at 3:00 PM on 11 Jun 2012  -1558800000
-2012-06-11 19:39:51,437 - operation.Search - DEBUG - after sorting
-2012-06-11 19:39:51,437 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1337688000000
-2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - timediff: -1727091434
-2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1337749200000
-2012-06-11 19:39:51,438 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - timediff: -1665891434
-2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - 1337770800000
-2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,439 - gui.reminder.Reminder - DEBUG - timediff: -1644291434
-2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1337839200000
-2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - timediff: -1575891434
-2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1337941800000
-2012-06-11 19:39:51,440 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - timediff: -1473291434
-2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - 1339398000000
-2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,441 - gui.reminder.Reminder - DEBUG - timediff: -17091434
-2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339401600000
-2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - timediff: -13491434
-2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339408800000
-2012-06-11 19:39:51,442 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - timediff: -6291434
-2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - 1339416000000
-2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,443 - gui.reminder.Reminder - DEBUG - timediff: 908566
-2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - latestTask: have lunch at 8:00 PM on 11 Jun 2012 
-2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - 1339416000000
-2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - 1339414791434
-2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - timediff: 908566
-2012-06-11 19:39:51,444 - gui.reminder.Reminder - DEBUG - setTimer: 908566
-2012-06-11 19:39:51,534 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-11 19:39:51,534 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-11 19:39:51,535 - operation.Operation - DEBUG - find
-2012-06-11 19:39:51,535 - operation.Search - DEBUG - finding objects
-2012-06-11 19:39:51,535 - operation.Search - DEBUG - returning all objects
-2012-06-11 19:39:51,535 - operation.Search - DEBUG - before sorting
-2012-06-11 19:39:51,536 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to utown at 5:00 PM on 12 Jun 2012  -1652400000
-2012-06-11 19:39:51,536 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH *go to bed at 4:00 PM on 11 Jun 2012  -1562400000
-2012-06-11 19:39:51,536 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH go to the doctor from 8:00 PM to 11:00 PM on 22 May 2012  151200000
-2012-06-11 19:39:51,537 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH tea at the ritz from 7:00 PM to 9:00 PM on 23 May 2012  68400000
-2012-06-11 19:39:51,537 - data.CompareByDate - WARN - NIRAV GETTING COMPARED WITH have dinner at 3:00 PM on 11 Jun 2012  -1558800000
-2012-06-11 19:39:51,538 - operation.Search - DEBUG - after sorting
-2012-06-11 19:39:51,538 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-11 19:39:59,277 - storagecontroller.FileHandler - DEBUG - 11
-2012-06-11 19:39:59,422 - storagecontroller.FileHandler - DEBUG - 0
+2012-06-12 00:40:52,901 - operation.Search - DEBUG - finding objects
+2012-06-12 00:40:52,901 - operation.Search - DEBUG - returning all objects
+2012-06-12 00:40:52,901 - operation.Search - DEBUG - before sorting
+2012-06-12 00:40:52,916 - operation.Search - DEBUG - after sorting
+2012-06-12 00:40:52,916 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-12 00:40:52,917 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1337688000000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -1745152901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1337749200000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -1683952901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1337770800000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -1662352901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1337839200000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -1593952901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1337941800000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -1491352901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339398000000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -35152901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339401600000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -31552901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339408800000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -24352901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339416000000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -17152901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339430399000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: -2753901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339480800000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: 47647099
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - latestTask: shubh is boring at 2:00 PM on 12 Jun 2012 
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339480800000
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - 1339432852901
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - timediff: 47647099
+2012-06-12 00:40:52,917 - gui.reminder.Reminder - DEBUG - setTimer: 47647099
+2012-06-12 00:40:53,011 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:40:53,011 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:40:53,011 - operation.Operation - DEBUG - find
+2012-06-12 00:40:53,011 - operation.Search - DEBUG - finding objects
+2012-06-12 00:40:53,011 - operation.Search - DEBUG - returning all objects
+2012-06-12 00:40:53,011 - operation.Search - DEBUG - before sorting
+2012-06-12 00:40:53,011 - operation.Search - DEBUG - after sorting
+2012-06-12 00:40:53,011 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-12 00:40:53,011 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
