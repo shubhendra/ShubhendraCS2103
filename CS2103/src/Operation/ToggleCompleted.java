@@ -20,7 +20,29 @@ public class ToggleCompleted extends BaseSearch{
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
 	}
-
+	public Task[] executeAll(Task taskToComplete) {
+		// TODO Auto-generated method stub
+		if (taskToComplete.getRecurringId()=="")
+			return execute(taskToComplete);
+		Task[] taskToBeCompleted = StorageManager
+				.getTaskByRecurrenceID(taskToComplete.getRecurringId());
+		logger.debug(taskToBeCompleted.length);
+		for (int i=0;i<taskToBeCompleted.length;i++)
+		{
+			boolean completed = toggleComplete(taskToBeCompleted[i]);
+			if (completed) {
+				isUndoAble = true;
+				taskCompleted.add(taskToBeCompleted[i]);
+			
+				logger.debug("completed succesfully");
+				//return resultOfComplete;
+			}
+		}
+		if (taskCompleted.size()!=0)
+			return (Task[]) taskCompleted.toArray(new Task[taskCompleted.size()]);
+		else 
+			return null;
+	}
 	public Task[] execute(Task taskToBeCompleted){
 		Task taskToComplete = StorageManager
 				.getTaskById(taskToBeCompleted.getTaskId());

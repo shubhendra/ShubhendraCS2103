@@ -136,6 +136,9 @@ public class Parser {
 	private void setErrorCode (OperationFeedback e) {
 		error = e;
 	}
+	public OperationFeedback getErrorCode (){
+		return error;
+	}
 	/**Removes extra spaces in the input command
 	 * 
 	 * @param String s
@@ -338,7 +341,7 @@ public class Parser {
 		
 		Task[] taskArr=null;//- have a fetchTaskArr(ArrayList<Task> taskList) instead
 		
-		logger.debug("startDateTime: "+startDateTime.toString());
+		//logger.debug("startDateTime: "+startDateTime.toString());
 		
 		if (startDateTime!=null && !startDateTime.getHasDate()) {
 			setDefaultDateForAdd (startDateTime);
@@ -353,11 +356,11 @@ public class Parser {
 			if (startDateTime.getTimeMilli() <= TaskDateTime.getCurrentDateTime().getTimeMilli())
 				setErrorCode(OperationFeedback.START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME);
 		}
-		else if(startDateTime==null) {
+		else if(startDateTime==null && endDateTime!=null) {
 			if (endDateTime.getTimeMilli() <= TaskDateTime.getCurrentDateTime().getTimeMilli())
 				setErrorCode(OperationFeedback.END_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME);		
 		}
-		else if (endDateTime==null){
+		else if (endDateTime==null && startDateTime!=null){
 			if (startDateTime.getTimeMilli() <= TaskDateTime.getCurrentDateTime().getTimeMilli())
 				setErrorCode(OperationFeedback.START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME);		
 		}
@@ -419,7 +422,7 @@ public class Parser {
 			taskList.add(new Task(taskDetails,"",startDateTime,endDateTime,labelList,recurring,deadline,important));
 			
 			if(startDT!=null && endDT!=null) { //if both startDT and endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.DATE, 1);
 					endDT.add(GregorianCalendar.DATE, 1);
 					setLocalStartDateTime(startDT);
@@ -429,7 +432,7 @@ public class Parser {
 				}
 			}
 			else if(startDT==null && endDT!=null) { //if only endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					endDT.add(GregorianCalendar.DATE, 1);
 					setLocalEndDateTime(endDT);
 	
@@ -437,7 +440,7 @@ public class Parser {
 				}
 			}
 			else if(startDT!=null && endDT==null) { //if only startDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.DATE, 1);
 					setLocalStartDateTime(startDT);
 					
@@ -458,7 +461,7 @@ public class Parser {
 			//logger.debug("tasklist now: "+taskList.toString());
 			
 			if(startDT!=null && endDT!=null) { //if both startDT and endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.DATE, 7);
 					endDT.add(GregorianCalendar.DATE, 7);
 					setLocalStartDateTime(startDT);
@@ -468,7 +471,7 @@ public class Parser {
 				}
 			}
 			else if(startDT==null && endDT!=null) { //if only endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					endDT.add(GregorianCalendar.DATE, 7);
 					setLocalEndDateTime(endDT);
 	
@@ -476,7 +479,7 @@ public class Parser {
 				}
 			}
 			else if(startDT!=null && endDT==null) { //if only startDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.DATE, 7);
 					setLocalStartDateTime(startDT);
 					
@@ -495,7 +498,7 @@ public class Parser {
 			taskList.add(new Task(taskDetails,"",startDateTime,endDateTime,labelList,recurring,deadline,important));
 			
 			if(startDT!=null && endDT!=null) { //if both startDT and endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.MONTH, 1);
 					endDT.add(GregorianCalendar.MONTH, 1);
 					setLocalStartDateTime(startDT);
@@ -505,7 +508,7 @@ public class Parser {
 				}
 			}
 			else if(startDT==null && endDT!=null) { //if only endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					endDT.add(GregorianCalendar.MONTH, 1);
 					setLocalEndDateTime(endDT);
 	
@@ -513,7 +516,7 @@ public class Parser {
 				}
 			}
 			else if(startDT!=null && endDT==null) { //if only startDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.MONTH, 1);
 					setLocalStartDateTime(startDT);
 					
@@ -525,7 +528,7 @@ public class Parser {
 			taskList.add(new Task(taskDetails,"",startDateTime,endDateTime,labelList,recurring,deadline,important));
 			
 			if(startDT!=null && endDT!=null) { //if both startDT and endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.YEAR, 1);
 					endDT.add(GregorianCalendar.YEAR, 1);
 					setLocalStartDateTime(startDT);
@@ -535,7 +538,7 @@ public class Parser {
 				}
 			}
 			else if(startDT==null && endDT!=null) { //if only endDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					endDT.add(GregorianCalendar.YEAR, 1);
 					setLocalEndDateTime(endDT);
 	
@@ -543,7 +546,7 @@ public class Parser {
 				}
 			}
 			else if(startDT!=null && endDT==null) { //if only startDT exist
-				for (int i=0;i<numRecurr;i++) {
+				for (int i=0;i<numRecurr-1;i++) {
 					startDT.add(GregorianCalendar.YEAR, 1);
 					setLocalStartDateTime(startDT);
 					

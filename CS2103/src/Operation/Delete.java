@@ -92,7 +92,31 @@ public class Delete extends BaseSearch {
                
     
 	
-	
+	public Task[] executeAll(Task taskToBeDeleted) {
+		// TODO Auto-generated method stub
+		if (taskToBeDeleted.getRecurringId()=="")
+			return execute(taskToBeDeleted);
+		Task[] taskToDelete = StorageManager
+				.getTaskByRecurrenceID(taskToBeDeleted.getRecurringId());
+		logger.debug(taskToDelete.length);
+		for (int i=0;i<taskToDelete.length;i++)
+		{
+			boolean deleted = delete(taskToDelete[i]);
+			if (deleted) {
+				isUndoAble = true;
+				logger.debug("isUndoAble value changed" );
+				taskDeleted.add(taskToDelete[i]);
+				
+				logger.debug("deleted succesfully");
+			}
+			else 
+				return null;
+		}
+		if (taskDeleted.size()==0)
+			return null;
+		else
+			return (Task[])taskDeleted.toArray(new Task[taskDeleted.size()]);
+	}
 
 	@Override
 	public String getOperationName() {

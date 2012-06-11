@@ -20,7 +20,29 @@ public class ToggleImportant extends BaseSearch {
 	public ToggleImportant(){
 		commandName="star";
 	}
-	
+	public Task[] executeAll(Task taskToStar) {
+		// TODO Auto-generated method stub
+		if (taskToStar.getRecurringId()=="")
+			return execute(taskToStar);
+		Task[] taskToBeStarred = StorageManager
+				.getTaskByRecurrenceID(taskToStar.getRecurringId());
+		logger.debug(taskToBeStarred.length);
+		for (int i=0;i<taskToBeStarred.length;i++)
+		{
+			boolean starred = toggleImportant(taskToBeStarred[i]);
+			if (starred) {
+				isUndoAble = true;
+				taskStarred.add(taskToBeStarred[i]);
+				logger.debug("starred succesfully");
+				
+			}
+			else return null;
+		}
+		if (taskStarred.size()!=0)
+			return (Task[])taskStarred.toArray(new Task[taskStarred.size()]);
+		else
+			return null;
+	}
 	public ToggleImportant(String intendedOperation){
 		commandName=intendedOperation;
 	}

@@ -4,6 +4,8 @@
  */
 package gui.mainWindow.extended;
 
+import gui.mainWindow.extended.ExpandComponent.MyTableModelListener;
+
 import java.awt.Color;
 import java.awt.Container;
 
@@ -14,6 +16,8 @@ import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
@@ -31,6 +35,7 @@ public class ExpandComponent{
     private static MyTableModel myTableModel;
     // End of variables declaration
 	static AutoUpdateJTable autoJTable;
+	private static MyTableModelListener myTableModelListener;
 	
     /**
      * Creates new form ExpandJPanel
@@ -53,7 +58,8 @@ public class ExpandComponent{
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         myTableModel = new MyTableModel();
-     
+        myTableModelListener = new MyTableModelListener();
+        
         jTable1.setModel(myTableModel);
         jTable1.setTableHeader(null);
         jTable1.setCellEditor(jTable1.getCellEditor());
@@ -63,14 +69,14 @@ public class ExpandComponent{
         jTable1.setFocusable(true);
         jTable1.setMaximumSize(new java.awt.Dimension(370, 30));
         jTable1.setMinimumSize(new java.awt.Dimension(370, 370));
-        //jTable1.setRowSelectionAllowed(true);
+        jTable1.setRowSelectionAllowed(false);
         jTable1.setCellSelectionEnabled(true);
+        jTable1.setColumnSelectionAllowed(false);
         jTable1.setRowSorter(null);
-        jTable1.setColumnSelectionInterval(0, 0);
+        //jTable1.setColumnSelectionInterval(0, 0);
         
         jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-        jTable1.getColumnModel().getColumn(0).setPreferredWidth(343);
-        jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
+        jTable1.getModel().addTableModelListener(new MyTableModelListener());
         
         jTable1.setShowHorizontalLines(true);
         jTable1.setShowVerticalLines(false);
@@ -160,7 +166,28 @@ public class ExpandComponent{
     	public Class<?> getColumnClass(int columnIndex) {
     		return types[columnIndex];
     	}
+    }
+    
+    static class MyTableModelListener implements TableModelListener {
 
-
+		@Override
+		public void tableChanged(TableModelEvent e) {
+			if(jTable1.getRowCount() >= 5)
+				minimizeColumn();
+			else
+				maximizeColumn();
+		}
+    }
+    
+    private static void minimizeColumn() {
+        jTable1.getColumnModel().getColumn(0).setPreferredWidth(323);
+        jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
+    	
+    }
+    
+    private static void maximizeColumn() {
+        jTable1.getColumnModel().getColumn(0).setPreferredWidth(343);
+        jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
+    	
     }
 }

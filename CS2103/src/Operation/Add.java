@@ -13,7 +13,7 @@ import constant.OperationFeedback;
 import parser.Parser;
 import storagecontroller.StorageManager;
 import data.Task;
-import data.TaskDateTime;
+
 
 
 public class Add extends Operation {
@@ -46,17 +46,26 @@ public class Add extends Operation {
 		String params=null;
 		params = userCommand.toLowerCase().replaceFirst(commandName+" ","");		
 		ArrayList<Task> newTask= parseCommand(params);
+		
 		if (newTask!=null)
 		{
 			for(int i=0;i<newTask.size();i++){
+				
 				boolean isAdded = add(newTask.get(i));
+				newTask.get(i).setRecurringId(newTask.get(0).getTaskId());
 				if (isAdded) {
 					isUndoAble = true;
+					
 					//Task[] resultOfAdd = new Task[1];
 					addedTask.add(newTask.get(i));
 					//resultOfAdd[0] = newTask;
 					//return resultOfAdd;
-				} 
+				}
+				else {
+					//feedback=OperationFeedback.ADD_FAILED;
+					return null;
+				}
+				
 			}
 			if (addedTask.size()!=0)
 				return (Task[]) addedTask.toArray(new Task[addedTask.size()]);
@@ -75,7 +84,7 @@ public class Add extends Operation {
 		Parser newParser=new Parser();
 		ArrayList<Task> TaskList=new ArrayList<Task>();
 		Task[] parsedTasks=newParser.parseForAdd(params);
-		
+		feedback=newParser.getErrorCode();
 		if (parsedTasks==null || parsedTasks.length==0){
 			return null;
 		}
@@ -184,7 +193,7 @@ private static Logger logger = Logger.getLogger(Add.class);
 	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}      
                
     

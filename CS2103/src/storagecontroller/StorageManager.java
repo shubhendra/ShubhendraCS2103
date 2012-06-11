@@ -165,5 +165,18 @@ public class StorageManager
 	public static void setGCalObject(GoogleCalendar obj){
 		gCal=obj;
 	}
+	public static Task[] getTaskByRecurrenceID(String Id){
+		ArrayList<Task> tasks=new ArrayList<Task>();
+		for(String key: liveStorage.getKeySet()){
+			if (liveStorage.getTaskById(key).getRecurringId().contains(Id))
+			{
+				tasks.add(liveStorage.getTaskById(key));
+			}
+		}
+		Task[] taskArray=new Task[tasks.size()];
+		tasks.toArray(taskArray);
+		return taskArray;
+		
+	}
 }
 

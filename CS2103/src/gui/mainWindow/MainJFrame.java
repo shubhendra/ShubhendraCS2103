@@ -231,6 +231,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * set action of the 2nd button to minimize frame when clicked
 	 */
 	private void setbutton2Action() {
+		button2.setToolTipText("minimize");
+		
 		button2.addMouseListener(new MouseAdapter() {
 
 			@Override
@@ -256,6 +258,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * set action of the first button to toggle help window
 	 */
 	private void setbutton1Action() {
+		button1.setToolTipText("help");
+		
 		button1.addMouseListener(new MouseAdapter() {
 
 			@Override

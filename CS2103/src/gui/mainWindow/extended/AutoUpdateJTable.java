@@ -115,7 +115,7 @@ public class AutoUpdateJTable {
     	else if(task.getImportant()) {
     		str += "<font color=\"red\">";
     	}
-    	str += task.getName().substring(0, 1).toUpperCase()+task.getName().substring(1);
+    	str += makeFirstLetterCapital(task.getName());
     	str += "<br/></b>";
     	str += tagToCode(task);
     	if(task.getCompleted())
@@ -124,11 +124,21 @@ public class AutoUpdateJTable {
     		str+="<br/><i>start: </i>"+task.getStart().presentableToString();
     	}
     	if(task.getEnd()!=null) {
-    		str+="<i>                  end: </i>"+task.getEnd().presentableToString();
+    		str+="<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+    				"end: </i>"+task.getEnd().presentableToString();
     	} 
     	str += "</font></HTML>";
     	
     	listLabel.add(str);
+    }
+    
+    private String makeFirstLetterCapital(String str) {
+    	String newStr = new String();
+    	
+    	newStr += str.toUpperCase().charAt(0);
+    	if(str.length() >= 1)
+    		newStr += str.substring(1);
+    	return newStr;
     }
     
     /**
@@ -239,10 +249,7 @@ public class AutoUpdateJTable {
     	        label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     		}    		
     		return label;
-    		
     	}    	  
-
-
     }
     	  
     
