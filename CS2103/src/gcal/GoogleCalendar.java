@@ -233,10 +233,9 @@ public class GoogleCalendar
 		else
 			return DateTime.parseDate(taskDateTime.dateToXml());
 	}
-	public boolean sync()
+	public boolean importFromGcal()
 	{
 		boolean isPresent = false;
-		boolean isPresent2=false;
 		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
 		System.out.println(taskArray.length);
 		
@@ -261,10 +260,27 @@ public class GoogleCalendar
 						break;
 					}
 				}
-				if(!isPresent){System.out.println("In sync");
+				if(!isPresent){
+					logger.debug("Checking if in Archives");
+					for(int k=0;k<StorageManager.getAllArchivedTasks().length;k++){
+						if(taskArray[i].getDescription().equals(StorageManager.getAllArchivedTasks()[k].getDescription()))
+						{
+							logger.debug("Is present in archives");
+							isPresent=true;
+							break;
+						}
+					}
+				}
+				if(!isPresent){
 					StorageManager.addTask(taskArray[i]);System.out.println(taskArray[i].getTaskId());}
 		}
 		}
+		return true;
+	}
+	public boolean exportToGcal()
+	{
+		boolean isPresent2=false;
+		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
 		logger.debug("In export");
 		for(int i=0;i<StorageManager.getAllTasks().length;i++)
 		{
@@ -300,7 +316,31 @@ public class GoogleCalendar
 					}
 			}
 		}
+		for(int i=0;i<taskArray.length;i++)
+		{
+			boolean isPresent3=false;
+			for(int k=0;k<StorageManager.getAllTasks().length;k++)
+			{
+				if(taskArray[i].getDescription().equalsIgnoreCase(StorageManager.getAllTasks()[k].getDescription()))
+				{
+					isPresent3=true;
+					break;
+				}
+			}
+			if(!isPresent3)
+			{
+				deleteEvent(taskArray[i]);
+			}
+		}
 		return true;
+	}
+	public boolean sync()
+	{
+		if(importFromGcal() && exportToGcal())
+			return true;
+		else
+			return false;
+		
 	}
 	public boolean isLoggedIn(){
 		return loggedIn;
