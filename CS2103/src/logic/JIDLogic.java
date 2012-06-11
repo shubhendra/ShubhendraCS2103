@@ -20,7 +20,7 @@ public class JIDLogic implements Runnable {
 		public static void main(String[] args) {
 	        //logger.info("hi");
 		
-			logger.debug(StorageManager.loadFile());
+			JIDLogic_init();
 			command="search";
 			Task[] def=executeCommand("find *.*");
 			logger.debug(def.length);
@@ -28,7 +28,7 @@ public class JIDLogic implements Runnable {
 	    	{
 	    		for (int i=0;i<def.length;i++)
 	    		{
-	    			logger.debug(def[i].toString()+" "+def[i].getRecurringId());
+	    			logger.debug(def[i].toString()+" "+def[i].getTaskId());
 	    		}
 	    	}
 	    	command="delete";
@@ -58,7 +58,70 @@ public class JIDLogic implements Runnable {
 	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
 	    		}
 	    	}
+
+	    	logger.debug(StorageManager.getAllArchivedTasks().length);
+	    	logger.debug(StorageManager.getAllTasks().length);
+	    	for(int i= 0;i<StorageManager.getAllArchivedTasks().length;i++){
+	    		logger.debug(StorageManager.getAllArchivedTasks()[i].getName()+StorageManager.getAllArchivedTasks()[i].getCompleted());
+	    	}
 	    	
+	    	xyz=executeCommand("cleararchive");
+	    	if (xyz!=null)
+	    	logger.debug("printing search"+ xyz.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (xyz!=null)
+	    	{
+	    		for (int i=0;i<xyz.length;i++)
+	    		{
+	    			logger.debug(xyz[i]);
+	    		}
+	    	}
+	    	logger.debug(StorageManager.getAllArchivedTasks().length);
+	    	logger.debug(StorageManager.getAllTasks().length);
+	    	/*
+	    	abc=executeCommand("find *.*" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}
+	    	abc=executeCommand("undo" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}
+	    	logger.debug(StorageManager.getAllArchivedTasks().length);
+	    	logger.debug(StorageManager.getAllTasks().length);
+	    	/*abc=executeCommand("find *.*" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}*/
+	    	JIDLogic_close();
 	    	/*def=executeCommand("login jid.troubleshoot@gmail.com jotitdown");
 	    	logger.debug("executed gcal sync");
 	    	def=executeCommand("find *.*");
@@ -282,6 +345,7 @@ public class JIDLogic implements Runnable {
 	{
 		
 		StorageManager.loadFile();
+		StorageManager.loadArchive();
 		
 	}
 	
@@ -289,6 +353,7 @@ public class JIDLogic implements Runnable {
 	{
 		
 		StorageManager.saveFile();
+		StorageManager.saveArchive();
 		
 	}
 

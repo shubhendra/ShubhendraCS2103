@@ -41,7 +41,7 @@ public class Archive extends Operation{
 			for (int i=0;i<archiveTasks.size();i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
-					if( StorageManager.addArchivedTask(archiveTasks.get(i)) && StorageManager.deleteTask(archiveTasks.get(i)))
+					if( StorageManager.deleteTask(archiveTasks.get(i)) && StorageManager.addArchivedTask(archiveTasks.get(i)))
 					{
 						undoneTasks.add(archiveTasks.get(i));
 					}
@@ -96,17 +96,18 @@ public class Archive extends Operation{
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		
+		logger.debug(userCommand.trim());
 		if (userCommand.toLowerCase().startsWith("archive")){
 			archiveCommand=archiveStatus.ARCHIVE;
 			logger.debug("running archvie");
 			return archiveTasks();
 		}
-		else if(userCommand.toLowerCase()=="cleararchive"){
+		else if(userCommand.toLowerCase().trim()==("cleararchive")){
+			logger.debug("running clear archvie");
 			archiveCommand=archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
-		else if(userCommand.toLowerCase()=="exportarchive"){
+		else if(userCommand.toLowerCase().trim()=="exportarchive"){
 			archiveCommand=archiveStatus.EXPORT_ARCHIVE;
 			return exportArchive();
 		}
@@ -141,25 +142,25 @@ public class Archive extends Operation{
 	private Task[] clearArchive() {
 		// TODO Auto-generated method stub
 		isUndoAble=false;
-		if (StorageManager.clearArchive())
-			return new Task[1];
-		else 
-			return null;
+		StorageManager.clearArchive();
+		return new Task[1];
+		
 	}
 
 	private Task[] archiveTasks() {
 		// TODO Auto-generated method stub
 		
 		Task[] allTasks=StorageManager.getAllTasks();
-		
+		logger.debug("inside archvietasks()");
 		for (int i=0;i<allTasks.length;i++){
 			if (allTasks[i].getCompleted()){
-				boolean addArchive= StorageManager.addArchivedTask(allTasks[i]);
-				boolean deleteTask=StorageManager.deleteTask(allTasks[i].getTaskId());
-				if(addArchive && deleteTask)
+				
+							
+				
+				if(StorageManager.deleteTask(allTasks[i]) && StorageManager.addArchivedTask(allTasks[i]))
 				{
 					
-					logger.debug(StorageManager.getAllTasks().length);
+					
 					isUndoAble=true;
 					archiveTasks.add(allTasks[i]);
 				}

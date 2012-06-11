@@ -273,7 +273,7 @@ public class GoogleCalendar
 			if(taskArray.length==0)
 			{
 				logger.debug("Length of entries is 0");
-				addTask(StorageManager.getAllTasks()[0],0,Method.NONE);
+				addTask(StorageManager.getAllTasks()[i],0,Method.NONE);
 			}
 			else
 			{
