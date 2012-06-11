@@ -59,6 +59,14 @@ public class StorageManager
 		tasks.toArray(taskArray);
 		return taskArray;
 	}	
+	public static Task[] getAllArchivedTasks(){
+		ArrayList<Task> tasks=new ArrayList<Task>();
+		for(String key: liveArchives.getKeySet())
+		tasks.add(liveArchives.getTaskById(key));
+		Task[] taskArray=new Task[tasks.size()];
+		tasks.toArray(taskArray);
+		return taskArray;
+	}
 	/** 
 	 * 
 	 * @param id id of the task to be returned

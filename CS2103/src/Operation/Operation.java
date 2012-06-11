@@ -55,7 +55,8 @@ public abstract class Operation {
 				intendedOperation.equals("starall")){
 			object = new ToggleImportant(intendedOperation);
 		}
-		else if (intendedOperation.equals("archive")){
+		else if (intendedOperation.equals("archive") || intendedOperation.equals("clearachrive") ||
+				intendedOperation.equals("exportarchive")){
 			object = new Archive(intendedOperation);
 		}
 		else if (intendedOperation.equals("overdue")){

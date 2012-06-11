@@ -23,6 +23,7 @@ public class JIDLogic implements Runnable {
 			logger.debug(StorageManager.loadFile());
 			command="search";
 			Task[] def=executeCommand("find *.*");
+			logger.debug(def.length);
 	    	if (def!=null)
 	    	{
 	    		for (int i=0;i<def.length;i++)
@@ -31,7 +32,7 @@ public class JIDLogic implements Runnable {
 	    		}
 	    	}
 	    	command="delete";
-	    	Task[] xyz=executeCommand("delete h");
+	    	Task[] xyz=executeCommand("archive");
 	    	if (xyz!=null)
 	    	logger.debug("printing search"+ xyz.length);
 	    	else
@@ -44,7 +45,7 @@ public class JIDLogic implements Runnable {
 	    		}
 	    	}
 	    	
-	    	Task[] abc=executeCommand("starall "+xyz[0].getTaskId() );
+	    	Task[] abc=executeCommand("find *.*" );
 	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
 	    	if (abc!=null)
 	    	logger.debug("printing search"+ abc.length);
