@@ -422,7 +422,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
 		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
 		, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
-		, CLEARARCHIVE, EXPORTARCHIVE
+		, CLEARARCHIVE, IMPORTARCHIVE
 	};
 	
 	boolean edit = false;
@@ -482,6 +482,7 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								if(curState == STATE.NULL && curState!=prevState) {
 									jBoxCompletion.setStandardModel();
+									id = null;
 									editorcomp.setText(curText);
 									jComboBox1.setSelectedIndex(-1);
 								}
@@ -495,7 +496,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										curText = lastCmd;
 									}
 								}
-								
+									
 								if(((curState == STATE.EDIT && !edit)
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
@@ -546,12 +547,17 @@ public class MainJFrame extends javax.swing.JFrame {
 
 								if(curState != STATE.NULL &&
 										(e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_DOWN)) {
+										
 										curText = prevText;
 										
 										logger.debug("********exeCmd: "
 												+ curText);
 										tasks = JIDLogic.executeCommand(curText);
-										id = tasks[jComboBox1.getSelectedIndex()].getTaskId();
+										
+										int selectedIndex = jComboBox1.getSelectedIndex();
+										
+										if(selectedIndex >= 0 && tasks!= null)
+											id = tasks[jComboBox1.getSelectedIndex()].getTaskId();
 										editorcomp.setText(curText);
 										return;
 									}
@@ -602,7 +608,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case OVERDUE:
 									case ARCHIVE:
 									case CLEARARCHIVE:
-									case EXPORTARCHIVE:
+									case IMPORTARCHIVE:
 										exeCmd = curText;
 									break;
 									}
@@ -626,7 +632,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString()+ " " 
+												showPopup( curState.toString().toLowerCase()+ " " 
 														+ tasks[0]);
 												UIController.refresh();
 											}
@@ -659,7 +665,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case ARCHIVE:
 									case CLEARARCHIVE:
-									case EXPORTARCHIVE:
+									case IMPORTARCHIVE:
 									}
 									
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
@@ -669,8 +675,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 									else {
 										UIController.showInvalidDisplay();
-										UIController.sendOperationFeedback(OperationFeedback.VALID);
 									}
+									UIController.sendOperationFeedback(OperationFeedback.VALID);
 								}
 								
 								prevState = curState;
@@ -743,8 +749,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.ARCHIVE;
 								if(firstWord.equalsIgnoreCase("cleararchive"))
 									return STATE.CLEARARCHIVE;
-								if(firstWord.equalsIgnoreCase("exportarchive"))
-									return STATE.EXPORTARCHIVE;
+								if(firstWord.equalsIgnoreCase("importarchive"))
+									return STATE.IMPORTARCHIVE;
 								
 								command = null;
 								return STATE.NULL;

@@ -75,7 +75,7 @@ public class Overdue extends Operation {
 					&& curTask.getStart().getTimeMilli()
 					!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getStart().compareTo(currDateTime)==-1)
+				if (curTask.getStart().compareTo(currDateTime)==-1 && !curTask.getCompleted())
 				{
 					overdueTasks.add(curTask);
 				}
@@ -83,7 +83,7 @@ public class Overdue extends Operation {
 			else if (curTask.getEnd()!=null 
 						&& curTask.getEnd().getTimeMilli()!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getEnd().compareTo(currDateTime)==-1)
+				if (curTask.getEnd().compareTo(currDateTime)==-1 && !curTask.getCompleted())
 				{
 					overdueTasks.add(curTask);
 				}

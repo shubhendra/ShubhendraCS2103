@@ -51,7 +51,7 @@ public class Action {
         		;
         		//MainJFrame.showPopup("UNDO unsuccessfully!");
         	else {
-        		MainJFrame.showPopup("UNDO: "+task[0].getName());
+        		MainJFrame.showPopup("undo: "+task[0].getName());
             	ExpandComponent.updateJTable();
         	}
         }
@@ -80,10 +80,10 @@ public class Action {
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
 	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg("DELETE: " + result[0]);
+	        		UIController.showTopPopUpMsg("delete: " + result[0]);
 	        	}
 	        	else {
-	        		UIController.showTopPopUpMsg("DELETE: " + result.length + " tasks.");
+	        		UIController.showTopPopUpMsg("delete: " + result.length + " tasks.");
 	        	}
 	        	
 	        	UIController.refresh();
@@ -114,10 +114,10 @@ public class Action {
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
 	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg("COMPLETED: " + result[0]);
+	        		UIController.showTopPopUpMsg("completed toggle: " + result[0]);
 	        	}
 	        	else {
-	        		UIController.showTopPopUpMsg("COMPLETED: " + result.length + " tasks.");
+	        		UIController.showTopPopUpMsg("completed toggle: " + result.length + " tasks.");
 	        	}
 	        	
 	        	UIController.refresh();
@@ -152,10 +152,10 @@ public class Action {
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
 	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg("IMPORTANT: " + result[0]);
+	        		UIController.showTopPopUpMsg("important toggle: " + result[0]);
 	        	}
 	        	else {
-	        		UIController.showTopPopUpMsg("IMPORTANT: " + result.length + " tasks.");
+	        		UIController.showTopPopUpMsg("important toggle: " + result.length + " tasks.");
 	        	}
 	        	
 	        	UIController.refresh();
@@ -198,7 +198,7 @@ public class Action {
         		;
         		//MainJFrame.showPopup("REDO unsuccessfully!");
         	else {
-        		MainJFrame.showPopup("REDO: "+task[0].getName());
+        		MainJFrame.showPopup("redo: "+task[0].getName());
             	ExpandComponent.updateJTable();
         	}
     		

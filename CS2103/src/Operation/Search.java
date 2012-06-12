@@ -116,10 +116,7 @@ public class Search extends Operation {
 		
 		Arrays.sort(unsorted, compareByDate);
 		logger.debug("after sorting");
-		for (int i=0;i<unsorted.length;i++)
-		{
-		//	logger.debug(unsorted[i].toString());
-		}
+		
 		return unsorted;
 		//return null;
 	}

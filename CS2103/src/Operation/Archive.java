@@ -102,23 +102,26 @@ public class Archive extends Operation{
 			logger.debug("running archvie");
 			return archiveTasks();
 		}
-		else if(userCommand.toLowerCase().trim()==("cleararchive")){
+		else if(userCommand.toLowerCase().trim().contains("cleararchive")){
 			logger.debug("running clear archvie");
 			archiveCommand=archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
-		else if(userCommand.toLowerCase().trim()=="importarchive"){
+		else if(userCommand.toLowerCase().trim().contains("importarchive")){
 			archiveCommand=archiveStatus.IMPORT_ARCHIVE;
+			logger.debug("importing archive");
 			return importArchive();
 		}
-		else 
+		else {
+			feedback=OperationFeedback.NO_MATCHING_ARCHIVE_FUNCTION;
 			return null;
+		}
 	}
 
 	private Task[] importArchive() {
 		// TODO Auto-generated method stub
 		Task[] allArchivedTasks=StorageManager.getAllArchivedTasks();
-		
+		logger.debug(archiveTasks.size());
 		for (int i=0;i<allArchivedTasks.length;i++){
 			if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) && StorageManager.addTask(allArchivedTasks[i]))
 			{
@@ -134,8 +137,10 @@ public class Archive extends Operation{
 			feedback=OperationFeedback.NO_TASK_IN_ARCHIVE;
 			return null;
 		}
-		else
+		else{
+			logger.debug(archiveTasks.size());
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
+		}
 	}
 
 	private Task[] clearArchive() {

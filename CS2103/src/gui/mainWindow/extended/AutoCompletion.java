@@ -123,7 +123,7 @@ public class AutoCompletion extends PlainDocument {
     	popupAllow = true;
     	if(strings==null) {
     		String[] temp = new String[1];
-    		temp[0] = "NOT FOUND!";
+    		temp[0] = "not found!";
     		comboBox.setMaximumRowCount(1);
     		comboBox.setModel(new DefaultComboBoxModel(temp));
     	}
