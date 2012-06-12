@@ -106,13 +106,7 @@ public abstract class Operation {
 	 * @return Whether the operation in undoable
 	 */
 	public abstract boolean isUndoAble();
-	/**
-	 * 
-	 * @param command
-	 * @return Return whether the input String is correct
-	 */
-	public abstract boolean isInputCorrect(String command);
-	/**
+/**
 	 * Used to return the status of execution in operation
 	 * @return Status of operation
 	 */

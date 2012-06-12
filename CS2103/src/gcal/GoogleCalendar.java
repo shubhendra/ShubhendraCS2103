@@ -22,7 +22,7 @@ import data.Task;
 import data.TaskDateTime;
 import parser.Parser;
 //import parser.Parser;
-public class GoogleCalendar
+public class GoogleCalendar implements Runnable
 {
 	private Logger logger = Logger.getLogger(GoogleCalendar.class.getName());
 	private static final String USER_CALENDAR_URL = "https://www.google.com/calendar/feeds/default/private/full";
@@ -397,6 +397,12 @@ public class GoogleCalendar
 	}
 	public boolean isLoggedIn(){
 		return loggedIn;
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		sync();
+		
 	}
 }
 

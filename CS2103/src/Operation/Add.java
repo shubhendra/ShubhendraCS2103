@@ -44,7 +44,7 @@ public class Add extends Operation {
 	public Task[] execute (String userCommand)
 	{
 		String params=null;
-		params = userCommand.replaceFirst(commandName+" ","");		
+		params = userCommand.replaceFirst(getOperationName()+" ","");		
 		ArrayList<Task> newTask= parseCommand(params);
 		
 		if (newTask!=null)
@@ -52,7 +52,11 @@ public class Add extends Operation {
 			for(int i=0;i<newTask.size();i++){
 				
 				boolean isAdded = add(newTask.get(i));
+				if (newTask.size()>1){
 				newTask.get(i).setRecurringId(newTask.get(0).getTaskId());
+				} else{
+					newTask.get(i).setRecurringId("");
+				}
 				if (isAdded) {
 					isUndoAble = true;
 					
@@ -69,10 +73,14 @@ public class Add extends Operation {
 			}
 			if (addedTask.size()!=0)
 				return (Task[]) addedTask.toArray(new Task[addedTask.size()]);
-			else return null;
+			else 
+				return null;
 		}
 		else{
 			logger.debug("Task Not added");
+			if (feedback==OperationFeedback.VALID){
+				feedback=OperationFeedback.ADD_FAILED;
+			}
 			return null;
 		}
 		
@@ -95,15 +103,7 @@ public class Add extends Operation {
 		return TaskList;		
 	
 	}
-	@Override
-	/**
-	 * 
-	 */
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
+	
 	@Override
 	/**
 	 * @return Task array of the task that needs to be deleted in order for this action to be undone
@@ -148,16 +148,6 @@ public class Add extends Operation {
 	}
 	
 
-	@Override
-	/**
-	 * @return Whether add functionality can be redone or not
-	 * 
-	 */
-	public boolean isUndoAble() {
-		// TODO Auto-generated method stub
-		return isUndoAble;
-	}
-
 	
 
 	@Override
@@ -194,8 +184,13 @@ private static Logger logger = Logger.getLogger(Add.class);
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return feedback;
+	}
+	@Override
+	public boolean isUndoAble() {
+		// TODO Auto-generated method stub
+		return isUndoAble;
 	}      
-               
+              
     
 	
 	

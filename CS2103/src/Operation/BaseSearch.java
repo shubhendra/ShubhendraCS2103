@@ -21,7 +21,7 @@ public class BaseSearch extends Operation{
 	 */
 	public Task[] execute(String userCommand)
 	{
-		String params = userCommand.toLowerCase().replaceFirst(this.commandName+" ","");
+		String params = userCommand.toLowerCase().replaceFirst(this.getOperationName()+" ","");
 		logger.debug(commandName);
 		logger.debug("inside basesearch");
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
@@ -126,14 +126,6 @@ public class BaseSearch extends Operation{
 		return false;
 	}
 
-	@Override
-	/**
-	 * 
-	 */
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 	
 

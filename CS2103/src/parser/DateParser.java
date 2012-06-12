@@ -338,7 +338,7 @@ public class DateParser {
 		if (matcher4.matches()) {
 			
 			for(int i=0; i<matcher4.groupCount(); i++)
-				logger.debug("group "+i+"= "+matcher4.group(i));
+				//logger.debug("group "+i+"= "+matcher4.group(i));
 			
 			
 			if (matcher4.group(1)!=null && matcher4.group(27)!=null) {

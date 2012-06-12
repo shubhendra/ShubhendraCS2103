@@ -44,12 +44,7 @@ public class Search extends Operation {
 		return false;
 	}
 
-	@Override
-	
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+
 
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
@@ -83,10 +78,7 @@ public class Search extends Operation {
 			logger.debug("returning all objects");
 			return returnAllTasks();
 		}
-		else if (params.toLowerCase().contains("today*.*")){
-			logger.debug("returning todays objects");
-			return searchTodaysTasks();
-		}
+		
 		Task parsedTask=parseCommand(params.toLowerCase());
 		
 		if (parsedTask.getStart()!=null){
@@ -124,20 +116,21 @@ public class Search extends Operation {
 	public Task[] searchTodaysTasks(){
 		Task [] allTasks=returnAllTasks();
 		ArrayList<Task> todaysTasks=new ArrayList<Task>();;
-		for(Task param:allTasks){
-			if (param.getStart()!=null && param.getStart().getDate().getTimeMilli()==TaskDateTime.getCurrentDate().getTimeMilli())
+		for(Task param:allTasks)
+			if (param.getStart()!=null && param.getStart().getDate().getTimeMilli()<=TaskDateTime.getCurrentDate().getTimeMilli())
 			{
 				if (!param.getCompleted())
 					todaysTasks.add(param);
-			} else if (param.getEnd()!=null && param.getEnd().getTimeMilli()==TaskDateTime.getCurrentDate().getTimeMilli()){
+			} else if (param.getEnd()!=null && param.getEnd().getTimeMilli()<=TaskDateTime.getCurrentDate().getTimeMilli()){
 				if (!param.getCompleted())
 					todaysTasks.add(param);
 			} else if (param.getImportant() && !param.getCompleted()){
 				todaysTasks.add(param);
 			}
+		
 				
 			
-		}
+		
 		if (todaysTasks.size()!=0)
 			return (Task[]) todaysTasks.toArray(new Task[todaysTasks.size()]);
 		feedback=OperationFeedback.NOT_FOUND;
