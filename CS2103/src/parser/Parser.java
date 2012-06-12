@@ -18,6 +18,7 @@ public class Parser {
 	private final String RECUR_REGEX = "((?i)(daily|weekly|monthly|yearly))[ ]?(-[ ]?(\\d+)[ ]?(times?)?)?";
 	private final String LABEL_REGEX = "@(\\w+)";
 	private final String ID_REGEX = "(\\$\\$__)(\\d{2}-\\d{2}-\\d+[A-Z])(__\\$\\$)";
+	private final String G_CAL_DES = "<CMPT:(true|false)><IMPT:(true|false)><DEAD:(true|false)><RECUR:(daily|weekly|monthly|yearly)?><RECURID:("+ID_REGEX+")?><LABEL:((\\w+ )+)?>";
 	private String FROM_TIME_DATE_TO_TIME_DATE;
 	private String FROM_DATE_TIME_TO_DATE_TIME;
 	private String FROM_TIME_TO_TIME_DATE;
@@ -566,6 +567,27 @@ public class Parser {
 			return null;
 		else
 			return taskList.toArray(new Task[taskList.size()]);
+	}
+	public String[] fetchGCalDes (String input) {
+		String[] arr= null;
+		Matcher m = Pattern.compile(G_CAL_DES).matcher(input);
+		
+		if (m.matches()) {
+		//for(int i=1; i<m.groupCount(); i++)
+			//logger.debug("group"+i+": "+m.group(i));
+		
+		arr = new String[6];
+		for (int i=0; i<5; i++) {
+			arr[i] = m.group(i+1);
+		}
+		arr[5] = m.group(9);
+		
+		//for (int i=0; i<arr.length; i++)
+			//logger.debug("arr: "+arr[i]);
+		
+		}
+		
+		return arr;
 	}
 	/**Understands the user input and sets local attributes for Task Obj to be created
 	 * 
