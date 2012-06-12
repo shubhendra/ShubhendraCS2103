@@ -19,7 +19,7 @@ public class JIDLogic implements Runnable {
 		//private static String command;
 		public static void main(String[] args) {
 	        //logger.info("hi");
-		
+		/*
 			JIDLogic_init();
 			command="search";
 			Task[] def=executeCommand("find *.*");
@@ -120,7 +120,7 @@ public class JIDLogic implements Runnable {
 	    		{
 	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
 	    		}
-	    	}*/
+	    	}*//*
 	    	JIDLogic_close();
 	    	/*def=executeCommand("login jid.troubleshoot@gmail.com jotitdown");
 	    	logger.debug("executed gcal sync");

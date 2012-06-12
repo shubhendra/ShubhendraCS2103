@@ -7,8 +7,11 @@ package gui.mainWindow.extended;
 
 import gui.Resource;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.Timer;
 import javax.swing.JFrame;
@@ -40,22 +43,22 @@ public class TopPopUp extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private static void initComponents() {
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        exitLabel = new javax.swing.JLabel();
+        textLabel = new javax.swing.JLabel();
         bgLabel = new javax.swing.JLabel();
 
         jFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("jButton1");
-        jButton1.setBounds(330, 0, 21, 23);
-        jLayeredPane1.add(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        exitLabel.setText("exitLabel");
+        exitLabel.setBounds(330, 0, 21, 23);
+        jLayeredPane1.add(exitLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel1.setText("jLabel1");
-        jLabel1.setBounds(0, 0, 320, 20);
-        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        textLabel.setText("textLabel");
+        textLabel.setBounds(0, 0, 320, 20);
+        jLayeredPane1.add(textLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
-        bgLabel.setBounds(0, 0, 400, 20);
-        bgLabel.setIcon(Resource.topPopUpBG);
+        bgLabel.setBounds(0, 0, 400, 30);
+        bgLabel.setIcon(Resource.popupBG);
         bgLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLayeredPane1.add(bgLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -70,32 +73,38 @@ public class TopPopUp extends JFrame {
             .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         
-        jButton1.setText("");
-        jButton1.setIcon( Resource.exitImg);
-        jButton1.addActionListener( new 
-        	ActionListener() {
-
+        exitLabel.setText("");
+        exitLabel.setIcon( Resource.exit_small);
+        exitLabel.addMouseListener( new 
+        	MouseAdapter() {
 				@Override
-				public void actionPerformed(ActionEvent e) {
+				public void mouseClicked(MouseEvent e) {
 					// TODO Auto-generated method stub
 					if(SHOW) {
 						SHOW = !SHOW;
 						jFrame.setVisible(false);
 					}
 				}
-        	
+				@Override
+				public void mouseEntered(MouseEvent e) {
+					exitLabel.setIcon(Resource.exit_small_on);
+				}
+				@Override
+				public void mouseExited(MouseEvent e) {
+					exitLabel.setIcon(Resource.exit_small);
+				}
         });
         
 
-        jFrame.setIconImage((Resource.bigLogo).getImage());
+    	jFrame.setBackground(new Color(0,0,0,0));
         jFrame.pack();
     }// </editor-fold>
 
     // Variables declaration - do not modify
     public static javax.swing.JFrame jFrame;
     private static javax.swing.JTextField jTextField1;
-    private static javax.swing.JButton jButton1;
-    private static javax.swing.JLabel jLabel1;
+    private static javax.swing.JLabel exitLabel;
+    private static javax.swing.JLabel textLabel;
     private static javax.swing.JLayeredPane jLayeredPane1;
     private static javax.swing.JLabel bgLabel;
     private static boolean SHOW = true;
@@ -118,7 +127,7 @@ public class TopPopUp extends JFrame {
      * @param str displayed text
      */
     public static void setText(String str) {
-    	jLabel1.setText(str);
+    	textLabel.setText(str);
     }
     
     /**

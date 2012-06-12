@@ -190,6 +190,5 @@ public class ExpandComponent{
     private static void maximizeColumn() {
         jTable1.getColumnModel().getColumn(0).setPreferredWidth(343);
         jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
-    	
     }
 }

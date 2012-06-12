@@ -133,7 +133,11 @@ public class Reminder {
 		long nowMilli;
 		long timeDiff = -1;
 		
-		nextReminderMilli = task.getStart().getTimeMilli();
+		if(task.getStart() != null)
+			nextReminderMilli = task.getStart().getTimeMilli();
+		else
+			nextReminderMilli = task.getEnd().getTimeMilli();
+		
 		nowMilli = now.getTimeInMillis();
 		
 		logger.debug(nextReminderMilli);

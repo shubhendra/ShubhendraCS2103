@@ -3,6 +3,8 @@ package gui.mainWindow.extended;
 import gui.Resource;
 
 import java.awt.Component;
+import java.awt.Container;
+import java.awt.FocusTraversalPolicy;
 import java.awt.Point;
 import java.util.Vector;
 import java.awt.event.ActionEvent;
@@ -41,12 +43,9 @@ public class AutoUpdateJTable {
      */
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
-		
 		addListener();
 		model = (DefaultTableModel) this.jTable.getModel();
-		
 		updateJTable();
-
 	}
 
 	int row=-1, col=-1;

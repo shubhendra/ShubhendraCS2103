@@ -17,6 +17,7 @@ import java.io.IOException;
 import javax.swing.Timer;
 
 import constant.OperationFeedback;
+import data.Task;
 
 import logic.JIDLogic;
 
@@ -164,7 +165,7 @@ public class UIController {
 		UIController.refresh();
 		if(operationFeedback == OperationFeedback.VALID)
 			UIController.showTopPopUpMsg("Log in successfully!");
-		UIController.showInvalidDisplay();
+		UIController.showFeedbackDisplay();
 	}
 	
 	/**
@@ -185,59 +186,38 @@ public class UIController {
 		return operationFeedback;
 	}
 	
+
 	/**
-	 * show display when there is an invalid feedback from the operation
+	 * show display when there is a feedback from the operation
 	 */
-	public static void showInvalidDisplay() {
-		/*if(mainJFrame.isVisible())
+	public static void showFeedbackDisplay() {
+		showFeedbackDisplay(null);
+	}
+	
+	/**
+	 * show display when there is a feedback from the operation
+	 */
+	public static void showFeedbackDisplay(Task[] tasks) {
+		if(mainJFrame.isVisible())
 			switch(operationFeedback) {
-			case INVALID_DATE:
-				mainJFrame.showPopup("incorrect date input");
+			case VALID:
+				MainJFrame.showPopup(tasks[0].getName(), STATE.getEndedString(true));
 				break;
-			case INVALID_TIME:
-				mainJFrame.showPopup("incorret time input");
+			default:
+				MainJFrame.showPopup(OperationFeedback.getString(getOperationFeedback()));
 				break;
-			case INVALID_TASK_DETAILS:
-				mainJFrame.showPopup("incorrect task details");
-				break;
-			case INVALID_LABEL:
-				mainJFrame.showPopup("incorrect label");
-				break;
-			case INVALID_INCORRECTLOGIN:
-				mainJFrame.showPopup("wrong username or password");
-				break;
-			case INVALID_NOINTERNET:
-				mainJFrame.showPopup("no internet connection");
-				break;
-			case NOT_FOUND:
-				mainJFrame.showPopup("search not found!");
-				break;
+			
 			}
 		else {
 			switch(operationFeedback) {
-			case INVALID_DATE:
-				JIDtray.showText("Jot It Down!", "incorrect date input");
+			case VALID:
+				MainJFrame.showPopup(tasks[0].getName(), STATE.getEndedString(true));
 				break;
-			case INVALID_TIME:
-				JIDtray.showText("Jot It Down!", "incorret time input");
-				break;
-			case INVALID_TASK_DETAILS:
-				JIDtray.showText("Jot It Down!", "incorrect task details");
-				break;
-			case INVALID_LABEL:
-				JIDtray.showText("Jot It Down!", "incorrect label");
-				break;
-			case INVALID_INCORRECTLOGIN:
-				JIDtray.showText("Jot It Down!", "wrong username or password");
-				break;
-			case INVALID_NOINTERNET:
-				JIDtray.showText("Jot It Down!", "no internet connection");
-				break;
-			case NOT_FOUND:
-				JIDtray.showText("Jot It Down!", "search not found!");
+			default:
+				MainJFrame.showPopup(OperationFeedback.getString(getOperationFeedback()));
 				break;
 			}
-		}*/
+		}
 	}
 	
 	/**
@@ -248,6 +228,10 @@ public class UIController {
 		return loginOn;
 	}
 	
+	/**
+	 * 
+	 * @param status of log in dialog
+	 */
 	public static void setLoginOn(boolean status) {
 		loginOn = status;
 	}

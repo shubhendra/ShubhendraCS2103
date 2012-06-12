@@ -90,6 +90,7 @@ public class Binding {
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0);
 	        inputMap.put(key, "help");
 	        actionMap.put("help", new Action.HelpAction());
+	        
 	}
 	
 

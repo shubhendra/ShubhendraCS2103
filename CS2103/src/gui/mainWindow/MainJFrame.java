@@ -9,6 +9,7 @@ import org.apache.log4j.*;
 
 import data.Task;
 import gui.Resource;
+import gui.STATE;
 import gui.UIController;
 import gui.mainWindow.extended.AutoCompletion;
 import gui.mainWindow.extended.ExpandComponent;
@@ -16,13 +17,10 @@ import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.TopPopUp;
 import logic.JIDLogic;
 
-//import com.seaglasslookandfeel.*;
-
 import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
-import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -66,15 +64,10 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLayeredPane jLayeredPane1;
 	private javax.swing.JLabel logo;
-	private JLabel bg;
 	private MouseListener curdownButton;
-	private javax.swing.JPanel jPanel1;
-	private	JLayeredPane lp;
+	public static Point currentLocation;
 	// End of variables declaration
 
-	private static Point point = new Point();
-	public static Point currentLocation;
-	private final boolean TEST = true;
 
 	// End of variables declaration
 
@@ -218,7 +211,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * set action of the 2nd button to minimize frame when clicked
 	 */
 	private void setbutton2Action() {
-		button2.setToolTipText("minimize");
+		button2.setToolTipText("Minimize");
 		
 		button2.addMouseListener(new MouseAdapter() {
 
@@ -245,7 +238,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * set action of the first button to toggle help window
 	 */
 	private void setbutton1Action() {
-		button1.setToolTipText("help");
+		button1.setToolTipText("Help");
 		
 		button1.addMouseListener(new MouseAdapter() {
 
@@ -417,13 +410,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	 */
 	private void setlogoAction() {
 	}
-
-	enum STATE {
-		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
-		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
-		, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
-		, CLEARARCHIVE, IMPORTARCHIVE
-	};
 	
 	boolean edit = false;
 	STATE curState;
@@ -431,7 +417,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	Task[] tasks;
 	String prevText;
 	String id;
-	int prevIndex;
 	String lastCmd = null;
 	String command;
 	
@@ -461,7 +446,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								curLocation = editorcomp.getSelectionStart();
 						    	curText = editorcomp.getText();
-								curState= checkCommand(curText);
+								curState= STATE.checkCommand(curText);
+								command = STATE.getCommand();
 								curIndex= jComboBox1.getSelectedIndex();
 								
 								
@@ -492,7 +478,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									jComboBox1.setPopupVisible(false);
 									if(e.getKeyCode() == KeyEvent.VK_UP && lastCmd != null) {
 										editorcomp.setText(lastCmd);
-										curState = checkCommand(lastCmd);
+										curState = STATE.checkCommand(lastCmd);
+										command = STATE.getCommand();
 										curText = lastCmd;
 									}
 								}
@@ -527,19 +514,19 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 											jBoxCompletion
 													.setNewModel(taskArrayToString(tasks));
+										
 											
 											jComboBox1.setPopupVisible(true);
-	
+											jComboBox1.setSelectedIndex(-1);
+											
 											editorcomp.setText(curText);
 											editorcomp.setSelectionStart(curLocation);
 											editorcomp.setSelectionEnd(curLocation);
-											//editorcomp.setText(curState.toString() + tasks[0]);
-	
+											
 											if (tasks != null)
 												id = tasks[0].getTaskId();
 											else
 												id = null;
-												//id = "dummyString!@#$";
 										}
 	
 									});
@@ -563,6 +550,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 								}
 									
+								STATE.setState(curState);
+								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									
@@ -608,7 +597,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case OVERDUE:
 									case ARCHIVE:
 									case CLEARARCHIVE:
-									case IMPORTARCHIVE:
+									case EXPORTARCHIVE:
 										exeCmd = curText;
 									break;
 									}
@@ -632,8 +621,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString().toLowerCase()+ " " 
-														+ tasks[0]);
+												UIController.showFeedbackDisplay(tasks);
+												//showPopup( curState.toString().toLowerCase()+ " " 
+												//		+ tasks[0]);
 												UIController.refresh();
 											}
 										}
@@ -657,7 +647,6 @@ public class MainJFrame extends javax.swing.JFrame {
 										new Action.OverdueAction().actionPerformed(null);
 										break;
 									case LOGIN:
-										System.out.println("case LOGIN");
 										new Action.GCalendarAction().actionPerformed(null);
 										break;
 									case LOGOUT:
@@ -665,22 +654,21 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case ARCHIVE:
 									case CLEARARCHIVE:
-									case IMPORTARCHIVE:
+									case EXPORTARCHIVE:
 									}
-									
+														
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
 										jBoxCompletion.setStandardModel();
 										editorcomp.setText("");
 										curState = STATE.NULL;
 									}
 									else {
-										UIController.showInvalidDisplay();
+										UIController.showFeedbackDisplay();
 									}
 									UIController.sendOperationFeedback(OperationFeedback.VALID);
 								}
 								
 								prevState = curState;
-								prevIndex = curIndex;
 								prevText = curText;
 							}
 							
@@ -699,62 +687,6 @@ public class MainJFrame extends javax.swing.JFrame {
 								}
 							}
 							
-							private STATE checkCommand(String curText) {
-								if(curText.equals(""))
-									return STATE.NULL;
-								
-								String delims = "[ ]+";
-								String firstWord = curText.trim().split(delims)[0];
-								command = firstWord;
-								
-								if(firstWord.equalsIgnoreCase("add") 
-										|| firstWord.equalsIgnoreCase("insert"))
-									return STATE.ADD;
-								if(firstWord.equalsIgnoreCase("delete")
-										|| firstWord.equalsIgnoreCase("remove"))
-									return STATE.DELETE;
-								if(firstWord.equalsIgnoreCase("modify")
-										|| firstWord.equalsIgnoreCase("edit")
-										|| firstWord.equalsIgnoreCase("update"))
-									return STATE.EDIT;
-								if(firstWord.equalsIgnoreCase("search")
-										|| firstWord.equalsIgnoreCase("find"))
-									return STATE.SEARCH;
-								if(firstWord.equalsIgnoreCase("completed")
-										|| firstWord.equalsIgnoreCase("done"))
-									return STATE.COMPLETED;
-								if(firstWord.equalsIgnoreCase("archive"))
-									return STATE.ARCHIVE;
-								if(firstWord.equalsIgnoreCase("overdue"))
-									return STATE.OVERDUE;
-								if(firstWord.equalsIgnoreCase("list"))
-									return STATE.LIST;
-								if(firstWord.equalsIgnoreCase("undo"))
-									return STATE.UNDO;
-								if(firstWord.equalsIgnoreCase("exit"))
-									return STATE.EXIT;
-								if(firstWord.equalsIgnoreCase("help"))
-									return STATE.HELP;
-								if(firstWord.equalsIgnoreCase("redo"))
-									return STATE.REDO;
-								if(firstWord.equalsIgnoreCase("important"))
-									return STATE.IMPORTANT;
-								if(firstWord.equalsIgnoreCase("login"))
-									return STATE.LOGIN;
-								if(firstWord.equalsIgnoreCase("delete.all"))
-									return STATE.DELETEALL;
-								if(firstWord.equalsIgnoreCase("completed.all"))
-									return STATE.COMPLETEDALL;
-								if(firstWord.equalsIgnoreCase("archive"))
-									return STATE.ARCHIVE;
-								if(firstWord.equalsIgnoreCase("cleararchive"))
-									return STATE.CLEARARCHIVE;
-								if(firstWord.equalsIgnoreCase("importarchive"))
-									return STATE.IMPORTARCHIVE;
-								
-								command = null;
-								return STATE.NULL;
-							} 
 
 				      } );
 				}
@@ -773,6 +705,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	}
 
+	
+
+	private static Point point = new Point();
 	
 	/**
 	 * add Frame actions :
@@ -840,6 +775,17 @@ public class MainJFrame extends javax.swing.JFrame {
 		TopPopUp.jFrame.setFocusable(true);
 	}
 
+	/**Show pop up on the top
+	 * 
+	 * @param name will get cut if it is too long
+	 * @param detail that must be shown and will appear after the first String
+	 */
+	public static void showPopup(String name, String detail) {
+		String str = name + " " + detail;
+		if(str.length() > 50)
+			str = name.substring(0, 50-detail.length()-3) + "... " + detail;
+		showPopup(str);
+	}
 	/**
 	 * show the current window
 	 */
@@ -949,6 +895,5 @@ public class MainJFrame extends javax.swing.JFrame {
         ActionMap actionMap = this.getRootPane().getActionMap();
         
         new Binding(this, inputMap, actionMap);
-    }
-    
+    }    
 }

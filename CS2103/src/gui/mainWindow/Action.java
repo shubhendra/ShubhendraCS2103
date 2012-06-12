@@ -51,7 +51,7 @@ public class Action {
         		;
         		//MainJFrame.showPopup("UNDO unsuccessfully!");
         	else {
-        		MainJFrame.showPopup("undo: "+task[0].getName());
+        		MainJFrame.showPopup(task[0].getName() + " was undone");
             	ExpandComponent.updateJTable();
         	}
         }
@@ -65,7 +65,9 @@ public class Action {
     static class DeleteAction extends AbstractAction {
     	Task[] task;
         @Override
-        public void actionPerformed(ActionEvent e) {        	
+        public void actionPerformed(ActionEvent e) {      
+        	System.out.println(e);
+        	
         	Task[] taskList = ExpandComponent.getSeletedTask();
         	
         	if(taskList.length == 0)
@@ -79,13 +81,16 @@ public class Action {
 	        	JIDLogic.setCommand("DELETE");
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
-	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg("delete: " + result[0]);
-	        	}
-	        	else {
-	        		UIController.showTopPopUpMsg("delete: " + result.length + " tasks.");
-	        	}
-	        	
+		        if(result!= null)
+		        	if(result.length == 1){
+		        		UIController.showTopPopUpMsg(result[0] +" was deleted.");
+		        	}
+		        	else {
+		        		UIController.showTopPopUpMsg(result.length + " tasks was deleted");
+		        	}
+		        else
+		        	UIController.showFeedbackDisplay();
+		        
 	        	UIController.refresh();
 	        }
         }
@@ -113,12 +118,17 @@ public class Action {
 	        	JIDLogic.setCommand("COMPLETED");
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
-	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg("completed toggle: " + result[0]);
-	        	}
+	        	if(result!= null)
+		        	if(result.length == 1){
+		        		UIController.showTopPopUpMsg(result[0] + " was toggled completed.");
+		        	}
+		        	else {
+		        		UIController.showTopPopUpMsg(result.length + " tasks was toggled completed");
+		        	}
 	        	else {
-	        		UIController.showTopPopUpMsg("completed toggle: " + result.length + " tasks.");
+	        		UIController.showFeedbackDisplay();
 	        	}
+	        		
 	        	
 	        	UIController.refresh();
 	        }
@@ -152,10 +162,10 @@ public class Action {
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
 	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg("important toggle: " + result[0]);
+	        		UIController.showTopPopUpMsg(result[0] + " was toggled important.");
 	        	}
 	        	else {
-	        		UIController.showTopPopUpMsg("important toggle: " + result.length + " tasks.");
+	        		UIController.showTopPopUpMsg(result.length + " tasks was toggled important.");
 	        	}
 	        	
 	        	UIController.refresh();
@@ -198,7 +208,7 @@ public class Action {
         		;
         		//MainJFrame.showPopup("REDO unsuccessfully!");
         	else {
-        		MainJFrame.showPopup("redo: "+task[0].getName());
+        		MainJFrame.showPopup(task[0].getName()+ " was redone.");
             	ExpandComponent.updateJTable();
         	}
     		

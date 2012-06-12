@@ -91,7 +91,7 @@ public class Delete extends BaseSearch {
 	}
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}      
                
     

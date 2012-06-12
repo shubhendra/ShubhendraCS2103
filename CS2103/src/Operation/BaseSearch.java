@@ -39,7 +39,7 @@ public class BaseSearch extends Operation{
 				Task t=StorageManager.getTaskById(extractedTaskIds[i]);
 				//logger.debug(t.getTaskId());
 				Task[] result;
-				if (!commandName.contains("all")){
+				if (!commandName.contains(".all")){
 					result=execute(t);
 				}
 				else{
@@ -161,7 +161,7 @@ public class BaseSearch extends Operation{
 	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}
 
 }

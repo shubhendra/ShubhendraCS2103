@@ -127,10 +127,15 @@ public class Search extends Operation {
 		for(Task param:allTasks){
 			if (param.getStart()!=null && param.getStart().getDate().getTimeMilli()==TaskDateTime.getCurrentDate().getTimeMilli())
 			{
-				todaysTasks.add(param);
+				if (!param.getCompleted())
+					todaysTasks.add(param);
 			} else if (param.getEnd()!=null && param.getEnd().getTimeMilli()==TaskDateTime.getCurrentDate().getTimeMilli()){
+				if (!param.getCompleted())
+					todaysTasks.add(param);
+			} else if (param.getImportant()){
 				todaysTasks.add(param);
 			}
+				
 			
 		}
 		if (todaysTasks.size()!=0)

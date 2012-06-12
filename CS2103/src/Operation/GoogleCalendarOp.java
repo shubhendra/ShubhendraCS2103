@@ -104,15 +104,10 @@ public class GoogleCalendarOp extends Operation {
 		
 		if (obj.isLoggedIn()){
 		
-			if (StorageManager.getGCalObject().sync()){
-				logger.debug("logged and synced successfully");
-				return new Task[1];
-			}
-			else{
-				feedback=OperationFeedback.INVALID_NOINTERNET;
-				return null;
-				
-			}
+			
+			Thread t= new Thread(StorageManager.getGCalObject());
+			t.start();
+			return new Task[1];
 		}
 		else{
 			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
