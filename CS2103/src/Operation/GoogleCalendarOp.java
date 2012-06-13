@@ -15,7 +15,7 @@ public class GoogleCalendarOp extends Operation {
 		isUndoAble=false;
 		logger.debug(userCommand);
 		// TODO Auto-generated method stub
-		if(userCommand.startsWith("logout")){
+		if(userCommand.toLowerCase().startsWith("logout")){
 			if (StorageManager.getGCalObject().isLoggedIn())
 				return logout();
 			else{
@@ -25,23 +25,23 @@ public class GoogleCalendarOp extends Operation {
 			
 			
 		}
-		else if (userCommand.startsWith("login"))
+		else if (userCommand.toLowerCase().startsWith("login"))
 		{
 			return login(userCommand);
 			
 		
 		}
-		else if (userCommand.startsWith("sync"))
+		else if (userCommand.toLowerCase().startsWith("sync.gcal"))
 		{
 			return sync();
 			
 		}
-		else if (userCommand.startsWith("import"))
+		else if (userCommand.toLowerCase().startsWith("import.gcal"))
 		{
 			return importTasks();
 			
 		}
-		else if (userCommand.startsWith("export"))
+		else if (userCommand.toLowerCase().startsWith("export.gcal"))
 		{
 			return exportTasks();
 			
@@ -118,9 +118,14 @@ public class GoogleCalendarOp extends Operation {
 	private Task[] login(String userCommand) {
 		// TODO Auto-generated method stub
 		userCommand.trim().replaceAll("login","");
-		logger.debug(userCommand);
+		logger.debug(userCommand); 
 		String params[]=userCommand.split("\\s+");
-		String username=params[1];
+		if (params.length!=3)
+		{
+			feedback=OperationFeedback.INVALID_INCORRECTLOGIN;
+			return null;
+		}
+		String username=params[1]; 
 		String password=params[2];
 		logger.debug(username);
 		logger.debug(password);

@@ -151,7 +151,7 @@ public class FileHandler
 		{
 		reader=new BufferedReader(new FileReader("JotItDownEMail.txt"));
 		while ((buffer = reader.readLine()) != null)
-		{
+		{ 
 			System.out.println(buffer);
 			result+=buffer;
 		}

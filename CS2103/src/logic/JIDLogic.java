@@ -353,7 +353,7 @@ public class JIDLogic implements Runnable {
 		
 		StorageManager.loadFile();
 		StorageManager.loadArchive();
-		/*String email="";
+		String email="";
 		if (StorageManager.loadEmailId()==""){
 			BufferedReader reader;
 			reader = new BufferedReader(new InputStreamReader(System.in));
@@ -366,8 +366,8 @@ public class JIDLogic implements Runnable {
 				
 		}
 		else 
-			email= StorageManager.loadEmailId();*/
-		String email="shubhendra.ag@gmail.com";
+			email= StorageManager.loadEmailId();
+		//String email="shubhendra.ag@gmail.com";
 		Thread mailThread =new Thread(new Agenda(0,4,0, email));
 		StorageManager.saveEmailId(email);
 		mailThread.run();
