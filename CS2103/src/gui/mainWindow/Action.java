@@ -171,7 +171,7 @@ public class Action {
     		Task[] task = JIDLogic.executeCommand("OVERDUE");
 
 	        UIController.showFeedbackDisplay(task);
-	        
+	        ExpandComponent.updateJTable(task);
 
 			STATE.setState(STATE.NULL);
     	}

@@ -65,6 +65,9 @@ public abstract class Operation {
 		else if (intendedOperation.equals("check.free")){
 			object= new CheckFree(intendedOperation);
 		}
+		else if (intendedOperation.equals("agendaemail")){
+			object= new AgendaEmail();
+		}
 		else if (intendedOperation.equals("login") || intendedOperation.equals("logout") ||
 				intendedOperation.equals("sync.gcal") || intendedOperation.equals("import.gcal") ||
 				intendedOperation.equals("export.gcal")) {

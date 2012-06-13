@@ -16,14 +16,16 @@ public class GoogleCalendarOp extends Operation {
 		logger.debug(userCommand);
 		// TODO Auto-generated method stub
 		if(userCommand.toLowerCase().startsWith("logout")){
-			if (StorageManager.getGCalObject().isLoggedIn())
+			if (StorageManager.getGCalObject()==null){
+				feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+				return null;	
+			}else if (StorageManager.getGCalObject().isLoggedIn()){
 				return logout();
+			}
 			else{
 				feedback=OperationFeedback.USER_NOT_LOGGEDIN;
-				return null;
+				return null;	
 			}
-			
-			
 		}
 		else if (userCommand.toLowerCase().startsWith("login"))
 		{
@@ -55,12 +57,12 @@ public class GoogleCalendarOp extends Operation {
 	private Task[] exportTasks() {
 		// TODO Auto-generated method stub
 		GoogleCalendar obj=StorageManager.getGCalObject();
-		
-		if (obj.isLoggedIn()){
+		if (obj!=null){
+			if (obj.isLoggedIn()){
 			
 			if (StorageManager.getGCalObject().exportToGcal()){
 				logger.debug("logged and exported successfully");
-				return new Task[1];
+				return null;
 			}
 			else{
 				feedback=OperationFeedback.INVALID_NOINTERNET;
@@ -74,17 +76,24 @@ public class GoogleCalendarOp extends Operation {
 			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
 			return null;
 		}
+		}
+		else
+		{
+			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+			return null;
+		}
+		
 	}
 
 	private Task[] importTasks() {
 		// TODO Auto-generated method stub
 		GoogleCalendar obj=StorageManager.getGCalObject();
-		
+		if (obj!=null){
 		if (obj.isLoggedIn()){
 			
 			if (StorageManager.getGCalObject().importFromGcal()){
 				logger.debug("logged and imported successfully");
-				return new Task[1];
+				return null;
 			}
 			else{
 				feedback=OperationFeedback.INVALID_NOINTERNET;
@@ -96,18 +105,29 @@ public class GoogleCalendarOp extends Operation {
 			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
 			return null;
 		}
+		}
+		else
+		{
+			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+			return null;
+		}
 	}
 
 	private Task[] sync() {
 		// TODO Auto-generated method stub
 		GoogleCalendar obj=StorageManager.getGCalObject();
-		
+		if (obj!=null){
 		if (obj.isLoggedIn()){
 		
 			
 			Thread t= new Thread(StorageManager.getGCalObject());
 			t.start();
-			return new Task[1];
+			return null;
+		}
+		else{
+			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+			return null;
+		}
 		}
 		else{
 			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
@@ -117,6 +137,14 @@ public class GoogleCalendarOp extends Operation {
 
 	private Task[] login(String userCommand) {
 		// TODO Auto-generated method stub
+		if (StorageManager.getGCalObject()!=null)
+		{
+			if(StorageManager.getGCalObject().isLoggedIn())
+			{
+				feedback=OperationFeedback.USER_ALREADY_LOGGED_IN;
+				return null;
+			}
+		}
 		userCommand.trim().replaceAll("login","");
 		logger.debug(userCommand); 
 		String params[]=userCommand.split("\\s+");
@@ -133,8 +161,7 @@ public class GoogleCalendarOp extends Operation {
 		obj.login(username, password);
 		if (obj.isLoggedIn()){
 			StorageManager.setGCalObject(obj);
-			Thread t= new Thread(StorageManager.getGCalObject());
-			t.start();
+			
 			logger.debug("Logged in");
 			return null;
 			

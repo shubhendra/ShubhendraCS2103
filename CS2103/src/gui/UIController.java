@@ -3,6 +3,7 @@ package gui;
 import gui.mainWindow.MainJFrame;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.MailDialog;
 import gui.mainWindow.extended.TopPopUp;
 import gui.reminder.Reminder;
 
@@ -63,9 +64,8 @@ public class UIController {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		JIDLogic.JIDLogic_init();
-		
 		new UIController();
+		JIDLogic.JIDLogic_init();
 	}
 	
 	/**
@@ -107,7 +107,9 @@ public class UIController {
 	 * updating GUI
 	 */
 	public static void refresh() {
-		ExpandComponent.updateJTable();
+		if(STATE.getState() != STATE.SEARCH
+				&&STATE.getState() != STATE.OVERDUE)
+			ExpandComponent.updateJTable();
 		Reminder.update();
 	}
 	
@@ -167,8 +169,6 @@ public class UIController {
 			execmd += password[i];
 		System.out.println(execmd);
 		JIDLogic.executeCommand(execmd);
-		if(operationFeedback == OperationFeedback.VALID)
-			UIController.showTopPopUpMsg("Log in successfully!");
 		UIController.showFeedbackDisplay();
 	}
 	
@@ -210,10 +210,10 @@ public class UIController {
 		
 		switch(operationFeedback) {
 		case VALID:
-			if(tasks == null)
-				logger.warn("UIController.showFeedbackDisplay : " +
-						"Valid feedback should not have null tasks");
-			if(tasks.length == 1) {
+			if(tasks == null) {
+				displayText = STATE.getFeedbackText();
+			}
+			else if(tasks.length == 1) {
 				displayText = tasks[0].getName() + " " 
 							  +	STATE.getEndedString(true);
 				if(displayText.length() > 50) {
@@ -233,8 +233,8 @@ public class UIController {
 		else 
 			showTrayMsg("Jot It Down", displayText);
 		
-
 		UIController.refresh();
+		UIController.sendOperationFeedback(null);
 	}
 	
 	/**
@@ -251,5 +251,12 @@ public class UIController {
 	 */
 	public static void setLoginOn(boolean status) {
 		loginOn = status;
+	}
+	
+	/** promt email input box
+	 * 
+	 */
+	public static void promptEmailInput() {
+		new MailDialog(mainJFrame, true);
 	}
 }

@@ -127,7 +127,7 @@ public class TopPopUp extends JFrame {
      * @param str displayed text
      */
     public static void setText(String str) {
-    	textLabel.setText(str);
+    	textLabel.setText(makeFirstLetterCapital(str));
     }
     
     /**
@@ -170,6 +170,14 @@ public class TopPopUp extends JFrame {
      */
     public static boolean isShow() {
     	return SHOW;
+    }
+    
+    private static String makeFirstLetterCapital(String str) {
+    	if(str == null) return null;
+    	else if(str.length()==1)
+    		return str.toUpperCase();
+    	else
+    		return str.substring(0,1).toUpperCase() + str.substring(1);
     }
     
 }

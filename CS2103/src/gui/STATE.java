@@ -22,8 +22,12 @@ public enum STATE {
 	private static Logger logger=Logger.getLogger(STATE.class);
 	
 	private static STATE curState = NULL;
-	private static STATE prevState;
+	private static STATE prevState = NULL;
 	private static String command;
+	
+	public static void setState(String str) {
+		setState(checkCommand(str));
+	}
 	
 	public static void setState(STATE newState) {
 		prevState = curState;
@@ -43,6 +47,8 @@ public enum STATE {
 		return prevState;
 	}
 	
+	
+	
 	public static String getEndedString(boolean isOneTask) {
 		if(isOneTask)
 			switch(curState){
@@ -54,6 +60,11 @@ public enum STATE {
 			case COMPLETED: return "is toggled completed.";
 			case IMPORTANT: return "is toggled important.";
 			case OVERDUE: return "is overdue.";
+			case ARCHIVE: return "is moved to archive.";
+			case UNDO: return "is undone.";
+			case REDO: return "is redone.";
+			case SEARCH: return "is found.";
+			case IMPORTARCHIVE: return "is imported from archive.";
 			default:
 				logger.warn(curState + " getEndedString");
 			}
@@ -62,7 +73,16 @@ public enum STATE {
 			case COMPLETEDALL: return "are completed.";
 			case DELETEALL: return "are deleted.";
 			case OVERDUE: return "are overdue.";
+			case COMPLETED: return "are toggled completed.";
 			case IMPORTANT: return "are toggled important.";
+			case ARCHIVE: return "are moved to archive.";
+			case UNDO: return "are undone.";
+			case REDO: return "are redone.";
+			case SEARCH: return "are found.";
+			case DELETE: return "are deleted.";
+			case IMPORTARCHIVE: return "are imported from archive.";
+			default:
+				return "";
 			}
 		
 		logger.warn("ended string message for " + curState + " is not implemented.");
@@ -127,13 +147,36 @@ public enum STATE {
 			return STATE.IMPORTGCAL;
 		if(firstWord.equalsIgnoreCase("export.gcal"))
 			return STATE.EXPORTGCAL;
-		if(firstWord.equalsIgnoreCase("checkfree"))
+		if(firstWord.equalsIgnoreCase("check.free"))
 			return STATE.CHECKFREE;
+		if(firstWord.equalsIgnoreCase("logout"))
+			return STATE.LOGOUT;
 		command = "";
 		return STATE.NULL;
 	} 
 
 	public static String getCommand() {
 		return command;
+	}
+
+	public static String getFeedbackText() {
+		switch(curState) {
+		case LOGIN:
+			return "Logged in successfully.";
+		case IMPORTGCAL:
+			return "Imported from google calendar successfully.";
+		case EXPORTGCAL:
+			return "Exported to google calendar successfully.";
+		case SYNCGCAL:
+			return "Synced with google calendar successfully.";
+		case CLEARARCHIVE:
+			return "All archive is removed successfully.";
+		case CHECKFREE:
+			return "This timeslot is free.";
+		
+		default:
+			logger.warn(curState + "getFeedbackText");
+			return "Successfully";
+		}	
 	}
 }
