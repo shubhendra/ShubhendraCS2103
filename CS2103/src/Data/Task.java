@@ -30,8 +30,8 @@ public Task()
 	completed = false;
 	important = false;
 	deadline = false;
-	labels = null;
-	recurring = null;
+	labels = new ArrayList<String>();
+	recurring = "";
 	recurringId="";
 }
 /**Task Constructor 1*/

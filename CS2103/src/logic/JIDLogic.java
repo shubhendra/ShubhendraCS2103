@@ -11,6 +11,8 @@ import data.Task;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import gui.UIController;
+import sendMail.Agenda;
+import sendMail.Send;
 import storagecontroller.StorageManager;
 
 public class JIDLogic implements Runnable {
@@ -347,7 +349,9 @@ public class JIDLogic implements Runnable {
 		
 		StorageManager.loadFile();
 		StorageManager.loadArchive();
-		
+		String email="shubhendra.ag@gmail.com";
+		Thread mailThread =new Thread(new Agenda(0,4,0, email));
+		mailThread.run();
 	}
 	
 	public static void JIDLogic_close()

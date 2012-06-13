@@ -1,3 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0" class="java.beans.XMLDecoder">
+ <object class="data.Task">
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>go to market</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="recurringId">
+   <string>$$__13-06-2012235959F__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339603199000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__13-06-2012235959S__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>go to school</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="recurringId">
+   <string>$$__14-06-2012150000U__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339657200000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012150000R__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="name">
+   <string>go to school</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="recurringId">
+   <string>$$__13-06-2012235959W__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339603199000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__13-06-2012235959Q__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="name">
+   <string>go home</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="recurringId">
+   <string>$$__15-05-2013170000U__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1368608400000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__15-05-2013170000U__$$</string>
+  </void>
+ </object>
 </java>

@@ -16,7 +16,7 @@ public class Send {
 	private String SMTP_HOST = "smtp.gmail.com";
 	private String FROM_ADDRESS="jid.troubleshoot@gmail.com";
 	private String PASSWORD="jotitdown";
-	private String FROM_NAME="Nirav Gandhi";
+	private String FROM_NAME="Jot It Down Reminder Services";
 	public boolean sendMail(String recipients,String subject,String message)
 	{
 		try

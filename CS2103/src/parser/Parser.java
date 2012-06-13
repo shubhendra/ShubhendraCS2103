@@ -575,12 +575,13 @@ public class Parser {
 		if (m.matches()) {
 		//for(int i=1; i<m.groupCount(); i++)
 			//logger.debug("group"+i+": "+m.group(i));
-		
-		arr = new String[6];
+		arr = new String[] {"","","","","",""};
 		for (int i=0; i<5; i++) {
-			arr[i] = m.group(i+1);
+			if (m.group(i+1)!=null)
+				arr[i] = m.group(i+1);
 		}
-		arr[5] = m.group(9);
+		if (m.group(9)!=null)
+			arr[5] = m.group(9);
 		
 		//for (int i=0; i<arr.length; i++)
 			//logger.debug("arr: "+arr[i]);

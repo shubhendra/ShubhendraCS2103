@@ -1,10 +1,7 @@
 package gcal;
 import storagecontroller.StorageManager;
 import org.apache.log4j.Logger;
-/*import com.google.gdata.client.Query;
-import com.google.gdata.client.calendar.CalendarQuery;*/
 import com.google.gdata.client.calendar.CalendarService;
-//import com.google.gdata.data.Content;
 import com.google.gdata.data.DateTime;
 import com.google.gdata.data.PlainTextConstruct;
 import com.google.gdata.data.calendar.CalendarEventEntry;
@@ -23,8 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 import data.Task;
 import data.TaskDateTime;
+import parser.Parser;
 //import parser.Parser;
-public class GoogleCalendar implements Runnable
+public class GoogleCalendar
 {
 	private Logger logger = Logger.getLogger(GoogleCalendar.class.getName());
 	private static final String USER_CALENDAR_URL = "https://www.google.com/calendar/feeds/default/private/full";
@@ -35,6 +33,7 @@ public class GoogleCalendar implements Runnable
 	private String password;
 	private static boolean loggedIn;
 	private static URL userCalendarUrl;
+	private Parser parser=new Parser();
 	//Parser testParser=new Parser();
 	/*private Task task1=testParser.parseForAdd("Go to Airport on 10 june 2012 at 4 pm");
 	private Task task2=testParser.parseForAdd("Go for a movie on 8 june 2012 at 9 pm");
@@ -51,9 +50,11 @@ public class GoogleCalendar implements Runnable
 			loggedIn=true;
 		}
 		catch(AuthenticationException e){
+			logger.debug("Authentication Exception");
 			loggedIn=false;
 		}
 		catch(MalformedURLException e){
+			logger.debug("MalformedURLException");
 			loggedIn=false;
 		}
 		return loggedIn;
@@ -93,26 +94,42 @@ public class GoogleCalendar implements Runnable
 		}
 			return list.toArray(new Task[list.size()]);
 	}
-	public Task calendarEntryToTask(CalendarEventEntry entry){
+	public Task calendarEntryToTask(CalendarEventEntry entry)
+	{
 		Task googleCalTask=new Task();
 		ArrayList<String> labelList=new ArrayList<String>();
 		googleCalTask.setName(entry.getTitle().getPlainText());
-		String labels=entry.getContent().getLang();
-		if(labels!=null)
-		{
-		String[] arr = labels.split("\\s+");
-		for(int i=0;i<arr.length;i++)
-		{
-			labelList.add(arr[i]);
-		}
-		googleCalTask.setLabels(labelList);
-		}
+		String entryDesc=entry.getPlainTextContent();
+		logger.debug(entryDesc);
 		String desc=entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", "");
 		googleCalTask.setDescription(desc);
 		List<When> eventTime=entry.getTimes();
 		googleCalTask.setStart(getTaskDateTime(eventTime.get(0).getStartTime()));
 		googleCalTask.getStart().setHasDate(true);
 		googleCalTask.getStart().setHasTime(!eventTime.get(0).getStartTime().isDateOnly());
+		String[] descr=new String[6];
+		descr=parser.fetchGCalDes(entryDesc);
+		for(int i=0;i<5;i++)
+		{
+			logger.debug(descr[i]);
+		}
+		if(descr[0]=="true")
+			googleCalTask.setCompleted(true);
+		else
+			googleCalTask.setCompleted(false);
+		if(descr[1]=="true")
+			googleCalTask.setImportant(true);
+		else
+			googleCalTask.setImportant(false);
+		if(descr[2]=="true")
+			googleCalTask.setDeadline(true);
+		else
+			googleCalTask.setDeadline(false);
+		googleCalTask.setRecurring(descr[3]);
+		googleCalTask.setRecurringId(descr[4]);
+		labelList=stringToArrayList(descr[5]);
+		logger.debug(labelList.toString());
+		
 		logger.debug(getTaskDateTime(eventTime.get(0).getStartTime()).toString());
 		logger.debug(getTaskDateTime(eventTime.get(0).getEndTime()).toString());
 		logger.debug(googleCalTask.getName());
@@ -120,38 +137,64 @@ public class GoogleCalendar implements Runnable
 			logger.debug("Start end date time is same");
 			googleCalTask.setEnd(null);
 		}
-		else{
+		else
+		{
 		googleCalTask.setEnd(getTaskDateTime(eventTime.get(0).getEndTime()));
 		googleCalTask.getEnd().setHasDate(true);
 		googleCalTask.getEnd().setHasTime(!eventTime.get(0).getEndTime().isDateOnly());
 		}
-		//googleCalTask.setLabels(labelList);
 		return googleCalTask;
 	}
 	
 	private data.TaskDateTime getTaskDateTime(DateTime dateTime) {
 		return TaskDateTime.xmlToEventTime(dateTime.toString());
 	}
-	
+	public String setGcalDescription(boolean completed,boolean deadline,boolean important,String recurring,String recurringId,String labels)
+	{
+		String entryCompleted="<"+"CMPT:"+completed+">";
+		String entryDeadline="<"+"IMPT:"+important+">";
+		String entryImportant="<"+"DEAD:"+deadline+">";
+		String entryRecurring="<"+"RECUR:"+recurring+">";
+		String entryRecurringId;
+		if(recurringId==null || recurringId=="")
+			entryRecurringId="<"+"RECURID:"+">";
+		else
+			entryRecurringId="<"+"RECURID:"+recurringId+">";
+		String entryLabels;
+		if(labels.equals(new ArrayList<String>()))
+			entryLabels="<"+"LABEL:"+">";
+		else
+			entryLabels="<"+"LABEL:"+labels+">";
+		return entryCompleted+entryDeadline+entryImportant+entryRecurring+entryRecurringId+entryLabels;
+	}
+	private String toGcalString(ArrayList<String> labels)
+	{
+		String labelsString = "";
+		logger.debug(labels.size());
+		if(!(labels.size()==0)){
+		for(int i=0;i<labels.size();i++)
+		{
+			labelsString+=labels.get(i)+ " ";
+		}
+		return labelsString;
+		}
+		return "";
+	}
 	public CalendarEventEntry addTask(Task task,int reminderMins,Method reminderMethod)
 	{
 		logger.debug("In addTask");
-		String labels=new String();
 		CalendarEventEntry newEntry = new CalendarEventEntry();
 		newEntry.setTitle(new PlainTextConstruct(task.getName()));
-		if(task.getLabels()!=null)
-		{
-		for(int i=0;i<task.getLabels().size();i++)
-		{
-			labels += task.getLabels().get(i) + " ";
-		}
-		newEntry.setContent(new PlainTextConstruct(labels));
-		}
+		String description=setGcalDescription(task.getCompleted(),task.getImportant(),task.getDeadline(),task.getRecurring(),task.getRecurringId(),toGcalString(task.getLabels()));
+		logger.debug(description);
+		newEntry.setContent(new PlainTextConstruct(description));
+		logger.debug(newEntry.getPlainTextContent());
 		DateTime start=getDateTime(task.getStart());
 		DateTime end=getDateTime(task.getEnd());
-		if(start==null)
-			return new CalendarEventEntry();
 		When eventTime=new When();
+		if(start==null)
+			eventTime.setStartTime(end);
+		else
 			eventTime.setStartTime(start);
 		if(end!=null)
 		{
@@ -164,7 +207,6 @@ public class GoogleCalendar implements Runnable
 			if(entry==null)
 				return null;
 			task.setDescription(entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", ""));
-			System.out.println(task.getDescription());
 			Method type=reminderMethod;
 			Reminder reminder=new Reminder();
 			reminder.setMinutes(reminderMins);
@@ -209,7 +251,16 @@ public class GoogleCalendar implements Runnable
 		}
 		return false;
 	}
-	
+	public ArrayList<String> stringToArrayList(String labels)
+	{
+		ArrayList<String> temp=new ArrayList<String>();
+		String[] label=labels.split(" ");
+		for(int i=0;i<label.length;i++)
+		{
+			temp.add(label[i]);
+		}
+		return temp;
+	}
 	public boolean updateEvent(Task oldTask,Task newTask)
 	{
 		/*List<CalendarEventEntry> entriesList=getAllEntries();
@@ -221,7 +272,6 @@ public class GoogleCalendar implements Runnable
 				deleteEvent(oldTask);
 				addTask(newTask,0,Method.NONE);
 				return true;
-	
 	}
 	public DateTime getDateTime(TaskDateTime taskDateTime){
 		if(taskDateTime==null)
@@ -272,7 +322,8 @@ public class GoogleCalendar implements Runnable
 					}
 				}
 				if(!isPresent){
-					StorageManager.addTask(taskArray[i]);System.out.println(taskArray[i].getTaskId());}
+					StorageManager.addTask(taskArray[i]);
+					System.out.println(taskArray[i].getTaskId());}
 		}
 		}
 		return true;
@@ -346,11 +397,6 @@ public class GoogleCalendar implements Runnable
 	}
 	public boolean isLoggedIn(){
 		return loggedIn;
-	}
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-		sync();
 	}
 }
 
