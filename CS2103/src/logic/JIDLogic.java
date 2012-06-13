@@ -5,9 +5,7 @@ package logic;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
 
 import java.util.Stack;
 
@@ -21,7 +19,7 @@ import org.apache.log4j.Logger;
 
 import constant.OperationFeedback;
 import gui.UIController;
-import sendMail.Agenda;
+
 
 import storagecontroller.StorageManager;
 

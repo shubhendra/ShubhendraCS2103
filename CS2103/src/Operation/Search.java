@@ -149,7 +149,7 @@ public class Search extends Operation {
 		
 	}
 
-	@SuppressWarnings("null")
+
 	private Task[] search(Task findTask, Task[] allTasks) {
 		// TODO Auto-generated method stub
 		ArrayList<Task> foundTasks=new ArrayList<Task>();

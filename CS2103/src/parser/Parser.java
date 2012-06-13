@@ -7,7 +7,6 @@ import java.util.GregorianCalendar;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import logic.JIDLogic;
 import org.apache.log4j.Logger;
 
 public class Parser {
@@ -49,7 +48,7 @@ public class Parser {
 	private String command;
 	private OperationFeedback error;
 	
-	private Logger logger=Logger.getLogger(JIDLogic.class);
+	private Logger logger=Logger.getLogger(Parser.class);
 	
 	/**
 	 * Default constructor

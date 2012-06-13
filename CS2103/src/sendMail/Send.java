@@ -2,8 +2,7 @@ package sendMail;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;  
-import java.util.logging.Level;  
-import java.util.logging.Logger;  
+
 import javax.mail.Authenticator;  
 import javax.mail.Message;  
 import javax.mail.MessagingException;  

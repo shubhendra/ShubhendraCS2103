@@ -1,5 +1,5 @@
 package sendMail;
-import java.text.SimpleDateFormat;
+
 
 import data.Task;
 import data.TaskDateTime;
@@ -14,7 +14,6 @@ import org.tiling.scheduling.iterators.DailyIterator;
 
 import storagecontroller.StorageManager;
 
-import java.io.*;
 public class Agenda implements Runnable{
 private final Scheduler scheduler=new Scheduler();
 private final int hourOfDay,minute,second;

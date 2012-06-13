@@ -1,7 +1,7 @@
 package storagecontroller;
 
 import data.Task;
-import data.TaskArrayList;
+
 import data.TaskHashMap;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
@@ -17,8 +17,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-
-import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 public class FileHandler 
 {
