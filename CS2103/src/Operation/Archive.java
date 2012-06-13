@@ -96,12 +96,12 @@ public class Archive extends Operation{
 			logger.debug("running archvie");
 			return archiveTasks();
 		}
-		else if(userCommand.toLowerCase().trim().contains("cleararchive")){
+		else if(userCommand.toLowerCase().trim().contains("clear.archive")){
 			logger.debug("running clear archvie");
 			archiveCommand=archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
-		else if(userCommand.toLowerCase().trim().contains("importarchive")){
+		else if(userCommand.toLowerCase().trim().contains("import.archive")){
 			archiveCommand=archiveStatus.IMPORT_ARCHIVE;
 			logger.debug("importing archive");
 			return importArchive();
@@ -141,7 +141,8 @@ public class Archive extends Operation{
 		// TODO Auto-generated method stub
 		isUndoAble=false;
 		StorageManager.clearArchive();
-		return new Task[1];
+		feedback=OperationFeedback.VALID;
+		return null;
 		
 	}
 

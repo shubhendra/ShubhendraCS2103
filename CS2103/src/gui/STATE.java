@@ -16,28 +16,36 @@ public enum STATE {
 	ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
 	, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
 	, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
-	, CLEARARCHIVE, EXPORTARCHIVE;
+	, CLEARARCHIVE, IMPORTARCHIVE, SYNCGCAL, IMPORTGCAL, EXPORTGCAL
+	, CHECKFREE;
 
 	private static Logger logger=Logger.getLogger(STATE.class);
 	
-	private static STATE state = NULL;
+	private static STATE curState = NULL;
+	private static STATE prevState;
 	private static String command;
 	
 	public static void setState(STATE newState) {
-		state = newState;
+		prevState = curState;
+		curState = newState;
 	}
 	
 	public static void resetState() {
-		state = NULL;
+		curState = NULL;
+		prevState = NULL;
 	}
 	
 	public static STATE getState() {
-		return state;
+		return curState;
+	}
+	
+	public static STATE getPrevState() {
+		return prevState;
 	}
 	
 	public static String getEndedString(boolean isOneTask) {
 		if(isOneTask)
-			switch(state){
+			switch(curState){
 			case ADD: return "is added.";
 			case DELETEALL:
 			case DELETE: return "is deleted.";
@@ -47,15 +55,17 @@ public enum STATE {
 			case IMPORTANT: return "is toggled important.";
 			case OVERDUE: return "is overdue.";
 			default:
-				logger.warn(state + " getEndedString");
+				logger.warn(curState + " getEndedString");
 			}
 		else
-			switch(state) {
+			switch(curState) {
 			case COMPLETEDALL: return "are completed.";
 			case DELETEALL: return "are deleted.";
 			case OVERDUE: return "are overdue.";
 			case IMPORTANT: return "are toggled important.";
 			}
+		
+		logger.warn("ended string message for " + curState + " is not implemented.");
 		return null;
 	}
 	
@@ -107,11 +117,18 @@ public enum STATE {
 			return STATE.COMPLETEDALL;
 		if(firstWord.equalsIgnoreCase("archive"))
 			return STATE.ARCHIVE;
-		if(firstWord.equalsIgnoreCase("cleararchive"))
+		if(firstWord.equalsIgnoreCase("clear.archive"))
 			return STATE.CLEARARCHIVE;
-		if(firstWord.equalsIgnoreCase("exportarchive"))
-			return STATE.EXPORTARCHIVE;
-		
+		if(firstWord.equalsIgnoreCase("import.archive"))
+			return STATE.IMPORTARCHIVE;
+		if(firstWord.equalsIgnoreCase("sync.gcal"))
+			return STATE.SYNCGCAL;
+		if(firstWord.equalsIgnoreCase("import.gcal"))
+			return STATE.IMPORTGCAL;
+		if(firstWord.equalsIgnoreCase("export.gcal"))
+			return STATE.EXPORTGCAL;
+		if(firstWord.equalsIgnoreCase("checkfree"))
+			return STATE.CHECKFREE;
 		command = "";
 		return STATE.NULL;
 	} 

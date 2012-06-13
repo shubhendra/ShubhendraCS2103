@@ -3,14 +3,14 @@ package parser;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+import logic.JIDLogic;
 import org.apache.log4j.Logger;
 
 public class TimeParser {
-	private Logger logger=Logger.getLogger(TimeParser.class);
+	private Logger logger=Logger.getLogger(JIDLogic.class);
 	
-	int startHour, endHour, startMin, endMin;
-	int dummyHour, dummyMin;
+	int startHour = -1, endHour = -1, startMin = -1, endMin = -1;
+	int dummyHour = -1, dummyMin = -1;
 	private Pattern pattern12, pattern24;
 	private Matcher matcher12, matcher24;
 	
@@ -112,14 +112,14 @@ public class TimeParser {
 					return true;
 				}
 				else {
-					//logger.debug("1st return of setStartDate: false");
+					logger.debug("1st return of setStartDate: false");
 					return false;
 				}
 			}
-			//logger.debug("2nd return of setStartDate: false");
+			logger.debug("2nd return of setStartDate: false");
 			return false;
 		}
-		//logger.debug("3rd return of setStartDate: false");
+		logger.debug("3rd return of setStartDate: false");
 		return false;
 	}
 	/**
@@ -145,7 +145,6 @@ public class TimeParser {
 			//logger.debug("2nd return of setStartDate: false");
 			return false;
 		}
-		//logger.debug("3rd return of setStartDate: false");
 		return false;
 	}
 	/**
@@ -249,10 +248,10 @@ public class TimeParser {
 				}
 			}
 			
-			//logger.debug("first false of set12hour");
+			logger.debug("first false of set12hour");
 			return false;
 		}
-		//logger.debug("second false of set12hour");
+		logger.debug("second false of set12hour");
 		return false;
 	}
 	/**
@@ -278,7 +277,6 @@ public class TimeParser {
 				return true;
 			}
 		}
-		//logger.debug("false of set24hour");
 		return false;
 	}
 	

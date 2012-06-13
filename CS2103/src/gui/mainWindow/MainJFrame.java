@@ -597,7 +597,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case OVERDUE:
 									case ARCHIVE:
 									case CLEARARCHIVE:
-									case EXPORTARCHIVE:
+									case IMPORTARCHIVE:
 										exeCmd = curText;
 									break;
 									}

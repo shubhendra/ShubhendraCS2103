@@ -1,5 +1,6 @@
 package gui.mainWindow;
 
+import gui.STATE;
 import gui.UIController;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
@@ -31,6 +32,7 @@ public class Action {
 	static class ExitAction extends AbstractAction {
 		@Override
 		public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.EXIT);
 			JIDLogic.JIDLogic_close();
 			System.exit(0);
 		}
@@ -44,10 +46,12 @@ public class Action {
     static class UndoAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.UNDO);
         	logger.debug("*****EXECMD: UNDO*******");
         	JIDLogic.setCommand("UNDO");
         	Task[] task = JIDLogic.executeCommand("UNDO");
         	UIController.showFeedbackDisplay(task);
+			STATE.setState(STATE.NULL);
         }
     }
 	
@@ -59,8 +63,8 @@ public class Action {
     static class DeleteAction extends AbstractAction {
     	Task[] task;
         @Override
-        public void actionPerformed(ActionEvent e) {      
-        	System.out.println(e);
+        public void actionPerformed(ActionEvent e) {     
+			STATE.setState(STATE.DELETE); 
         	
         	Task[] taskList = ExpandComponent.getSeletedTask();
         	
@@ -76,8 +80,9 @@ public class Action {
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
 		        UIController.showFeedbackDisplay(result);
-	        	UIController.refresh();
 	        }
+        	
+			STATE.setState(STATE.NULL);
         }
     }
     
@@ -90,6 +95,8 @@ public class Action {
     	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.COMPLETED);
+			
         	Task[] taskList = ExpandComponent.getSeletedTask();
         	
         	if(taskList.length == 0)
@@ -107,6 +114,8 @@ public class Action {
 	        	
 	        	UIController.refresh();
 	        }
+
+			STATE.setState(STATE.COMPLETED);
         }
     }
     
@@ -119,6 +128,8 @@ public class Action {
     	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.IMPORTANT);
+			
         	Task[] taskList = ExpandComponent.getSeletedTask();
         	
         	if(taskList.length == 0)
@@ -140,6 +151,8 @@ public class Action {
 		        UIController.showFeedbackDisplay(result);
 	        	UIController.refresh();
 	        }
+        	
+			STATE.setState(STATE.NULL);
         }
     }
     
@@ -151,12 +164,16 @@ public class Action {
     static class OverdueAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.OVERDUE);
+			
     		JIDLogic.setCommand("overdue");
     		logger.debug("*********exeCmd(inside Action): Overdue");
     		Task[] task = JIDLogic.executeCommand("OVERDUE");
 
 	        UIController.showFeedbackDisplay(task);
-    		ExpandComponent.updateJTable(task);
+	        
+
+			STATE.setState(STATE.NULL);
     	}
     }
     
@@ -168,12 +185,13 @@ public class Action {
     static class RedoAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.REDO);
     		JIDLogic.setCommand("redo");
     		logger.debug("******exeCmd(inside Action: Redo");
     		Task[] task = JIDLogic.executeCommand("redo");
 
 	        UIController.showFeedbackDisplay(task);
-    		UIController.refresh();
+			STATE.setState(STATE.NULL);
     	}
     }
     
@@ -185,8 +203,12 @@ public class Action {
     static class ListAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.LIST);
     		UIController.refresh();
     		UIController.expandFrame();
+    		UIController.sendOperationFeedback(null);
+
+			STATE.setState(STATE.NULL);
     	}
     }
     
@@ -198,10 +220,13 @@ public class Action {
     static class ExpandAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+			//STATE.setState(STATE.EXPAND);
     		if(UIController.isFrameExpand())
     			UIController.contractFrame();
     		else
     			UIController.expandFrame();
+    		UIController.sendOperationFeedback(null);
+			STATE.setState(STATE.NULL);
     	}
     }
     
@@ -212,7 +237,10 @@ public class Action {
      */
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.HELP);
     		HelpFrame.toggleShown();
+    		UIController.sendOperationFeedback(null);
+			STATE.setState(STATE.NULL);
     	}
     }
 
@@ -224,6 +252,7 @@ public class Action {
     static class GCalendarAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.LOGIN);
     		new LogInDialog(UIController.mainJFrame
     				, UIController.mainJFrame.getLocation().x + 60
     				, UIController.mainJFrame.getLocation().y - 120
@@ -237,10 +266,12 @@ public class Action {
     static class GCalendarOutAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+			STATE.setState(STATE.LOGOUT);
     		JIDLogic.setCommand("logout");
     		Task[] task = JIDLogic.executeCommand("logout");
 
 	        UIController.showFeedbackDisplay(task);
+			STATE.setState(STATE.NULL);
     	}
     }
 }

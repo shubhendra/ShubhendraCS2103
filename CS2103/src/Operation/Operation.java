@@ -52,17 +52,22 @@ public abstract class Operation {
 			object = new ToggleCompleted(intendedOperation);
 		}
 		else if(intendedOperation.equals("star") || intendedOperation.equals("important") ||
-				intendedOperation.equals("star.all")){
+				intendedOperation.equals("star.all")){ 
 			object = new ToggleImportant(intendedOperation);
 		}
-		else if (intendedOperation.equals("archive") || intendedOperation.equals("cleararchive") ||
-				intendedOperation.equals("importarchive")){
+		else if (intendedOperation.equals("archive") || intendedOperation.equals("clear.archive") ||
+				intendedOperation.equals("import.archive")){
 			object = new Archive(intendedOperation);
 		}
 		else if (intendedOperation.equals("overdue")){
 			object= new Overdue(intendedOperation);
 		}
-		else if (intendedOperation.equals("login")){
+		else if (intendedOperation.equals("check.free")){
+			object= new CheckFree(intendedOperation);
+		}
+		else if (intendedOperation.equals("login") || intendedOperation.equals("logout") ||
+				intendedOperation.equals("sync.gcal") || intendedOperation.equals("import.gcal") ||
+				intendedOperation.equals("export.gcal")) {
 			object= new GoogleCalendarOp();
 		}
 		else

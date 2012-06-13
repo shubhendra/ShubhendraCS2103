@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+import logic.JIDLogic;
 import org.apache.log4j.Logger;
 
 public class Parser {
@@ -49,7 +49,7 @@ public class Parser {
 	private String command;
 	private OperationFeedback error;
 	
-	private Logger logger=Logger.getLogger(Parser.class);
+	private Logger logger=Logger.getLogger(JIDLogic.class);
 	
 	/**
 	 * Default constructor
@@ -575,12 +575,13 @@ public class Parser {
 		if (m.matches()) {
 		//for(int i=1; i<m.groupCount(); i++)
 			//logger.debug("group"+i+": "+m.group(i));
-		
-		arr = new String[6];
+		arr = new String[] {"","","","","",""};
 		for (int i=0; i<5; i++) {
-			arr[i] = m.group(i+1);
+			if (m.group(i+1)!=null)
+				arr[i] = m.group(i+1);
 		}
-		arr[5] = m.group(9);
+		if (m.group(9)!=null)
+			arr[5] = m.group(9);
 		
 		//for (int i=0; i<arr.length; i++)
 			//logger.debug("arr: "+arr[i]);
@@ -606,11 +607,11 @@ public class Parser {
 			logger.debug("current dont parse string extracted: "+dontParseStrings[currIndex]);
 			logger.debug("length of current dont parse string extracted: "+dontParseStrings[currIndex].length());
 			
-			tempReplaceStrings[currIndex]= "&";
+			tempReplaceStrings[currIndex]= "\'";
 			for (int j=2; j<dontParseStrings[currIndex].length(); j++) {
 				tempReplaceStrings[currIndex] = tempReplaceStrings[currIndex]+"%";
 			}
-			tempReplaceStrings[currIndex]= tempReplaceStrings[currIndex]+"&";
+			tempReplaceStrings[currIndex]= tempReplaceStrings[currIndex]+"\'";
 			
 			logger.debug("current temp replacement string: "+tempReplaceStrings[currIndex]);
 			

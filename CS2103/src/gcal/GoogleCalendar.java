@@ -108,7 +108,10 @@ public class GoogleCalendar implements Runnable
 		googleCalTask.getStart().setHasDate(true);
 		googleCalTask.getStart().setHasTime(!eventTime.get(0).getStartTime().isDateOnly());
 		String[] descr=new String[6];
+		logger.debug("Entry desc"+entryDesc);
+		
 		descr=parser.fetchGCalDes(entryDesc);
+		if (descr!=null){
 		for(int i=0;i<5;i++)
 		{
 			logger.debug(descr[i]);
@@ -125,11 +128,13 @@ public class GoogleCalendar implements Runnable
 			googleCalTask.setDeadline(true);
 		else
 			googleCalTask.setDeadline(false);
+		
 		googleCalTask.setRecurring(descr[3]);
 		googleCalTask.setRecurringId(descr[4]);
 		labelList=stringToArrayList(descr[5]);
-		logger.debug(labelList.toString());
 		
+		logger.debug(labelList.toString());
+		}
 		logger.debug(getTaskDateTime(eventTime.get(0).getStartTime()).toString());
 		logger.debug(getTaskDateTime(eventTime.get(0).getEndTime()).toString());
 		logger.debug(googleCalTask.getName());
@@ -285,6 +290,7 @@ public class GoogleCalendar implements Runnable
 	}
 	public boolean importFromGcal()
 	{
+		logger.debug("In import");
 		boolean isPresent = false;
 		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
 		System.out.println(taskArray.length);

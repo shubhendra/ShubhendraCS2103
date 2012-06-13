@@ -135,7 +135,8 @@ public class GoogleCalendarOp extends Operation {
 			StorageManager.setGCalObject(obj);
 			Thread t= new Thread(StorageManager.getGCalObject());
 			t.start();
-			return new Task[1];
+			logger.debug("Logged in");
+			return null;
 			
 		}
 		else{
@@ -150,7 +151,7 @@ public class GoogleCalendarOp extends Operation {
 		if (StorageManager.getGCalObject().logout()){
 			StorageManager.setGCalObject(null);
 			feedback=OperationFeedback.LOGGED_OUT_SUCCESSFULLY;
-			return new Task[1];
+			return null;
 		}
 		else {
 			feedback=OperationFeedback.LOGOUT_FAILED;
