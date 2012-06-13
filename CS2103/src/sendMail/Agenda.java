@@ -11,12 +11,14 @@ import operation.Search;
 import org.tiling.scheduling.Scheduler;
 import org.tiling.scheduling.SchedulerTask;
 import org.tiling.scheduling.iterators.DailyIterator;
+
+import storagecontroller.StorageManager;
+
 import java.io.*;
 public class Agenda implements Runnable{
 private final Scheduler scheduler=new Scheduler();
 private final int hourOfDay,minute,second;
-private BufferedWriter writer;
-private BufferedReader reader;
+
 private String recepientEmail;
 public Agenda(int hour,int min,int sec,String email)
 {
@@ -61,35 +63,24 @@ private TaskDateTime getDate(String result)
 }
 public void sendMail()
 {
-try
-{
 	System.out.println("In sendMail");
-	reader=new BufferedReader(new FileReader("JotItDownAgenda.txt"));
-	String buffer,result="";
-	while ((buffer = reader.readLine()) != null)
-	{
-		System.out.println(buffer);
-		result+=buffer;
-	}
-	reader.close();
+	String result=StorageManager.loadDate();
 	TaskDateTime sentDate = getDate(result);
 	System.out.println(" The date extracted  is " + sentDate.formattedToString());
-	writer=new BufferedWriter(new FileWriter("JotItDownAgenda.txt"));
+	
 	TaskDateTime default2=new TaskDateTime(2002,1,1);
 	if(sentDate.compareTo(new TaskDateTime().getDate())==0)
 	{
 		System.out.println("Default");
 		System.out.println(default2.getDate().formattedToString());
-		writer.write(default2.getDate().formattedToString());
-		writer.close();
+		StorageManager.saveDate(default2.getDate().formattedToString());
 		start();
 	}
 	else
 	{
 	if(sentDate.compareTo(TaskDateTime.getCurrentDate())==-1)
 	{
-		writer.write(TaskDateTime.getCurrentDate().formattedToString());
-		writer.close();
+		StorageManager.saveDate(TaskDateTime.getCurrentDate().formattedToString());
 		Send send=new Send();
 		Search todaysTasks=new Search();
 		Task urgentTasks[]=todaysTasks.searchTodaysTasks();
@@ -128,18 +119,10 @@ try
 	}
 	else if(sentDate.compareTo(TaskDateTime.getCurrentDate())==0)
 	{
-		writer.write(TaskDateTime.getCurrentDate().formattedToString());
-		writer.close();
+		StorageManager.saveDate(TaskDateTime.getCurrentDate().formattedToString());
 	}
 	}
-}
-	catch(FileNotFoundException e)
-	{
 
-	} 
-	catch (IOException e) {
-		System.out.println("IO Exception");
-	}
 }
 public void start()
 {

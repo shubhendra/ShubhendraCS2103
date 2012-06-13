@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import logic.JIDLogic;
+
 import org.apache.log4j.Logger;
 
 public class Parser {
@@ -49,7 +49,7 @@ public class Parser {
 	private String command;
 	private OperationFeedback error;
 	
-	private Logger logger=Logger.getLogger(JIDLogic.class);
+	private Logger logger=Logger.getLogger(Parser.class);
 	
 	/**
 	 * Default constructor
@@ -575,13 +575,12 @@ public class Parser {
 		if (m.matches()) {
 		//for(int i=1; i<m.groupCount(); i++)
 			//logger.debug("group"+i+": "+m.group(i));
-		arr = new String[] {"","","","","",""};
+		
+		arr = new String[6];
 		for (int i=0; i<5; i++) {
-			if (m.group(i+1)!=null)
-				arr[i] = m.group(i+1);
+			arr[i] = m.group(i+1);
 		}
-		if (m.group(9)!=null)
-			arr[5] = m.group(9);
+		arr[5] = m.group(9);
 		
 		//for (int i=0; i<arr.length; i++)
 			//logger.debug("arr: "+arr[i]);
@@ -607,11 +606,11 @@ public class Parser {
 			logger.debug("current dont parse string extracted: "+dontParseStrings[currIndex]);
 			logger.debug("length of current dont parse string extracted: "+dontParseStrings[currIndex].length());
 			
-			tempReplaceStrings[currIndex]= "\'";
+			tempReplaceStrings[currIndex]= "&";
 			for (int j=2; j<dontParseStrings[currIndex].length(); j++) {
 				tempReplaceStrings[currIndex] = tempReplaceStrings[currIndex]+"%";
 			}
-			tempReplaceStrings[currIndex]= tempReplaceStrings[currIndex]+"\'";
+			tempReplaceStrings[currIndex]= tempReplaceStrings[currIndex]+"&";
 			
 			logger.debug("current temp replacement string: "+tempReplaceStrings[currIndex]);
 			
@@ -798,7 +797,7 @@ public class Parser {
 			logger.debug("-----from_time_date_to_time_date format-------");
 			
 			for (int i=0; i<mFromTimeDateToTimeDate.groupCount(); i++)
-				//logger.debug("group "+i+": "+mFromTimeDateToTimeDate.group(i));
+				logger.debug("group "+i+": "+mFromTimeDateToTimeDate.group(i));
 			
 			startTimeString = mFromTimeDateToTimeDate.group(4);
 			startDateString = mFromTimeDateToTimeDate.group(19);
@@ -823,7 +822,7 @@ public class Parser {
 			logger.debug("-----from_date_time_to_date_time format-------");
 			
 			for (int i=0; i<mFromDateTimeToDateTime.groupCount(); i++)
-				//logger.debug("group "+i+": "+mFromDateTimeToDateTime.group(i));
+				logger.debug("group "+i+": "+mFromDateTimeToDateTime.group(i));
 			
 			startTimeString = mFromDateTimeToDateTime.group(91);
 			startDateString = mFromDateTimeToDateTime.group(8);
@@ -849,7 +848,7 @@ public class Parser {
 			logger.debug("-----from_time_to_time_date format-------");
 			
 			for (int i=0; i<mFromTimeToTimeDate.groupCount(); i++)
-				//logger.debug("group "+i+": "+mFromTimeToTimeDate.group(i));
+				logger.debug("group "+i+": "+mFromTimeToTimeDate.group(i));
 			
 			startTimeString = mFromTimeToTimeDate.group(4);
 			endTimeString = mFromTimeToTimeDate.group(18);
@@ -1064,7 +1063,7 @@ public class Parser {
 			logger.debug("-----at_time_date format-------");
 			
 			for (int i=0; i<mAtTimeDate.groupCount(); i++)
-				//logger.debug("group "+i+": "+mAtTimeDate.group(i));
+				logger.debug("group "+i+": "+mAtTimeDate.group(i));
 			
 			startTimeString = mAtTimeDate.group(4);
 			startDateString = mAtTimeDate.group(19);	
@@ -1082,7 +1081,7 @@ public class Parser {
 			logger.debug("-----by_time_date format-------");
 			
 			for (int i=0; i<mByTimeDate.groupCount(); i++)
-				//logger.debug("group "+i+": "+mByTimeDate.group(i));
+				logger.debug("group "+i+": "+mByTimeDate.group(i));
 			
 			endTimeString = mByTimeDate.group(4);
 			endDateString = mByTimeDate.group(19);		
@@ -1176,7 +1175,7 @@ public class Parser {
 			logger.debug("-----time date only format-------");
 			
 			for (int i=0; i<mTimeDate.groupCount(); i++)
-				//logger.debug("group "+i+": "+mTimeDate.group(i));
+				logger.debug("group "+i+": "+mTimeDate.group(i));
 			
 			startTimeString = mTimeDate.group(1);
 			startDateString = mTimeDate.group(16);
@@ -1194,7 +1193,7 @@ public class Parser {
 			logger.debug("-----date time only format-------");
 			
 			for (int i=0; i<mDateTime.groupCount(); i++)
-				//logger.debug("group "+i+": "+mDateTime.group(i));
+				logger.debug("group "+i+": "+mDateTime.group(i));
 			
 			startTimeString = mDateTime.group(89);
 			startDateString = mDateTime.group(6);
@@ -1272,7 +1271,7 @@ public class Parser {
 			logger.debug("-----date only format-------");
 			
 			for (int i=0; i<mOnlyDate.groupCount(); i++)
-			//	logger.debug("group "+i+": "+mOnlyDate.group(i));
+				logger.debug("group "+i+": "+mOnlyDate.group(i));
 			
 			startDateString = mOnlyDate.group(5);
 			startDateString = startDateString.trim();

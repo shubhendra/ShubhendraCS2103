@@ -4,12 +4,12 @@ import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import logic.JIDLogic;
+
 import org.apache.log4j.Logger;
 
 
 public class DateParser {
-	private Logger logger=Logger.getLogger(JIDLogic.class);
+	private Logger logger=Logger.getLogger(DateParser.class);
 	
 	private Pattern pattern1, pattern2, pattern3, pattern4, pattern5, pattern;
 	private Matcher matcher1, matcher2, matcher3, matcher4, matcher5, matcher;
@@ -338,7 +338,7 @@ public class DateParser {
 		if (matcher4.matches()) {
 			
 			for(int i=0; i<matcher4.groupCount(); i++)
-				//logger.debug("group "+i+"= "+matcher4.group(i));
+				logger.debug("group "+i+"= "+matcher4.group(i));
 			
 			
 			if (matcher4.group(1)!=null && matcher4.group(27)!=null) {

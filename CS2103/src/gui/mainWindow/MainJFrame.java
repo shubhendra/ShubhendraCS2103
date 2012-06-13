@@ -610,38 +610,18 @@ public class MainJFrame extends javax.swing.JFrame {
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
 									switch(curState) {
-									case DELETE:
-									case DELETEALL:
-									case COMPLETED:
-									case COMPLETEDALL:
-									case IMPORTANT:
-									case ADD:
-									case UNDO:
-									case REDO:
-									case EDIT:
-										if(!edit) {
-											if(tasks!=null) {
-												UIController.showFeedbackDisplay(tasks);
-												//showPopup( curState.toString().toLowerCase()+ " " 
-												//		+ tasks[0]);
-												UIController.refresh();
-											}
-										}
-									break;									
 									case SEARCH:
 										ExpandComponent.updateJTable(tasks);
 										expandFrame();
 									break;
 									case LIST:
-										UIController.refresh();
-										expandFrame();
+										new Action.ListAction().actionPerformed(null);
 									break;
 									case EXIT:
-										JIDLogic.JIDLogic_close();
-										System.exit(0);
+										new Action.ExitAction().actionPerformed(null);
 										break;
 									case HELP:
-										HelpFrame.toggleShown();
+										new Action.HelpAction().actionPerformed(null);
 										break;
 									case OVERDUE:
 										new Action.OverdueAction().actionPerformed(null);
@@ -652,22 +632,19 @@ public class MainJFrame extends javax.swing.JFrame {
 									case LOGOUT:
 										new Action.GCalendarOutAction().actionPerformed(null);
 										break;
-									case ARCHIVE:
-									case CLEARARCHIVE:
-									case EXPORTARCHIVE:
 									}
-														
-									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
-										jBoxCompletion.setStandardModel();
-										editorcomp.setText("");
-										curState = STATE.NULL;
+									
+									if(!edit) {
+										UIController.showFeedbackDisplay(tasks);
+										if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
+											jBoxCompletion.setStandardModel();
+											editorcomp.setText("");
+											curState = STATE.NULL;
+										}
 									}
-									else {
-										UIController.showFeedbackDisplay();
-									}
-									UIController.sendOperationFeedback(OperationFeedback.VALID);
 								}
 								
+								UIController.refresh();
 								prevState = curState;
 								prevText = curText;
 							}
@@ -686,12 +663,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return null;
 								}
 							}
-							
-
 				      } );
 				}
-
-
 		});
 
 		editorcomp.addMouseListener(new MouseAdapter() {

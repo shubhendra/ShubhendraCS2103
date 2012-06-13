@@ -5,7 +5,7 @@ import gcal.GoogleCalendar;
 
 import java.util.ArrayList;
 
-import operation.Add;
+
 
 import org.apache.log4j.Logger;
 
@@ -90,19 +90,44 @@ public class StorageManager
 		}
 		return handler.readFromFile(liveStorage);
 	}
+	public static String loadDate()
+	{
+		FileHandler handler=new FileHandler("JotItDownAgenda.txt");
+		return handler.readDate();
+	}
 	/** saves to the file from the liveStorage
 	 * 
 	 * @return true if all the tasks have been loaded without errors, otherwise false.
 	 */
 	
 	
-	
+	public static String loadEmailId()
+	{
+		FileHandler handler=new FileHandler("JotItDownEMail.txt");
+		return handler.readEmailId();
+	}
 	public static boolean saveFile()
 	{
 		FileHandler handler=new FileHandler("JotItDownDatabase.xml");
 		if(handler.writeToFile(liveStorage))
 			return true;
 		else 
+			return false;
+	}
+	public static boolean saveEmailId(String emailId)
+	{
+		FileHandler handler=new FileHandler("JotItDownEmail.txt");
+		if(handler.writeEmailId(emailId))
+			return true;
+		else
+			return false;
+	}
+	public static boolean saveDate(String toWrite)
+	{
+		FileHandler handler=new FileHandler("JotItDownAgenda.txt");
+		if(handler.writeDate(toWrite))
+			return true;
+		else
 			return false;
 	}
 	/** replaces tasks

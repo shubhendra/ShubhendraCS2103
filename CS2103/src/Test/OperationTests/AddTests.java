@@ -124,7 +124,7 @@ public class AddTests {
 		//assertEquals(d,addedTasks.size());
 		System.out.println(d);
 		System.out.println(addedTasks.size());
-		StorageManager.saveFile();
+		
 	}
 
 }

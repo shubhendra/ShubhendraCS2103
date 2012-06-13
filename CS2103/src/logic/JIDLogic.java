@@ -3,6 +3,10 @@ package logic;
 //import java.io.FileNotFoundException;
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import java.util.Stack;
 
 import operation.*;
@@ -12,7 +16,7 @@ import data.Task;
 import org.apache.log4j.Logger;
 import gui.UIController;
 import sendMail.Agenda;
-import sendMail.Send;
+
 import storagecontroller.StorageManager;
 
 public class JIDLogic implements Runnable {
@@ -349,8 +353,23 @@ public class JIDLogic implements Runnable {
 		
 		StorageManager.loadFile();
 		StorageManager.loadArchive();
+		/*String email="";
+		if (StorageManager.loadEmailId()==""){
+			BufferedReader reader;
+			reader = new BufferedReader(new InputStreamReader(System.in));
+			try {
+				email=reader.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+				
+		}
+		else 
+			email= StorageManager.loadEmailId();*/
 		String email="shubhendra.ag@gmail.com";
 		Thread mailThread =new Thread(new Agenda(0,4,0, email));
+		StorageManager.saveEmailId(email);
 		mailThread.run();
 	}
 	
@@ -359,6 +378,7 @@ public class JIDLogic implements Runnable {
 		
 		StorageManager.saveFile();
 		StorageManager.saveArchive();
+		
 		
 	}
 
@@ -381,6 +401,8 @@ public class JIDLogic implements Runnable {
 	 * executes the command and starts the chain of events
 	 */
 	public void run() {
+		StorageManager.saveFile();
+		StorageManager.saveArchive();
 	}
 
 	/**

@@ -79,12 +79,6 @@ public class Archive extends Operation{
 		return isUndoAble;
 	}
 
-	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return true;
-	}
-
 	
 
 	@Override

@@ -26,12 +26,6 @@ public class Default extends Operation {
 	}
 
 	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 		return null;

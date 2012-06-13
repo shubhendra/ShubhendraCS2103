@@ -47,13 +47,7 @@ public class Action {
         	logger.debug("*****EXECMD: UNDO*******");
         	JIDLogic.setCommand("UNDO");
         	Task[] task = JIDLogic.executeCommand("UNDO");
-        	if(task == null)
-        		;
-        		//MainJFrame.showPopup("UNDO unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup(task[0].getName() + " was undone");
-            	ExpandComponent.updateJTable();
-        	}
+        	UIController.showFeedbackDisplay(task);
         }
     }
 	
@@ -81,16 +75,7 @@ public class Action {
 	        	JIDLogic.setCommand("DELETE");
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
-		        if(result!= null)
-		        	if(result.length == 1){
-		        		UIController.showTopPopUpMsg(result[0] +" was deleted.");
-		        	}
-		        	else {
-		        		UIController.showTopPopUpMsg(result.length + " tasks was deleted");
-		        	}
-		        else
-		        	UIController.showFeedbackDisplay();
-		        
+		        UIController.showFeedbackDisplay(result);
 	        	UIController.refresh();
 	        }
         }
@@ -117,18 +102,8 @@ public class Action {
 	        	
 	        	JIDLogic.setCommand("COMPLETED");
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
-	        	
-	        	if(result!= null)
-		        	if(result.length == 1){
-		        		UIController.showTopPopUpMsg(result[0] + " was toggled completed.");
-		        	}
-		        	else {
-		        		UIController.showTopPopUpMsg(result.length + " tasks was toggled completed");
-		        	}
-	        	else {
-	        		UIController.showFeedbackDisplay();
-	        	}
-	        		
+
+		        UIController.showFeedbackDisplay(result);
 	        	
 	        	UIController.refresh();
 	        }
@@ -161,13 +136,8 @@ public class Action {
 	        	JIDLogic.setCommand("IMPORTANT");
 	        	Task[] result = JIDLogic.executeCommand(exeCmd);
 	        	
-	        	if(result.length == 1){
-	        		UIController.showTopPopUpMsg(result[0] + " was toggled important.");
-	        	}
-	        	else {
-	        		UIController.showTopPopUpMsg(result.length + " tasks was toggled important.");
-	        	}
-	        	
+
+		        UIController.showFeedbackDisplay(result);
 	        	UIController.refresh();
 	        }
         }
@@ -184,10 +154,8 @@ public class Action {
     		JIDLogic.setCommand("overdue");
     		logger.debug("*********exeCmd(inside Action): Overdue");
     		Task[] task = JIDLogic.executeCommand("OVERDUE");
-    		
-    		logger.debug(task[0].toString());
-    		
-    		UIController.showTopPopUpMsg(task.length + " task(s) overdue.");
+
+	        UIController.showFeedbackDisplay(task);
     		ExpandComponent.updateJTable(task);
     	}
     }
@@ -203,15 +171,8 @@ public class Action {
     		JIDLogic.setCommand("redo");
     		logger.debug("******exeCmd(inside Action: Redo");
     		Task[] task = JIDLogic.executeCommand("redo");
-    		
-        	if(task == null)
-        		;
-        		//MainJFrame.showPopup("REDO unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup(task[0].getName()+ " was redone.");
-            	ExpandComponent.updateJTable();
-        	}
-    		
+
+	        UIController.showFeedbackDisplay(task);
     		UIController.refresh();
     	}
     }
@@ -278,8 +239,8 @@ public class Action {
     	public void actionPerformed(ActionEvent e) {
     		JIDLogic.setCommand("logout");
     		Task[] task = JIDLogic.executeCommand("logout");
-    		if(task != null)
-    			UIController.showTopPopUpMsg("log out successfully");
+
+	        UIController.showFeedbackDisplay(task);
     	}
     }
 }

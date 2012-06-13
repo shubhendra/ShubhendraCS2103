@@ -15,10 +15,7 @@ public class Modify extends BaseSearch{
 	public Modify(){
 		commandName="modify";
 	}
-	public Task[] executeAll(Task t) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	public Modify(String intendedOperation) {
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
@@ -80,11 +77,7 @@ public class Modify extends BaseSearch{
 		return isUndoAble;
 	}
 
-	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+
 
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub

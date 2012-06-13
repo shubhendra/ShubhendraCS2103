@@ -16,12 +16,17 @@ import java.io.IOException;
 
 import javax.swing.Timer;
 
+import org.apache.log4j.Logger;
+
 import constant.OperationFeedback;
 import data.Task;
 
 import logic.JIDLogic;
 
 public class UIController {
+
+	private static Logger logger=Logger.getLogger(UIController.class);
+	
 	public static MainJFrame mainJFrame;
 	Reminder reminder;
 	static JotItDownTray JIDtray;
@@ -198,26 +203,36 @@ public class UIController {
 	 * show display when there is a feedback from the operation
 	 */
 	public static void showFeedbackDisplay(Task[] tasks) {
-		if(mainJFrame.isVisible())
-			switch(operationFeedback) {
-			case VALID:
-				MainJFrame.showPopup(tasks[0].getName(), STATE.getEndedString(true));
-				break;
-			default:
-				MainJFrame.showPopup(OperationFeedback.getString(getOperationFeedback()));
-				break;
-			
+		String displayText;
+		
+		//some tasks does not need operation feedback. i.e. help
+		if(operationFeedback == null)
+			return;
+		
+		switch(operationFeedback) {
+		case VALID:
+			if(tasks == null)
+				logger.warn("UIController.showFeedbackDisplay : " +
+						"Valid feedback should not have null tasks");
+			if(tasks.length == 1) {
+				displayText = tasks[0].getName() + " " 
+							  +	STATE.getEndedString(true);
+				if(displayText.length() > 50) {
+					displayText = tasks[0].getName().substring(0, 25) + "... " + STATE.getEndedString(true);
+				}
 			}
-		else {
-			switch(operationFeedback) {
-			case VALID:
-				MainJFrame.showPopup(tasks[0].getName(), STATE.getEndedString(true));
-				break;
-			default:
-				MainJFrame.showPopup(OperationFeedback.getString(getOperationFeedback()));
-				break;
-			}
+			else
+				displayText = tasks.length + " tasks " + STATE.getEndedString(false);
+			break;
+		default:
+			displayText = OperationFeedback.getString(getOperationFeedback());
+			break;
 		}
+		
+		if(mainJFrame.isVisible())
+			mainJFrame.showPopup(displayText);
+		else 
+			showTrayMsg("Jot It Down", displayText);
 	}
 	
 	/**

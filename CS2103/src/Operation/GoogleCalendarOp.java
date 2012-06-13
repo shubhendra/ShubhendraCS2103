@@ -171,11 +171,6 @@ public class GoogleCalendarOp extends Operation {
 		return isUndoAble;
 	}
 
-	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return true;
-	}
 
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
