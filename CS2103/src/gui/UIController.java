@@ -208,7 +208,7 @@ public class UIController {
 		if(operationFeedback == null)
 			return;
 		
-		switch(operationFeedback) {
+		switch(	operationFeedback) {
 		case VALID:
 			if(tasks == null) {
 				displayText = STATE.getFeedbackText();
@@ -217,7 +217,7 @@ public class UIController {
 				displayText = tasks[0].getName() + " " 
 							  +	STATE.getEndedString(true);
 				if(displayText.length() > 50) {
-					displayText = tasks[0].getName().substring(0, 25) + "... " + STATE.getEndedString(true);
+					displayText = tasks[0].getName().substring(0, 40) + "... " + STATE.getEndedString(true);
 				}
 			}
 			else
@@ -258,5 +258,9 @@ public class UIController {
 	 */
 	public static void promptEmailInput() {
 		new MailDialog(mainJFrame, true);
+	}
+	
+	public static void clearCommandLine() {
+		MainJFrame.clearCommandLine();
 	}
 }

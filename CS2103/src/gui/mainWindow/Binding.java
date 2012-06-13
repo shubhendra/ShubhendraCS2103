@@ -1,6 +1,8 @@
 package gui.mainWindow;
 
 
+import gui.Action;
+
 import java.awt.Event;
 import java.awt.event.KeyEvent;
 
@@ -83,13 +85,43 @@ public class Binding {
 	        inputMap.put(key, "overdue");
 	        actionMap.put("overdue", new Action.OverdueAction());
 	        
+
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.CTRL_MASK);
-	        inputMap.put(key, "gCalendar");
-	        actionMap.put("gCalendar", new Action.GCalendarAction());
+	        inputMap.put(key, "login");
+	        actionMap.put("login", new Action.GCalendarAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_B, Event.CTRL_MASK);
+	        inputMap.put(key, "logout");
+	        actionMap.put("logout", new Action.GCalendarOutAction());
 	        
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0);
 	        inputMap.put(key, "help");
 	        actionMap.put("help", new Action.HelpAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_S, Event.ALT_MASK);
+	        inputMap.put(key, "syncGCal");
+	        actionMap.put("syncGCal", new Action.GCalendarSyncAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.ALT_MASK);
+	        inputMap.put(key, "importGCal");
+	        actionMap.put("importGCal", new Action.GCalendarImportAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_F, Event.ALT_MASK);
+	        inputMap.put(key, "exportGCal");
+	        actionMap.put("exportGCal", new Action.GCalendarExportAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_A, Event.ALT_MASK);
+	        inputMap.put(key, "archive");
+	        actionMap.put("archive", new Action.ArchiveAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_C, Event.ALT_MASK);
+	        inputMap.put(key, "importArchive");
+	        actionMap.put("importArchive", new Action.ImportArchiveAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_X, Event.ALT_MASK);
+	        inputMap.put(key, "clearArchive");
+	        actionMap.put("clearArchive", new Action.ClearArchiveAction());
+	        
 	        
 	}
 	

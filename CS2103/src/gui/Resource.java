@@ -42,7 +42,7 @@ public class Resource {
     public final static ImageIcon smallBG = createImageIcon("Images/smallBG2.png", "");
     public final static ImageIcon alarmBG = createImageIcon("Images/reminderBG.png", "");
     public final static ImageIcon helpBG = createImageIcon("Images/help.png", "");
-    public final static ImageIcon popupBG = createImageIcon("Images/popupBG.png", "");
+    public final static ImageIcon popupBG = createImageIcon("Images/popupBG2.png", "");
     public final static ImageIcon mailBG = createImageIcon("Images/mailBG.png", "");
     
 	public final static Image trayImage = iconToImage(trayLogo); 

@@ -1,9 +1,16 @@
+/**
+ * extends Operation
+ * This class is used to manage the completed tasks in 
+ * the list by storing them in an alternate location and 
+ * allowing the user to export them back if needed  
+ * 
+ * @author Shubhendra Agrawal
+ */
+
 package operation;
 
 import java.util.ArrayList;
-
 import org.apache.log4j.Logger;
-
 import storagecontroller.StorageManager;
 import constant.OperationFeedback;
 import data.Task;
@@ -11,26 +18,35 @@ import data.Task;
 public class Archive extends Operation{
 	
 	private String commandName;
-	private static Logger logger=Logger.getLogger(Archive.class);
+	private static Logger logger = Logger.getLogger(Archive.class);
+	
 	private enum archiveStatus{
-		CLEAR_ARCHIVE, IMPORT_ARCHIVE, ARCHIVE, NON;
+		CLEAR_ARCHIVE, IMPORT_ARCHIVE, ARCHIVE, NONE;
 	}
-	private archiveStatus archiveCommand=archiveStatus.NON;
+	
+	private archiveStatus archiveCommand=archiveStatus.NONE;
 	private ArrayList<Task> archiveTasks=new ArrayList<Task>();
+	/**
+	 * 
+	 */
 	public Archive(){
 		commandName="archive";
 	}
 	
+	/**
+	 * 
+	 * @param intendedOperation
+	 */
 	public Archive(String intendedOperation) {
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
 	}
-
-	public Task[] execute(){
-		return null;
-	}
-
+	
+	
 	@Override
+	/**
+	 * 
+	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
 		ArrayList<Task> undoneTasks=new ArrayList<Task>();
@@ -74,6 +90,9 @@ public class Archive extends Operation{
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
@@ -82,12 +101,18 @@ public class Archive extends Operation{
 	
 
 	@Override
+	/**
+	 * 
+	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return "archive";
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 		logger.debug(userCommand.trim());
@@ -112,6 +137,10 @@ public class Archive extends Operation{
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	private Task[] importArchive() {
 		// TODO Auto-generated method stub
 		Task[] allArchivedTasks=StorageManager.getAllArchivedTasks();
@@ -137,6 +166,10 @@ public class Archive extends Operation{
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	private Task[] clearArchive() {
 		// TODO Auto-generated method stub
 		isUndoAble=false;
@@ -145,7 +178,11 @@ public class Archive extends Operation{
 		return null;
 		
 	}
-
+	
+	/**
+	 * 
+	 * @return
+	 */
 	private Task[] archiveTasks() {
 		// TODO Auto-generated method stub
 		
@@ -180,12 +217,56 @@ public class Archive extends Operation{
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public Task[] redo() {
 		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Task> undoneTasks=new ArrayList<Task>();
+		if (archiveCommand==archiveStatus.CLEAR_ARCHIVE){
+			return null;
+		}
+		else if (archiveCommand==archiveStatus.IMPORT_ARCHIVE){
+			for (int i=0;i<archiveTasks.size();i++){
+				if (archiveTasks.get(i).getCompleted()){
+					
+					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) && StorageManager.addTask(archiveTasks.get(i)))
+					{
+						undoneTasks.add(archiveTasks.get(i));
+					}
+					
+				}
+			}
+			if (archiveTasks.size()==0)
+				return null;
+			else
+				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
+		}
+		else if (archiveCommand==archiveStatus.ARCHIVE){
+			for (int i=0;i<archiveTasks.size();i++){
+				if (archiveTasks.get(i).getCompleted()){
+					
+					if( StorageManager.deleteTask(archiveTasks.get(i)) && StorageManager.addArchivedTask(archiveTasks.get(i)))
+					{
+						undoneTasks.add(archiveTasks.get(i));
+					}
+					
+				}
+			}
+			if (archiveTasks.size()==0)
+				return null;
+			else
+				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
+		}
+		else
+			return null;
+
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return feedback;

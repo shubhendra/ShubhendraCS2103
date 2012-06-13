@@ -50,11 +50,11 @@ public class TopPopUp extends JFrame {
         jFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         exitLabel.setText("exitLabel");
-        exitLabel.setBounds(330, 0, 21, 23);
+        exitLabel.setBounds(375, 3, 21, 23);
         jLayeredPane1.add(exitLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        textLabel.setText("textLabel");
-        textLabel.setBounds(0, 0, 320, 20);
+        textLabel.setBackground(Color.BLACK);
+        textLabel.setBounds(10, 3, 360, 20);
         jLayeredPane1.add(textLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
         bgLabel.setBounds(0, 0, 400, 30);
@@ -66,11 +66,11 @@ public class TopPopUp extends JFrame {
         jFrame.getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         
         exitLabel.setText("");
