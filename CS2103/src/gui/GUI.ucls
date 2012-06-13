@@ -1,0 +1,47 @@
+<class-diagram version="1.0.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <package id="1" language="java" name="gui.images" project="CS2103" file="/CS2103/src/gui/images" binary="false">    
+    <position height="49" width="99" x="41" y="37"/>  
+  </package>  
+  <package id="2" language="java" name="gui.mainWindow.extended" project="CS2103" 
+    file="/CS2103/src/gui/mainWindow/extended" binary="false">    
+    <position height="-1" width="-1" x="103" y="155"/>  
+  </package>  
+  <package id="3" language="java" name="gui.mainWindow" project="CS2103" file="/CS2103/src/gui/mainWindow" 
+    binary="false">    
+    <position height="49" width="118" x="180" y="37"/>  
+  </package>  
+  <package id="4" language="java" name="gui.reminder" project="CS2103" file="/CS2103/src/gui/reminder" binary="false">    
+    <position height="-1" width="-1" x="264" y="151"/>  
+  </package>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" name="gui.JotItDownTray" project="CS2103" 
+    file="/CS2103/src/gui/JotItDownTray.java" binary="false">    
+    <position height="51" width="105" x="338" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="gui.Resource" project="CS2103" 
+    file="/CS2103/src/gui/Resource.java" binary="false">    
+    <position height="-1" width="-1" x="516" y="154"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <enumeration id="7" corner="BOTTOM_RIGHT" language="java" name="gui.STATE" project="CS2103" 
+    file="/CS2103/src/gui/STATE.java" binary="false">    
+    <position height="-1" width="-1" x="513" y="62"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </enumeration>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,4 +1,11 @@
 /**
+ * extends Operation
+ * 
+ * this is the class that is used to provide the search functionality 
+ * 		to various functions like delete, toggle completed, edit, toggle important etc.
+ * After selection of a particular task it helps in performing operations on them 
+ * 		individually as well as on multiple items.
+ * 
  * @author Shubhendra Agrawal
  */
 package operation;
@@ -9,45 +16,51 @@ import operation.Search;
 import java.util.Collections;
 import storagecontroller.StorageManager;
 import org.apache.log4j.Logger;
-
 import constant.OperationFeedback;
+
 public class BaseSearch extends Operation{
 	
 	
 	protected String commandName;
-	private static Logger logger=Logger.getLogger(BaseSearch.class);
+	private static Logger logger = Logger.getLogger(BaseSearch.class);
 	/**
+	 * searches for the task based on the details entered by the user.
+	 * if the UI sends in the task ID then executes the sub class functionality 
+	 * 		on it using the execute/ execute all feature;
 	 * 
+	 * @param userCommand
+	 * @return task array of the tasks on whom the operation is performed or the 
+	 * 		search results
 	 */
 	public Task[] execute(String userCommand)
 	{
 		String params = userCommand.toLowerCase().replaceFirst(this.getOperationName()+" ","");
 		logger.debug(commandName);
 		logger.debug("inside basesearch");
-		ArrayList<Task> foundTasks=new ArrayList<Task>();
+		ArrayList<Task> foundTasks = new ArrayList<Task>();
 				
-		String[] extractedTaskIds=extractTaskIds(params);
+		String[] extractedTaskIds = extractTaskIds(params);
 		
-		if(extractedTaskIds!=null)
+		if(extractedTaskIds != null)
 		{
 			logger.debug("going to the id part");
 			logger.debug(extractedTaskIds[0]);
 			
-			//userCommand=userCommand.replace(extractedTaskIds[0],"");
-			for(int i=0;i<extractedTaskIds.length;i++)
+			
+			for(int i = 0 ; i < extractedTaskIds.length ; i++)
 			{
-				Task t=StorageManager.getTaskById(extractedTaskIds[i]);
-				//logger.debug(t.getTaskId());
+				Task t = StorageManager.getTaskById(extractedTaskIds[i]);
+				
 				Task[] result;
 				if (!commandName.contains(".all")){
-					result=execute(t);
+					result = execute(t);
 				}
 				else{
-					result=executeAll(t);
+					result = executeAll(t);
 				}
 					
 				
-				if (result!=null)
+				if (result != null)
 				{
 					Collections.addAll(foundTasks, result);
 					logger.debug("Result Added");
@@ -62,8 +75,8 @@ public class BaseSearch extends Operation{
 		else 
 		{
 			logger.debug("going for new search");
-			Search f=new Search();
-			Task findTask=parseEvent(params);
+			Search f = new Search();
+			Task findTask = parseEvent(params);
 			logger.debug("finished searching");
 			return f.search(findTask);
 			
@@ -72,34 +85,40 @@ public class BaseSearch extends Operation{
 		
 		
 	}
-
+	/**
+	 * protected function, implemented in the necessary subclasses
+	 * @param t
+	 * @return
+	 */
 	protected Task[] executeAll(Task t) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	/**
-	 * 
+	 * parses the string into a task on the basis of userInput
 	 * @param userCommand
-	 * @return
+	 * @return Task that was parsed
+	 * 			if cannot be parsed returns null
 	 */
 	private Task parseEvent(String userCommand) {
 		// TODO Auto-generated method stub
-		Parser newparser= new Parser();
+		Parser newparser = new Parser();
 		return newparser.parseForSearch(userCommand);
 		
 	}
 	/**
+	 * extracts the various task ids from the user input
 	 * 
 	 * @param params
-	 * @return
+	 * @return String array of task ids
 	 */
 	private String[] extractTaskIds(String params) {
 		// TODO Auto-generated method stub
 		
-		Parser newparser= new Parser();
+		Parser newparser = new Parser();
 		
-		String[] extractedIds= newparser.fetchTaskIds(params.toUpperCase());
+		String[] extractedIds = newparser.fetchTaskIds(params.toUpperCase());
 		
 		return extractedIds;
 		
@@ -110,7 +129,7 @@ public class BaseSearch extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * undo is irrelevant for this class
 	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
@@ -119,7 +138,7 @@ public class BaseSearch extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * none of the search operations in this class be undone
 	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
@@ -131,7 +150,7 @@ public class BaseSearch extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * @return returns the name of this operation
 	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
@@ -140,7 +159,7 @@ public class BaseSearch extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * redo is irrelevant for this class
 	 */
 	public Task[] redo() {
 		// TODO Auto-generated method stub
@@ -149,7 +168,7 @@ public class BaseSearch extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * @return returns the operation feedback
 	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub

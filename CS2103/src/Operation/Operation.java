@@ -1,4 +1,9 @@
 /**
+ *  This is an Abstract class
+ * The operation class executes the required operation as specified by the user 
+ * Most functions in this class are overwritten in its sub classes to provide the
+ * respective functionalities. 
+ * 
  * @author Shubhendra Agrawal
  */
 

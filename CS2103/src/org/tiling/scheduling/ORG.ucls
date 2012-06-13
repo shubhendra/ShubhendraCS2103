@@ -1,0 +1,49 @@
+<class-diagram version="1.0.8" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <package id="1" language="java" name="org.tiling.scheduling.iterators" project="CS2103" 
+    file="/CS2103/src/org/tiling/scheduling/iterators" binary="false">    
+    <position height="49" width="190" x="41" y="37"/>  
+  </package>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="org.tiling.scheduling.Scheduler" project="CS2103" 
+    file="/CS2103/src/org/tiling/scheduling/Scheduler.java" binary="false">    
+    <position height="51" width="90" x="271" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="3" corner="BOTTOM_RIGHT" language="java" name="org.tiling.scheduling.ScheduleIterator" project="CS2103" 
+    file="/CS2103/src/org/tiling/scheduling/ScheduleIterator.java" binary="false">    
+    <position height="51" width="119" x="92" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="org.tiling.scheduling.SchedulerTask" project="CS2103" 
+    file="/CS2103/src/org/tiling/scheduling/SchedulerTask.java" binary="false">    
+    <position height="51" width="110" x="251" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <dependency id="5">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="false" package="false" protected="false" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

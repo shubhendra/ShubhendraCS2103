@@ -4,23 +4,15 @@
  */
 package gui.mainWindow.extended;
 
-import gui.mainWindow.extended.ExpandComponent.MyTableModelListener;
-
 import java.awt.Color;
-import java.awt.Container;
 import java.awt.Dimension;
 
-import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
 
 import data.*;
 /**

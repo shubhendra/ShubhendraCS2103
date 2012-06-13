@@ -1,13 +1,16 @@
+/**
+ * extends Operation
+ *  implements the toggle important functionality for the given tasks
+ * 
+ * @author Shubhendra Agrawal
+ * 
+ */
 package operation;
 
 import java.util.ArrayList;
-
 import org.apache.log4j.Logger;
-
 import constant.OperationFeedback;
-
 import storagecontroller.StorageManager;
-
 import data.Task;
 
 
@@ -17,9 +20,20 @@ public class ToggleImportant extends BaseSearch {
 	private static Logger logger=Logger.getLogger(BaseSearch.class);
 	private ArrayList<Task> taskStarred=new ArrayList<Task>();
 	
+	/**
+	 * constructor
+	 */
 	public ToggleImportant(){
 		commandName="star";
 	}
+	
+	/**
+	 * implements the toggle important functionality for all recurring tasks
+	 * 		in one go
+	 * 
+	 * @param taskToStar
+	 * @return task array of all tasks whose important status is toggled
+	 */
 	public Task[] executeAll(Task taskToStar) {
 		// TODO Auto-generated method stub
 		if (taskToStar.getRecurringId()=="")
@@ -43,12 +57,20 @@ public class ToggleImportant extends BaseSearch {
 		else
 			return null;
 	}
+	/**
+	 * constructor
+	 * @param intendedOperation
+	 */
 	public ToggleImportant(String intendedOperation){
 		commandName=intendedOperation;
 	}
 	
-
-	
+	/**
+	 implements the toggle important functionality for one task
+	 * 
+	 * @param taskToBeStarred
+	 * @return task array of task whose important status is toggled 
+	 */	
 	public Task[] execute(Task taskToBeStarred){
 		Task taskToStar = StorageManager
 				.getTaskById(taskToBeStarred.getTaskId());
@@ -67,6 +89,11 @@ public class ToggleImportant extends BaseSearch {
 		
 	}
 
+	/**
+	 * toggles the important status
+	 * @param taskToStar
+	 * @return true if toggle was successful
+	 */
 	private boolean toggleImportant(Task taskToStar) {
 		// TODO Auto-generated method stub
 		Task starredTask=StorageManager.getTaskById(taskToStar.getTaskId());
@@ -82,6 +109,10 @@ public class ToggleImportant extends BaseSearch {
 	}
 
 	@Override
+	/**
+	 * undo reverts back the important status
+	 * @return the tasks whose important status was toggled
+	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
 		ArrayList<Task> undoneTasks=new ArrayList<Task>();
@@ -101,6 +132,10 @@ public class ToggleImportant extends BaseSearch {
 	}
 
 	@Override
+	/**
+	 * redo reverts back the important status that was undone
+	 * @return the tasks whose important status was toggled
+	 */
 	public Task[] redo() {
 		
 		// TODO Auto-generated method stub
@@ -121,12 +156,17 @@ public class ToggleImportant extends BaseSearch {
 	}
 
 	@Override
+	/**
+	 * @return whether the task is undoable
+	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
 	}
 
-
+	/**
+	 * @return the operation Feedback
+	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return feedback;
@@ -134,8 +174,10 @@ public class ToggleImportant extends BaseSearch {
                
     
 	
-	
 	@Override
+	/**
+	 * @return Operation Name
+	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return commandName;

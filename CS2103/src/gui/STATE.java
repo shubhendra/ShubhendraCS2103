@@ -1,6 +1,5 @@
 package gui;
 
-import gui.mainWindow.MainJFrame;
 
 import org.apache.log4j.Logger;
 
@@ -178,11 +177,11 @@ public enum STATE {
 		case LOGIN:
 			return "Logged in successfully.";
 		case IMPORTGCAL:
-			return "Import from google calendar successfully.";
+			return "Imported from google calendar successfully.";
 		case EXPORTGCAL:
-			return "Export to google calendar successfully.";
+			return "Exported to google calendar successfully.";
 		case SYNCGCAL:
-			return "Sync with google calendar successfully.";
+			return "Synced with google calendar successfully.";
 		case CLEARARCHIVE:
 			return "Archive was removed successfully.";
 		case CHECKFREE:

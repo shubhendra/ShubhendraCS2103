@@ -24,37 +24,39 @@ public class Archive extends Operation{
 		CLEAR_ARCHIVE, IMPORT_ARCHIVE, ARCHIVE, NONE;
 	}
 	
-	private archiveStatus archiveCommand=archiveStatus.NONE;
-	private ArrayList<Task> archiveTasks=new ArrayList<Task>();
+	private archiveStatus archiveCommand = archiveStatus.NONE;
+	private ArrayList<Task> archiveTasks = new ArrayList<Task>();
 	/**
-	 * 
+	 * Constructor
 	 */
 	public Archive(){
-		commandName="archive";
+		commandName = "archive";
 	}
 	
 	/**
-	 * 
+	 * Constructor with the given input initialized as the
+	 * 			commandName
 	 * @param intendedOperation
 	 */
 	public Archive(String intendedOperation) {
 		// TODO Auto-generated constructor stub
-		commandName=intendedOperation;
+		commandName = intendedOperation;
 	}
 	
 	
 	@Override
 	/**
-	 * 
+	 * Implements the undo functionality if needed
+	 * @return Task[] of tasks that were undone
 	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
-		ArrayList<Task> undoneTasks=new ArrayList<Task>();
-		if (archiveCommand==archiveStatus.CLEAR_ARCHIVE){
+		ArrayList<Task> undoneTasks = new ArrayList<Task>();
+		if (archiveCommand == archiveStatus.CLEAR_ARCHIVE){
 			return null;
 		}
-		else if (archiveCommand==archiveStatus.IMPORT_ARCHIVE){
-			for (int i=0;i<archiveTasks.size();i++){
+		else if (archiveCommand == archiveStatus.IMPORT_ARCHIVE){
+			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
 					if( StorageManager.deleteTask(archiveTasks.get(i)) && StorageManager.addArchivedTask(archiveTasks.get(i)))
@@ -64,13 +66,13 @@ public class Archive extends Operation{
 					
 				}
 			}
-			if (archiveTasks.size()==0)
+			if (archiveTasks.size() == 0)
 				return null;
 			else
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 		}
-		else if (archiveCommand==archiveStatus.ARCHIVE){
-			for (int i=0;i<archiveTasks.size();i++){
+		else if (archiveCommand == archiveStatus.ARCHIVE){
+			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
 					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) && StorageManager.addTask(archiveTasks.get(i)))
@@ -80,7 +82,7 @@ public class Archive extends Operation{
 					
 				}
 			}
-			if (archiveTasks.size()==0)
+			if (archiveTasks.size() == 0)
 				return null;
 			else
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
@@ -92,6 +94,7 @@ public class Archive extends Operation{
 	@Override
 	/**
 	 * 
+	 * @returns isUndoAble
 	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
@@ -102,62 +105,68 @@ public class Archive extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * @return commandName
 	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
-		return "archive";
+		return commandName;
 	}
 
 	@Override
 	/**
-	 * 
+	 * this calls the various different archive functions which need to be
+	 * 			executed based on the user input
+	 * @param userCommand
+	 * @return returns an array of TAsk[] depending upon what tasks were affected
+	 * 			if no matching functions are found returns null;
 	 */
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 		logger.debug(userCommand.trim());
 		if (userCommand.toLowerCase().startsWith("archive")){
-			archiveCommand=archiveStatus.ARCHIVE;
+			archiveCommand = archiveStatus.ARCHIVE;
 			logger.debug("running archvie");
 			return archiveTasks();
 		}
 		else if(userCommand.toLowerCase().trim().contains("clear.archive")){
 			logger.debug("running clear archvie");
-			archiveCommand=archiveStatus.CLEAR_ARCHIVE;
+			archiveCommand = archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
 		else if(userCommand.toLowerCase().trim().contains("import.archive")){
-			archiveCommand=archiveStatus.IMPORT_ARCHIVE;
+			archiveCommand = archiveStatus.IMPORT_ARCHIVE;
 			logger.debug("importing archive");
 			return importArchive();
 		}
 		else {
-			feedback=OperationFeedback.NO_MATCHING_ARCHIVE_FUNCTION;
+			feedback = OperationFeedback.NO_MATCHING_ARCHIVE_FUNCTION;
 			return null;
 		}
 	}
 
 	/**
-	 * 
-	 * @return
+	 * imports the tasks if any from the archives to the
+	 * 			live storage
+	 * @return Task array of tasks imported
 	 */
 	private Task[] importArchive() {
 		// TODO Auto-generated method stub
-		Task[] allArchivedTasks=StorageManager.getAllArchivedTasks();
+		Task[] allArchivedTasks = StorageManager.getAllArchivedTasks();
 		logger.debug(archiveTasks.size());
-		for (int i=0;i<allArchivedTasks.length;i++){
+		for (int i = 0 ; i < allArchivedTasks.length ; i++){
 			if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) && StorageManager.addTask(allArchivedTasks[i]))
 			{
-				isUndoAble=true;
+				isUndoAble = true;
 				archiveTasks.add(allArchivedTasks[i]);
 			}
 			else{
-				feedback=OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_FROM_ARCHIVES;
+				feedback = OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_FROM_ARCHIVES;
+				isUndoAble = false;
 				return null;
 			}
 		}
-		if (archiveTasks.size()==0){
-			feedback=OperationFeedback.NO_TASK_IN_ARCHIVE;
+		if (archiveTasks.size() == 0){
+			feedback = OperationFeedback.NO_TASK_IN_ARCHIVE;
 			return null;
 		}
 		else{
@@ -167,48 +176,47 @@ public class Archive extends Operation{
 	}
 
 	/**
+	 * clears all the archives
 	 * 
-	 * @return
+	 * @return null 
 	 */
 	private Task[] clearArchive() {
 		// TODO Auto-generated method stub
-		isUndoAble=false;
+		isUndoAble = false;
 		StorageManager.clearArchive();
-		feedback=OperationFeedback.VALID;
+		feedback = OperationFeedback.VALID;
 		return null;
 		
 	}
 	
 	/**
+	 * archives the completed task and removes them from liveStorage
 	 * 
-	 * @return
+	 * @return array of tasks archived
 	 */
 	private Task[] archiveTasks() {
 		// TODO Auto-generated method stub
 		
-		Task[] allTasks=StorageManager.getAllTasks();
+		Task[] allTasks = StorageManager.getAllTasks();
 		logger.debug("inside archvietasks()");
-		for (int i=0;i<allTasks.length;i++){
+		for (int i = 0 ; i < allTasks.length ; i++){
 			if (allTasks[i].getCompleted()){
-				
-							
-				
+								
 				if(StorageManager.deleteTask(allTasks[i]) && StorageManager.addArchivedTask(allTasks[i]))
 				{
-					
-					
-					isUndoAble=true;
+					isUndoAble = true;
 					archiveTasks.add(allTasks[i]);
 				}
 				else{
-					feedback=OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_TO_ARCHIVES;
+					feedback = OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_TO_ARCHIVES;
+					isUndoAble = false;
 					return null;
 				}
 				
 			}
 		}
-		if (archiveTasks.size()==0){
-			feedback=OperationFeedback.NO_TASK_TO_ARCHIVE;
+		if (archiveTasks.size() == 0){
+			feedback = OperationFeedback.NO_TASK_TO_ARCHIVE;
 			return null;
 			
 		}
@@ -218,16 +226,17 @@ public class Archive extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * implements the redo functionality
+	 * @return returns the array of tasks redone
 	 */
 	public Task[] redo() {
 		// TODO Auto-generated method stub
-		ArrayList<Task> undoneTasks=new ArrayList<Task>();
-		if (archiveCommand==archiveStatus.CLEAR_ARCHIVE){
+		ArrayList<Task> undoneTasks = new ArrayList<Task>();
+		if (archiveCommand == archiveStatus.CLEAR_ARCHIVE){
 			return null;
 		}
-		else if (archiveCommand==archiveStatus.IMPORT_ARCHIVE){
-			for (int i=0;i<archiveTasks.size();i++){
+		else if (archiveCommand == archiveStatus.IMPORT_ARCHIVE){
+			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
 					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) && StorageManager.addTask(archiveTasks.get(i)))
@@ -237,13 +246,13 @@ public class Archive extends Operation{
 					
 				}
 			}
-			if (archiveTasks.size()==0)
+			if (archiveTasks.size() == 0)
 				return null;
 			else
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 		}
-		else if (archiveCommand==archiveStatus.ARCHIVE){
-			for (int i=0;i<archiveTasks.size();i++){
+		else if (archiveCommand == archiveStatus.ARCHIVE){
+			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
 					if( StorageManager.deleteTask(archiveTasks.get(i)) && StorageManager.addArchivedTask(archiveTasks.get(i)))
@@ -253,7 +262,7 @@ public class Archive extends Operation{
 					
 				}
 			}
-			if (archiveTasks.size()==0)
+			if (archiveTasks.size() == 0)
 				return null;
 			else
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
@@ -265,7 +274,7 @@ public class Archive extends Operation{
 
 	@Override
 	/**
-	 * 
+	 * @return returns the Operation feedback;
 	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub

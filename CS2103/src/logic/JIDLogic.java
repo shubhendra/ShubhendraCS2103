@@ -1,39 +1,36 @@
+/**
+ * forms the interface between the UI and the back end
+ * No command can be processed without processing through this class.
+ * Also initializes the storage
+ * @author Shubhendra Agrawal 
+ */
 package logic;
-
-//import java.io.FileNotFoundException;
 
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-
 import java.util.Stack;
-
 import javax.swing.Timer;
-
 import operation.*;
-//import org.apache.log4j.Logger;
 import data.Task;
-//import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-
 import constant.OperationFeedback;
 import gui.UIController;
-
-
 import storagecontroller.StorageManager;
 
 public class JIDLogic {
 	
-		private static Logger logger=Logger.getLogger(JIDLogic.class);
-		//private static String command;
-		
+	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	private static Stack<Operation> undoStack= new Stack<Operation>();
 	private static Stack<Operation> redoStack= new Stack<Operation>();
-	
 	private static String command;
-	//private Logger logger = Logger.getLogger(JIDLogic.class.getName());
-	
+
+	/**
+	 * decides which type of command to be called
+	 * manages the undo and redo functionalities and their respective stacks
+	 * @param commandFromUser
+	 * @return array of tasks depending upon the output of the userCommand
+	 */
 	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
 		
@@ -73,34 +70,21 @@ public class JIDLogic {
 				undoStack.push(op);
 				logger.debug("isundoable");
 			}
-			//UIController.sendOperationFeedback(op.getOpFeedback());
-			//UIController.showTopPopUpMsg(op.getErrorMessage());
 			return result;
 			
 			
 		}
 		
-		}
-		
+	}
+	
+	/**
+	 * initializes the storage, autosave and automatic email reminder features
+	 */
 	public static void JIDLogic_init()
 	{
 		
 		StorageManager.loadFile();
-		StorageManager.loadArchive();/*
-		String email="";
-		if (StorageManager.loadEmailId()==""){
-			BufferedReader reader;
-			reader = new BufferedReader(new InputStreamReader(System.in));
-			try {
-				email=reader.readLine();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-				
-		}
-		else 
-			email= StorageManager.loadEmailId();*/
+		StorageManager.loadArchive();
 		startAutoSave();
 		
 		
@@ -114,6 +98,9 @@ public class JIDLogic {
 		
 	}
 	
+	/**
+	 * saves all the files to hard disk on closing of the program
+	 */
 	public static void JIDLogic_close()
 	{
 		
@@ -122,13 +109,6 @@ public class JIDLogic {
 		
 		
 	}
-
-	/**
-	 * Sets the view to the specified value
-	 * 
-	 * @param view
-	 */
-	
 	/**
 	 * Sets the command to the command specified
 	 * 
@@ -138,8 +118,6 @@ public class JIDLogic {
 		command = _command;
 	}
 
-
-
 	/**
 	 * 
 	 * @return command entered
@@ -148,8 +126,11 @@ public class JIDLogic {
 		return command;
 	}
 	
+	/**
+	 * runs a timer to automatically save the files every 10 minutes
+	 */
 	public static void startAutoSave() {
-		Timer timer = new Timer(30*60*1000, new ActionListener(){
+		Timer timer = new Timer(10*60*1000, new ActionListener(){
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {

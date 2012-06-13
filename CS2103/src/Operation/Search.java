@@ -1,5 +1,9 @@
 /**
+ * extends Operation
+ * Implements the search functionality by taking in the user input parsing it into a task 
+ * 		and then comparing the same attributes.
  * 
+ * @author Shubhendra Agrawal
  */
 package operation;
 
@@ -14,38 +18,54 @@ import parser.Parser;
 import java.util.Comparator;
 import storagecontroller.StorageManager;
 import java.util.Arrays;
-
 import data.Task;
 
 public class Search extends Operation {
 	
 	private Logger logger=Logger.getLogger(Search.class);
+	private TaskDateTime defaultTime=new TaskDateTime();
 	
 	private String commandName;
+	
+	/**
+	 * constructor
+	 * @param intendedOperation
+	 */
 	public Search(String intendedOperation) {
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
 	}
 	
+	/**
+	 * constructor
+	 */
 	public Search(){
 		commandName="search";
 	}
 
 
 	@Override
+	/**
+	 * undo is irrelevant for search
+	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
+	/**
+	 * @return whether undoable or not
+	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
 	}
 
 
-
+	/**
+	 * @return operation feedback
+	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return feedback;
@@ -55,7 +75,9 @@ public class Search extends Operation {
 	
 
 	@Override
-	
+	/**
+	 * @return Operation name
+	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return commandName;
@@ -63,6 +85,12 @@ public class Search extends Operation {
 	
 	@Override
 	
+	/**
+	 * calls the required find function depending on user input
+	 * 
+	 * @param userCommand
+	 * @return Task array of matching tasks
+	 */
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 
@@ -89,22 +117,26 @@ public class Search extends Operation {
 		
 	}
 
+	/**
+	 * parses the given input into a task
+	 * @param params
+	 * @return task
+	 */
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
 		return newParser.parseForSearch(params);
 	}
 
+	/**
+	 * 
+	 * @return all the tasks in the storage manager sorted according to date/time
+	 */
 	public Task[] returnAllTasks() {
 		// TODO Auto-generated method stub
 		Task[] unsorted=StorageManager.getAllTasks();
 		Comparator<Task> compareByDate = new CompareByDate();
 		logger.debug("before sorting");
-		
-		for (int i=0;i<unsorted.length;i++)
-		{
-			//logger.debug(unsorted[i].toString());
-		}
 		
 		Arrays.sort(unsorted, compareByDate);
 		logger.debug("after sorting");
@@ -113,6 +145,10 @@ public class Search extends Operation {
 		//return null;
 	}
 	
+	/**
+	 * 
+	 * @return tasks required to be sent in the email reminder
+	 */
 	public Task[] searchTodaysTasks(){
 		Task [] allTasks=returnAllTasks();
 		ArrayList<Task> todaysTasks=new ArrayList<Task>();;
@@ -137,6 +173,11 @@ public class Search extends Operation {
 		return null;
 	}
 	
+	/**
+	 * 
+	 * @param taskToSearch
+	 * @return tasks that matched with the task To Search
+	 */
 	public Task[] search(Task taskToSearch) {
 		// TODO Auto-generated method stub
 		if (taskToSearch.getTaskId() != null) {
@@ -149,7 +190,12 @@ public class Search extends Operation {
 		
 	}
 
-
+	/**
+	 * 
+	 * @param findTask
+	 * @param allTasks
+	 * @return returns the matched tasks from a given array of tasks
+	 */
 	private Task[] search(Task findTask, Task[] allTasks) {
 		// TODO Auto-generated method stub
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
@@ -188,6 +234,12 @@ public class Search extends Operation {
 		return null;
 	}
 
+	/**
+	 * matches name
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if matches
+	 */
 	private boolean doesNameMatch(Task taskToSearch, Task existingTask){
 		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
 				.contains((taskToSearch.getName().trim()))))
@@ -201,7 +253,13 @@ public class Search extends Operation {
 		}
 		
 	}
-	private TaskDateTime defaultTime=new TaskDateTime();
+	
+	/**
+	 * matches Start date
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if matches
+	 */
 	private boolean doesStartDateMatch(Task taskToSearch, Task existingTask){
 		
 		if (taskToSearch.getStart() == null
@@ -216,6 +274,14 @@ public class Search extends Operation {
 		return false;
 		
 	}
+	
+
+	/**
+	 * matches Start time
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if matches
+	 */
 	private boolean doesStartTimeMatch(Task taskToSearch, Task existingTask){
 	//	logger.debug("Default date:"+defaultTime.getDate().getTimeMilli());
 	//	logger.debug("Default Time:"+defaultTime.getTime().getTimeMilli());
@@ -229,6 +295,14 @@ public class Search extends Operation {
 				}
 		return false;
 	}
+	
+
+	/**
+	 * matches End date
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if matches
+	 */
 	private boolean doesEndDateMatch(Task taskToSearch, Task existingTask){
 		if (taskToSearch.getEnd() == null 
 				|| taskToSearch.getEnd().getDate().getTimeMilli()
@@ -241,6 +315,13 @@ public class Search extends Operation {
 		return false;
 	}
 	
+
+	/**
+	 * matches End Time
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if matches
+	 */
 	private boolean doesEndTimeMatch(Task taskToSearch, Task existingTask){
 		if(taskToSearch.getEnd() == null 
 				|| taskToSearch.getEnd().getTime().getTimeMilli()
@@ -253,6 +334,13 @@ public class Search extends Operation {
 		return false;
 	}
 	
+
+	/**
+	 * matches if important status matches
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if matches
+	 */
 	private boolean doesImportantMatch(Task taskToSearch, Task existingTask){
 		if  (taskToSearch.getImportant() == false || taskToSearch.getImportant() == 
 				existingTask.getImportant())
@@ -261,11 +349,12 @@ public class Search extends Operation {
 		}
 		return false;
 	}
+	
 	/**
-	 * 
+	 * matches if any labels are same 
 	 * @param taskToSearch
 	 * @param existingTask
-	 * @return
+	 * @return true if matches
 	 */
 	private boolean doesLabelMatch(Task taskToSearch, Task existingTask){
 		
@@ -309,11 +398,12 @@ public class Search extends Operation {
 		}
 		return false;
 	}
+	
 	/**
-	 * 
+	 * returns true if any of the attributes of taskToSearch match the given exisTask 
 	 * @param taskToSearch
 	 * @param existingTask
-	 * @return
+	 * @return true if matches
 	 */
 	private boolean matches(Task taskToSearch, Task existingTask) {
 		// TODO Auto-generated method stub
@@ -334,107 +424,16 @@ public class Search extends Operation {
 		else if(isTaskBetween(taskToSearch,existingTask)){
 			return true;
 		}
-		
-		
-		
-		/*if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
-				.contains((taskToSearch.getName().trim()))))
-		{
-			logger.debug("First condition matches");
-			if (taskToSearch.getStart() == null
-					|| taskToSearch.getStart().getDate().getTimeMilli()
-					== defaultTime.getDate().getTimeMilli() || (existingTask.getStart()!=null 
-					&& (existingTask.getStart().getDate().getTimeMilli()
-					== taskToSearch.getStart().getDate().getTimeMilli())
-					))
-					{
-						logger.debug("second condition matches");
-						return true;
-					}
-		}
-		
-				
-				/*		
-				&& (taskToSearch.getStart() == null
-						|| taskToSearch.getStart().getDate().getTimeMilli()
-						== defaultTime.getDate().getTimeMilli() || (existingTask.getStart()!=null 
-						&& (existingTask.getStart().getDate().getTimeMilli()
-						== taskToSearch.getStart().getDate().getTimeMilli())
-						)))
-		{return true;}
-				&& (taskToSearch.getStart() == null
-						|| taskToSearch.getStart().getTime().getTimeMilli()
-						== defaultTime.getTime().getTimeMilli() || (existingTask.getStart()!=null 
-						&&  (existingTask.getStart().getTime().getTimeMilli()
-						== taskToSearch.getStart().getTime().getTimeMilli())) 
-						)
-				&& (taskToSearch.getEnd() == null 
-						|| taskToSearch.getEnd().getDate().getTimeMilli()
-						== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd()!=null 
-						&& (existingTask.getEnd().getDate().getTimeMilli()
-						== taskToSearch.getEnd().getDate().getTimeMilli()))
-						)
-			    && (taskToSearch.getEnd() == null
-						|| taskToSearch.getEnd().getTime().getTimeMilli()
-						== defaultTime.getTime().getTimeMilli() || (existingTask.getEnd()!=null 
-						&& existingTask.getEnd().getTime().getTimeMilli()
-						== taskToSearch.getStart().getTime().getTimeMilli())
-						)
-				&& (taskToSearch.getDescription() == null || existingTask.getDescription()
-						.toLowerCase().contains(taskToSearch.getDescription()))
-				&& (taskToSearch.getImportant() == false || taskToSearch.getImportant() == 
-						existingTask.getImportant())
-				&& (taskToSearch.getRecurring() == null || (existingTask.getRecurring()!=null 
-						&& existingTask.getRecurring().toLowerCase()
-						.contains(taskToSearch.getRecurring().toLowerCase()))))
-		*/
-		//{
-			//logger.debug("all ok till here");
-			//return true;
-			 
-			/* 
-			if (taskToSearch.getLabels()==null)
-			{
-				logger.debug("task to search has no labels");
-				logger.debug("it matches");
-				return true;
-			}
-			else if (existingTask.getLabels() != null) {
-				logger.debug("matching labels");
-				
-				boolean flag = false;
-				for (String searchlabel : taskToSearch.getLabels()) {
-					//if (searchlabel!=null)
-					{
-					searchlabel = searchlabel.toLowerCase();
-					flag = false;
-					for (String existingLabel : existingTask.getLabels()) {
-						//if(existingLabel!=null)
-						{
-							if (existingLabel.toLowerCase().contains(searchlabel)) {
-								flag = true;
-								break;
-							}
-						}
-					}
-				
-					if (flag) {
-						break;
-					}
-				}
-				if (flag) {
-					logger.debug("it matches");
-					return true
-							;
-				}
-				
-			}}*/
-		
-		
-				
-			
 		return false;
 	}
+	
+	/**
+	 * returns true if the task falls in between a given date time range,
+	 *  the end points are inclusive
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if it is between
+	 */
 	public boolean isTaskBetween(Task taskToSearch,Task existingTask){
 		logger.debug("inside isTaskbetween");
 		if (taskToSearch.getStart()!=null && taskToSearch.getEnd()!=null){
@@ -541,6 +540,9 @@ public class Search extends Operation {
 	
 	}
 	@Override
+	/**
+	 * redo is irrelevant
+	 */
 	public Task[] redo() {
 		// TODO Auto-generated method stub
 		return null;

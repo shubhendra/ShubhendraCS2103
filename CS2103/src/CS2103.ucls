@@ -1,0 +1,40 @@
+<class-diagram version="1.0.8" icons="true" always-add-relationships="false" generalizations="false" 
+  realizations="false" associations="false" dependencies="false" nesting-relationships="false">  
+  <package id="1" language="java" name="constant" project="CS2103" file="/CS2103/src/constant" binary="false">    
+    <position height="49" width="99" x="1177" y="37"/>  
+  </package>  
+  <package id="2" language="java" name="data" project="CS2103" file="/CS2103/src/data" binary="false">    
+    <position height="49" width="99" x="760" y="37"/>  
+  </package>  
+  <package id="3" language="java" name="gcal" project="CS2103" file="/CS2103/src/gcal" binary="false">    
+    <position height="49" width="99" x="343" y="37"/>  
+  </package>  
+  <package id="4" language="java" name="gui" project="CS2103" file="/CS2103/src/gui" binary="false">    
+    <position height="49" width="99" x="41" y="37"/>  
+  </package>  
+  <package id="5" language="java" name="logic" project="CS2103" file="/CS2103/src/logic" binary="false">    
+    <position height="49" width="99" x="1316" y="37"/>  
+  </package>  
+  <package id="6" language="java" name="operation" project="CS2103" file="/CS2103/src/operation" binary="false">    
+    <position height="49" width="99" x="1038" y="37"/>  
+  </package>  
+  <package id="7" language="java" name="org" project="CS2103" file="/CS2103/src/org" binary="false">    
+    <position height="49" width="99" x="482" y="37"/>  
+  </package>  
+  <package id="8" language="java" name="parser" project="CS2103" file="/CS2103/src/parser" binary="false">    
+    <position height="49" width="99" x="899" y="37"/>  
+  </package>  
+  <package id="9" language="java" name="sendMail" project="CS2103" file="/CS2103/src/sendMail" binary="false">    
+    <position height="49" width="99" x="621" y="37"/>  
+  </package>  
+  <package id="10" language="java" name="storagecontroller" project="CS2103" file="/CS2103/src/storagecontroller" 
+    binary="false">    
+    <position height="49" width="123" x="180" y="37"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="false" package="false" protected="false" private="false"/>  
+  </classifier-display>  
+  <association-display labels="false" multiplicity="false"/>
+</class-diagram>

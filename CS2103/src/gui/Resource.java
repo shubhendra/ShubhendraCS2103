@@ -45,6 +45,10 @@ public class Resource {
     public final static ImageIcon popupBG = createImageIcon("Images/popupBG2.png", "");
     public final static ImageIcon mailBG = createImageIcon("Images/mailBG.png", "");
     
+    public final static ImageIcon aboutBG1 = createImageIcon("Images/aboutus1.png","");
+    public final static ImageIcon aboutBG2 = createImageIcon("Images/aboutus2.png","");
+    public final static ImageIcon aboutBG3 = createImageIcon("Images/aboutus3.png","");
+    
 	public final static Image trayImage = iconToImage(trayLogo); 
 	public final static Image backgroundImage = iconToImage(backgroundLogo);
 	public final static Image loginBGImage = iconToImage(loginBG);

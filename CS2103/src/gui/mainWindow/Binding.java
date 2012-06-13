@@ -11,9 +11,6 @@ import javax.swing.InputMap;
 import javax.swing.JFrame;
 import javax.swing.KeyStroke;
 
-import logic.JIDLogic;
-
-import org.apache.log4j.*;
 
 /**
  * for making hotkey
@@ -22,7 +19,6 @@ import org.apache.log4j.*;
  */
 public class Binding {
 	
-	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	
 	InputMap inputMap;
 	ActionMap actionMap;

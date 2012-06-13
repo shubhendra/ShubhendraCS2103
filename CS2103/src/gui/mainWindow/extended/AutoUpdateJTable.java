@@ -3,22 +3,15 @@ package gui.mainWindow.extended;
 import gui.Resource;
 
 import java.awt.Component;
-import java.awt.Container;
-import java.awt.FocusTraversalPolicy;
 import java.awt.Point;
 import java.util.Vector;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-
-import javax.swing.Icon;
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.Timer;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
@@ -102,19 +95,23 @@ public class AutoUpdateJTable {
     	
     	if(task.getCompleted()) {
     		str+=completedFont;
-    		System.out.println("completed task");
     	}
+    	
     	else if(task.getImportant()) {
     		str += "<font color=\"red\">";
     	}
+    	
     	str += makeFirstLetterCapital(task.getName());
     	str += "<br/></b>";
     	str += tagToCode(task);
+    	
     	if(task.getCompleted())
     		str+=completedFont;
+    	
     	if(task.getStart()!= null) {
     		str+="<br/><i>start: </i>"+task.getStart().presentableToString();
     	}
+    	
     	if(task.getEnd()!=null) {
     		str+="<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
     				"end: </i>"+task.getEnd().presentableToString();
