@@ -21,7 +21,58 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__03-07-2012170000L__$$</string>
+   <string>$$__03-07-2012170000R__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="GCalId">
+   <string>1cn02plvm2rutd9e6jiuf80u84</string>
+  </void>
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>go to school</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339750800000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__15-06-2012170000O__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="GCalId">
+   <string>b7rpn1vd7k1nf3rbach2n3as0s</string>
+  </void>
+  <void property="name">
+   <string>go to school</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339657200000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012150000Q__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -51,7 +102,44 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__05-07-2012235959E__$$</string>
+   <string>$$__05-07-2012235959G__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="end">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339833600000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>go to party</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339830000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__16-06-2012160000W__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -75,15 +163,15 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__15-06-2012235959W__$$</string>
+   <string>$$__15-06-2012235959S__$$</string>
   </void>
  </object>
  <object class="data.Task">
-  <void property="GCalId">
-   <string>b7rpn1vd7k1nf3rbach2n3as0s</string>
-  </void>
   <void property="name">
-   <string>go to school</string>
+   <string>go to home</string>
+  </void>
+  <void property="recurring">
+   <null/>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
@@ -94,39 +182,12 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1339657200000</long>
+     <long>1339833600000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012150000I__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="GCalId">
-   <string>1cn02plvm2rutd9e6jiuf80u84</string>
-  </void>
-  <void property="completed">
-   <boolean>true</boolean>
-  </void>
-  <void property="name">
-   <string>go to school</string>
-  </void>
-  <void property="start">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339750800000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__15-06-2012170000L__$$</string>
+   <string>$$__16-06-2012160000M__$$</string>
   </void>
  </object>
 </java>

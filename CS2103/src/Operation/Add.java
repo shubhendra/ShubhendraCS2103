@@ -11,11 +11,7 @@ package operation;
 
 //import org.apache.log4j.Level;
 import java.util.ArrayList;
-
-import org.apache.log4j.Logger;
-
 import constant.OperationFeedback;
-
 import parser.Parser;
 import storagecontroller.StorageManager;
 import data.Task;
@@ -24,7 +20,7 @@ import data.Task;
 
 public class Add extends Operation {
 	
-	private static Logger logger = Logger.getLogger(Add.class);
+
     	private ArrayList<Task> addedTask = new ArrayList<Task>();
 	private String commandName;
 
@@ -86,9 +82,9 @@ public class Add extends Operation {
 				return null;
 		}
 		else{
-			logger.debug("Task Not added");
 			if (feedback == OperationFeedback.VALID){
 				feedback = OperationFeedback.ADD_FAILED;
+				
 			}
 			return null;
 		}

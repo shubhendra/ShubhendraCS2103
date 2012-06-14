@@ -12,14 +12,13 @@ import java.util.Comparator;
 import data.TaskDateTime;
 import data.Task;
 import data.CompareByDate;
-import org.apache.log4j.Logger;
 import constant.OperationFeedback;
 import storagecontroller.StorageManager;
 
 public class Overdue extends Operation {
 	
 	private String commandName;
-	private static Logger logger=Logger.getLogger(Overdue.class);
+	
 	
 	/**
 	 * constructor
@@ -87,11 +86,10 @@ public class Overdue extends Operation {
 		TaskDateTime currDateTime =	TaskDateTime.getCurrentDateTime();
 		Comparator<Task> compareByDate = new CompareByDate();
 		TaskDateTime defaultDateTime = new TaskDateTime();
-		logger.debug(currDateTime.formattedToString());
 		Task[] allTasks=StorageManager.getAllTasks();
 		ArrayList<Task> overdueTasks = new ArrayList<Task>();
-		for (Task curTask : allTasks)
-		{
+		
+		for (Task curTask : allTasks) {
 			if (curTask.getStart() != null
 					&& curTask.getStart().getTimeMilli()
 					!= defaultDateTime.getTimeMilli()) {

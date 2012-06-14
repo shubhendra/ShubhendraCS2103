@@ -7,14 +7,13 @@
 package operation;
 
 import java.util.ArrayList;
-import org.apache.log4j.Logger;
 import constant.OperationFeedback;
 import storagecontroller.StorageManager;
 import data.Task;
 
 public class ToggleCompleted extends BaseSearch{
 	
-	private static Logger logger = Logger.getLogger(BaseSearch.class);
+
 	private ArrayList<Task> taskCompleted = new ArrayList<Task>();
 	
 	/**
@@ -47,7 +46,7 @@ public class ToggleCompleted extends BaseSearch{
 		}
 		Task[] taskToBeCompleted = StorageManager
 				.getTaskByRecurrenceID(taskToComplete.getRecurringId());
-		logger.debug(taskToBeCompleted.length);
+		
 		for (int i=0;i<taskToBeCompleted.length;i++)
 		{
 			boolean completed = toggleComplete(taskToBeCompleted[i]);
@@ -55,7 +54,7 @@ public class ToggleCompleted extends BaseSearch{
 				isUndoAble = true;
 				taskCompleted.add(taskToBeCompleted[i]);
 			
-				logger.debug("completed succesfully");
+				
 				//return resultOfComplete;
 			} else{
 				feedback=OperationFeedback.COMPLETE_FAILED;
@@ -85,7 +84,6 @@ public class ToggleCompleted extends BaseSearch{
 			taskCompleted.add(taskToComplete);
 			Task[] resultOfComplete = new Task[1];
 			resultOfComplete[0] = taskToComplete;
-			logger.debug("completed succesfully");
 			return resultOfComplete;
 		}
 		feedback = OperationFeedback.COMPLETE_FAILED;
@@ -121,7 +119,7 @@ public class ToggleCompleted extends BaseSearch{
 			Task completeTask=StorageManager.getTaskById(taskCompleted.get(i).getTaskId());
 			if (completeTask != null){
 				completeTask.toggleCompleted();
-				logger.debug("Can undo");
+				
 				undoneTasks.add(completeTask);
 			}
 			
@@ -171,7 +169,6 @@ public class ToggleCompleted extends BaseSearch{
 			Task completeTask=StorageManager.getTaskById(taskCompleted.get(i).getTaskId());
 			if (completeTask != null){
 				completeTask.toggleCompleted();
-				logger.debug("Can undo");
 				redoneTasks.add(completeTask);
 			}
 			

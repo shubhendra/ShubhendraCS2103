@@ -8,8 +8,6 @@
 package operation;
 
 
-import org.apache.log4j.Logger;
-
 import parser.Parser;
 import sendMail.Agenda;
 import storagecontroller.StorageManager;
@@ -17,7 +15,7 @@ import constant.OperationFeedback;
 import data.Task;
 
 public class AgendaEmail extends Operation{
-	private static Logger logger = Logger.getLogger(AgendaEmail.class);
+
 	private static String commandName;
 
 	@Override
@@ -33,7 +31,7 @@ public class AgendaEmail extends Operation{
 		
 		userCommand = userCommand.toLowerCase().replace("agendaemail ", "");
 		if (userCommand.trim().equals("")){
-			logger.debug("true");
+			
 			feedback = OperationFeedback.NO_EMAIL_SPECIFIED;
 			return null;	
 		} else if (isValidEmail(userCommand)){

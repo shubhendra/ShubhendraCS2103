@@ -6,7 +6,7 @@
  */
 package operation;
 
-import org.apache.log4j.Logger;
+
 import constant.OperationFeedback;
 import data.Task;
 import storagecontroller.StorageManager;
@@ -14,7 +14,7 @@ import gcal.GoogleCalendar;
 
 public class GoogleCalendarOp extends Operation {
 
-	private static Logger logger = Logger.getLogger(GoogleCalendarOp.class);
+	
 	
 	@Override
 	/**
@@ -25,7 +25,7 @@ public class GoogleCalendarOp extends Operation {
 	 */
 	public Task[] execute(String userCommand) {
 		isUndoAble = false;
-		logger.debug(userCommand);
+
 		// TODO Auto-generated method stub
 		if(userCommand.toLowerCase().startsWith("logout")) {
 			if (StorageManager.getGCalObject() == null) {
@@ -67,7 +67,6 @@ public class GoogleCalendarOp extends Operation {
 			if (obj.isLoggedIn()) {
 			
 				if (StorageManager.getGCalObject().exportToGcal()) {
-					logger.debug("logged and exported successfully");
 					return null;
 				} else {
 					feedback = OperationFeedback.INVALID_NOINTERNET;
@@ -95,7 +94,6 @@ public class GoogleCalendarOp extends Operation {
 		if (obj != null){
 			if (obj.isLoggedIn()){
 				if (StorageManager.getGCalObject().importFromGcal()){
-					logger.debug("logged and imported successfully");
 					return null;
 				} else{
 					feedback = OperationFeedback.INVALID_NOINTERNET;
@@ -153,7 +151,7 @@ public class GoogleCalendarOp extends Operation {
 			}
 		}
 		userCommand.trim().replaceAll("login","");
-		logger.debug(userCommand); 
+	
 		String params[] = userCommand.split("\\s+");
 		if (params.length != 3)
 		{
@@ -162,14 +160,12 @@ public class GoogleCalendarOp extends Operation {
 		}
 		String username = params[1]; 
 		String password = params[2];
-		logger.debug(username);
-		logger.debug(password);
+		
 		GoogleCalendar obj = new GoogleCalendar();
 		obj.login(username, password);
 		if (obj.isLoggedIn()){
 			StorageManager.setGCalObject(obj);
-			
-			logger.debug("Logged in");
+		
 			return null;
 			
 		} else{

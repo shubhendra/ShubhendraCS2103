@@ -10,7 +10,7 @@
 package operation;
 
 import java.util.ArrayList;
-import org.apache.log4j.Logger;
+
 import storagecontroller.StorageManager;
 import constant.OperationFeedback;
 import data.Task;
@@ -18,7 +18,7 @@ import data.Task;
 public class Archive extends Operation{
 	
 	private String commandName;
-	private static Logger logger = Logger.getLogger(Archive.class);
+
 	
 	private enum archiveStatus{
 		CLEAR_ARCHIVE, IMPORT_ARCHIVE, ARCHIVE, NONE;
@@ -122,20 +122,18 @@ public class Archive extends Operation{
 	 */
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		logger.debug(userCommand.trim());
+	
 		if (userCommand.toLowerCase().startsWith("archive")){
 			archiveCommand = archiveStatus.ARCHIVE;
-			logger.debug("running archvie");
 			return archiveTasks();
 		}
 		else if(userCommand.toLowerCase().trim().contains("clear.archive")){
-			logger.debug("running clear archvie");
 			archiveCommand = archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
 		else if(userCommand.toLowerCase().trim().contains("import.archive")){
 			archiveCommand = archiveStatus.IMPORT_ARCHIVE;
-			logger.debug("importing archive");
+		
 			return importArchive();
 		}
 		else {
@@ -152,7 +150,7 @@ public class Archive extends Operation{
 	private Task[] importArchive() {
 		// TODO Auto-generated method stub
 		Task[] allArchivedTasks = StorageManager.getAllArchivedTasks();
-		logger.debug(archiveTasks.size());
+	
 		for (int i = 0 ; i < allArchivedTasks.length ; i++){
 			if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) 
 					&& StorageManager.addTask(allArchivedTasks[i])) {
@@ -168,7 +166,7 @@ public class Archive extends Operation{
 			feedback = OperationFeedback.NO_TASK_IN_ARCHIVE;
 			return null;
 		} else{
-			logger.debug(archiveTasks.size());
+			
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 		}
 	}
@@ -196,7 +194,7 @@ public class Archive extends Operation{
 		// TODO Auto-generated method stub
 		
 		Task[] allTasks = StorageManager.getAllTasks();
-		logger.debug("inside archvietasks()");
+
 		for (int i = 0 ; i < allTasks.length ; i++){
 			if (allTasks[i].getCompleted()){
 								

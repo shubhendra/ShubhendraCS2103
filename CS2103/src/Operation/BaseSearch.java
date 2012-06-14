@@ -15,14 +15,13 @@ import java.util.ArrayList;
 import operation.Search;
 import java.util.Collections;
 import storagecontroller.StorageManager;
-import org.apache.log4j.Logger;
 import constant.OperationFeedback;
 
 public class BaseSearch extends Operation{
 	
 	
 	protected String commandName;
-	private static Logger logger = Logger.getLogger(BaseSearch.class);
+
 	/**
 	 * searches for the task based on the details entered by the user.
 	 * if the UI sends in the task ID then executes the sub class functionality 
@@ -35,16 +34,13 @@ public class BaseSearch extends Operation{
 	public Task[] execute(String userCommand)
 	{
 		String params = userCommand.toLowerCase().replaceFirst(this.getOperationName() + " ", "");
-		logger.debug(commandName);
-		logger.debug("inside basesearch");
+	
 		ArrayList<Task> foundTasks = new ArrayList<Task>();
 				
 		String[] extractedTaskIds = extractTaskIds(params);
 		
 		if(extractedTaskIds != null)
 		{
-			logger.debug("going to the id part");
-			logger.debug(extractedTaskIds[0]);
 			for(int i = 0 ; i < extractedTaskIds.length ; i++)
 			{
 				Task t = StorageManager.getTaskById(extractedTaskIds[i]);
@@ -57,15 +53,15 @@ public class BaseSearch extends Operation{
 				}
 				if (result != null) {
 					Collections.addAll(foundTasks, result);
-					logger.debug("Result Added");
+		
 				}			
 			}
 			return foundTasks.toArray(new Task[foundTasks.size()]);
 		} else {
-			logger.debug("going for new search");
+		
 			Search f = new Search();
 			Task findTask = parseEvent(params);
-			logger.debug("finished searching");
+			
 			return f.search(findTask);
 			
 		}

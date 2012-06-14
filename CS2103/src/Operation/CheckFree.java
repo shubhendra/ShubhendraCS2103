@@ -18,7 +18,7 @@ public class CheckFree extends Operation{
 	
 	private static Logger logger = Logger.getLogger(CheckFree.class);
 	private String commandName;
-	private final static long MILLISECONDS_IN_A_DAY = 3600*24*1000;
+
 	
 	/**
 	 * Constructor 

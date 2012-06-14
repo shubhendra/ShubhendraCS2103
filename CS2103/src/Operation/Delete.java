@@ -11,14 +11,13 @@ package operation;
 
 
 import java.util.ArrayList;
-import org.apache.log4j.Logger;
 import constant.OperationFeedback;
 import storagecontroller.StorageManager;
 import data.Task;
 
 public class Delete extends BaseSearch {
 	
-	private Logger logger = Logger.getLogger(Delete.class);
+	
 	private ArrayList<Task> taskDeleted = new ArrayList<Task>();
 	
 	/**
@@ -65,11 +64,9 @@ public class Delete extends BaseSearch {
 		boolean deleted = delete(taskToDelete);
 		if (deleted) {
 			isUndoAble = true;
-			logger.debug("isUndoAble value changed" );
 			taskDeleted.add(taskToDelete);
 			Task[] resultOfDelete = new Task[1];
 			resultOfDelete[0] = taskToDelete;
-			logger.debug("deleted succesfully");
 			return resultOfDelete;
 		} else {
 			feedback = OperationFeedback.DELETE_FAILED;
@@ -137,16 +134,13 @@ public class Delete extends BaseSearch {
 		}
 		Task[] taskToDelete = StorageManager
 				.getTaskByRecurrenceID(taskToBeDeleted.getRecurringId());
-		logger.debug(taskToDelete.length);
+
 		for (int i=0;i<taskToDelete.length;i++) {
 		
 			boolean deleted = delete(taskToDelete[i]);
 			if (deleted) {
 				isUndoAble = true;
-				logger.debug("isUndoAble value changed" );
 				taskDeleted.add(taskToDelete[i]);
-				
-				logger.debug("deleted succesfully");
 			} else {
 				feedback=OperationFeedback.DELETE_FAILED;
 				return null;
