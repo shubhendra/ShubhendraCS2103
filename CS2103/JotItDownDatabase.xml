@@ -1,11 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0" class="java.beans.XMLDecoder">
  <object class="data.Task">
-  <void property="completed">
-   <boolean>true</boolean>
+  <void property="GCalId">
+   <string>6si9op94sqrchafqd6ipd4956o</string>
   </void>
   <void property="name">
-   <string>go to barber</string>
+   <string>go to party</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1341306000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__03-07-2012170000L__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="GCalId">
+   <string>3e3a6d0mki11is07v30g55ope8</string>
+  </void>
+  <void property="name">
+   <string>do homework</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__14-06-2012235959P__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1341503999000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__05-07-2012235959E__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="GCalId">
+   <string>d8slv3bqq7vmu8kmj7ii66oe8s</string>
+  </void>
+  <void property="name">
+   <string>go circus</string>
   </void>
   <void property="recurring">
    <null/>
@@ -16,26 +70,20 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1339689599000</long>
+     <long>1339775999000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012235959Q__$$</string>
+   <string>$$__15-06-2012235959W__$$</string>
   </void>
  </object>
  <object class="data.Task">
-  <void property="completed">
-   <boolean>true</boolean>
-  </void>
-  <void property="description">
-   <string>f9mi2f1fa51150k98bce4o44kg</string>
+  <void property="GCalId">
+   <string>b7rpn1vd7k1nf3rbach2n3as0s</string>
   </void>
   <void property="name">
    <string>go to school</string>
-  </void>
-  <void property="recurring">
-   <null/>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
@@ -51,46 +99,19 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012150000L__$$</string>
+   <string>$$__14-06-2012150000I__$$</string>
   </void>
  </object>
  <object class="data.Task">
+  <void property="GCalId">
+   <string>1cn02plvm2rutd9e6jiuf80u84</string>
+  </void>
   <void property="completed">
    <boolean>true</boolean>
   </void>
   <void property="name">
-   <string>go to &apos;July 2000&apos; &apos;int&apos;</string>
-  </void>
-  <void property="recurring">
-   <null/>
-  </void>
-  <void property="start">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339588800000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__13-06-2012200000Q__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="description">
-   <string>addf1pegu2ooi4hslv37bpt8hg</string>
-  </void>
-  <void property="name">
    <string>go to school</string>
   </void>
-  <void property="recurring">
-   <null/>
-  </void>
   <void property="start">
    <object class="data.TaskDateTime">
     <void property="hasDate">
@@ -100,36 +121,12 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1308034800000</long>
+     <long>1339750800000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2011150000D__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="name">
-   <string>&apos;2pm&apos; from school</string>
-  </void>
-  <void property="recurring">
-   <null/>
-  </void>
-  <void property="start">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339664400000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__14-06-2012170000N__$$</string>
+   <string>$$__15-06-2012170000L__$$</string>
   </void>
  </object>
 </java>

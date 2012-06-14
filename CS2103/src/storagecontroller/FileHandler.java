@@ -1,7 +1,10 @@
+/** Class responsible for reading into and writing from files.
+ * 
+ * @author Nirav Gandhi
+ */
 package storagecontroller;
 
 import data.Task;
-
 import data.TaskHashMap;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
@@ -15,8 +18,6 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
-
 import org.apache.log4j.Logger;
 public class FileHandler 
 {
@@ -45,7 +46,6 @@ public class FileHandler
 		{
 		BufferedOutputStream xmlOut=new BufferedOutputStream(new FileOutputStream(fileName));
 		XMLEncoder writeToXml=new XMLEncoder(xmlOut);
-		logger.debug(instance.getKeySet().size());
 		for(String key: instance.getKeySet())
 		{
 			writeToXml.writeObject(instance.getTaskById(key));
@@ -55,7 +55,7 @@ public class FileHandler
 		}
 		catch(FileNotFoundException e)
 		{
-			System.out.println("File Not Found!");
+			//System.out.println("File Not Found!");
 			return false;
 		}
 	}
@@ -85,7 +85,7 @@ public class FileHandler
 		catch(ArrayIndexOutOfBoundsException e)
 		{
 			logger.debug("array out of bounds!");
-			return false;
+			return true;
 		}
 		catch(NullPointerException e)
 		{
@@ -93,6 +93,10 @@ public class FileHandler
 			return false;
 		}
 	}
+	/** reads the date from the file
+	 * 
+	 * @return the string containing the date
+	 */
 	public String readDate()
 	{
 		String buffer,result="";
@@ -101,7 +105,7 @@ public class FileHandler
 			reader=new BufferedReader(new FileReader(fileName));
 			while ((buffer = reader.readLine()) != null)
 			{
-				System.out.println(buffer);
+				//System.out.println(buffer);
 				result+=buffer;
 			}
 			reader.close();
@@ -112,6 +116,11 @@ public class FileHandler
 		}
 	return result;
 	}
+	/** writes the date into the text file
+	 * 
+	 * @param emailId the email id to be written into the file.
+	 * @return
+	 */
 	public boolean writeEmailId(String emailId)
 	{
 		try
@@ -127,6 +136,11 @@ public class FileHandler
 			return false;
 		}
 	}
+	/** writes the date into the file 
+	 * 
+	 * @param toWrite the date to be written
+	 * @return true if the date is successfully written.
+	 */
 	public boolean writeDate(String toWrite)
 	{
 		try
@@ -142,6 +156,10 @@ public class FileHandler
 			return false;
 		}
 	}
+	/** reads the email id from the file.
+	 * 
+	 * @return the string containing the email id
+	 */
 	public String readEmailId()
 	{
 		String buffer,result="";
@@ -149,8 +167,8 @@ public class FileHandler
 		{
 		reader=new BufferedReader(new FileReader("JotItDownEMail.txt"));
 		while ((buffer = reader.readLine()) != null)
-		{ 
-			System.out.println(buffer);
+		{
+			//System.out.println(buffer);
 			result+=buffer;
 		}
 		reader.close();

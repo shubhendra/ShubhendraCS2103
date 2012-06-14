@@ -1,3 +1,8 @@
+/**
+ * This class synchronizes JotItDown with Google Calendar. It keeps the google Calendar up-to-date with the changes made in the software.
+ * 
+ * @author Nirav Gandhi
+ */
 package gcal;
 import storagecontroller.StorageManager;
 import org.apache.log4j.Logger;
@@ -21,7 +26,7 @@ import java.util.List;
 import data.Task;
 import data.TaskDateTime;
 import parser.Parser;
-//import parser.Parser;
+
 public class GoogleCalendar implements Runnable
 {
 	private Logger logger = Logger.getLogger(GoogleCalendar.class.getName());
@@ -34,11 +39,13 @@ public class GoogleCalendar implements Runnable
 	private static boolean loggedIn;
 	private static URL userCalendarUrl;
 	private Parser parser=new Parser();
-	//Parser testParser=new Parser();
-	/*private Task task1=testParser.parseForAdd("Go to Airport on 10 june 2012 at 4 pm");
-	private Task task2=testParser.parseForAdd("Go for a movie on 8 june 2012 at 9 pm");
-	private Task task3=testParser.parseForAdd("Go buy shoes at Vivo on 9 june 2012 at 10 am");*/
-		
+	
+	/** logs into Google calendar
+	 * 
+	 * @param userName userName entered by the user	
+	 * @param passWord password entered by the user
+	 * @return true if the username and password are authenticated by google calendar
+	 */
 	public boolean login(String userName,String passWord)
 	{
 		this.username=userName;
@@ -50,16 +57,20 @@ public class GoogleCalendar implements Runnable
 			loggedIn=true;
 		}
 		catch(AuthenticationException e){
-			logger.debug("Authentication Exception");
+			logger.warn("Authentication Exception");
 			loggedIn=false;
 		}
 		catch(MalformedURLException e){
-			logger.debug("MalformedURLException");
+			logger.warn("MalformedURLException");
 			loggedIn=false;
 		}
 		return loggedIn;
 		
 	}
+	/**
+	 * 
+	 * @return true when logged out.
+	 */
 	public boolean logout(){
 		calenService=new CalendarService(APPLICATION_NAME);
 		this.username=null;
@@ -67,6 +78,10 @@ public class GoogleCalendar implements Runnable
 		loggedIn=false;
 		return true;
 	}
+	/**Gets all the events from the Google Calendar in a list
+	 * 
+	 * @return a list of CalendarEventEntry type
+	 */
 	public List<CalendarEventEntry> getAllEntries(){
 		CalendarEventFeed resultFeed=null;
 		if(!loggedIn){
@@ -78,15 +93,20 @@ public class GoogleCalendar implements Runnable
 		}
 		catch(IOException e)
 		{
-			System.out.println("IO Exception");
+			logger.warn("IO Exception");
 		}
 		catch(ServiceException e)
 		{
-			System.out.println("Service Exception");
+			logger.warn("Service Exception");
 		}
 			List<CalendarEventEntry> entries=resultFeed.getEntries();
 			return entries;
 	}
+	/**Converts a list of entries of CalendarEventEntry type to a Task array.
+	 * 
+	 * @param userEntries entries from google Calendar
+	 * @return an array of Tasks
+	 */
 	public Task[] calendarEventListToTaskArray(List<CalendarEventEntry> userEntries){
 		ArrayList<Task> list= new ArrayList<Task>();
 		for(CalendarEventEntry entry : userEntries ){
@@ -94,6 +114,11 @@ public class GoogleCalendar implements Runnable
 		}
 			return list.toArray(new Task[list.size()]);
 	}
+	/** Converts a single entry from GCal into a Task object 
+	 * 
+	 * @param entry entry from GCal
+	 * @return a task object of the entry from GCal
+	 */
 	public Task calendarEntryToTask(CalendarEventEntry entry)
 	{
 		Task googleCalTask=new Task();
@@ -101,8 +126,8 @@ public class GoogleCalendar implements Runnable
 		googleCalTask.setName(entry.getTitle().getPlainText());
 		String entryDesc=entry.getPlainTextContent();
 		logger.debug(entryDesc);
-		String desc=entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", "");
-		googleCalTask.setDescription(desc);
+		String id=entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", "");
+		googleCalTask.setGCalId(id);
 		List<When> eventTime=entry.getTimes();
 		googleCalTask.setStart(getTaskDateTime(eventTime.get(0).getStartTime()));
 		googleCalTask.getStart().setHasDate(true);
@@ -150,10 +175,25 @@ public class GoogleCalendar implements Runnable
 		}
 		return googleCalTask;
 	}
-	
-	private data.TaskDateTime getTaskDateTime(DateTime dateTime) {
+	/** converts the date of XML type into the form of TaskDateTime
+	 * 
+	 * @param dateTime the xml form of Date
+	 * @return TaskDateTime object converted from the xml form
+	 */
+	private TaskDateTime getTaskDateTime(DateTime dateTime) {
 		return TaskDateTime.xmlToEventTime(dateTime.toString());
 	}
+	/** prevents loss of information. Attributes like 'important','deadline','recurring','labels' of the Task class do not exist in the class CalendarEventEntry of Google 
+	 * Calendar. Therefore the information is stored in the description of the CalendarEventEntry object. 
+	 *  
+	 * @param completed 
+	 * @param deadline
+	 * @param important
+	 * @param recurring
+	 * @param recurringId
+	 * @param labels
+	 * @return a string which is set to the description of CalendarEventEntry object.
+	 */
 	public String setGcalDescription(boolean completed,boolean deadline,boolean important,String recurring,String recurringId,String labels)
 	{
 		String entryCompleted="<"+"CMPT:"+completed+">";
@@ -172,19 +212,32 @@ public class GoogleCalendar implements Runnable
 			entryLabels="<"+"LABEL:"+labels+">";
 		return entryCompleted+entryDeadline+entryImportant+entryRecurring+entryRecurringId+entryLabels;
 	}
+	/**Converts the arrayList of Strings into a string of labels separated by a space
+	 * 
+	 * @param labels arrayList of Strings
+	 * @return a string of labels
+	 */
 	private String toGcalString(ArrayList<String> labels)
 	{
+		logger.debug("In Gcal String");
 		String labelsString = "";
-		logger.debug(labels.size());
-		if(!(labels.size()==0)){
+		if(labels!=null){
 		for(int i=0;i<labels.size();i++)
 		{
 			labelsString+=labels.get(i)+ " ";
 		}
+		logger.debug("returning");
 		return labelsString;
 		}
 		return "";
 	}
+	/** adds the task from JotIt down to Gcal
+	 * 
+	 * @param task task to be added to GCal
+	 * @param reminderMins Minutes before which the user should be reminder using the reminderMethod
+	 * @param reminderMethod 
+	 * @return a CalendarEventEntry object added to GCal
+	 */
 	public CalendarEventEntry addTask(Task task,int reminderMins,Method reminderMethod)
 	{
 		logger.debug("In addTask");
@@ -211,7 +264,7 @@ public class GoogleCalendar implements Runnable
 			CalendarEventEntry entry=calenService.insert(userCalendarUrl,newEntry);
 			if(entry==null)
 				return null;
-			task.setDescription(entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", ""));
+			task.setGCalId(entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", ""));
 			Method type=reminderMethod;
 			Reminder reminder=new Reminder();
 			reminder.setMinutes(reminderMins);
@@ -228,6 +281,11 @@ public class GoogleCalendar implements Runnable
 		}
 		
 	}
+	/** Deletes the event which matches with the name and 
+	 * 
+	 * @param taskToBeDeleted
+	 * @return
+	 */
 	public boolean deleteEvent(Task taskToBeDeleted)
 	{
 		List<CalendarEventEntry> entriesList=getAllEntries();
@@ -256,6 +314,11 @@ public class GoogleCalendar implements Runnable
 		}
 		return false;
 	}
+	/** Converts a String of labels into an ArrayList of labels
+	 * 
+	 * @param labels string of labels
+	 * @return 
+	 */
 	public ArrayList<String> stringToArrayList(String labels)
 	{
 		ArrayList<String> temp=new ArrayList<String>();
@@ -266,18 +329,25 @@ public class GoogleCalendar implements Runnable
 		}
 		return temp;
 	}
+	/** updates the event on the Google calendar.
+	 * 
+	 * @param oldTask task to be deleted
+	 * @param newTask task to be added
+	 * @return true when 
+	 */
 	public boolean updateEvent(Task oldTask,Task newTask)
 	{
-		/*List<CalendarEventEntry> entriesList=getAllEntries();
-		for(CalendarEventEntry entry : entriesList){
-			Task gTask=calendarEntryToTask(entry);
-			logger.debug(gTask.isEqual((oldTask)));
-			if(gTask.getName().equalsIgnoreCase(oldTask.getName())
-					&& gTask.getStart().isEqual((oldTask.getStart()))){*/
-				deleteEvent(oldTask);
+				if(deleteEvent(oldTask)){
 				addTask(newTask,0,Method.NONE);
-				return true;
+					return true;}
+				else
+					return false;
 	}
+	/** Converts an object of taskDateTime to DateTime object
+	 * 
+	 * @param taskDateTime object of TaskDateTime class
+	 * @return DateTime object
+	 */
 	public DateTime getDateTime(TaskDateTime taskDateTime){
 		if(taskDateTime==null)
 			return null;
@@ -288,12 +358,16 @@ public class GoogleCalendar implements Runnable
 		else
 			return DateTime.parseDate(taskDateTime.dateToXml());
 	}
+	/** imports from Google Calendar. If an event of the same Id already exists, the entry is not imported. This is done
+	 * to prevent duplication of Tasks in the live Storage
+	 * 
+	 * @return try if importing is performed successfully
+	 */
 	public boolean importFromGcal()
 	{
 		logger.debug("In import");
 		boolean isPresent = false;
 		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
-		System.out.println(taskArray.length);
 		
 		for(int i=0;i<taskArray.length;i++)
 		{
@@ -301,15 +375,14 @@ public class GoogleCalendar implements Runnable
 			logger.debug("isPresent resetted to false");
 			if(StorageManager.getAllTasks().length==0)
 			{
-				logger.debug("Length 0" + taskArray[0].getDescription());
+				logger.debug("Length 0" + taskArray[0].getGCalId());
 				StorageManager.addTask(taskArray[0]);
-				System.out.println(taskArray[0].getTaskId());
 			}
 			else
 			{
 				for(int j=0;j<StorageManager.getAllTasks().length;j++){
-					logger.debug(taskArray[i].getDescription() + " " + StorageManager.getAllTasks()[j].getDescription());
-					if(taskArray[i].getDescription().equals(StorageManager.getAllTasks()[j].getDescription()))
+					logger.debug(taskArray[i].getGCalId() + " " + StorageManager.getAllTasks()[j].getGCalId());
+					if(taskArray[i].getGCalId().equals(StorageManager.getAllTasks()[j].getGCalId()))
 					{
 						logger.debug(" Is present");
 						isPresent=true;
@@ -319,7 +392,7 @@ public class GoogleCalendar implements Runnable
 				if(!isPresent){
 					logger.debug("Checking if in Archives");
 					for(int k=0;k<StorageManager.getAllArchivedTasks().length;k++){
-						if(taskArray[i].getDescription().equals(StorageManager.getAllArchivedTasks()[k].getDescription()))
+						if(taskArray[i].getGCalId().equals(StorageManager.getAllArchivedTasks()[k].getGCalId()))
 						{
 							logger.debug("Is present in archives");
 							isPresent=true;
@@ -329,11 +402,15 @@ public class GoogleCalendar implements Runnable
 				}
 				if(!isPresent){
 					StorageManager.addTask(taskArray[i]);
-					System.out.println(taskArray[i].getTaskId());}
+					}
 		}
 		}
 		return true;
 	}
+	/** Exports a task into the google calendar. If a task with the same id already exists, task is not exported to avoid duplication.
+	 * 
+	 * @return true if exporting is done successfully.
+	 */
 	public boolean exportToGcal()
 	{
 		boolean isPresent2=false;
@@ -352,17 +429,17 @@ public class GoogleCalendar implements Runnable
 			{
 				for(int j=0;j<taskArray.length;j++)
 				{
-					logger.debug(StorageManager.getAllTasks()[i].getDescription() + " " + taskArray[j].getDescription());
+					logger.debug(StorageManager.getAllTasks()[i].getGCalId() + " " + taskArray[j].getGCalId());
 					logger.debug(StorageManager.getAllTasks()[i].toString());
-					if(StorageManager.getAllTasks()[i].getDescription().equals(taskArray[j].getDescription()))
+					if(StorageManager.getAllTasks()[i].getGCalId().equals(taskArray[j].getGCalId()))
 					{
 						isPresent2=true;
-						logger.debug("the desc id of google cal task is same as live storage" );
+						logger.debug("the google id of google cal task is same as live storage" );
 						if(!(StorageManager.getAllTasks()[i].isEqual(taskArray[j])))
 						{
 							logger.debug(StorageManager.getAllTasks()[i].toString());
 							logger.debug(taskArray[j].toString());
-							logger.debug("The two tasks with same description are not identical");
+							logger.debug("The two tasks with same google id are not identical");
 							updateEvent(taskArray[j],StorageManager.getAllTasks()[i]);
 						}
 						break;
@@ -376,15 +453,22 @@ public class GoogleCalendar implements Runnable
 		
 		return true;
 	}
+	/** Firstly,deletes all the tasks which are not present in the software but are present in Google calendar. 
+	 * Then performs the import and export function.
+	 *
+	 * @return
+	 */
 	public boolean sync()
 	{
 		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
+		if(StorageManager.getAllTasks().length!=0)
+		{
 		for(int i=0;i<taskArray.length;i++)
 		{
 			boolean isPresent3=false;
 			for(int k=0;k<StorageManager.getAllTasks().length;k++)
 			{
-				if(taskArray[i].getDescription().equalsIgnoreCase(StorageManager.getAllTasks()[k].getDescription()))
+				if(taskArray[i].getGCalId().equalsIgnoreCase(StorageManager.getAllTasks()[k].getGCalId()))
 				{
 					isPresent3=true;
 					break;
@@ -394,6 +478,7 @@ public class GoogleCalendar implements Runnable
 			{
 				deleteEvent(taskArray[i]);
 			}
+		}
 		}
 		if(importFromGcal() && exportToGcal())
 			return true;

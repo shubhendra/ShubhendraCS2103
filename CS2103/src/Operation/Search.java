@@ -22,8 +22,8 @@ import data.Task;
 
 public class Search extends Operation {
 	
-	private Logger logger=Logger.getLogger(Search.class);
-	private TaskDateTime defaultTime=new TaskDateTime();
+	private Logger logger = Logger.getLogger(Search.class);
+	private TaskDateTime defaultTime = new TaskDateTime();
 	
 	private String commandName;
 	
@@ -33,7 +33,7 @@ public class Search extends Operation {
 	 */
 	public Search(String intendedOperation) {
 		// TODO Auto-generated constructor stub
-		commandName=intendedOperation;
+		commandName = intendedOperation;
 	}
 	
 	/**
@@ -71,9 +71,6 @@ public class Search extends Operation {
 		return feedback;
 	}      
                
-
-	
-
 	@Override
 	/**
 	 * @return Operation name
@@ -109,7 +106,7 @@ public class Search extends Operation {
 		
 		Task parsedTask=parseCommand(params.toLowerCase());
 		
-		if (parsedTask.getStart()!=null){
+		if (parsedTask.getStart() != null){
 			logger.debug(parsedTask.getStart().getDate().getTimeMilli());
 		}
 		return search(parsedTask);
@@ -124,7 +121,7 @@ public class Search extends Operation {
 	 */
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
-		Parser newParser=new Parser();
+		Parser newParser = new Parser();
 		return newParser.parseForSearch(params);
 	}
 
@@ -134,7 +131,7 @@ public class Search extends Operation {
 	 */
 	public Task[] returnAllTasks() {
 		// TODO Auto-generated method stub
-		Task[] unsorted=StorageManager.getAllTasks();
+		Task[] unsorted = StorageManager.getAllTasks();
 		Comparator<Task> compareByDate = new CompareByDate();
 		logger.debug("before sorting");
 		
@@ -153,23 +150,26 @@ public class Search extends Operation {
 		Task [] allTasks=returnAllTasks();
 		ArrayList<Task> todaysTasks=new ArrayList<Task>();;
 		for(Task param:allTasks)
-			if (param.getStart()!=null && param.getStart().getDate().getTimeMilli()<=TaskDateTime.getCurrentDate().getTimeMilli())
+			if ((param.getStart() != null) && 
+					(param.getStart().getDate().getTimeMilli()  <=  TaskDateTime.getCurrentDate().getTimeMilli()))
 			{
 				if (!param.getCompleted())
 					todaysTasks.add(param);
-			} else if (param.getEnd()!=null && param.getEnd().getTimeMilli()<=TaskDateTime.getCurrentDate().getTimeMilli()){
+			} else if ((param.getEnd() != null) && 
+					(param.getEnd().getTimeMilli() <= TaskDateTime.getCurrentDate().getTimeMilli())){
 				if (!param.getCompleted())
 					todaysTasks.add(param);
-			} else if (param.getImportant() && !param.getCompleted()){
+			} else if ((param.getImportant()) && (!param.getCompleted())){
 				todaysTasks.add(param);
 			}
 		
 				
 			
 		
-		if (todaysTasks.size()!=0)
+		if (todaysTasks.size() != 0){
 			return (Task[]) todaysTasks.toArray(new Task[todaysTasks.size()]);
-		feedback=OperationFeedback.NOT_FOUND;
+		}
+		feedback = OperationFeedback.NOT_FOUND;
 		return null;
 	}
 	
@@ -182,8 +182,7 @@ public class Search extends Operation {
 		// TODO Auto-generated method stub
 		if (taskToSearch.getTaskId() != null) {
 			return new Task[]{StorageManager.getTaskById(taskToSearch.getTaskId())};
-		}
-		else {
+		} else {
 			return search(taskToSearch, StorageManager.getAllTasks());
 		}
 		
@@ -198,26 +197,26 @@ public class Search extends Operation {
 	 */
 	private Task[] search(Task findTask, Task[] allTasks) {
 		// TODO Auto-generated method stub
-		ArrayList<Task> foundTasks=new ArrayList<Task>();
+		ArrayList<Task> foundTasks = new ArrayList<Task>();
 		logger.debug("Default date:"+defaultTime.getDate().getTimeMilli());
 		logger.debug("Default Time:"+defaultTime.getTime().getTimeMilli());
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
 			logger.debug(allTasks[i].toString());
-			if (allTasks[i].getStart()!=null){
+			if (allTasks[i].getStart() != null){
 			logger.debug("allTasks["+i+"] StartTime:"+allTasks[i].getStart().getTime().getTimeMilli());
 			logger.debug("allTasks["+i+"] StartDate:"+allTasks[i].getStart().getDate().getTimeMilli());
 			}
-			if (allTasks[i].getEnd()!=null){
+			if (allTasks[i].getEnd() != null){
 			logger.debug("allTasks["+i+"] EndTime:"+allTasks[i].getEnd().getTime().getTimeMilli());
 			logger.debug("allTasks["+i+"] EndDate:"+allTasks[i].getEnd().getDate().getTimeMilli());
 			}
-			if (findTask.getStart()!=null){
+			if (findTask.getStart() != null){
 			logger.debug("searchstring StartTime:"+findTask.getStart().getTime().getTimeMilli());
 			logger.debug("searchstring StartDate:"+findTask.getStart().getDate().getTimeMilli());
 			}
-			if (findTask.getEnd()!=null){
+			if (findTask.getEnd() != null){
 			logger.debug("searchstring EndTime:"+findTask.getEnd().getTime().getTimeMilli());
 			logger.debug("searchstring EndDate:"+findTask.getEnd().getDate().getTimeMilli());
 			}
@@ -227,10 +226,10 @@ public class Search extends Operation {
 			}
 			
 		}
-		if (foundTasks.size()>0){
+		if (foundTasks.size() > 0){
 			return foundTasks.toArray(new Task[foundTasks.size()]);
 		}
-		feedback=OperationFeedback.NOT_FOUND;
+		feedback = OperationFeedback.NOT_FOUND;
 		return null;
 	}
 
@@ -241,14 +240,11 @@ public class Search extends Operation {
 	 * @return true if matches
 	 */
 	private boolean doesNameMatch(Task taskToSearch, Task existingTask){
-		if (("".equals(taskToSearch.getName()) || existingTask.getName().toLowerCase()
-				.contains((taskToSearch.getName().trim()))))
-		{
+		if (("".equals(taskToSearch.getName()) || 
+				existingTask.getName().toLowerCase().contains((taskToSearch.getName().trim())))){
 			logger.debug("name matches");
 			return true;
-		}
-		else
-		{
+		} else {
 			return false;
 		}
 		
@@ -264,7 +260,7 @@ public class Search extends Operation {
 		
 		if (taskToSearch.getStart() == null
 				|| taskToSearch.getStart().getDate().getTimeMilli()
-				== defaultTime.getDate().getTimeMilli() || (existingTask.getStart()!=null 
+				== defaultTime.getDate().getTimeMilli() || (existingTask.getStart() !=null 
 				&& (existingTask.getStart().getDate().getTimeMilli()
 				== taskToSearch.getStart().getDate().getTimeMilli()))){
 			logger.debug("start date matches");
@@ -287,12 +283,12 @@ public class Search extends Operation {
 	//	logger.debug("Default Time:"+defaultTime.getTime().getTimeMilli());
 		if (taskToSearch.getStart() == null
 				|| taskToSearch.getStart().getTime().getTimeMilli()
-				== defaultTime.getTime().getTimeMilli() || (existingTask.getStart()!=null 
+				== defaultTime.getTime().getTimeMilli() || (existingTask.getStart() != null 
 				&&  (existingTask.getStart().getTime().getTimeMilli()
 				== taskToSearch.getStart().getTime().getTimeMilli()))){
 			logger.debug("start time matches");
-					return true;
-				}
+			return true;
+		}
 		return false;
 	}
 	
@@ -306,7 +302,7 @@ public class Search extends Operation {
 	private boolean doesEndDateMatch(Task taskToSearch, Task existingTask){
 		if (taskToSearch.getEnd() == null 
 				|| taskToSearch.getEnd().getDate().getTimeMilli()
-				== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd()!=null 
+				== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd() != null 
 				&& (existingTask.getEnd().getDate().getTimeMilli()
 				== taskToSearch.getEnd().getDate().getTimeMilli()))){
 			logger.debug("end date matches");
@@ -325,7 +321,7 @@ public class Search extends Operation {
 	private boolean doesEndTimeMatch(Task taskToSearch, Task existingTask){
 		if(taskToSearch.getEnd() == null 
 				|| taskToSearch.getEnd().getTime().getTimeMilli()
-				== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd()!=null 
+				== defaultTime.getDate().getTimeMilli() || (existingTask.getEnd() != null 
 				&& (existingTask.getEnd().getTime().getTimeMilli()
 				== taskToSearch.getEnd().getTime().getTimeMilli()))){
 			logger.debug("end time matches");
@@ -358,7 +354,7 @@ public class Search extends Operation {
 	 */
 	private boolean doesLabelMatch(Task taskToSearch, Task existingTask){
 		
-		if (taskToSearch.getLabels()==null || taskToSearch.getLabels().size()==0)
+		if (taskToSearch.getLabels() == null || taskToSearch.getLabels().size() == 0)
 		{
 			logger.debug("task to search has no labels");
 			logger.debug("it matches");
@@ -369,13 +365,13 @@ public class Search extends Operation {
 			
 			boolean flag = false;
 			for (String searchlabel : taskToSearch.getLabels()) {
-				//if (searchlabel!=null)
+				//if (searchlabel !=null)
 				logger.debug("searching in taskToSearch");
 				logger.debug(searchlabel);
 				searchlabel = searchlabel.toLowerCase();
 				flag = false;
 				for (String existingLabel : existingTask.getLabels()) {
-					//if(existingLabel!=null)
+					//if(existingLabel !=null)
 					logger.debug("searching in existing task");
 					logger.debug(existingLabel);
 					
@@ -414,14 +410,16 @@ public class Search extends Operation {
 	
 		logger.debug(existingTask.getName());
 		
-		if (doesNameMatch(taskToSearch, existingTask) && doesStartDateMatch(taskToSearch,existingTask)
-				&& doesStartTimeMatch(taskToSearch,existingTask) && doesEndDateMatch(taskToSearch,existingTask) 
-				&& doesEndTimeMatch(taskToSearch, existingTask) && doesImportantMatch(taskToSearch,existingTask)
+		if (doesNameMatch(taskToSearch, existingTask) 
+				&& doesStartDateMatch(taskToSearch,existingTask)
+				&& doesStartTimeMatch(taskToSearch,existingTask) 
+				&& doesEndDateMatch(taskToSearch,existingTask) 
+				&& doesEndTimeMatch(taskToSearch, existingTask) 
+				&& doesImportantMatch(taskToSearch,existingTask)
 				&& doesLabelMatch(taskToSearch,existingTask)){
 			logger.debug("all condition satisfied");
 			return true;
-		}
-		else if(isTaskBetween(taskToSearch,existingTask)){
+		} else if(isTaskBetween(taskToSearch,existingTask)){
 			return true;
 		}
 		return false;
@@ -436,101 +434,103 @@ public class Search extends Operation {
 	 */
 	public boolean isTaskBetween(Task taskToSearch,Task existingTask){
 		logger.debug("inside isTaskbetween");
-		if (taskToSearch.getStart()!=null && taskToSearch.getEnd()!=null){
-			if (taskToSearch.getStart().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					taskToSearch.getEnd().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					taskToSearch.getStart().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli() &&
-					taskToSearch.getEnd().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli()){
+		if (taskToSearch.getStart() != null && taskToSearch.getEnd() != null){
+			if (taskToSearch.getStart().getDate().getTimeMilli() != defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getEnd().getDate().getTimeMilli() != defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getStart().getTime().getTimeMilli() != defaultTime.getTime().getTimeMilli() &&
+					taskToSearch.getEnd().getTime().getTimeMilli() != defaultTime.getTime().getTimeMilli()){
 				
-				if (existingTask.getStart()!=null && existingTask.getEnd()!=null){
-					if(taskToSearch.getStart().getTimeMilli()<=existingTask.getStart().getTimeMilli() && 
-							taskToSearch.getEnd().getTimeMilli()>=existingTask.getEnd().getTimeMilli()){
+				if (existingTask.getStart() != null && existingTask.getEnd() != null){
+					if(taskToSearch.getStart().getTimeMilli() <= existingTask.getStart().getTimeMilli() && 
+							taskToSearch.getEnd().getTimeMilli() >= existingTask.getEnd().getTimeMilli()){
 						logger.debug("matches 1");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else if (existingTask.getStart()==null && existingTask.getEnd()!=null){
-					if(taskToSearch.getEnd().getTimeMilli()>=existingTask.getEnd().getTimeMilli() &&
-							taskToSearch.getStart().getTimeMilli()<=existingTask.getEnd().getTimeMilli()){
+				} else if (existingTask.getStart() == null && existingTask.getEnd()!=null){
+					if(taskToSearch.getEnd().getTimeMilli() >= existingTask.getEnd().getTimeMilli() &&
+							taskToSearch.getStart().getTimeMilli() <= existingTask.getEnd().getTimeMilli()){
 						logger.debug("matches 2");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else if (existingTask.getStart()!=null && existingTask.getEnd()==null){
-					if(taskToSearch.getStart().getTimeMilli()<=existingTask.getStart().getTimeMilli() &&
-							taskToSearch.getEnd().getTimeMilli()>=existingTask.getStart().getTimeMilli()){
+				} else if (existingTask.getStart() != null && existingTask.getEnd() == null){
+					if(taskToSearch.getStart().getTimeMilli() <= existingTask.getStart().getTimeMilli() &&
+							taskToSearch.getEnd().getTimeMilli() >= existingTask.getStart().getTimeMilli()){
 						logger.debug("matches 3");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else 
+				} else { 
 					return false;
-			}
-			else if (taskToSearch.getStart().getDate().getTimeMilli()==defaultTime.getDate().getTimeMilli() &&
-					taskToSearch.getEnd().getDate().getTimeMilli()==defaultTime.getDate().getTimeMilli() &&
-					taskToSearch.getStart().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli() &&
-					taskToSearch.getEnd().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli()){
+				}
+			} else if (taskToSearch.getStart().getDate().getTimeMilli() == defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getEnd().getDate().getTimeMilli() == defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getStart().getTime().getTimeMilli() != defaultTime.getTime().getTimeMilli() &&
+					taskToSearch.getEnd().getTime().getTimeMilli() != defaultTime.getTime().getTimeMilli()){
 				
-				if (existingTask.getStart()!=null && existingTask.getEnd()!=null){
-					if(taskToSearch.getStart().getTime().getTimeMilli()<=existingTask.getStart().getTime().getTimeMilli() && 
-							taskToSearch.getEnd().getTime().getTimeMilli()>=existingTask.getEnd().getTime().getTimeMilli()){
+				if (existingTask.getStart() != null && existingTask.getEnd() != null){
+					if(taskToSearch.getStart().getTime().getTimeMilli() <= existingTask.getStart().getTime().getTimeMilli() && 
+							taskToSearch.getEnd().getTime().getTimeMilli() >= existingTask.getEnd().getTime().getTimeMilli()){
 						logger.debug("matches 4");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else if (existingTask.getStart()==null && existingTask.getEnd()!=null){
-					if(taskToSearch.getEnd().getTime().getTimeMilli()>=existingTask.getEnd().getTime().getTimeMilli() &&
-							taskToSearch.getStart().getTime().getTimeMilli()<=existingTask.getEnd().getTime().getTimeMilli()){
+				} else if (existingTask.getStart() == null && existingTask.getEnd() != null){
+					if(taskToSearch.getEnd().getTime().getTimeMilli() >= existingTask.getEnd().getTime().getTimeMilli() &&
+							taskToSearch.getStart().getTime().getTimeMilli() <= existingTask.getEnd().getTime().getTimeMilli()){
 						logger.debug("matches 5");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else if (existingTask.getStart()!=null && existingTask.getEnd()==null){
-					if(taskToSearch.getStart().getTime().getTimeMilli()<=existingTask.getStart().getTime().getTimeMilli() &&
-							taskToSearch.getEnd().getTime().getTimeMilli()>=existingTask.getStart().getTime().getTimeMilli()){
+				} else if (existingTask.getStart() != null && existingTask.getEnd() == null){
+					if(taskToSearch.getStart().getTime().getTimeMilli() <= existingTask.getStart().getTime().getTimeMilli() &&
+							taskToSearch.getEnd().getTime().getTimeMilli() >= existingTask.getStart().getTime().getTimeMilli()){
 						logger.debug("matches 6");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else 
+				} else {
 					return false;
-			}
-			else if (taskToSearch.getStart().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					taskToSearch.getEnd().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					taskToSearch.getStart().getTime().getTimeMilli()==defaultTime.getTime().getTimeMilli() &&
-					taskToSearch.getEnd().getTime().getTimeMilli()==defaultTime.getTime().getTimeMilli()){
+				}
+			} else if (taskToSearch.getStart().getDate().getTimeMilli() != defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getEnd().getDate().getTimeMilli() != defaultTime.getDate().getTimeMilli() &&
+					taskToSearch.getStart().getTime().getTimeMilli() == defaultTime.getTime().getTimeMilli() &&
+					taskToSearch.getEnd().getTime().getTimeMilli() == defaultTime.getTime().getTimeMilli()){
 				
-				if (existingTask.getStart()!=null && existingTask.getEnd()!=null){
-					if(taskToSearch.getStart().getDate().getTimeMilli()<=existingTask.getStart().getDate().getTimeMilli() && 
-							taskToSearch.getEnd().getDate().getTimeMilli()>=existingTask.getEnd().getDate().getTimeMilli()){
+				if (existingTask.getStart() != null && existingTask.getEnd() != null){
+					if(taskToSearch.getStart().getDate().getTimeMilli() <= existingTask.getStart().getDate().getTimeMilli() && 
+							taskToSearch.getEnd().getDate().getTimeMilli() >= existingTask.getEnd().getDate().getTimeMilli()){
 						logger.debug("matches 7");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else if (existingTask.getStart()==null && existingTask.getEnd()!=null){
-					if(taskToSearch.getEnd().getDate().getTimeMilli()>=existingTask.getEnd().getDate().getTimeMilli() &&
-							taskToSearch.getStart().getDate().getTimeMilli()<=existingTask.getEnd().getDate().getTimeMilli()){
+				} else if (existingTask.getStart() == null && existingTask.getEnd() != null){
+					if(taskToSearch.getEnd().getDate().getTimeMilli() >= existingTask.getEnd().getDate().getTimeMilli() &&
+							taskToSearch.getStart().getDate().getTimeMilli() <= existingTask.getEnd().getDate().getTimeMilli()){
 						logger.debug("matches 8");
 						return true;
+					} else {
+						return false;
 					}
-					else return false;
-				}
-				else if (existingTask.getStart()!=null && existingTask.getEnd()==null){
-					if(taskToSearch.getStart().getDate().getTimeMilli()<=existingTask.getStart().getDate().getTimeMilli() &&
-							taskToSearch.getEnd().getDate().getTimeMilli()>=existingTask.getStart().getDate().getTimeMilli()){
+					
+				} else if (existingTask.getStart() != null && existingTask.getEnd() == null){
+					if(taskToSearch.getStart().getDate().getTimeMilli() <= existingTask.getStart().getDate().getTimeMilli() &&
+							taskToSearch.getEnd().getDate().getTimeMilli()  >=  existingTask.getStart().getDate().getTimeMilli()){
 						logger.debug("matches 9");
 						return true;
 					}
-					else return false;
-				}
-				else 
+					else {
+						return false;
+					}
+				} else 
 					return false;
 			}
 			

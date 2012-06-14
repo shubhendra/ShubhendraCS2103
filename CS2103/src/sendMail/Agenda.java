@@ -1,3 +1,9 @@
+/** Class that sends the mail every midnight to the user.
+ * It implements runnable interface to carry out this process in a separate thread
+ * 
+ * @author Shubhendra Agrawal
+ * @author Nirav Gandhi
+ */
 package sendMail;
 
 
@@ -19,6 +25,9 @@ private final Scheduler scheduler=new Scheduler();
 private final int hourOfDay,minute,second;
 
 private String recepientEmail;
+/** Constructor
+ *
+ */
 public Agenda(int hour,int min,int sec,String email)
 {
 	hourOfDay=hour;
@@ -26,6 +35,11 @@ public Agenda(int hour,int min,int sec,String email)
 	second=sec;
 	recepientEmail=email;
 }
+/**Converts the string read from the file to TaskDateTime object.
+ * 
+ * @param result the string to be converted into TaskDateTime object
+ * @return TaskDateTime object of the string read.
+ */
 private TaskDateTime getDate(String result)
 {
 	System.out.println("The string is:" + result);
@@ -60,6 +74,9 @@ private TaskDateTime getDate(String result)
 	TaskDateTime date=new TaskDateTime(year,month,day);
 	return date;
 }
+/** sends the mail if the mail is not sent on the particular day. If sent on the current Date, sends only on the next midnight
+ * 
+ */
 public void sendMail()
 {
 	System.out.println("In sendMail");
@@ -127,6 +144,9 @@ public void sendMail()
 	}
 
 }
+/** function which keeps count of the time elapsed. 
+ * 
+ */
 public void start()
 {
 	scheduler.schedule(new SchedulerTask()
@@ -138,12 +158,6 @@ public void start()
 				}
 				, new DailyIterator(hourOfDay,minute,second));
 		}
-			
-	
-public static void main(String[] args){
-	
-	//alarmClock.sendMail();
-}
 @Override
 public void run() {
 	// TODO Auto-generated method stub

@@ -16,14 +16,14 @@ public class Modify extends BaseSearch{
 	
 	private Task oldTask;
 	private Task newTask;
-	private static Task taskBeingEdited=null;
-	private static Logger logger=Logger.getLogger(Modify.class);
+	private static Task taskBeingEdited = null;
+	private static Logger logger = Logger.getLogger(Modify.class);
 	
 	/**
 	 * constructor
 	 */
 	public Modify(){
-		commandName="modify";
+		commandName = "modify";
 	}
 	
 	/**
@@ -33,10 +33,9 @@ public class Modify extends BaseSearch{
 	 */
 	public Modify(String intendedOperation) {
 		// TODO Auto-generated constructor stub
-		commandName=intendedOperation;
-		if (commandName=="canceledit")
-		{
-			taskBeingEdited=null;
+		commandName = intendedOperation;
+		if (commandName == "canceledit") {
+			taskBeingEdited = null;
 		}
 		
 	}
@@ -49,27 +48,24 @@ public class Modify extends BaseSearch{
 	 * @return Task array of the affected tasks
 	 */
 	public Task[] execute(Task taskToBeEdited){
-		if(taskBeingEdited==null)
-		{
-			taskBeingEdited=StorageManager.getTaskById(taskToBeEdited.getTaskId());
-			logger.debug("taskBeingEdited"+taskBeingEdited.getName());
-			return new Task[]{taskBeingEdited};
-		}
-		else{
+		if(taskBeingEdited == null) {
+			taskBeingEdited = StorageManager.getTaskById(taskToBeEdited.getTaskId());
+			logger.debug("taskBeingEdited" + taskBeingEdited.getName());
+			return new Task[] {taskBeingEdited};
+		} else{
 			
-			boolean isEdited=modify(taskBeingEdited,taskToBeEdited);
-			if(isEdited)
-			{
-				isUndoAble=true;
+			boolean isEdited = modify(taskBeingEdited, taskToBeEdited);
+			if(isEdited) {
+				isUndoAble = true;
 				
-				oldTask=taskBeingEdited;
-				newTask=taskToBeEdited;
-				taskBeingEdited=null;
+				oldTask = taskBeingEdited;
+				newTask = taskToBeEdited;
+				taskBeingEdited = null;
 				logger.debug("Editing succesful");
-				return new Task[]{taskToBeEdited};
+				return new Task[] {taskToBeEdited};
 				
 			}
-			feedback=OperationFeedback.EDIT_FAILED;
+			feedback = OperationFeedback.EDIT_FAILED;
 			return null;	
 		}
 	}
@@ -140,16 +136,16 @@ public class Modify extends BaseSearch{
 	 */
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		Task[] def=StorageManager.getAllTasks();
-    	if (def!=null)
+		Task[] def = StorageManager.getAllTasks();
+    	if (def != null)
     	{
-    		for (int i=0;i<def.length;i++)
+    		for (int i = 0 ; i < def.length ; i++)
     		{
-    			logger.debug(def[i].toString()+" "+def[i].getTaskId());
+    			logger.debug(def[i].toString() + " " + def[i].getTaskId());
     		}
     	}
 		
-		if (taskBeingEdited==null)
+		if (taskBeingEdited == null)
 		{
 			return super.execute(userCommand);
 		}
@@ -157,8 +153,8 @@ public class Modify extends BaseSearch{
 		else
 		{
 			String params = userCommand.toLowerCase().replaceFirst(commandName+" ","");
-			Task taskToBeEdited=parseTask(params);
-			logger.debug("Task To be edited"+taskToBeEdited.getName());
+			Task taskToBeEdited = parseTask(params);
+			logger.debug("Task To be edited" + taskToBeEdited.getName());
 			return execute(taskToBeEdited);
 			
 		}
@@ -172,7 +168,7 @@ public class Modify extends BaseSearch{
 	private Task parseTask(String userCommand) {
 		// TODO Auto-generated method stub
 		
-		Parser newParser=new Parser();
+		Parser newParser = new Parser();
 		return newParser.parseForSearch(userCommand);
 		
 	}

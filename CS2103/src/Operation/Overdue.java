@@ -25,7 +25,7 @@ public class Overdue extends Operation {
 	 * constructor
 	 */
 	public Overdue(){
-		commandName="overdue";
+		commandName = "overdue";
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class Overdue extends Operation {
 	 */
 	public Overdue(String intendedOperation) {
 		// TODO Auto-generated constructor stub
-		commandName=intendedOperation;
+		commandName = intendedOperation;
 	}
 
 	
@@ -65,11 +65,7 @@ public class Overdue extends Operation {
 		return feedback;
 	}      
                
-    
-	
-	
-
-	@Override
+    @Override
 	/**
 	 * @return operation name
 	 * 
@@ -89,35 +85,30 @@ public class Overdue extends Operation {
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 		TaskDateTime currDateTime =	TaskDateTime.getCurrentDateTime();
-		Comparator<Task> compareByDate=new CompareByDate();
+		Comparator<Task> compareByDate = new CompareByDate();
 		TaskDateTime defaultDateTime = new TaskDateTime();
 		logger.debug(currDateTime.formattedToString());
 		Task[] allTasks=StorageManager.getAllTasks();
-		ArrayList<Task> overdueTasks=new ArrayList<Task>();
+		ArrayList<Task> overdueTasks = new ArrayList<Task>();
 		for (Task curTask : allTasks)
 		{
 			if (curTask.getStart() != null
 					&& curTask.getStart().getTimeMilli()
-					!= defaultDateTime.getTimeMilli())
-			{
-				if (curTask.getStart().compareTo(currDateTime)==-1 && !curTask.getCompleted())
-				{
+					!= defaultDateTime.getTimeMilli()) {
+				if (curTask.getStart().compareTo(currDateTime) == -1 
+						&& !curTask.getCompleted()) {
 					overdueTasks.add(curTask);
 				}
-			}
-			else if (curTask.getEnd()!=null 
-						&& curTask.getEnd().getTimeMilli()!= defaultDateTime.getTimeMilli())
-			{
-				if (curTask.getEnd().compareTo(currDateTime)==-1 && !curTask.getCompleted())
-				{
+			} else if (curTask.getEnd() != null 
+						&& curTask.getEnd().getTimeMilli() != defaultDateTime.getTimeMilli()) {
+				if (curTask.getEnd().compareTo(currDateTime) == -1 
+						&& !curTask.getCompleted()) {
 					overdueTasks.add(curTask);
 				}
-			}
-			else
-			{}
+			} else {}
 		}
-		if (overdueTasks.size()==0)	{
-			feedback=OperationFeedback.NO_TASK_OVERDUE;
+		if (overdueTasks.size() == 0) {
+			feedback = OperationFeedback.NO_TASK_OVERDUE;
 			return null;
 		} else {
 			Collections.sort(overdueTasks,compareByDate);

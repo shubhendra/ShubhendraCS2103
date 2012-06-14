@@ -1,11 +1,15 @@
+/** The Manager of the storage classes. Maintains a static instance of the TaskHashMap and of the GoogleCalendar class.
+ * It is the class to which the Logic interacts with. 
+ * 
+ * @author Nirav Gandhi
+ * @author Shubhendra Agrawal
+ */
 package storagecontroller;
 import data.TaskHashMap;
 import data.Task;
 import gcal.GoogleCalendar;
 
 import java.util.ArrayList;
-
-
 
 import org.apache.log4j.Logger;
 
@@ -20,10 +24,20 @@ public class StorageManager
 	 */
 	public StorageManager()
 	{}
+	/** adds a task to the archived TaskHashMap
+	 * 
+	 * @param taskToBeAdded 
+	 * @return true if the task is successfully added, otherwise false.
+	 */
 	public static boolean addArchivedTask(Task taskToBeAdded)
 	{
 		return liveArchives.addTask(taskToBeAdded);
 	}
+	/** deletes a task from the archived TaskHashMap
+	 * 
+	 * @param taskToBeRemoved
+	 * @return true if the task has been successfully deleted, otherwise false;
+	 */
 	public static boolean deleteArchivedTask(Task taskToBeRemoved)
 	{
 		return liveArchives.deleteTask(taskToBeRemoved);
@@ -59,6 +73,10 @@ public class StorageManager
 		tasks.toArray(taskArray);
 		return taskArray;
 	}	
+	/** gets all the tasks from archiveTasks
+	 * 
+	 * @return a task array of archived task
+	 */
 	public static Task[] getAllArchivedTasks(){
 		ArrayList<Task> tasks=new ArrayList<Task>();
 		for(String key: liveArchives.getKeySet())
@@ -90,6 +108,10 @@ public class StorageManager
 		}
 		return handler.readFromFile(liveStorage);
 	}
+	/** loads the date from the file JotItDownAgenda.txt
+	 * 
+	 * @return the date loaded from the file.
+	 */
 	public static String loadDate()
 	{
 		FileHandler handler=new FileHandler("JotItDownAgenda.txt");
@@ -99,13 +121,15 @@ public class StorageManager
 	 * 
 	 * @return true if all the tasks have been loaded without errors, otherwise false.
 	 */
-	
-	
 	public static String loadEmailId()
 	{
 		FileHandler handler=new FileHandler("JotItDownEMail.txt");
 		return handler.readEmailId();
 	}
+	/** saves the liveStorage
+	 * 
+	 * @return true if the contents of liveStorage are written into the file successfully, otherwise false
+	 */
 	public static boolean saveFile()
 	{
 		FileHandler handler=new FileHandler("JotItDownDatabase.xml");
@@ -114,6 +138,11 @@ public class StorageManager
 		else 
 			return false;
 	}
+	/** saves the email Id for the class SendMail into 'JotItDownEmail.txt'
+	 * 
+	 * @param emailId emailId to be stored
+	 * @return true if written without any errors, otherwise false
+	 */
 	public static boolean saveEmailId(String emailId)
 	{
 		FileHandler handler=new FileHandler("JotItDownEmail.txt");
@@ -122,6 +151,11 @@ public class StorageManager
 		else
 			return false;
 	}
+	/** saves the date the mail was last sent on into the file
+	 * 
+	 * @param toWrite the date to be written
+	 * @return true if written to file successfully
+	 */
 	public static boolean saveDate(String toWrite)
 	{
 		FileHandler handler=new FileHandler("JotItDownAgenda.txt");
@@ -144,7 +178,7 @@ public class StorageManager
 		liveStorage.deleteTask(taskToBeReplaced);
 		taskToReplaceBy.setTaskId(taskToBeReplaced.getTaskId());
 		liveStorage.addTask(taskToReplaceBy);
-		taskToReplaceBy.setDescription(taskToBeReplaced.getDescription());
+		taskToReplaceBy.setGCalId(taskToBeReplaced.getGCalId());
 		return true;
 	}
 	/** exports from the xml file to a text file with name as fileName
@@ -165,6 +199,10 @@ public class StorageManager
 	{
 		return liveStorage.deleteTaskById(id);
 	}
+	/** Saves the contents of the liveArchives to an xml file
+	 * 
+	 * @return true if the file is written successfully, otherwise false
+	 */
 	public static boolean saveArchive()
 	{
 		FileHandler handler=new FileHandler("JotItDownArchives.xml");
@@ -173,12 +211,17 @@ public class StorageManager
 		else 
 			return false;
 	}
+	/** Clears the liveArchives TaskHashMap
+	 * 
+	 */
 	public static void clearArchive()
 	{
 		liveArchives.clearHashMap();
-		
-		
 	}
+	/** loads archive from xml file to liveArchives.
+	 * 
+	 * @return boolean if loaded succesfully, otherwise false
+	 */
 	public static boolean loadArchive(){
 		FileHandler handler=new FileHandler("JotItDownArchives.xml");
 		if(liveArchives.getKeySet().size()!=0)
@@ -189,12 +232,25 @@ public class StorageManager
 		return handler.readFromFile(liveArchives);
 		
 	}
+	/** 
+	 * 
+	 * @return the google calendar object
+	 */
 	public static GoogleCalendar getGCalObject(){
 		return gCal;
 	}
+	/**
+	 * sets the google calendar object
+	 * @param obj the value to which gCal should be set to.
+	 */
 	public static void setGCalObject(GoogleCalendar obj){
 		gCal=obj;
 	}
+	/** 
+	 * 
+	 * @param Id recurring Id
+	 * @return a task array of all the tasks with the recurring id as 'Id'
+	 */
 	public static Task[] getTaskByRecurrenceID(String Id){
 		ArrayList<Task> tasks=new ArrayList<Task>();
 		for(String key: liveStorage.getKeySet()){

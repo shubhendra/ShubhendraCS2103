@@ -1,3 +1,7 @@
+/** class which sends the mail. 
+ * 
+ * @author- Nirav Gandhi
+ */
 package sendMail;
 
 import java.io.UnsupportedEncodingException;
@@ -16,6 +20,13 @@ public class Send {
 	private String FROM_ADDRESS="jid.troubleshoot@gmail.com";
 	private String PASSWORD="jotitdown";
 	private String FROM_NAME="Jot It Down Reminder Services";
+	/** function that sends the mail
+	 * 
+	 * @param recipients recipient of the mail
+	 * @param subject subject of the mail
+	 * @param message of the mail
+	 * @return true 
+	 */
 	public boolean sendMail(String recipients,String subject,String message)
 	{
 		try

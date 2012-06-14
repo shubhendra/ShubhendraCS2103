@@ -17,14 +17,14 @@ import data.Task;
 public class ToggleImportant extends BaseSearch {
 
 	
-	private static Logger logger=Logger.getLogger(BaseSearch.class);
-	private ArrayList<Task> taskStarred=new ArrayList<Task>();
+	private static Logger logger = Logger.getLogger(BaseSearch.class);
+	private ArrayList<Task> taskStarred = new ArrayList<Task>();
 	
 	/**
 	 * constructor
 	 */
 	public ToggleImportant(){
-		commandName="star";
+		commandName = "star";
 	}
 	
 	/**
@@ -36,12 +36,13 @@ public class ToggleImportant extends BaseSearch {
 	 */
 	public Task[] executeAll(Task taskToStar) {
 		// TODO Auto-generated method stub
-		if (taskToStar.getRecurringId()=="")
+		if (taskToStar.getRecurringId()=="") {
 			return execute(taskToStar);
+		}
 		Task[] taskToBeStarred = StorageManager
 				.getTaskByRecurrenceID(taskToStar.getRecurringId());
 		logger.debug(taskToBeStarred.length);
-		for (int i=0;i<taskToBeStarred.length;i++)
+		for (int i = 0 ; i < taskToBeStarred.length ; i++)
 		{
 			boolean starred = toggleImportant(taskToBeStarred[i]);
 			if (starred) {
@@ -49,20 +50,22 @@ public class ToggleImportant extends BaseSearch {
 				taskStarred.add(taskToBeStarred[i]);
 				logger.debug("starred succesfully");
 				
+			} else {
+				return null;
 			}
-			else return null;
 		}
-		if (taskStarred.size()!=0)
+		if (taskStarred.size()!=0) {
 			return (Task[])taskStarred.toArray(new Task[taskStarred.size()]);
-		else
+		} else {
 			return null;
+		}
 	}
 	/**
 	 * constructor
 	 * @param intendedOperation
 	 */
 	public ToggleImportant(String intendedOperation){
-		commandName=intendedOperation;
+		commandName = intendedOperation;
 	}
 	
 	/**
@@ -96,13 +99,12 @@ public class ToggleImportant extends BaseSearch {
 	 */
 	private boolean toggleImportant(Task taskToStar) {
 		// TODO Auto-generated method stub
-		Task starredTask=StorageManager.getTaskById(taskToStar.getTaskId());
-		if (starredTask!=null){
+		Task starredTask = StorageManager.getTaskById(taskToStar.getTaskId());
+		if (starredTask != null){
 			starredTask.toggleImportant();
 		
 			return true;
-		}
-		else {
+		} else {
 			return false;
 		}
 		
@@ -115,20 +117,22 @@ public class ToggleImportant extends BaseSearch {
 	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
-		ArrayList<Task> undoneTasks=new ArrayList<Task>();
-		for (int i=0;i<taskStarred.size();i++){
+		ArrayList<Task> undoneTasks = new ArrayList<Task>();
+		for (int i = 0 ; i < taskStarred.size() ; i++){
 			Task starredTask=StorageManager.getTaskById(taskStarred.get(i).getTaskId());
-			if (starredTask!=null){
+			if (starredTask != null){
 				starredTask.toggleImportant();
 				logger.debug("Can undo");
 				undoneTasks.add(starredTask);
 			}
 			
 		}
-		if (undoneTasks.size()!=0)
+		if (undoneTasks.size() != 0) {
 			return undoneTasks.toArray(new Task[undoneTasks.size()]);
-		else 
+		}
+		else { 
 			return null;
+		}
 	}
 
 	@Override
@@ -141,18 +145,19 @@ public class ToggleImportant extends BaseSearch {
 		// TODO Auto-generated method stub
 		ArrayList<Task> redoneTasks=new ArrayList<Task>();
 		for (int i=0;i<taskStarred.size();i++){
-			Task starredTask=StorageManager.getTaskById(taskStarred.get(i).getTaskId());
-			if (starredTask!=null){
+			Task starredTask = StorageManager.getTaskById(taskStarred.get(i).getTaskId());
+			if (starredTask != null){
 				starredTask.toggleImportant();
 				logger.debug("Can undo");
 				redoneTasks.add(starredTask);
 			}
 			
 		}
-		if (redoneTasks.size()!=0)
+		if (redoneTasks.size() != 0) {
 			return redoneTasks.toArray(new Task[redoneTasks.size()]);
-		else 
+		} else { 
 			return null;
+		}
 	}
 
 	@Override

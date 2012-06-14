@@ -54,41 +54,41 @@ public class Archive extends Operation{
 		ArrayList<Task> undoneTasks = new ArrayList<Task>();
 		if (archiveCommand == archiveStatus.CLEAR_ARCHIVE){
 			return null;
-		}
-		else if (archiveCommand == archiveStatus.IMPORT_ARCHIVE){
+		} else if (archiveCommand == archiveStatus.IMPORT_ARCHIVE){
 			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
-					if( StorageManager.deleteTask(archiveTasks.get(i)) && StorageManager.addArchivedTask(archiveTasks.get(i)))
-					{
+					if( StorageManager.deleteTask(archiveTasks.get(i)) 
+							&& StorageManager.addArchivedTask(archiveTasks.get(i))) {
+						undoneTasks.add(archiveTasks.get(i));
+					}
+				}
+			}
+			if (archiveTasks.size() == 0) {
+				return null;
+			} else {
+				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
+			}
+		}
+		else if (archiveCommand == archiveStatus.ARCHIVE) {
+			for (int i = 0 ; i < archiveTasks.size() ; i++){
+				if (archiveTasks.get(i).getCompleted()){
+					
+					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) 
+							&& StorageManager.addTask(archiveTasks.get(i))) {
 						undoneTasks.add(archiveTasks.get(i));
 					}
 					
 				}
 			}
-			if (archiveTasks.size() == 0)
+			if (archiveTasks.size() == 0) {
 				return null;
-			else
+			} else {
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
-		}
-		else if (archiveCommand == archiveStatus.ARCHIVE){
-			for (int i = 0 ; i < archiveTasks.size() ; i++){
-				if (archiveTasks.get(i).getCompleted()){
-					
-					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) && StorageManager.addTask(archiveTasks.get(i)))
-					{
-						undoneTasks.add(archiveTasks.get(i));
-					}
-					
-				}
 			}
-			if (archiveTasks.size() == 0)
-				return null;
-			else
-				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
-		}
-		else
+		} else {
 			return null;
+		}
 	}
 
 	@Override
@@ -154,12 +154,11 @@ public class Archive extends Operation{
 		Task[] allArchivedTasks = StorageManager.getAllArchivedTasks();
 		logger.debug(archiveTasks.size());
 		for (int i = 0 ; i < allArchivedTasks.length ; i++){
-			if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) && StorageManager.addTask(allArchivedTasks[i]))
-			{
+			if( StorageManager.deleteArchivedTask(allArchivedTasks[i]) 
+					&& StorageManager.addTask(allArchivedTasks[i])) {
 				isUndoAble = true;
 				archiveTasks.add(allArchivedTasks[i]);
-			}
-			else{
+			} else {
 				feedback = OperationFeedback.TASK_COULD_NOT_BE_EXPORTED_FROM_ARCHIVES;
 				isUndoAble = false;
 				return null;
@@ -168,8 +167,7 @@ public class Archive extends Operation{
 		if (archiveTasks.size() == 0){
 			feedback = OperationFeedback.NO_TASK_IN_ARCHIVE;
 			return null;
-		}
-		else{
+		} else{
 			logger.debug(archiveTasks.size());
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 		}
@@ -202,8 +200,8 @@ public class Archive extends Operation{
 		for (int i = 0 ; i < allTasks.length ; i++){
 			if (allTasks[i].getCompleted()){
 								
-				if(StorageManager.deleteTask(allTasks[i]) && StorageManager.addArchivedTask(allTasks[i]))
-				{
+				if(StorageManager.deleteTask(allTasks[i]) 
+						&& StorageManager.addArchivedTask(allTasks[i])) {
 					isUndoAble = true;
 					archiveTasks.add(allTasks[i]);
 				}
@@ -219,9 +217,9 @@ public class Archive extends Operation{
 			feedback = OperationFeedback.NO_TASK_TO_ARCHIVE;
 			return null;
 			
-		}
-		else
+		} else {
 			return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
+		}
 	}
 
 	@Override
@@ -234,41 +232,43 @@ public class Archive extends Operation{
 		ArrayList<Task> undoneTasks = new ArrayList<Task>();
 		if (archiveCommand == archiveStatus.CLEAR_ARCHIVE){
 			return null;
-		}
-		else if (archiveCommand == archiveStatus.IMPORT_ARCHIVE){
+		} else if (archiveCommand == archiveStatus.IMPORT_ARCHIVE){
 			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
-					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) && StorageManager.addTask(archiveTasks.get(i)))
+					if( StorageManager.deleteArchivedTask(archiveTasks.get(i)) 
+							&& StorageManager.addTask(archiveTasks.get(i)))
 					{
 						undoneTasks.add(archiveTasks.get(i));
 					}
 					
 				}
 			}
-			if (archiveTasks.size() == 0)
+			if (archiveTasks.size() == 0){
 				return null;
-			else
+			} else {
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
-		}
-		else if (archiveCommand == archiveStatus.ARCHIVE){
+			}
+		} else if (archiveCommand == archiveStatus.ARCHIVE){
 			for (int i = 0 ; i < archiveTasks.size() ; i++){
 				if (archiveTasks.get(i).getCompleted()){
 					
-					if( StorageManager.deleteTask(archiveTasks.get(i)) && StorageManager.addArchivedTask(archiveTasks.get(i)))
+					if( StorageManager.deleteTask(archiveTasks.get(i)) 
+							&& StorageManager.addArchivedTask(archiveTasks.get(i)))
 					{
 						undoneTasks.add(archiveTasks.get(i));
 					}
 					
 				}
 			}
-			if (archiveTasks.size() == 0)
+			if (archiveTasks.size() == 0) {
 				return null;
-			else
+			} else {
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
-		}
-		else
+			}
+		} else {
 			return null;
+		}
 
 	}
 

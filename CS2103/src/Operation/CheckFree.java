@@ -16,15 +16,15 @@ import data.Task;
 
 public class CheckFree extends Operation{
 	
-	private static Logger logger=Logger.getLogger(CheckFree.class);
+	private static Logger logger = Logger.getLogger(CheckFree.class);
 	private String commandName;
-	private final static long MILLISECONDS_IN_A_DAY=3600*24*1000;
+	private final static long MILLISECONDS_IN_A_DAY = 3600*24*1000;
 	
 	/**
 	 * Constructor 
 	 */
 	public CheckFree (){
-		commandName="check.free";
+		commandName = "check.free";
 	}
 	
 	/**
@@ -32,7 +32,7 @@ public class CheckFree extends Operation{
 	 * @param userInput
 	 */
 	public CheckFree(String userInput){
-		commandName=userInput;
+		commandName = userInput;
 	}
 	
 	@Override
@@ -47,27 +47,27 @@ public class CheckFree extends Operation{
 		// TODO Auto-generated method stub
 		userCommand.toLowerCase().trim().replaceFirst("check.free ", "");
 		
-		Search SearchObj=new Search();
+		Search SearchObj = new Search();
 	
 		Task parsedTask=parseCommand(userCommand);
-		if (parsedTask.getStart()==null || parsedTask.getEnd()==null){
-			feedback=OperationFeedback.TASK_SPECIFIED_DOES_NOT_HAVE_BOTH_START_END_DATE_TIME;
+		if (parsedTask.getStart() == null || parsedTask.getEnd() == null){
+			feedback = OperationFeedback.TASK_SPECIFIED_DOES_NOT_HAVE_BOTH_START_END_DATE_TIME;
 			return null;
 		}
-		Task[] allSortedTasks=SearchObj.returnAllTasks();
-		ArrayList<Task> betweenTasks= new ArrayList<Task>();
-		for(int i=0;i<allSortedTasks.length;i++){
+		Task[] allSortedTasks = SearchObj.returnAllTasks();
+		ArrayList<Task> betweenTasks = new ArrayList<Task>();
+		for(int i = 0 ; i < allSortedTasks.length ; i++){
 			if(SearchObj.isTaskBetween(parsedTask, allSortedTasks[i])){
 				betweenTasks.add(allSortedTasks[i]);
 			}
 		}
 		
 		
-		if (betweenTasks.size()==0){
+		if (betweenTasks.size() == 0) {
 			return null;
-		}
-		else {
+		} else {
 			feedback = OperationFeedback.NOT_FREE;
+			logger.debug("these many tasks clashing:"+betweenTasks.size());
 			return (Task[]) betweenTasks.toArray(new Task[betweenTasks.size()]);
 		}
 	}

@@ -33,7 +33,7 @@ public abstract class Operation {
 		Operation object;
 		
 		String intendedOperation;
-		intendedOperation=userCommand.trim().split("\\s+")[0];
+		intendedOperation = userCommand.trim().split("\\s+")[0];
 		intendedOperation = intendedOperation.toLowerCase();
 		logger.debug(intendedOperation);
 		
@@ -65,22 +65,21 @@ public abstract class Operation {
 			object = new Archive(intendedOperation);
 		}
 		else if (intendedOperation.equals("overdue")){
-			object= new Overdue(intendedOperation);
+			object = new Overdue(intendedOperation);
 		}
 		else if (intendedOperation.equals("check.free")){
-			object= new CheckFree(intendedOperation);
+			object = new CheckFree(intendedOperation);
 		}
 		else if (intendedOperation.equals("agendaemail")){
-			object= new AgendaEmail();
+			object = new AgendaEmail();
 		}
 		else if (intendedOperation.equals("login") || intendedOperation.equals("logout") ||
 				intendedOperation.equals("sync.gcal") || intendedOperation.equals("import.gcal") ||
 				intendedOperation.equals("export.gcal")) {
-			object= new GoogleCalendarOp();
+			object = new GoogleCalendarOp();
 		}
-		else
-		{
-			object=new Default();
+		else {
+			object = new Default();
 		}
 
 		

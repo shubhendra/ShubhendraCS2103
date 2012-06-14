@@ -26,7 +26,7 @@ public class ExpandComponent{
     private static javax.swing.JTable jTable1;
     private static javax.swing.JLayeredPane jLayeredPane1;
     private static MyTableModel myTableModel;
-	static AutoUpdateJTable autoJTable;
+	static TaskTable taskTable;
 	private static MyTableModelListener myTableModelListener;
     // End of variables declaration
 	
@@ -35,7 +35,7 @@ public class ExpandComponent{
      */
     public static void initialize() {
         initComponents();
-        autoJTable = new AutoUpdateJTable(jTable1);
+        taskTable = new TaskTable(jTable1);
     }
 
     /**
@@ -103,14 +103,14 @@ public class ExpandComponent{
      * @param tasks tasks that will be displayed
      */
     public static void updateJTable(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
+    	taskTable.updateJTable(tasks);
     }
     
     /**
      * make JTable show all tasks
      */
     public static void updateJTable() {
-    	autoJTable.updateJTable();
+    	taskTable.updateJTable();
     }
     
     /**
@@ -118,7 +118,7 @@ public class ExpandComponent{
      * @return all displayed tasks in jtable
      */
     public static Task[] getAllTasks() {
-    	return autoJTable.getTasks();
+    	return taskTable.getTasks();
     }
     
     /**
@@ -130,7 +130,7 @@ public class ExpandComponent{
     	int[] idx = jTable1.getSelectedRows();
     	Task[] tasks = new Task[idx.length];	
     	for(int i=0; i<tasks.length; i++) {
-    		tasks[i] = autoJTable.getTasks()[idx[i]];
+    		tasks[i] = taskTable.getTasks()[idx[i]];
     	}
     	return tasks;
     }

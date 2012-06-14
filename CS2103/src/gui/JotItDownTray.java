@@ -6,12 +6,17 @@ import java.awt.Image;
 import java.awt.MenuItem;
 import java.awt.PopupMenu;
 import java.awt.SystemTray;
+import java.awt.Toolkit;
 import java.awt.TrayIcon;
 import java.awt.TrayIcon.MessageType;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 
 import javax.swing.SwingUtilities;
 
@@ -112,7 +117,7 @@ public class JotItDownTray {
 	}
 	
 	private void addTaskFromTray() {
-		String input = UIController.getClipboard();
+		String input = getClipboard();
 		
 		JIDLogic.setCommand("add");
 		Task[] tasks = JIDLogic.executeCommand("add "+ input);
@@ -144,4 +149,24 @@ public class JotItDownTray {
 		trayIcon.displayMessage(caption, text, MessageType.NONE);
 	}
 	
+	/**
+	 * getting text from clipboard
+	 * @return text
+	 */
+	private String getClipboard() {
+	    Transferable t = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
+
+	    try {
+	        if (t != null && t.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+	            String text = (String)t.getTransferData(DataFlavor.stringFlavor);
+	            return text;
+	        }
+	    } catch (UnsupportedFlavorException e) {
+	    	logger.error("UnsupportedFlavorException");
+	    } catch (IOException e) {
+	    	logger.error("IOException");
+	    }
+	    logger.warn("null text from clipboard.");
+	    return null;
+	}
 }

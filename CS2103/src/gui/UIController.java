@@ -30,7 +30,7 @@ import logic.JIDLogic;
  *
  */
 public class UIController {
-	private static Logger logger=Logger.getLogger(UIController.class);
+	private static Logger	 logger=Logger.getLogger(UIController.class);
 
 	public static MainJFrame mainJFrame;
 	Reminder reminder;
@@ -42,12 +42,32 @@ public class UIController {
 	 * constructor
 	 */
 	public UIController() {
+		initializeMainWindowComponent();		
+		initializeTray();
+	}
+
+
+	/**
+	 * initialize main window components which consist of the pop up,
+	 * the table, and the help frame.	
+	 */
+	private void initializeMainWindowComponent() {
 		TopPopUp.createTopPopUp();
 		ExpandComponent.initialize();
 		HelpFrame.initialize();
 		mainJFrame = new MainJFrame();
 		HelpFrame.setPosition();
-		
+		mainJFrame.showFrame();
+	}
+
+	/**
+	 * Initialize the tray after waiting for some time,
+	 * so that the mainJFrame is successfully created.
+	 * <pre>
+	 * mainJFrame has successfully created.
+	 * </pre>
+	 */
+	private void initializeTray() {
 		Timer timer = new Timer(100, new ActionListener(){
 
 			@Override
@@ -70,28 +90,10 @@ public class UIController {
 	public static void main(String[] args) {
 		new UIController();
 		JIDLogic.JIDLogic_init();
+		UIController.refresh();
 	}
 	
-	/**
-	 * getting text from clipboard
-	 * @return text
-	 */
-	public static String getClipboard() {
-	    Transferable t = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
 
-	    try {
-	        if (t != null && t.isDataFlavorSupported(DataFlavor.stringFlavor)) {
-	            String text = (String)t.getTransferData(DataFlavor.stringFlavor);
-	            return text;
-	        }
-	    } catch (UnsupportedFlavorException e) {
-	    	logger.error("UnsupportedFlavorException");
-	    } catch (IOException e) {
-	    	logger.error("IOException");
-	    }
-	    logger.warn("null text from clipboard.");
-	    return null;
-	}
 	
 	/**
 	 * for showing pop up message on the top or mainJFrame
@@ -176,7 +178,6 @@ public class UIController {
 		String execmd = "login " + username + " ";
 		for(int i=0; i<password.length; i++)
 			execmd += password[i];
-		System.out.println(execmd);
 		JIDLogic.executeCommand(execmd);
 		UIController.showFeedbackDisplay();
 	}

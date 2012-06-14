@@ -105,6 +105,7 @@ public class TaskHashMap
 	 */
 	public void addTaskById(Task taskToBeAdded)
 	{
+		if(taskToBeAdded!=null)
 		taskList.put(taskToBeAdded.getTaskId(), taskToBeAdded);
 	}
 	/** Member function which returns the key set of the hash map.

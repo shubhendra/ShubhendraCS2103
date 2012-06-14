@@ -21,6 +21,8 @@ import java.awt.event.MouseMotionAdapter;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import org.apache.log4j.Logger;
+
 import logic.JIDLogic;
 
 /**
@@ -28,7 +30,7 @@ import logic.JIDLogic;
  * @author Ramon
  */
 public class MailDialog extends javax.swing.JDialog {
-
+	private static Logger	 logger=Logger.getLogger(MailDialog.class);
     /**
      * Creates new form LogInDialog
      */
@@ -82,23 +84,23 @@ public class MailDialog extends javax.swing.JDialog {
         setAlwaysOnTop(true);
         setIconImages(null);
 
-        mailLabel.setText("username");
+        mailLabel.setText("<html><b>e-mail:</html>");
         mailLabel.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
         mailLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
         mailLabel.setBounds(10, 55, 85, 25);
         jLayeredPane2.add(mailLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
         userTextField.setText("");
-        userTextField.setBounds(60, 55, 145, 25);
+        userTextField.setBounds(60, 55, 125, 25);
         jLayeredPane2.add(userTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        submitButton.setText("submit");
+        submitButton.setText("<html>submit</html>");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitButtonActionPerformed(evt);
             }
         });
-        submitButton.setBounds(212, 55, 64, 26);
+        submitButton.setBounds(202, 55, 74, 26);
         jLayeredPane2.add(submitButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         
@@ -143,31 +145,14 @@ public class MailDialog extends javax.swing.JDialog {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			logger.error("set look", e);
 		} catch (InstantiationException e) {
-			e.printStackTrace();
+			logger.error("set look", e);
 		} catch (IllegalAccessException e) {
-			e.printStackTrace();
+			logger.error("set look", e);
 		} catch (UnsupportedLookAndFeelException e) {
-			e.printStackTrace();
+			logger.error("set look", e);
 		}
-//        try {
-//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-//        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(LogInDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        }
-
     }
     
     
@@ -175,19 +160,8 @@ public class MailDialog extends javax.swing.JDialog {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /*
-         * Set the Nimbus look and feel
-         */
-        setLook();
-    	
-    	//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /*
-         * If Nimbus (introduced in Java SE 6) is not available, stay with the
-         * default look and feel. For details see
-         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
-        //</editor-fold>
 
+        setLook();
         /*
          * Create and display the dialog
          */

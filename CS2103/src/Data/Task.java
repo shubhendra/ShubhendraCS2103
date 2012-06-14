@@ -1,14 +1,17 @@
+/** The Task class on which JotItDown is based on. 
+ * 
+ * @author Nirav Gandhi
+ */
 package data;
 
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 
 public class Task {
 
 
 	private String taskId;// changed to string id for hashing.
 	private String name;
-	private String description;
+	private String gCalId;
 	private TaskDateTime start;
 	private TaskDateTime end;
 	private boolean completed;
@@ -24,7 +27,7 @@ public Task()
 {
 	taskId = null;
 	name = "";
-	description = "";
+	gCalId = "";
 	start = null;
 	end = null;
 	completed = false;
@@ -39,7 +42,7 @@ public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime e
 {
 	this();
 	name = Name;
-	description = desc;
+	gCalId = desc;
 	start = startDateTime;
 	end = endDateTime;
 	this.recurring = recurring;
@@ -52,9 +55,11 @@ public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime e
 {
 	this();
 	name = Name;
-	description = desc;
+	gCalId = desc;
 	start = startDateTime;
 	end = endDateTime;
+	if(labels==null)
+		labels=new ArrayList<String>();
 	labels = Labels;
 	this.recurring = recurring;
 	deadline = Deadline;
@@ -68,9 +73,11 @@ public Task(String Name,String desc,TaskDateTime startDateTime,TaskDateTime endD
 {
 	this();
 	name = Name;
-	description = desc;
+	gCalId = desc;
 	start = startDateTime;
 	end = endDateTime;
+	if(labels==null)
+		labels=new ArrayList<String>();
 	labels = Labels;
 	this.recurring = recurring;
 	recurringId="";
@@ -99,13 +106,22 @@ public void setTaskId(String id)
 {
 	taskId = id;
 }
-
+/**
+ * 
+ * @return the arrayList of labels
+ */
 public ArrayList<String> getLabels()
 {
 	return labels;
 }
+/**
+ * setter for the attribute labels
+ * @param labels2 ArrayList<String> to which the labels are set to.
+ */
 public void setLabels(ArrayList<String> labels2)
 {
+	if(labels2==null)
+		labels=new ArrayList<String>();
 	labels = labels2;
 }
 /** 
@@ -126,19 +142,19 @@ public void setName(String Name)
 }
 /**
  * 
- * @return the description string
+ * @return the gCalId string
  */
-public String getDescription()
+public String getGCalId()
 {
-	return description;
+	return gCalId;
 }
-/** setter for attribute description
+/** setter for attribute gCalId
  * 
- * @param desc String to which attribute description is set to.
+ * @param desc String to which attribute gCalId is set to.
  */
-public void setDescription(String desc)
+public void setGCalId(String desc)
 {
-	description = desc;
+	gCalId = desc;
 }
 /** 
  * 
@@ -268,7 +284,7 @@ public boolean isEqual(Object to) {
  */
 public boolean isIdenticalTo(Task second)
 {
-	if(this.description == second.description && this.name==second.name && 
+	if(this.gCalId == second.gCalId && this.name==second.name && 
 			this.end == second.end && this.start==second.start && this.recurring==second.recurring && this.taskId==second.taskId)
 		return true;
 	else
@@ -354,114 +370,5 @@ public String toStringLabels()
 	}
 	}
 	return stringLabels;
-}
-/**
- * 
- */
-public String toString2()
-{
-	TaskDateTime temp=new TaskDateTime();
-	if(((start!=null && end!=null && start.compareTo(temp)!=0 && (end.compareTo(temp)!=0))||(end==null) 
-			||( start!=null && start.compareTo(temp)!=0 && end.compareTo(temp)==0)))
-	{
-		long diffMilliSeconds=start.getTimeMilli()-TaskDateTime.getCurrentDateTime().getTimeMilli();
-		long diffSeconds=diffMilliSeconds/1000;
-		long diffMinutes=diffMilliSeconds/(60*1000);
-		long diffHours=diffMilliSeconds/(60*60*1000);
-		long diffDays=diffMilliSeconds/(60*60*1000*24);
-		long diffWeeks=diffDays/7;
-		if(diffMilliSeconds<0)
-			return "Deadline missed!";
-		else if(diffSeconds<2)
-			return "Starts Now";
-		else if(diffSeconds<60)
-			return String.format("Starts in %d seconds", diffSeconds);
-		else if(diffMinutes<60)
-			return String.format("Starts in %d minutes", diffMinutes);
-		else if(diffHours<24)
-			return String.format("Starts in %d hours", diffHours);
-		else if(diffDays<7)
-			return String.format("On %s", displayNameOfWeek(start.get(GregorianCalendar.DAY_OF_WEEK)));
-		else if(diffWeeks<5)
-		{
-			if(diffWeeks<2)
-				return "Next week";
-			else 
-				return String.format("%d weeks from now", diffWeeks);
-		}
-		else if(diffDays<365)
-		{
-			int diffMonths=(int)diffDays/30;
-			if(diffMonths<2)
-				return "Next Month";
-			else
-				return String.format("%d months from now", diffMonths);
-		}
-		else if(diffDays<730)
-			return "Next year";
-		else
-			return String.format("%d years from now", diffDays/365);
-	}
-	else if((start ==null || ( end!=null && start.compareTo(temp)==0) && !(end.compareTo(temp)==0))) 
-	{
-		long diffMilliSeconds=end.getTimeMilli()-TaskDateTime.getCurrentDateTime().getTimeMilli();
-		long diffSeconds=diffMilliSeconds/1000;
-		long diffMinutes=diffMilliSeconds/(60*1000);
-		long diffHours=diffMilliSeconds/(60*60*1000);
-		long diffDays=diffMilliSeconds/(60*60*1000*24);
-		long diffWeeks=diffDays/7;
-		if(diffMilliSeconds<0)
-			return "deadline is over";
-		else if(diffSeconds<2)
-			return "due now";
-		else if(diffSeconds<60)
-			return "due in a minute";
-		else if(diffMinutes<60)
-			return String.format("due in %d minutes", diffMinutes);
-		else if(diffHours<24)
-			return String.format("due in %d hours", diffHours);
-		else if(diffDays<7)
-			return String.format("due on %s", displayNameOfWeek(start.get(GregorianCalendar.DAY_OF_WEEK)));
-		else if(diffWeeks<5)
-		{	
-			if(diffWeeks<2)
-				return "due next week";
-			else
-				return String.format("due in %d weeks", diffWeeks);
-		}
-		else if(diffDays<365)
-		{
-			int diffMonths=(int)diffDays/30;
-			if(diffMonths<2)
-				return "Due next Month";
-			else
-				return String.format("due %d months from now", diffMonths);
-		}
-		else if(diffDays<730)
-			return "Next year";
-		else
-			return String.format("%d years from now", diffDays/365);
-	}
-	return "";
-}
-/** 
- * 
- * @param dayOfWeek the number of the day of the week
- * @return the string containing the name of the day of the week
- */
-public String displayNameOfWeek(int dayOfWeek)
-{
-	switch(dayOfWeek)
-	{
-	case 1:return "Sunday";
-	case 2:return "Monday";
-	case 3:return "Tuesday";
-	case 4:return "Wednesday";
-	case 5:return "Thursday";
-	case 6:return "Friday";
-	case 7:return "Saturday";
-	default:
-		return "";
-	}
 }
 }

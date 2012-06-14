@@ -20,9 +20,9 @@ import storagecontroller.StorageManager;
 
 public class JIDLogic {
 	
-	private static Logger logger=Logger.getLogger(JIDLogic.class);
-	private static Stack<Operation> undoStack= new Stack<Operation>();
-	private static Stack<Operation> redoStack= new Stack<Operation>();
+	private static Logger logger = Logger.getLogger(JIDLogic.class);
+	private static Stack<Operation> undoStack = new Stack<Operation>();
+	private static Stack<Operation> redoStack = new Stack<Operation>();
 	private static String command;
 
 	/**
@@ -39,7 +39,8 @@ public class JIDLogic {
 		if (command == null || command.equals("")) {
 			logger.debug("inside first cond");
 			return null;
-		} else if (commandFromUser.trim().toLowerCase().equals("undo") && !undoStack.empty()) {
+		} else if (commandFromUser.trim().toLowerCase().equals("undo") 
+				&& !undoStack.empty()) {
 			logger.debug("inside third cond");
 			Operation undoOperation = undoStack.pop();
 			if (undoOperation.isUndoAble()) {
@@ -49,23 +50,24 @@ public class JIDLogic {
 			logger.debug("popped last action from stack:"+undoOperation.getOperationName());
 			return undoOperation.undo();
 			
-		} else if (commandFromUser.trim().toLowerCase().equals("redo") && !redoStack.empty()) {
+		} else if (commandFromUser.trim().toLowerCase().equals("redo") 
+				&& !redoStack.empty()) {
 			logger.debug("inside redo cond");
 			Operation redoOperation = redoStack.pop();
 			if (redoOperation.isUndoAble()) {
 				undoStack.push(redoOperation);
 				logger.debug("isundoable");
 			}
-			logger.debug("popped last action from stack:"+redoOperation.getOperationName());
+			logger.debug("popped last action from stack:" + redoOperation.getOperationName());
 			return redoOperation.redo(); 
 		} else {
 			logger.debug("inside fourth cond");
 			op = Operation.getOperationObj(commandFromUser);
 						
-			Task[] result=  op.execute(commandFromUser);
+			Task[] result =  op.execute(commandFromUser);
 			UIController.sendOperationFeedback(op.getOpFeedback());
-			logger.debug("Operation feedback:"+op.getOpFeedback());
-			logger.debug("THE OPERATION IS UNDOABLE:"+op.isUndoAble());
+			logger.debug("Operation feedback:" + op.getOpFeedback());
+			logger.debug("THE OPERATION IS UNDOABLE:" + op.isUndoAble());
 			if (op.isUndoAble()) {
 				undoStack.push(op);
 				logger.debug("isundoable");
@@ -85,13 +87,13 @@ public class JIDLogic {
 		
 		StorageManager.loadFile();
 		StorageManager.loadArchive();
+		
 		startAutoSave();
 		
 		
-		AgendaEmail newEmail= new AgendaEmail();
+		AgendaEmail newEmail = new AgendaEmail();
 		Task result[] = newEmail.execute("agendaemail "+StorageManager.loadEmailId());
-		if (newEmail.getOpFeedback()==OperationFeedback.NO_EMAIL_SPECIFIED)
-		{
+		if (newEmail.getOpFeedback() == OperationFeedback.NO_EMAIL_SPECIFIED) {
 			logger.debug("inside the prompt email");
 			UIController.promptEmailInput();
 		}

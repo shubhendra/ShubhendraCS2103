@@ -1,3 +1,7 @@
+/**The class which stores the start or end date and time of a Task object.
+ * 
+ * @author Nirav Gandhi
+ */
 package data;
 //import java.text.ParseException;
 import java.text.ParseException;
@@ -288,7 +292,7 @@ public String generateDateCode()
 	}
 	catch(NullPointerException e)
 	{
-		logger.debug("In generateDateCode");
+		logger.error("Null pointer exception");
 	}
 	return null;
 }
@@ -368,7 +372,11 @@ public boolean getHasDate()
 {
 	return hasDate;
 }
-
+/** converts xml Date format to TaskDateTime format
+ * 
+ * @param xmlString xml Date format to be converted
+ * @return TaskDateTime object equivalent to the xml Date.
+ */
 public static TaskDateTime xmlToEventTime(String xmlString) {
 	Date date;
 	date=xmlToDate(xmlString);
@@ -377,6 +385,11 @@ public static TaskDateTime xmlToEventTime(String xmlString) {
 	}
 	return new TaskDateTime(date.getTime());
 }
+/** converts xml Date format to Date format
+ * 
+ * @param xmlString xml Date format to be converted
+ * @return Date object equivalent to the xml Date.
+ */
 private static Date xmlToDate(String xmlString) {
 	try
 	{
@@ -394,10 +407,18 @@ private static Date xmlToDate(String xmlString) {
 		}
 	}
 }
+/** converts date to xml Date format
+ * 
+ * @return xml format
+ */
 public String dateToXml()
 {
 	return ISO_DATE.format(new Date(timeMilli));
 }
+/** converts dateTime to xml Date format
+ * 
+ * @return xml format
+ */
 public String dateTimeToXml()
 {
 	return ISO_DATE_TIME.format(new Date(timeMilli));

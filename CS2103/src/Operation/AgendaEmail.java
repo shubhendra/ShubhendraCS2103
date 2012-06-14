@@ -9,6 +9,8 @@ package operation;
 
 
 import org.apache.log4j.Logger;
+
+import parser.Parser;
 import sendMail.Agenda;
 import storagecontroller.StorageManager;
 import constant.OperationFeedback;
@@ -34,15 +36,28 @@ public class AgendaEmail extends Operation{
 			logger.debug("true");
 			feedback = OperationFeedback.NO_EMAIL_SPECIFIED;
 			return null;	
-		}
-		else 
+		} else if (isValidEmail(userCommand)){
 			email = userCommand;
+		} else {
+			feedback = OperationFeedback.INVALID_EMAIL;
+			return null;
+		}
+		
+		
 		Thread mailThread = new Thread(new Agenda(18,23,0, email));
 		StorageManager.saveEmailId(email);
 		mailThread.run();
-		return new Task[1];
+		return null;
 	}
 
+	private boolean isValidEmail(String userCommand) {
+		Parser newParser=new Parser();
+		if (newParser.validateEmailAdd(userCommand)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	@Override
 	/**
 	 * undo is irrelevant in this case

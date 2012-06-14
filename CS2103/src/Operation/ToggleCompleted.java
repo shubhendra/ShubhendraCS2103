@@ -14,14 +14,14 @@ import data.Task;
 
 public class ToggleCompleted extends BaseSearch{
 	
-	private static Logger logger=Logger.getLogger(BaseSearch.class);
-	private ArrayList<Task> taskCompleted=new ArrayList<Task>();
+	private static Logger logger = Logger.getLogger(BaseSearch.class);
+	private ArrayList<Task> taskCompleted = new ArrayList<Task>();
 	
 	/**
 	 * constructor
 	 */
 	public ToggleCompleted(){
-		commandName="completed";
+		commandName = "completed";
 	}
 	
 	/**
@@ -30,7 +30,7 @@ public class ToggleCompleted extends BaseSearch{
 	 */
 	public ToggleCompleted(String intendedOperation) {
 		// TODO Auto-generated constructor stub
-		commandName=intendedOperation;
+		commandName = intendedOperation;
 	}
 	
 	/**
@@ -42,8 +42,9 @@ public class ToggleCompleted extends BaseSearch{
 	 */
 	public Task[] executeAll(Task taskToComplete) {
 		// TODO Auto-generated method stub
-		if (taskToComplete.getRecurringId()=="")
+		if (taskToComplete.getRecurringId() == "") {
 			return execute(taskToComplete);
+		}
 		Task[] taskToBeCompleted = StorageManager
 				.getTaskByRecurrenceID(taskToComplete.getRecurringId());
 		logger.debug(taskToBeCompleted.length);
@@ -56,15 +57,14 @@ public class ToggleCompleted extends BaseSearch{
 			
 				logger.debug("completed succesfully");
 				//return resultOfComplete;
-			}
-			else{
+			} else{
 				feedback=OperationFeedback.COMPLETE_FAILED;
 			}
 		}
-		if (taskCompleted.size()!=0)
+		if (taskCompleted.size() != 0) {
 			return (Task[]) taskCompleted.toArray(new Task[taskCompleted.size()]);
-		else {
-			feedback=OperationFeedback.NO_TASK_COMPLETED;
+		} else {
+			feedback = OperationFeedback.NO_TASK_COMPLETED;
 			return null;
 		}
 	}
@@ -88,7 +88,7 @@ public class ToggleCompleted extends BaseSearch{
 			logger.debug("completed succesfully");
 			return resultOfComplete;
 		}
-		feedback=OperationFeedback.COMPLETE_FAILED;
+		feedback = OperationFeedback.COMPLETE_FAILED;
 		return null;
 		
 	}
@@ -101,13 +101,12 @@ public class ToggleCompleted extends BaseSearch{
 	private boolean toggleComplete(Task taskToComplete) {
 		// TODO Auto-generated method stub
 		Task completeTask=StorageManager.getTaskById(taskToComplete.getTaskId());
-		if (completeTask!=null){
+		if (completeTask != null){
 			completeTask.toggleCompleted();
 		
 			return true;
-		}
-		else {
-			return false;
+		} else {
+			return false; 
 		}
 		
 	}
@@ -118,19 +117,20 @@ public class ToggleCompleted extends BaseSearch{
 	 */
 	public Task[] undo() {
 		ArrayList<Task> undoneTasks=new ArrayList<Task>();
-		for (int i=0;i<taskCompleted.size();i++){
+		for (int i = 0 ; i < taskCompleted.size() ; i++) {
 			Task completeTask=StorageManager.getTaskById(taskCompleted.get(i).getTaskId());
-			if (completeTask!=null){
+			if (completeTask != null){
 				completeTask.toggleCompleted();
 				logger.debug("Can undo");
 				undoneTasks.add(completeTask);
 			}
 			
 		}
-		if (undoneTasks.size()!=0)
+		if (undoneTasks.size() != 0) {
 			return undoneTasks.toArray(new Task[undoneTasks.size()]);
-		else 
+		} else {
 			return null;
+		}
 	}
 
 	@Override
@@ -166,20 +166,21 @@ public class ToggleCompleted extends BaseSearch{
 	 */
 	public Task[] redo() {
 		// TODO Auto-generated method stub
-		ArrayList<Task> redoneTasks=new ArrayList<Task>();
-		for (int i=0;i<taskCompleted.size();i++){
+		ArrayList<Task> redoneTasks = new ArrayList<Task>();
+		for (int i = 0 ; i < taskCompleted.size() ; i++){
 			Task completeTask=StorageManager.getTaskById(taskCompleted.get(i).getTaskId());
-			if (completeTask!=null){
+			if (completeTask != null){
 				completeTask.toggleCompleted();
 				logger.debug("Can undo");
 				redoneTasks.add(completeTask);
 			}
 			
 		}
-		if (redoneTasks.size()!=0)
+		if (redoneTasks.size() != 0) {
 			return redoneTasks.toArray(new Task[redoneTasks.size()]);
-		else 
+		} else { 
 			return null;
+		}
 	}
 
 	

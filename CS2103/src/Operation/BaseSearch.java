@@ -34,7 +34,7 @@ public class BaseSearch extends Operation{
 	 */
 	public Task[] execute(String userCommand)
 	{
-		String params = userCommand.toLowerCase().replaceFirst(this.getOperationName()+" ","");
+		String params = userCommand.toLowerCase().replaceFirst(this.getOperationName() + " ", "");
 		logger.debug(commandName);
 		logger.debug("inside basesearch");
 		ArrayList<Task> foundTasks = new ArrayList<Task>();
@@ -45,8 +45,6 @@ public class BaseSearch extends Operation{
 		{
 			logger.debug("going to the id part");
 			logger.debug(extractedTaskIds[0]);
-			
-			
 			for(int i = 0 ; i < extractedTaskIds.length ; i++)
 			{
 				Task t = StorageManager.getTaskById(extractedTaskIds[i]);
@@ -54,26 +52,16 @@ public class BaseSearch extends Operation{
 				Task[] result;
 				if (!commandName.contains(".all")){
 					result = execute(t);
-				}
-				else{
+				} else {
 					result = executeAll(t);
 				}
-					
-				
-				if (result != null)
-				{
+				if (result != null) {
 					Collections.addAll(foundTasks, result);
 					logger.debug("Result Added");
-				}
-				
-				
+				}			
 			}
-			
 			return foundTasks.toArray(new Task[foundTasks.size()]);
-		}
-		
-		else 
-		{
+		} else {
 			logger.debug("going for new search");
 			Search f = new Search();
 			Task findTask = parseEvent(params);

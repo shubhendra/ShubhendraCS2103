@@ -18,14 +18,14 @@ import data.Task;
 
 public class Delete extends BaseSearch {
 	
-	private Logger logger=Logger.getLogger(Delete.class);
-	private ArrayList<Task> taskDeleted=new ArrayList<Task>();
+	private Logger logger = Logger.getLogger(Delete.class);
+	private ArrayList<Task> taskDeleted = new ArrayList<Task>();
 	
 	/**
 	 * Constructor
 	 */
 	public Delete(){
-		commandName="delete";
+		commandName = "delete";
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class Delete extends BaseSearch {
 	 */
 	public Delete(String intendedOperation) {
 		// TODO Auto-generated constructor stub
-		commandName=intendedOperation;
+		commandName = intendedOperation;
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class Delete extends BaseSearch {
 	public boolean delete(Task taskToBeDeleted)
 	
 	{
-		if (taskToBeDeleted!=null)
+		if (taskToBeDeleted != null)
 		{
 			return StorageManager.deleteTask(taskToBeDeleted);
 		}
@@ -71,10 +71,8 @@ public class Delete extends BaseSearch {
 			resultOfDelete[0] = taskToDelete;
 			logger.debug("deleted succesfully");
 			return resultOfDelete;
-		}
-		else
-		{
-			feedback=OperationFeedback.DELETE_FAILED;
+		} else {
+			feedback = OperationFeedback.DELETE_FAILED;
 			return null;
 		}
 		
@@ -90,17 +88,18 @@ public class Delete extends BaseSearch {
 		// TODO Auto-generated method stub
 		ArrayList<Task> undoneTasks=new ArrayList<Task>();
 		Add addObject = new Add();
-		for (int i=0;i<taskDeleted.size();i++){
+		for (int i = 0 ; i < taskDeleted.size() ; i++) {
 			
 			if (addObject.add(taskDeleted.get(i))) {
 				undoneTasks.add(taskDeleted.get(i));
 			}
 			
 		}
-		if (undoneTasks.size()!=0)
+		if (undoneTasks.size()!=0) {
 			return undoneTasks.toArray(new Task[undoneTasks.size()]);
-		else 
+		} else { 
 			return null;
+		}
 		
 		
 	}
@@ -133,13 +132,14 @@ public class Delete extends BaseSearch {
 	 */
 	public Task[] executeAll(Task taskToBeDeleted) {
 		// TODO Auto-generated method stub
-		if (taskToBeDeleted.getRecurringId()=="")
+		if (taskToBeDeleted.getRecurringId() == "") {
 			return execute(taskToBeDeleted);
+		}
 		Task[] taskToDelete = StorageManager
 				.getTaskByRecurrenceID(taskToBeDeleted.getRecurringId());
 		logger.debug(taskToDelete.length);
-		for (int i=0;i<taskToDelete.length;i++)
-		{
+		for (int i=0;i<taskToDelete.length;i++) {
+		
 			boolean deleted = delete(taskToDelete[i]);
 			if (deleted) {
 				isUndoAble = true;
@@ -147,19 +147,17 @@ public class Delete extends BaseSearch {
 				taskDeleted.add(taskToDelete[i]);
 				
 				logger.debug("deleted succesfully");
-			}
-			else 
-			{
+			} else {
 				feedback=OperationFeedback.DELETE_FAILED;
 				return null;
 			}
 		}
-		if (taskDeleted.size()==0){
-			feedback=OperationFeedback.NO_TASK_DELETED;
+		if (taskDeleted.size() == 0) {
+			feedback = OperationFeedback.NO_TASK_DELETED;
 			return null;
-		}
-		else
+		} else {
 			return (Task[])taskDeleted.toArray(new Task[taskDeleted.size()]);
+		}
 	}
 
 	@Override
@@ -178,17 +176,18 @@ public class Delete extends BaseSearch {
 		// TODO Auto-generated method stub
 		ArrayList<Task> redoneTasks = new ArrayList<Task>();
 		
-		for (int i = 0 ; i < taskDeleted.size() ; i++){
+		for (int i = 0 ; i < taskDeleted.size() ; i++) {
 			
 			if (delete(taskDeleted.get(i))) {
 				redoneTasks.add(taskDeleted.get(i));
 			}
 			
 		}
-		if (redoneTasks.size() != 0)
+		if (redoneTasks.size() != 0) {
 			return redoneTasks.toArray(new Task[redoneTasks.size()]);
-		else 
+		} else { 
 			return null;
+		}
 		
 	}
 
