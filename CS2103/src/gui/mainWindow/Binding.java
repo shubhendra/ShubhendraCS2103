@@ -13,7 +13,7 @@ import javax.swing.KeyStroke;
 
 
 /**
- * for making hotkey
+ * for making hotkey on mainJFrame
  * @author Ramon
  *
  */

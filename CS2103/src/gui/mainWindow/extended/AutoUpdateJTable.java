@@ -15,6 +15,8 @@ import javax.swing.Timer;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
+import org.apache.log4j.Logger;
+
 import logic.JIDLogic;
 
 import data.Task;
@@ -25,6 +27,8 @@ import data.Task;
  *
  */
 public class AutoUpdateJTable {
+	private static Logger logger=Logger.getLogger(AutoUpdateJTable.class);
+	
 	private JTable jTable;
 	private DefaultTableModel model;
     private Vector<String> listLabel = new Vector<String>();
@@ -42,6 +46,9 @@ public class AutoUpdateJTable {
 	}
 
 	int row=-1, col=-1;
+	/**
+	 * add listener on the table
+	 */
 	private void addListener() {
 		
 		jTable.addMouseListener(new MouseAdapter()
@@ -52,7 +59,6 @@ public class AutoUpdateJTable {
 			       row = jTable.rowAtPoint(pnt);
 			       col = jTable.columnAtPoint(pnt);
 
-			       	System.out.println("r: "+row + " C: " + col);
 			       	
 			       	if(col == 0)
 			       		jTable.changeSelection(row, 1, true, true);
@@ -121,7 +127,16 @@ public class AutoUpdateJTable {
     	listLabel.add(str);
     }
     
+    /**
+     * make the first letter of the string become capital
+     * @param str input string
+     * @return
+     */
     private String makeFirstLetterCapital(String str) {
+    	if(str == null) {
+    		logger.warn("string is null.");
+    		return null;
+    	}
     	String newStr = new String();
     	
     	newStr += str.toUpperCase().charAt(0);
@@ -142,7 +157,6 @@ public class AutoUpdateJTable {
 	    		str += "<FONT style=\"BACKGROUND-COLOR: #FFFFCC\">"
 	    			+ task.getLabels().get(i)
 	    			+ "</FONT> ";
-	    		System.out.println(i + task.getLabels().get(i));
 	    	}
 		return str;
 	}

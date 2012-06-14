@@ -73,7 +73,8 @@ public enum STATE {
 			case IMPORTGCAL: return "was imported from Google Calendar.";
 			case SYNCGCAL: return "was synced with Google Calendar.";
 			default:
-				logger.warn(curState + " getEndedString");
+				logger.error(curState + " getEndedString singular form");
+				return "successfully";
 			}
 		else
 			switch(curState) {
@@ -92,17 +93,16 @@ public enum STATE {
 			case IMPORTGCAL: return "were imported from Google Calendar.";
 			case SYNCGCAL: return "were synced with Google Calendar.";
 			default:
-				logger.warn(curState + " getEndedString");
-				return "";
+				logger.error(curState + " getEndedString plural form");
+				return "successfully";
 			}
-		
-		logger.warn("ended string message for " + curState + " is not implemented.");
-		return null;
 	}
 	
 	public static STATE checkCommand(String curText) {
-		if(curText.equals(""))
+		if(curText.equals("")) {
+			logger.warn("receive null string from the input");
 			return STATE.NULL;
+		}
 		
 		String delims = "[ ]+";
 		String firstWord = curText.trim().split(delims)[0];
@@ -188,7 +188,7 @@ public enum STATE {
 			return "That timeslot is free.";
 		
 		default:
-			logger.warn(curState + "getFeedbackText");
+			logger.error(curState + "getFeedbackText");
 			return "Successfully";
 		}	
 	}

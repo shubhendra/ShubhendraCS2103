@@ -24,10 +24,14 @@ import data.Task;
 
 import logic.JIDLogic;
 
+/**
+ * for controlling UI and initializing the program.
+ * @author Ramon
+ *
+ */
 public class UIController {
-
 	private static Logger logger=Logger.getLogger(UIController.class);
-	
+
 	public static MainJFrame mainJFrame;
 	Reminder reminder;
 	static JotItDownTray JIDtray;
@@ -81,8 +85,11 @@ public class UIController {
 	            return text;
 	        }
 	    } catch (UnsupportedFlavorException e) {
+	    	logger.error("UnsupportedFlavorException");
 	    } catch (IOException e) {
+	    	logger.error("IOException");
 	    }
+	    logger.warn("null text from clipboard.");
 	    return null;
 	}
 	
@@ -108,8 +115,10 @@ public class UIController {
 	 */
 	public static void refresh() {
 		if(STATE.getState() != STATE.SEARCH
-				&&STATE.getState() != STATE.OVERDUE)
+				&&STATE.getState() != STATE.OVERDUE) {
+			logger.debug("refresh: in " + STATE.getState()+ ": update JTable");
 			ExpandComponent.updateJTable();
+		}
 		Reminder.update();
 	}
 	
@@ -260,6 +269,9 @@ public class UIController {
 		new MailDialog(mainJFrame, true);
 	}
 	
+	/** clear the command line
+	 * 
+	 */
 	public static void clearCommandLine() {
 		MainJFrame.clearCommandLine();
 	}

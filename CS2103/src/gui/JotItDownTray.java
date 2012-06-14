@@ -15,6 +15,8 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.SwingUtilities;
 
+import org.apache.log4j.Logger;
+
 import data.Task;
 
 import logic.JIDLogic;
@@ -26,6 +28,8 @@ import logic.JIDLogic;
  *
  */
 public class JotItDownTray {
+	private static Logger logger=Logger.getLogger(JotItDownTray.class);
+	
 	static SystemTray tray = SystemTray.getSystemTray();
 	PopupMenu popup;
 	Image trayImg;
@@ -87,7 +91,7 @@ public class JotItDownTray {
 		try {
 			tray.add(trayIcon);
 		} catch (AWTException e) {
-			System.err.println("Problem loading Tray icon");
+			logger.error("Problem loading Tray icon");
 		}
 		
 		trayIcon.addMouseListener(new MouseAdapter(){
@@ -113,8 +117,10 @@ public class JotItDownTray {
 		JIDLogic.setCommand("add");
 		Task[] tasks = JIDLogic.executeCommand("add "+ input);
 		
-		if(tasks == null)
+		if(tasks == null) {
+			logger.warn("invalid format from user: add " + input);
 			showText("Error!", "invalid input format");
+		}
 		else {
 			showText("Successfully added!", tasks[0].toString());
 			UIController.refresh();

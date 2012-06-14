@@ -1,12 +1,16 @@
 package parser;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class ParserEngine {
 	
 	public static void main (String args[]) {
 		
-	
-	
+		String inputString = null;
+		BufferedReader reader;
+		reader = new BufferedReader(new InputStreamReader(System.in));
 		/*
 		System.out.print("Input string:");
 		try {
@@ -16,15 +20,9 @@ public class ParserEngine {
 			System.out.println("An unexpected error occured for your input");
 		}
 		*/
-		Parser parserObject = new Parser();
-		final String ID_REGEX = "(\\$\\$__)(\\d{2}-\\d{2}-\\d+[A-Z])(__\\$\\$)";
-		
-		System.out.println("<CMPT:true><IMPT:true><DEAD:true><RECUR:yearly><RECURID:$$__21-06-2012030000B__$$><LABEL:>".matches("<CMPT:(true|false)><IMPT:(true|false)><DEAD:(true|false)><RECUR:(daily|weekly|monthly|yearly)?><RECURID:("+ID_REGEX+")?><LABEL:((\\w+ )+)?>"));
-		
-		String arr[] = parserObject.fetchGCalDes("<CMPT:true><IMPT:false><DEAD:true><RECUR:><RECURID:><LABEL:>");
-		for(int i=0; i<arr.length; i++)
-			System.out.println(arr[i]);
-		//parserObject.parseForSearch("14 june @work");
+		//Parser parserObject = new Parser();
+		//parserObject.parseForAdd("play on tuesday from at 4pm to 5pm");
+		//System.out.println(parserObject.validateEmailAdd("1.shubhm@in.in"));
 		/*
 		ArrayList<Task> tArr = new ArrayList<Task>();
 		//Task tempTask = null;

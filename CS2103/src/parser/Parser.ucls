@@ -2,7 +2,7 @@
   realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
   <class id="1" corner="BOTTOM_RIGHT" language="java" name="parser.TimeParser" project="CS2103" 
     file="/CS2103/src/parser/TimeParser.java" binary="false">    
-    <position height="51" width="91" x="170" y="37"/>    
+    <position height="51" width="91" x="170" y="128"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false"/>      
       <operations public="false" package="false" protected="false" private="false"/>    
@@ -10,12 +10,28 @@
   </class>  
   <class id="2" corner="BOTTOM_RIGHT" language="java" name="parser.DateParser" project="CS2103" 
     file="/CS2103/src/parser/DateParser.java" binary="false">    
-    <position height="51" width="89" x="41" y="37"/>    
+    <position height="51" width="89" x="41" y="128"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false"/>      
       <operations public="false" package="false" protected="false" private="false"/>    
     </display>  
   </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="parser.Parser" project="CS2103" 
+    file="/CS2103/src/parser/Parser.java" binary="false">    
+    <position height="51" width="85" x="106" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <dependency id="4">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="5">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    

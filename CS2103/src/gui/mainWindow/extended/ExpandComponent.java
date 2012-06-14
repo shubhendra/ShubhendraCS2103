@@ -26,9 +26,9 @@ public class ExpandComponent{
     private static javax.swing.JTable jTable1;
     private static javax.swing.JLayeredPane jLayeredPane1;
     private static MyTableModel myTableModel;
-    // End of variables declaration
 	static AutoUpdateJTable autoJTable;
 	private static MyTableModelListener myTableModelListener;
+    // End of variables declaration
 	
     /**
      * Creates new form ExpandJPanel

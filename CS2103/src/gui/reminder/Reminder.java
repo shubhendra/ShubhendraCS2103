@@ -45,7 +45,7 @@ public class Reminder {
 	 */
 	public Reminder(SystemTray tray) {
 		this.tray = tray;
-		logger.debug("tray: " + tray!=null);
+		logger.debug("tray is initialized: " + tray!=null);
 		init();
 		runReminder();
 	}
@@ -56,9 +56,7 @@ public class Reminder {
 	public static void init() {
 		reminderPerformer = new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent e) {
-				logger.debug("reminderPerformer starts");
-				
+			public void actionPerformed(ActionEvent e) {				
 				if(task.getImportant()) {
 					new AlarmFrame(task);
 				}
@@ -140,18 +138,21 @@ public class Reminder {
 		
 		nowMilli = now.getTimeInMillis();
 		
+		/*
 		logger.debug(nextReminderMilli);
 		logger.debug(nowMilli);
+		*/
 		
 		timeDiff = nextReminderMilli - nowMilli - delay;
 			
-		logger.debug("timediff: " + timeDiff);
+		//logger.debug("timediff: " + timeDiff);
 		
 		if(timeDiff <0) {
 			return -1;
 		}
 		
 		if(timeDiff > Integer.MAX_VALUE) {
+			logger.warn("time difference is too large.");
 			return -1;
 		}
 		
@@ -174,7 +175,7 @@ public class Reminder {
 			}
 		}
 		
-		logger.debug("latestTask: null") ;
+		logger.warn("latestTask: null") ;
 		
 		task = null;
 		return null;		

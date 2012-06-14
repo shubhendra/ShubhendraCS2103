@@ -1,12 +1,18 @@
+/**
+ *
+ * This class features the date parsing abilities of Jot It Down
+ * Enables the user to enter the desirable date in a variety of formats
+ * 
+ * @author Shubham Kaushal
+ */
+
 package parser;
 
 import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-
+import logic.JIDLogic;
 import org.apache.log4j.Logger;
-
 
 public class DateParser {
 	private Logger logger=Logger.getLogger(DateParser.class);
@@ -24,14 +30,13 @@ public class DateParser {
 	private static final String RD ="((?i)(rd)?)";
 	private static final String MONTH_TEXT = "((?i)(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec))";
 	private static final String MONTH_IN_DIGIT_DATE_WITH_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ \\-](0?[1-9]|1[012])[/ \\-]((19|20)\\d\\d)";
-	private static final String MONTH_IN_TEXT_DATE_WITH_YEAR = "((0?(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|1[0-9]"+TH+"|2(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|30"+TH+")|31"+ST+")[/ \\-\\,]"+MONTH_TEXT+"[/ \\-\\,]((19|20)\\d\\d)";
+	private static final String MONTH_IN_TEXT_DATE_WITH_YEAR = "((0?(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|1[0-9]"+TH+"|2(0"+TH+"|1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|30"+TH+")|31"+ST+")[/ \\-\\,]"+MONTH_TEXT+"[/ \\-\\,]((19|20)\\d\\d)";
 	private static final String MONTH_IN_DIGIT_DATE_WITHOUT_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ \\-](0?[1-9]|1[012])";
-	private static final String MONTH_IN_TEXT_DATE_WITHOUT_YEAR = "((0?(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|1[0-9]"+TH+"|2(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|30"+TH+")|31"+ST+")[/ \\-\\,]"+MONTH_TEXT;
+	private static final String MONTH_IN_TEXT_DATE_WITHOUT_YEAR = "((0?(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|1[0-9]"+TH+"|2(0"+TH+"|1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|30"+TH+")|31"+ST+")[/ \\-\\,]"+MONTH_TEXT;
 	
 	private static final String NEXT = "(?i)(next)";
 	private static final String TODAY = "(?i)(today)";
-	private static final String TOMORROW = "(?i)(tomorrow|tmr" +
-			")";
+	private static final String TOMORROW = "(?i)(tomorrow|tmr)";
 	private static final String WEEKDAY = "("+NEXT+"[ ])?((?i)(monday|mon|tuesday|tue|wednesday|wed|thursday|thu|friday|fri|saturday|sat|sunday|sun))";
 	private static final String TODAY_TMR_WEEKDAY = "("+TODAY+")|("+TOMORROW+")|("+WEEKDAY+")";
 	
@@ -42,7 +47,7 @@ public class DateParser {
 			+ MONTH_IN_TEXT_DATE_WITHOUT_YEAR + ")|(" + TODAY_TMR_WEEKDAY + "))";
 	
 	/**
-	 * 
+	 * Constructor
 	 */
 	public DateParser() {
 		
@@ -59,14 +64,14 @@ public class DateParser {
 		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
 	}
 	/**
-	 * 
+	 * Resets the local attributes representing dummy date 
 	 */
 	private void resetDummyDate() {
 		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
 	}
-	/**
+	/**fetches the local integer attributes representing start date
 	 * 
-	 * @return
+	 * @return int[]
 	 */
 	public int[] getStartDate() {
 		int[] startDateArr = {-1,-1,-1};
@@ -79,9 +84,9 @@ public class DateParser {
 		
 		return startDateArr;
 	}
-	/**
+	/**fetches the local integer attributes representing end date
 	 * 
-	 * @return
+	 * @return int[]
 	 */
 	public int[] getEndDate() {
 		int[] endDateArr = {-1,-1,-1};
@@ -94,9 +99,9 @@ public class DateParser {
 		
 		return endDateArr;
 	}
-	/**
+	/**Returns the Regular Expression string representing an acceptable date pattern
 	 * 
-	 * @return
+	 * @return String Obj
 	 */
 	public static String getGeneralPattern() {
 		return GENERAL_DATE_PATTERN;
@@ -138,13 +143,13 @@ public class DateParser {
 			logger.debug("no attributes exist!");
 	}
 	*/
-	/**
+	/**Tries to set the local attributes representing start date
 	 * 
-	 * @param startD
-	 * @return
+	 * @param String Obj representing start date
+	 * @return TRUE/FAlSE
 	 */
 	public boolean setStartDate(String startD) {
-		if (startD==null)
+		if (startD==null || startD.isEmpty())
 			return false;
 		
 		if (setMonthInDigitWithYear(startD) || setMonthInTextWithYear(startD) || setMonthInDigitWithoutYear(startD) || setMonthInTextWithoutYear(startD) || setByWeekday(startD)) {
@@ -164,13 +169,13 @@ public class DateParser {
 		//logger.debug("2nd return of setStartDate: false");
 		return false;
 	}
-	/**
+	/**Tries to set the local attributes representing end date
 	 * 
-	 * @param endD
-	 * @return
+	 * @param String Obj representing start date
+	 * @return TRUE/FAlSE
 	 */
 	public boolean setEndDate(String endD) {
-		if (endD==null)
+		if (endD==null || endD.isEmpty())
 			return false;
 		
 		if (setMonthInDigitWithYear(endD) || setMonthInTextWithYear(endD) || setMonthInDigitWithoutYear(endD) || setMonthInTextWithoutYear(endD) || setByWeekday(endD)) {
@@ -190,19 +195,19 @@ public class DateParser {
 		//logger.debug("2nd return of setStartDate: false");
 		return false;
 	}
-	/**
+	/**Validates an input String Date
 	 * 
-	 * @param date
-	 * @return
+	 * @param String Obj representing Date
+	 * @return TRUE/FASLE
 	 */
 	public boolean isValidGeneral(final String date) {
 		matcher = pattern.matcher(date);
 		return matcher.matches();
 	}
-	/**
+	/**Tries to set the local attributes representing Dummy Date based on the Month in Digit with year format
 	 * 
-	 * @param date
-	 * @return
+	 * @param String Obj representing Date
+	 * @return TRUE/FALSE
 	 */
 	private boolean setMonthInDigitWithYear(final String date) {
 		
@@ -226,10 +231,10 @@ public class DateParser {
 		}
 		return false;
 	}
-	/**
+	/**Tries to set the local attributes representing Dummy Date based on the Month in text with year format
 	 * 
-	 * @param date
-	 * @return
+	 * @param String Obj representing Date
+	 * @return TRUE/FALSE
 	 */
 	private boolean setMonthInTextWithYear(final String date) {
 		final String JAN = "(?i)(Jan|January)";
@@ -248,13 +253,13 @@ public class DateParser {
 		matcher2 = pattern2.matcher(date);
 
 		if (matcher2.matches()) {
-			/*
-			for(int i=0; i<matcher2.groupCount(); i++)
-				logger.debug("group "+i+"= "+matcher2.group(i));
-			*/
 			
-			if (matcher2.group(27)!=null && matcher2.group(1)!=null && matcher2.group(29)!=null) {
-				String monthString = matcher2.group(27);
+			//for(int i=0; i<matcher2.groupCount(); i++)
+				//logger.debug("group "+i+"= "+matcher2.group(i));
+			
+			
+			if (matcher2.group(29)!=null && matcher2.group(1)!=null && matcher2.group(31)!=null) {
+				String monthString = matcher2.group(29);
 				String dayString = matcher2.group(1);
 				
 				if (dayString.length()==3)
@@ -263,7 +268,7 @@ public class DateParser {
 					dayString = dayString.substring(0, 2);
 					
 				int dayInt = Integer.parseInt(dayString);
-				int yearInt = Integer.parseInt(matcher2.group(29));
+				int yearInt = Integer.parseInt(matcher2.group(31));
 				int monthInt = -1;
 
 				if (monthString.matches(JAN))		monthInt = 1;
@@ -279,9 +284,9 @@ public class DateParser {
 				if (monthString.matches(NOV))		monthInt = 11;
 				if (monthString.matches(DEC))		monthInt = 12;
 				
-				logger.debug("inputDay= "+dayInt);
-				logger.debug("inputMon= "+monthInt);
-				logger.debug("inputYear= "+yearInt);
+				//logger.debug("inputDay= "+dayInt);
+				//logger.debug("inputMon= "+monthInt);
+				//logger.debug("inputYear= "+yearInt);
 				
 				return setDummyDate(dayInt, monthInt, yearInt);
 			}
@@ -290,10 +295,10 @@ public class DateParser {
 
 		return false;
 	}
-	/**
+	/**Tries to set the local attributes representing Dummy Date based on the Month in Digit without year format
 	 * 
-	 * @param date
-	 * @return
+	 * @param String Obj representing Date
+	 * @return TRUE/FALSE
 	 */
 	private boolean setMonthInDigitWithoutYear(final String date) {
 		matcher3 = pattern3.matcher(date);
@@ -305,8 +310,8 @@ public class DateParser {
 				int dayInt = Integer.parseInt(dayString);
 				int monthInt = Integer.parseInt(monthString);
 				
-				logger.debug("inputDay= "+dayInt);
-				logger.debug("inputMon= "+monthInt);
+				//logger.debug("inputDay= "+dayInt);
+				//logger.debug("inputMon= "+monthInt);
 				
 				return setDummyDate(dayInt, monthInt);
 			}
@@ -314,10 +319,10 @@ public class DateParser {
 
 		return false;
 	}
-	/**
+	/**Tries to set the local attributes representing Dummy Date based on the Month in text without year format
 	 * 
-	 * @param date
-	 * @return
+	 * @param String Obj representing Date
+	 * @return TRUE/FALSE
 	 */
 	private boolean setMonthInTextWithoutYear(final String date) {
 		final String JAN = "(?i)(Jan|January)";
@@ -338,12 +343,12 @@ public class DateParser {
 		if (matcher4.matches()) {
 			
 			for(int i=0; i<matcher4.groupCount(); i++)
-				logger.debug("group "+i+"= "+matcher4.group(i));
+				//logger.debug("group "+i+"= "+matcher4.group(i));
 			
 			
-			if (matcher4.group(1)!=null && matcher4.group(27)!=null) {
+			if (matcher4.group(1)!=null && matcher4.group(29)!=null) {
 				String dayString = matcher4.group(1);
-				String monthString = matcher4.group(27);
+				String monthString = matcher4.group(29);
 				
 				if (dayString.length()==3)
 					dayString = dayString.substring(0, 1);
@@ -366,8 +371,8 @@ public class DateParser {
 				if (monthString.matches(NOV))		monthInt = 11;
 				if (monthString.matches(DEC))		monthInt = 12;
 				
-				logger.debug("inputDay= "+dayInt);
-				logger.debug("inputMon= "+monthInt);
+				//logger.debug("inputDay= "+dayInt);
+				//logger.debug("inputMon= "+monthInt);
 				
 				return setDummyDate(dayInt, monthInt);
 			}
@@ -376,10 +381,10 @@ public class DateParser {
 		
 		return false;
 	}
-	/**
+	/**Tries to set the local attributes representing Dummy Date based on the weekday format
 	 * 
-	 * @param s
-	 * @return
+	 * @param String Obj representing Date
+	 * @return TRUE/FALSE
 	 */
 	private boolean setByWeekday (final String s) {
 		final String MON = "(?i)(mon|monday)";
@@ -407,8 +412,8 @@ public class DateParser {
 			else if (s.matches(WEEKDAY)) {
 				//logger.debug("inside else if statement of setByWeekDay");
 				
-				for (int i=0; i<matcher5.groupCount(); i++)
-					logger.debug("group "+i+": "+matcher5.group(i));
+				//for (int i=0; i<matcher5.groupCount(); i++)
+					//logger.debug("group "+i+": "+matcher5.group(i));
 				
 				String nextString = matcher5.group(6);
 				String inputWeekString = matcher5.group(8);
@@ -447,11 +452,11 @@ public class DateParser {
 		return false;
 		
 	}
-	/**
+	/**Tries to set the dummy date based on the integer parameters
 	 * 
-	 * @param dayInt
-	 * @param monthInt
-	 * @return
+	 * @param integer Day
+	 * @param integer Mon
+	 * @return TRUE/FALSE
 	 */
 	private boolean setDummyDate (int dayInt, int monthInt) {
 		GregorianCalendar calen = new GregorianCalendar();
@@ -492,12 +497,12 @@ public class DateParser {
 		
 		return true;
 	}
-	/**
+	/**Tries to set the dummy date based on the integer parameters
 	 * 
-	 * @param dayInt
-	 * @param monthInt
-	 * @param yearInt
-	 * @return
+	 * @param integer Day
+	 * @param integer Mon
+	 * @param integer year
+	 * @return TRUE/FALSE
 	 */
 	private boolean setDummyDate (int dayInt, int monthInt, int yearInt) {
 		if (dayInt == 31 && ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
@@ -521,18 +526,19 @@ public class DateParser {
 		dummyYear=yearInt;
 		return true;
 	}
-	/**
+	/**Tries to set the dummy date based on the GregorianCalendar Obj as parameter
 	 * 
-	 * @param c
+	 * @param GregorianCalendar Obj
+	 * @return TRUE/FALSE
 	 */
 	private void setDummyDate (GregorianCalendar c) {
 		dummyDay = c.get(GregorianCalendar.DATE);
 		dummyMonth = c.get(GregorianCalendar.MONTH) + 1 ;
 		dummyYear = c.get(GregorianCalendar.YEAR);
 
-		logger.debug("dummyDay:"+dummyDay);
-		logger.debug("dummyMonth:"+dummyMonth);
-		logger.debug("dummyYear:"+dummyYear);
+		//logger.debug("dummyDay:"+dummyDay);
+		//logger.debug("dummyMonth:"+dummyMonth);
+		//logger.debug("dummyYear:"+dummyYear);
 	}
 
 }

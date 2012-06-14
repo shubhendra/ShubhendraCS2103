@@ -1,12 +1,15 @@
 package gui.mainWindow.extended;
 
+
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.text.*;
 
+import org.apache.log4j.Logger;
+
 /**
  * auto completion textbox
- * (Still incomplete)
+ * (will implement autocompletion in V0.3)
  * @author Ramon
  *
  */
@@ -14,8 +17,7 @@ public class AutoCompletion extends PlainDocument {
     JComboBox comboBox;
     ComboBoxModel model;
     JTextComponent editor;
-    // flag to indicate if setSelectedItem has been called
-    // subsequent calls to remove/insertString should be ignored
+    
     boolean working = true;
     boolean selecting=false;
     boolean hidePopupOnFocusLoss;
@@ -23,10 +25,9 @@ public class AutoCompletion extends PlainDocument {
     boolean hitBackspaceOnSelection;
     boolean popupAllow = false;
     int index;
-    /*String[] standardCommand = new String[] {"add", "modify", "delete", "search"
-    										, "completed", "achive", "overdue", "exit"};
-    										*/
     String[] standardCommand = new String[]{};
+    
+	private static Logger logger=Logger.getLogger(AutoCompletion.class);
     
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
@@ -231,6 +232,7 @@ public class AutoCompletion extends PlainDocument {
             super.remove(0, getLength());
             super.insertString(0, text, null);
         } catch (BadLocationException e) {
+        	logger.error("BadLocationException");
             throw new RuntimeException(e.toString());
         }
     }

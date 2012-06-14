@@ -21,7 +21,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012235959M__$$</string>
+   <string>$$__14-06-2012235959Q__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -51,34 +51,13 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012150000C__$$</string>
+   <string>$$__14-06-2012150000L__$$</string>
   </void>
  </object>
  <object class="data.Task">
-  <void property="name">
-   <string>&apos;2pm&apos; from school</string>
+  <void property="completed">
+   <boolean>true</boolean>
   </void>
-  <void property="recurring">
-   <null/>
-  </void>
-  <void property="start">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339664400000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__14-06-2012170000E__$$</string>
-  </void>
- </object>
- <object class="data.Task">
   <void property="name">
    <string>go to &apos;July 2000&apos; &apos;int&apos;</string>
   </void>
@@ -99,7 +78,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__13-06-2012200000X__$$</string>
+   <string>$$__13-06-2012200000Q__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -126,7 +105,31 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2011150000N__$$</string>
+   <string>$$__14-06-2011150000D__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="name">
+   <string>&apos;2pm&apos; from school</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339664400000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012170000N__$$</string>
   </void>
  </object>
 </java>

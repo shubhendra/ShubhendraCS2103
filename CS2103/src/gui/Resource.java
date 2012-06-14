@@ -11,7 +11,15 @@ import java.net.URL;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
+import org.apache.log4j.Logger;
+
+/**
+ * This class for managing every image constant and other constants
+ * @author Ramon
+ *
+ */
 public class Resource {
+	private static Logger logger=Logger.getLogger(Resource.class);
 	
     public final static ImageIcon bigLogo = createImageIcon("images/logo.png","");
 	public final static ImageIcon exitImg = createImageIcon("images/exit_.png","");
@@ -59,6 +67,12 @@ public class Resource {
 	public final static URL alarmSoundURL = Resource.class.getResource("alarm.wav");
 	//public final static BufferedImage backgroundBuffered = BufferedImageBuilder.bufferImage(backgroundImage);
 	
+	
+	/**
+	 * change icon to image
+	 * @param icon
+	 * @return image from icon
+	 */
 	static Image iconToImage(Icon icon) {
         if (icon instanceof ImageIcon) {
             return ((ImageIcon)icon).getImage();
@@ -77,13 +91,19 @@ public class Resource {
         }
     }
 	
+	/**
+	 * create an image icon from path
+	 * @param path to the image location
+	 * @param description description of the image
+	 * @return imageicon with an image from the path
+	 */
     protected static ImageIcon createImageIcon(String path,
             String description) {
 		java.net.URL imgURL = Resource.class.getResource(path);
 		if (imgURL != null) {
 			return new ImageIcon(imgURL, description);
 		} else {
-			System.err.println("Couldn't find file: " + path);
+			logger.error("Couldn't find file: " + path);
 			return null;
 		}
     }

@@ -30,7 +30,6 @@ import javax.swing.UIManager;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -48,7 +47,7 @@ import javax.swing.JTextField;
 import constant.OperationFeedback;
 
 /**
- * Main Window
+ * Main Window that interacts with users.
  * @author Ramon
  */
 public class MainJFrame extends javax.swing.JFrame {
@@ -728,7 +727,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * @param str text in pop up
 	 */
 	public static void showPopup(String str) {
-		logger.debug("-----------------POPUP-----------------------");
+		logger.debug("POPUP: "+ str);
 		TopPopUp.setText(str);
 		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
 		TopPopUp.showBox();

@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 
 /**
- * showing user manual
+ * showing help beside the main window
  * @author Ramon
  *
  */
@@ -43,12 +43,12 @@ public class HelpFrame extends JFrame{
         setAlwaysOnTop(true);
         setIconImages(null);
         
-        /*
+        
         exitLabel.setIcon(Resource.exitImg);
-        exitLabel.setBounds(165, 5, 20, 20);
+        exitLabel.setBounds(175, 20, 20, 20);
         exitLabel.addMouseListener(new ExitListener());
         jLayeredPane.add(exitLabel, JLayeredPane.DEFAULT_LAYER);
-        */
+        
         
         bgLabel.setIcon(Resource.helpBG);
         bgLabel.setBounds(0, 0, 200, 300);
