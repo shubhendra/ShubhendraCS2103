@@ -128,11 +128,12 @@ public class JIDLogic {
 		return command;
 	}
 	
+	private final static int TIME_FOR_AUTOSAVE = 2 * 60 * 1000;
 	/**
 	 * runs a timer to automatically save the files every 10 minutes
 	 */
 	public static void startAutoSave() {
-		Timer timer = new Timer(10*60*1000, new ActionListener(){
+		Timer timer = new Timer(TIME_FOR_AUTOSAVE, new ActionListener(){
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {

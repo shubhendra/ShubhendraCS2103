@@ -42,7 +42,7 @@ public class AgendaEmail extends Operation{
 		}
 		
 		
-		Thread mailThread = new Thread(new Agenda(18,23,0, email));
+		Thread mailThread = new Thread(new Agenda(3,30,0, email));
 		StorageManager.saveEmailId(email);
 		mailThread.run();
 		return null;

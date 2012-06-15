@@ -95,3 +95,65 @@
 2012-06-16 02:08:58,842 - operation.Operation - INFO - canceledit
 2012-06-16 02:08:58,849 - operation.Operation - INFO - find *.*
 2012-06-16 02:08:58,853 - operation.Operation - INFO - find *.*
+2012-06-16 02:49:53,360 - operation.Operation - INFO - find *.*
+2012-06-16 02:49:53,996 - operation.Operation - INFO - find *.*
+2012-06-16 02:49:54,024 - operation.Operation - INFO - canceledit
+2012-06-16 02:49:54,080 - operation.Operation - INFO - find *.*
+2012-06-16 02:49:54,082 - operation.Operation - INFO - find *.*
+2012-06-16 02:50:26,010 - operation.Operation - INFO - find *.*
+2012-06-16 02:50:26,186 - operation.Operation - INFO - canceledit
+2012-06-16 02:50:26,219 - operation.Operation - INFO - find *.*
+2012-06-16 02:50:26,222 - operation.Operation - INFO - find *.*
+2012-06-16 02:50:26,616 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:19,580 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:19,754 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:19,786 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:19,792 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:19,872 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:23,448 - gui.STATE - WARN - receive null string from the input
+2012-06-16 02:56:23,621 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:23,660 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:23,663 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:23,675 - gui.STATE - WARN - receive null string from the input
+2012-06-16 02:56:25,970 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959Q__$$ 
+2012-06-16 02:56:26,028 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:26,036 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:26,039 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:26,040 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:26,049 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:26,055 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:28,475 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959Q__$$ $$__17-06-2012100000V__$$ $$__17-06-2012150000U__$$ $$__17-06-2012170000G__$$ 
+2012-06-16 02:56:28,479 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:28,486 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:28,489 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:28,490 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:28,498 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:28,501 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:32,993 - operation.Operation - INFO - ARCHIVE
+2012-06-16 02:56:33,000 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:33,020 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:33,022 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:33,023 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-16 02:56:38,159 - operation.Operation - INFO - IMPORTGCAL
+2012-06-16 02:56:38,184 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:38,191 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:38,193 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:38,193 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-16 02:56:39,430 - operation.Operation - INFO - EXPORTGCAL
+2012-06-16 02:56:39,432 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:39,440 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:39,441 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:39,442 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-16 02:56:46,949 - operation.Operation - INFO - IMPORTARCHIVE
+2012-06-16 02:56:46,968 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:46,975 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:46,978 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:50,897 - operation.Operation - INFO - ARCHIVE
+2012-06-16 02:56:50,901 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:50,913 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:50,914 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:50,915 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-16 02:56:52,780 - operation.Operation - INFO - IMPORTARCHIVE
+2012-06-16 02:56:52,785 - operation.Operation - INFO - canceledit
+2012-06-16 02:56:52,791 - operation.Operation - INFO - find *.*
+2012-06-16 02:56:52,793 - operation.Operation - INFO - find *.*

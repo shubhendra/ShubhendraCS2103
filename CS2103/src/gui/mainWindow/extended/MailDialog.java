@@ -155,6 +155,7 @@ public class MailDialog extends javax.swing.JDialog {
     		noticeLabel.setVisible(true);    		
     	}
     	else {
+    		this.setVisible(false);
     		this.dispose();
     	}
     }
@@ -181,30 +182,7 @@ public class MailDialog extends javax.swing.JDialog {
     }
     
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
 
-        setLook();
-        /*
-         * Create and display the dialog
-         */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-
-            public void run() {
-                MailDialog dialog = new MailDialog(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-            }
-        });
-    }
-    
     
     // Variables declaration - do not modify
     private javax.swing.JLabel background;
