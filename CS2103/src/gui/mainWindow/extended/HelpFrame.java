@@ -51,11 +51,11 @@ public class HelpFrame extends JFrame{
         
         
         bgLabel.setIcon(Resource.helpBG);
-        bgLabel.setBounds(0, 0, 200, 300);
+        bgLabel.setBounds(0, 0, 200, 433);
         jLayeredPane.add(bgLabel, JLayeredPane.DEFAULT_LAYER);
         
         this.add(jLayeredPane);
-        this.setSize(200,300);
+        this.setSize(200, 433);
 	}
 	
 	private static JLayeredPane jLayeredPane;
@@ -122,7 +122,7 @@ public class HelpFrame extends JFrame{
 	 * set position according to mainJFrame direction.
 	 */
 	public static void setPosition() {
-		helpFrame.setLocation(MainJFrame.currentLocation.x + 410, MainJFrame.currentLocation.y-10);
+		helpFrame.setLocation(MainJFrame.currentLocation.x + 410, MainJFrame.currentLocation.y-30);
 	}
 	
 	/**
@@ -142,7 +142,7 @@ public class HelpFrame extends JFrame{
 
 		@Override
 		public void mouseClicked(MouseEvent arg0) {
-			HelpFrame.this.setVisible(false);
+			HelpFrame.this.hideHelp();
 		}
 
 		@Override
