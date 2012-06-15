@@ -1461,9 +1461,7 @@ public class Parser {
 		else
 			;//logger.debug("it is not recurring");
 		
-		logger.debug("task details: "+taskDetails);
-		logger.debug("startdate: "+startDateTime.formattedToString());
-		logger.debug("enddate: "+endDateTime.formattedToString());
+		
 	}
 	/**Validates an email address format
 	 * 

@@ -46,7 +46,7 @@ public class BaseSearch extends Operation{
 				Task t = StorageManager.getTaskById(extractedTaskIds[i]);
 				
 				Task[] result;
-				if (!commandName.contains(".all")){
+				if (!commandName.contains("all")){
 					result = execute(t);
 				} else {
 					result = executeAll(t);

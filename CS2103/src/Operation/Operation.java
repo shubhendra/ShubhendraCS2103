@@ -46,7 +46,7 @@ public abstract class Operation {
 			object = new Add(intendedOperation);
 			}
 		else if (intendedOperation.equals("delete") || intendedOperation.equals("remove") || 
-				intendedOperation.equals("delete.all")){
+				intendedOperation.equals("delete.all") || intendedOperation.equals("deleteall")){
 			object = new Delete(intendedOperation);
 		}
 		else if (intendedOperation.equals("modify") || intendedOperation.equals("update") || 
@@ -57,32 +57,32 @@ public abstract class Operation {
 			object = new Search(intendedOperation);
 		}
 		else if (intendedOperation.equals("completed") || intendedOperation.equals("done") ||
-				intendedOperation.equals("completed.all")){
+				intendedOperation.equals("completed.all") || intendedOperation.equals("completedall")){
 			object = new ToggleCompleted(intendedOperation);
 		}
 		else if(intendedOperation.equals("star") || intendedOperation.equals("important") ||
-				intendedOperation.equals("star.all")){ 
+				intendedOperation.equals("star.all") || intendedOperation.equals("starall")){ 
 			object = new ToggleImportant(intendedOperation);
 		}
 		else if (intendedOperation.equals("archive") || intendedOperation.equals("clear.archive") ||
-				intendedOperation.equals("import.archive")){
+				intendedOperation.equals("import.archive") || intendedOperation.equals("cleararchive") 
+				|| intendedOperation.equals("importarchive")){
 			object = new Archive(intendedOperation);
 		}
 		else if (intendedOperation.equals("overdue")){
 			object = new Overdue(intendedOperation);
 		}
-		else if (intendedOperation.equals("check.free")){
+		else if (intendedOperation.equals("check.free") || intendedOperation.equals("checkfree")){
 			object = new CheckFree(intendedOperation);
 		}
 		else if (intendedOperation.equals("agendaemail")){
 			object = new AgendaEmail();
 		}
-		else if (intendedOperation.equals("upcoming")){
-			object = new Upcoming();
-		}
 		else if (intendedOperation.equals("login") || intendedOperation.equals("logout") ||
 				intendedOperation.equals("sync.gcal") || intendedOperation.equals("import.gcal") ||
-				intendedOperation.equals("export.gcal")) {
+				intendedOperation.equals("export.gcal") || intendedOperation.equals("syncgcal") || 
+				intendedOperation.equals("importgcal") ||
+				intendedOperation.equals("exportgcal")) {
 			object = new GoogleCalendarOp();
 		}
 		else {

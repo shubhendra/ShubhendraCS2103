@@ -129,11 +129,13 @@ public class Archive extends Operation{
 			archiveCommand = archiveStatus.ARCHIVE;
 			return archiveTasks();
 		}
-		else if(userCommand.toLowerCase().trim().contains("clear.archive")){
+		else if(userCommand.toLowerCase().trim().contains("clear.archive")
+				|| userCommand.toLowerCase().trim().contains("cleararchive")){
 			archiveCommand = archiveStatus.CLEAR_ARCHIVE;
 			return clearArchive();
 		}
-		else if(userCommand.toLowerCase().trim().contains("import.archive")){
+		else if(userCommand.toLowerCase().trim().contains("import.archive") ||
+				userCommand.toLowerCase().trim().contains("importarchive")){
 			archiveCommand = archiveStatus.IMPORT_ARCHIVE;
 		
 			return importArchive();

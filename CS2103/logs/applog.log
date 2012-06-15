@@ -221,3 +221,1112 @@
 2012-06-15 13:57:17,708 - logic.JIDLogic - INFO - Undo being performed for:delete
 2012-06-15 13:57:26,719 - operation.Operation - INFO - find *.*
 2012-06-15 13:57:26,724 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:12,202 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:12,337 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:12,342 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:12,852 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:19,068 - operation.Operation - INFO - DELETE $$__13-06-2012070001N__$$ 
+2012-06-15 14:27:19,119 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:19,124 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:20,204 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 14:27:48,405 - operation.Operation - INFO - DELETE $$__14-06-2012150000Z__$$ 
+2012-06-15 14:27:48,426 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:48,431 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:50,046 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 14:27:55,792 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:55,792 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:59,813 - operation.Operation - INFO - DELETE $$__13-06-2012070001M__$$ 
+2012-06-15 14:27:59,829 - operation.Operation - INFO - find *.*
+2012-06-15 14:27:59,839 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:00,879 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:00,879 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:03,055 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:03,451 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 14:28:03,451 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:03,756 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:04,211 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:04,211 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:04,216 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:36,885 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:37,065 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:37,070 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:37,585 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:39,286 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:39,767 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:39,787 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:28:43,752 - operation.Operation - INFO - DELETE $$__13-06-2012070001X__$$ 
+2012-06-15 14:28:43,798 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:43,803 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:45,073 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 14:28:45,073 - gui.UIController - WARN - UNDO: no operationfeedback sent!
+2012-06-15 14:28:45,073 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:45,078 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:50,679 - operation.Operation - INFO - DELETE $$__13-06-2012070001A__$$ 
+2012-06-15 14:28:50,695 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:50,700 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:53,930 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 14:28:53,935 - gui.UIController - WARN - UNDO: no operationfeedback sent!
+2012-06-15 14:28:53,935 - operation.Operation - INFO - find *.*
+2012-06-15 14:28:53,935 - operation.Operation - INFO - find *.*
+2012-06-15 14:29:46,227 - operation.Operation - INFO - find *.*
+2012-06-15 14:29:46,517 - operation.Operation - INFO - find *.*
+2012-06-15 14:30:09,288 - operation.Operation - INFO - agendaEmail 
+2012-06-15 14:30:27,934 - operation.Operation - INFO - agendaEmail shubhendra.ag@gmail.com
+2012-06-15 14:30:27,985 - operation.Operation - INFO - find *.*
+2012-06-15 14:30:27,985 - operation.Operation - INFO - find *.*
+2012-06-15 14:30:37,045 - operation.Operation - INFO - add drink water tmr @work
+2012-06-15 14:30:37,151 - operation.Operation - INFO - find *.*
+2012-06-15 14:30:37,156 - operation.Operation - INFO - find *.*
+2012-06-15 14:31:05,971 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:31:06,462 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:31:06,737 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:31:07,787 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:31:11,239 - operation.Operation - INFO - search H
+2012-06-15 14:31:11,540 - operation.Operation - INFO - search HO
+2012-06-15 14:31:11,830 - operation.Operation - INFO - search HOM
+2012-06-15 14:31:12,035 - operation.Operation - INFO - search HOM
+2012-06-15 14:31:12,395 - operation.Operation - INFO - search HOMEW
+2012-06-15 14:31:12,602 - operation.Operation - INFO - search HOMEW
+2012-06-15 14:31:12,962 - operation.Operation - INFO - search HOMEW
+2012-06-15 14:31:13,142 - operation.Operation - INFO - search HOME
+2012-06-15 14:31:13,312 - operation.Operation - INFO - search HOM
+2012-06-15 14:31:13,802 - operation.Operation - INFO - search HO
+2012-06-15 14:31:14,073 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:31:14,103 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:31:14,153 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:33:07,162 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:07,307 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:07,312 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:07,698 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:18,083 - operation.Operation - INFO - add aaa @aaa tmr
+2012-06-15 14:33:18,179 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:18,184 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:23,664 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:33:32,505 - operation.Operation - INFO - add aaaa tmr @work @PLAY
+2012-06-15 14:33:32,545 - operation.Operation - INFO - find *.*
+2012-06-15 14:33:32,551 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:08,316 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:08,446 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:08,451 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:08,846 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:19,077 - operation.Operation - INFO - add aa @a @b tmr
+2012-06-15 14:34:19,175 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:19,180 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:25,615 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:34:34,006 - operation.Operation - INFO - add aa @a @work tmr
+2012-06-15 14:34:34,027 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:34,032 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:54,163 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:54,293 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:54,298 - operation.Operation - INFO - find *.*
+2012-06-15 14:34:54,733 - operation.Operation - INFO - find *.*
+2012-06-15 14:35:01,544 - operation.Operation - INFO - add a @a @b tmr
+2012-06-15 14:35:01,642 - operation.Operation - INFO - find *.*
+2012-06-15 14:35:01,647 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:15,711 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:15,871 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:15,871 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:16,642 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:32,130 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:32,255 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:32,260 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:32,675 - operation.Operation - INFO - find *.*
+2012-06-15 14:36:47,833 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:04,937 - operation.Operation - INFO - add tmr @worl @worl @worl @worl @worl @worl @worl @worl @worl
+2012-06-15 14:37:04,978 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:04,983 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:10,448 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,479 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,509 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,549 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,579 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,604 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,639 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,667 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:10,752 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:18,824 - operation.Operation - INFO - add ggggg tmr @worl @worl @worl @worl @worl @worl @worl @worl @worl
+2012-06-15 14:37:18,850 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:18,850 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:26,780 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:26,940 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:27,500 - gui.STATE - WARN - receive null string from the input
+2012-06-15 14:37:42,830 - operation.Operation - INFO - add ggggg tmr @worl @worl @worl @worl @worl @worl @worl @worlworl @worlworl@worlworvv@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworl@worlworlvl
+2012-06-15 14:37:42,860 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:42,866 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:52,956 - operation.Operation - INFO - IMPORTANT $$__16-06-2012235959H__$$
+2012-06-15 14:37:52,961 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:53,597 - operation.Operation - INFO - IMPORTANT $$__16-06-2012235959H__$$
+2012-06-15 14:37:53,597 - operation.Operation - INFO - find *.*
+2012-06-15 14:37:59,067 - operation.Operation - INFO - IMPORTANT $$__16-06-2012235959H__$$
+2012-06-15 14:37:59,072 - operation.Operation - INFO - find *.*
+2012-06-15 14:38:02,893 - operation.Operation - INFO - IMPORTANT $$__16-06-2012235959H__$$
+2012-06-15 14:38:02,898 - operation.Operation - INFO - find *.*
+2012-06-15 14:39:55,164 - operation.Operation - INFO - find *.*
+2012-06-15 14:39:55,299 - operation.Operation - INFO - find *.*
+2012-06-15 14:39:55,304 - operation.Operation - INFO - find *.*
+2012-06-15 14:39:55,823 - operation.Operation - INFO - find *.*
+2012-06-15 14:40:28,559 - operation.Operation - INFO - add dgsh tmr @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg  @wghwg  @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg
+2012-06-15 14:40:28,680 - operation.Operation - INFO - find *.*
+2012-06-15 14:40:28,680 - operation.Operation - INFO - find *.*
+2012-06-15 14:40:48,999 - operation.Operation - INFO - find *.*
+2012-06-15 14:40:49,156 - operation.Operation - INFO - find *.*
+2012-06-15 14:40:49,161 - operation.Operation - INFO - find *.*
+2012-06-15 14:40:49,636 - operation.Operation - INFO - find *.*
+2012-06-15 14:41:00,907 - operation.Operation - INFO - add abc tmr @wghwg  @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg @wghwg
+2012-06-15 14:41:01,033 - operation.Operation - INFO - find *.*
+2012-06-15 14:41:01,038 - operation.Operation - INFO - find *.*
+2012-06-15 14:43:17,460 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:43:29,037 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:43:32,826 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:43:46,116 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:43:51,372 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:44:18,489 - operation.Operation - INFO - agendaEmail aa
+2012-06-15 14:44:26,351 - operation.Operation - INFO - agendaEmail aa
+2012-06-15 14:45:37,769 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:45:49,865 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:45:52,291 - operation.Operation - INFO - agendaEmail aaa
+2012-06-15 14:46:50,408 - operation.Operation - INFO - agendaEmail asdf
+2012-06-15 14:46:55,598 - operation.Operation - INFO - agendaEmail 
+2012-06-15 14:47:10,794 - operation.Operation - INFO - agendaEmail ramon@dgfg.com
+2012-06-15 14:47:36,710 - operation.Operation - INFO - find *.*
+2012-06-15 14:47:36,890 - operation.Operation - INFO - find *.*
+2012-06-15 14:47:36,890 - operation.Operation - INFO - find *.*
+2012-06-15 14:47:37,391 - operation.Operation - INFO - find *.*
+2012-06-15 14:48:54,065 - operation.Operation - INFO - add ghsdfhsdkjfhdskj nhsdkfsndkj sdfhndskjfdsn dfhsdkf fsdfnhsk dfkdsnfskld tmr
+2012-06-15 14:48:54,201 - operation.Operation - INFO - find *.*
+2012-06-15 14:48:54,206 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:09,549 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:09,689 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:09,692 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:10,108 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:45,227 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:45,387 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:45,387 - operation.Operation - INFO - find *.*
+2012-06-15 14:52:45,911 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:24,190 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:24,330 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:24,330 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:24,736 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:31,195 - operation.Operation - INFO - DELETE $$__13-06-2012070001P__$$ 
+2012-06-15 15:01:31,243 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:31,259 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:32,678 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 15:01:32,678 - gui.UIController - WARN - UNDO: no operationfeedback sent!
+2012-06-15 15:01:32,678 - operation.Operation - INFO - find *.*
+2012-06-15 15:01:32,678 - operation.Operation - INFO - find *.*
+2012-06-15 15:02:11,555 - operation.Operation - INFO - DELETE $$__13-06-2012070001M__$$ 
+2012-06-15 15:02:11,570 - operation.Operation - INFO - find *.*
+2012-06-15 15:02:11,570 - operation.Operation - INFO - find *.*
+2012-06-15 15:02:13,287 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 15:02:13,287 - gui.UIController - WARN - UNDO: no operationfeedback sent!
+2012-06-15 15:02:13,303 - operation.Operation - INFO - find *.*
+2012-06-15 15:02:13,303 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:23,577 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:23,703 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:23,719 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:24,468 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:44,140 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:44,281 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:44,281 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:44,827 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:51,083 - operation.Operation - INFO - DELETE $$__13-06-2012070001E__$$ 
+2012-06-15 15:05:51,150 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:51,150 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:52,273 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 15:05:52,273 - operation.Operation - INFO - find *.*
+2012-06-15 15:05:52,273 - operation.Operation - INFO - find *.*
+2012-06-15 15:06:36,308 - operation.Operation - INFO - find *.*
+2012-06-15 15:06:36,308 - operation.Operation - INFO - find *.*
+2012-06-15 15:07:49,146 - operation.Operation - INFO - find *.*
+2012-06-15 15:07:49,296 - operation.Operation - INFO - find *.*
+2012-06-15 15:07:49,311 - operation.Operation - INFO - find *.*
+2012-06-15 15:07:50,544 - operation.Operation - INFO - find *.*
+2012-06-15 15:07:51,059 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:07:51,481 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:01,792 - gcal.GoogleCalendar - WARN - Authentication Exception
+2012-06-15 15:08:01,808 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:01,808 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:03,384 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:03,869 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:03,900 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:03,931 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:03,963 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,025 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,025 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,056 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,103 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,119 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,150 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,228 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,228 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,243 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,275 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,306 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:04,321 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:05,211 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:05,695 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:05,742 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:28,594 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:08:28,609 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:28,609 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:32,419 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:32,654 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,153 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,184 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,200 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,231 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,262 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,293 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,324 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,371 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,402 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,434 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,449 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,497 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,513 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,544 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,575 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,606 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,637 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,669 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:33,700 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:08:43,060 - gui.mainWindow.MainJFrame - WARN - default execmd: sync.gcal
+2012-06-15 15:08:43,060 - operation.Operation - INFO - sync.gcal
+2012-06-15 15:08:43,076 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:43,091 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:52,405 - operation.Operation - INFO - DELETE $$__13-06-2012070001M__$$ $$__14-06-2012150000B__$$ $$__16-06-2012000000V__$$ $$__15-06-2012170000I__$$ $$__16-06-2012130000O__$$ $$__16-06-2012235959S__$$ $$__16-06-2012235959V__$$ $$__03-07-2012170000Y__$$ $$__05-07-2012235959N__$$ 
+2012-06-15 15:08:52,421 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:52,421 - operation.Operation - INFO - find *.*
+2012-06-15 15:08:52,421 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:09:01,704 - gui.mainWindow.MainJFrame - WARN - default execmd: import.gcal
+2012-06-15 15:09:01,720 - operation.Operation - INFO - import.gcal
+2012-06-15 15:09:02,220 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:02,220 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:10,862 - operation.Operation - INFO - add go home tmr
+2012-06-15 15:09:10,909 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:10,925 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:16,231 - gui.mainWindow.MainJFrame - WARN - default execmd: export.gcal
+2012-06-15 15:09:16,231 - operation.Operation - INFO - export.gcal
+2012-06-15 15:09:18,478 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:18,478 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:22,457 - gui.mainWindow.MainJFrame - WARN - default execmd: sync.gcal
+2012-06-15 15:09:22,457 - operation.Operation - INFO - sync.gcal
+2012-06-15 15:09:22,473 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:22,473 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:32,489 - operation.Operation - INFO - DELETE $$__13-06-2012070001N__$$ $$__14-06-2012150000C__$$ $$__16-06-2012000000P__$$ $$__15-06-2012170000S__$$ $$__17-06-2012000000M__$$ $$__17-06-2012000000G__$$ $$__16-06-2012130000D__$$ 
+2012-06-15 15:09:32,489 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:32,504 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:37,856 - gui.mainWindow.MainJFrame - WARN - default execmd: sync.gcal
+2012-06-15 15:09:37,856 - operation.Operation - INFO - sync.gcal
+2012-06-15 15:09:37,872 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:37,872 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:47,998 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:09:48,420 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 15:09:48,436 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:48,436 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:48,436 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:09:52,648 - gui.mainWindow.MainJFrame - WARN - default execmd: sync.gcal
+2012-06-15 15:09:52,664 - operation.Operation - INFO - sync.gcal
+2012-06-15 15:09:52,664 - operation.Operation - INFO - find *.*
+2012-06-15 15:09:52,664 - operation.Operation - INFO - find *.*
+2012-06-15 15:13:22,597 - operation.Operation - INFO - find *.*
+2012-06-15 15:13:22,769 - operation.Operation - INFO - find *.*
+2012-06-15 15:13:22,769 - operation.Operation - INFO - find *.*
+2012-06-15 15:13:23,222 - operation.Operation - INFO - find *.*
+2012-06-15 15:13:24,252 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:13:24,814 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:13:36,296 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:13:36,344 - operation.Operation - INFO - find *.*
+2012-06-15 15:13:36,344 - operation.Operation - INFO - find *.*
+2012-06-15 15:14:57,005 - operation.Operation - INFO - find *.*
+2012-06-15 15:14:57,129 - operation.Operation - INFO - find *.*
+2012-06-15 15:14:57,129 - operation.Operation - INFO - find *.*
+2012-06-15 15:14:57,831 - operation.Operation - INFO - find *.*
+2012-06-15 15:14:57,910 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:14:58,472 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:15:08,128 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:15:10,157 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:15:10,190 - operation.Operation - INFO - find *.*
+2012-06-15 15:15:10,205 - operation.Operation - INFO - find *.*
+2012-06-15 15:16:25,307 - operation.Operation - INFO - find *.*
+2012-06-15 15:16:25,511 - operation.Operation - INFO - find *.*
+2012-06-15 15:16:25,511 - operation.Operation - INFO - find *.*
+2012-06-15 15:16:26,228 - operation.Operation - INFO - find *.*
+2012-06-15 15:16:27,242 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:16:27,524 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:16:37,399 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:16:39,459 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:16:39,507 - operation.Operation - INFO - find *.*
+2012-06-15 15:16:39,507 - operation.Operation - INFO - find *.*
+2012-06-15 15:18:57,306 - operation.Operation - INFO - find *.*
+2012-06-15 15:18:57,493 - operation.Operation - INFO - find *.*
+2012-06-15 15:18:57,493 - operation.Operation - INFO - find *.*
+2012-06-15 15:18:58,196 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:11,816 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:19:13,347 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:13,347 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:27,817 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:27,957 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:27,957 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:28,722 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:32,669 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,154 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,185 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,216 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,248 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,279 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,310 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,341 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,372 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,404 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,435 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:33,653 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:34,277 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:34,543 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:35,027 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:35,058 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:35,183 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:19:41,127 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:19:43,062 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:19:43,093 - operation.Operation - INFO - find *.*
+2012-06-15 15:19:43,109 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:08,206 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:08,862 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:08,862 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:08,893 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:09,892 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:20:10,330 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:20:10,501 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:20:15,025 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:20:17,413 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:20:17,445 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:17,461 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:31,642 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:31,815 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:31,830 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:32,314 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:32,486 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:20:32,688 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:20:45,654 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:46,076 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:46,092 - operation.Operation - INFO - find *.*
+2012-06-15 15:20:46,092 - operation.Operation - INFO - find *.*
+2012-06-15 15:24:31,498 - operation.Operation - INFO - find *.*
+2012-06-15 15:24:31,639 - operation.Operation - INFO - find *.*
+2012-06-15 15:24:31,639 - operation.Operation - INFO - find *.*
+2012-06-15 15:24:32,310 - operation.Operation - INFO - find *.*
+2012-06-15 15:24:32,450 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:24:32,732 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:24:37,697 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:24:39,147 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:24:39,180 - operation.Operation - INFO - find *.*
+2012-06-15 15:24:39,195 - operation.Operation - INFO - find *.*
+2012-06-15 15:25:15,887 - operation.Operation - INFO - find *.*
+2012-06-15 15:25:16,154 - operation.Operation - INFO - find *.*
+2012-06-15 15:25:16,154 - operation.Operation - INFO - find *.*
+2012-06-15 15:25:16,232 - operation.Operation - INFO - find *.*
+2012-06-15 15:25:21,879 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:25:22,098 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:26:21,756 - operation.Operation - INFO - find *.*
+2012-06-15 15:26:21,897 - operation.Operation - INFO - find *.*
+2012-06-15 15:26:21,929 - operation.Operation - INFO - find *.*
+2012-06-15 15:26:22,444 - operation.Operation - INFO - find *.*
+2012-06-15 15:26:22,912 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:26:23,100 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:27:36,904 - operation.Operation - INFO - find *.*
+2012-06-15 15:27:37,032 - operation.Operation - INFO - find *.*
+2012-06-15 15:27:37,032 - operation.Operation - INFO - find *.*
+2012-06-15 15:27:37,469 - operation.Operation - INFO - find *.*
+2012-06-15 15:27:38,779 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:27:39,233 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:29:21,071 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:21,322 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:21,337 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:21,805 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:22,476 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:29:22,742 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:29:46,316 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:46,863 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:46,863 - operation.Operation - INFO - find *.*
+2012-06-15 15:29:46,910 - operation.Operation - INFO - find *.*
+2012-06-15 15:30:46,317 - operation.Operation - INFO - find *.*
+2012-06-15 15:30:46,707 - operation.Operation - INFO - find *.*
+2012-06-15 15:30:46,707 - operation.Operation - INFO - find *.*
+2012-06-15 15:30:46,739 - operation.Operation - INFO - find *.*
+2012-06-15 15:30:48,159 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:30:48,597 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:30:56,974 - operation.Operation - INFO - login jid.troubleshoot jotitdown
+2012-06-15 15:30:58,909 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:30:58,957 - operation.Operation - INFO - find *.*
+2012-06-15 15:30:58,988 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:13,857 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:14,030 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:14,046 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:14,467 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:42,704 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:42,986 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:42,986 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:43,048 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:44,265 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,765 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,781 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,812 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,843 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,874 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,905 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,937 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,968 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:44,999 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:45,030 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:45,061 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:45,139 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:52,362 - operation.Operation - INFO - login shubhendra 
+2012-06-15 15:31:52,426 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:52,441 - operation.Operation - INFO - find *.*
+2012-06-15 15:31:56,497 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:31:56,779 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:32:23,098 - operation.Operation - INFO - find *.*
+2012-06-15 15:32:23,285 - operation.Operation - INFO - find *.*
+2012-06-15 15:32:23,301 - operation.Operation - INFO - find *.*
+2012-06-15 15:32:23,817 - operation.Operation - INFO - find *.*
+2012-06-15 15:32:24,878 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:32:25,409 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:04,037 - operation.Operation - INFO - find *.*
+2012-06-15 15:33:04,569 - operation.Operation - INFO - find *.*
+2012-06-15 15:33:04,600 - operation.Operation - INFO - find *.*
+2012-06-15 15:33:04,600 - operation.Operation - INFO - find *.*
+2012-06-15 15:33:05,739 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,223 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,254 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,286 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,317 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,348 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,379 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,410 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,442 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,473 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,504 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,535 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,566 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,598 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,629 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,660 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,691 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,722 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,754 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,786 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,817 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,848 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,879 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:33:06,989 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:29,622 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:29,763 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:29,763 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:30,137 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:32,073 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:32,557 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:33,946 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:33,978 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:34,009 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:34,025 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:35,725 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:36,116 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:36,459 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:36,631 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:36,880 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,272 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,762 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,792 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,822 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,852 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,882 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:37,903 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:44:37,903 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:44:37,903 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:37,913 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:37,913 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:39,260 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:39,651 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:44:39,651 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:44:39,651 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:39,651 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:39,651 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:39,885 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:40,147 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:40,450 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:40,758 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:40,969 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:44:52,362 - operation.Operation - INFO - DELETE $$__13-06-2012070001J__$$ $$__14-06-2012150000S__$$ $$__16-06-2012000000E__$$ $$__15-06-2012170000P__$$ $$__17-06-2012000000A__$$ $$__17-06-2012000000Z__$$ $$__17-06-2012000000B__$$ $$__16-06-2012130000E__$$ $$__16-06-2012235959B__$$ $$__03-07-2012170000L__$$ $$__05-07-2012235959E__$$ 
+2012-06-15 15:44:52,426 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:52,426 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:52,426 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:44:57,451 - gui.mainWindow.MainJFrame - WARN - default execmd: import.gcal
+2012-06-15 15:44:57,451 - operation.Operation - INFO - import.gcal
+2012-06-15 15:44:57,483 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:57,483 - operation.Operation - INFO - find *.*
+2012-06-15 15:44:57,483 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:03,161 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:03,646 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:03,677 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:03,708 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:04,098 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:04,582 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:04,614 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:04,645 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:04,661 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:45:04,661 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:45:04,661 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:04,661 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:04,661 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:04,661 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:06,112 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:06,331 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:45:06,331 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:45:06,331 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:06,331 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:06,331 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:06,331 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:07,002 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:07,220 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:45:07,220 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:45:07,220 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:07,220 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:07,220 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:07,220 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:07,736 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:07,908 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:45:07,908 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:45:07,908 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:07,908 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:07,908 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:07,923 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:08,329 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:08,533 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:45:08,548 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:45:08,548 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:08,548 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:08,548 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:08,548 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:41,949 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:42,074 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:42,074 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:42,074 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:42,512 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:42,512 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:47,239 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:47,583 - operation.Operation - INFO - UNDO
+2012-06-15 15:45:47,583 - gui.UIController - WARN - UNDO: no operationfeedback sent!
+2012-06-15 15:45:47,583 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:47,583 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:47,598 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:45:47,598 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:45:53,469 - operation.Operation - INFO - add go to school at 3pm tmr
+2012-06-15 15:45:53,594 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:53,594 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:56,293 - operation.Operation - INFO - COMPLETED $$__16-06-2012150000I__$$ 
+2012-06-15 15:45:56,293 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:56,293 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:56,293 - operation.Operation - INFO - find *.*
+2012-06-15 15:45:56,293 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:01,067 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,552 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,583 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,614 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,645 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,677 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,708 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,739 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:01,770 - operation.Operation - INFO - ARCHIVE
+2012-06-15 15:46:01,786 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:01,801 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:01,801 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:46:01,801 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:04,297 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:04,657 - logic.JIDLogic - INFO - Undo being performed for:archive
+2012-06-15 15:46:04,657 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:04,657 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:04,657 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,336 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,820 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,851 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,883 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,914 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,945 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:10,976 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:11,007 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:46:11,039 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:46:11,039 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:46:11,039 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:11,039 - operation.Operation - INFO - find *.*
+2012-06-15 15:46:11,039 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:39,255 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:39,396 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:39,396 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:39,396 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:39,818 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:39,818 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:40,582 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,067 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,098 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,129 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,160 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,191 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,223 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:41,784 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:42,269 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:42,300 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:42,316 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:42,316 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:42,316 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:42,316 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:42,316 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:42,316 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:43,517 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:43,903 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:44,116 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:44,356 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:44,586 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:45,080 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:45,120 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:45,130 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:45,130 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:45,130 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:45,130 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:45,130 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:45,130 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:45,400 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:45,400 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:45,400 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:45,410 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:45,410 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:45,410 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:45,620 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:45,620 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:45,620 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:45,620 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:45,630 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:45,630 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:46,072 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:46,072 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:46,072 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:46,072 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:46,072 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:46,087 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:46,508 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:46,508 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:46,508 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:46,508 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:46,508 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:46,508 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:46,898 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:46,898 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:46,898 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:46,898 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:46,898 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:46,898 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:47,367 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:47,367 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:47,367 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,383 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,383 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:47,383 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:47,414 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:47,414 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:47,414 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,414 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,414 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:47,414 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:47,586 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:47,586 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:47,586 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,586 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,586 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:47,586 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:47,976 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:47,976 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:47,976 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,976 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:47,976 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:47,991 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:52:48,414 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:52:48,414 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:52:48,414 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:48,414 - operation.Operation - INFO - find *.*
+2012-06-15 15:52:48,414 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:52:48,414 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:33,111 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:33,126 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:33,267 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:53:33,267 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:53:33,282 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 15:53:33,282 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:33,282 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:33,282 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:33,282 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:33,298 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:53:33,829 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 15:53:33,829 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:33,829 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:33,829 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:53:35,202 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,687 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,718 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,749 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,780 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,812 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,843 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,874 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,905 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,936 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,968 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:35,999 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,030 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,061 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,092 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,124 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,155 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,186 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,217 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,249 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,281 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:36,296 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarImportAction
+2012-06-15 15:53:36,296 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:36,296 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:53:36,296 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:53:36,296 - gui.UIController - DEBUG - refresh: in IMPORTGCAL: update JTable
+2012-06-15 15:53:36,296 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:36,296 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:36,296 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:36,296 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:36,296 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:53:36,296 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:39,947 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:53:40,228 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarImportAction
+2012-06-15 15:53:40,228 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:40,228 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 15:53:40,228 - gui.UIController - WARN - IMPORTGCAL: no operationfeedback sent!
+2012-06-15 15:53:40,228 - gui.UIController - DEBUG - refresh: in IMPORTGCAL: update JTable
+2012-06-15 15:53:40,228 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:40,228 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:40,228 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:53:40,228 - operation.Operation - INFO - find *.*
+2012-06-15 15:53:40,228 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:53:40,228 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:04,341 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:04,357 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:04,466 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:01:04,466 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:01:04,482 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 16:01:04,482 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:04,482 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:04,482 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:04,482 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:04,482 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:01:05,091 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 16:01:05,091 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:05,091 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:05,091 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:01:05,933 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:06,402 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:06,449 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:06,480 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:06,496 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:06,543 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:06,574 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:07,463 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:07,823 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarImportAction
+2012-06-15 16:01:07,823 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:07,823 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 16:01:07,823 - gui.mainWindow.MainJFrame - DEBUG - POPUP: You are not logged in. Pleas log in first.
+2012-06-15 16:01:07,885 - gui.UIController - DEBUG - refresh: in IMPORTGCAL: update JTable
+2012-06-15 16:01:07,885 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:07,885 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:07,901 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:07,901 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:07,901 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:01:07,901 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:09,555 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,039 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,070 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,102 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,133 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,164 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,195 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:10,211 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarExportAction
+2012-06-15 16:01:10,211 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:10,211 - operation.Operation - INFO - EXPORTGCAL
+2012-06-15 16:01:10,211 - gui.mainWindow.MainJFrame - DEBUG - POPUP: You are not logged in. Pleas log in first.
+2012-06-15 16:01:10,211 - gui.UIController - DEBUG - refresh: in EXPORTGCAL: update JTable
+2012-06-15 16:01:10,211 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:10,226 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:10,226 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:10,226 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:10,226 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:01:10,226 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:13,721 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:13,956 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarExportAction
+2012-06-15 16:01:13,956 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:13,956 - operation.Operation - INFO - EXPORTGCAL
+2012-06-15 16:01:13,956 - gui.mainWindow.MainJFrame - DEBUG - POPUP: You are not logged in. Pleas log in first.
+2012-06-15 16:01:13,971 - gui.UIController - DEBUG - refresh: in EXPORTGCAL: update JTable
+2012-06-15 16:01:13,971 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:13,971 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:13,987 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:13,987 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:13,987 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:01:13,987 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:36,108 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:36,343 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarImportAction
+2012-06-15 16:01:36,343 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:36,343 - operation.Operation - INFO - IMPORTGCAL
+2012-06-15 16:01:36,343 - gui.mainWindow.MainJFrame - DEBUG - POPUP: You are not logged in. Pleas log in first.
+2012-06-15 16:01:36,359 - gui.UIController - DEBUG - refresh: in IMPORTGCAL: update JTable
+2012-06-15 16:01:36,359 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:36,359 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:36,359 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:36,359 - operation.Operation - INFO - find *.*
+2012-06-15 16:01:36,359 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:01:36,359 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:01:49,590 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:01:49,590 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:01:49,590 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add go to hell tmr
+2012-06-15 16:01:49,590 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:01:49,590 - operation.Operation - INFO - add go to hell tmr
+2012-06-15 16:01:49,668 - parser.Parser - DEBUG - task details: go to hell
+2012-06-15 16:01:49,668 - parser.Parser - DEBUG - startdate: 16 Jun 2012
+2012-06-15 16:02:25,021 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:02:25,052 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:02:25,083 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:02:25,130 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:02:25,146 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:02:25,177 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:02:28,594 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:02:28,594 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:02:28,594 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add go to hell tmr
+2012-06-15 16:02:28,594 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:28,594 - operation.Operation - INFO - add go to hell tmr
+2012-06-15 16:02:28,610 - parser.Parser - DEBUG - task details: go to hell
+2012-06-15 16:02:28,610 - parser.Parser - DEBUG - startdate: 16 Jun 2012
+2012-06-15 16:02:55,550 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:55,550 - operation.Operation - INFO - find *.*
+2012-06-15 16:02:55,644 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:02:55,659 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:02:55,659 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 16:02:55,659 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:55,659 - operation.Operation - INFO - find *.*
+2012-06-15 16:02:55,675 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:55,675 - operation.Operation - INFO - find *.*
+2012-06-15 16:02:55,675 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:02:56,081 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 16:02:56,081 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:56,096 - operation.Operation - INFO - find *.*
+2012-06-15 16:02:56,096 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:02:59,250 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:02:59,250 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:02:59,250 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add go to hell tmr
+2012-06-15 16:02:59,250 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:59,250 - operation.Operation - INFO - add go to hell tmr
+2012-06-15 16:02:59,327 - gui.mainWindow.MainJFrame - DEBUG - POPUP: go to hell was added.
+2012-06-15 16:02:59,381 - gui.UIController - DEBUG - refresh: in ADD: update JTable
+2012-06-15 16:02:59,412 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:59,412 - operation.Operation - INFO - find *.*
+2012-06-15 16:02:59,412 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:02:59,412 - operation.Operation - INFO - find *.*
+2012-06-15 16:02:59,412 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:02:59,412 - gui.reminder.Reminder - DEBUG - setTimer: 114719588
+2012-06-15 16:03:01,549 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:03:05,766 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:03:05,781 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:03:05,781 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add go to paradise tmr
+2012-06-15 16:03:05,781 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:05,781 - operation.Operation - INFO - add go to paradise tmr
+2012-06-15 16:03:05,797 - gui.mainWindow.MainJFrame - DEBUG - POPUP: go to paradise was added.
+2012-06-15 16:03:05,812 - gui.UIController - DEBUG - refresh: in ADD: update JTable
+2012-06-15 16:03:05,812 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:05,812 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:05,812 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:05,812 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:05,812 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:05,812 - gui.reminder.Reminder - DEBUG - setTimer: 114713188
+2012-06-15 16:03:06,842 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:03:11,429 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$CompletedAction
+2012-06-15 16:03:11,429 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:11,429 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959D__$$ $$__16-06-2012235959B__$$ 
+2012-06-15 16:03:11,429 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 2 tasks were toggled completed.
+2012-06-15 16:03:11,462 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:11,462 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:11,462 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:11,462 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:11,462 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:11,462 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:11,462 - gui.reminder.Reminder - DEBUG - setTimer: 114707538
+2012-06-15 16:03:11,462 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:11,462 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:11,462 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:11,462 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:11,462 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:11,462 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:11,477 - gui.reminder.Reminder - DEBUG - setTimer: 114707538
+2012-06-15 16:03:12,834 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:03:12,834 - logic.JIDLogic - INFO - Undo being performed for:completed
+2012-06-15 16:03:12,834 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Undo successful.
+2012-06-15 16:03:12,850 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:03:12,850 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:12,850 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:12,850 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:12,850 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:12,850 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:12,850 - gui.reminder.Reminder - DEBUG - setTimer: 114706150
+2012-06-15 16:03:21,888 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:03:21,888 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:03:21,888 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add get A+ for project tmr
+2012-06-15 16:03:21,888 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:21,888 - operation.Operation - INFO - add get A+ for project tmr
+2012-06-15 16:03:21,904 - gui.mainWindow.MainJFrame - DEBUG - POPUP: get A+ for project was added.
+2012-06-15 16:03:21,935 - gui.UIController - DEBUG - refresh: in ADD: update JTable
+2012-06-15 16:03:21,935 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:21,935 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:21,935 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:21,935 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:21,935 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:21,935 - gui.reminder.Reminder - DEBUG - setTimer: 114697065
+2012-06-15 16:03:24,556 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$CompletedAction
+2012-06-15 16:03:24,556 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:24,556 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959Y__$$ 
+2012-06-15 16:03:24,556 - gui.mainWindow.MainJFrame - DEBUG - POPUP: get A+ for project was toggled completed.
+2012-06-15 16:03:24,572 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:24,572 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:24,572 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:24,572 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:24,572 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:24,572 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:24,572 - gui.reminder.Reminder - DEBUG - setTimer: 114694428
+2012-06-15 16:03:24,572 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:24,572 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:24,572 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:24,572 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:24,572 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:24,572 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:24,572 - gui.reminder.Reminder - DEBUG - setTimer: 114694428
+2012-06-15 16:03:25,665 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:03:25,665 - logic.JIDLogic - INFO - Undo being performed for:completed
+2012-06-15 16:03:25,665 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Undo successful.
+2012-06-15 16:03:25,680 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:03:25,680 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:25,680 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:25,680 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:25,680 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:25,680 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:25,680 - gui.reminder.Reminder - DEBUG - setTimer: 114693320
+2012-06-15 16:03:27,350 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$ImportantAction
+2012-06-15 16:03:27,350 - logic.JIDLogic - DEBUG - get A+ for project
+2012-06-15 16:03:27,366 - logic.JIDLogic - DEBUG - ******IMPORTANT $$__16-06-2012235959Y__$$ 
+2012-06-15 16:03:27,366 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:27,366 - operation.Operation - INFO - IMPORTANT $$__16-06-2012235959Y__$$ 
+2012-06-15 16:03:27,366 - gui.mainWindow.MainJFrame - DEBUG - POPUP: get A+ for project was toggled important.
+2012-06-15 16:03:27,366 - gui.UIController - DEBUG - refresh: in IMPORTANT: update JTable
+2012-06-15 16:03:27,366 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:27,366 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:27,366 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:27,366 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:27,366 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:27,366 - gui.reminder.Reminder - DEBUG - setTimer: 114691634
+2012-06-15 16:03:27,366 - gui.UIController - DEBUG - refresh: in IMPORTANT: update JTable
+2012-06-15 16:03:27,366 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:27,366 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:27,366 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:27,366 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:27,366 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:27,366 - gui.reminder.Reminder - DEBUG - setTimer: 114691634
+2012-06-15 16:03:28,568 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:03:28,568 - logic.JIDLogic - INFO - Undo being performed for:important
+2012-06-15 16:03:28,568 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Redo successful.
+2012-06-15 16:03:28,568 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:03:28,568 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:28,568 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:28,568 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:28,568 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:28,584 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:28,584 - gui.reminder.Reminder - DEBUG - setTimer: 114690432
+2012-06-15 16:03:31,143 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$CompletedAction
+2012-06-15 16:03:31,143 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:31,143 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959D__$$ $$__16-06-2012235959B__$$ $$__16-06-2012235959Y__$$ 
+2012-06-15 16:03:31,143 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were toggled completed.
+2012-06-15 16:03:31,143 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:31,143 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:31,143 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:31,143 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:31,143 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:31,143 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:31,143 - gui.reminder.Reminder - DEBUG - setTimer: 114687857
+2012-06-15 16:03:31,143 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:31,143 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:31,159 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:31,159 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:31,159 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:31,159 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:31,159 - gui.reminder.Reminder - DEBUG - setTimer: 114687841
+2012-06-15 16:03:32,143 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:03:32,143 - logic.JIDLogic - INFO - Undo being performed for:completed
+2012-06-15 16:03:32,143 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Undo successful.
+2012-06-15 16:03:32,143 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:03:32,143 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:32,143 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:32,143 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:32,143 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:32,143 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:32,143 - gui.reminder.Reminder - DEBUG - setTimer: 114686857
+2012-06-15 16:03:42,033 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$CompletedAction
+2012-06-15 16:03:42,033 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:42,033 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959D__$$ $$__16-06-2012235959B__$$ $$__16-06-2012235959Y__$$ 
+2012-06-15 16:03:42,033 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were toggled completed.
+2012-06-15 16:03:42,049 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:42,049 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:42,049 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:42,049 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:42,049 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:42,049 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:42,049 - gui.reminder.Reminder - DEBUG - setTimer: 114676951
+2012-06-15 16:03:42,049 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:03:42,049 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:42,049 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:42,049 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:42,049 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:42,049 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:03:42,064 - gui.reminder.Reminder - DEBUG - setTimer: 114676951
+2012-06-15 16:03:47,400 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$ArchiveAction
+2012-06-15 16:03:47,400 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:47,400 - operation.Operation - INFO - ARCHIVE
+2012-06-15 16:03:47,400 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were moved to archive.
+2012-06-15 16:03:47,432 - gui.UIController - DEBUG - refresh: in ARCHIVE: update JTable
+2012-06-15 16:03:47,432 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:47,432 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:47,432 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:03:47,432 - operation.Operation - INFO - find *.*
+2012-06-15 16:03:47,432 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:04:12,861 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:04:19,247 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:04:19,247 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:04:19,247 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add go to hell on 31st feb
+2012-06-15 16:04:19,247 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:04:19,247 - operation.Operation - INFO - add go to hell on 31st feb
+2012-06-15 16:04:19,263 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Error: add failed.
+2012-06-15 16:04:19,278 - gui.UIController - DEBUG - refresh: in ADD: update JTable
+2012-06-15 16:04:19,278 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:04:19,278 - operation.Operation - INFO - find *.*
+2012-06-15 16:04:19,278 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:04:19,278 - operation.Operation - INFO - find *.*
+2012-06-15 16:04:19,278 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:04:34,037 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:04:34,428 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$ImportArchiveAction
+2012-06-15 16:04:34,428 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:04:34,428 - operation.Operation - INFO - IMPORTARCHIVE
+2012-06-15 16:04:34,428 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were imported from archive.
+2012-06-15 16:04:34,443 - gui.UIController - DEBUG - refresh: in IMPORTARCHIVE: update JTable
+2012-06-15 16:04:34,443 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:04:34,443 - operation.Operation - INFO - find *.*
+2012-06-15 16:04:34,443 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:04:34,443 - operation.Operation - INFO - find *.*
+2012-06-15 16:04:34,443 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:04:34,443 - gui.reminder.Reminder - DEBUG - setTimer: 114624557
+2012-06-15 16:04:34,443 - gui.STATE - WARN - receive null string from the input

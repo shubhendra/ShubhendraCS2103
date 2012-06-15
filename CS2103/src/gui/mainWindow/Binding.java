@@ -98,11 +98,11 @@ public class Binding {
 	        inputMap.put(key, "syncGCal");
 	        actionMap.put("syncGCal", new Action.GCalendarSyncAction());
 	        
-	        key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.ALT_MASK);
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_M, Event.ALT_MASK);
 	        inputMap.put(key, "importGCal");
 	        actionMap.put("importGCal", new Action.GCalendarImportAction());
 	        
-	        key = KeyStroke.getKeyStroke(KeyEvent.VK_F, Event.ALT_MASK);
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_N, Event.ALT_MASK);
 	        inputMap.put(key, "exportGCal");
 	        actionMap.put("exportGCal", new Action.GCalendarExportAction());
 	        
