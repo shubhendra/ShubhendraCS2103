@@ -546,8 +546,9 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								prevText = curText;						
 								
-								if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState() == STATE.NULL)
+								if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState() == STATE.NULL) {
 									showPopup("Invalid Command");
+								}
 								else if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState()!=STATE.NULL) {
 									String exeCmd = new String();
 									
@@ -636,6 +637,8 @@ public class MainJFrame extends javax.swing.JFrame {
 											jBoxCompletion.setStandardModel();
 											editorcomp.setText("");
 									//	}
+										if(STATE.showOwnTasks())
+											ExpandComponent.updateJTable(tasks);
 										UIController.showFeedbackDisplay(tasks);
 									}
 								}

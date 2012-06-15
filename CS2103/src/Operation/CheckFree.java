@@ -73,7 +73,13 @@ public class CheckFree extends Operation{
 		}
 	}
 
-	
+	/**
+	 * 
+	 * @param taskToSearch
+	 * @param existingTask
+	 * @return true if the task clashes with any task in the given period including the 
+	 * 			boundary values
+	 */
 	private static boolean isNotFree(Task taskToSearch, Task existingTask) {
 		TaskDateTime defaultTime = new TaskDateTime();
 		if (taskToSearch.getStart() != null && taskToSearch.getEnd() != null){

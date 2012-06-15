@@ -6175,3 +6175,56 @@
 2012-06-15 21:28:21,444 - operation.Operation - INFO - canceledit
 2012-06-15 21:28:21,454 - operation.Operation - INFO - find *.*
 2012-06-15 21:28:21,454 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:00,766 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:00,918 - operation.Operation - INFO - canceledit
+2012-06-15 21:56:00,953 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:00,953 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:01,393 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:06,313 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:56:06,541 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:56:16,274 - operation.Operation - INFO - add go to home at 5pm next wednesday
+2012-06-15 21:56:16,334 - operation.Operation - INFO - canceledit
+2012-06-15 21:56:16,342 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:16,344 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:33,200 - operation.Operation - INFO - add go to home thursday
+2012-06-15 21:56:33,212 - operation.Operation - INFO - canceledit
+2012-06-15 21:56:33,219 - operation.Operation - INFO - find *.*
+2012-06-15 21:56:33,221 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:04,877 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 2pm to 3pm tmr
+2012-06-15 21:57:04,881 - operation.Operation - INFO - check.free from 2pm to 3pm tmr
+2012-06-15 21:57:04,925 - operation.Operation - INFO - canceledit
+2012-06-15 21:57:04,932 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:08,459 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:57:08,601 - operation.Operation - INFO - canceledit
+2012-06-15 21:57:08,608 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:08,610 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:08,613 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:57:18,975 - operation.Operation - INFO - add go to school next thursday
+2012-06-15 21:57:19,011 - operation.Operation - INFO - canceledit
+2012-06-15 21:57:19,016 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:19,021 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:27,920 - operation.Operation - INFO - add go to school thursday
+2012-06-15 21:57:27,946 - operation.Operation - INFO - canceledit
+2012-06-15 21:57:27,953 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:27,956 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:40,277 - operation.Operation - INFO - add '2pm' at 5pm tmr
+2012-06-15 21:57:40,308 - operation.Operation - INFO - canceledit
+2012-06-15 21:57:40,313 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:40,318 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:52,217 - operation.Operation - INFO - add abc next Friday
+2012-06-15 21:57:52,249 - operation.Operation - INFO - canceledit
+2012-06-15 21:57:52,256 - operation.Operation - INFO - find *.*
+2012-06-15 21:57:52,260 - operation.Operation - INFO - find *.*
+2012-06-15 22:02:28,766 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 2pm to 3pm
+2012-06-15 22:02:28,766 - operation.Operation - INFO - check.free 2pm to 3pm
+2012-06-15 22:02:28,802 - operation.Operation - INFO - canceledit
+2012-06-15 22:02:28,812 - operation.Operation - INFO - find *.*
+2012-06-15 22:02:48,327 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 2pm to 3pm today
+2012-06-15 22:02:48,328 - operation.Operation - INFO - check.free 2pm to 3pm today
+2012-06-15 22:02:48,364 - operation.Operation - INFO - canceledit
+2012-06-15 22:02:48,371 - operation.Operation - INFO - find *.*
+2012-06-15 22:02:52,636 - gui.STATE - WARN - receive null string from the input
+2012-06-15 22:02:52,984 - operation.Operation - INFO - canceledit
+2012-06-15 22:02:52,989 - operation.Operation - INFO - find *.*
+2012-06-15 22:02:52,994 - operation.Operation - INFO - find *.*
+2012-06-15 22:02:52,994 - gui.STATE - WARN - receive null string from the input

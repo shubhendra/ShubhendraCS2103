@@ -247,4 +247,20 @@ public enum STATE {
 			return "Successfully";
 		}	
 	}
+	
+	/**
+	 * for checking which state needs to show their own tasks which
+	 * result from their operation.
+	 * @return true if it has its own task to be shown
+	 */
+	public static boolean showOwnTasks() {
+		switch(curState) {
+		case SEARCH:
+		case OVERDUE:
+		case CHECKFREE:
+			return true;
+		default:
+			return false;
+		}
+	}
 }

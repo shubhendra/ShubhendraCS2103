@@ -122,8 +122,8 @@ public class UIController {
 		JIDLogic.setCommand("canceledit");
 		JIDLogic.executeCommand("canceledit");
 		
-		if(STATE.getState() != STATE.SEARCH
-				&&STATE.getState() != STATE.OVERDUE) {
+		//if that particular state needs to display its own list of task
+		if(!STATE.showOwnTasks()) {
 			logger.debug("refresh: in " + STATE.getState()+ ": update JTable");
 			ExpandComponent.updateJTable();
 		}
