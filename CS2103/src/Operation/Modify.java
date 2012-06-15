@@ -10,10 +10,14 @@ package operation;
 import constant.OperationFeedback;
 import parser.Parser;
 import data.Task;
+
+import org.apache.log4j.Logger;
+
 import storagecontroller.StorageManager;
 
 public class Modify extends BaseSearch{
 	
+	private static Logger logger= Logger.getLogger(Modify.class);
 	private Task oldTask;
 	private Task newTask;
 	private static Task taskBeingEdited = null;
@@ -52,6 +56,7 @@ public class Modify extends BaseSearch{
 			return new Task[] {taskBeingEdited};
 		} else{
 			
+			logger.debug(taskToBeEdited.getName());
 			boolean isEdited = modify(taskBeingEdited, taskToBeEdited);
 			if(isEdited) {
 				isUndoAble = true;
@@ -144,10 +149,25 @@ public class Modify extends BaseSearch{
 		{
 			String params = userCommand.toLowerCase().replaceFirst(commandName+" ","");
 			Task taskToBeEdited = parseTask(params);
-			return execute(taskToBeEdited);
+			logger.debug(feedback);
+			if (taskToBeEdited != null && feedback == OperationFeedback.VALID) {
+				
+					return execute(taskToBeEdited);
+				
+				
+			}
+			else if (taskToBeEdited != null && feedback != OperationFeedback.VALID ) {
+				return null;
+			}
+			else {
+				feedback = OperationFeedback.EDIT_FAILED;
+				return null;
+			}
+				
 			
 		}
 	}
+
 
 	/**
 	 * parses the task on the basis of User Input
@@ -158,7 +178,9 @@ public class Modify extends BaseSearch{
 		// TODO Auto-generated method stub
 		
 		Parser newParser = new Parser();
-		return newParser.parseForSearch(userCommand);
+		Task parsedTask= newParser.parseForSearch(userCommand);
+		feedback = newParser.getErrorCode();
+		return parsedTask;
 		
 	}
 	

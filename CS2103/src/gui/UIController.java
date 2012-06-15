@@ -117,6 +117,11 @@ public class UIController {
 	 * updating GUI
 	 */
 	public static void refresh() {
+		
+		//clear edit
+		JIDLogic.setCommand("canceledit");
+		JIDLogic.executeCommand("canceledit");
+		
 		if(STATE.getState() != STATE.SEARCH
 				&&STATE.getState() != STATE.OVERDUE) {
 			logger.debug("refresh: in " + STATE.getState()+ ": update JTable");
