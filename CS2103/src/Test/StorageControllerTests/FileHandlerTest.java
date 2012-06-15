@@ -1,4 +1,4 @@
-package Test;
+package Test.StorageControllerTests;
 
 import org.junit.After;
 import org.junit.Before;

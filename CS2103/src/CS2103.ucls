@@ -1,5 +1,5 @@
-<class-diagram version="1.0.8" icons="true" always-add-relationships="false" generalizations="false" 
-  realizations="false" associations="false" dependencies="false" nesting-relationships="false">  
+<class-diagram version="1.0.8" icons="true" automaticImage="PNG" always-add-relationships="false" 
+  generalizations="false" realizations="false" associations="false" dependencies="false" nesting-relationships="false">  
   <package id="1" language="java" name="constant" project="CS2103" file="/CS2103/src/constant" binary="false">    
     <position height="49" width="99" x="1177" y="37"/>  
   </package>  

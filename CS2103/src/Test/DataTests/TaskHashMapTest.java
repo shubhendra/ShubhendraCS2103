@@ -1,4 +1,4 @@
-package Test;
+package Test.DataTests;
 import java.util.ArrayList;
 
 import data.TaskDateTime;

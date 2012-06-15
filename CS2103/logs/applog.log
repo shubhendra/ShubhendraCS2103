@@ -5898,3 +5898,280 @@
 2012-06-15 17:06:52,027 - logic.JIDLogic - DEBUG - inside fourth cond
 2012-06-15 17:06:52,027 - operation.Operation - INFO - find *.*
 2012-06-15 17:06:52,027 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:49:21,882 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:22,049 - operation.Operation - INFO - canceledit
+2012-06-15 18:49:22,082 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:22,084 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:22,085 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:49:22,583 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:22,583 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:49:38,976 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:39,109 - operation.Operation - INFO - canceledit
+2012-06-15 18:49:39,148 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:39,151 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:39,152 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:49:39,940 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:39,940 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:49:45,361 - operation.Operation - INFO - add go to hell at 3pm tmr
+2012-06-15 18:49:45,457 - operation.Operation - INFO - canceledit
+2012-06-15 18:49:45,462 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:45,467 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:50,117 - operation.Operation - INFO - add go to hell tmr
+2012-06-15 18:49:50,131 - operation.Operation - INFO - canceledit
+2012-06-15 18:49:50,138 - operation.Operation - INFO - find *.*
+2012-06-15 18:49:50,141 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:04,584 - operation.Operation - INFO - add go to hell from 3pm tmr to 3pm 4/7/2012
+2012-06-15 18:50:04,610 - operation.Operation - INFO - canceledit
+2012-06-15 18:50:04,620 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:04,620 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:18,392 - operation.Operation - INFO - add go to hel from 3 pm to 5pm today
+2012-06-15 18:50:18,443 - operation.Operation - INFO - canceledit
+2012-06-15 18:50:18,450 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:18,453 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:20,586 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:28,224 - operation.Operation - INFO - add go to hel from 8 pm to 9 pm today
+2012-06-15 18:50:28,246 - operation.Operation - INFO - canceledit
+2012-06-15 18:50:28,253 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:28,255 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:31,015 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:43,195 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:43,365 - operation.Operation - INFO - canceledit
+2012-06-15 18:50:43,390 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:43,392 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:43,392 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:50:43,925 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:43,925 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:50:48,923 - operation.Operation - INFO - add go to hel from 8 pm to 9 pm today daily-5 @work
+2012-06-15 18:50:48,954 - operation.Operation - INFO - canceledit
+2012-06-15 18:50:48,959 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:48,964 - operation.Operation - INFO - find *.*
+2012-06-15 18:50:49,304 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,793 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,821 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,855 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,886 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,916 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,948 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:49,980 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:50,013 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:50,041 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:50,075 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:50,107 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:50,135 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:50,150 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:50:51,123 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:05,134 - operation.Operation - INFO - IMPORTANT $$__15-06-2012210000O__$$
+2012-06-15 18:51:05,135 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:06,820 - operation.Operation - INFO - IMPORTANT $$__15-06-2012210000O__$$
+2012-06-15 18:51:06,821 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:11,520 - operation.Operation - INFO - completed g
+2012-06-15 18:51:11,878 - operation.Operation - INFO - completed go
+2012-06-15 18:51:13,098 - operation.Operation - INFO - completed g
+2012-06-15 18:51:14,713 - operation.Operation - INFO - completed 
+2012-06-15 18:51:15,202 - operation.Operation - INFO - completed 
+2012-06-15 18:51:15,244 - operation.Operation - INFO - completed 
+2012-06-15 18:51:15,423 - operation.Operation - INFO - completed 
+2012-06-15 18:51:16,587 - operation.Operation - INFO - completed h
+2012-06-15 18:51:16,714 - operation.Operation - INFO - completed he
+2012-06-15 18:51:16,920 - operation.Operation - INFO - completed hel
+2012-06-15 18:51:17,060 - operation.Operation - INFO - completed hell
+2012-06-15 18:51:18,342 - operation.Operation - INFO - completed $$__16-06-2012150000Z__$$ 
+2012-06-15 18:51:18,368 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:18,375 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:18,379 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:21,784 - gui.mainWindow.MainJFrame - WARN - default execmd: archive
+2012-06-15 18:51:21,785 - operation.Operation - INFO - archive
+2012-06-15 18:51:21,790 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:21,797 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:21,801 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:24,709 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:24,995 - logic.JIDLogic - INFO - Undo being performed for:archive
+2012-06-15 18:51:24,998 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:25,005 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:25,009 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:25,011 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:26,496 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:26,986 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,015 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,048 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,080 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,110 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,139 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,173 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,204 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,235 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,265 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,297 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,328 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,359 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:27,375 - logic.JIDLogic - INFO - Redo Being performed for:archive
+2012-06-15 18:51:27,377 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:27,393 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:27,396 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:27,398 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:51:33,877 - gui.mainWindow.MainJFrame - WARN - default execmd: import.archive
+2012-06-15 18:51:33,878 - operation.Operation - INFO - import.archive
+2012-06-15 18:51:33,892 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:33,898 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:33,902 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:40,124 - gui.mainWindow.MainJFrame - WARN - default execmd: clear.archive
+2012-06-15 18:51:40,124 - operation.Operation - INFO - clear.archive
+2012-06-15 18:51:40,140 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:40,150 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:40,155 - operation.Operation - INFO - find *.*
+2012-06-15 18:51:55,698 - operation.Operation - INFO - OVERDUE
+2012-06-15 18:51:55,714 - operation.Operation - INFO - canceledit
+2012-06-15 18:51:55,721 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:33,353 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:52:33,845 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:52:33,876 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:52:33,884 - logic.JIDLogic - INFO - Undo being performed for:import.archive
+2012-06-15 18:52:33,900 - operation.Operation - INFO - canceledit
+2012-06-15 18:52:33,907 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:33,910 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:33,912 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:52:37,915 - operation.Operation - INFO - DELETE $$__15-06-2012210000P__$$ $$__15-06-2012210000O__$$ $$__04-07-2012150000B__$$ $$__16-06-2012210000F__$$ $$__16-06-2012235959N__$$ $$__17-06-2012210000X__$$ $$__18-06-2012210000Y__$$ $$__19-06-2012210000B__$$ 
+2012-06-15 18:52:37,921 - operation.Operation - INFO - canceledit
+2012-06-15 18:52:37,928 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:37,930 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:37,930 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 18:52:38,640 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 18:52:38,645 - operation.Operation - INFO - canceledit
+2012-06-15 18:52:38,652 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:38,655 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:43,948 - operation.Operation - INFO - edit g
+2012-06-15 18:52:44,130 - operation.Operation - INFO - edit go
+2012-06-15 18:52:44,785 - operation.Operation - INFO - edit go
+2012-06-15 18:52:44,983 - operation.Operation - INFO - edit go
+2012-06-15 18:52:45,402 - operation.Operation - INFO - edit go
+2012-06-15 18:52:45,717 - operation.Operation - INFO - edit $$__16-06-2012235959U__$$
+2012-06-15 18:52:49,401 - operation.Operation - INFO - edit go to hell on 16 Jun 2012 weekly - 10
+2012-06-15 18:52:49,427 - operation.Operation - INFO - canceledit
+2012-06-15 18:52:49,434 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:49,437 - operation.Operation - INFO - find *.*
+2012-06-15 18:52:58,696 - operation.Operation - INFO - search @
+2012-06-15 18:52:58,924 - operation.Operation - INFO - search @w
+2012-06-15 18:52:59,129 - operation.Operation - INFO - search @wo
+2012-06-15 18:52:59,254 - operation.Operation - INFO - search @wor
+2012-06-15 18:52:59,505 - operation.Operation - INFO - search @wor
+2012-06-15 18:53:01,791 - operation.Operation - INFO - canceledit
+2012-06-15 18:53:01,798 - operation.Operation - INFO - find *.*
+2012-06-15 18:53:05,114 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:06,580 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:09,289 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:09,500 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:09,695 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:09,859 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:10,022 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:10,162 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:10,322 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:10,478 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:10,600 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:10,736 - gui.STATE - WARN - receive null string from the input
+2012-06-15 18:53:11,211 - gui.STATE - WARN - receive null string from the input
+2012-06-15 19:25:10,467 - operation.Operation - INFO - find *.*
+2012-06-15 19:25:10,662 - operation.Operation - INFO - canceledit
+2012-06-15 19:25:10,697 - operation.Operation - INFO - find *.*
+2012-06-15 19:25:10,702 - operation.Operation - INFO - find *.*
+2012-06-15 19:25:11,652 - operation.Operation - INFO - find *.*
+2012-06-15 19:25:24,257 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 3pm to 4pm tmr 
+2012-06-15 19:25:24,262 - operation.Operation - INFO - check.free from 3pm to 4pm tmr 
+2012-06-15 19:25:24,348 - operation.Operation - INFO - canceledit
+2012-06-15 19:25:24,358 - operation.Operation - INFO - find *.*
+2012-06-15 19:25:24,363 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:00,629 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 8pm to 9pm today
+2012-06-15 19:26:00,629 - operation.Operation - INFO - check.free from 8pm to 9pm today
+2012-06-15 19:26:00,665 - operation.Operation - INFO - canceledit
+2012-06-15 19:26:00,670 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:00,675 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:20,599 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 8pm to 9pm tmr
+2012-06-15 19:26:20,603 - operation.Operation - INFO - check.free from 8pm to 9pm tmr
+2012-06-15 19:26:20,634 - operation.Operation - INFO - canceledit
+2012-06-15 19:26:20,641 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:20,645 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:31,726 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 2pm to 10 pm tmr
+2012-06-15 19:26:31,726 - operation.Operation - INFO - check.free from 2pm to 10 pm tmr
+2012-06-15 19:26:31,753 - operation.Operation - INFO - canceledit
+2012-06-15 19:26:31,763 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:31,768 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:53,371 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 2pm to 6pm tmr
+2012-06-15 19:26:53,376 - operation.Operation - INFO - check.free from 2pm to 6pm tmr
+2012-06-15 19:26:53,402 - operation.Operation - INFO - canceledit
+2012-06-15 19:26:53,412 - operation.Operation - INFO - find *.*
+2012-06-15 19:26:53,412 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:03,927 - operation.Operation - INFO - DELETE $$__15-06-2012210000K__$$ $$__04-07-2012150000B__$$ $$__16-06-2012210000K__$$ $$__16-06-2012235959H__$$ $$__17-06-2012210000S__$$ $$__18-06-2012210000Y__$$ $$__19-06-2012210000H__$$ 
+2012-06-15 19:27:03,953 - operation.Operation - INFO - canceledit
+2012-06-15 19:27:03,963 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:03,963 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:06,023 - operation.Operation - INFO - DELETE $$__15-06-2012210000P__$$ 
+2012-06-15 19:27:06,028 - operation.Operation - INFO - canceledit
+2012-06-15 19:27:06,033 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:06,038 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:06,039 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 19:27:15,901 - operation.Operation - INFO - add go to hell from 2pm to 3pm tmr
+2012-06-15 19:27:15,935 - operation.Operation - INFO - canceledit
+2012-06-15 19:27:15,941 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:15,943 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:22,621 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 2 to 2.30 pm tmr
+2012-06-15 19:27:22,626 - operation.Operation - INFO - check.free 2 to 2.30 pm tmr
+2012-06-15 19:27:22,662 - operation.Operation - INFO - canceledit
+2012-06-15 19:27:22,667 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:22,672 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:32,512 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 2pm to 3pm tmr
+2012-06-15 19:27:32,513 - operation.Operation - INFO - check.free from 2pm to 3pm tmr
+2012-06-15 19:27:32,536 - operation.Operation - INFO - canceledit
+2012-06-15 19:27:32,542 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:32,544 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:42,761 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 2pm to 2.30 pm tmr
+2012-06-15 19:27:42,761 - operation.Operation - INFO - check.free from 2pm to 2.30 pm tmr
+2012-06-15 19:27:42,787 - operation.Operation - INFO - canceledit
+2012-06-15 19:27:42,797 - operation.Operation - INFO - find *.*
+2012-06-15 19:27:42,797 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:01,761 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:01,952 - operation.Operation - INFO - canceledit
+2012-06-15 21:17:01,984 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:01,988 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:02,452 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:05,798 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:17:06,037 - operation.Operation - INFO - canceledit
+2012-06-15 21:17:06,072 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:06,072 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:06,087 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:17:29,399 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free from 2.20 pm to 3.30 pm tmr 
+2012-06-15 21:17:29,400 - operation.Operation - INFO - check.free from 2.20 pm to 3.30 pm tmr 
+2012-06-15 21:17:29,464 - operation.Operation - INFO - canceledit
+2012-06-15 21:17:29,491 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:29,493 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:31,703 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:17:32,191 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:17:32,225 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:17:51,525 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 2.20pm to 2.30pm tmr
+2012-06-15 21:17:51,526 - operation.Operation - INFO - check.free 2.20pm to 2.30pm tmr
+2012-06-15 21:17:51,557 - operation.Operation - INFO - canceledit
+2012-06-15 21:17:51,565 - operation.Operation - INFO - find *.*
+2012-06-15 21:17:51,566 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:10,071 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:10,250 - operation.Operation - INFO - canceledit
+2012-06-15 21:27:10,286 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:10,289 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:10,765 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:12,778 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:27:12,984 - operation.Operation - INFO - canceledit
+2012-06-15 21:27:13,014 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:13,019 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:13,029 - gui.STATE - WARN - receive null string from the input
+2012-06-15 21:27:25,634 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 2.20pm to 3.30pm tmr
+2012-06-15 21:27:25,634 - operation.Operation - INFO - check.free 2.20pm to 3.30pm tmr
+2012-06-15 21:27:25,685 - operation.Operation - INFO - canceledit
+2012-06-15 21:27:25,700 - operation.Operation - INFO - find *.*
+2012-06-15 21:27:25,705 - operation.Operation - INFO - find *.*
+2012-06-15 21:28:04,494 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 2.30 pm to 2.40pm tmr
+2012-06-15 21:28:04,494 - operation.Operation - INFO - check.free 2.30 pm to 2.40pm tmr
+2012-06-15 21:28:04,525 - operation.Operation - INFO - canceledit
+2012-06-15 21:28:04,530 - operation.Operation - INFO - find *.*
+2012-06-15 21:28:04,530 - operation.Operation - INFO - find *.*
+2012-06-15 21:28:21,408 - gui.mainWindow.MainJFrame - WARN - default execmd: check.free 1pm to 1.30 pm
+2012-06-15 21:28:21,408 - operation.Operation - INFO - check.free 1pm to 1.30 pm
+2012-06-15 21:28:21,444 - operation.Operation - INFO - canceledit
+2012-06-15 21:28:21,454 - operation.Operation - INFO - find *.*
+2012-06-15 21:28:21,454 - operation.Operation - INFO - find *.*

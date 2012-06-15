@@ -1,4 +1,4 @@
-package Test;
+package Test.GCalTest;
 import data.Task;
 import data.TaskDateTime;
 import gcal.GoogleCalendar;

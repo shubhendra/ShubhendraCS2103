@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0" class="java.beans.XMLDecoder">
+ <object class="data.Task">
+  <void property="end">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339830000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>go to hell</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339826400000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__16-06-2012150000J__$$</string>
+  </void>
+ </object>
 </java>
