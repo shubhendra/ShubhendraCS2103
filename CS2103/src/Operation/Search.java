@@ -143,14 +143,16 @@ public class Search extends Operation {
 	
 	/**
 	 * 
-	 * @return tasks required to be sent in the email reminder
+	 * @return tasks required to be sent in the email reminder 
+	 * 				consists of tasks that are to be done on the current date and all the 
+	 * 				important tasks that have not been completed
 	 */
 	public Task[] searchTodaysTasks(){
 		Task [] allTasks=returnAllTasks();
 		ArrayList<Task> todaysTasks=new ArrayList<Task>();;
 		for(Task param:allTasks)
 			if ((param.getStart() != null) && 
-					(param.getStart().getDate().getTimeMilli()  <=  TaskDateTime.getCurrentDate().getTimeMilli()))
+					(param.getStart().getDate().getTimeMilli() <= TaskDateTime.getCurrentDate().getTimeMilli()))
 			{
 				if (!param.getCompleted())
 					todaysTasks.add(param);

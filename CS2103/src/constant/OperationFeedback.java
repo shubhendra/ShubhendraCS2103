@@ -141,7 +141,7 @@ public enum OperationFeedback {
 		case NO_TASK_DELETED:
 			return "There is no task deleted.";
 		case NO_TASK_OVERDUE:
-			return "There is no task overdued.";
+			return "There is no task overdue.";
 		case NO_TASK_COMPLETED:
 			return "There is no task toggled completed.";
 		case NO_TASK_STARRED:
