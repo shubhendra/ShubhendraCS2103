@@ -10,6 +10,8 @@ public enum OperationFeedback {
 	
 	VALID,
 	NO_EMAIL_SPECIFIED,
+	INVALID_EMAIL,
+	NO_UPCOMING_TASKS_IN_COMING_WEEK,
 	START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME,
 	END_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME,
 	START_DATE_TIME_MORE_THAN_END_DATE_TIME,
@@ -53,7 +55,6 @@ public enum OperationFeedback {
 	NO_MATCHING_ARCHIVE_FUNCTION,
 	USER_NOT_LOGGEDIN,
 	GOOGLE_CALENDAR_FAILED,
-	INVALID_EMAIL,
 	USER_ALREADY_LOGGED_IN;
 	
 	/**
@@ -65,6 +66,10 @@ public enum OperationFeedback {
 		switch(op) {
 		case	VALID:
 			return null;
+		case NO_EMAIL_SPECIFIED:
+			return "Please specify a valid email";
+		case INVALID_EMAIL:
+			return "Please specify a valid email.";
 		case USER_ALREADY_LOGGED_IN:
 			return "You are already logged in. Please log out first";
 		case START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME:

@@ -16,7 +16,7 @@ public enum STATE {
 	, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
 	, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
 	, CLEARARCHIVE, IMPORTARCHIVE, SYNCGCAL, IMPORTGCAL, EXPORTGCAL
-	, CHECKFREE, EXPAND;
+	, CHECKFREE, EXPAND, EMAIL;
 
 	private static Logger logger=Logger.getLogger(STATE.class);
 	
@@ -202,6 +202,8 @@ public enum STATE {
 			return STATE.LOGOUT;
 		if(firstWord.equalsIgnoreCase("expand"))
 			return STATE.EXPAND;
+		if(firstWord.equalsIgnoreCase("email"))
+			return STATE.EMAIL;
 		command = "";
 		return STATE.NULL;
 	} 
@@ -233,6 +235,8 @@ public enum STATE {
 			return "Archive was removed successfully.";
 		case CHECKFREE:
 			return "That timeslot is free.";
+		case EMAIL:
+			return "Email approved.";
 		
 		default:
 			logger.error(curState + "getFeedbackText");

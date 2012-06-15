@@ -17,12 +17,13 @@ import java.io.IOException;
 
 import javax.swing.Timer;
 
+import logic.JIDLogic;
+
 import org.apache.log4j.Logger;
 
 import constant.OperationFeedback;
 import data.Task;
 
-import logic.JIDLogic;
 
 /**
  * for controlling UI and initializing the program.
@@ -57,7 +58,7 @@ public class UIController {
 		HelpFrame.initialize();
 		mainJFrame = new MainJFrame();
 		HelpFrame.setPosition();
-		mainJFrame.showFrame();
+		//mainJFrame.showFrame();
 	}
 
 	/**
@@ -91,6 +92,7 @@ public class UIController {
 		new UIController();
 		JIDLogic.JIDLogic_init();
 		UIController.refresh();
+		mainJFrame.showFrame();
 	}
 	
 
@@ -166,20 +168,6 @@ public class UIController {
 	 */
 	public static void contractFrame() {
 		mainJFrame.contractFrame();
-	}
-	
-	/**
-	 * log in to google calendar
-	 * @param username username for Google login
-	 * @param password password for Google login
-	 */
-	public static void logInToGCalendar(String username, char[] password) {
-		JIDLogic.setCommand("login");
-		String execmd = "login " + username + " ";
-		for(int i=0; i<password.length; i++)
-			execmd += password[i];
-		JIDLogic.executeCommand(execmd);
-		UIController.showFeedbackDisplay();
 	}
 	
 	/**
@@ -267,7 +255,7 @@ public class UIController {
 	 * 
 	 */
 	public static void promptEmailInput() {
-		new MailDialog(mainJFrame, true);
+		new MailDialog(null, true);
 	}
 	
 	/** clear the command line

@@ -39,7 +39,7 @@ public class TaskDateTimeTest {
 	}
 	@Test
 	public final void testGetCurrentDate() {
-		assertEquals("13 Jun 2012",TaskDateTime.getCurrentDate().formattedToString());
+		assertEquals("15 Jun 2012",TaskDateTime.getCurrentDate().formattedToString());
 	}
 
 	@Test

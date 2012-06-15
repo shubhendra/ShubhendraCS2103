@@ -1,3 +1,4 @@
+
 /**
  * extends Operation
  * implements the functionality to edit a given task's details
@@ -88,6 +89,7 @@ public class Modify extends BaseSearch{
 		Task[] undoneArray = new Task[1];
 		if (modify(newTask, oldTask)) {
 			undoneArray[0] = oldTask;
+			undoRedoFeedback=OperationFeedback.UNDO_SUCCESSFUL;
 			return undoneArray;
 		}
 		return null;
@@ -169,6 +171,7 @@ public class Modify extends BaseSearch{
 		Task[] redoneArray = new Task[1];
 		if (modify(oldTask, newTask)) {
 			redoneArray[0] = newTask;
+			undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 			return redoneArray;
 		}
 		return null;

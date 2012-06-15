@@ -7,6 +7,8 @@
 package logic;
 
 
+import gui.UIController;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Stack;
@@ -15,7 +17,6 @@ import operation.*;
 import data.Task;
 import org.apache.log4j.Logger;
 import constant.OperationFeedback;
-import gui.UIController;
 import storagecontroller.StorageManager;
 
 public class JIDLogic {

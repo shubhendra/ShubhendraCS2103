@@ -67,7 +67,7 @@ public class TaskTest {
 	@Test
 	public final void testIsEqual() {
 		assertEquals(true,one.isEqual(two));
-		assertEquals(true,one.isEqual(zero));
+		assertEquals(false,one.isEqual(zero));
 	}
 
 	@Test

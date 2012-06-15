@@ -22,6 +22,8 @@ import java.awt.event.MouseMotionAdapter;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import logic.JIDLogic;
+
 /**
  * Google Calendar log in frame
  * @author Ramon
@@ -144,12 +146,23 @@ public class LogInDialog extends javax.swing.JDialog {
     }// </editor-fold>
 
     /**
-     * modify log in button action
+     * log in when pressing this button.
      * @param evt
      */
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {
     	this.dispose();
-    	UIController.logInToGCalendar(userTextField.getText(), passTextField.getPassword());
+    	
+    	String username = userTextField.getText();
+    	char password[] = passTextField.getPassword();
+    	
+		JIDLogic.setCommand("login");
+		String execmd = "login " + username + " ";
+		for(int i=0; i<password.length; i++)
+			execmd += password[i];
+		
+		JIDLogic.executeCommand(execmd);
+		
+		UIController.showFeedbackDisplay();
     	UIController.setLoginOn(false);
     }
     

@@ -51,6 +51,7 @@ public class ToggleImportant extends BaseSearch {
 			}
 		}
 		if (taskStarred.size()!=0) {
+			
 			return (Task[])taskStarred.toArray(new Task[taskStarred.size()]);
 		} else {
 			return null;
@@ -122,6 +123,7 @@ public class ToggleImportant extends BaseSearch {
 			
 		}
 		if (undoneTasks.size() != 0) {
+			undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 			return undoneTasks.toArray(new Task[undoneTasks.size()]);
 		}
 		else { 
@@ -147,6 +149,7 @@ public class ToggleImportant extends BaseSearch {
 			
 		}
 		if (redoneTasks.size() != 0) {
+			undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 			return redoneTasks.toArray(new Task[redoneTasks.size()]);
 		} else { 
 			return null;

@@ -14,6 +14,7 @@ import gui.STATE;
 import gui.UIController;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.MailDialog;
 import gui.mainWindow.extended.TopPopUp;
 import logic.JIDLogic;
 
@@ -447,13 +448,14 @@ public class MainJFrame extends javax.swing.JFrame {
 								logger.debug("index: "+ curIndex);
 								*/
 								
-								
+								//cancel edit
 								if(STATE.getPrevState() == STATE.EDIT && STATE.getState()!=STATE.getPrevState() && edit == true) {
 									logger.debug("canceledit");
 									JIDLogic.executeCommand("canceledit");
 									edit = false;
 								}
 								
+								//to prevent jComboBox auto settext to the selected item in the list
 								if(STATE.getState() == STATE.NULL && STATE.getState()!=STATE.getPrevState()) {
 									jBoxCompletion.setStandardModel();
 									id = null;
@@ -461,17 +463,20 @@ public class MainJFrame extends javax.swing.JFrame {
 									jComboBox1.setSelectedIndex(-1);
 								}
 								
-								if(STATE.getState() == STATE.NULL && (e.getKeyCode() == KeyEvent.VK_UP
+								//disable up down button when there is no item to be shown
+								if(jComboBox1.getItemCount() == 0 && (e.getKeyCode() == KeyEvent.VK_UP
 										|| e.getKeyCode() == KeyEvent.VK_DOWN)) {
 									jComboBox1.setPopupVisible(false);
 									if(e.getKeyCode() == KeyEvent.VK_UP && lastCmd != null) {
+										
 										editorcomp.setText(lastCmd);
 										STATE.setState(lastCmd);
 										command = STATE.getCommand();
 										curText = lastCmd;
 									}
 								}
-									
+								
+								//for those functions that update comboBox list
 								if(((STATE.getState() == STATE.EDIT && !edit)
 									|| STATE.getState() == STATE.DELETE
 									|| STATE.getState() == STATE.SEARCH
@@ -542,7 +547,7 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState() == STATE.NULL)
 									showPopup("Invalid Command");
-								if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState()!=STATE.NULL) {
+								else if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState()!=STATE.NULL) {
 									String exeCmd = new String();
 									
 									logger.debug("*********************enter");
@@ -576,6 +581,9 @@ public class MainJFrame extends javax.swing.JFrame {
 											edit = false;
 										}
 										break;
+									case EMAIL:
+										new MailDialog(MainJFrame.this, true);
+										break;
 									case ADD:
 										exeCmd = curText;
 										lastCmd = curText;
@@ -602,6 +610,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										return;
 									case EXPAND:
 										new Action.ExpandAction().actionPerformed(null);
+										return;
 									default:
 										logger.warn("default execmd: " + curText);
 										exeCmd = curText;
@@ -615,10 +624,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
 									if(!edit) {
-										if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
+									//	if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
 											jBoxCompletion.setStandardModel();
 											editorcomp.setText("");
-										}
+									//	}
 										UIController.showFeedbackDisplay(tasks);
 									}
 								}

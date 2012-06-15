@@ -67,6 +67,7 @@ public class Archive extends Operation{
 			if (archiveTasks.size() == 0) {
 				return null;
 			} else {
+				undoRedoFeedback=OperationFeedback.UNDO_SUCCESSFUL;
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 			}
 		}
@@ -84,6 +85,7 @@ public class Archive extends Operation{
 			if (archiveTasks.size() == 0) {
 				return null;
 			} else {
+				undoRedoFeedback=OperationFeedback.UNDO_SUCCESSFUL;
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 			}
 		} else {
@@ -245,6 +247,7 @@ public class Archive extends Operation{
 			if (archiveTasks.size() == 0){
 				return null;
 			} else {
+				undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 			}
 		} else if (archiveCommand == archiveStatus.ARCHIVE){
@@ -262,6 +265,7 @@ public class Archive extends Operation{
 			if (archiveTasks.size() == 0) {
 				return null;
 			} else {
+				undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 				return (Task[]) archiveTasks.toArray(new Task[archiveTasks.size()]);
 			}
 		} else {

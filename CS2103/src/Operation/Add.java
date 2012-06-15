@@ -131,10 +131,13 @@ public class Add extends Operation {
 			}
 			
 		}
-		if (undoneTasks.size() != 0)
+		if (undoneTasks.size() != 0) {
+			undoRedoFeedback=OperationFeedback.UNDO_SUCCESSFUL;
 			return undoneTasks.toArray(new Task[undoneTasks.size()]);
-		else 
+		}
+		else {
 			return null;
+		}
 		
 		
 		
@@ -154,10 +157,13 @@ public class Add extends Operation {
 			}
 			
 		}
-		if (redoneTasks.size() != 0)
+		if (redoneTasks.size() != 0) {
+			undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 			return redoneTasks.toArray(new Task[redoneTasks.size()]);
-		else 
+		}
+		else { 
 			return null;
+		}
 	}
 	
 

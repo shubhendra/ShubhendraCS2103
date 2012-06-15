@@ -36,13 +36,13 @@ public class TaskDateTime {
 		ISO_DATE_TIME.setLenient(false);
 		ISO_DATE_TIME.setLenient(false);
 	}
-	private static Logger logger=Logger.getLogger(TaskDateTime.class);
+	private static Logger logger = Logger.getLogger(TaskDateTime.class);
 
 /** default constructor
  * 
  */
-public TaskDateTime()
-{
+	
+public TaskDateTime(){
 	calendar = new GregorianCalendar( 2000, 0, 1, 23, 59,59);
 	calendar.setLenient(true);
 	timeMilli = calendar.getTimeInMillis();
@@ -52,53 +52,53 @@ public TaskDateTime()
 /** DateTime constructor 1 
  * 
  */
-public TaskDateTime(long timeInMillis)
-{
+
+public TaskDateTime(long timeInMillis){
 	calendar = new GregorianCalendar( 2000, 0, 1, 23, 59,59);
 	calendar.setTimeInMillis(timeInMillis);
 	calendar.setLenient(true);
-	timeMilli=calendar.getTimeInMillis();
+	timeMilli = calendar.getTimeInMillis();
 	hasDate = true;
-	hasTime=true;
+	hasTime = true;
 }
 /** constructor which only sets the date
  * 
  */
-public TaskDateTime( int year, int month, int day)
-{
+
+public TaskDateTime(int year, int month, int day){
 	calendar = new GregorianCalendar(year, month-1, day, 23,59,59);
 	calendar.setLenient(true);
-	timeMilli=calendar.getTimeInMillis();
+	timeMilli = calendar.getTimeInMillis();
 	hasTime = false;
 	hasDate = true;
 }
 /** constructor which only sets the time
  * 
  */
-public TaskDateTime(int hour,int minutes)
-{
+
+public TaskDateTime(int hour,int minutes){
 	calendar = new GregorianCalendar(2000, 0, 1, hour, minutes,0);
 	calendar.setLenient(false);
-	timeMilli=calendar.getTimeInMillis();
+	timeMilli = calendar.getTimeInMillis();
 	hasTime = true;
-	hasDate=false;
+	hasDate = false;
 }
 /** constructor which sets both date and time 
  * 
  */
-public TaskDateTime(int year, int month, int day, int hours, int minutes)
-{
+
+public TaskDateTime(int year, int month, int day, int hours, int minutes){
 	calendar = new GregorianCalendar(year, month-1, day, hours, minutes,0);
 	calendar.setLenient(false);
-	timeMilli=calendar.getTimeInMillis();
+	timeMilli = calendar.getTimeInMillis();
 	hasTime = true;
 	hasDate = true;
 }
 /** constructor which sets the data and time with seconds
  * 
  */
-public TaskDateTime(int year, int month, int day, int hours, int minutes, int seconds)
-{
+
+public TaskDateTime(int year, int month, int day, int hours, int minutes, int seconds){
 	calendar = new GregorianCalendar(year, month-1, day, hours, minutes, seconds);
 	calendar.setLenient(false);
 	timeMilli = calendar.getTimeInMillis();
@@ -109,8 +109,8 @@ public TaskDateTime(int year, int month, int day, int hours, int minutes, int se
  * 
  * @return the DateTime object having the current date and time details
  */
-public static TaskDateTime getCurrentDateTime()
-{
+
+public static TaskDateTime getCurrentDateTime(){
 	GregorianCalendar current = new GregorianCalendar();
 	current.setLenient(false);
 	current.getTimeInMillis();
@@ -122,8 +122,8 @@ public static TaskDateTime getCurrentDateTime()
  * 
  * @return the DateTime object having the current date details
  */
-public static TaskDateTime getCurrentDate()
-{
+
+public static TaskDateTime getCurrentDate(){
 	GregorianCalendar current = new GregorianCalendar();
 	current.setLenient(false);
 	current.getTimeInMillis();
@@ -136,12 +136,12 @@ public static TaskDateTime getCurrentDate()
  * @param month
  * @param day
  */
-public void set(int year,int month,int day)
-{
+
+public void set(int year,int month,int day){
 	calendar.set(year, month-1, day);
 	calendar.setLenient(true);
 	timeMilli = calendar.getTimeInMillis();
-	hasDate=true;
+	hasDate = true;
 }
 /** setter for the Date Time class
  * 
@@ -152,12 +152,12 @@ public void set(int year,int month,int day)
  * @param minutes
  * @param seconds
  */
-public void set(int year, int month, int day, int hours, int minutes, int seconds)
-{
+
+public void set(int year, int month, int day, int hours, int minutes, int seconds){
 	calendar.set(year, month-1, day, hours, minutes, seconds);
-	timeMilli=calendar.getTimeInMillis();
+	timeMilli = calendar.getTimeInMillis();
 	hasTime = true;
-	hasDate=true;
+	hasDate = true;
 }
 /**setter for the DateTime class
  * 
@@ -167,20 +167,20 @@ public void set(int year, int month, int day, int hours, int minutes, int second
  * @param hours
  * @param minutes
  */
-public void set(int year, int month, int day, int hours, int minutes)
-{
+
+public void set(int year, int month, int day, int hours, int minutes){
 	calendar.set(year, month-1, day, hours, minutes);
 	timeMilli = calendar.getTimeInMillis();
 	hasTime = true;
-	hasDate=true;
+	hasDate = true;
 }
 /** function to see if two objects are the same
  * 
  * @param ob object being compared to
  * @return true if the objects are the same, otherwise false
  */
-public boolean isEqual(Object ob)
-{
+
+public boolean isEqual(Object ob){
 	if(! (ob instanceof TaskDateTime) )
 		return false;
 	if(this == ob)
@@ -192,32 +192,32 @@ public boolean isEqual(Object ob)
  * 
  * @return true if the object has time, otherwise false
  */
-public boolean getHasTime()
-{
+
+public boolean getHasTime(){
 	return hasTime;
 }
 /** setter to set the hasTime attribute to value
  * 
  * @param value 
  */
-public void setHasTime(boolean value)
-{
-	hasTime=value;
+
+public void setHasTime(boolean value){
+	hasTime = value;
 }
 /** to get the time in milliseconds
  * 
  * @return the time in milliseconds
  */
-public long getTimeMilli()
-{
+
+public long getTimeMilli(){
 	return timeMilli;
 }
 /** sets the time in milliseconds
  * 
  * @param time the time in milliseconds to be set to
  */
-public void setTimeMilli(long time)
-{
+
+public void setTimeMilli(long time){
 	this.timeMilli = time;
 	calendar.setTimeInMillis(time);
 }
@@ -226,8 +226,8 @@ public void setTimeMilli(long time)
  * @param second the other DateTime object
  * @return -1 if the second object is greater than the first, 0 if both are equal, otherwise returns -1
  */
-public int compareTo(TaskDateTime second)
-{
+
+public int compareTo(TaskDateTime second){
 	long diff = this.getTimeMilli() - second.getTimeMilli();
 	if(diff < 0)
 		return -1;
@@ -245,47 +245,52 @@ public int compareTo(TaskDateTime second)
  * @param component
  * @return
  */
-public int get(int component)
-{
+public int get(int component){
 	int value = calendar.get(component);
 	if(component == Calendar.MONTH){
 		value += 1;
 	}
 	return value;
 }
-public String toString()
-{
+/**Display time in milliseconds.
+ * 
+ */
+
+public String toString(){
 	return Long.toString(getTimeMilli());
 }
 /**
  * 
  * @return the formatted string
  */
-public String formattedToString()
-{
+
+public String formattedToString(){
 	if(isDefaultTime())
 		return "";
-	else if(getHasTime() && getHasDate())
+	else if(getHasTime() && getHasDate()){
 		return DAY_MONTH_YEAR_HOUR_MIN.format(calendar.getTimeInMillis());
-	else if(! (getHasDate()) && getHasTime() )
+	}
+	else if(! (getHasDate()) && getHasTime()){
 		return HOUR_MIN.format(calendar.getTimeInMillis());
-	else 
+	}
+	else{ 
 		return DAY_MONTH_YEAR.format(calendar.getTimeInMillis());
+	}
 }
 /** 
  * 
  * @return the presentable string
  */
-public String presentableToString()
-{
+
+public String presentableToString(){
 	return DAY_MONTH_YEAR_PRESENTABLE.format(this.calendar.getTimeInMillis());
 }
 /**
  * 
  * @return the generated dateCode for the HashMap
  */
-public String generateDateCode()
-{
+
+public String generateDateCode(){
 	try
 	{
 		return DAY_MONTH_YEAR_CODEFORMAT.format(this.calendar.getTimeInMillis());
@@ -300,37 +305,40 @@ public String generateDateCode()
  * 
  * @return the generated timeCode for the HashMap
  */
-public String generateTimeCode()
-{
-	if(hasTime)
+
+public String generateTimeCode(){
+	if(hasTime){
 		return String.format("%02d%02d%02d", this.calendar.get(GregorianCalendar.HOUR_OF_DAY), this.calendar.get(GregorianCalendar.MINUTE), 
 				this.calendar.get(GregorianCalendar.SECOND));
-	else
+	}
+	else{
 		return String.format("%02d%02d%02d", this.calendar.get(GregorianCalendar.HOUR_OF_DAY),this.calendar.get(GregorianCalendar.MINUTE),
 				this.calendar.get(GregorianCalendar.SECOND));
+
+	}
 }
 /** checks if the object is of Default type
  * 
  * @return true if the object is of the Default type
  */
-public boolean isDefaultTime()
-{
+
+public boolean isDefaultTime(){
 	return this.isEqual(new TaskDateTime()) && !hasTime;
 }
 /**
  * 
  * @return the Date of the object in the form of a DateTime object
  */
-public TaskDateTime getDate()
-{
+
+public TaskDateTime getDate(){
 	return new TaskDateTime(this.get(GregorianCalendar.YEAR), this.get(GregorianCalendar.MONTH), this.get(GregorianCalendar.DAY_OF_MONTH));
 }
 /**
  * 
  * @return the Time of the object in the form of a DateTime object
  */
-public TaskDateTime getTime() 
-{
+
+public TaskDateTime getTime() {
 	TaskDateTime newEventTime = new TaskDateTime();
 	newEventTime.set(Calendar.HOUR_OF_DAY, this.get(Calendar.HOUR_OF_DAY));
 	newEventTime.set(Calendar.MINUTE, this.get(Calendar.MINUTE));
@@ -343,15 +351,13 @@ public TaskDateTime getTime()
  * @param Component the component number in the Gregorian Calendar
  * @param value the value the component 
  */
-public void set(int Component,int value)
-{
-	if(Component == GregorianCalendar.MONTH)
-	{
+
+public void set(int Component,int value){
+	if(Component == GregorianCalendar.MONTH){
 		value -= 1;
 	}
 	calendar.set(Component,value);
-	if(Component == GregorianCalendar.HOUR_OF_DAY || Component == GregorianCalendar.HOUR|| Component == GregorianCalendar.MINUTE)
-	{
+	if(Component == GregorianCalendar.HOUR_OF_DAY || Component == GregorianCalendar.HOUR|| Component == GregorianCalendar.MINUTE){
 		hasTime = true;
 	}
 	timeMilli = calendar.getTimeInMillis();
@@ -360,16 +366,16 @@ public void set(int Component,int value)
  * 
  * @param value the value the hasDate atribute is set to.
  */
-public void setHasDate(boolean value)
-{
+
+public void setHasDate(boolean value){
 	hasDate = value;
 }
 /**
  * 
  * @return the hasDate attribute
  */
-public boolean getHasDate()
-{
+
+public boolean getHasDate(){
 	return hasDate;
 }
 /** converts xml Date format to TaskDateTime format
@@ -377,6 +383,7 @@ public boolean getHasDate()
  * @param xmlString xml Date format to be converted
  * @return TaskDateTime object equivalent to the xml Date.
  */
+
 public static TaskDateTime xmlToEventTime(String xmlString) {
 	Date date;
 	date=xmlToDate(xmlString);
@@ -390,6 +397,7 @@ public static TaskDateTime xmlToEventTime(String xmlString) {
  * @param xmlString xml Date format to be converted
  * @return Date object equivalent to the xml Date.
  */
+
 private static Date xmlToDate(String xmlString) {
 	try
 	{
@@ -411,16 +419,16 @@ private static Date xmlToDate(String xmlString) {
  * 
  * @return xml format
  */
-public String dateToXml()
-{
+
+public String dateToXml(){
 	return ISO_DATE.format(new Date(timeMilli));
 }
 /** converts dateTime to xml Date format
  * 
  * @return xml format
  */
-public String dateTimeToXml()
-{
+
+public String dateTimeToXml(){
 	return ISO_DATE_TIME.format(new Date(timeMilli));
 }
 }

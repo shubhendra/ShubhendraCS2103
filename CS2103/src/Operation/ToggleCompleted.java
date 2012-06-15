@@ -125,6 +125,7 @@ public class ToggleCompleted extends BaseSearch{
 			
 		}
 		if (undoneTasks.size() != 0) {
+			undoRedoFeedback=OperationFeedback.UNDO_SUCCESSFUL;
 			return undoneTasks.toArray(new Task[undoneTasks.size()]);
 		} else {
 			return null;
@@ -174,6 +175,7 @@ public class ToggleCompleted extends BaseSearch{
 			
 		}
 		if (redoneTasks.size() != 0) {
+			undoRedoFeedback=OperationFeedback.REDO_SUCCESSFUL;
 			return redoneTasks.toArray(new Task[redoneTasks.size()]);
 		} else { 
 			return null;

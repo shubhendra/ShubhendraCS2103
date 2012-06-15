@@ -140,3 +140,84 @@
 2012-06-15 01:38:38,431 - operation.Operation - INFO - search by 5july
 2012-06-15 01:38:38,580 - operation.Operation - INFO - search by 5july 
 2012-06-15 01:38:40,067 - operation.Operation - INFO - search by 5 july 
+2012-06-15 13:31:45,140 - operation.Operation - INFO - find *.*
+2012-06-15 13:31:46,681 - operation.Operation - INFO - find *.*
+2012-06-15 13:31:46,686 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 13:31:56,017 - operation.Operation - INFO - agendaEmail    
+2012-06-15 13:32:05,133 - operation.Operation - INFO - agendaEmail shubhendra.ag
+2012-06-15 13:32:18,960 - operation.Operation - INFO - agendaEmail shubhendra.ag@gmail.com
+2012-06-15 13:32:19,011 - operation.Operation - INFO - find *.*
+2012-06-15 13:32:19,016 - operation.Operation - INFO - find *.*
+2012-06-15 13:32:19,016 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 13:32:37,326 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,802 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,827 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,862 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,902 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,927 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,952 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:37,982 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:38,022 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:38,057 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:38,077 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:38,107 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:32:38,267 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:05,552 - gcal.GoogleCalendar - WARN - Authentication Exception
+2012-06-15 13:33:05,623 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:05,623 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:05,623 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 13:33:07,918 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,404 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,439 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,469 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,499 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,529 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,564 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,594 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,624 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,659 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,689 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:08,744 - gui.STATE - WARN - receive null string from the input
+2012-06-15 13:33:18,679 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 13:33:18,705 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:18,705 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:18,705 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 13:33:30,115 - gui.mainWindow.MainJFrame - WARN - default execmd: import.gcal
+2012-06-15 13:33:30,115 - operation.Operation - INFO - import.gcal
+2012-06-15 13:33:31,756 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:31,761 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:37,572 - gui.mainWindow.MainJFrame - WARN - default execmd: export.gcal
+2012-06-15 13:33:37,572 - operation.Operation - INFO - export.gcal
+2012-06-15 13:33:39,478 - operation.Operation - INFO - find *.*
+2012-06-15 13:33:39,483 - operation.Operation - INFO - find *.*
+2012-06-15 13:34:24,014 - operation.Operation - INFO - add go to school at 1pm
+2012-06-15 13:34:24,071 - operation.Operation - INFO - find *.*
+2012-06-15 13:34:24,076 - operation.Operation - INFO - find *.*
+2012-06-15 13:34:51,706 - operation.Operation - INFO - add go toschool at 1pm today
+2012-06-15 13:34:51,737 - operation.Operation - INFO - find *.*
+2012-06-15 13:34:51,742 - operation.Operation - INFO - find *.*
+2012-06-15 13:47:27,030 - operation.Operation - INFO - find *.*
+2012-06-15 13:47:27,221 - operation.Operation - INFO - find *.*
+2012-06-15 13:47:27,226 - operation.Operation - INFO - find *.*
+2012-06-15 13:47:27,736 - operation.Operation - INFO - find *.*
+2012-06-15 13:47:46,260 - operation.Operation - INFO - find *.*
+2012-06-15 13:47:46,540 - operation.Operation - INFO - find *.*
+2012-06-15 13:48:19,991 - operation.Operation - INFO - agendaEmail shubhe
+2012-06-15 13:48:32,282 - operation.Operation - INFO - agendaEmail 
+2012-06-15 13:50:54,138 - operation.Operation - INFO - find *.*
+2012-06-15 13:50:54,423 - operation.Operation - INFO - find *.*
+2012-06-15 13:50:59,814 - operation.Operation - INFO - agendaEmail lll
+2012-06-15 13:51:05,850 - operation.Operation - INFO - agendaEmail           
+2012-06-15 13:51:13,231 - operation.Operation - INFO - agendaEmail shubhendra.ag@gmail.com
+2012-06-15 13:51:13,266 - operation.Operation - INFO - find *.*
+2012-06-15 13:51:13,271 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:11,106 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:11,251 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:11,251 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:12,101 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:16,202 - operation.Operation - INFO - DELETE $$__13-06-2012070001X__$$ 
+2012-06-15 13:57:16,278 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:16,283 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:17,708 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 13:57:26,719 - operation.Operation - INFO - find *.*
+2012-06-15 13:57:26,724 - operation.Operation - INFO - find *.*

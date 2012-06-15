@@ -3,12 +3,16 @@ package gui;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.LogInDialog;
+import gui.mainWindow.extended.MailDialog;
 
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
+import javax.swing.JFrame;
 
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 
 import logic.JIDLogic;
 import data.Task;
@@ -396,4 +400,5 @@ public class Action {
     		STATE.setState(STATE.NULL);
     	}
     }
+    
 }

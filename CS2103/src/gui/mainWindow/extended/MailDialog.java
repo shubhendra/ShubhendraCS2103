@@ -23,6 +23,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import org.apache.log4j.Logger;
 
+import constant.OperationFeedback;
+
 import logic.JIDLogic;
 
 /**
@@ -79,12 +81,23 @@ public class MailDialog extends javax.swing.JDialog {
         submitButton = new javax.swing.JButton();
         background = new javax.swing.JLabel();
         mailLabel = new javax.swing.JLabel();
+        descriptionLabel = new javax.swing.JLabel();
+        noticeLabel = new javax.swing.JLabel();
         
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
         setIconImages(null);
 
-        mailLabel.setText("<html><b>e-mail:</html>");
+        descriptionLabel.setText("<html><i>Please enter email to send email reminder.</html>");
+        descriptionLabel.setBounds(10, 80, 300, 25);
+        jLayeredPane2.add(descriptionLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        noticeLabel.setText("<html><font color = \"red\">Please input email again</font></html>");
+        noticeLabel.setBounds(10, 35, 300, 25);
+        noticeLabel.setVisible(false);
+        jLayeredPane2.add(noticeLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        mailLabel.setText("<html><b>E-mail:</html>");
         mailLabel.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
         mailLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
         mailLabel.setBounds(10, 55, 85, 25);
@@ -129,9 +142,20 @@ public class MailDialog extends javax.swing.JDialog {
      * @param evt
      */
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {
-    	this.dispose();
+    	//this.setVisible(false);
     	JIDLogic.setCommand("agendaEmail");
     	JIDLogic.executeCommand("agendaEmail " + userTextField.getText());
+    	
+    	if(UIController.getOperationFeedback() != OperationFeedback.VALID) {
+    		String feedback = "<HTML><i><font color = \"red\">" 
+    						+ OperationFeedback.getString(UIController.getOperationFeedback())
+    						+ "</HTML>";
+    		noticeLabel.setText(feedback);
+    		noticeLabel.setVisible(true);    		
+    	}
+    	else {
+    		this.dispose();
+    	}
     }
     
     
@@ -187,6 +211,8 @@ public class MailDialog extends javax.swing.JDialog {
     private javax.swing.JButton submitButton;
     private javax.swing.JTextField userTextField;
     private javax.swing.JLabel mailLabel;
+    private javax.swing.JLabel descriptionLabel;
+    private javax.swing.JLabel noticeLabel;
     private static boolean shown = true;
     // End of variables declaration
     
