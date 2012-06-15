@@ -45,7 +45,9 @@ public class JIDLogic {
 				redoStack.push(undoOperation);
 			}
 			logger.info("Undo being performed for:" + undoOperation.getOperationName());
-			return undoOperation.undo();
+			Task[] undoResult =  undoOperation.undo();
+			UIController.sendOperationFeedback(undoOperation.getUndoRedoFeedback());
+			return undoResult;
 			
 		} else if (commandFromUser.trim().toLowerCase().equals("redo") 
 				&& !redoStack.empty()) {
@@ -56,7 +58,9 @@ public class JIDLogic {
 			
 			}
 			logger.info("Redo Being performed for:" + redoOperation.getOperationName());
-			return redoOperation.redo(); 
+			Task[] redoResult = redoOperation.redo(); 
+			UIController.sendOperationFeedback(redoOperation.getUndoRedoFeedback());
+			return redoResult;
 		} else {
 			logger.debug("inside fourth cond");
 			op = Operation.getOperationObj(commandFromUser);
@@ -67,6 +71,7 @@ public class JIDLogic {
 			if (op.isUndoAble()) {
 				undoStack.push(op);
 			}
+			
 			return result;
 			
 			

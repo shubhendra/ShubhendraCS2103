@@ -51,6 +51,7 @@ public enum STATE {
 		curState = newState;
 		if(!isCommandSent)
 			command = curState.toString();
+		System.out.println(curState);
 	}
 	
 	/**

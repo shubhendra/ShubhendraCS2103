@@ -5,6 +5,7 @@
 package gui.mainWindow.extended;
 
 import gui.Resource;
+import gui.STATE;
 import gui.UIController;
 
 import java.awt.Component;
@@ -85,13 +86,13 @@ public class LogInDialog extends javax.swing.JDialog {
         setAlwaysOnTop(true);
         setIconImages(null);
 
-        userLabel.setText("username");
+        userLabel.setText("Username");
         passLabel.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
         passLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
         userLabel.setBounds(10, 40, 85, 25);
         jLayeredPane2.add(userLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
-        passLabel.setText("password");
+        passLabel.setText("Password");
         passLabel.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
         passLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
         passLabel.setBounds(10, 70, 85, 25);
@@ -105,7 +106,7 @@ public class LogInDialog extends javax.swing.JDialog {
         userTextField.setBounds(70, 40, 145, 25);
         jLayeredPane2.add(userTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        loginButton.setText("log in");
+        loginButton.setText("Log in");
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
@@ -154,7 +155,7 @@ public class LogInDialog extends javax.swing.JDialog {
     	
     	String username = userTextField.getText();
     	char password[] = passTextField.getPassword();
-    	
+    	STATE.setState(STATE.LOGIN);
 		JIDLogic.setCommand("login");
 		String execmd = "login " + username + " ";
 		for(int i=0; i<password.length; i++)
@@ -162,6 +163,7 @@ public class LogInDialog extends javax.swing.JDialog {
 		
 		JIDLogic.executeCommand(execmd);
 		
+		System.out.println("loginButton: " + STATE.getState());
 		UIController.showFeedbackDisplay();
     	UIController.setLoginOn(false);
     }

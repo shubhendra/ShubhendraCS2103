@@ -97,9 +97,9 @@ public enum OperationFeedback {
 		case REDO_UNSUCCESSFUL:
 			return "Error: Redo is unsuccessful.";
 		case UNDO_SUCCESSFUL:
-			return "Undo successfully.";
+			return "Undo successful.";
 		case REDO_SUCCESSFUL:
-			return "Redo successfully.";
+			return "Redo successful.";
 		case UNDO_EMPTY:
 			return "Error: No more things to be undone.";
 		case REDO_EMPTY:

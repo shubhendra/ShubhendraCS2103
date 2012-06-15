@@ -37,9 +37,9 @@ public abstract class Operation {
 		
 		intendedOperation = userCommand.trim().split("\\s+")[0];
 		intendedOperation = intendedOperation.toLowerCase().trim();
-		if (!intendedOperation.equals("login")) {
+		//if (!intendedOperation.equals("login")) {
 			logger.info(userCommand);
-		}
+		//}
 		
 		
 		if (intendedOperation.equals("add") || intendedOperation.equals("insert")){
