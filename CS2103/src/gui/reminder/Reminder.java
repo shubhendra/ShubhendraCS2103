@@ -1,6 +1,5 @@
 package gui.reminder;
 
-
 import gui.UIController;
 
 import java.awt.SystemTray;

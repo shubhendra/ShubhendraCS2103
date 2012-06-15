@@ -43,7 +43,7 @@ public class JotItDownTray {
 	/**
 	 * constructor
 	 */
-	public JotItDownTray() {
+	JotItDownTray() {
 		getSystemTray();
 		addPopupMenu();
 		addTrayIcon();

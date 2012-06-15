@@ -89,11 +89,11 @@ public class MailDialog extends javax.swing.JDialog {
         setIconImages(null);
 
         descriptionLabel.setText("<html><i>Please enter email to send email reminder.</html>");
-        descriptionLabel.setBounds(10, 80, 300, 25);
+        descriptionLabel.setBounds(60, 80, 300, 25);
         jLayeredPane2.add(descriptionLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
         noticeLabel.setText("<html><font color = \"red\">Please input email again</font></html>");
-        noticeLabel.setBounds(10, 35, 300, 25);
+        noticeLabel.setBounds(60, 30, 300, 25);
         noticeLabel.setVisible(false);
         jLayeredPane2.add(noticeLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
@@ -107,7 +107,7 @@ public class MailDialog extends javax.swing.JDialog {
         userTextField.setBounds(60, 55, 125, 25);
         jLayeredPane2.add(userTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        submitButton.setText("<html>submit</html>");
+        submitButton.setText("<html>Submit</html>");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitButtonActionPerformed(evt);
@@ -147,7 +147,8 @@ public class MailDialog extends javax.swing.JDialog {
     	JIDLogic.executeCommand("agendaEmail " + userTextField.getText());
     	
     	if(UIController.getOperationFeedback() != OperationFeedback.VALID) {
-    		String feedback = "<HTML><i><font color = \"red\">" 
+    		String feedback = "<HTML><i><font color = \"red\" size = \"3\"" 
+    						+ "style=\"BACKGROUND-COLOR: #FFFFFF\">" 
     						+ OperationFeedback.getString(UIController.getOperationFeedback())
     						+ "</HTML>";
     		noticeLabel.setText(feedback);

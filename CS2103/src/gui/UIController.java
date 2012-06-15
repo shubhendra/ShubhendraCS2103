@@ -17,13 +17,12 @@ import java.io.IOException;
 
 import javax.swing.Timer;
 
-import logic.JIDLogic;
-
 import org.apache.log4j.Logger;
 
 import constant.OperationFeedback;
 import data.Task;
 
+import logic.JIDLogic;
 
 /**
  * for controlling UI and initializing the program.
@@ -178,8 +177,6 @@ public class UIController {
 		operationFeedback = newOPFeedback;
 	}
 	
-	//UI.sendOperationFeedback(OperationFeedback.INVALID_);
-	
 	/**
 	 * get operation feedback
 	 * @return operation feedback
@@ -203,8 +200,11 @@ public class UIController {
 		String displayText;
 		
 		//some tasks does not need operation feedback. i.e. help
-		if(operationFeedback == null)
+		if(operationFeedback == null) {
+			logger.warn(STATE.getState() + ": no operationfeedback sent!");
+			UIController.refresh();
 			return;
+		}
 		
 		switch(	operationFeedback) {
 		case VALID:

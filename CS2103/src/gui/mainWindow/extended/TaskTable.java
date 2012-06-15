@@ -5,13 +5,10 @@ import gui.Resource;
 import java.awt.Component;
 import java.awt.Point;
 import java.util.Vector;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import javax.swing.Timer;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
@@ -33,6 +30,9 @@ public class TaskTable {
 	private DefaultTableModel model;
     private Vector<String> listLabel = new Vector<String>();
     private Task[] tasks;
+    
+    final int MAXIMUM_LABEL_SHOWN = 6;
+    final int MAXIMUM_TEXT_NAME = 40;
 	
     /**
      * Constructor
@@ -107,7 +107,7 @@ public class TaskTable {
     		str += "<font color=\"red\">";
     	}
     	
-    	str += makeFirstLetterCapital(task.getName());
+    	str += trimTaskName(makeFirstLetterCapital(task.getName()));
     	str += "<br/></b>";
     	str += tagToCode(task);
     	
@@ -115,12 +115,12 @@ public class TaskTable {
     		str+=completedFont;
     	
     	if(task.getStart()!= null) {
-    		str+="<br/><i>start: </i>"+task.getStart().presentableToString();
+    		str+="<br/><i>Start: </i>"+task.getStart().presentableToString();
     	}
     	
     	if(task.getEnd()!=null) {
     		str+="<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
-    				"end: </i>"+task.getEnd().presentableToString();
+    				"End: </i>"+task.getEnd().presentableToString();
     	} 
     	str += "</font></HTML>";
     	
@@ -152,14 +152,27 @@ public class TaskTable {
      */
     private String tagToCode(Task task) {
     	String str = new String();
-    	if(task.getLabels()!=null)
-	    	for(int i=0; i<task.getLabels().size() && task.getLabels().get(i)!=null; i++) {
-	    		str += "<FONT style=\"BACKGROUND-COLOR: #FFFFCC\">"
-	    			+ task.getLabels().get(i)
-	    			+ "</FONT> ";
+    	if(task.getLabels()!=null) {
+    		int totalLabelShown = task.getLabels().size() >= MAXIMUM_LABEL_SHOWN ? 
+    							  MAXIMUM_LABEL_SHOWN : task.getLabels().size(); 
+    		for(int i=0; i<totalLabelShown && task.getLabels().get(i)!=null; i++) {
+	    		str += "<FONT style=\"BACKGROUND-COLOR: #FFCC66\">" +"&nbsp;"
+	    			+ task.getLabels().get(i) +"&nbsp;"
+	    			+ "</FONT> &nbsp;";
 	    	}
+    	}
 		return str;
 	}
+    
+    private String trimTaskName(String name) {
+    	
+    	boolean longerThanMaximum = name.length()>MAXIMUM_TEXT_NAME;
+    	
+    	if(!longerThanMaximum)
+    		return name;
+    	else
+    		return (name.substring(0, MAXIMUM_TEXT_NAME) + "...");
+    }
 
     /**
      * make all displaying JLabel

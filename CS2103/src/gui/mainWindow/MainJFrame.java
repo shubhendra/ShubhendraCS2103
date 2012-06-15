@@ -611,6 +611,12 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EXPAND:
 										new Action.ExpandAction().actionPerformed(null);
 										return;
+									case UNDO:
+										new Action.UndoAction().actionPerformed(null);
+										return;
+									case REDO:
+										new Action.RedoAction().actionPerformed(null);
+										return;
 									default:
 										logger.warn("default execmd: " + curText);
 										exeCmd = curText;
