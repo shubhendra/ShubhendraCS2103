@@ -1330,3 +1330,431 @@
 2012-06-15 16:04:34,443 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
 2012-06-15 16:04:34,443 - gui.reminder.Reminder - DEBUG - setTimer: 114624557
 2012-06-15 16:04:34,443 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:07:55,801 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:07:55,816 - operation.Operation - INFO - find *.*
+2012-06-15 16:07:55,957 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:07:55,957 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:07:55,972 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 16:07:55,972 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:07:55,972 - operation.Operation - INFO - find *.*
+2012-06-15 16:07:55,972 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:07:55,972 - operation.Operation - INFO - find *.*
+2012-06-15 16:07:55,972 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:07:56,441 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 16:07:56,441 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:07:56,441 - operation.Operation - INFO - find *.*
+2012-06-15 16:07:56,441 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 16:08:05,957 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:05,957 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:06,067 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:08:06,067 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:08:06,082 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 16:08:06,082 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:06,082 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:06,082 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:06,082 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:06,082 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:08:06,082 - gui.reminder.Reminder - DEBUG - setTimer: 114412918
+2012-06-15 16:08:06,488 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 16:08:06,488 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:06,488 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:06,488 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:08:06,488 - gui.reminder.Reminder - DEBUG - setTimer: 114412512
+2012-06-15 16:08:07,736 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:08:11,075 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:11,075 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:11,075 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:11,075 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:11,237 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:11,237 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go
+2012-06-15 16:08:11,237 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:11,237 - operation.Operation - INFO - star.all go
+2012-06-15 16:08:12,501 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:12,501 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:12,501 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:12,501 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:14,405 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:14,405 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:14,405 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:14,405 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:15,576 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:15,576 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:15,576 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:15,576 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:15,858 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:15,858 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:15,858 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:17,855 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:17,855 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:17,855 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:17,855 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:18,043 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:18,043 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:18,043 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:18,386 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:18,386 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:18,386 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:18,636 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:18,636 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:18,636 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:19,884 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:08:19,884 - gui.mainWindow.MainJFrame - WARN - default execmd: star.all g
+2012-06-15 16:08:19,884 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:08:19,884 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:19,884 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:19,884 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:19,884 - gui.STATE - ERROR - IMPORTANTALL getEndedString plural form
+2012-06-15 16:08:19,884 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks successfully
+2012-06-15 16:08:19,931 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:08:19,931 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:19,931 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:19,931 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:19,931 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:19,931 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:08:19,931 - gui.reminder.Reminder - DEBUG - setTimer: 114399069
+2012-06-15 16:08:34,705 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:08:34,940 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:08:37,904 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$CompletedAction
+2012-06-15 16:08:37,904 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:37,904 - operation.Operation - INFO - COMPLETED $$__16-06-2012235959W__$$ $$__16-06-2012235959J__$$ $$__16-06-2012235959K__$$ 
+2012-06-15 16:08:37,904 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were toggled completed.
+2012-06-15 16:08:37,936 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:08:37,936 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:37,936 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:37,936 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:37,936 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:37,936 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:08:37,936 - gui.reminder.Reminder - DEBUG - setTimer: 114381064
+2012-06-15 16:08:37,936 - gui.UIController - DEBUG - refresh: in COMPLETED: update JTable
+2012-06-15 16:08:37,936 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:37,936 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:37,951 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:37,951 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:37,951 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:08:37,951 - gui.reminder.Reminder - DEBUG - setTimer: 114381049
+2012-06-15 16:08:42,990 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:42,990 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:08:42,990 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:42,990 - operation.Operation - INFO - star.all g
+2012-06-15 16:08:43,163 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:08:43,163 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go
+2012-06-15 16:08:43,163 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:43,163 - operation.Operation - INFO - star.all go
+2012-06-15 16:08:44,738 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go
+2012-06-15 16:08:44,738 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:44,738 - operation.Operation - INFO - star.all go
+2012-06-15 16:08:45,410 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:08:45,410 - gui.mainWindow.MainJFrame - WARN - default execmd: star.all go
+2012-06-15 16:08:45,410 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:08:45,410 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go
+2012-06-15 16:08:45,410 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:45,410 - operation.Operation - INFO - star.all go
+2012-06-15 16:08:45,426 - gui.STATE - ERROR - IMPORTANTALL getEndedString plural form
+2012-06-15 16:08:45,426 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 2 tasks successfully
+2012-06-15 16:08:45,441 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:08:45,441 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:45,441 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:45,441 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:08:45,441 - operation.Operation - INFO - find *.*
+2012-06-15 16:08:45,441 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:08:45,441 - gui.reminder.Reminder - DEBUG - setTimer: 114373559
+2012-06-15 16:09:03,631 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: completedall
+2012-06-15 16:09:03,631 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all g
+2012-06-15 16:09:03,631 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:03,631 - operation.Operation - INFO - completed.all g
+2012-06-15 16:09:03,772 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: completedall
+2012-06-15 16:09:03,772 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all go
+2012-06-15 16:09:03,772 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:03,772 - operation.Operation - INFO - completed.all go
+2012-06-15 16:09:05,956 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:09:05,956 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: COMPLETEDALL
+2012-06-15 16:09:05,956 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all $$__16-06-2012235959W__$$ 
+2012-06-15 16:09:05,956 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:05,956 - operation.Operation - INFO - completed.all $$__16-06-2012235959W__$$ 
+2012-06-15 16:09:05,956 - gui.mainWindow.MainJFrame - DEBUG - POPUP: go to hell was toggled completed.
+2012-06-15 16:09:05,989 - gui.UIController - DEBUG - refresh: in COMPLETEDALL: update JTable
+2012-06-15 16:09:05,989 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:05,989 - operation.Operation - INFO - find *.*
+2012-06-15 16:09:05,989 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:05,989 - operation.Operation - INFO - find *.*
+2012-06-15 16:09:05,989 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:09:05,989 - gui.reminder.Reminder - DEBUG - setTimer: 114353011
+2012-06-15 16:09:11,230 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:09:11,230 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:09:11,230 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:11,230 - operation.Operation - INFO - star.all g
+2012-06-15 16:09:11,387 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:09:11,387 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go
+2012-06-15 16:09:11,387 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:11,387 - operation.Operation - INFO - star.all go
+2012-06-15 16:09:11,699 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:09:11,699 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go 
+2012-06-15 16:09:11,699 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:11,699 - operation.Operation - INFO - star.all go 
+2012-06-15 16:09:12,776 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:09:12,776 - gui.mainWindow.MainJFrame - WARN - default execmd: star.all go 
+2012-06-15 16:09:12,776 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:09:12,776 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all go 
+2012-06-15 16:09:12,776 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:12,776 - operation.Operation - INFO - star.all go 
+2012-06-15 16:09:12,791 - gui.STATE - ERROR - IMPORTANTALL getEndedString plural form
+2012-06-15 16:09:12,791 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 2 tasks successfully
+2012-06-15 16:09:12,807 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:09:12,807 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:12,807 - operation.Operation - INFO - find *.*
+2012-06-15 16:09:12,807 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:09:12,807 - operation.Operation - INFO - find *.*
+2012-06-15 16:09:12,807 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:09:12,807 - gui.reminder.Reminder - DEBUG - setTimer: 114346193
+2012-06-15 16:10:07,348 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:07,348 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:07,457 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:10:07,457 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:10:07,472 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 16:10:07,472 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:07,472 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:07,472 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:07,472 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:07,472 - gui.reminder.Reminder - DEBUG - latestTask: get A+ for project on 16 Jun 2012 
+2012-06-15 16:10:07,472 - gui.reminder.Reminder - DEBUG - setTimer: 114291528
+2012-06-15 16:10:07,878 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 16:10:07,878 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:07,878 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:07,878 - gui.reminder.Reminder - DEBUG - latestTask: get A+ for project on 16 Jun 2012 
+2012-06-15 16:10:07,878 - gui.reminder.Reminder - DEBUG - setTimer: 114291122
+2012-06-15 16:10:12,356 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:12,356 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:10:12,356 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:12,356 - operation.Operation - INFO - star.all g
+2012-06-15 16:10:13,168 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:10:13,168 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:10:13,168 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all $$__16-06-2012235959S__$$ 
+2012-06-15 16:10:13,168 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:13,168 - operation.Operation - INFO - star.all $$__16-06-2012235959S__$$ 
+2012-06-15 16:10:13,168 - gui.STATE - ERROR - IMPORTANTALL getEndedString singular form
+2012-06-15 16:10:13,168 - gui.mainWindow.MainJFrame - DEBUG - POPUP: get A+ for project successfully
+2012-06-15 16:10:13,215 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:10:13,215 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:13,215 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:13,215 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:13,215 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:13,215 - gui.reminder.Reminder - DEBUG - latestTask: *get A+ for project on 16 Jun 2012 
+2012-06-15 16:10:13,215 - gui.reminder.Reminder - DEBUG - setTimer: 114285785
+2012-06-15 16:10:30,640 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:10:30,640 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
+2012-06-15 16:10:30,640 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add get A* for cs2103 weekly -10 tmr
+2012-06-15 16:10:30,640 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:30,640 - operation.Operation - INFO - add get A* for cs2103 weekly -10 tmr
+2012-06-15 16:10:30,656 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 10 tasks were added.
+2012-06-15 16:10:30,688 - gui.UIController - DEBUG - refresh: in ADD: update JTable
+2012-06-15 16:10:30,688 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:30,688 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:30,688 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:30,688 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:30,688 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:10:30,688 - gui.reminder.Reminder - DEBUG - setTimer: 114268312
+2012-06-15 16:10:36,507 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:10:39,768 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:39,768 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:10:39,768 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:39,768 - operation.Operation - INFO - star.all g
+2012-06-15 16:10:39,883 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:39,883 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all ge
+2012-06-15 16:10:39,883 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:39,898 - operation.Operation - INFO - star.all ge
+2012-06-15 16:10:40,007 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:40,007 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all get
+2012-06-15 16:10:40,007 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:40,023 - operation.Operation - INFO - star.all get
+2012-06-15 16:10:41,536 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:10:41,536 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:10:41,536 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all $$__30-06-2012235959T__$$ 
+2012-06-15 16:10:41,536 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:41,536 - operation.Operation - INFO - star.all $$__30-06-2012235959T__$$ 
+2012-06-15 16:10:41,536 - gui.STATE - ERROR - IMPORTANTALL getEndedString plural form
+2012-06-15 16:10:41,536 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 10 tasks successfully
+2012-06-15 16:10:41,552 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:10:41,552 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:41,552 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:41,552 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:41,552 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:41,552 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:10:41,552 - gui.reminder.Reminder - DEBUG - setTimer: 114257448
+2012-06-15 16:10:54,376 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:54,376 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:10:54,376 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:54,376 - operation.Operation - INFO - star.all g
+2012-06-15 16:10:54,611 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:54,611 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all ge
+2012-06-15 16:10:54,611 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:54,611 - operation.Operation - INFO - star.all ge
+2012-06-15 16:10:54,720 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:10:54,720 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all get
+2012-06-15 16:10:54,720 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:54,720 - operation.Operation - INFO - star.all get
+2012-06-15 16:10:55,999 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:10:55,999 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:10:55,999 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all $$__30-06-2012235959T__$$ 
+2012-06-15 16:10:55,999 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:55,999 - operation.Operation - INFO - star.all $$__30-06-2012235959T__$$ 
+2012-06-15 16:10:55,999 - gui.STATE - ERROR - IMPORTANTALL getEndedString plural form
+2012-06-15 16:10:55,999 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 10 tasks successfully
+2012-06-15 16:10:56,015 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:10:56,015 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:56,015 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:56,015 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:10:56,015 - operation.Operation - INFO - find *.*
+2012-06-15 16:10:56,015 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:10:56,015 - gui.reminder.Reminder - DEBUG - setTimer: 114242985
+2012-06-15 16:11:59,527 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:11:59,542 - operation.Operation - INFO - find *.*
+2012-06-15 16:11:59,745 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:11:59,745 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 16:11:59,745 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 16:11:59,745 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:11:59,761 - operation.Operation - INFO - find *.*
+2012-06-15 16:11:59,761 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:11:59,761 - operation.Operation - INFO - find *.*
+2012-06-15 16:11:59,761 - gui.reminder.Reminder - DEBUG - latestTask: *get A+ for project on 16 Jun 2012 
+2012-06-15 16:11:59,761 - gui.reminder.Reminder - DEBUG - setTimer: 114179239
+2012-06-15 16:12:00,335 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 16:12:00,335 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:00,335 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:00,335 - gui.reminder.Reminder - DEBUG - latestTask: *get A+ for project on 16 Jun 2012 
+2012-06-15 16:12:00,335 - gui.reminder.Reminder - DEBUG - setTimer: 114178665
+2012-06-15 16:12:04,750 - gui.STATE - WARN - receive null string from the input
+2012-06-15 16:12:07,403 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:12:07,403 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all g
+2012-06-15 16:12:07,403 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:07,403 - operation.Operation - INFO - star.all g
+2012-06-15 16:12:07,872 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:12:07,872 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all ge
+2012-06-15 16:12:07,872 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:07,872 - operation.Operation - INFO - star.all ge
+2012-06-15 16:12:08,012 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: importantall
+2012-06-15 16:12:08,012 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all get
+2012-06-15 16:12:08,012 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:08,012 - operation.Operation - INFO - star.all get
+2012-06-15 16:12:08,496 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all get
+2012-06-15 16:12:08,496 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:08,496 - operation.Operation - INFO - star.all get
+2012-06-15 16:12:09,168 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:12:09,168 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: IMPORTANTALL
+2012-06-15 16:12:09,168 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: star.all $$__16-06-2012235959I__$$ 
+2012-06-15 16:12:09,168 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:09,183 - operation.Operation - INFO - star.all $$__16-06-2012235959I__$$ 
+2012-06-15 16:12:09,183 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 10 tasks were toggled important suceessfully.
+2012-06-15 16:12:09,230 - gui.UIController - DEBUG - refresh: in IMPORTANTALL: update JTable
+2012-06-15 16:12:09,230 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:09,230 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:09,246 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:09,246 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:09,246 - gui.reminder.Reminder - DEBUG - latestTask: *get A+ for project on 16 Jun 2012 
+2012-06-15 16:12:09,246 - gui.reminder.Reminder - DEBUG - setTimer: 114169754
+2012-06-15 16:12:14,706 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: completedall
+2012-06-15 16:12:14,706 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all 1
+2012-06-15 16:12:14,706 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:14,706 - operation.Operation - INFO - completed.all 1
+2012-06-15 16:12:14,847 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: completedall
+2012-06-15 16:12:14,847 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all 10
+2012-06-15 16:12:14,847 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:14,847 - operation.Operation - INFO - completed.all 10
+2012-06-15 16:12:15,627 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all 10
+2012-06-15 16:12:15,627 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:15,627 - operation.Operation - INFO - completed.all 10
+2012-06-15 16:12:16,236 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-15 16:12:16,236 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: COMPLETEDALL
+2012-06-15 16:12:16,236 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: completed.all $$__28-07-2012235959G__$$ 
+2012-06-15 16:12:16,236 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:16,236 - operation.Operation - INFO - completed.all $$__28-07-2012235959G__$$ 
+2012-06-15 16:12:16,236 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 10 tasks were completed.
+2012-06-15 16:12:16,251 - gui.UIController - DEBUG - refresh: in COMPLETEDALL: update JTable
+2012-06-15 16:12:16,251 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:16,251 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:16,251 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:16,251 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:16,251 - gui.reminder.Reminder - DEBUG - latestTask: *get A+ for project on 16 Jun 2012 
+2012-06-15 16:12:16,251 - gui.reminder.Reminder - DEBUG - setTimer: 114162749
+2012-06-15 16:12:32,757 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$ImportantAction
+2012-06-15 16:12:32,757 - logic.JIDLogic - DEBUG - get A+ for project
+2012-06-15 16:12:32,757 - logic.JIDLogic - DEBUG - ******IMPORTANT $$__16-06-2012235959X__$$ 
+2012-06-15 16:12:32,757 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:32,757 - operation.Operation - INFO - IMPORTANT $$__16-06-2012235959X__$$ 
+2012-06-15 16:12:32,757 - gui.mainWindow.MainJFrame - DEBUG - POPUP: get A+ for project was toggled important.
+2012-06-15 16:12:32,773 - gui.UIController - DEBUG - refresh: in IMPORTANT: update JTable
+2012-06-15 16:12:32,773 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:32,773 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:32,789 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:32,789 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:32,789 - gui.reminder.Reminder - DEBUG - latestTask: get A+ for project on 16 Jun 2012 
+2012-06-15 16:12:32,789 - gui.reminder.Reminder - DEBUG - setTimer: 114146211
+2012-06-15 16:12:32,789 - gui.UIController - DEBUG - refresh: in IMPORTANT: update JTable
+2012-06-15 16:12:32,789 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:32,789 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:32,789 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:32,789 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:32,789 - gui.reminder.Reminder - DEBUG - latestTask: get A+ for project on 16 Jun 2012 
+2012-06-15 16:12:32,789 - gui.reminder.Reminder - DEBUG - setTimer: 114146211
+2012-06-15 16:12:34,240 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:12:34,240 - logic.JIDLogic - INFO - Undo being performed for:important
+2012-06-15 16:12:34,240 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Redo successful.
+2012-06-15 16:12:34,256 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:12:34,256 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:34,256 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:34,256 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:34,256 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:34,256 - gui.reminder.Reminder - DEBUG - latestTask: *get A+ for project on 16 Jun 2012 
+2012-06-15 16:12:34,256 - gui.reminder.Reminder - DEBUG - setTimer: 114144744
+2012-06-15 16:12:37,330 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$DeleteAction
+2012-06-15 16:12:37,330 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:37,330 - operation.Operation - INFO - DELETE $$__16-06-2012235959X__$$ $$__16-06-2012235959I__$$ $$__16-06-2012235959J__$$ 
+2012-06-15 16:12:37,330 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were deleted.
+2012-06-15 16:12:37,330 - gui.UIController - DEBUG - refresh: in DELETE: update JTable
+2012-06-15 16:12:37,345 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:37,345 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:37,345 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:37,345 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:37,345 - gui.reminder.Reminder - DEBUG - latestTask: go to paradise on 16 Jun 2012 
+2012-06-15 16:12:37,378 - gui.reminder.Reminder - DEBUG - setTimer: 114141655
+2012-06-15 16:12:39,140 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:12:39,140 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 16:12:39,140 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Undo successful.
+2012-06-15 16:12:39,140 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:12:39,140 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:39,140 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:39,140 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:39,140 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:39,140 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:12:39,140 - gui.reminder.Reminder - DEBUG - setTimer: 114139860
+2012-06-15 16:12:48,798 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$DeleteAction
+2012-06-15 16:12:48,798 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:48,798 - operation.Operation - INFO - DELETE $$__16-06-2012235959F__$$ $$__16-06-2012235959S__$$ $$__16-06-2012235959A__$$ 
+2012-06-15 16:12:48,798 - gui.mainWindow.MainJFrame - DEBUG - POPUP: 3 tasks were deleted.
+2012-06-15 16:12:48,813 - gui.UIController - DEBUG - refresh: in DELETE: update JTable
+2012-06-15 16:12:48,813 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:48,813 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:48,830 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:48,830 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:48,830 - gui.reminder.Reminder - DEBUG - latestTask: *get A* for cs2103 on 16 Jun 2012 
+2012-06-15 16:12:48,830 - gui.reminder.Reminder - DEBUG - setTimer: 114130171
+2012-06-15 16:12:49,750 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$UndoAction
+2012-06-15 16:12:49,750 - logic.JIDLogic - INFO - Undo being performed for:delete
+2012-06-15 16:12:49,750 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Undo successful.
+2012-06-15 16:12:49,750 - gui.UIController - DEBUG - refresh: in UNDO: update JTable
+2012-06-15 16:12:49,750 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:49,750 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:49,750 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:49,750 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:49,750 - gui.reminder.Reminder - DEBUG - latestTask: go to hell on 16 Jun 2012 
+2012-06-15 16:12:49,750 - gui.reminder.Reminder - DEBUG - setTimer: 114129250
+2012-06-15 16:12:50,671 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$RedoAction
+2012-06-15 16:12:50,671 - logic.JIDLogic - DEBUG - ******exeCmd(inside Action: Redo
+2012-06-15 16:12:50,671 - logic.JIDLogic - INFO - Redo Being performed for:delete
+2012-06-15 16:12:50,671 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Redo successful.
+2012-06-15 16:12:50,686 - gui.UIController - DEBUG - refresh: in REDO: update JTable
+2012-06-15 16:12:50,686 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:50,686 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:50,686 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 16:12:50,686 - operation.Operation - INFO - find *.*
+2012-06-15 16:12:50,686 - gui.reminder.Reminder - DEBUG - latestTask: *get A* for cs2103 on 16 Jun 2012 
+2012-06-15 16:12:50,686 - gui.reminder.Reminder - DEBUG - setTimer: 114128314

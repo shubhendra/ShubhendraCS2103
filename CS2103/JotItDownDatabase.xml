@@ -1,3 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0" class="java.beans.XMLDecoder">
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1343491199000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__28-07-2012235959G__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1344095999000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__04-08-2012235959X__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1341676799000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__07-07-2012235959F__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1344700799000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__11-08-2012235959E__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1345305599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__18-08-2012235959B__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1340467199000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__23-06-2012235959W__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339862399000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__16-06-2012235959U__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1342281599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-07-2012235959T__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1341071999000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-06-2012235959H__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>get A* for cs2103</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="recurringId">
+   <string>$$__16-06-2012235959E__$$</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1342886399000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__21-07-2012235959G__$$</string>
+  </void>
+ </object>
 </java>

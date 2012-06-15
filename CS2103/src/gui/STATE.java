@@ -11,12 +11,11 @@ import org.apache.log4j.Logger;
  */
 public enum STATE {
 	
-	
 	ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
 	, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
 	, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
 	, CLEARARCHIVE, IMPORTARCHIVE, SYNCGCAL, IMPORTGCAL, EXPORTGCAL
-	, CHECKFREE, EXPAND, EMAIL;
+	, CHECKFREE, EXPAND, EMAIL, IMPORTANTALL;
 
 	private static Logger logger=Logger.getLogger(STATE.class);
 	
@@ -51,7 +50,6 @@ public enum STATE {
 		curState = newState;
 		if(!isCommandSent)
 			command = curState.toString();
-		System.out.println(curState);
 	}
 	
 	/**
@@ -125,6 +123,7 @@ public enum STATE {
 			case IMPORTARCHIVE: return "were imported from archive.";
 			case IMPORTGCAL: return "were imported from Google Calendar.";
 			case SYNCGCAL: return "were synced with Google Calendar.";
+			case IMPORTANTALL: return "were toggled important.";
 			default:
 				logger.error(curState + " getEndedString plural form");
 				return "successfully";
@@ -177,8 +176,12 @@ public enum STATE {
 			return STATE.HELP;
 		if(firstWord.equalsIgnoreCase("redo"))
 			return STATE.REDO;
-		if(firstWord.equalsIgnoreCase("important"))
+		if(firstWord.equalsIgnoreCase("important") 
+			||firstWord.equalsIgnoreCase("star"))
 			return STATE.IMPORTANT;
+		if(firstWord.equalsIgnoreCase("important.all")
+			||firstWord.equalsIgnoreCase("star.all"))
+			return STATE.IMPORTANTALL;
 		if(firstWord.equalsIgnoreCase("login"))
 			return STATE.LOGIN;
 		if(firstWord.equalsIgnoreCase("delete.all"))
